@@ -288,6 +288,20 @@ build lead fetched on 21 Oct 2026:
   longer says the five signs mean it "is not just a growing pain" (the approved FAQ says only that they are worth an
   evaluation, and the post itself says none of them proves an injury); the "parent page" anchor now reads "pediatric
   physical therapy".
+- P-044 knee replacement, first six weeks (983 words after review). Sources, re-fetched by the build lead phrase by
+  phrase: AAOS OrthoInfo "Activities After Knee Replacement" (discharge goals, help at home, swelling, driving, work,
+  warning signs, the 2 month exercise rule) and "Total Knee Replacement Exercise Guide" (walker or crutches at first;
+  a single crutch or cane "often about 2 to 3 weeks"; light ankle weights "usually 4 to 6 weeks"; full recovery takes
+  several months). Build lead edit: AAOS tells readers to "tell your doctor right away" about chest pain or shortness
+  of breath, so one sentence now adds the CDC's instruction to seek medical help immediately for the signs of a clot
+  in the lungs (CDC "About Venous Thromboembolism (Blood Clots)", fetched 21 Oct 2026). The marker "[CONFIRM the
+  targets he states]" stays visible; when Dr. Ed's targets replace it, trim elsewhere to stay under 1,000 words.
+- P-045 vertigo and BPPV (939 words). Sources, re-fetched by the build lead with a control check (planted false
+  phrases came back NO): APTA ChoosePT BPPV guide (what BPPV is, the crystals, 15 to 45 seconds, positional tests,
+  maneuvers, no known prevention, symptoms return for about half of people within three years) and MedlinePlus
+  "Benign positional vertigo" (Dix-Hallpike test and Epley maneuver described; get medical help right away with
+  weakness, slurred speech or vision problems). The post names Dix-Hallpike and Epley only as MedlinePlus names them
+  and does not say Dr. Ed uses them by name.
 
 ### Open questions from Batch F (so far)
 
@@ -299,9 +313,17 @@ For Vlad:
    the facts, so the post gives the order, not minutes. Suggest "step by step" (blueprint field, not changed).
 3. Section 2620.1 is quoted from Justia because the official leginfo page does not load from here. One look on
    leginfo.legislature.ca.gov before launch.
+4. P-044's blueprint meta description repeats the knee replacement claim already raised for the conditions page
+   ("the first six weeks ... decide your range of motion for years"); no source says it. Suggested: "What the first
+   six weeks after a knee replacement involve, from your surgeon's rules to the home work. Dr. Ed Shut, DPT in
+   Chatsworth explains." (143 characters).
 
 For Dr. Ed:
 - Medicare Advantage: are Advantage plans accepted? The site says only "Medicare".
 - Does the 45-day and 12-visit count start again for a new injury or after a break in care? The posts do not say.
 - P-040: two explaining clauses to confirm or cut ("the area that hurts should be easy to see and free to move";
   "the aim is to return you to the things that matter to you").
+- P-041: a stroke patient's story, with consent, when one exists (marker on the page).
+- P-044: his milestones for each stage after a knee replacement (marker on the page).
+- P-045: the names of the test and maneuvers he uses (Dix-Hallpike, Epley?), so the post can say so.
+- P-043: whether he wants a line on when he sends a child to a doctor for imaging first.
