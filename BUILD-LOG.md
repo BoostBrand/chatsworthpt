@@ -270,6 +270,24 @@ build lead fetched on 21 Oct 2026:
 - P-039 Medicare (783 words). Source: Medicare.gov "Physical therapy services" (Part B coverage, certification by
   your doctor or other health care provider, 20% after the Part B deductible, no yearly limit). No dollar figures.
 - P-040 first visit (814 words). No outside source; every fact traces to FACTS.md or the built Your first visit page.
+- P-042 fall checklist for a parent's house (946 words). Source: CDC "Check for Safety" (STEADI, 2017); all fourteen
+  checklist items are the sheet's verified CDC sentences, five with "you" changed to "your parent" (said in the
+  source note). The clinic tests and the plan come from the approved balance page.
+- P-041 stroke recovery (918 words). Sources, both re-fetched by the build lead and matched sentence by sentence:
+  American Stroke Association "What to Expect from Stroke Rehabilitation" (start in the hospital, continue after
+  release; home healthcare agencies or outpatient offices) and the NINDS fact sheet "Post-Stroke Rehabilitation" (timing,
+  repetitive practice, rewiring over months to years, does not reverse brain damage). The approved neuro page line
+  "the weeks and months after a stroke are when the nervous system is most ready to relearn" is left out of the post
+  as an uncited claim; NINDS's timing sentence carries the point instead. The story marker "[CONFIRM] a stroke
+  patient's story when one exists" stays visible. Build lead edit: the "parent page" anchor now reads "neurological
+  rehabilitation".
+- P-043 young gymnast back pain (863 words). Sources, both re-fetched by the build lead and matched phrase by phrase:
+  AAOS OrthoInfo "Spondylolysis and Spondylolisthesis" (definition, symptoms, doctor's exam and imaging, the
+  nonsurgical list) and Rady Children's Health "Linemen, Gymnasts at Highest Risk of Spondylolysis" (who is at
+  higher risk and why, main symptom, rest plus physical therapy). No review retold. Build lead edits: the answer no
+  longer says the five signs mean it "is not just a growing pain" (the approved FAQ says only that they are worth an
+  evaluation, and the post itself says none of them proves an injury); the "parent page" anchor now reads "pediatric
+  physical therapy".
 
 ### Open questions from Batch F (so far)
 
