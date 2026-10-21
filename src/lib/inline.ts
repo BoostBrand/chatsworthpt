@@ -6,6 +6,7 @@ const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 const MARKER = /\[(CONFIRM|verify|SOURCE NEEDED)([^\]]*)\]/g;
 const LINK = /\[([^\]]+)\]\(([^)\s]+)\)/g;
 const BOLD = /\*\*([^*]+)\*\*/g;
+const PHONE = /\(818\) 749-3205/g;
 
 export function renderInline(text: string): string {
   let out = esc(text);
@@ -20,6 +21,11 @@ export function renderInline(text: string): string {
     return `<a href="${href}"${attrs}>${label}</a>`;
   });
   out = out.replace(BOLD, '<strong>$1</strong>');
+  // Every phone number is a tap-to-call link (QA gate: no bare numbers), never inside another link.
+  out = out
+    .split(/(<a\b[^>]*>[\s\S]*?<\/a>)/)
+    .map((part, i) => (i % 2 ? part : part.replace(PHONE, '<a href="tel:+18187493205">$&</a>')))
+    .join('');
   return out;
 }
 

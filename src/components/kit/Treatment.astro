@@ -1,0 +1,23 @@
+---
+// Treatment (and any prose section): H2, optional intro, then paragraphs, lists, sub-heads, images.
+import type { Block } from '../../lib/types';
+import { slugify } from '../../lib/inline';
+import Blocks from '../Blocks.astro';
+import SectionHead from './SectionHead.astro';
+interface Props {
+  h2: string;
+  intro?: string;
+  blocks: Block[];
+  tone?: 'white' | 'sky';
+  layout?: 'stack' | 'split';
+  id?: string;
+}
+const { h2, intro, blocks, tone = 'white', layout = 'split', id } = Astro.props;
+const hid = 'h-' + (id ?? slugify(h2));
+---
+<section class:list={['sec', `tone-${tone}`]} id={id} aria-labelledby={hid}>
+  <div class:list={['wrap', { 'sec-split': layout === 'split' }]}>
+    <SectionHead h2={h2} id={hid} intro={intro} />
+    <div class="prose"><Blocks blocks={blocks} /></div>
+  </div>
+</section>

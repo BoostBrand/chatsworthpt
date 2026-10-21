@@ -1,0 +1,41 @@
+---
+// LegalPage: plain header, the policy text, links to the other legal page and Contact. While the live text
+// is missing (LEGAL_TEXT_READY false) it shows the highlighted placeholder and carries noindex.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import Blocks from '../Blocks.astro';
+import RelatedLinks from '../kit/RelatedLinks.astro';
+import type { PageContent } from '../../lib/types';
+import { pageById, crumbsFor, isNoindex } from '../../lib/pages';
+import { breadcrumbNode, graph } from '../../lib/schema';
+import { LEGAL_TEXT_READY, BUSINESS } from '../../data/site';
+interface Props {
+  content: PageContent;
+}
+const { content } = Astro.props;
+const meta = pageById(content.id);
+const crumbs = crumbsFor(meta);
+const schema = graph([breadcrumbNode(crumbs)]);
+const blocks = content.sections.flatMap((s) => (s.kind === 'prose' ? [{ type: 'h2', text: s.h2 } as const, ...s.blocks] : []));
+---
+<BaseLayout pageId={meta.id} path={meta.path} title={content.title} description={content.description} noindex={isNoindex(meta)} schema={schema} bookHref="/contact/#book">
+  <section class="plain-hero" aria-labelledby="h1">
+    <div class="wrap">
+      <Breadcrumbs crumbs={crumbs} />
+      <h1 id="h1">{content.hero.h1}</h1>
+      <p class="page-hero-lede">{BUSINESS.legalName}</p>
+    </div>
+  </section>
+  <section class="sec tone-white">
+    <div class="wrap">
+      <div class="legal-body">
+        {LEGAL_TEXT_READY ? (
+          blocks.map((b) => (b.type === 'h2' ? <h2 set:html={b.text} /> : <Blocks blocks={[b]} />))
+        ) : (
+          <p class="legal-placeholder" data-placeholder>[CONFIRM: live policy text to be pasted]</p>
+        )}
+      </div>
+    </div>
+  </section>
+  <RelatedLinks links={content.related ?? []} />
+</BaseLayout>

@@ -1,0 +1,35 @@
+---
+// Shared composition for every inner page with a hero: BaseLayout, the hero, the sections in the
+// blueprint's order, the booking band and the related links. Type templates wrap it.
+// Type templates render the page file's named slots (one per 'custom' section id, plus "hero") and pass them in.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../kit/PageHero.astro';
+import Sections from '../kit/Sections.astro';
+import BookingBlock from '../kit/BookingBlock.astro';
+import RelatedLinks from '../kit/RelatedLinks.astro';
+import type { PageContent } from '../../lib/types';
+import { pageById, crumbsFor, isNoindex } from '../../lib/pages';
+import { graphFor } from '../../lib/page-schema';
+import { graph } from '../../lib/schema';
+
+interface Props {
+  content: PageContent;
+  extraSchema?: Record<string, unknown>[];
+  custom?: Record<string, string>; // pre-rendered markup for 'custom' sections, keyed by section id
+  heroHtml?: string; // a page-specific hero (the contact page), rendered in place of the standard hero
+}
+const { content, extraSchema = [], custom = {}, heroHtml = '' } = Astro.props;
+const meta = pageById(content.id);
+if (meta.path !== content.path) throw new Error(`${content.id}: content path ${content.path} does not match ${meta.path}`);
+const crumbs = crumbsFor(meta);
+const schema = graph(graphFor(content, meta, extraSchema));
+const booking = content.booking || null;
+const section = ['service', 'services-hub', 'conditions-hub', 'condition'].includes(meta.type) ? 'services' : null;
+const ogImage = content.ogImage ?? content.hero.image?.src;
+---
+<BaseLayout pageId={meta.id} path={meta.path} title={content.title} description={content.description} noindex={isNoindex(meta)} ogImage={ogImage} section={section} schema={schema} geo={meta.type === 'contact'} bookHref={booking ? '#book' : '/contact/#book'}>
+  {heroHtml ? <Fragment set:html={heroHtml} /> : <PageHero hero={content.hero} crumbs={crumbs} hasBooking={Boolean(booking)} />}
+  <Sections sections={content.sections} custom={custom} />
+  {booking && <BookingBlock booking={booking} pageName={meta.name} />}
+  <RelatedLinks links={content.related ?? []} />
+</BaseLayout>

@@ -1,0 +1,16 @@
+---
+// ConditionPage: the Condition template. Hero, sections in the blueprint's order, booking band, related links;
+// JSON-LD per blueprint section 6 (built from the content file in src/lib/page-schema.ts).
+import StandardPage from './StandardPage.astro';
+import type { PageContent } from '../../lib/types';
+interface Props {
+  content: PageContent;
+  extraSchema?: Record<string, unknown>[];
+}
+const { content, extraSchema = [] } = Astro.props;
+// Named slots on the page file: one per 'custom' section id, and an optional "hero".
+const custom: Record<string, string> = {};
+for (const s of content.sections) if (s.kind === 'custom') custom[s.id] = Astro.slots.has(s.id) ? await Astro.slots.render(s.id) : '';
+const heroHtml = Astro.slots.has('hero') ? await Astro.slots.render('hero') : '';
+---
+<StandardPage content={content} extraSchema={extraSchema} custom={custom} heroHtml={heroHtml} />

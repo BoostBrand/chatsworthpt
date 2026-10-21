@@ -1,0 +1,30 @@
+---
+// InsuranceNote: the site-wide referral, insurance and visit-length lines (Dr. Ed's rulings, in the
+// approved homepage wording), plus any page-specific lines, and the link to the insurance page.
+import type { Block } from '../../lib/types';
+import Blocks from '../Blocks.astro';
+import Inline from '../Inline.astro';
+import { SITE_LINES } from '../../lib/site-lines';
+interface Props {
+  h2?: string;
+  blocks?: Block[];
+  siteLines?: boolean;
+  more?: boolean;
+  id?: string;
+}
+const { h2 = 'Insurance and referrals', blocks, siteLines = true, more = true, id } = Astro.props;
+---
+<section class="sec tone-white" id={id} aria-labelledby="h-insurance">
+  <div class="wrap sec-split">
+    <div class="section-head"><Inline as="h2" id="h-insurance" text={h2} /></div>
+    <div>
+      {blocks && blocks.length > 0 && <div class="prose"><Blocks blocks={blocks} /></div>}
+      {siteLines && (
+        <dl class="note-rows" style={blocks && blocks.length ? 'margin-top:1.4rem' : undefined}>
+          {SITE_LINES.map((l) => <div><dt>{l.label}</dt><dd><Inline text={l.text} /></dd></div>)}
+        </dl>
+      )}
+      {more && <p class="note-more">Details and what to bring are on the <a href="/insurance-and-cost/">insurance and cost</a> page.</p>}
+    </div>
+  </div>
+</section>

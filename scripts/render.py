@@ -78,7 +78,8 @@ def main():
     if a.url:
         targets = [(a.label or 'page', a.url)]
     else:
-        paths = a.paths or [p['path'] for p in json.loads((ROOT / 'src/data/pages.json').read_text())]
+        built = lambda p: (DIST / ('404.html' if p == '/404' else p.lstrip('/') + 'index.html')).exists()
+        paths = a.paths or [p['path'] for p in json.loads((ROOT / 'src/data/pages.json').read_text()) if built(p['path'])]
         targets = []
         for p in paths:
             rel = '404.html' if p in ('/404', '/404/') else p.lstrip('/')

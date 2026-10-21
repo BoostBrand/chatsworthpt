@@ -1,0 +1,27 @@
+---
+// FAQ accordion (the homepage's native details pattern, height animated by the site script).
+// The same items feed the page's FAQPage JSON-LD in the template.
+import type { FaqItem } from '../../lib/types';
+import { slugify, renderInline } from '../../lib/inline';
+import Inline from '../Inline.astro';
+interface Props {
+  h2: string;
+  items: FaqItem[];
+  id?: string;
+}
+const { h2, items, id } = Astro.props;
+const hid = 'h-' + (id ?? slugify(h2));
+---
+<section class="sec tone-white" id={id ?? 'questions'} aria-labelledby={hid}>
+  <div class="wrap sec-split">
+    <div class="section-head"><Inline as="h2" id={hid} text={h2} /></div>
+    <div class="faq">
+      {items.map((f) => (
+        <details>
+          <summary>{f.q}</summary>
+          <div class="a">{(Array.isArray(f.a) ? f.a : [f.a]).map((p) => <p set:html={renderInline(p)} />)}</div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

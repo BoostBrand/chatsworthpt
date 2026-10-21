@@ -1,0 +1,25 @@
+---
+// ReviewBlock: one real Google review, verbatim from the reviews CSV (whole sentences only), with the
+// first name and the month. Its Review markup is built by the page template from the same reference.
+import type { ReviewRef } from '../../lib/types';
+import { getReview, quoteFor } from '../../lib/reviews';
+import Inline from '../Inline.astro';
+interface Props {
+  review: ReviewRef;
+  more?: string;
+  id?: string;
+}
+const { review, more, id } = Astro.props;
+const r = getReview(review.key);
+const quote = quoteFor(review);
+---
+<section class="sec tone-sky" id={id} aria-label="A patient review">
+  <div class="wrap">
+    <figure class="review-block" data-review={r.key}>
+      <span class="stars" aria-hidden="true">★★★★★</span>
+      <blockquote>"{quote}"</blockquote>
+      <figcaption class="story-cite"><strong>{r.displayName}</strong>{review.context ? `, ${review.context}` : ''}, Google review, {r.month}</figcaption>
+      {more && <Inline as="p" class="review-more" text={more} />}
+    </figure>
+  </div>
+</section>

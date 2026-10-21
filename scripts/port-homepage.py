@@ -77,6 +77,10 @@ sub('<p class="service-area">Patients come from Chatsworth, Porter Ranch, Northr
     '<p class="service-area">Patients come from Chatsworth, {CITY_PAGES_LIVE ? <a href="/physical-therapy-porter-ranch/">Porter Ranch</a> : \'Porter Ranch\'}, '
     '{CITY_PAGES_LIVE ? <a href="/physical-therapy-northridge/">Northridge</a> : \'Northridge\'}, West Hills, Canoga Park, Granada Hills and Simi Valley.</p>')
 
+# The one bare phone number in the approved copy (the insurance FAQ) becomes a tap-to-call link; words unchanged.
+sub('Direct-pay patients are welcome. Call (818) 749-3205 and we will walk you through the cost before your first visit.</p>',
+    'Direct-pay patients are welcome. Call <a href="tel:+18187493205">(818) 749-3205</a> and we will walk you through the cost before your first visit.</p>')
+
 # Booking form: the shared component renders the approved form, or the call panel while the key is a placeholder.
 form = re.search(r'<form class="form" id="book-form" novalidate>.*?</form>', main, re.S)
 if not form:
@@ -84,7 +88,7 @@ if not form:
 main = main.replace(form.group(0), '<BookingForm pageName="Home" />')
 
 # FAQ answers and questions, read from the markup, must equal the master's FAQPage (they do in draft 9).
-faq_html = re.findall(r'<details><summary>(.*?)</summary><p>(.*?)</p></details>', main)
+faq_html = [(q, re.sub(r'<[^>]+>', '', a)) for q, a in re.findall(r'<details><summary>(.*?)</summary><p>(.*?)</p></details>', main)]
 faq_ld = next(n for n in ld['@graph'] if n['@type'] == 'FAQPage')['mainEntity']
 assert [(q, a) for q, a in faq_html] == [(m['name'], m['acceptedAnswer']['text']) for m in faq_ld], 'FAQ markup and JSON-LD differ'
 

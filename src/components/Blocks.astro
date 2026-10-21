@@ -34,7 +34,7 @@ const r = renderInline;
       return <PhotoPlaceholder label={b.label} ratio={b.ratio ?? '16/10'} />;
     case 'links':
       return (
-        <p class="links-row">{b.label && <span>{b.label} </span>}{b.items.map((l, i) => <Fragment>{i > 0 && ' · '}<a href={l.href}>{l.text}</a></Fragment>)}</p>
+        <p class="links-row">{b.label && <Fragment><span>{b.label}</span>{' '}</Fragment>}{b.items.map((l, i) => <Fragment>{i > 0 && ' · '}<a href={l.href}>{l.text}</a></Fragment>)}</p>
       );
     default:
       return null;

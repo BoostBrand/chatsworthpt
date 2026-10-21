@@ -13,7 +13,7 @@ Cloudflare Pages: build command `npm run build`, output directory `dist`, Node 2
 - `scripts/`: data generation, the homepage port, the gates and the renders.
 
 ## Checks
-- `npm run build`, then `node scripts/gates.mjs` (every count from `dist`), then
+- `npm run build`, then `python3 -I scripts/gates.py` (every count from `dist`), then
   `python3 -I scripts/render.py` (390 and 1440 in headless Chromium; `--shots` saves screenshots to dist-preview/).
 
 Nothing here deploys anything. Publishing, DNS, Search Console and the Google listing stay with Vlad.

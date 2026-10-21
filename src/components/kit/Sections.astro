@@ -1,0 +1,45 @@
+---
+// Renders a page's sections in the blueprint's order with the kit components. A 'custom' section is
+// rendered from markup the page file passes in (the contact map, the reviews list, and so on).
+import type { Section } from '../../lib/types';
+import WhoThisIsFor from './WhoThisIsFor.astro';
+import Treatment from './Treatment.astro';
+import ConditionsList from './ConditionsList.astro';
+import ReviewBlock from './ReviewBlock.astro';
+import InsuranceNote from './InsuranceNote.astro';
+import FAQ from './FAQ.astro';
+import Cards from './Cards.astro';
+import Steps from './Steps.astro';
+interface Props {
+  sections: Section[];
+  custom?: Record<string, string>; // pre-rendered HTML for 'custom' sections, keyed by section id
+}
+const { sections, custom = {} } = Astro.props;
+for (const s of sections) {
+  if (s.kind === 'custom' && custom[s.id] === undefined) throw new Error(`No markup for custom section "${s.id}"`);
+}
+---
+{sections.map((s) => {
+  switch (s.kind) {
+    case 'who':
+      return <WhoThisIsFor h2={s.h2} intro={s.intro} items={s.items} outro={s.outro} tone={s.tone} id={s.id} />;
+    case 'prose':
+      return <Treatment h2={s.h2} intro={s.intro} blocks={s.blocks} tone={s.tone} layout={s.layout} id={s.id} />;
+    case 'conditions':
+      return <ConditionsList h2={s.h2} intro={s.intro} items={s.items} outro={s.outro} columns={s.columns} id={s.id} />;
+    case 'review':
+      return <ReviewBlock review={s.review} more={s.more} id={s.id} />;
+    case 'insurance':
+      return <InsuranceNote h2={s.h2} blocks={s.blocks} siteLines={s.siteLines} more={s.more} id={s.id} />;
+    case 'faq':
+      return <FAQ h2={s.h2} items={s.items} id={s.id} />;
+    case 'cards':
+      return <Cards h2={s.h2} intro={s.intro} cards={s.cards} groups={s.groups} outro={s.outro} columns={s.columns} tone={s.tone} id={s.id} />;
+    case 'steps':
+      return <Steps h2={s.h2} intro={s.intro} steps={s.steps} outro={s.outro} id={s.id} />;
+    case 'custom':
+      return <Fragment set:html={custom[s.id]} />;
+    default:
+      return null;
+  }
+})}

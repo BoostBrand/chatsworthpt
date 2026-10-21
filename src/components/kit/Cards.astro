@@ -1,0 +1,49 @@
+---
+// Cards for the services hub and the conditions hub: the real session photo where one exists, the exact
+// page name as heading and link, one line on who it is for, and an optional line of what it covers.
+import type { Card } from '../../lib/types';
+import { slugify, renderInline } from '../../lib/inline';
+import PhotoPlaceholder from '../PhotoPlaceholder.astro';
+import Inline from '../Inline.astro';
+import SectionHead from './SectionHead.astro';
+interface Props {
+  h2: string;
+  intro?: string;
+  cards?: Card[];
+  groups?: { title: string; cards: Card[] }[];
+  outro?: string;
+  columns?: 2 | 3;
+  tone?: 'white' | 'sky';
+  id?: string;
+}
+const { h2, intro, cards = [], groups = [], outro, columns = 3, tone = 'white', id } = Astro.props;
+const hid = 'h-' + (id ?? slugify(h2));
+const sets = groups.length ? groups : [{ title: '', cards }];
+---
+<section class:list={['sec', `tone-${tone}`]} id={id} aria-labelledby={hid}>
+  <div class="wrap">
+    <SectionHead h2={h2} id={hid} intro={intro} />
+    {sets.map((g) => (
+      <Fragment>
+        {g.title && <h3 class="group-title">{g.title}</h3>}
+        <ul class:list={['cards', { two: columns === 2 }]}>
+          {g.cards.map((c) => (
+            <li class="card">
+              {(c.image || c.placeholder) && (
+                <div class="card-media">
+                  {c.image ? <img src={c.image.src} alt={c.image.alt} width={c.image.width} height={c.image.height} loading="lazy" decoding="async" /> : <PhotoPlaceholder label={c.placeholder as string} />}
+                </div>
+              )}
+              <div class="card-body">
+                <h3><a href={c.href}>{c.title}</a></h3>
+                <p set:html={renderInline(c.text)} />
+                {c.meta && <p class="card-meta" set:html={renderInline(c.meta)} />}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </Fragment>
+    ))}
+    {outro && <Inline as="p" class="cond-note" text={outro} />}
+  </div>
+</section>

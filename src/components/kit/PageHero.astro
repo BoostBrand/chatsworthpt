@@ -1,0 +1,60 @@
+---
+// ServiceHero: the inner-page hero. Breadcrumbs, the exact H1, the promise line, Book (to #book) and the
+// desktop call button, the stars line once, and the page's real photo or its labelled placeholder.
+import type { Hero } from '../../lib/types';
+import type { Crumb } from '../../lib/pages';
+import { BUSINESS, RATING } from '../../data/site';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import Inline from '../Inline.astro';
+import PhotoPlaceholder from '../PhotoPlaceholder.astro';
+interface Props {
+  hero: Hero;
+  crumbs: Crumb[];
+  hasBooking?: boolean;
+}
+const { hero, crumbs, hasBooking = true } = Astro.props;
+const bookLabel = hero.book === false ? null : hero.book ?? 'Book my evaluation';
+const bookHref = hasBooking ? '#book' : '/contact/#book';
+const call = hero.call !== false;
+const stars = hero.stars !== false;
+const media = Boolean(hero.image || hero.placeholder);
+---
+<section class:list={['page-hero', { 'no-media': !media }]} aria-labelledby="h1">
+  <div class="wrap">
+    <Breadcrumbs crumbs={crumbs} />
+    <div class="page-hero-grid">
+      <div class="page-hero-copy">
+        <h1 id="h1">{hero.h1}</h1>
+        <Inline as="p" class="page-hero-lede" text={hero.lede} />
+        {(bookLabel || call) && (
+          <div class="hero-cta">
+            {hero.callFirst ? (
+              <Fragment>
+                <a class="btn btn-light" href={BUSINESS.phoneHref}>Call {BUSINESS.phone}</a>
+                {bookLabel && <a class="btn btn-ghost" href={bookHref}>{bookLabel}</a>}
+              </Fragment>
+            ) : (
+              <Fragment>
+                {bookLabel && <a class="btn btn-light" href={bookHref}>{bookLabel}</a>}
+                {call && <a class="btn btn-ghost btn-call-hero" href={BUSINESS.phoneHref}>Or call {BUSINESS.phone}</a>}
+              </Fragment>
+            )}
+          </div>
+        )}
+        {stars && <div class="hero-proof"><span class="stars" aria-hidden="true">★★★★★</span><span>{RATING.line}</span></div>}
+      </div>
+      {media && (
+        <figure class="page-hero-media">
+          {hero.image ? (
+            <picture>
+              {hero.image.srcMobile && <source media="(max-width: 700px)" srcset={hero.image.srcMobile} />}
+              <img src={hero.image.src} alt={hero.image.alt} width={hero.image.width} height={hero.image.height} fetchpriority="high" decoding="async" />
+            </picture>
+          ) : (
+            <PhotoPlaceholder label={hero.placeholder as string} />
+          )}
+        </figure>
+      )}
+    </div>
+  </div>
+</section>

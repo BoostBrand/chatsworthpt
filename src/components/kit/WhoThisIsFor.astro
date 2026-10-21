@@ -1,0 +1,25 @@
+---
+// WhoThisIsFor: the situations that bring people in, as quiet cards with a bold lead.
+import { slugify } from '../../lib/inline';
+import Inline from '../Inline.astro';
+import SectionHead from './SectionHead.astro';
+interface Props {
+  h2: string;
+  intro?: string;
+  items: { lead: string; text: string }[];
+  outro?: string;
+  tone?: 'white' | 'sky';
+  id?: string;
+}
+const { h2, intro, items, outro, tone = 'white', id } = Astro.props;
+const hid = 'h-' + (id ?? slugify(h2));
+---
+<section class:list={['sec', `tone-${tone}`]} id={id} aria-labelledby={hid}>
+  <div class="wrap">
+    <SectionHead h2={h2} id={hid} intro={intro} />
+    <ul class="lead-list">
+      {items.map((it) => <li><Inline as="strong" text={it.lead} /><Inline as="span" text={it.text} /></li>)}
+    </ul>
+    {outro && <Inline as="p" class="cond-note" text={outro} />}
+  </div>
+</section>

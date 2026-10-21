@@ -1,0 +1,14 @@
+---
+// H2 and optional intro line shared by every inner section.
+import Inline from '../Inline.astro';
+interface Props {
+  h2: string;
+  id: string;
+  intro?: string;
+}
+const { h2, id, intro } = Astro.props;
+---
+<div class="section-head">
+  <Inline as="h2" id={id} text={h2} />
+  {intro && <Inline as="p" class="lede" text={intro} />}
+</div>

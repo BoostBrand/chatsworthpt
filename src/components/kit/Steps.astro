@@ -1,0 +1,24 @@
+---
+// Numbered steps for a real sequence (the first visit), in the homepage's steps pattern.
+import { slugify, renderInline } from '../../lib/inline';
+import Inline from '../Inline.astro';
+import SectionHead from './SectionHead.astro';
+interface Props {
+  h2: string;
+  intro?: string;
+  steps: { title: string; text: string }[];
+  outro?: string;
+  id?: string;
+}
+const { h2, intro, steps, outro, id } = Astro.props;
+const hid = 'h-' + (id ?? slugify(h2));
+---
+<section class="sec tone-white" id={id} aria-labelledby={hid}>
+  <div class="wrap">
+    <SectionHead h2={h2} id={hid} intro={intro} />
+    <div class="steps">
+      {steps.map((s) => <div class="step"><h3 set:html={renderInline(s.title)} /><p set:html={renderInline(s.text)} /></div>)}
+    </div>
+    {outro && <Inline as="p" class="cond-note" text={outro} />}
+  </div>
+</section>
