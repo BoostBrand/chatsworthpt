@@ -1,0 +1,285 @@
+[
+  {
+    "key": "mike",
+    "label": "Mike",
+    "displayName": "Mike",
+    "date": "2026-10-13",
+    "month": "October 2026",
+    "theme": "shoulder pain; answers his own phone; great space",
+    "quote": "Working with Dr. Ed has been Great. He answers his own phone and works out of a great space. I have recommended him to many friends. He is attentive to the stretches and exercises he has me doing. He's patient, explains everything and has been very up front about my recovery from shoulder pain.",
+    "usable": true
+  },
+  {
+    "key": "jennifer",
+    "label": "Jennifer",
+    "displayName": "Jennifer",
+    "date": "2026-09-14",
+    "month": "September 2026",
+    "theme": "partial shoulder tear; red light and stimulation",
+    "quote": "Have been doing PT with Edward since May and can firmly say would not have healed as quickly as I did without his guidance and help. He not only helped me with specific targeted exercises for my partial shoulder tear but also reinforced the healing with red light therapy and stimulation to not only improve muscle recovery but also help my general recovery! One on one treatment with great results and great company!",
+    "usable": true
+  },
+  {
+    "key": "dolores",
+    "label": "Dolores",
+    "displayName": "Dolores",
+    "date": "2026-07-28",
+    "month": "July 2026",
+    "theme": "general; explained each exercise; tailored",
+    "quote": "I would like to express my gratitude and highly recommend my physiotherapist. From the very first session, he demonstrated great professionalism, knowledge, and dedication. He always explained each exercise patiently, answered my questions, and tailored the treatment to my needs. Thanks to his care and commitment, I have noticed significant improvement in my recovery.",
+    "usable": true
+  },
+  {
+    "key": "susan",
+    "label": "Susan",
+    "displayName": "Susan",
+    "date": "2026-07-15",
+    "month": "July 2026",
+    "theme": "hip replacement; balance and strength (USED: balance page and homepage)",
+    "quote": "Dr. Ed Shut is the best physical therapist I've been to, and, due to a variety of ailments, I've seen a few. He is both very experienced at diagnosing the problems I've come in with, especially after hip replacement surgery, and he is also been intuitive about finding ways to fix my balance and strength through treatments and continuing exercise.",
+    "usable": true
+  },
+  {
+    "key": "jonathan",
+    "label": "Jonathan",
+    "displayName": "Jonathan",
+    "date": "2026-07-10",
+    "month": "July 2026",
+    "theme": "5 stars, no text",
+    "quote": "",
+    "usable": false,
+    "note": "Five stars with no text; not quoted."
+  },
+  {
+    "key": "maggie-and-mark",
+    "label": "Maggie and Mark",
+    "displayName": "Maggie and Mark",
+    "date": "2026-06-25",
+    "month": "June 2026",
+    "theme": "ACL reconstruction; ultrasound and red light (USED: post-op page)",
+    "quote": "I had ACL reconstruction surgery and the PT I have done with Ed has been game changing. It has been extremely beneficial on the road to recovery. He is extremely accommodating around my busy schedule whether that is doing sessions late at night or during the day. He also does ultrasound therapy and RED light therapy which has significantly aided my recovery.",
+    "usable": true
+  },
+  {
+    "key": "sarkis",
+    "label": "Sarkis",
+    "displayName": "Sarkis",
+    "date": "2026-06-18",
+    "month": "June 2026",
+    "theme": "general; treated as an individual, not a generic protocol",
+    "quote": "I've worked with several physical therapists throughout my recovery, and this has been by far one of the best experiences. From the first visit, I felt like I was being treated as an individual rather than just another patient on the schedule. What stood out most was the attention to detail and hands-on approach. My therapist took the time to understand my specific limitations, explain the reasoning behind each exercise, and adjust treatment based on how I was progressing rather than following a generic protocol. I never felt rushed, and every session was purposeful.",
+    "usable": true
+  },
+  {
+    "key": "mary",
+    "label": "Mary",
+    "displayName": "Mary",
+    "date": "2026-05-01",
+    "month": "May 2026",
+    "theme": "shoulder pain (USED: homepage card)",
+    "quote": "He took the time to listen to my concerns, explain the treatment process, and made me feel comfortable during every visit. I've noticed a big improvement in my shoulder pain and mobility thanks to his care and guidance.",
+    "usable": true
+  },
+  {
+    "key": "elena",
+    "label": "Elena",
+    "displayName": "Elena",
+    "date": "2026-04-14",
+    "month": "April 2026",
+    "theme": "general; explained everything clearly",
+    "quote": "Excellent physical therapy doctor! Very professional, and truly caring. Took the time to explain everything clearly and made me feel comfortable during the visit. Highly recommend!",
+    "usable": true
+  },
+  {
+    "key": "tati",
+    "label": "Tati",
+    "displayName": "Tati",
+    "date": "2026-03-22",
+    "month": "March 2026",
+    "theme": "10-year-old rhythmic gymnast, back injury (USED: pediatric page and homepage card)",
+    "quote": "My daughter is 10 years old rhythmic gymnast had a back injury. Edward was very patient with her and worked very diligently with the problem. Results was already showing after 2 sessions.",
+    "usable": true
+  },
+  {
+    "key": "lauren",
+    "label": "Lauren",
+    "displayName": "Lauren",
+    "date": "2026-03-20",
+    "month": "March 2026",
+    "theme": "general; customized plan (USED: homepage card)",
+    "quote": "I really appreciated how he customized my treatment plan based on my specific needs rather than using a one-size-fits-all approach. You can tell he genuinely cares about his patients and their progress.",
+    "usable": true
+  },
+  {
+    "key": "matthew-m",
+    "label": "Matthew M",
+    "displayName": "Matthew",
+    "date": "2026-03-20",
+    "month": "March 2026",
+    "theme": "general; diagnosing issues properly",
+    "quote": "Great guy really spend a great amount of time tailoring your needs and diagnosing your issues properly! Highly recommend!",
+    "usable": true
+  },
+  {
+    "key": "anthony",
+    "label": "Anthony",
+    "displayName": "Anthony",
+    "date": "2026-03-11",
+    "month": "March 2026",
+    "theme": "nerve weakness after two neck surgeries (USED: neuro page)",
+    "quote": "I had 2 neck surgeries which lead me to have nerve issues on my left side chest and triceps. I was very pessimistic about regaining strength based on my past experiences with rehab. Dr. Shut showed me a daily regimen that fit perfectly into my regular workout routine and helped me regain the strength and mobility I needed to feel back to normal.",
+    "usable": true
+  },
+  {
+    "key": "vlada-t",
+    "label": "Vlada T",
+    "displayName": "Vlada",
+    "date": "2026-02-26",
+    "month": "February 2026",
+    "theme": "could barely walk in, better after one session (reviewer shares Vlad's surname: Vlad to rule on use)",
+    "quote": "Dr. Edward is an amazing physical therapist! He quickly identified my issue, and even when I could barely walk in, after just one session I felt so much better and back to working condition.",
+    "usable": false,
+    "note": "Left off the site (shares Vlad's surname); Vlad can reverse."
+  },
+  {
+    "key": "anrii",
+    "label": "Anrii",
+    "displayName": "Anrii",
+    "date": "2026-02-04",
+    "month": "February 2026",
+    "theme": "back pain, helped in a single visit",
+    "quote": "I was struggling with back pain, and he was able to help me in a single visit. I feel so much better now. Huge thanks, I definitely recommend this specialist!",
+    "usable": true
+  },
+  {
+    "key": "rika",
+    "label": "Rika",
+    "displayName": "Rika",
+    "date": "2026-01-27",
+    "month": "January 2026",
+    "theme": "daughter, pain-free (RESERVED: reviews page per deck v2.1)",
+    "quote": "My daughter had a wonderful experience. Dr. Shut was incredibly patient, kind, and knowledgeable, and he explained everything clearly. He was able to immediately identify the cause of her pain and helped her become pain-free.",
+    "usable": true
+  },
+  {
+    "key": "david",
+    "label": "David",
+    "displayName": "David",
+    "date": "2026-01-08",
+    "month": "January 2026",
+    "theme": "pinched nerve in the neck for years; chiro, massage, another PT failed",
+    "quote": "I've been battling a pinched nerve in my neck for a few years. Multiple massage therapist, chiropractors and another Physical therapist. Only found minimal relief and never lasted. The past couple months with Dr. Shut have seen very good progress and lasting relief and the side effects from the pinched nerve are minimal.",
+    "usable": true
+  },
+  {
+    "key": "chris",
+    "label": "Chris",
+    "displayName": "Chris",
+    "date": "2026-01-03",
+    "month": "January 2026",
+    "theme": "back pain; home tips between visits",
+    "quote": "After one visit, I was already feeling better than I did when I first walked thru the door. Dr. Edward also gave me tips on what I can do at home to make my back pain manageable in between visits.",
+    "usable": true
+  },
+  {
+    "key": "melissa",
+    "label": "Melissa",
+    "displayName": "Melissa",
+    "date": "2025-12-22",
+    "month": "December 2025",
+    "theme": "plantar fasciitis; thorough evaluation; easy free parking",
+    "quote": "I was suffering from chronic heel and foot pain that my doctor quickly diagnosed as plantar fasciitis and sent me to PT. In my first session, Dr. Edward did a thorough and focused evaluation that helped me really understand not just the plantar fasciitis issues but also a compounding set of issues, each of which he carefully constructed a therapy plan for. Logistically, the location is easy to find with easy free parking making it all a hassle free experience.",
+    "usable": true
+  },
+  {
+    "key": "michael-l",
+    "label": "Michael L",
+    "displayName": "Michael",
+    "date": "2025-09-26",
+    "month": "September 2025",
+    "theme": "severe neck and shoulder pain to 100 percent in a few weeks",
+    "quote": "I went in with severe neck pain and shoulder pain and in just a few short weeks he got me back to 100 percent. Thanks Dr Ed!",
+    "usable": true
+  },
+  {
+    "key": "michael-w",
+    "label": "Michael W",
+    "displayName": "Michael",
+    "date": "2025-08-06",
+    "month": "August 2025",
+    "theme": "rapid recovery from injury (mentions a team)",
+    "quote": "Dr. Edward is an excellent therapist. His entire team is very professional and will do everything possible to ensure a rapid recovery from your injury.",
+    "usable": true
+  },
+  {
+    "key": "matthew-s",
+    "label": "Matthew S",
+    "displayName": "Matthew",
+    "date": "2025-08-05",
+    "month": "August 2025",
+    "theme": "frozen shoulder; near workplace; flexible scheduling (USED: homepage video and quote)",
+    "quote": "I came in with a frozen shoulder and very limited mobility. Remarkably, within just a few sessions, I began to regain movement. After a few weeks, I could lift my arm above my head and reach behind my back, something I hadn't been able to do at all before.",
+    "usable": true
+  },
+  {
+    "key": "george",
+    "label": "George",
+    "displayName": "George",
+    "date": "2025-08-03",
+    "month": "August 2025",
+    "theme": "severe lower back pain (USED: back pain page)",
+    "quote": "I came in with severe back pain that made it difficult to get in and out of the car, bed, and just move around in general.",
+    "usable": true
+  },
+  {
+    "key": "nadezhda",
+    "label": "Nadezhda",
+    "displayName": "Nadezhda",
+    "date": "2025-03-09",
+    "month": "March 2025",
+    "theme": "back pain; could barely walk last year; his hands have eyes",
+    "quote": "I am very pleased with Dr. Ed. I feel as if his hands have eyes. He has really helped me with my back pain. Last year I could barely walk and after his therapy my energy and functionality has been restored.",
+    "usable": true
+  },
+  {
+    "key": "keith",
+    "label": "Keith",
+    "displayName": "Keith",
+    "date": "2025-03-05",
+    "month": "March 2025",
+    "theme": "satellite location across from daughter's gym (unverified, possibly outdated; do not use)",
+    "quote": "Edward shows his sincere desire to help and improve all of his patients. He just started a satellite location across from my daughter's gym and we couldn't be happier.",
+    "usable": false,
+    "note": "Left off the site (unverified satellite location); Vlad can reverse."
+  },
+  {
+    "key": "maggie-mcc",
+    "label": "Maggie McC",
+    "displayName": "Maggie",
+    "date": "2025-02-25",
+    "month": "February 2025",
+    "theme": "ankles, 6 weeks (USED: sports page)",
+    "quote": "I had a great experience working with Dr. Ed Shut during 6 weeks of physical therapy on my ankles.",
+    "usable": true
+  },
+  {
+    "key": "linda",
+    "label": "Linda",
+    "displayName": "Linda",
+    "date": "2025-02-15",
+    "month": "February 2025",
+    "theme": "shoulders and neck, 18 months of limited mobility, 3 months of treatment",
+    "quote": "I had been experiencing extreme limited mobility in my shoulders and neck for the past year and a half. After working with Dr Shut for 3 months I have noticed a huge difference in flexibility. My shoulder pain has significantly improved and my neck is considerately more mobile. Through manipulation and prescribed exercise Dr Shut has made a big difference in my overall physical health.",
+    "usable": true
+  },
+  {
+    "key": "kate",
+    "label": "Kate",
+    "displayName": "Kate",
+    "date": "2025-02-08",
+    "month": "February 2025",
+    "theme": "lost almost 100 lbs over 3 years; less back and knee pain; fibromyalgia; red light, stim, ultrasound",
+    "quote": "I have been working with Dr Ed Shut for almost 3 years and I can't say enough good things about him. I have lost almost 100 lbs and have significantly less back and knee pain than I used to. Whether you are an athlete recovering from an injury, someone with chronic pain like fibromyalgia, or someone needing help with a specific condition, Dr Ed is knowledgeable, compassionate, and will design a personalized program for you. He does red light therapy, stretching, massage, electrical stimulation, and ultrasound.",
+    "usable": true
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "include": [
+    "/test-page", "/test-page/*",
+    "/coming-soon", "/coming-soon/*",
+    "/global-styles", "/global-styles/*",
+    "/fitness-trainer-*",
+    "/skuteczne-metody-wyplat-w-vavada-dla-graczy", "/skuteczne-metody-wyplat-w-vavada-dla-graczy/*",
+    "/feed", "/feed/*", "/*/feed", "/*/feed/*",
+    "/wp-content/*", "/wp-includes/*",
+    "/wp-json", "/wp-json/*",
+    "/xmlrpc.php", "/wp-login.php",
+    "/wp-admin", "/wp-admin/*"
+  ],
+  "exclude": [
+    "/wp-content/uploads/2025/03/neurological-rehabilitation-chatsworth-physical-therapy.png"
+  ]
+}

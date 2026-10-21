@@ -1,0 +1,48 @@
+# chatsworthpt.com redirects (Cloudflare Pages format: source destination code).
+# From reference/Chatsworth_Physical_Therapy_301_Map.csv, the 15 rows marked 301. Static rules first,
+# then the splat rules. Each old page URL is listed with and without its trailing slash. Every rule here
+# was tested with Wrangler 4.151.3 (pages dev) on 21 Oct 2026, together with the 410 function.
+#
+# Not expressible in this file, listed for the cutover brief instead of guessed at:
+#   /?s=*, /?p=N, /?page_id=N, /?attachment_id=N to /   (query strings are not matched by _redirects)
+#   http://chatsworthpt.com/* and http://www.* to https://chatsworthpt.com/*   (zone HTTPS and redirect settings)
+# The 11 rows marked 410 have no line here: functions/[[path]].js answers them with 410 Gone
+# (scoped by public/_routes.json); any other missing path gets the custom 404 page.
+
+# Old pages
+/book-appointment/ /contact/ 301
+/book-appointment /contact/ 301
+/cookie-policy/ /privacy-policy/ 301
+/cookie-policy /privacy-policy/ 301
+/disclaimer/ /terms-of-service/ 301
+/disclaimer /terms-of-service/ 301
+/get-a-quote/ /contact/ 301
+/get-a-quote /contact/ 301
+/blog-post-title-2/ /blog/ 301
+/blog-post-title-2 /blog/ 301
+/blog-post-title-3/ /blog/ 301
+/blog-post-title-3 /blog/ 301
+/blog-post-title-6/ /blog/ 301
+/blog-post-title-6 /blog/ 301
+/wp-content/uploads/2025/03/neurological-rehabilitation-chatsworth-physical-therapy.png /neurological-rehabilitation/ 301
+
+# Old Yoast sitemaps to the new sitemap index
+/sitemap_index.xml /sitemap-index.xml 301
+/post-sitemap.xml /sitemap-index.xml 301
+/page-sitemap.xml /sitemap-index.xml 301
+
+# The three 2020 fitness-trainer posts: slugs confirmed from the sitemap export at cutover (roadmap T-009).
+# /[slug-of-2020-fitness-trainer-post-1]/ /blog/ 301
+# /[slug-of-2020-fitness-trainer-post-2]/ /blog/ 301
+# /[slug-of-2020-fitness-trainer-post-3]/ /blog/ 301
+# The February 2026 'Windows 10 activator' spam post is a 410 row: its slug joins the GONE list in
+# functions/[[path]].js and the include list in public/_routes.json at cutover.
+# /[slug-of-the-windows-10-activator-post]/  (410, see above)
+
+# WordPress archives and pagination (splat rules)
+/category/* /blog/ 301
+/tag/* /blog/ 301
+/author/* /about-us/ 301
+/blog/page/* /blog/ 301
+/page/* /blog/ 301
+/*-sitemap.xml /sitemap-index.xml 301

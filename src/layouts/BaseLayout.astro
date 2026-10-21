@@ -1,0 +1,107 @@
+---
+// Owns the head (title, description, canonical, robots, Open Graph, geo), the header, the footer, the
+// phone sticky bar, the JSON-LD script and the one site script. Every page passes its own meta.
+import '@fontsource-variable/bricolage-grotesque/opsz.css';
+import '@fontsource-variable/inter/index.css';
+import '../styles/global.css';
+import displayFont from '@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-opsz-normal.woff2?url';
+import bodyFont from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
+import { SITE_URL, BUSINESS } from '../data/site';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import StickyBar from '../components/StickyBar.astro';
+import Schema from '../components/Schema.astro';
+import PreviewNote from '../components/PreviewNote.astro';
+import Tracking from '../components/Tracking.astro';
+
+interface Props {
+  pageId: string;
+  path: string; // '/about-us/'
+  title: string;
+  description: string;
+  noindex?: boolean;
+  canonical?: boolean; // false on the 404
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string; // '/img/...'
+  ogType?: 'website' | 'article';
+  geo?: boolean; // home and contact
+  home?: boolean;
+  section?: 'services' | null;
+  schema?: string | null; // JSON-LD @graph string; null on the 404
+  bookHref?: string; // sticky bar Book target
+  bookLabel?: string;
+}
+const {
+  pageId,
+  path,
+  title,
+  description,
+  noindex = false,
+  canonical = true,
+  ogTitle = title,
+  ogDescription = description,
+  ogImage = '/img/hero-dr-ed-treating-patient-chatsworth.webp',
+  ogType = 'website',
+  geo = false,
+  home = false,
+  section = null,
+  schema = null,
+  bookHref = '#book',
+  bookLabel = 'Book',
+} = Astro.props;
+const url = `${SITE_URL}${path}`;
+const robots = noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large';
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{title}</title>
+<meta name="description" content={description}>
+{canonical && <link rel="canonical" href={url}>}
+<meta name="robots" content={robots}>
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FFFFFF">
+<meta property="og:type" content={ogType}>
+<meta property="og:site_name" content={BUSINESS.name}>
+<meta property="og:title" content={ogTitle}>
+<meta property="og:description" content={ogDescription}>
+{canonical && <meta property="og:url" content={url}>}
+<meta property="og:image" content={`${SITE_URL}${ogImage}`}>
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+{geo && (
+  <Fragment>
+    <meta name="geo.region" content="US-CA">
+    <meta name="geo.placename" content="Chatsworth, Los Angeles">
+    <meta name="geo.position" content={`${BUSINESS.geo.latitude};${BUSINESS.geo.longitude}`}>
+    <meta name="ICBM" content={`${BUSINESS.geo.latitude}, ${BUSINESS.geo.longitude}`}>
+  </Fragment>
+)}
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href={displayFont} as="font" type="font/woff2" crossorigin>
+<link rel="preload" href={bodyFont} as="font" type="font/woff2" crossorigin>
+<slot name="head" />
+<script is:inline>document.documentElement.classList.add('js')</script>
+{schema && <Schema json={schema} />}
+<Tracking />
+</head>
+<body data-page={pageId}>
+<a class="skip" href="#top">Skip to content</a>
+<PreviewNote />
+<Header home={home} current={path} section={section} />
+<main id="top">
+<slot />
+</main>
+<Footer />
+<StickyBar page={pageId} bookHref={bookHref} bookLabel={bookLabel} />
+<slot name="end" />
+<script>
+  import '../scripts/site.ts';
+</script>
+</body>
+</html>

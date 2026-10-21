@@ -1,0 +1,42 @@
+---
+// Renders the content blocks of a section (paragraphs, lists, lead cards, images, placeholders, link rows).
+import type { Block } from '../lib/types';
+import { renderInline } from '../lib/inline';
+import PhotoPlaceholder from './PhotoPlaceholder.astro';
+interface Props {
+  blocks: Block[];
+}
+const { blocks } = Astro.props;
+const r = renderInline;
+---
+{blocks.map((b) => {
+  switch (b.type) {
+    case 'p':
+      return <p set:html={r(b.text)} />;
+    case 'h3':
+      return <h3 set:html={r(b.text)} />;
+    case 'ul':
+      return <ul>{b.items.map((it) => <li set:html={r(it)} />)}</ul>;
+    case 'ol':
+      return <ol>{b.items.map((it) => <li set:html={r(it)} />)}</ol>;
+    case 'callout':
+      return <p class="callout" set:html={r(b.text)} />;
+    case 'leads':
+      return <ul class="lead-list">{b.items.map((it) => <li><strong set:html={r(it.lead)} /><span set:html={r(it.text)} /></li>)}</ul>;
+    case 'image':
+      return (
+        <figure class="post-figure">
+          <img src={b.image.src} alt={b.image.alt} width={b.image.width} height={b.image.height} loading="lazy" decoding="async" />
+          {b.caption && <figcaption set:html={r(b.caption)} />}
+        </figure>
+      );
+    case 'placeholder':
+      return <PhotoPlaceholder label={b.label} ratio={b.ratio ?? '16/10'} />;
+    case 'links':
+      return (
+        <p class="links-row">{b.label && <span>{b.label} </span>}{b.items.map((l, i) => <Fragment>{i > 0 && ' · '}<a href={l.href}>{l.text}</a></Fragment>)}</p>
+      );
+    default:
+      return null;
+  }
+})}

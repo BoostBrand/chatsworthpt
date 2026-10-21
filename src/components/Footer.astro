@@ -1,0 +1,26 @@
+---
+// Footer per blueprint section 3: logo and NAP with the social icons, then Conditions, More services and
+// Clinic. The address string comes from site.ts so it is identical in every footer.
+import { BUSINESS } from '../data/site';
+import { FOOTER_COLUMNS } from '../lib/pages';
+import SocialIcons from './SocialIcons.astro';
+const year = new Date().getFullYear();
+---
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="/" aria-label="Chatsworth Physical Therapy home"><img src="/img/logo.svg" alt="Chatsworth Physical Therapy" width="788" height="367" loading="lazy" decoding="async"></a>
+      <div class="footer-nap">
+        <span class="footer-address">{BUSINESS.addressLine}</span>
+        <span>{BUSINESS.hoursLine}</span>
+        <a href={BUSINESS.phoneHref}>{BUSINESS.phone}</a>
+        <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a>
+      </div>
+      <SocialIcons label="Follow" />
+    </div>
+    {FOOTER_COLUMNS.map((col) => (
+      <div><h3>{col.title}</h3><ul>{col.links.map((l) => <li><a href={l.href}>{l.text}</a></li>)}</ul></div>
+    ))}
+    <div class="footer-bottom"><span>© {year} {BUSINESS.legalName}. All rights reserved.</span><span>Website by Boost Brand Marketing</span></div>
+  </div>
+</footer>

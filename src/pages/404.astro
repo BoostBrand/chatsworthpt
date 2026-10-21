@@ -1,0 +1,19 @@
+---
+// P-052: served by Cloudflare Pages for any missing path. noindex, no canonical, no JSON-LD.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { BUSINESS } from '../data/site';
+---
+<BaseLayout pageId="P-052" path="/404/" title="Page Not Found | Chatsworth Physical Therapy" description="The page you asked for is not on this site. Find every service, the conditions we treat, or call (818) 749-3205 to book an evaluation." noindex canonical={false} schema={null} bookHref="/contact/#book">
+  <section class="plain-hero" aria-labelledby="h1">
+    <div class="wrap">
+      <h1 id="h1">That page is not here</h1>
+      <p class="page-hero-lede">The page you asked for is not on this site. It may have moved when the site was rebuilt.</p>
+      <div class="hero-cta nf-links">
+        <a class="btn btn-primary" href={BUSINESS.phoneHref}>Call {BUSINESS.phone}</a>
+        <a class="btn btn-outline" href="/our-services/">All services</a>
+        <a class="btn btn-outline" href="/conditions/">Conditions</a>
+        <a class="btn btn-outline" href="/contact/">Contact</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

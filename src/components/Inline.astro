@@ -1,0 +1,13 @@
+---
+// Renders one inline string from a content file (bold, links and review markers).
+import { renderInline } from '../lib/inline';
+interface Props {
+  text: string;
+  as?: string;
+  class?: string;
+  id?: string;
+}
+const { text, as: Tag = 'span', class: cls, id } = Astro.props;
+const html = renderInline(text);
+---
+<Tag class={cls} id={id} set:html={html} />

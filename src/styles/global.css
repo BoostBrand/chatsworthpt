@@ -1,0 +1,9 @@
+/* Site stylesheet. The approved homepage CSS (draft 9) is carried over unchanged in home-draft9.css;
+   site.css adds the inner-page kit in the same tokens. Tailwind runs without preflight so the approved
+   base styles stay exactly as drafted; its utilities and the brand tokens in tailwind.config.mjs are
+   available for page-level tweaks. */
+@import './home-draft9.css';
+@import './site.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

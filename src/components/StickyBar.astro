@@ -1,0 +1,15 @@
+---
+// Phone-only sticky Call and Book bar (approved): appears once the hero buttons scroll away, hides over
+// the footer. Book goes to this page's own booking block, or to /contact/#book where a page has none.
+import { BUSINESS } from '../data/site';
+interface Props {
+  bookHref?: string;
+  bookLabel?: string;
+  page: string; // page id, for the QA gate
+}
+const { bookHref = '#book', bookLabel = 'Book', page } = Astro.props;
+---
+<div class="sticky" id="sticky" aria-hidden="true" data-page={page} data-book-label={bookLabel}>
+  <a class="btn btn-outline" href={BUSINESS.phoneHref}>Call now</a>
+  <a class="btn btn-primary" href={bookHref}>{bookLabel}</a>
+</div>

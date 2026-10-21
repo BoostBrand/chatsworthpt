@@ -1,0 +1,53 @@
+---
+// The approved booking form (homepage draft 9 fields, labels and button) behind the FORMS_ENABLED switch.
+// While the Web3Forms key is a placeholder no <form> renders: the call panel takes its place and the
+// page keeps its #book anchor. Fields: name, phone, email, what you need help with (preselected per page),
+// when works best, optional message; honeypot on; thank-you state in src/scripts/site.ts.
+import { FORMS_ENABLED, WEB3FORMS_KEY, BUSINESS } from '../../data/site';
+interface Props {
+  service?: string; // option to preselect
+  messagePrompt?: string; // placeholder in the optional message field
+  button?: string;
+  pageName: string; // used in the email subject
+}
+const { service, messagePrompt, button = 'Request my appointment', pageName } = Astro.props;
+const OPTIONS = ['Back pain', 'Sports injury', 'Before or after surgery', 'Orthopedic injury', 'Balance or fall prevention', 'Pain management', 'Pediatric physical therapy', 'Neurological rehabilitation', 'Not sure yet'];
+// A page may preselect a service the homepage list does not carry (additive; the homepage list is unchanged).
+const options = service && !OPTIONS.includes(service) ? [...OPTIONS.slice(0, -1), service, OPTIONS[OPTIONS.length - 1]] : OPTIONS;
+const WHEN = ['Any time', 'Mornings', 'Afternoons', 'Evenings after 5pm', 'Saturdays'];
+---
+{FORMS_ENABLED ? (
+  <form class="form" id="book-form" novalidate action="https://api.web3forms.com/submit" method="POST" data-web3forms>
+    <input type="hidden" name="access_key" value={WEB3FORMS_KEY}>
+    <input type="hidden" name="subject" value={`New booking request from chatsworthpt.com (${pageName})`}>
+    <input type="hidden" name="from_name" value="Chatsworth Physical Therapy website">
+    <input type="hidden" name="page" value={pageName}>
+    <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+    <div class="row">
+      <label for="f-name">Name<input id="f-name" name="name" type="text" autocomplete="name" required></label>
+      <label for="f-phone">Phone<input id="f-phone" name="phone" type="tel" autocomplete="tel" required></label>
+    </div>
+    <label for="f-email">Email<input id="f-email" name="email" type="email" autocomplete="email"></label>
+    <label for="f-service">What do you need help with?
+      <select id="f-service" name="service">
+        {options.map((o) => <option selected={service === o}>{o}</option>)}
+      </select>
+    </label>
+    <label for="f-when">When works best?
+      <select id="f-when" name="preferred_time">
+        {WHEN.map((o) => <option>{o}</option>)}
+      </select>
+    </label>
+    <label for="f-msg">Anything else we should know? <small>(optional)</small><textarea id="f-msg" name="message" rows="3" placeholder={messagePrompt}></textarea></label>
+    <button class="btn btn-primary" type="submit">{button}</button>
+    <p class="form-note">No payment is required to book.</p>
+  </form>
+) : (
+  <div class="callpanel" data-lead-gate>
+    <h3>Book by phone</h3>
+    <a class="btn btn-primary" href={BUSINESS.phoneHref} data-call-placement="lead_gate">Call {BUSINESS.phone}</a>
+    <p class="hours">{BUSINESS.hoursLine}</p>
+    <p class="small">The online booking form opens here soon. Until then, call or email <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a> and we confirm your time, usually the same day.</p>
+    <p class="form-note">No payment is required to book.</p>
+  </div>
+)}

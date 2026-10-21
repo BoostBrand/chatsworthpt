@@ -1,0 +1,9 @@
+---
+// One JSON-LD script per page, holding one @graph (built in src/lib/schema.ts).
+interface Props {
+  json: string;
+}
+const { json } = Astro.props;
+const safe = json.replace(/</g, '\\u003c');
+---
+<script type="application/ld+json" set:html={safe} />

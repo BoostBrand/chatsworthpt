@@ -1,0 +1,841 @@
+[
+  {
+    "id": "P-001",
+    "path": "/",
+    "name": "Home",
+    "full": "Home",
+    "type": "home",
+    "file": "home",
+    "parent": null,
+    "primaryKeyword": "physical therapy chatsworth",
+    "linksFrom": [],
+    "priority": "Critical"
+  },
+  {
+    "id": "P-002",
+    "path": "/about-us/",
+    "name": "About Dr. Ed",
+    "full": "About Dr. Ed",
+    "type": "about",
+    "file": "about-us",
+    "parent": "P-001",
+    "primaryKeyword": "physical therapist chatsworth",
+    "linksFrom": [
+      "P-001",
+      "P-003"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-003",
+    "path": "/our-services/",
+    "name": "Services",
+    "full": "Services hub",
+    "type": "services-hub",
+    "file": "our-services",
+    "parent": "P-001",
+    "primaryKeyword": "physical therapy services chatsworth",
+    "linksFrom": [
+      "P-001"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-004",
+    "path": "/back-pain-therapy/",
+    "name": "Back pain therapy",
+    "full": "Back pain therapy",
+    "type": "service",
+    "file": "back-pain-therapy",
+    "parent": "P-003",
+    "primaryKeyword": "back pain therapy chatsworth",
+    "linksFrom": [
+      "P-001",
+      "P-003",
+      "P-005",
+      "P-010",
+      "P-022",
+      "P-023"
+    ],
+    "priority": "Critical"
+  },
+  {
+    "id": "P-005",
+    "path": "/sports-injury-recovery/",
+    "name": "Sports injury recovery",
+    "full": "Sports injury recovery",
+    "type": "service",
+    "file": "sports-injury-recovery",
+    "parent": "P-003",
+    "primaryKeyword": "sports physical therapy chatsworth",
+    "linksFrom": [
+      "P-001",
+      "P-003",
+      "P-004",
+      "P-006",
+      "P-010",
+      "P-028",
+      "P-031"
+    ],
+    "priority": "Critical"
+  },
+  {
+    "id": "P-006",
+    "path": "/pre-post-surgical-rehabilitation/",
+    "name": "Pre and post-op physical therapy",
+    "full": "Pre and post-op physical therapy",
+    "type": "service",
+    "file": "pre-post-surgical-rehabilitation",
+    "parent": "P-003",
+    "primaryKeyword": "post op physical therapy chatsworth",
+    "linksFrom": [
+      "P-001",
+      "P-003",
+      "P-004",
+      "P-005",
+      "P-009",
+      "P-011",
+      "P-029",
+      "P-030"
+    ],
+    "priority": "Critical"
+  },
+  {
+    "id": "P-007",
+    "path": "/orthopedic-rehabilitation/",
+    "name": "Orthopedic rehabilitation",
+    "full": "Orthopedic rehabilitation",
+    "type": "service",
+    "file": "orthopedic-rehabilitation",
+    "parent": "P-003",
+    "primaryKeyword": "orthopedic rehabilitation chatsworth",
+    "linksFrom": [
+      "P-001",
+      "P-003",
+      "P-004",
+      "P-006",
+      "P-025",
+      "P-026",
+      "P-027"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-008",
+    "path": "/pain-management/",
+    "name": "Pain management",
+    "full": "Pain management",
+    "type": "service",
+    "file": "pain-management",
+    "parent": "P-003",
+    "primaryKeyword": "pain management physical therapy chatsworth",
+    "linksFrom": [
+      "P-001",
+      "P-003",
+      "P-004",
+      "P-012",
+      "P-013",
+      "P-014"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-009",
+    "path": "/balance-and-fall-prevention/",
+    "name": "Balance and fall prevention",
+    "full": "Balance and fall prevention",
+    "type": "service",
+    "file": "balance-and-fall-prevention",
+    "parent": "P-003",
+    "primaryKeyword": "fall prevention physical therapy chatsworth",
+    "linksFrom": [
+      "P-001",
+      "P-003",
+      "P-006",
+      "P-011",
+      "P-033"
+    ],
+    "priority": "Critical"
+  },
+  {
+    "id": "P-010",
+    "path": "/pediatric-physical-therapy/",
+    "name": "Pediatric physical therapy",
+    "full": "Pediatric physical therapy",
+    "type": "service",
+    "file": "pediatric-physical-therapy",
+    "parent": "P-003",
+    "primaryKeyword": "pediatric physical therapy chatsworth",
+    "linksFrom": [
+      "P-001",
+      "P-002",
+      "P-003",
+      "P-005",
+      "P-043"
+    ],
+    "priority": "Critical"
+  },
+  {
+    "id": "P-011",
+    "path": "/neurological-rehabilitation/",
+    "name": "Neurological rehabilitation",
+    "full": "Neurological rehabilitation",
+    "type": "service",
+    "file": "neurological-rehabilitation",
+    "parent": "P-003",
+    "primaryKeyword": "neurological rehabilitation chatsworth",
+    "linksFrom": [
+      "P-001",
+      "P-002",
+      "P-003",
+      "P-009",
+      "P-041"
+    ],
+    "priority": "Critical"
+  },
+  {
+    "id": "P-012",
+    "path": "/red-light-therapy/",
+    "name": "Red light therapy",
+    "full": "Red light therapy",
+    "type": "service",
+    "file": "red-light-therapy",
+    "parent": "P-003",
+    "primaryKeyword": "red light therapy chatsworth",
+    "linksFrom": [
+      "P-003",
+      "P-004",
+      "P-006",
+      "P-008",
+      "P-047"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "P-013",
+    "path": "/therapeutic-ultrasound/",
+    "name": "Therapeutic ultrasound",
+    "full": "Therapeutic ultrasound",
+    "type": "service",
+    "file": "therapeutic-ultrasound",
+    "parent": "P-003",
+    "primaryKeyword": "therapeutic ultrasound chatsworth",
+    "linksFrom": [
+      "P-003",
+      "P-006",
+      "P-008"
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "P-014",
+    "path": "/electrical-stimulation-tens-nmes/",
+    "name": "Electrical stimulation",
+    "full": "Electrical stimulation (TENS and NMES)",
+    "type": "service",
+    "file": "electrical-stimulation-tens-nmes",
+    "parent": "P-003",
+    "primaryKeyword": "electrical stimulation physical therapy",
+    "linksFrom": [
+      "P-003",
+      "P-008",
+      "P-011",
+      "P-013"
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "P-015",
+    "path": "/personal-training-weight-loss/",
+    "name": "Personal training and weight loss",
+    "full": "Personal training and weight loss",
+    "type": "service",
+    "file": "personal-training-weight-loss",
+    "parent": "P-003",
+    "primaryKeyword": "personal trainer chatsworth",
+    "linksFrom": [
+      "P-001",
+      "P-003"
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "P-016",
+    "path": "/insurance-and-cost/",
+    "name": "Insurance and cost",
+    "full": "Insurance and cost",
+    "type": "info",
+    "file": "insurance-and-cost",
+    "parent": "P-001",
+    "primaryKeyword": "physical therapy without referral",
+    "linksFrom": [
+      "P-001",
+      "P-017",
+      "P-019",
+      "P-038",
+      "P-039",
+      "P-049"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-017",
+    "path": "/first-visit/",
+    "name": "Your first visit",
+    "full": "Your first visit",
+    "type": "info",
+    "file": "first-visit",
+    "parent": "P-001",
+    "primaryKeyword": "what to expect at physical therapy",
+    "linksFrom": [
+      "P-001",
+      "P-002",
+      "P-003",
+      "P-016",
+      "P-019",
+      "P-040"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-018",
+    "path": "/reviews/",
+    "name": "Reviews",
+    "full": "Reviews",
+    "type": "info",
+    "file": "reviews",
+    "parent": "P-001",
+    "primaryKeyword": "chatsworth physical therapy reviews",
+    "linksFrom": [
+      "P-001",
+      "P-002",
+      "P-003",
+      "P-006"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "P-019",
+    "path": "/faqs/",
+    "name": "FAQs",
+    "full": "FAQs",
+    "type": "info",
+    "file": "faqs",
+    "parent": "P-001",
+    "primaryKeyword": "physical therapy faqs chatsworth",
+    "linksFrom": [
+      "P-001",
+      "P-003",
+      "P-016",
+      "P-017"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-020",
+    "path": "/contact/",
+    "name": "Contact",
+    "full": "Contact and booking",
+    "type": "contact",
+    "file": "contact",
+    "parent": "P-001",
+    "primaryKeyword": "chatsworth physical therapy address and hours",
+    "linksFrom": [
+      "P-001",
+      "P-017",
+      "P-019"
+    ],
+    "priority": "Critical"
+  },
+  {
+    "id": "P-021",
+    "path": "/conditions/",
+    "name": "Conditions",
+    "full": "Conditions we treat",
+    "type": "conditions-hub",
+    "file": "conditions",
+    "parent": "P-001",
+    "primaryKeyword": "conditions treated physical therapy chatsworth",
+    "linksFrom": [
+      "P-001",
+      "P-003"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-022",
+    "path": "/conditions/sciatica/",
+    "name": "Sciatica",
+    "full": "Sciatica",
+    "type": "condition",
+    "file": "conditions/sciatica",
+    "parent": "P-021",
+    "primaryKeyword": "sciatica physical therapy",
+    "linksFrom": [
+      "P-004",
+      "P-008",
+      "P-021",
+      "P-048"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-023",
+    "path": "/conditions/herniated-disc/",
+    "name": "Herniated disc",
+    "full": "Herniated disc",
+    "type": "condition",
+    "file": "conditions/herniated-disc",
+    "parent": "P-021",
+    "primaryKeyword": "herniated disc physical therapy",
+    "linksFrom": [
+      "P-004",
+      "P-006",
+      "P-021"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-024",
+    "path": "/conditions/neck-pain/",
+    "name": "Neck pain and pinched nerve",
+    "full": "Neck pain and pinched nerve",
+    "type": "condition",
+    "file": "conditions/neck-pain",
+    "parent": "P-021",
+    "primaryKeyword": "neck pain physical therapy",
+    "linksFrom": [
+      "P-004",
+      "P-007",
+      "P-008",
+      "P-011",
+      "P-021"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-025",
+    "path": "/conditions/shoulder-pain-rotator-cuff/",
+    "name": "Shoulder pain and rotator cuff",
+    "full": "Shoulder pain and rotator cuff",
+    "type": "condition",
+    "file": "conditions/shoulder-pain-rotator-cuff",
+    "parent": "P-021",
+    "primaryKeyword": "rotator cuff physical therapy",
+    "linksFrom": [
+      "P-005",
+      "P-007",
+      "P-021"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-026",
+    "path": "/conditions/frozen-shoulder/",
+    "name": "Frozen shoulder",
+    "full": "Frozen shoulder",
+    "type": "condition",
+    "file": "conditions/frozen-shoulder",
+    "parent": "P-021",
+    "primaryKeyword": "frozen shoulder physical therapy",
+    "linksFrom": [
+      "P-001",
+      "P-007",
+      "P-021",
+      "P-025"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-027",
+    "path": "/conditions/knee-pain/",
+    "name": "Knee pain",
+    "full": "Knee pain",
+    "type": "condition",
+    "file": "conditions/knee-pain",
+    "parent": "P-021",
+    "primaryKeyword": "knee pain physical therapy",
+    "linksFrom": [
+      "P-005",
+      "P-007",
+      "P-010",
+      "P-012",
+      "P-021"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-028",
+    "path": "/conditions/acl-recovery/",
+    "name": "ACL recovery",
+    "full": "ACL recovery",
+    "type": "condition",
+    "file": "conditions/acl-recovery",
+    "parent": "P-021",
+    "primaryKeyword": "acl physical therapy",
+    "linksFrom": [
+      "P-005",
+      "P-006",
+      "P-021",
+      "P-027",
+      "P-046"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-029",
+    "path": "/conditions/knee-replacement-recovery/",
+    "name": "Knee replacement recovery",
+    "full": "Knee replacement recovery",
+    "type": "condition",
+    "file": "conditions/knee-replacement-recovery",
+    "parent": "P-021",
+    "primaryKeyword": "knee replacement physical therapy",
+    "linksFrom": [
+      "P-006",
+      "P-014",
+      "P-021",
+      "P-027",
+      "P-044"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-030",
+    "path": "/conditions/hip-replacement-recovery/",
+    "name": "Hip replacement recovery",
+    "full": "Hip replacement recovery",
+    "type": "condition",
+    "file": "conditions/hip-replacement-recovery",
+    "parent": "P-021",
+    "primaryKeyword": "hip replacement physical therapy",
+    "linksFrom": [
+      "P-006",
+      "P-009",
+      "P-021",
+      "P-029"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "P-031",
+    "path": "/conditions/ankle-sprain/",
+    "name": "Ankle sprain",
+    "full": "Ankle sprain",
+    "type": "condition",
+    "file": "conditions/ankle-sprain",
+    "parent": "P-021",
+    "primaryKeyword": "ankle sprain rehab",
+    "linksFrom": [
+      "P-005",
+      "P-007",
+      "P-010",
+      "P-021"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-032",
+    "path": "/conditions/plantar-fasciitis/",
+    "name": "Plantar fasciitis",
+    "full": "Plantar fasciitis",
+    "type": "condition",
+    "file": "conditions/plantar-fasciitis",
+    "parent": "P-021",
+    "primaryKeyword": "plantar fasciitis physical therapy",
+    "linksFrom": [
+      "P-005",
+      "P-007",
+      "P-013",
+      "P-021",
+      "P-031"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-033",
+    "path": "/conditions/vertigo-bppv/",
+    "name": "Vertigo and BPPV",
+    "full": "Vertigo and BPPV",
+    "type": "condition",
+    "file": "conditions/vertigo-bppv",
+    "parent": "P-021",
+    "primaryKeyword": "vertigo physical therapy chatsworth",
+    "linksFrom": [
+      "P-009",
+      "P-011",
+      "P-019",
+      "P-021",
+      "P-045"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-035",
+    "path": "/physical-therapy-northridge/",
+    "name": "Physical therapy for Northridge",
+    "full": "Physical therapy for Northridge",
+    "type": "city",
+    "file": "physical-therapy-northridge",
+    "city": "Northridge",
+    "parent": "P-001",
+    "primaryKeyword": "physical therapy northridge",
+    "linksFrom": [
+      "P-001",
+      "P-020",
+      "P-036"
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "P-036",
+    "path": "/physical-therapy-porter-ranch/",
+    "name": "Physical therapy for Porter Ranch",
+    "full": "Physical therapy for Porter Ranch",
+    "type": "city",
+    "file": "physical-therapy-porter-ranch",
+    "city": "Porter Ranch",
+    "parent": "P-001",
+    "primaryKeyword": "physical therapy porter ranch",
+    "linksFrom": [
+      "P-001",
+      "P-020",
+      "P-035"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "P-037",
+    "path": "/blog/",
+    "name": "Blog",
+    "full": "Blog",
+    "type": "blog-hub",
+    "file": "blog",
+    "parent": "P-001",
+    "primaryKeyword": "physical therapy blog chatsworth",
+    "linksFrom": [
+      "P-001"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "P-038",
+    "path": "/blog/referral-for-physical-therapy-in-california/",
+    "name": "Referral for physical therapy in California",
+    "full": "Referral for physical therapy in California",
+    "type": "post",
+    "file": "blog/referral-for-physical-therapy-in-california",
+    "parent": "P-037",
+    "primaryKeyword": "do i need a referral for physical therapy in california",
+    "linksFrom": [
+      "P-016",
+      "P-037"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "P-039",
+    "path": "/blog/does-medicare-cover-physical-therapy/",
+    "name": "Does Medicare cover physical therapy?",
+    "full": "Does Medicare cover physical therapy?",
+    "type": "post",
+    "file": "blog/does-medicare-cover-physical-therapy",
+    "parent": "P-037",
+    "primaryKeyword": "does medicare cover physical therapy",
+    "linksFrom": [
+      "P-016",
+      "P-037"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "P-040",
+    "path": "/blog/what-to-expect-first-physical-therapy-visit/",
+    "name": "Your first physical therapy visit",
+    "full": "Your first physical therapy visit",
+    "type": "post",
+    "file": "blog/what-to-expect-first-physical-therapy-visit",
+    "parent": "P-037",
+    "primaryKeyword": "what to expect at physical therapy",
+    "linksFrom": [
+      "P-017",
+      "P-037"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "P-041",
+    "path": "/blog/stroke-recovery-outpatient-physical-therapy/",
+    "name": "Stroke recovery at an outpatient clinic",
+    "full": "Stroke recovery at an outpatient clinic",
+    "type": "post",
+    "file": "blog/stroke-recovery-outpatient-physical-therapy",
+    "parent": "P-037",
+    "primaryKeyword": "stroke recovery physical therapy",
+    "linksFrom": [
+      "P-011",
+      "P-037"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "P-042",
+    "path": "/blog/fall-prevention-checklist-parents-house/",
+    "name": "Fall-prevention checklist",
+    "full": "Fall-prevention checklist",
+    "type": "post",
+    "file": "blog/fall-prevention-checklist-parents-house",
+    "parent": "P-037",
+    "primaryKeyword": "fall prevention exercises for seniors",
+    "linksFrom": [
+      "P-009",
+      "P-037"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "P-043",
+    "path": "/blog/young-gymnast-back-pain/",
+    "name": "Young gymnast back pain",
+    "full": "Young gymnast back pain",
+    "type": "post",
+    "file": "blog/young-gymnast-back-pain",
+    "parent": "P-037",
+    "primaryKeyword": "gymnast back pain",
+    "linksFrom": [
+      "P-010",
+      "P-037"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "P-044",
+    "path": "/blog/knee-replacement-recovery-first-six-weeks/",
+    "name": "Knee replacement: the first six weeks",
+    "full": "Knee replacement: the first six weeks",
+    "type": "post",
+    "file": "blog/knee-replacement-recovery-first-six-weeks",
+    "parent": "P-037",
+    "primaryKeyword": "knee replacement recovery",
+    "linksFrom": [
+      "P-029",
+      "P-037"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "P-045",
+    "path": "/blog/vertigo-bppv-why-the-room-spins/",
+    "name": "Vertigo and BPPV: why the room spins",
+    "full": "Vertigo and BPPV: why the room spins",
+    "type": "post",
+    "file": "blog/vertigo-bppv-why-the-room-spins",
+    "parent": "P-037",
+    "primaryKeyword": "bppv physical therapy",
+    "linksFrom": [
+      "P-033",
+      "P-037"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "P-046",
+    "path": "/blog/return-to-sport-after-acl-surgery/",
+    "name": "Return to sport after ACL surgery",
+    "full": "Return to sport after ACL surgery",
+    "type": "post",
+    "file": "blog/return-to-sport-after-acl-surgery",
+    "parent": "P-037",
+    "primaryKeyword": "return to sport after acl",
+    "linksFrom": [
+      "P-028",
+      "P-037"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "P-047",
+    "path": "/blog/red-light-therapy-back-knee-pain/",
+    "name": "Red light therapy for back and knee pain",
+    "full": "Red light therapy for back and knee pain",
+    "type": "post",
+    "file": "blog/red-light-therapy-back-knee-pain",
+    "parent": "P-037",
+    "primaryKeyword": "red light therapy for back pain",
+    "linksFrom": [
+      "P-012",
+      "P-037"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "P-048",
+    "path": "/blog/sciatica-disc-or-hip/",
+    "name": "Sciatica: disc or hip?",
+    "full": "Sciatica: disc or hip?",
+    "type": "post",
+    "file": "blog/sciatica-disc-or-hip",
+    "parent": "P-037",
+    "primaryKeyword": "sciatica physical therapy",
+    "linksFrom": [
+      "P-022",
+      "P-037"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "P-049",
+    "path": "/blog/cash-pay-physical-therapy-chatsworth-cost/",
+    "name": "Cash-pay physical therapy cost",
+    "full": "Cash-pay physical therapy cost",
+    "type": "post",
+    "file": "blog/cash-pay-physical-therapy-chatsworth-cost",
+    "parent": "P-037",
+    "primaryKeyword": "physical therapy cost without insurance",
+    "linksFrom": [
+      "P-016",
+      "P-037"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "P-050",
+    "path": "/privacy-policy/",
+    "name": "Privacy policy",
+    "full": "Privacy policy",
+    "type": "legal",
+    "file": "privacy-policy",
+    "parent": "P-001",
+    "primaryKeyword": "(none; not a target)",
+    "linksFrom": [
+      "P-051"
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "P-051",
+    "path": "/terms-of-service/",
+    "name": "Terms of service",
+    "full": "Terms of service",
+    "type": "legal",
+    "file": "terms-of-service",
+    "parent": "P-001",
+    "primaryKeyword": "(none; not a target)",
+    "linksFrom": [
+      "P-050"
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "P-052",
+    "path": "/404",
+    "name": "Page not found",
+    "full": "Page not found",
+    "type": "404",
+    "file": "not-found",
+    "parent": "P-001",
+    "primaryKeyword": "(none; noindex)",
+    "linksFrom": [],
+    "priority": "Low"
+  }
+]

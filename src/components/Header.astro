@@ -1,0 +1,91 @@
+---
+// Sticky header (approved in draft 9). Homepage: the five in-page anchors with the sliding underline.
+// Inner pages: Services with its dropdown, Dr. Ed, Reviews, Visit, Questions; aria-current="page" on the
+// item that matches the path; a phone menu below 960px. Book goes to #book on the homepage and to
+// /contact/#book on inner pages (blueprint section 3).
+import { BUSINESS } from '../data/site';
+import { NAV_HOME, NAV_INNER, SERVICES_MENU, SERVICES_MORE, MENU_LABEL, pageById } from '../lib/pages';
+
+interface Props {
+  home?: boolean;
+  current: string; // the page path, e.g. '/back-pain-therapy/'
+  section?: 'services' | null; // service, conditions and hub pages rest the underline on Services
+}
+const { home = false, current, section = null } = Astro.props;
+const menuMain = SERVICES_MENU.map(pageById);
+const menuMore = SERVICES_MORE.map(pageById);
+const label = (p: { id: string; name: string }) => MENU_LABEL[p.id] ?? p.name;
+const cur = (href: string) => (href === current ? { 'aria-current': 'page' } : {});
+const bookHref = home ? '#book' : '/contact/#book';
+const clinicLinks = [
+  { text: 'About Dr. Ed', href: '/about-us/' },
+  { text: 'Reviews', href: '/reviews/' },
+  { text: 'Contact', href: '/contact/' },
+  { text: 'Questions', href: '/faqs/' },
+  { text: 'Your first visit', href: '/first-visit/' },
+  { text: 'Insurance and cost', href: '/insurance-and-cost/' },
+  { text: 'Blog', href: '/blog/' },
+];
+const chevron = '<svg viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+---
+<header class:list={['topbar', { 'has-mnav': !home }]}>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Chatsworth Physical Therapy home"><img src="/img/logo.svg" alt="Chatsworth Physical Therapy" width="788" height="367"></a>
+    {home ? (
+      <nav class="nav" aria-label="Main">
+        {NAV_HOME.map((n) => <a href={n.href}>{n.label}</a>)}
+        <span class="nav-ink" aria-hidden="true"></span>
+      </nav>
+    ) : (
+      <nav class="nav" aria-label="Main" data-inner>
+        <div class="nav-item">
+          <a href="/our-services/" class:list={[{ 'is-section': section === 'services' && current !== '/our-services/' }]} {...cur('/our-services/')}>Services<Fragment set:html={chevron} /></a>
+          <div class="menu-panel">
+            <ul>
+              {menuMain.map((p) => <li><a href={p.path} {...cur(p.path)}>{label(p)}</a></li>)}
+            </ul>
+            <ul>
+              <li><p class="menu-label">More</p></li>
+              {menuMore.map((p) => <li><a href={p.path} {...cur(p.path)}>{label(p)}</a></li>)}
+            </ul>
+            <div class="menu-all"><a href="/our-services/">All services</a></div>
+          </div>
+        </div>
+        {NAV_INNER.slice(1).map((n) => <a href={n.href} {...cur(n.href)}>{n.label}</a>)}
+        <span class="nav-ink" aria-hidden="true"></span>
+      </nav>
+    )}
+    <div class="top-actions">
+      <a class="top-phone" href={BUSINESS.phoneHref}>{BUSINESS.phone}<small id="open-line">Mon to Sat, 10am to 8pm</small></a>
+      <a class="btn btn-primary" href={bookHref}>Book an evaluation</a>
+      {!home && (
+        <details class="mnav">
+          <summary aria-label="Menu">
+            <svg class="i-open" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg class="i-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </summary>
+          <div class="mnav-panel">
+            <div class="wrap">
+              <div class="mnav-cols">
+                <div>
+                  <p class="mnav-group">Services</p>
+                  <ul>
+                    {[...menuMain, ...menuMore].map((p) => <li><a href={p.path} {...cur(p.path)}>{label(p)}</a></li>)}
+                    <li><a href="/our-services/" {...cur('/our-services/')}>All services</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="mnav-group">Clinic</p>
+                  <ul>
+                    {clinicLinks.map((l) => <li><a href={l.href} {...cur(l.href)}>{l.text}</a></li>)}
+                  </ul>
+                </div>
+              </div>
+              <a class="btn btn-outline" href={BUSINESS.phoneHref}>Call {BUSINESS.phone}</a>
+            </div>
+          </div>
+        </details>
+      )}
+    </div>
+  </div>
+</header>
