@@ -318,6 +318,19 @@ build lead fetched on 21 Oct 2026:
   disability lower than placebo; not recommended in major guidelines). Every study is on low-level laser therapy, so
   the post says so and calls the findings a guide to the field, not a promise about one machine. The marker
   "[CONFIRM minutes per application and frequency]" stays visible.
+- P-049 cash-pay cost and the superbill (910 words). Sources, re-fetched by the build lead with control phrases:
+  HealthCare.gov glossary entries for PPO, non-preferred provider, out-of-network coinsurance and allowed amount. No
+  dollar figure; "Call (818) 749-3205 for the current rate. [CONFIRM publishing it]" in the answer and the cost
+  section. The worked superbill example is steps with no amounts. The post never says whether the clinic is in or out
+  of any network and never promises what a plan pays back. The copay comparison is left out: it needs the clinic's
+  own numbers.
+- P-048 sciatica, disc or hip (916 words). Sources, re-fetched by the build lead with control phrases: MedlinePlus
+  "Sciatica" (definition, nerve path, other causes, the signs to contact a provider right away), AAOS OrthoInfo
+  "Sciatica" (broad term, nerve root compression, the doctor's exam), NINDS "Piriformis Syndrome" and StatPearls
+  "Sciatica" (a disc is the most common cause; the piriformis can cause sciatica symptoms; a clinical diagnosis).
+  Build lead edits: the hip paragraph now carries NINDS's own words that piriformis syndrome is "a rare disorder"
+  (left out, the post read as if the hip cause were as common as the disc); "The clinic's approach comes down to one
+  line" now reads "Dr. Ed's treatment aims at".
 
 ### Open questions from Batch F (so far)
 
@@ -333,6 +346,10 @@ For Vlad:
    ("the first six weeks ... decide your range of motion for years"); no source says it. Suggested: "What the first
    six weeks after a knee replacement involve, from your surgeon's rules to the home work. Dr. Ed Shut, DPT in
    Chatsworth explains." (143 characters).
+5. P-049's blueprint meta description promises "what a cash-pay physical therapy visit costs", that a superbill "gets
+   you reimbursed" and "when paying direct is simpler"; the post can give none of the three until the rate is
+   published. Suggested: "Cash-pay physical therapy in Chatsworth: how to get the current rate, how a PPO
+   superbill works, and what to ask your insurer. By Dr. Ed." (137 characters).
 
 For Dr. Ed:
 - Medicare Advantage: are Advantage plans accepted? The site says only "Medicare".
@@ -345,3 +362,6 @@ For Dr. Ed:
 - P-043: whether he wants a line on when he sends a child to a doctor for imaging first.
 - P-047: which red light device he uses (laser or LED panel, and the wavelength). The studies cited are all on
   low-level laser therapy; if his device is an LED panel, the post's caveat matters more.
+- P-048: his approved line says sciatica is "usually a disc or a tight muscle in the hip"; NINDS calls piriformis
+  syndrome rare. He may want to word the hip side his own way.
+- P-049: whether to publish the cash rate; whether the clinic is in network with any plan.

@@ -104,6 +104,7 @@ const page: PageContent = {
   related: [
     { text: 'Pain management', href: '/pain-management/' },
     { text: 'Pre and post-op physical therapy', href: '/pre-post-surgical-rehabilitation/' },
+    { text: 'Red light therapy for back and knee pain', href: '/blog/red-light-therapy-back-knee-pain/' },
     { text: 'All services', href: '/our-services/' },
   ],
   schema: { serviceType: 'Red light therapy' },
