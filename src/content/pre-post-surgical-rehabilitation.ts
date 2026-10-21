@@ -188,6 +188,10 @@ const page: PageContent = {
     {
       "text": "Balance and fall prevention",
       "href": "/balance-and-fall-prevention/"
+    },
+    {
+      "text": "Herniated disc",
+      "href": "/conditions/herniated-disc/"
     }
   ],
   "schema": {

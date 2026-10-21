@@ -126,6 +126,7 @@ const page: PageContent = {
     { text: 'All services', href: '/our-services/' },
     { text: 'Pre and post-op physical therapy', href: '/pre-post-surgical-rehabilitation/' },
     { text: 'Sports injury recovery', href: '/sports-injury-recovery/' },
+    { text: 'Neck pain and pinched nerve', href: '/conditions/neck-pain/' },
   ],
   schema: { serviceType: 'Orthopedic rehabilitation' },
   notes: [

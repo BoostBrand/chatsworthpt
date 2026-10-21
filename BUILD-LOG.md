@@ -202,3 +202,55 @@ For Dr. Ed:
 - First visit and FAQs: the restroom line comes from the blueprint; confirm.
 - Shockwave, pelvic floor and hand therapy: one highlighted line on the FAQs page asks patients to call; nothing says
   offered or not offered.
+
+## Batch D: the conditions layer (21 Oct)
+
+Pages: P-021 /conditions/ (hub) and the twelve conditions pages: P-022 sciatica, P-023 herniated disc, P-024 neck
+pain and pinched nerve, P-025 shoulder pain and rotator cuff, P-026 frozen shoulder, P-027 knee pain, P-028 ACL
+recovery, P-029 knee replacement recovery, P-030 hip replacement recovery, P-031 ankle sprain, P-032 plantar
+fasciitis, P-033 vertigo and BPPV. Each carries MedicalCondition markup, the site-wide lines, its parent service's
+booking option, and the review the blueprint assigns (David, Linda, Matthew S, Melissa); the others carry none, and
+ACL, hip replacement and ankle sprain link to the review on the page that owns it instead of reprinting it.
+
+Build lead edits after review: frozen shoulder now names AAOS OrthoInfo beside the three stages (re-fetched 21 Oct
+2026, wording matches); knee replacement no longer says in the body that "the first six weeks decide your range of
+motion for years" and ankle sprain no longer says "an ankle sprained twice will sprain again" (both categorical
+claims with no source on hand; ankle sprain now uses the approved sports page line); neck pain's parent link reads
+"Back pain therapy". Three inbound links the architecture CSV requires were missing and are now related links: pre
+and post-op to herniated disc, balance and fall prevention to hip replacement recovery (both approved pages: a related
+link only, no copy changed), orthopedic to neck pain.
+
+Outside sources on conditions pages, each re-fetched by the build lead: AAOS OrthoInfo frozen shoulder page (stages);
+Cleveland Clinic hip abductors page (hip replacement); APTA ChoosePT BPPV guide (vertigo).
+
+## Batch E: the city pages (21 Oct)
+
+Pages: P-035 /physical-therapy-northridge/ and P-036 /physical-therapy-porter-ranch/, built with noindex, out of the
+sitemap and linked from nowhere while CITY_PAGES_LIVE is false (links to them inside copy print as plain text until
+the switch flips). Their proof is almost all [CONFIRM] or [verify] markers, as the blueprint says: if Dr. Ed has no
+Northridge or Porter Ranch patients to name, the blueprint's own test says these pages do not go live.
+
+Porter Ranch check at build time (Google places search, 21 Oct 2026): no listing typed as a physical therapy clinic
+carries a Porter Ranch address; the nearest list Northridge addresses in 91326, and the one Porter Ranch address
+found is an orthopedic doctors' clinic. The page says only that we could not find one, with a [verify] marker.
+
+Counts after Batches D and E (38 pages built of 51): every hard gate passes; JSON-LD 37 of 37 parse; sitemap 33 URLs;
+noindex 5 (404, two legal placeholders, two city pages); [CONFIRM and verify markers 37; PHOTO placeholders 14; 88
+links still point at the blog (not built yet). Renders 76 of 76 clean; accessibility check 0 failures on 38 pages.
+
+### Open questions from Batches D and E
+
+For Vlad:
+1. Three more blueprint meta descriptions say more than the pages can back up: knee replacement ("the first six
+   weeks decide your range of motion for years"), ankle sprain ("an ankle sprained twice will sprain again"), and
+   Porter Ranch ("Porter Ranch has no physical therapy clinic of its own"; we could only confirm none with a Porter
+   Ranch address). Suggest softening (one edit each, title and description are blueprint fields).
+2. Northridge route: the blueprint says "Nordhoff Street west to Corbin, left on Nordhoff Place", but the approved
+   homepage puts the clinic just north of Nordhoff Street, which would be a right turn heading west. Marked [verify].
+
+For Dr. Ed:
+- Knee replacement: the bend and straighten targets he states, if any. Hip replacement: his wording on precautions by
+  surgical approach.
+- Northridge and Porter Ranch: which reviewers live there; CSUN, Northridge Hospital, school or club ties; routes and
+  drive times; whether he wants the comparison with group clinics.
+- Plantar fasciitis: whether he supplies or fits orthotics (the page only says the evaluation decides).

@@ -186,6 +186,10 @@ const page: PageContent = {
       "href": "/pre-post-surgical-rehabilitation/"
     },
     {
+      "text": "Hip replacement recovery",
+      "href": "/conditions/hip-replacement-recovery/"
+    },
+    {
       "text": "A fall-prevention checklist for your parent's house",
       "href": "/blog/fall-prevention-checklist-parents-house/"
     }
