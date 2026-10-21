@@ -5,6 +5,7 @@ import { crumbsFor } from './pages';
 import { getReview, quoteFor } from './reviews';
 import { breadcrumbNode, faqNode, serviceNode, reviewNode, physiotherapyNode, personNode, itemListNode, abs, CLINIC_ID, PERSON_ID } from './schema';
 import { BUSINESS } from '../data/site';
+import { POSTS } from './posts';
 
 type Node = Record<string, unknown>;
 
@@ -13,9 +14,11 @@ export function faqsOf(sections: Section[]): FaqItem[] {
 }
 
 export function reviewsOf(sections: Section[]): Node[] {
-  return sections
-    .filter((s): s is Extract<Section, { kind: 'review' }> => s.kind === 'review')
-    .map((s) => reviewNode(getReview(s.review.key).displayName, quoteFor(s.review)));
+  // Every review shown on the page, in page order: the one review block, the video's review, the groups.
+  const refs = sections.flatMap((s) =>
+    s.kind === 'review' || s.kind === 'video' ? [s.review] : s.kind === 'reviews' ? s.groups.flatMap((g) => g.items) : [],
+  );
+  return refs.map((ref) => reviewNode(getReview(ref.key).displayName, quoteFor(ref)));
 }
 
 const CLINIC_REF = { '@id': CLINIC_ID, name: BUSINESS.name };
@@ -59,6 +62,16 @@ export function graphFor(page: PageContent, meta: PageMeta, extra: Node[] = []):
       break;
     default:
       reviews.forEach((r) => nodes.push({ ...r, itemReviewed: CLINIC_REF }));
+  }
+  // The blog hub is a CollectionPage whose ItemList is every post, newest first.
+  if (meta.type === 'blog-hub') {
+    nodes.push({ '@type': 'CollectionPage', '@id': `${abs(meta.path)}#page`, name: page.hero.h1, url: abs(meta.path), description: page.description, isPartOf: { '@id': abs('/') + '#website' } });
+    if (POSTS.length) nodes.push(itemListNode('Blog posts', POSTS.map((p) => ({ name: p.h1, path: p.path }))));
+  }
+  // Hubs list their children: an ItemList built from the cards on the page, in page order.
+  if (meta.type.endsWith('-hub') && meta.type !== 'blog-hub') {
+    const cards = page.sections.flatMap((s) => (s.kind === 'cards' ? [...(s.cards ?? []), ...(s.groups ?? []).flatMap((g) => g.cards)] : []));
+    if (cards.length) nodes.push(itemListNode(meta.full, cards.map((c) => ({ name: c.title, path: c.href }))));
   }
   if (faqs.length) nodes.push(faqNode(faqs));
   nodes.push(...extra);

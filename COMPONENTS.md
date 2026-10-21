@@ -28,7 +28,7 @@ Nested pages import with one more `../` (`src/pages/conditions/sciatica.astro` i
 | Template | Use for | JSON-LD it builds |
 |---|---|---|
 | `ServicePage` | the 12 service pages | Service (with the page's Review), FAQPage, BreadcrumbList |
-| `InfoPage` | About, the hubs, insurance, first visit, reviews, FAQs | Review (itemReviewed the clinic, or Dr. Ed on About), FAQPage if any, BreadcrumbList; Person on About; Physiotherapy on contact |
+| `InfoPage` | About, the hubs, insurance, first visit, reviews, FAQs, contact | Review (itemReviewed the clinic, or Dr. Ed on About), FAQPage if any, BreadcrumbList; Person on About; Physiotherapy on contact; on a hub an ItemList built from its cards, in order |
 | `ConditionPage` | the 12 pages under /conditions/ | MedicalCondition, Review if shown, FAQPage, BreadcrumbList |
 | `CityPage` | Northridge, Porter Ranch | Service with areaServed the city, FAQPage, BreadcrumbList; noindex while CITY_PAGES_LIVE is false |
 | `BlogPostPage` | the 12 posts (`post` prop, PostContent) | BlogPosting, FAQPage if the post has FAQs, BreadcrumbList |
@@ -58,6 +58,27 @@ export default page;
 
 A content file holds data only: no runtime imports, no functions, `import type` only.
 
+A fuller example of the section shapes (the text here is filler, never copy it):
+
+```ts
+  sections: [
+    { kind: 'who', h2: 'Who this is for', items: [
+      { lead: 'A shoulder that will not lift.', text: 'One or two plain sentences on that situation.' },
+    ] },
+    { kind: 'prose', h2: 'What treatment looks like with Dr. Ed', blocks: [
+      { type: 'p', text: 'Paragraph with a [link to a page](/conditions/knee-pain/).' },
+      { type: 'ul', items: ['First item.', 'Second item.'] },
+    ] },
+    { kind: 'conditions', h2: 'Joints and injuries treated', items: [
+      { text: 'Shoulder: rotator cuff, impingement', href: '/conditions/shoulder-pain-rotator-cuff/' },
+      { text: 'A condition with no page of its own' },
+    ] },
+    { kind: 'review', review: { key: 'michael-l', context: 'severe neck and shoulder pain' } },
+    { kind: 'insurance' },
+    { kind: 'faq', h2: 'Common questions', items: [{ q: 'Do I need a referral?', a: 'Two to four plain sentences.' }] },
+  ],
+```
+
 ### Inline text (every string you write)
 - `**bold**`, `[anchor text](/path/)` (internal paths end with a slash; `/contact/#book` is fine),
   `[CONFIRM ...]`, `[verify: ...]`, `[SOURCE NEEDED: what it must show]`. Nothing else, no HTML.
@@ -76,7 +97,12 @@ A content file holds data only: no runtime imports, no functions, `import type` 
 | `faq` | FAQ | `h2`, `items: {q, a}[]` | feeds FAQPage JSON-LD automatically; `a` may be a string or an array of paragraphs |
 | `cards` | Cards | `h2`, `intro?`, `cards` or `groups: {title, cards}[]`, `columns?` | hubs only: `{title, href, text, meta?, image? \| placeholder?}` |
 | `steps` | Steps | `h2`, `intro?`, `steps: {title, text}[]` | a real sequence only (the first visit) |
-| `custom` | page file markup | `id`, `h2?` | rendered from a named slot on the page file (`<Fragment slot="map">`); used by contact and reviews only |
+| `credentials` | Credentials | `h2`, `intro?`, `items?`, `blocks?`, `tone?` | About only: the credential lines with check marks beside the framed diploma and license (the homepage frames); without `items` it prints the homepage's four approved lines |
+| `social` | Social | `h2`, `text?`, `label?` | About only: the four social profiles as icon buttons |
+| `reviews` | ReviewGroups | `h2`, `intro?`, `groups: {title, intro?, items: {key, context?, sentences?, href?, linkText?}[]}[]` | Reviews page only: every usable review as a card, grouped; `href`/`linkText` link a card to its service or conditions page |
+| `video` | VideoStory | `h2`, `intro?`, `review: {key, context?}`, `note?` | Reviews page only: Matt's clip (same file as the homepage) with his review beside it |
+| `visit` | Visit | `h2`, `intro?`, `blocks?` | Contact only: the approved facts table (address, hours, phone, email, access), your extra lines as `blocks`, and the approved map with Get directions and Call |
+| `custom` | page file markup | `id`, `h2?` | rendered from a named slot on the page file (`<Fragment slot="x">`); avoid unless the build lead asks |
 
 Blocks inside `prose` and `insurance`: `{type:'p', text}`, `{type:'ul', items}`, `{type:'ol', items}`,
 `{type:'h3', text}`, `{type:'callout', text}`, `{type:'leads', items:[{lead,text}]}`,
@@ -87,8 +113,17 @@ Blocks inside `prose` and `insurance`: `{type:'p', text}`, `{type:'ul', items}`,
 `{ h1, lede, image? | placeholder?, book?: string | false, call?: boolean, stars?: boolean, callFirst?: boolean }`.
 `book` is the first-person button label (default "Book my evaluation") and goes to the page's own `#book`.
 `stars` prints "5.0 on Google, 28 reviews" once. `callFirst` leads with the call button (cost and FAQ pages).
+`actions: [{text, href, style?: 'light' | 'ghost'}]` replaces the Book and call buttons (the Reviews page's
+"Leave a review" and "Read all on Google"). The contact page (type contact) gets its own hero automatically: the
+H1, the phone number first with "Dr. Ed answers his own phone.", your `lede`, the address and hours, and the
+booking form beside it with the #book anchor; set `booking: false` on the contact page (the form is in the hero).
 Images: only files in `public/img` (list below), with `width`, `height` and alt text a blind patient would want.
 No real photo: `placeholder: 'PHOTO: <the entry's photo description>, to be shot'`. Never stock, never generated.
+
+### Review
+`{ kind: 'review', review: { key, context } }`: `key` from src/data/reviews.json; `context` is a short label of the
+reviewer's situation taken from the review itself (for example "after hip replacement"), shown as
+"Name, context, Google review, Month Year". Never type the quote; the template prints the CSV text.
 
 ### Booking
 `{ h2, lead, service, messagePrompt?, button? }`. `service` preselects the form option; use one of:

@@ -170,7 +170,7 @@
 .booking .book-address{color:rgba(255,255,255,.82);font-size:.98rem;line-height:1.5}
 .booking .book-address strong{color:#fff;font-weight:600}
 .callpanel{background:var(--white);color:var(--text);border-radius:var(--radius);padding:1.6rem;display:grid;gap:1rem;align-content:start}
-.callpanel h3{color:var(--navy);font-size:1.4rem}
+.callpanel h3,.callpanel .callpanel-title{color:var(--navy);font-size:1.4rem}
 .callpanel .btn{width:100%;font-size:1.1rem}
 .callpanel .small{color:var(--muted);font-size:.95rem}
 .callpanel .hours{font-weight:600}
@@ -281,3 +281,35 @@
 .conditions a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-decoration-thickness:1.5px;text-underline-offset:3px;transition:color .15s ease,text-decoration-color .15s ease}
 .conditions a:hover{color:var(--navy);text-decoration-color:var(--blue)}
 .service-area a{color:inherit;font-weight:600}
+.prose-line{max-width:62ch;margin:0 0 .4rem;color:var(--muted)}
+
+/* Contact: phone first in the hero, the form (or the call panel) beside it */
+.contact-phone{display:grid;gap:.35rem;margin:.2rem 0 .1rem}
+.contact-phone a{color:#fff;font-family:var(--font-display);font-weight:700;font-size:clamp(2rem,4.4vw,2.9rem);line-height:1;letter-spacing:-0.02em;text-decoration:none;width:fit-content;border-bottom:3px solid rgba(155,220,245,.55);padding-bottom:.15rem;transition:border-color .15s ease}
+.contact-phone a:hover{border-color:#fff}
+.contact-phone span{color:rgba(255,255,255,.88);font-weight:500}
+.contact-meta{color:rgba(255,255,255,.8);font-size:.98rem;line-height:1.5}
+.contact-book .callpanel,.contact-book .form{box-shadow:0 24px 48px rgba(0,22,32,.35)}
+.contact-hero .page-hero-grid{align-items:start}
+@media (min-width:960px){.contact-hero .page-hero-grid{grid-template-columns:6fr 5fr}}
+
+/* Contact: facts table and the map side by side */
+.visit-grid{display:grid;gap:2.5rem}
+.visit-lines{margin-top:1.4rem}
+@media (min-width:960px){.visit-grid{grid-template-columns:1fr 1fr;gap:4rem;align-items:start}}
+
+/* Reviews page: groups of cards */
+.review-group{margin-top:2.2rem}
+.review-group:first-of-type{margin-top:.6rem}
+.review-group .group-intro{color:var(--muted);margin:-.3rem 0 1rem;max-width:62ch}
+.review-groups .cards{display:grid;gap:1.25rem}
+@media (min-width:760px){.review-groups .cards{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1100px){.review-groups .cards{grid-template-columns:repeat(3,1fr)}}
+.review-link{display:inline-block;margin-top:.35rem;font-weight:600;color:var(--navy);text-decoration:underline;text-decoration-color:var(--blue);text-decoration-thickness:2px;text-underline-offset:3px}
+.post-list small{display:flex;flex-wrap:wrap;align-items:center;gap:.25rem;color:var(--muted);font-size:.9rem}
+.post-list small .tag{color:var(--navy)}
+/* Links inside the navy hero copy read as white, underlined */
+.page-hero-lede a,.contact-meta a{color:#fff;font-weight:600;text-decoration:underline;text-decoration-color:rgba(155,220,245,.7);text-decoration-thickness:2px;text-underline-offset:3px}
+.page-hero-lede a:hover,.contact-meta a:hover{text-decoration-color:#fff}
+/* Footer column titles are h2 (page-level landmarks, so pages with no other h2 skip no level) styled as the draft 9 h3 */
+.footer h2.foot-h{font-size:1rem;margin-bottom:.8rem;color:var(--text);letter-spacing:-0.01em}

@@ -1,5 +1,8 @@
 // Renders the four inline marks used in content files (see src/lib/types.ts) to safe HTML.
-import { PREVIEW } from '../data/site';
+import { PREVIEW, CITY_PAGES_LIVE } from '../data/site';
+
+// The two city pages stay unlinked until CITY_PAGES_LIVE is true: a link to one renders as plain text.
+const CITY_PATHS = ['/physical-therapy-northridge/', '/physical-therapy-porter-ranch/'];
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -16,6 +19,7 @@ export function renderInline(text: string): string {
     return `<mark class="${cls}">[${tag}${rest}]</mark>`;
   });
   out = out.replace(LINK, (_m, label: string, href: string) => {
+    if (!CITY_PAGES_LIVE && CITY_PATHS.includes(href.split('#')[0])) return label;
     const external = /^https?:\/\//.test(href);
     const attrs = external ? ' target="_blank" rel="noopener"' : '';
     return `<a href="${href}"${attrs}>${label}</a>`;
@@ -29,9 +33,16 @@ export function renderInline(text: string): string {
   return out;
 }
 
-// Plain text for JSON-LD and meta: marks removed, link text kept, markers kept as written.
+// Plain text for JSON-LD and meta: marks removed, link text kept. Markers ([CONFIRM ...] and the rest) are
+// dropped so a pending fact never reaches structured data; the page itself still shows them while PREVIEW is on.
 export function plainInline(text: string): string {
-  return text.replace(LINK, '$1').replace(BOLD, '$1');
+  return text
+    .replace(MARKER, '')
+    .replace(LINK, '$1')
+    .replace(BOLD, '$1')
+    .replace(/\s+([.,;:])/g, '$1')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
 }
 
 export function slugify(s: string): string {

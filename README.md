@@ -12,8 +12,18 @@ Cloudflare Pages: build command `npm run build`, output directory `dist`, Node 2
 - `reference/`: read-only copies of the Project documents the build is made from.
 - `scripts/`: data generation, the homepage port, the gates and the renders.
 
-## Checks
-- `npm run build`, then `python3 -I scripts/gates.py` (every count from `dist`), then
-  `python3 -I scripts/render.py` (390 and 1440 in headless Chromium; `--shots` saves screenshots to dist-preview/).
+## Checks (all count from `dist` after `npm run build`)
+- `npm run gates`: the brief's section 7 gate table, with the expected value beside each count.
+- `npm run check`: validates the content files (fields against the blueprint entry, lengths, links, reviews, markers).
+- `npm run entries`: each built page against its blueprint entry (links out, review shown, sections, words).
+- `npm run render -- --shots / /contact/`: 390 and 1440 renders in headless Chromium, screenshots in dist-preview/.
+- `npm run a11y`: contrast, alt text, link and button names, form labels, skip link, heading order.
+- `npm run perf -- / /back-pain-therapy/`: page weight and throttled mobile LCP and CLS (`--fast` for fast 4G).
+- `npm run export > COPY-EXPORT.md`: every page's copy, generated from the content files, for review.
+
+## Build notes
+- `BUILD-LOG.md`: what was built when, the counts and the open questions (also in the Claude Project).
+- `reference/entries/`: one blueprint entry per page; `reference/subagent/`: the rules and decision sheets the page
+  builders worked from.
 
 Nothing here deploys anything. Publishing, DNS, Search Console and the Google listing stay with Vlad.

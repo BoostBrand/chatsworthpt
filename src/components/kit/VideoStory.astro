@@ -1,0 +1,39 @@
+---
+// VideoStory (Reviews page): Matt's 42-second clip, the same file and poster as the homepage, with his
+// Google review printed from the reviews CSV beside it. Uses the homepage player script (ids story-video
+// and story-play), so it may appear once per page.
+import type { ReviewRef } from '../../lib/types';
+import { getReview, quoteFor } from '../../lib/reviews';
+import { slugify } from '../../lib/inline';
+import Inline from '../Inline.astro';
+import SectionHead from './SectionHead.astro';
+interface Props {
+  h2: string;
+  intro?: string;
+  review: ReviewRef;
+  note?: string;
+  id?: string;
+}
+const { h2, intro, review, note, id } = Astro.props;
+const hid = 'h-' + (id ?? slugify(h2));
+const r = getReview(review.key);
+---
+<section class="sec tone-white" id={id} aria-labelledby={hid}>
+  <div class="wrap">
+    <SectionHead h2={h2} id={hid} intro={intro} />
+    <div class="story">
+      <div class="phone">
+        <video id="story-video" preload="none" playsinline poster="/img/matt-and-dr-ed-chatsworth-pt.webp" width="720" height="1280" aria-label="Matt's frozen shoulder story, 42 seconds, captions on screen">
+          <source src="/video/matt-frozen-shoulder-story-chatsworth-pt.mp4" type="video/mp4" />
+        </video>
+        <button class="play" id="story-play" type="button" aria-label="Play Matt's story"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor" /></svg><span>Watch Matt's story, 42 seconds</span></button>
+      </div>
+      <div class="story-copy" data-review={r.key}>
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <p class="story-quote">"{quoteFor(review)}"</p>
+        <p class="story-cite"><strong>{r.displayName}</strong>{review.context ? `, ${review.context}` : ''}, Google review, {r.month}</p>
+        {note && <Inline as="p" class="story-note" text={note} />}
+      </div>
+    </div>
+  </div>
+</section>

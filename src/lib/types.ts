@@ -46,6 +46,12 @@ export interface ReviewRef {
   sentences?: [number, number]; // optional cut: first and last sentence index to show (0-based, inclusive). Whole sentences only.
 }
 
+export interface ReviewGroup {
+  title: string; // what brought the patients in, e.g. 'Back pain'
+  intro?: Inline;
+  items: (ReviewRef & { href?: string; linkText?: string })[]; // href: the service or conditions page it belongs to
+}
+
 export interface Card {
   title: string;
   href: string;
@@ -64,7 +70,13 @@ export type Section =
   | { kind: 'faq'; id?: string; h2: Inline; items: FaqItem[] }
   | { kind: 'cards'; id?: string; h2: Inline; intro?: Inline; cards: Card[]; groups?: { title: string; cards: Card[] }[]; outro?: Inline; columns?: 2 | 3; tone?: 'white' | 'sky' }
   | { kind: 'steps'; id?: string; h2: Inline; intro?: Inline; steps: { title: Inline; text: Inline }[]; outro?: Inline }
-  | { kind: 'custom'; id: string; h2?: Inline }; // rendered by the page file itself (contact map, reviews list, credentials)
+  | { kind: 'credentials'; id?: string; h2: Inline; intro?: Inline; items?: Inline[]; blocks?: Block[]; tone?: 'white' | 'sky' } // About: lines plus the framed diploma and license
+  | { kind: 'social'; id?: string; h2: Inline; text?: Inline; label?: string } // About: the four social profiles
+  | { kind: 'reviews'; id?: string; h2: Inline; intro?: Inline; groups: ReviewGroup[] } // Reviews page: every review, grouped
+  | { kind: 'video'; id?: string; h2: Inline; intro?: Inline; review: ReviewRef; note?: Inline } // Reviews page: Matt's clip with his review
+  | { kind: 'visit'; id?: string; h2: Inline; intro?: Inline; blocks?: Block[] } // Contact: facts table, page lines, the map
+  | { kind: 'posts'; id?: string; h2: Inline; intro?: Inline } // Blog hub: every post, newest first, from src/content/blog
+  | { kind: 'custom'; id: string; h2?: Inline }; // rendered by the page file itself
 
 export interface Hero {
   h1: string;
@@ -75,6 +87,7 @@ export interface Hero {
   call?: boolean; // show the desktop "Or call (818) 749-3205" button (default true)
   stars?: boolean; // the "5.0 on Google, 28 reviews" line (default true)
   callFirst?: boolean; // cost and contact pages lead with the call button
+  actions?: { text: string; href: string; style?: 'light' | 'ghost' }[]; // replaces the Book and call buttons (Reviews page)
 }
 
 export interface Booking {

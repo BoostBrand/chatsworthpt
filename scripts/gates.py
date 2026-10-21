@@ -39,6 +39,7 @@ class Page(HTMLParser):
         self.title = ''
         self.ld = []
         self.ids = set()
+        self.dup_ids = []
         self.text = []
         self.footer_address = []
         self.sticky = None
@@ -57,6 +58,8 @@ class Page(HTMLParser):
         a = dict(attrs)
         cls = (a.get('class') or '').split()
         if 'id' in a:
+            if a['id'] in self.ids:
+                self.dup_ids.append(a['id'])
             self.ids.add(a['id'])
         self._stack.append((tag, cls))
         for k in ('script', 'style', 'title', 'nav', 'footer', 'main', 'h1'):
@@ -226,8 +229,11 @@ def main():
             if not target.exists():
                 missing_imgs.append((p, src))
     gate('Images referenced by src or srcset that do not exist in dist', len(missing_imgs), 0, 0, detail=missing_imgs)
+    dups = {p: g.dup_ids for p, g in parsed.items() if g.dup_ids}
+    gate('Duplicate id attributes on a page', sum(len(v) for v in dups.values()), 0, 0, detail=dups)
     gate('PHOTO: placeholders (elements, not a gate)', sum(g.ph for g in parsed.values()), None, 'reported', hard=False, detail={p: g.ph for p, g in parsed.items() if g.ph})
-    marks = {p: g.marks + g.legal_ph for p, g in parsed.items() if g.marks or g.legal_ph}
+    # The legal placeholder paragraph holds its own [CONFIRM] mark, so it is counted once.
+    marks = {p: max(g.marks, g.legal_ph) for p, g in parsed.items() if g.marks or g.legal_ph}
     gate('[CONFIRM markers rendered (not a gate while PREVIEW is true)', sum(marks.values()), None if PREVIEW else 0, '0 with PREVIEW false before launch', hard=not PREVIEW, detail=marks)
     titles = {p: g.title.strip() for p, g in parsed.items()}
     descs = {p: g.meta.get('description', '') for p, g in parsed.items()}

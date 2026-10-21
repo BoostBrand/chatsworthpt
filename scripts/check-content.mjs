@@ -125,7 +125,8 @@ async function check(file, use) {
   return { file: relative(ROOT, file), errors, warns, words };
 }
 
-const files = process.argv.slice(2).length ? process.argv.slice(2) : contentFiles();
+// home.ts is the approved homepage's data (a different shape, checked by the gates instead), so it is skipped.
+const files = (process.argv.slice(2).length ? process.argv.slice(2) : contentFiles()).filter((f) => !f.endsWith('home.ts'));
 const use = await reviewUse();
 let failed = 0;
 for (const f of files) {

@@ -4,6 +4,7 @@
 // Type templates render the page file's named slots (one per 'custom' section id, plus "hero") and pass them in.
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../kit/PageHero.astro';
+import ContactHero from '../kit/ContactHero.astro';
 import Sections from '../kit/Sections.astro';
 import BookingBlock from '../kit/BookingBlock.astro';
 import RelatedLinks from '../kit/RelatedLinks.astro';
@@ -24,11 +25,12 @@ if (meta.path !== content.path) throw new Error(`${content.id}: content path ${c
 const crumbs = crumbsFor(meta);
 const schema = graph(graphFor(content, meta, extraSchema));
 const booking = content.booking || null;
+const isContact = meta.type === 'contact';
 const section = ['service', 'services-hub', 'conditions-hub', 'condition'].includes(meta.type) ? 'services' : null;
 const ogImage = content.ogImage ?? content.hero.image?.src;
 ---
-<BaseLayout pageId={meta.id} path={meta.path} title={content.title} description={content.description} noindex={isNoindex(meta)} ogImage={ogImage} section={section} schema={schema} geo={meta.type === 'contact'} bookHref={booking ? '#book' : '/contact/#book'}>
-  {heroHtml ? <Fragment set:html={heroHtml} /> : <PageHero hero={content.hero} crumbs={crumbs} hasBooking={Boolean(booking)} />}
+<BaseLayout pageId={meta.id} path={meta.path} title={content.title} description={content.description} noindex={isNoindex(meta)} ogImage={ogImage} section={section} schema={schema} geo={meta.type === 'contact'} bookHref={booking || isContact ? '#book' : '/contact/#book'}>
+  {heroHtml ? <Fragment set:html={heroHtml} /> : isContact ? <ContactHero hero={content.hero} crumbs={crumbs} pageName={meta.name} /> : <PageHero hero={content.hero} crumbs={crumbs} hasBooking={Boolean(booking)} />}
   <Sections sections={content.sections} custom={custom} />
   {booking && <BookingBlock booking={booking} pageName={meta.name} />}
   <RelatedLinks links={content.related ?? []} />

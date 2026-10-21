@@ -12,7 +12,7 @@ interface Props {
 const { h2, items, id } = Astro.props;
 const hid = 'h-' + (id ?? slugify(h2));
 ---
-<section class="sec tone-white" id={id ?? 'questions'} aria-labelledby={hid}>
+<section class="sec tone-white" id={id ?? 'q-' + slugify(h2)} aria-labelledby={hid}>
   <div class="wrap sec-split">
     <div class="section-head"><Inline as="h2" id={hid} text={h2} /></div>
     <div class="faq">

@@ -26,7 +26,14 @@ const media = Boolean(hero.image || hero.placeholder);
       <div class="page-hero-copy">
         <h1 id="h1">{hero.h1}</h1>
         <Inline as="p" class="page-hero-lede" text={hero.lede} />
-        {(bookLabel || call) && (
+        {hero.actions?.length ? (
+          <div class="hero-cta">
+            {hero.actions.map((a) => {
+              const ext = /^https?:/.test(a.href);
+              return <a class:list={['btn', a.style === 'ghost' ? 'btn-ghost' : 'btn-light']} href={a.href} target={ext ? '_blank' : undefined} rel={ext ? 'noopener' : undefined}>{a.text}</a>;
+            })}
+          </div>
+        ) : (bookLabel || call) && (
           <div class="hero-cta">
             {hero.callFirst ? (
               <Fragment>

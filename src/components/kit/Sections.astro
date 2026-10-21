@@ -10,6 +10,12 @@ import InsuranceNote from './InsuranceNote.astro';
 import FAQ from './FAQ.astro';
 import Cards from './Cards.astro';
 import Steps from './Steps.astro';
+import Credentials from './Credentials.astro';
+import Social from './Social.astro';
+import ReviewGroups from './ReviewGroups.astro';
+import VideoStory from './VideoStory.astro';
+import Visit from './Visit.astro';
+import PostList from './PostList.astro';
 interface Props {
   sections: Section[];
   custom?: Record<string, string>; // pre-rendered HTML for 'custom' sections, keyed by section id
@@ -37,6 +43,18 @@ for (const s of sections) {
       return <Cards h2={s.h2} intro={s.intro} cards={s.cards} groups={s.groups} outro={s.outro} columns={s.columns} tone={s.tone} id={s.id} />;
     case 'steps':
       return <Steps h2={s.h2} intro={s.intro} steps={s.steps} outro={s.outro} id={s.id} />;
+    case 'credentials':
+      return <Credentials h2={s.h2} intro={s.intro} items={s.items} blocks={s.blocks} tone={s.tone} id={s.id} />;
+    case 'social':
+      return <Social h2={s.h2} text={s.text} label={s.label} id={s.id} />;
+    case 'reviews':
+      return <ReviewGroups h2={s.h2} intro={s.intro} groups={s.groups} id={s.id} />;
+    case 'video':
+      return <VideoStory h2={s.h2} intro={s.intro} review={s.review} note={s.note} id={s.id} />;
+    case 'visit':
+      return <Visit h2={s.h2} intro={s.intro} blocks={s.blocks} id={s.id} />;
+    case 'posts':
+      return <PostList h2={s.h2} intro={s.intro} id={s.id} />;
     case 'custom':
       return <Fragment set:html={custom[s.id]} />;
     default:

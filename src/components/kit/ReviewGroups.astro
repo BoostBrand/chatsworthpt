@@ -1,0 +1,44 @@
+---
+// ReviewGroups (Reviews page): every usable Google review, grouped by what brought the patient in. Text is
+// printed from the reviews CSV (src/data/reviews.json), never typed; each card can link to the service or
+// conditions page it belongs to. Review markup for every card is built by the page template.
+import type { ReviewGroup } from '../../lib/types';
+import { getReview, quoteFor } from '../../lib/reviews';
+import { slugify } from '../../lib/inline';
+import Inline from '../Inline.astro';
+import SectionHead from './SectionHead.astro';
+interface Props {
+  h2: string;
+  intro?: string;
+  groups: ReviewGroup[];
+  id?: string;
+}
+const { h2, intro, groups, id } = Astro.props;
+const hid = 'h-' + (id ?? slugify(h2));
+---
+<section class="sec tone-sky review-groups" id={id} aria-labelledby={hid}>
+  <div class="wrap">
+    <SectionHead h2={h2} id={hid} intro={intro} />
+    {groups.map((g) => {
+      const gid = 'g-' + slugify(g.title);
+      return (
+        <div class="review-group" aria-labelledby={gid}>
+          <h3 class="group-title" id={gid}>{g.title}</h3>
+          {g.intro && <Inline as="p" class="group-intro" text={g.intro} />}
+          <div class="cards">
+            {g.items.map((it) => {
+              const r = getReview(it.key);
+              return (
+                <article class="review" data-review={r.key}>
+                  <span class="stars" aria-hidden="true">★★★★★</span>
+                  <p>"{quoteFor(it)}"</p>
+                  <footer><strong>{r.displayName}</strong>{it.context ? `, ${it.context}` : ''}, Google review, {r.month}{it.href && <Fragment><br /><a class="review-link" href={it.href}>{it.linkText ?? 'Read more'}</a></Fragment>}</footer>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      );
+    })}
+  </div>
+</section>

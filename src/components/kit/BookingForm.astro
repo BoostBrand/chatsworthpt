@@ -9,8 +9,10 @@ interface Props {
   messagePrompt?: string; // placeholder in the optional message field
   button?: string;
   pageName: string; // used in the email subject
+  headingLevel?: 2 | 3; // the call panel's heading: 3 inside a booking band (default), 2 in the contact hero
 }
-const { service, messagePrompt, button = 'Request my appointment', pageName } = Astro.props;
+const { service, messagePrompt, button = 'Request my appointment', pageName, headingLevel = 3 } = Astro.props;
+const PanelHeading = headingLevel === 2 ? 'h2' : 'h3';
 const OPTIONS = ['Back pain', 'Sports injury', 'Before or after surgery', 'Orthopedic injury', 'Balance or fall prevention', 'Pain management', 'Pediatric physical therapy', 'Neurological rehabilitation', 'Not sure yet'];
 // A page may preselect a service the homepage list does not carry (additive; the homepage list is unchanged).
 const options = service && !OPTIONS.includes(service) ? [...OPTIONS.slice(0, -1), service, OPTIONS[OPTIONS.length - 1]] : OPTIONS;
@@ -44,7 +46,7 @@ const WHEN = ['Any time', 'Mornings', 'Afternoons', 'Evenings after 5pm', 'Satur
   </form>
 ) : (
   <div class="callpanel" data-lead-gate>
-    <h3>Book by phone</h3>
+    <PanelHeading class="callpanel-title">Book by phone</PanelHeading>
     <a class="btn btn-primary" href={BUSINESS.phoneHref} data-call-placement="lead_gate">Call {BUSINESS.phone}</a>
     <p class="hours">{BUSINESS.hoursLine}</p>
     <p class="small">The online booking form opens here soon. Until then, call or email <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a> and we confirm your time, usually the same day.</p>

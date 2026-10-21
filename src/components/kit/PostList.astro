@@ -1,0 +1,30 @@
+---
+// PostList (Blog hub): every post, newest first: the title as a link, one line, the date and the parent
+// service as a tag. Reads the post content files directly, so a new post needs no change here.
+import { POSTS, fmtDate } from '../../lib/posts';
+import { slugify, plainInline } from '../../lib/inline';
+import SectionHead from './SectionHead.astro';
+interface Props {
+  h2: string;
+  intro?: string;
+  id?: string;
+}
+const { h2, intro, id } = Astro.props;
+const hid = 'h-' + (id ?? slugify(h2));
+---
+<section class="sec tone-white" id={id} aria-labelledby={hid}>
+  <div class="wrap">
+    <SectionHead h2={h2} id={hid} intro={intro} />
+    <ul class="post-list">
+      {POSTS.map((p) => (
+        <li>
+          <a href={p.path}>
+            <strong>{p.h1}</strong>
+            <span>{plainInline(p.summary)}</span>
+            <small><span class="tag">{p.parent.text}</span><time datetime={p.datePublished}>{fmtDate(p.datePublished)}</time></small>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

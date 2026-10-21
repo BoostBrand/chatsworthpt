@@ -22,6 +22,9 @@ export const BUSINESS = {
   geo: { latitude: 34.2363732, longitude: -118.5663664 },
   placeId: 'ChIJjzo2DhibwoAR1KeHYSgrQkE',
   mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Chatsworth+Physical+Therapy&query_place_id=ChIJjzo2DhibwoAR1KeHYSgrQkE',
+  // Opens Google's write-a-review box for the listing (pattern search.google.com/local/writereview?placeid=,
+  // read on modernwebstudios.com 21 Oct 2026). The Business Profile's own short review link can replace it.
+  writeReviewUrl: 'https://search.google.com/local/writereview?placeid=ChIJjzo2DhibwoAR1KeHYSgrQkE',
   hoursLine: 'Mon to Sat 10am to 8pm, Sun closed',
   hoursLong: ['Monday to Saturday, 10am to 8pm', 'Sunday closed'],
   opens: '10:00',

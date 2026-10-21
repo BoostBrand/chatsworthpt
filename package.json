@@ -7,7 +7,13 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "gates": "python3 -I scripts/gates.py"
+    "gates": "python3 -I scripts/gates.py",
+    "check": "node scripts/check-content.mjs",
+    "entries": "python3 -I scripts/entry-check.py",
+    "a11y": "python3 -I scripts/a11y.py",
+    "render": "python3 -I scripts/render.py",
+    "perf": "python3 -I scripts/perf.py",
+    "export": "node scripts/copy-export.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",

@@ -1,0 +1,21 @@
+---
+// Social: a short section with the four verified social profiles as icon buttons (About).
+import { slugify } from '../../lib/inline';
+import Inline from '../Inline.astro';
+import SocialIcons from '../SocialIcons.astro';
+interface Props {
+  h2: string;
+  text?: string;
+  label?: string;
+  id?: string;
+}
+const { h2, text, label = 'Follow', id } = Astro.props;
+const hid = 'h-' + (id ?? slugify(h2));
+---
+<section class="sec tone-white" id={id} aria-labelledby={hid}>
+  <div class="wrap">
+    <div class="section-head"><Inline as="h2" id={hid} text={h2} /></div>
+    {text && <Inline as="p" class="prose-line" text={text} />}
+    <SocialIcons label={label} />
+  </div>
+</section>

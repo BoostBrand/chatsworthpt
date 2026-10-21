@@ -1,0 +1,49 @@
+---
+// Visit (Contact): the approved facts table (address, hours, phone, email, access), page lines such as the
+// parking and language lines, and the approved static map (OpenStreetMap credit on the image) linking to
+// the Google listing, with Get directions and Call.
+import type { Block } from '../../lib/types';
+import { BUSINESS } from '../../data/site';
+import { slugify } from '../../lib/inline';
+import Blocks from '../Blocks.astro';
+import SectionHead from './SectionHead.astro';
+interface Props {
+  h2: string;
+  intro?: string;
+  blocks?: Block[];
+  id?: string;
+}
+const { h2, intro, blocks = [], id } = Astro.props;
+const hid = 'h-' + (id ?? slugify(h2));
+---
+<section class="sec tone-white visit-sec" id={id} aria-labelledby={hid}>
+  <div class="wrap visit-grid">
+    <div>
+      <SectionHead h2={h2} id={hid} intro={intro} />
+      <table class="facts">
+        <tr><th>Address</th><td>{BUSINESS.street}<br />Chatsworth, CA 91311</td></tr>
+        <tr><th>Hours</th><td>Monday to Saturday, 10am to 8pm<br />Sunday closed</td></tr>
+        <tr><th>Phone</th><td><a href={BUSINESS.phoneHref}>{BUSINESS.phone}</a></td></tr>
+        <tr><th>Email</th><td><a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a></td></tr>
+        <tr><th>Access</th><td>Wheelchair accessible entrance and parking. Street parking also available.</td></tr>
+      </table>
+      {blocks.length > 0 && <div class="prose visit-lines"><Blocks blocks={blocks} /></div>}
+    </div>
+    <div>
+      <a class="map" href={BUSINESS.mapsUrl} target="_blank" rel="noopener" aria-label="Open the clinic location in Google Maps">
+        <span class="map-frame">
+          <picture>
+            <source media="(max-width: 600px)" srcset="/img/map-chatsworth-physical-therapy-19851-nordhoff-mobile.webp" />
+            <img src="/img/map-chatsworth-physical-therapy-19851-nordhoff.webp" width="1200" height="750" alt="Map showing Chatsworth Physical Therapy at 19851 Nordhoff Place, between Winnetka Avenue and Corbin Avenue, north of Nordhoff Street" loading="lazy" decoding="async" />
+          </picture>
+          <span class="map-ping" aria-hidden="true"></span><span class="map-ping" aria-hidden="true"></span>
+        </span>
+        <span class="map-tag">19851 Nordhoff Pl, Unit 105 (Suite C), Chatsworth, CA 91311<small>Between Winnetka and Corbin, just north of Nordhoff St. Free parking in the lot in front, no gate code.</small></span>
+      </a>
+      <div class="visit-actions">
+        <a class="btn btn-primary" href={BUSINESS.mapsUrl} target="_blank" rel="noopener">Get directions</a>
+        <a class="btn btn-outline" href={BUSINESS.phoneHref}>Call {BUSINESS.phone}</a>
+      </div>
+    </div>
+  </div>
+</section>

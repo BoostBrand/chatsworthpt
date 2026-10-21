@@ -46,12 +46,16 @@ def serve():
 
 MEASURE = """async () => {
   await document.fonts.ready;
+  // Instant scrolling: the site sets scroll-behavior smooth, which would leave the page mid-scroll when the
+  // full-page screenshot is taken (the fixed header and sticky headings then show up mid-page).
+  document.documentElement.style.scrollBehavior = 'auto';
+  const go = (y) => window.scrollTo({ top: y, left: 0, behavior: 'instant' });
   const H = () => document.documentElement.scrollHeight;
-  for (let y = 0; y < H(); y += Math.round(innerHeight * 0.8)) { window.scrollTo(0, y); await new Promise(r => setTimeout(r, 60)); }
-  window.scrollTo(0, H()); await new Promise(r => setTimeout(r, 300));
+  for (let y = 0; y < H(); y += Math.round(innerHeight * 0.8)) { go(y); await new Promise(r => setTimeout(r, 60)); }
+  go(H()); await new Promise(r => setTimeout(r, 300));
   const imgs = [...document.images];
   await Promise.all(imgs.map(i => i.complete ? null : new Promise(r => { i.onload = i.onerror = r; setTimeout(r, 3000); })));
-  window.scrollTo(0, 0); await new Promise(r => setTimeout(r, 200));
+  go(0); await new Promise(r => setTimeout(r, 400));
   const main = document.querySelector('main');
   return {
     title: document.title,

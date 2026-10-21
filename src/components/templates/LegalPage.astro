@@ -9,6 +9,7 @@ import type { PageContent } from '../../lib/types';
 import { pageById, crumbsFor, isNoindex } from '../../lib/pages';
 import { breadcrumbNode, graph } from '../../lib/schema';
 import { LEGAL_TEXT_READY, BUSINESS } from '../../data/site';
+import { renderInline } from '../../lib/inline';
 interface Props {
   content: PageContent;
 }
@@ -32,7 +33,7 @@ const blocks = content.sections.flatMap((s) => (s.kind === 'prose' ? [{ type: 'h
         {LEGAL_TEXT_READY ? (
           blocks.map((b) => (b.type === 'h2' ? <h2 set:html={b.text} /> : <Blocks blocks={[b]} />))
         ) : (
-          <p class="legal-placeholder" data-placeholder>[CONFIRM: live policy text to be pasted]</p>
+          <p class="legal-placeholder" data-placeholder set:html={renderInline('[CONFIRM: live policy text to be pasted]')} />
         )}
       </div>
     </div>

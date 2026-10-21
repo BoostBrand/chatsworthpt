@@ -19,7 +19,7 @@ const year = new Date().getFullYear();
       <SocialIcons label="Follow" />
     </div>
     {FOOTER_COLUMNS.map((col) => (
-      <div><h3>{col.title}</h3><ul>{col.links.map((l) => <li><a href={l.href}>{l.text}</a></li>)}</ul></div>
+      <div><h2 class="foot-h">{col.title}</h2><ul>{col.links.map((l) => <li><a href={l.href}>{l.text}</a></li>)}</ul></div>
     ))}
     <div class="footer-bottom"><span>© {year} {BUSINESS.legalName}. All rights reserved.</span><span>Website by Boost Brand Marketing</span></div>
   </div>

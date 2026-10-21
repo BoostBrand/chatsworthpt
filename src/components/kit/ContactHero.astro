@@ -1,0 +1,35 @@
+---
+// ContactHero (Contact): the H1, then the phone number as the first thing on the page with "Dr. Ed answers
+// his own phone.", and the booking form beside it (the call panel while FORMS_ENABLED is false). Carries
+// the page's #book anchor, so the header and sticky Book buttons land here.
+import type { Hero } from '../../lib/types';
+import type { Crumb } from '../../lib/pages';
+import { BUSINESS, RATING } from '../../data/site';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import Inline from '../Inline.astro';
+import BookingForm from './BookingForm.astro';
+interface Props {
+  hero: Hero;
+  crumbs: Crumb[];
+  pageName: string;
+  service?: string;
+}
+const { hero, crumbs, pageName, service = 'Not sure yet' } = Astro.props;
+---
+<section class="page-hero contact-hero" aria-labelledby="h1">
+  <div class="wrap">
+    <Breadcrumbs crumbs={crumbs} />
+    <div class="page-hero-grid">
+      <div class="page-hero-copy">
+        <h1 id="h1">{hero.h1}</h1>
+        <p class="contact-phone"><a href={BUSINESS.phoneHref} data-call-placement="contact_hero">{BUSINESS.phone}</a><span>Dr. Ed answers his own phone.</span></p>
+        <Inline as="p" class="page-hero-lede" text={hero.lede} />
+        <p class="contact-meta">{BUSINESS.addressLine}<br />{BUSINESS.hoursLine}</p>
+        {hero.stars !== false && <div class="hero-proof"><span class="stars" aria-hidden="true">★★★★★</span><span>{RATING.line}</span></div>}
+      </div>
+      <div class="contact-book" id="book">
+        <BookingForm service={service} pageName={pageName} headingLevel={2} />
+      </div>
+    </div>
+  </div>
+</section>
