@@ -42,6 +42,10 @@ Read this after COMMON-RULES.md, COMPONENTS.md and FACTS.md. It applies to every
   Professions Code section 2620.1 ([read it on leginfo](https://...))". List it in `sources`.
 - In your report, for each source: the URL, the date fetched and the exact sentence on the page that supports your
   sentence. The build lead re-checks every one before accepting the post.
+- Fetching notes from earlier builders: leginfo.legislature.ca.gov does not load here (Justia hosts the same California
+  code text); PMC article pages usually return a captcha, PubMed abstracts usually load; medicare.gov loads at
+  /coverage/physical-therapy-services. Your decision sheet may already list sources the build lead verified; cite those
+  with the quoted statements and you need not fetch them again.
 - No dollar figures anywhere (the site shows none). No statistics, percentages or timelines unless your fetched source
   states them, and then name the source beside them.
 - No reviews quoted or paraphrased. Where a post mentions a patient story, link the Reviews page (/reviews/) instead.

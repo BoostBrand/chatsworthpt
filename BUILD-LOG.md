@@ -161,3 +161,44 @@ For Dr. Ed ([CONFIRM] items shown highlighted on the pages):
 - E-stim: whether he sets patients up with a home TENS unit.
 - Personal training: prices by phone or published; what nutrition guidance he gives, if any; diet plans.
 - Services hub: the conditions shown on the pain management and pediatric cards (inferred from the linked pages).
+
+## Batch C: patient information and legal pages (21 Oct)
+
+Pages: P-016 /insurance-and-cost/, P-017 /first-visit/, P-018 /reviews/, P-019 /faqs/, P-020 /contact/; P-050
+/privacy-policy/ and P-051 /terms-of-service/ (built in Batch B as noindex placeholders, unchanged); P-052 404
+verified against its entry (H1, title, description, links to All services, Conditions, Contact and the phone).
+
+Build lead edits after review: first visit (the booking line no longer points at a form that is not live yet); FAQs
+(three markers the builder added were replaced with facts the blueprint entries and approved pages already give: what
+to bring, family members welcome, the restroom); the contact page facts table (a compiler quirk re-opened the email
+link around the next paragraph, so every line below the table became a link; fixed in the component and a new gate
+counts links that wrap a paragraph, list, heading or section); review cards now read "More on <page>".
+
+Reviews page: all 25 usable reviews print from the CSV (Vlada, Keith and Jonathan left off), grouped as the blueprint
+lists them, with Review markup for each (25) and no aggregate rating. Matt's clip is embedded here as the blueprint's
+section 2 asks; it is the only second embed (the frozen shoulder page will link to the homepage video). "Leave a
+review" opens Google's write-a-review box for the listing (URL pattern read on a third-party guide on 21 Oct 2026;
+the Business Profile's own short review link can replace it).
+
+Counts after Batch C (24 pages built of 51, including the conditions hub from Batch D): every hard gate passes;
+JSON-LD 23 of 23 parse; sitemap 21 URLs; noindex 3 (404 and the two legal pages); [CONFIRM markers 21; PHOTO
+placeholders 10; 0 links wrapping block elements; 0 duplicate ids; 134 links still point at planned pages (conditions,
+city pages, blog). Renders 48 of 48 clean; accessibility check 0 failures on 24 pages at both widths.
+
+### Open questions from Batch C
+
+For Vlad:
+1. Matt's clip on the Reviews page as well as the homepage (blueprint section 2 of the Reviews entry, marked "ruling
+   needed"). Built in; one edit removes it.
+2. The direct-pay [CONFIRM] on the insurance page is the blueprint's wording and names a competitor (Performance MFR)
+   inside the highlighted note; it disappears with the answer.
+
+For Dr. Ed:
+- Insurance and cost: does the clinic bill any plan directly; publish a direct-pay price or keep "call for the current
+  rate"; the one-line lien process; payment methods beyond credit and debit cards (HSA and FSA cards, checks, Zelle).
+- Reviews page: the "how reviews are collected" paragraph says patients are asked after discharge and reviews are
+  never paid for (blueprint wording); confirm both.
+- Contact: the route line for each city (the blueprint's draft routes are shown with the marker; no drive times).
+- First visit and FAQs: the restroom line comes from the blueprint; confirm.
+- Shockwave, pelvic floor and hand therapy: one highlighted line on the FAQs page asks patients to call; nothing says
+  offered or not offered.

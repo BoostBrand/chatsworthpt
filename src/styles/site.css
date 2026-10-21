@@ -313,3 +313,7 @@
 .page-hero-lede a:hover,.contact-meta a:hover{text-decoration-color:#fff}
 /* Footer column titles are h2 (page-level landmarks, so pages with no other h2 skip no level) styled as the draft 9 h3 */
 .footer h2.foot-h{font-size:1rem;margin-bottom:.8rem;color:var(--text);letter-spacing:-0.01em}
+/* Inner-page steps: keep each step's title and text together at the top when a row has a longer step */
+.sec .steps .step{align-content:start}
+.review-more-line{display:inline-block;margin-top:.35rem}
+.review-more-line .review-link{margin-top:0}

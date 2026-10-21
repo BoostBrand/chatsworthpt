@@ -32,7 +32,7 @@ const hid = 'h-' + (id ?? slugify(h2));
                 <article class="review" data-review={r.key}>
                   <span class="stars" aria-hidden="true">★★★★★</span>
                   <p>"{quoteFor(it)}"</p>
-                  <footer><strong>{r.displayName}</strong>{it.context ? `, ${it.context}` : ''}, Google review, {r.month}{it.href && <Fragment><br /><a class="review-link" href={it.href}>{it.linkText ?? 'Read more'}</a></Fragment>}</footer>
+                  <footer><strong>{r.displayName}</strong>{it.context ? `, ${it.context}` : ''}, Google review, {r.month}{it.href && <Fragment><br /><span class="review-more-line">More on <a class="review-link" href={it.href}>{it.linkText ?? 'this treatment'}</a></span></Fragment>}</footer>
                 </article>
               );
             })}

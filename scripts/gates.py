@@ -229,6 +229,13 @@ def main():
             if not target.exists():
                 missing_imgs.append((p, src))
     gate('Images referenced by src or srcset that do not exist in dist', len(missing_imgs), 0, 0, detail=missing_imgs)
+    # A link that wraps a paragraph, list, heading or section usually means markup was re-opened by mistake.
+    wraps = {}
+    for wp, wt in raw_html.items():
+        wn = len(re.findall(r'<a\b[^>]*>(?:(?!</a>).)*?<(?:div|p|ul|ol|h[1-6]|section|table)\b', wt, re.S))
+        if wn:
+            wraps[wp] = wn
+    gate('Links wrapping a paragraph, list, heading or section', sum(wraps.values()), 0, 0, detail=wraps)
     dups = {p: g.dup_ids for p, g in parsed.items() if g.dup_ids}
     gate('Duplicate id attributes on a page', sum(len(v) for v in dups.values()), 0, 0, detail=dups)
     gate('PHOTO: placeholders (elements, not a gate)', sum(g.ph for g in parsed.values()), None, 'reported', hard=False, detail={p: g.ph for p, g in parsed.items() if g.ph})
