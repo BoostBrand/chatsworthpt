@@ -254,3 +254,36 @@ For Dr. Ed:
 - Northridge and Porter Ranch: which reviewers live there; CSUN, Northridge Hospital, school or club ties; routes and
   drive times; whether he wants the comparison with group clinics.
 - Plantar fasciitis: whether he supplies or fits orthotics (the page only says the evaluation decides).
+
+## Batch F: blog hub and twelve posts (21 Oct, in progress)
+
+Hub: P-037 /blog/ built by the build lead (about 90 words of its own; the post list, newest first with the parent page
+as a tag, and the CollectionPage and ItemList schema come from the post files themselves).
+
+Posts accepted so far, each checked against its entry and decision sheet, every outside quote matched to a page the
+build lead fetched on 21 Oct 2026:
+- P-038 referral in California (931 words before review). Sources: Business and Professions Code section 2620.1 on
+  Justia (re-fetched by the build lead: the (a)(1), (a)(4) and (d) wording matches, apostrophes aside) and
+  Medicare.gov "Physical therapy services". Build lead edit: the paragraph quoting (a)(3) (the therapist notifies
+  your doctor, with your written authorization) came out, because it describes an intake step Dr. Ed has not
+  confirmed and sits outside the sheet's scope; "the window does not help you" now reads "does not apply".
+- P-039 Medicare (783 words). Source: Medicare.gov "Physical therapy services" (Part B coverage, certification by
+  your doctor or other health care provider, 20% after the Part B deductible, no yearly limit). No dollar figures.
+- P-040 first visit (814 words). No outside source; every fact traces to FACTS.md or the built Your first visit page.
+
+### Open questions from Batch F (so far)
+
+For Vlad:
+1. Approved homepage trust row: "Medicare accepted" sits directly above "No referral needed to start." A Medicare
+   patient can read that as no referral needed, but Medicare patients need one from the start. Approved copy, so not
+   changed. One way to fix it: "Most patients need no referral to start."
+2. P-040's blueprint meta description promises the first visit "minute by minute"; there are no per-step times in
+   the facts, so the post gives the order, not minutes. Suggest "step by step" (blueprint field, not changed).
+3. Section 2620.1 is quoted from Justia because the official leginfo page does not load from here. One look on
+   leginfo.legislature.ca.gov before launch.
+
+For Dr. Ed:
+- Medicare Advantage: are Advantage plans accepted? The site says only "Medicare".
+- Does the 45-day and 12-visit count start again for a new injury or after a break in care? The posts do not say.
+- P-040: two explaining clauses to confirm or cut ("the area that hurts should be easy to see and free to move";
+  "the aim is to return you to the things that matter to you").
