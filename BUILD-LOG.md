@@ -255,13 +255,13 @@ For Dr. Ed:
   drive times; whether he wants the comparison with group clinics.
 - Plantar fasciitis: whether he supplies or fits orthotics (the page only says the evaluation decides).
 
-## Batch F: blog hub and twelve posts (21 Oct, in progress)
+## Batch F: blog hub and twelve posts (21 Oct)
 
 Hub: P-037 /blog/ built by the build lead (about 90 words of its own; the post list, newest first with the parent page
 as a tag, and the CollectionPage and ItemList schema come from the post files themselves).
 
-Posts accepted so far, each checked against its entry and decision sheet, every outside quote matched to a page the
-build lead fetched on 21 Oct 2026:
+Posts accepted, each checked against its entry and decision sheet, every outside quote matched to a page the build
+lead fetched on 21 Oct 2026 (WebFetch yes or no checks, with planted false phrases as a control from P-045 on):
 - P-038 referral in California (931 words before review). Sources: Business and Professions Code section 2620.1 on
   Justia (re-fetched by the build lead: the (a)(1), (a)(4) and (d) wording matches, apostrophes aside) and
   Medicare.gov "Physical therapy services". Build lead edit: the paragraph quoting (a)(3) (the therapist notifies
@@ -332,7 +332,15 @@ build lead fetched on 21 Oct 2026:
   (left out, the post read as if the hip cause were as common as the disc); "The clinic's approach comes down to one
   line" now reads "Dr. Ed's treatment aims at".
 
-### Open questions from Batch F (so far)
+Counts after Batch F (51 of 51 pages built): every hard gate passes; JSON-LD 50 of 50 parse; sitemap 46 URLs (48 once
+the legal pages are indexable); noindex 5 (404, two legal placeholders, two city pages); links to pages not built 0;
+[CONFIRM and verify markers 42; PHOTO placeholders 26 (one per post). One architecture CSV link was missing (the red
+light page to its post) and is now a related link on that page (Batch B copy, not approved copy). Renders 102 of 102
+clean; accessibility check 0 failures on 51 pages at both widths. Word counts: all twelve posts are 700 to 1,000 words
+on the checker's count (the words written); the entry check's "main words" reads 900 to 1,100 because it also counts
+the byline, the Sources list, the author box and the booking band the template adds.
+
+### Open questions from Batch F
 
 For Vlad:
 1. Approved homepage trust row: "Medicare accepted" sits directly above "No referral needed to start." A Medicare
@@ -365,3 +373,30 @@ For Dr. Ed:
 - P-048: his approved line says sciatica is "usually a disc or a tight muscle in the hip"; NINDS calls piriformis
   syndrome rare. He may want to word the hip side his own way.
 - P-049: whether to publish the cash rate; whether the clinic is in network with any plan.
+
+## Final pass (21 Oct)
+
+- Whole-site gates at 51 pages: 0 failing. 51 HTML pages, 51 with one h1, 50 canonicals, 50 JSON-LD blocks that all
+  parse, 0 em or en dashes served or in source, 0 dollar figures, 0 banned phrases, 0 broken internal links, 0 links to
+  unbuilt pages, every page with two or more inbound links, titles and descriptions within length and unique, H1,
+  title and description equal to the blueprint entry on every page, 51 of 51 URLs return 200 from a local server.
+- Renders: 102 of 102 clean (0 horizontal overflow, 0 broken images, 0 script errors, one h1). Accessibility: 0
+  failures on 51 pages at 390 and 1440.
+- Screenshots sent to Vlad: home, back pain therapy, sciatica, contact and the Medicare post, each at 390 and 1440.
+- Speed (throttled phone, Lighthouse's slow 4G numbers): home 472 KB on first load, 12 requests, LCP 1.8 s, CLS 0 to
+  0.03; Medicare post 214 KB, LCP 1.5 s, CLS 0; sciatica 245 KB, LCP 1.6 s, CLS 0.
+- Form and tracking switches at 51 pages: with test values in site.ts, 48 booking forms (each with the honeypot), 0
+  call panels, GA4 and Clarity tags on 51 of 51 pages; with the placeholders back (file compared byte for byte with the
+  copy taken before the test: identical), 0 forms, 48 call panels, 0 tracking tags.
+- Redirects and 410s re-tested with Wrangler against the 51-page build: the blog hub and posts return 200; old blog,
+  category and pagination URLs 301 to /blog/; WordPress, theme and spam URLs 410; the one old upload 301 to
+  /neurological-rehabilitation/; an unknown URL 404.
+- Copy export: claude/COPY-EXPORT-chatsworthpt-site.md in the Project (all 51 pages, generated from the content files,
+  about 39,000 words).
+- GitHub: every commit is local and ready; the push waits on the empty repo BoostBrand/chatsworthpt (steps sent to
+  Vlad). Nothing was deployed, and no DNS, Cloudflare, Google Business Profile or Search Console change was made.
+
+Before launch (not this session): Web3Forms key, GA4 measurement ID and Clarity ID into site.ts (the switches turn the
+form and tracking on by themselves); the live privacy and terms text, then LEGAL_TEXT_READY true; Dr. Ed's answers for
+the 42 markers, then PREVIEW false (the ship gate needs 0 markers); the photo shoot for the 26 placeholders; Vlad's
+rulings on the open questions; CITY_PAGES_LIVE only if the Northridge and Porter Ranch proof exists.
