@@ -302,6 +302,22 @@ build lead fetched on 21 Oct 2026:
   "Benign positional vertigo" (Dix-Hallpike test and Epley maneuver described; get medical help right away with
   weakness, slurred speech or vision problems). The post names Dix-Hallpike and Epley only as MedlinePlus names them
   and does not say Dr. Ed uses them by name.
+- P-046 return to sport after ACL surgery (930 words). Sources, re-fetched by the build lead with control phrases:
+  Grindem and colleagues, BJSM, Delaware-Oslo cohort (106 patients; re-injury rate down 51% for each month return was
+  delayed until 9 months, no further drop after; quadriceps symmetry; the four hop tests; pass mark above 90),
+  Kyritsis and colleagues, BJSM (158 male professional athletes; not meeting all six discharge criteria, about four
+  times the risk of graft rupture) and Wiggins and colleagues, AJSM 2016 (second ACL injury 15% overall, 7% same knee,
+  8% other knee; 23% for athletes under 25 who return to sport). The ACL story is a link to Reviews only. Build lead
+  edits: the answer no longer says "you are ready when you pass" (the post itself says passing is not a promise);
+  the cutting line reads "Dr. Ed tests it if your sport calls for it".
+- P-047 red light for back and knee pain (947 words). Sources, re-fetched by the build lead with control phrases:
+  PubMed 28145397 (2017 meta-analysis, 18 studies, 1,462 adults), the Washington L&I technology assessment update
+  (2018; its four conclusions quoted word for word, plus its summaries of a Cochrane review on low back pain and a
+  Hayes review on knee osteoarthritis), Arthritis Research & Therapy 2015 (low back pain: pain lower than placebo,
+  no effect shown on disability or range of motion) and BMJ Open 2019 (knee osteoarthritis: 22 trials; pain and
+  disability lower than placebo; not recommended in major guidelines). Every study is on low-level laser therapy, so
+  the post says so and calls the findings a guide to the field, not a promise about one machine. The marker
+  "[CONFIRM minutes per application and frequency]" stays visible.
 
 ### Open questions from Batch F (so far)
 
@@ -327,3 +343,5 @@ For Dr. Ed:
 - P-044: his milestones for each stage after a knee replacement (marker on the page).
 - P-045: the names of the test and maneuvers he uses (Dix-Hallpike, Epley?), so the post can say so.
 - P-043: whether he wants a line on when he sends a child to a doctor for imaging first.
+- P-047: which red light device he uses (laser or LED panel, and the wavelength). The studies cited are all on
+  low-level laser therapy; if his device is an LED panel, the post's caveat matters more.
