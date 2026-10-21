@@ -6,3 +6,4 @@ dist-preview/
 *.log
 .env
 .env.*
+.wrangler/
