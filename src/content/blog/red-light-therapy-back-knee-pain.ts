@@ -77,7 +77,7 @@ const post: PostContent = {
     { type: 'placeholder', label: `PHOTO: red light on a patient's knee at the clinic, to be shot` },
     {
       type: 'p',
-      text: `Dr. Ed's red light protocol: [CONFIRM minutes per application and frequency]. At any clinic, ask what the light is meant to do, how many minutes and how often, and how you will tell whether it is helping.`,
+      text: `Dr. Ed's red light protocol: about 10 minutes on the treated area, inside a visit, never on its own and not at every visit. His device is a KOZE LED unit (KOZE lists 660 and 850 nanometers, red and near-infrared, for its panels), not a laser. At any clinic, ask what the light is meant to do, how many minutes and how often, and how you will tell whether it is helping.`,
     },
     { type: 'h2', text: `What to do next` },
     {

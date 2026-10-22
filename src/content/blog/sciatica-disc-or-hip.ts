@@ -32,7 +32,7 @@ const post: PostContent = {
     },
     {
       type: 'p',
-      text: 'On the hip side, [the National Institute of Neurological Disorders and Stroke](https://www.ninds.nih.gov/health-information/disorders/piriformis-syndrome) describes piriformis syndrome, which it calls a rare disorder. It happens when the piriformis, a thin muscle in the buttocks that allows the hip to rotate, presses against the sciatic nerve. StatPearls says that, because the sciatic nerve is so close, any injury or inflammation of that muscle can cause sciatica symptoms.',
+      text: 'On the hip side, [the National Institute of Neurological Disorders and Stroke](https://www.ninds.nih.gov/health-information/disorders/piriformis-syndrome) describes piriformis syndrome. It happens when the piriformis, a thin muscle in the buttocks that allows the hip to rotate, presses against the sciatic nerve. StatPearls says that, because the sciatic nerve is so close, any injury or inflammation of that muscle can cause sciatica symptoms. Sciatica that starts at a tight hip muscle is a specialty of Dr. Ed, and he sees it often.',
     },
     {
       type: 'p',

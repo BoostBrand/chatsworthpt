@@ -59,7 +59,7 @@ const page: PageContent = {
           items: [
             {
               lead: 'Precaution review.',
-              text: "He goes over the precautions for your surgical approach with you. [CONFIRM: Dr. Ed's wording on anterior versus posterior precautions]",
+              text: "Precautions after hip replacement have eased as surgery has improved. Follow what your surgeon tells you; Dr. Ed goes over your surgeon's instructions with you and works within them.",
             },
             {
               lead: 'Gait retraining.',

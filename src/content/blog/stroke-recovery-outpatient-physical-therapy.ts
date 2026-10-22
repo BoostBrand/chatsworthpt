@@ -77,7 +77,6 @@ const post: PostContent = {
         'Electrical stimulation, therapeutic ultrasound and red light therapy where they help a muscle fire or a tissue recover.',
       ],
     },
-    { type: 'p', text: "[CONFIRM] a stroke patient's story when one exists" },
     { type: 'h2', text: 'What to do next' },
     {
       type: 'p',

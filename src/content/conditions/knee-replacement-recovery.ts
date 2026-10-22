@@ -54,7 +54,7 @@ const page: PageContent = {
             },
             {
               lead: 'Bend and straighten.',
-              text: 'Bending and straightening each have milestones, and Dr. Ed works toward them with you. [CONFIRM the degree targets Dr. Ed uses, if he states any]',
+              text: 'For everyday function, Dr. Ed works toward about 110 degrees of bend and a knee that straightens fully, to 0 degrees or as close to it as possible.',
             },
             {
               lead: 'Gait retraining.',

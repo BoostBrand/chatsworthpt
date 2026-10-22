@@ -46,7 +46,7 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: 'Dr. Ed applies red light to the treated area, usually after manual therapy, as part of the visit. [CONFIRM minutes per application and whether it is ever sold stand-alone]',
+          text: 'Dr. Ed applies red light to the treated area, usually after manual therapy, for about 10 minutes as part of the visit. It is not a separate treatment and is not sold on its own. It is best avoided on skin with eczema or an infection. His device is a KOZE LED unit (KOZE lists 660 and 850 nanometers, red and near-infrared, for its panels), not a laser, so read the studies above as a guide to the field rather than a promise about this device.',
         },
       ],
     },
@@ -69,7 +69,7 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: 'Red light is part of a physical therapy visit. Stand-alone pricing: [CONFIRM whether offered and at what price]',
+          text: 'Red light is part of a physical therapy visit and included in its price. It is not offered on its own.',
         },
       ],
     },
@@ -87,11 +87,11 @@ const page: PageContent = {
         },
         {
           q: 'How many sessions?',
-          a: 'Red light rides along with your visits. Dr. Ed sets the plan after your evaluation. He does not quote a number of visits up front.',
+          a: 'Red light rides along with your visits, though not every visit: Dr. Ed decides from your results, your medical history and your condition. He does not quote a number of visits up front.',
         },
         {
           q: 'Can I come just for red light?',
-          a: 'Ask Dr. Ed when you call (818) 749-3205. [CONFIRM]',
+          a: 'No. Red light is only offered as part of a physical therapy visit.',
         },
       ],
     },

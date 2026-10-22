@@ -92,10 +92,10 @@ const post: PostContent = {
       type: 'placeholder',
       label: 'PHOTO: Dr. Ed working on knee bend with a knee replacement patient, to be shot',
     },
-    { type: 'callout', text: "Dr. Ed's milestones for each stage: [CONFIRM the targets he states]" },
+    { type: 'callout', text: "Dr. Ed's targets, not tied to a week: about 110 degrees of bend for everyday function, and a knee that straightens to 0 degrees, or as close as possible." },
     {
       type: 'p',
-      text: "You leave every visit with a written home program, adjusted as the repair heals. A family member is welcome at every session and can learn the home exercises so they can help. What patients say about their own recoveries is on the [Reviews page](/reviews/).",
+      text: "You leave every visit with a written home program, adjusted as the repair heals. A family member is welcome at every session and can learn the home exercises to help. What patients say about their own recoveries is on the [Reviews page](/reviews/).",
     },
 
     { type: 'h2', text: "What to do next" },

@@ -9,7 +9,7 @@ const post: PostContent = {
   datePublished: '2026-10-21',
   parent: { text: 'Insurance and cost', href: '/insurance-and-cost/' },
   summary: 'What Part B covers, what you pay, and the three things to bring to your first visit with Dr. Ed.',
-  answer: 'Yes, Medicare Part B helps pay for medically necessary outpatient physical therapy if you are eligible, and your doctor or other health care provider must certify that you need it ([Medicare.gov](https://www.medicare.gov/coverage/physical-therapy-services)). Dr. Ed accepts Medicare at Chatsworth Physical Therapy, and Medicare patients need a referral from the start.',
+  answer: 'Yes, Medicare Part B helps pay for medically necessary outpatient physical therapy if you are eligible, and your doctor or other health care provider must certify that you need it ([Medicare.gov](https://www.medicare.gov/coverage/physical-therapy-services)). Dr. Ed accepts original Medicare at Chatsworth Physical Therapy, though not Medicare Advantage plans at this time, and Medicare patients need a referral from the start.',
   body: [
     { type: 'h2', text: 'What Medicare Part B covers' },
     {

@@ -38,6 +38,10 @@ const post: PostContent = {
     },
     {
       type: 'p',
+      text: 'The count does not reset on its own. After 12 visits you need a referral to keep going, and if a new problem starts after you finish, you need a referral to be seen through insurance, especially with Medicare.',
+    },
+    {
+      type: 'p',
       text: 'Until you reach that limit, you can book and start treatment without a referral. You do not have to see your doctor first.',
     },
 

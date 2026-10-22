@@ -47,7 +47,7 @@ const page: PageContent = {
         { type: 'h3', text: 'The positional test' },
         {
           type: 'p',
-          text: 'In its [patient guide to BPPV](https://www.choosept.com/guide/physical-therapy-guide-benign-paroxysmal-positional-vertigo-bppv), the American Physical Therapy Association (APTA) says: "Physical therapists use positional tests to recreate BPPV symptoms." Dr. Ed does this test in the clinic, and it usually answers whether you have BPPV in one visit.',
+          text: 'In its [patient guide to BPPV](https://www.choosept.com/guide/physical-therapy-guide-benign-paroxysmal-positional-vertigo-bppv), the American Physical Therapy Association (APTA) says: "Physical therapists use positional tests to recreate BPPV symptoms." Dr. Ed does this test in the clinic, and it usually answers whether you have BPPV in one visit. He is trained in the Dix-Hallpike test and the Epley maneuver, and he screens you first to make sure they are right for you.',
         },
         { type: 'h3', text: 'Repositioning maneuvers' },
         {

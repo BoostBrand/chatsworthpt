@@ -114,7 +114,7 @@ const page: PageContent = {
         },
         {
           q: 'Do I need orthotics?',
-          a: 'Sometimes. The evaluation decides it, not a rule of thumb. Dr. Ed looks at your foot, your calf and how you walk, then tells you plainly whether orthotics belong in your plan.',
+          a: 'Sometimes. The evaluation decides it, not a rule of thumb. Dr. Ed looks at your foot, your calf and how you walk, then tells you plainly whether orthotics belong in your plan. He does not supply or fit orthotics himself; if you need them, he refers you to a podiatrist he trusts.',
         },
         {
           q: 'Should I stop walking?',

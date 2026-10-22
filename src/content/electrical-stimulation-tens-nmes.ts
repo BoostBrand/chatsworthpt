@@ -55,7 +55,7 @@ const page: PageContent = {
         },
         {
           type: 'p',
-          text: 'A TENS unit for use at home is a separate question. Ask Dr. Ed at your evaluation whether he sets patients up with one, and how. [CONFIRM]',
+          text: 'Dr. Ed uses stimulation here at the clinic. He does not set patients up with a TENS unit for home use, though he can give you some basic guidance if you already use one.',
         },
       ],
     },
@@ -84,7 +84,7 @@ const page: PageContent = {
         },
         {
           q: 'Can I use a TENS unit at home?',
-          a: 'Ask Dr. Ed at your evaluation. [CONFIRM]',
+          a: 'Dr. Ed does not set up home TENS units. He uses stimulation at the clinic and can give you some basic guidance if you already use a unit at home.',
         },
       ],
     },

@@ -41,7 +41,7 @@ const page: PageContent = {
         },
         {
           type: 'p',
-          text: 'Ultrasound is part of treatment for tendinitis, muscle strains, post-op stiffness and [plantar fasciitis](/conditions/plantar-fasciitis/). Dr. Ed decides at your evaluation whether you need it.',
+          text: 'Ultrasound is part of treatment for tendinitis, muscle strains, post-op stiffness and [plantar fasciitis](/conditions/plantar-fasciitis/). Dr. Ed decides at your evaluation whether you need it, and not every tool is used at every visit: he goes by your results, your medical history and your condition.',
         },
       ],
     },
@@ -51,7 +51,7 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: 'Dr. Ed does not use it over a fracture, a numb area, or the abdomen during pregnancy. [CONFIRM contraindication wording with Dr. Ed]',
+          text: 'Dr. Ed does not use ultrasound if you have a history of cancer or if you are pregnant. Tell him about either before your first visit.',
         },
       ],
     },
@@ -80,7 +80,7 @@ const page: PageContent = {
         },
         {
           q: 'Is it covered?',
-          a: 'It is part of a physical therapy visit, not billed separately [CONFIRM]. See the insurance notes above for how the visit is paid for.',
+          a: 'It is part of a physical therapy visit and included in its price, not billed separately. See the insurance notes above for how the visit is paid for.',
         },
       ],
     },
