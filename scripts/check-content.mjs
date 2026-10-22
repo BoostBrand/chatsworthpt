@@ -20,7 +20,7 @@ const byPath = new Map(pages.map((p) => [p.path, p]));
 const byId = new Map(pages.map((p) => [p.id, p]));
 const BANNED = ['whether you want', "in today's digital landscape", 'look no further', 'unlock', 'elevate', 'game-changer', 'seamless', "we've got you covered", 'we have got you covered'];
 // Numbers that are confirmed facts (handoff "Facts confirmed" and the approved pages). Anything else is flagged.
-const OK_NUMBERS = new Set(['12', '45', '60', '15', '15+', '301809', '818', '749', '3205', '749-3205', '19851', '105', '91311', '28', '5.0', '10am', '8pm', '2620.1', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']);
+const OK_NUMBERS = new Set(['175', '125', '110', '0', '660', '850', '12', '45', '60', '15', '15+', '301809', '818', '749', '3205', '749-3205', '19851', '105', '91311', '28', '5.0', '10am', '8pm', '2620.1', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']);
 
 const walk = (d) => readdirSync(d).flatMap((f) => (statSync(join(d, f)).isDirectory() ? walk(join(d, f)) : [join(d, f)]));
 const contentFiles = () => walk(join(ROOT, 'src/content')).filter((f) => f.endsWith('.ts') && !f.endsWith('home.ts'));
@@ -82,7 +82,8 @@ async function check(file, use) {
     if (['title', 'description', 'path', 'id'].includes(where) || /\.(src|href|key|alt|service)$/.test(where) || where.startsWith('schema')) continue;
     if (/[\u2014\u2013]/.test(s)) errors.push(`em or en dash in ${where}`);
     for (const b of BANNED) if (s.toLowerCase().includes(b)) errors.push(`banned phrase "${b}" in ${where}`);
-    if (/\$\d/.test(s)) errors.push(`dollar figure in ${where}: ${s.match(/\$\d[\d,.]*/)[0]}`);
+    // Dr. Ed's direct-pay rates, relayed by Vlad on 21 Oct 2026, are the only dollar figures allowed.
+    for (const m of s.matchAll(/\$\d[\d,.]*/g)) if (!['$175', '$125'].includes(m[0].replace(/[.,]+$/, ''))) errors.push(`dollar figure in ${where}: ${m[0]}`);
     if (/dry needling/i.test(s) && c.id !== 'P-019') errors.push(`"dry needling" in ${where} (allowed on /faqs/ only)`);
     if (/19860|Suite 201/i.test(s)) errors.push(`old address in ${where}`);
     if (/<[a-z]/i.test(s)) errors.push(`HTML in ${where}; use the inline marks`);

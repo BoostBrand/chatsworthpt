@@ -23,7 +23,7 @@ const page: PageContent = {
         },
         {
           q: 'Do you accept Medicare?',
-          a: 'Yes, we accept Medicare. Medicare patients need a referral from the start. The full picture is on [Insurance and cost](/insurance-and-cost/).',
+          a: 'Yes, we accept original Medicare; Medicare Advantage plans are not accepted at this time. Medicare patients need a referral from the start. The full picture is on [Insurance and cost](/insurance-and-cost/).',
         },
         {
           q: 'What if I have PPO insurance?',
@@ -31,7 +31,7 @@ const page: PageContent = {
         },
         {
           q: 'Can I pay for visits myself, without insurance?',
-          a: 'Yes, direct-pay patients are welcome, and we take credit and debit cards. Call (818) 749-3205 for the current rate. [CONFIRM: price or call line] Read [Insurance and cost](/insurance-and-cost/) for the rest.',
+          a: 'Yes, direct-pay patients are welcome. The first evaluation is $175 and each follow-up visit is $125. We take credit and debit cards, HSA and FSA cards, checks, Zelle and Venmo. Read [Insurance and cost](/insurance-and-cost/) for the rest.',
         },
         {
           q: 'Do you treat kids and teenagers?',
@@ -95,7 +95,7 @@ const page: PageContent = {
         },
         {
           q: 'Do you offer shockwave therapy, pelvic floor therapy or hand therapy?',
-          a: 'Call (818) 749-3205 and ask Dr. Ed. [CONFIRM whether shockwave, pelvic floor and hand therapy are offered]',
+          a: 'Dr. Ed offers hand therapy. Shockwave therapy and pelvic floor therapy are not offered at this time.',
         },
       ],
     },

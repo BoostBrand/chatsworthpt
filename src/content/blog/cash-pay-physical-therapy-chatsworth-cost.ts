@@ -5,14 +5,14 @@ const post: PostContent = {
   path: '/blog/cash-pay-physical-therapy-chatsworth-cost/',
   title: 'Cash-Pay Physical Therapy Cost in Chatsworth | Dr. Ed, DPT',
   description:
-    "Cash-pay physical therapy in Chatsworth: how to get the current rate, how a PPO superbill works, and what to ask your insurer. By Dr. Ed.",
+    "What a cash-pay physical therapy visit costs in Chatsworth, how a PPO superbill works, and what to ask your insurer. By Dr. Ed Shut, DPT.",
   h1: 'Cash-pay physical therapy in Chatsworth: what a visit costs and how a superbill works',
   datePublished: '2026-10-21',
   parent: { text: 'Insurance and cost', href: '/insurance-and-cost/' },
   summary:
-    'What cash-pay means at the clinic, where to get the current rate, and the steps a superbill takes from your visit to your insurer.',
+    'What cash-pay means at the clinic, what a visit costs, and the steps a superbill takes from your visit to your insurer.',
   answer:
-    'Cash-pay means you pay for the visit yourself, and if you have a PPO plan the clinic gives you a superbill, an itemized receipt you send to your insurer for reimbursement. Call (818) 749-3205 for the current rate. [CONFIRM publishing it]',
+    'Cash-pay means you pay for the visit yourself, and if you have a PPO plan the clinic gives you a superbill, an itemized receipt you send to your insurer for reimbursement. Direct-pay visits are $175 for the first evaluation and $125 for each follow-up visit.',
   body: [
     { type: 'h2', text: 'What cash-pay physical therapy means' },
     {
@@ -22,7 +22,7 @@ const post: PostContent = {
     {
       type: 'leads',
       items: [
-        { lead: 'No insurance.', text: "Physical therapy without insurance means you pay the clinic's current rate for each visit." },
+        { lead: 'No insurance.', text: "Physical therapy without insurance means you pay for each visit yourself: $175 for the first evaluation, then $125 a visit." },
         {
           lead: 'A PPO plan.',
           text: 'You pay at the visit, then send your insurer a superbill and ask for reimbursement.',
@@ -35,14 +35,15 @@ const post: PostContent = {
     },
 
     { type: 'h2', text: 'What a visit costs' },
-    { type: 'callout', text: 'Call (818) 749-3205 for the current rate. [CONFIRM publishing it]' },
+    { type: 'callout', text: 'The first evaluation is $175. Each follow-up visit is $125.' },
+    { type: 'p', text: 'The evaluation is a full first visit: Dr. Ed checks how you walk and move, tests your mobility, finds the pain points and confirms your pain is mechanical, the kind physical therapy treats. If it is not, he tells you and refers you to the right doctor.' },
     {
       type: 'p',
       text: 'A visit runs about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Ed, from your first evaluation through discharge.',
     },
     {
       type: 'p',
-      text: 'How many visits you need depends on your condition and how your body responds. Dr. Ed sets the plan after your first evaluation rather than guessing up front, so he does not quote a number of visits before he has seen you. Ask for the rate first, then let the evaluation set the plan.',
+      text: 'How many visits you need depends on your condition and how your body responds. Dr. Ed sets the plan after your first evaluation rather than guessing up front, so he does not quote a number of visits before he has seen you.',
     },
 
     { type: 'h2', text: 'How a superbill works' },
@@ -109,7 +110,7 @@ const post: PostContent = {
     { type: 'h2', text: 'What to do next' },
     {
       type: 'p',
-      text: 'Call for the current rate, then put the questions above to your insurer. For Medicare, a personal injury case or any other way to pay, start with [insurance and cost](/insurance-and-cost/). When you are ready, book below.',
+      text: 'With the rates on this page in hand, put the questions above to your insurer. For Medicare, a personal injury case or any other way to pay, start with [insurance and cost](/insurance-and-cost/). When you are ready, book below.',
     },
   ],
   sources: [

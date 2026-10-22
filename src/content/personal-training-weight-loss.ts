@@ -34,7 +34,7 @@ const page: PageContent = {
         },
         {
           lead: 'You want to lose weight, and a joint makes it harder.',
-          text: 'A doctor who treats joint injuries builds your program around the one that was hurt. Weight loss coaching is part of the work.',
+          text: 'A doctor who treats joint injuries builds your program around the one that was hurt. If weight loss is one of your goals, your training is built around it.',
         },
         {
           lead: 'You want to get back to fitness after an injury.',
@@ -62,8 +62,8 @@ const page: PageContent = {
               text: 'If your knee was the problem, your program is built around your knee, not around a standard routine.',
             },
             {
-              lead: 'Nutrition guidance.',
-              text: '[CONFIRM what nutrition guidance Dr. Ed gives, if any]',
+              lead: 'No diet plans.',
+              text: 'Dr. Ed is not a nutritionist and does not give nutrition advice. Your sessions are about exercise.',
             },
           ],
         },
@@ -75,7 +75,7 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: 'Personal training is direct pay only. You can book a package or pay per session. Prices are given by phone: call (818) 749-3205 for the current rate. [CONFIRM prices or that prices are given by phone]',
+          text: 'Personal training is direct pay only, at the same prices as physical therapy visits: $175 for the first evaluation and $125 for each session after that. You can book a package or pay per session.',
         },
         {
           type: 'p',
@@ -107,7 +107,7 @@ const page: PageContent = {
         },
         {
           q: 'Do you give diet plans?',
-          a: 'That is a question for Dr. Ed, so ask him when you book. [CONFIRM]',
+          a: 'No. Dr. Ed is not a nutritionist and does not give nutrition advice or diet plans.',
         },
       ],
     },

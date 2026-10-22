@@ -31,7 +31,7 @@ export const BUSINESS = {
   closes: '20:00',
   openDays: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
   // The two ways a visitor pays that are confirmed (Dr. Ed's rulings and the listing's attributes).
-  paymentAccepted: 'Medicare, personal injury liens, credit and debit cards',
+  paymentAccepted: 'Medicare, personal injury liens, credit and debit cards, HSA and FSA cards, checks, Zelle, Venmo',
   languages: ['en', 'ru'],
   doctor: {
     name: 'Edward Shut',

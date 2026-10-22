@@ -208,7 +208,11 @@ def main():
     body_text = {p: ' '.join(g.text) for p, g in parsed.items()}
     raw_html = {p: page_file(p).read_text(encoding='utf-8') for p in parsed}
     dollar = [(p, m) for p, t in raw_html.items() for m in re.findall(r'\$\d[\d,.]*', t)]
-    gate('$ followed by a digit', len(dollar), 0, 0, detail=dollar)
+    # Dr. Ed's direct-pay rates, relayed by Vlad on 21 Oct 2026, are the only dollar figures allowed.
+    confirmed = {'$175', '$125'}
+    stray = [(p, m) for p, m in dollar if m.rstrip('.,') not in confirmed]
+    gate('$ followed by a digit, other than the confirmed rates $175 and $125', len(stray), 0, 0, detail=stray)
+    gate('Confirmed rate mentions, $175 and $125 (not a gate)', len(dollar) - len(stray), None, 'reported', hard=False)
     banned = [(p, b) for p, t in body_text.items() for b in BANNED if b in t.lower()]
     banned += [(p, b) for p, t in raw_html.items() for b in BANNED if b in re.sub(r'<[^>]+>', ' ', t).lower() and (p, b) not in banned]
     gate('Banned phrases (section 2 list)', len(banned), 0, 0, detail=banned)

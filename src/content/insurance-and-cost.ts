@@ -43,7 +43,7 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: '**We accept Medicare, with a referral from your doctor.** The referral is needed from the start.',
+          text: '**We accept original Medicare, with a referral from your doctor.** The referral is needed from the start. Medicare Advantage plans are not accepted at this time.',
         },
         { type: 'p', text: 'Bring these to your first visit:' },
         {
@@ -70,7 +70,7 @@ const page: PageContent = {
         },
         {
           type: 'p',
-          text: 'We do not bill PPO plans directly. [CONFIRM that no plan is billed directly]',
+          text: 'We do not bill PPO or other private insurance plans directly.',
         },
       ],
     },
@@ -84,7 +84,7 @@ const page: PageContent = {
         },
         {
           type: 'p',
-          text: 'Call (818) 749-3205 for the current rate. [CONFIRM: publish prices or not; Performance MFR publishes a price and converts well, plan v3 s12]',
+          text: '**Your first evaluation is $175. Each follow-up visit is $125.** The evaluation is a full first visit: Dr. Ed checks how you walk and move, tests your mobility, finds the pain points and confirms your pain is mechanical, the kind physical therapy treats. If it is not, he tells you and refers you to the right doctor. CSUN students and faculty can ask about a discount when they book.',
         },
         {
           type: 'p',
@@ -106,7 +106,7 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: '**We accept personal injury cases on a lien.** [CONFIRM the one-line process]',
+          text: '**We accept personal injury cases on a lien.** To start, your attorney emails Dr. Ed your details, such as your name, address and date of birth.',
         },
       ],
     },
@@ -126,7 +126,7 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: '**We accept credit and debit cards.** [CONFIRM: HSA and FSA cards, checks, Zelle]',
+          text: '**We accept credit and debit cards, HSA and FSA cards, checks, Zelle and Venmo.**',
         },
       ],
     },
@@ -141,15 +141,15 @@ const page: PageContent = {
         },
         {
           q: 'Do you take Medicare?',
-          a: 'Yes, with a referral from your doctor. Medicare patients need one from the start. Bring the referral, your Medicare card and any imaging reports to your first visit.',
+          a: 'Yes, original Medicare, with a referral from your doctor. Medicare patients need one from the start. Medicare Advantage plans are not accepted at this time. Bring the referral, your Medicare card and any imaging reports to your first visit.',
         },
         {
           q: 'Do you take my PPO?',
-          a: 'We give you a superbill, an itemized receipt you send to your insurer for reimbursement. We do not bill the plan directly. [CONFIRM]',
+          a: 'We give you a superbill, an itemized receipt you send to your insurer for reimbursement. We do not bill the plan directly.',
         },
         {
           q: 'How much does a visit cost without insurance?',
-          a: 'Call (818) 749-3205 for the current rate. [CONFIRM: price or call line] The total depends on how many visits you need, and Dr. Ed does not quote that number before your first evaluation.',
+          a: 'The first evaluation is $175, and each follow-up visit is $125. The total depends on how many visits you need, and Dr. Ed does not quote that number before your first evaluation.',
         },
         {
           q: 'Do you take personal injury cases?',

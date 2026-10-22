@@ -69,7 +69,7 @@ const page: PageContent = {
         },
         {
           title: 'Finding the cause',
-          text: 'He puts it together and finds what is actually causing your pain.',
+          text: 'He puts it together, finds what is actually causing your pain and confirms it is mechanical, the kind of pain physical therapy treats. If it is not, he tells you and refers you to the right doctor.',
         },
         {
           title: 'A plain explanation',
@@ -142,6 +142,10 @@ const page: PageContent = {
         {
           q: 'How long is the first visit?',
           a: 'The first visit runs about 60 minutes, depending on what you need, and it is one-on-one with Dr. Ed. That time covers your evaluation, your first treatment and your home program.',
+        },
+        {
+          q: 'How much does the first visit cost?',
+          a: 'If you pay directly, the first evaluation is $175 and each follow-up visit is $125. Medicare, PPO superbills and personal injury liens are explained on [Insurance and cost](/insurance-and-cost/).',
         },
         {
           q: 'What should I wear?',
