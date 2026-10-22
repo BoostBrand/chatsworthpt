@@ -12,7 +12,7 @@ const r = renderInline;
 {blocks.map((b) => {
   switch (b.type) {
     case 'p':
-      return <p set:html={r(b.text)} />;
+      return <p lang={b.lang} set:html={r(b.text)} />;
     case 'h3':
       return <h3 set:html={r(b.text)} />;
     case 'ul':

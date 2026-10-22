@@ -19,7 +19,7 @@ export interface ImageRef {
 }
 
 export type Block =
-  | { type: 'p'; text: Inline }
+  | { type: 'p'; text: Inline; lang?: string } // lang marks a paragraph in another language, e.g. 'ru'
   | { type: 'ul'; items: Inline[] }
   | { type: 'ol'; items: Inline[] }
   | { type: 'h3'; text: Inline }

@@ -141,6 +141,11 @@ const page: PageContent = {
           type: 'p',
           text: 'Dr. Ed is a Russian-speaking physical therapist in Chatsworth. He treats patients in English or Russian, so use whichever language is easier for you.',
         },
+        {
+          type: 'p',
+          lang: 'ru',
+          text: 'Доктор Эд говорит по-русски. Вы можете пройти приём и лечение на русском языке.',
+        },
       ],
     },
     {
@@ -166,7 +171,7 @@ const page: PageContent = {
   ],
   notes: [
     "The third paragraph of the In Dr. Ed's words section is new first-person copy, built only from the confirmed facts: every visit himself, never handed off, about 60 minutes depending on what you need, 15+ years. Dr. Ed should read it before launch.",
-    'The Russian sentence slot is left out on purpose until Dr. Ed confirms the exact sentence to print. There is no Russian text and no placeholder on the page.',
+    'The Russian sentence was written by Claude on Vlad\'s go (21 Oct 2026, answer 27: whatever you think is best) and is marked lang ru.',
     'The review is cut to its first three sentences so the page never uses the bare profession word; the fourth sentence of the review does. Remove the sentences field to show the full review.',
     'NDT and PNF are named once, in How Dr. Ed works, and are not spelled out because the facts list does not spell them out.',
     'The pediatric and neurological links sit in the Who Dr. Ed treats list, so they are not linked a second time in the copy.',
