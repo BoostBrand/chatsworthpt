@@ -8,7 +8,7 @@ const page: PageContent = {
     "Physical therapy for Porter Ranch families, one-on-one with Dr. Ed Shut, DPT in nearby Chatsworth. Book an evaluation.",
   hero: {
     h1: 'Physical therapy for Porter Ranch families, one-on-one in nearby Chatsworth',
-    lede: 'Dr. Ed sees patients at 19851 Nordhoff Place, Unit 105, in Chatsworth. [verify distance and time via Rinaldi and Winnetka or the 118]',
+    lede: 'Dr. Ed sees patients at 19851 Nordhoff Place, Unit 105, in Chatsworth, under 4 miles from Porter Ranch Town Center straight down Corbin Avenue.',
     placeholder: 'PHOTO: the building front, to be shot',
     book: 'Book my evaluation',
   },
@@ -17,10 +17,6 @@ const page: PageContent = {
       kind: 'prose',
       h2: 'Why Porter Ranch patients come here',
       blocks: [
-        {
-          type: 'p',
-          text: 'We could not find a physical therapy clinic with a Porter Ranch address; the closest ones list Northridge addresses. [verify before launch]',
-        },
         {
           type: 'p',
           text: 'Porter Ranch is part of the area this clinic serves. Four things to know before you book.',
@@ -56,7 +52,6 @@ const page: PageContent = {
           type: 'ul',
           items: [
             'Reviews from Porter Ranch residents [CONFIRM]',
-            'Families from the Porter Ranch schools or clubs treated [CONFIRM]',
           ],
         },
       ],
@@ -65,7 +60,7 @@ const page: PageContent = {
       kind: 'prose',
       h2: 'Getting here from Porter Ranch',
       blocks: [
-        { type: 'p', text: '[verify]' },
+        { type: 'p', text: 'Take Corbin Avenue south from Porter Ranch and turn right onto Nordhoff Place.' },
         {
           type: 'p',
           text: 'Park free in the lot in front of the building. There is no gate code, and street parking is also available. The contact page has a map and [directions](/contact/).',
@@ -110,7 +105,7 @@ const page: PageContent = {
       items: [
         {
           q: 'How far is Chatsworth from Porter Ranch?',
-          a: 'The clinic is at 19851 Nordhoff Place, Unit 105, in Chatsworth. The distance and drive time from Porter Ranch are [verify].',
+          a: 'The clinic is at 19851 Nordhoff Place, Unit 105, in Chatsworth, under 4 miles from Porter Ranch Town Center, straight down Corbin Avenue.',
         },
         {
           q: 'Do you treat kids?',

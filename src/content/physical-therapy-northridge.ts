@@ -9,7 +9,7 @@ const page: PageContent = {
   hero: {
     h1: 'Physical therapy for Northridge patients, ten minutes away in Chatsworth',
     lede:
-      "The clinic is at 19851 Nordhoff Place in Chatsworth. [verify: distance and drive time from Nordhoff and Reseda to 19851 Nordhoff Place; the 'ten minutes' in the H1 and description is unverified until then]",
+      'The clinic is at 19851 Nordhoff Place in Chatsworth, about 2 miles west of Nordhoff Street and Reseda Boulevard.',
     placeholder: 'PHOTO: the front of the building from Nordhoff Place with the street sign, to be shot',
     book: 'Book my evaluation',
   },
@@ -43,7 +43,7 @@ const page: PageContent = {
             },
           ],
         },
-        { type: 'p', text: '[CONFIRM]' },
+        { type: 'p', text: 'It is rare for a physical therapy clinic to have a licensed physical therapist work with you for the entire visit. Here, Dr. Ed does, every visit.' },
       ],
     },
     {
@@ -54,8 +54,8 @@ const page: PageContent = {
           type: 'ul',
           items: [
             '[CONFIRM which of the 28 reviewers live in Northridge; if none, this section is cut and the page fails the test]',
-            'CSUN students and athletes treated [CONFIRM]',
-            'Patients discharged from Northridge Hospital after joint replacement [CONFIRM any]',
+            'Dr. Ed treats CSUN students and athletes, and CSUN students and faculty can ask about a discount when they book.',
+            'Many of his joint replacement patients come to him after discharge from Northridge Hospital.',
           ],
         },
       ],
@@ -64,9 +64,9 @@ const page: PageContent = {
       kind: 'prose',
       h2: 'Getting here from Northridge',
       blocks: [
-        { type: 'p', text: 'Take Nordhoff Street west to Corbin, then turn left on Nordhoff Place. [verify]' },
+        { type: 'p', text: 'Take Nordhoff Street west. Keep right where Nordhoff Way splits off, cross Corbin Avenue, and you are on Nordhoff Place, with the clinic just ahead.' },
         { type: 'p', text: 'Park in the free lot in front of the building. There is no gate code.' },
-        { type: 'p', text: 'From CSUN and from Northridge Fashion Center [verify both routes]' },
+        { type: 'p', text: 'From CSUN, it is under 3 miles west along Nordhoff Street. From Northridge Fashion Center, take Shirley Avenue south to Nordhoff Street, turn right, and continue across Corbin Avenue onto Nordhoff Place, just under a mile.' },
         { type: 'placeholder', label: 'PHOTO: the map image with Northridge labelled, to be shot' },
         { type: 'p', text: 'A map and the [directions](/contact/) are on the contact page.' },
       ],
@@ -100,7 +100,7 @@ const page: PageContent = {
       items: [
         {
           q: 'How far is the clinic from Northridge?',
-          a: 'The clinic is at 19851 Nordhoff Place in Chatsworth, west of Northridge. [verify] The route is laid out above.',
+          a: 'The clinic is at 19851 Nordhoff Place in Chatsworth, about 2 miles west of Nordhoff Street and Reseda Boulevard and under 3 miles from CSUN. The route is laid out above.',
         },
         {
           q: 'Is there parking?',

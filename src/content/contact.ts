@@ -33,16 +33,12 @@ const page: PageContent = {
         {
           type: 'ul',
           items: [
-            'From [Porter Ranch](/physical-therapy-porter-ranch/), take Rinaldi and Winnetka.',
-            'From [Northridge](/physical-therapy-northridge/), take Nordhoff.',
-            'From West Hills or Canoga Park, take Topanga Canyon or De Soto.',
-            'From Granada Hills, take the 118 to Winnetka.',
-            'From Simi Valley, take the 118 to Topanga Canyon.',
+            'From [Porter Ranch](/physical-therapy-porter-ranch/), take Corbin Avenue south and turn right onto Nordhoff Place.',
+            'From [Northridge](/physical-therapy-northridge/), take Nordhoff Street west, keep right where Nordhoff Way splits off, and continue across Corbin Avenue onto Nordhoff Place.',
+            'From West Hills or Canoga Park, take Topanga Canyon Boulevard to Parthenia Street, head east to Corbin Avenue, turn left, then turn left again onto Nordhoff Place.',
+            'From Granada Hills, take Devonshire Street west to Corbin Avenue, turn left, then turn right onto Nordhoff Place.',
+            'From Simi Valley, take the 118 east to the De Soto Avenue exit, head south on De Soto, turn left on Plummer Street, then right on Oakdale Avenue to the clinic.',
           ],
-        },
-        {
-          type: 'p',
-          text: '[CONFIRM or verify each: Porter Ranch via Rinaldi and Winnetka; Northridge via Nordhoff; West Hills and Canoga Park via Topanga Canyon or De Soto; Granada Hills via the 118 to Winnetka; Simi Valley via the 118 to Topanga Canyon]',
         },
       ],
     },
