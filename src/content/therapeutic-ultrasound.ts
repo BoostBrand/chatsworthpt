@@ -5,7 +5,7 @@ const page: PageContent = {
   path: '/therapeutic-ultrasound/',
   title: 'Therapeutic Ultrasound in Chatsworth | Dr. Ed Shut, DPT',
   description:
-    'Learn how therapeutic ultrasound eases pain and speeds healing inside physical therapy sessions with Dr. Ed Shut, DPT in Chatsworth. Book an evaluation.',
+    "Learn how Dr. Ed Shut, DPT uses therapeutic ultrasound in Chatsworth to warm and loosen tissue before hands-on physical therapy. Book an evaluation.",
   hero: {
     h1: 'Therapeutic ultrasound in Chatsworth: how Dr. Ed uses it in treatment',
     lede: 'Sound waves warm and loosen tissue before hands-on work. This is treatment ultrasound, not the imaging kind.',

@@ -5,7 +5,7 @@ const page: PageContent = {
   path: '/conditions/knee-replacement-recovery/',
   title: 'Knee Replacement Physical Therapy Chatsworth | Dr. Ed, DPT',
   description:
-    'After a knee replacement, the first six weeks decide your range of motion for years. See how Dr. Ed gets the knee bending and walking normally. Book now.',
+    "After a knee replacement, see how Dr. Ed Shut, DPT works on bending, straightening and walking, one-on-one in Chatsworth. Book an evaluation.",
   hero: {
     h1: 'Knee replacement recovery: physical therapy in Chatsworth',
     lede: 'I had my knee replaced. Now I want to walk, take stairs and get in the car without thinking about it.',

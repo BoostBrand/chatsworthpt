@@ -5,7 +5,7 @@ const page: PageContent = {
   path: '/physical-therapy-porter-ranch/',
   title: 'Physical Therapy Near Porter Ranch | Dr. Ed Shut, DPT',
   description:
-    'Porter Ranch has no physical therapy clinic of its own. Dr. Ed Shut, DPT treats Porter Ranch patients one-on-one a short drive away in Chatsworth. Book.',
+    "Physical therapy for Porter Ranch families, one-on-one with Dr. Ed Shut, DPT in nearby Chatsworth. Book an evaluation.",
   hero: {
     h1: 'Physical therapy for Porter Ranch families, one-on-one in nearby Chatsworth',
     lede: 'Dr. Ed sees patients at 19851 Nordhoff Place, Unit 105, in Chatsworth. [verify distance and time via Rinaldi and Winnetka or the 118]',

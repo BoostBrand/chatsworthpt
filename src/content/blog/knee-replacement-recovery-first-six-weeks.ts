@@ -5,7 +5,7 @@ const post: PostContent = {
   path: '/blog/knee-replacement-recovery-first-six-weeks/',
   title: 'Knee Replacement Recovery: The First Six Weeks | Dr. Ed, DPT',
   description:
-    'The first six weeks after a knee replacement decide your range of motion for years. Dr. Ed Shut, DPT in Chatsworth lays out the goals and the home work.',
+    "What the first six weeks after a knee replacement involve, from your surgeon's rules to the home work. Dr. Ed Shut, DPT in Chatsworth explains.",
   h1: 'Knee replacement recovery: what the first six weeks should look like',
   datePublished: '2026-10-21',
   parent: { text: 'Knee replacement recovery', href: '/conditions/knee-replacement-recovery/' },

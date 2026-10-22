@@ -5,7 +5,7 @@ const page: PageContent = {
   path: '/red-light-therapy/',
   title: 'Red Light Therapy in Chatsworth | Dr. Ed Shut, DPT',
   description:
-    'Red light therapy in Chatsworth, used by Dr. Ed Shut, DPT to speed tissue recovery inside one-on-one physical therapy for pain and injuries. Ask about it.',
+    "Red light therapy in Chatsworth, used by Dr. Ed Shut, DPT as one part of one-on-one physical therapy for pain and injuries. See what the research shows.",
   hero: {
     h1: 'Red light therapy in Chatsworth, as part of your physical therapy plan',
     lede: 'Red light is one tool inside your physical therapy plan, applied by Dr. Ed himself. It is not a wellness lounge session.',

@@ -5,7 +5,7 @@ const page: PageContent = {
   path: '/conditions/ankle-sprain/',
   title: 'Ankle Sprain Rehab in Chatsworth | Dr. Ed Shut, DPT',
   description:
-    'An ankle sprained twice will sprain again unless balance and strength come back. See how Dr. Ed rehabs ankles one-on-one in Chatsworth. Book now.',
+    "Keep rolling the same ankle? See how Dr. Ed Shut, DPT rebuilds balance and strength one-on-one in Chatsworth before you go back. Book now.",
   hero: {
     h1: 'Ankle sprain rehab in Chatsworth: stop the sprain that keeps coming back',
     lede: 'I keep rolling my ankle, and I do not trust it.',

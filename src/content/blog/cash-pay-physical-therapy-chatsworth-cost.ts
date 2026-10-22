@@ -5,7 +5,7 @@ const post: PostContent = {
   path: '/blog/cash-pay-physical-therapy-chatsworth-cost/',
   title: 'Cash-Pay Physical Therapy Cost in Chatsworth | Dr. Ed, DPT',
   description:
-    'See what a cash-pay physical therapy visit costs in Chatsworth, how a PPO superbill gets you reimbursed, and when paying direct is simpler. By Dr. Ed.',
+    "Cash-pay physical therapy in Chatsworth: how to get the current rate, how a PPO superbill works, and what to ask your insurer. By Dr. Ed.",
   h1: 'Cash-pay physical therapy in Chatsworth: what a visit costs and how a superbill works',
   datePublished: '2026-10-21',
   parent: { text: 'Insurance and cost', href: '/insurance-and-cost/' },

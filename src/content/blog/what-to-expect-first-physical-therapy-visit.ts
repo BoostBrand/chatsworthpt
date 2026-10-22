@@ -5,7 +5,7 @@ const post: PostContent = {
   path: '/blog/what-to-expect-first-physical-therapy-visit/',
   title: 'First Physical Therapy Visit: What to Expect | Dr. Ed, DPT',
   description:
-    'Your first physical therapy visit, minute by minute: the questions, the tests, the first treatment and what to wear. Dr. Ed Shut, DPT explains.',
+    "Your first physical therapy visit, step by step: the questions, the tests, the first treatment and what to wear. Dr. Ed Shut, DPT explains.",
   h1: 'What to expect at your first physical therapy visit, and what to wear',
   datePublished: '2026-10-21',
   parent: { text: 'Your first visit', href: '/first-visit/' },
