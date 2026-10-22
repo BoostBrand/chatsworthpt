@@ -8,6 +8,14 @@ const ROOT = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const pages = JSON.parse(readFileSync(join(ROOT, 'src/data/pages.json'), 'utf8'));
 const reviews = JSON.parse(readFileSync(join(ROOT, 'src/data/reviews.json'), 'utf8'));
 const seo = JSON.parse(readFileSync(join(ROOT, 'reference/blueprint-seo.json'), 'utf8'));
+// Vlad's rulings that change a blueprint SEO field (reference/SEO-RULINGS.json) apply on top of the blueprint.
+const rulingsPath = join(ROOT, 'reference/SEO-RULINGS.json');
+if (existsSync(rulingsPath)) {
+  for (const [id, r] of Object.entries(JSON.parse(readFileSync(rulingsPath, 'utf8')))) {
+    if (!id.startsWith('P-')) continue;
+    seo[id] = { ...(seo[id] ?? {}), ...Object.fromEntries(['h1', 'title', 'description'].filter((k) => r[k]).map((k) => [k, r[k]])) };
+  }
+}
 const byPath = new Map(pages.map((p) => [p.path, p]));
 const byId = new Map(pages.map((p) => [p.id, p]));
 const BANNED = ['whether you want', "in today's digital landscape", 'look no further', 'unlock', 'elevate', 'game-changer', 'seamless', "we've got you covered", 'we have got you covered'];

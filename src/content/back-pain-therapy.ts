@@ -10,7 +10,7 @@ const page: PageContent = {
   "description": "Back pain therapy in Chatsworth, one-on-one with Dr. Ed Shut, DPT. Hands-on treatment and a home plan, evenings and Saturdays. Book your evaluation.",
   "hero": {
     "h1": "Back pain therapy in Chatsworth that finds the cause, not just the sore spot",
-    "lede": "Sixty minutes, one-on-one with Dr. Ed, every visit, and a home plan that keeps the relief going between sessions.",
+    "lede": "About 60 minutes, one-on-one with Dr. Ed, every visit, and a home plan that keeps the relief going between sessions.",
     "book": "Book my evaluation",
     "image": {
       "src": "/img/back-pain-therapy-chatsworth.webp",
@@ -53,11 +53,11 @@ const page: PageContent = {
       "blocks": [
         {
           "type": "p",
-          "text": "The first visit is a 60-minute evaluation, one-on-one with Dr. Ed. He does not start with the sore spot. He watches how you stand, bend, twist, sit and walk, tests the hips, the mid-back and the muscles that are supposed to be holding the spine steady, and checks whether a nerve is involved. Back pain usually has a cause somewhere other than where it hurts, and the evaluation is where he finds it. Then he explains it in plain terms and tells you what the plan is."
+          "text": "The first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Ed. He does not start with the sore spot. He watches how you stand, bend, twist, sit and walk, tests the hips, the mid-back and the muscles that are supposed to be holding the spine steady, and checks whether a nerve is involved. Back pain usually has a cause somewhere other than where it hurts, and the evaluation is where he finds it. Then he explains it in plain terms and tells you what the plan is."
         },
         {
           "type": "p",
-          "text": "Every visit after that is 60 minutes with Dr. Ed, nobody else, and usually mixes:"
+          "text": "Every visit after that is about 60 minutes with Dr. Ed, nobody else, and usually mixes:"
         },
         {
           "type": "ul",
@@ -124,11 +124,11 @@ const page: PageContent = {
       "blocks": [
         {
           "type": "p",
-          "text": "Medicare is accepted with a referral from your doctor. Direct-pay patients do not need a referral and can usually be seen within days, which matters when your back has locked up. Details and what to bring are on the [insurance and cost](/insurance-and-cost/) page."
+          "text": "You can usually be seen within days, which matters when your back has locked up."
         }
       ],
-      "siteLines": false,
-      "more": false
+      "siteLines": true,
+      "more": true
     },
     {
       "kind": "faq",
@@ -156,7 +156,7 @@ const page: PageContent = {
         },
         {
           "q": "Do I need a referral?",
-          "a": "Only for Medicare. Direct-pay patients can book straight away."
+          "a": "No referral is needed to start. California law lets you see a physical therapist without a referral for up to 12 visits or 45 days, whichever comes first. After that, we need a referral from your doctor to continue. Medicare patients need a referral from the start."
         }
       ]
     }

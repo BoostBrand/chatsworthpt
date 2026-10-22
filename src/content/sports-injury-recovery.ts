@@ -53,11 +53,11 @@ const page: PageContent = {
       "blocks": [
         {
           "type": "p",
-          "text": "The first visit is a 60-minute evaluation, one-on-one with Dr. Ed. He looks at the injured area and at everything above and below it: how you land, cut, squat, throw or reach, where the strength is missing and which movement keeps reloading the injury. He explains what he found and what the plan is, including a realistic line on when you can train and when you can compete."
+          "text": "The first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Ed. He looks at the injured area and at everything above and below it: how you land, cut, squat, throw or reach, where the strength is missing and which movement keeps reloading the injury. He explains what he found and what the plan is, including a realistic line on when you can train and when you can compete."
         },
         {
           "type": "p",
-          "text": "Every visit after that is 60 minutes with Dr. Ed, nobody else, and usually mixes:"
+          "text": "Every visit after that is about 60 minutes with Dr. Ed, nobody else, and usually mixes:"
         },
         {
           "type": "ul",
@@ -141,11 +141,11 @@ const page: PageContent = {
       "blocks": [
         {
           "type": "p",
-          "text": "Direct-pay athletes do not need a referral and can usually start within days of the injury. Medicare is accepted with a referral. Details are on the [insurance and cost](/insurance-and-cost/) page."
+          "text": "You can usually start within days of the injury."
         }
       ],
-      "siteLines": false,
-      "more": false
+      "siteLines": true,
+      "more": true
     },
     {
       "kind": "faq",
@@ -173,7 +173,7 @@ const page: PageContent = {
         },
         {
           "q": "Do I need a referral?",
-          "a": "Only for Medicare. Direct-pay patients can book straight away."
+          "a": "No referral is needed to start. California law lets you see a physical therapist without a referral for up to 12 visits or 45 days, whichever comes first. After that, we need a referral from your doctor to continue. Medicare patients need a referral from the start."
         }
       ]
     }

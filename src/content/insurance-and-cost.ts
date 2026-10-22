@@ -116,7 +116,7 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: '**Visits for kids and teens are direct pay, and no referral is needed to start.** Dr. Ed treats school-age children and teenagers, gymnasts and dancers included. A parent stays in the room for every visit.',
+          text: '**No referral is needed to start.** Dr. Ed treats school-age children and teenagers, gymnasts and dancers included. A parent stays in the room for every visit.',
         },
       ],
     },

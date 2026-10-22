@@ -10,7 +10,7 @@ const page: PageContent = {
   "description": "Post-op physical therapy in Chatsworth after knee or hip replacement, ACL or rotator cuff surgery. One-on-one with Dr. Ed Shut, DPT. Book now.",
   "hero": {
     "h1": "Post-op physical therapy in Chatsworth, one-on-one with Dr. Ed",
-    "lede": "Your surgeon's protocol, followed one-on-one for 60 minutes a visit, with a home program that keeps the recovery moving between sessions.",
+    "lede": "Your surgeon's protocol, followed one-on-one for about 60 minutes a visit, with a home program that keeps the recovery moving between sessions.",
     "book": "Book my evaluation",
     "image": {
       "src": "/img/post-op-physical-therapy-chatsworth.webp",
@@ -48,11 +48,11 @@ const page: PageContent = {
       "blocks": [
         {
           "type": "p",
-          "text": "Bring your surgeon's post-op protocol and your discharge paperwork to the first visit. Dr. Ed works from your surgeon's instructions, not a generic plan, and the 60-minute evaluation sets your starting point: swelling, range of motion, strength, how you walk or reach, and what you need to do again at home and at work."
+          "text": "Bring your surgeon's post-op protocol and your discharge paperwork to the first visit. Dr. Ed works from your surgeon's instructions, not a generic plan, and the evaluation, about 60 minutes depending on what you need, sets your starting point: swelling, range of motion, strength, how you walk or reach, and what you need to do again at home and at work."
         },
         {
           "type": "p",
-          "text": "Every visit after that is 60 minutes with Dr. Ed, nobody else, in the stages your surgery needs:"
+          "text": "Every visit after that is about 60 minutes with Dr. Ed, nobody else, in the stages your surgery needs:"
         },
         {
           "type": "ul",
@@ -132,11 +132,11 @@ const page: PageContent = {
       "blocks": [
         {
           "type": "p",
-          "text": "Medicare is accepted; your surgeon's post-op prescription is the referral. Direct-pay patients can start as soon as the surgeon clears outpatient therapy. Details and what to bring are on the [insurance and cost](/insurance-and-cost/) page."
+          "text": "Medicare is accepted; your surgeon's post-op prescription is the referral. You can start as soon as your surgeon clears outpatient therapy."
         }
       ],
-      "siteLines": false,
-      "more": false
+      "siteLines": true,
+      "more": true
     },
     {
       "kind": "faq",

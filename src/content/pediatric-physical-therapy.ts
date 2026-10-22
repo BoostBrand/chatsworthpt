@@ -7,10 +7,10 @@ const page: PageContent = {
   "path": "/pediatric-physical-therapy/",
   "approved": true,
   "title": "Pediatric Physical Therapy in Chatsworth | Dr. Ed Shut, DPT",
-  "description": "Your child gets Dr. Ed's full attention for a 60-minute visit, with you in the room. Gymnasts, dancers and growing kids in Chatsworth. Call (818) 749-3205.",
+  "description": "Your child gets Dr. Ed's full attention for about 60 minutes, with you in the room. Gymnasts, dancers and growing kids in Chatsworth. Call (818) 749-3205.",
   "hero": {
     "h1": "Pediatric physical therapy in Chatsworth that gets your child back to play",
-    "lede": "Sixty minutes with a Doctor of Physical Therapy, your child's own plan, and you in the room for every visit.",
+    "lede": "About 60 minutes with a Doctor of Physical Therapy, your child's own plan, and you in the room for every visit.",
     "book": "Book my child's evaluation",
     "placeholder": "PHOTO: Dr. Ed working with a child or teen athlete, parent in frame, to be shot"
   },
@@ -40,11 +40,11 @@ const page: PageContent = {
       "blocks": [
         {
           "type": "p",
-          "text": "The first visit is a 60-minute evaluation, one-on-one with Dr. Ed, with a parent or guardian in the room the whole time; minors are never treated alone. He watches how your child moves, jumps, lands, balances and does the thing that hurts, checks strength, flexibility and alignment, and asks about the sport, the schedule and how the pain started. Then he explains what he found in words a kid can follow, because a child who understands the plan does the exercises."
+          "text": "The first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Ed, with a parent or guardian in the room the whole time; minors are never treated alone. He watches how your child moves, jumps, lands, balances and does the thing that hurts, checks strength, flexibility and alignment, and asks about the sport, the schedule and how the pain started. Then he explains what he found in words a kid can follow, because a child who understands the plan does the exercises."
         },
         {
           "type": "p",
-          "text": "Every visit after that is 60 minutes with Dr. Ed, nobody else. Treatment depends on the age and the problem:"
+          "text": "Every visit after that is about 60 minutes with Dr. Ed, nobody else. Treatment depends on the age and the problem:"
         },
         {
           "type": "ul",
@@ -126,11 +126,11 @@ const page: PageContent = {
       "blocks": [
         {
           "type": "p",
-          "text": "Visits for children and teens are direct pay, and no referral is needed to start. If your pediatrician or orthopedist has already sent you, bring the paperwork and any imaging; it saves time at the first visit. Details are on the [insurance and cost](/insurance-and-cost/) page."
+          "text": "No referral is needed to start. If your pediatrician or orthopedist has already sent you, bring the paperwork and any imaging; it saves time at the first visit."
         }
       ],
-      "siteLines": false,
-      "more": false
+      "siteLines": true,
+      "more": true
     },
     {
       "kind": "faq",
@@ -150,7 +150,7 @@ const page: PageContent = {
         },
         {
           "q": "Do we need a referral?",
-          "a": "No. Direct-pay patients, including children, can book straight away. If you have one from your pediatrician, bring it."
+          "a": "No referral is needed to start. California law lets you see a physical therapist without a referral for up to 12 visits or 45 days, whichever comes first; after that, we need a referral from your doctor to continue. If you have one from your pediatrician, bring it."
         },
         {
           "q": "Will my child have to stop their sport?",

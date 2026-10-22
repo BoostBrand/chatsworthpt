@@ -10,7 +10,7 @@ const page: PageContent = {
   "description": "Fall prevention physical therapy in Chatsworth for seniors, balance and vertigo. One-on-one with Dr. Ed Shut, DPT. Medicare accepted. Book an evaluation.",
   "hero": {
     "h1": "Fall prevention physical therapy in Chatsworth, one-on-one with Dr. Ed",
-    "lede": "A plan for steadier walking and fewer falls, built in 60-minute visits with a Doctor of Physical Therapy, and vertigo treated in the same room.",
+    "lede": "A plan for steadier walking and fewer falls, built in visits of about 60 minutes with a Doctor of Physical Therapy, and vertigo treated in the same room.",
     "book": "Book my evaluation",
     "placeholder": "PHOTO: Dr. Ed spotting an older patient in a standing balance exercise, to be shot"
   },
@@ -47,11 +47,11 @@ const page: PageContent = {
       "blocks": [
         {
           "type": "p",
-          "text": "The first visit is a 60-minute evaluation, one-on-one with Dr. Ed. He tests your balance in the ways falls actually happen: standing with eyes closed, turning, reaching, stepping over something, getting up from a chair without hands, walking while talking. He checks leg strength, ankle and hip mobility, the inner ear and the nervous system, and asks about your home, your footwear, your medications and the falls you have had. Then he tells you plainly where the risk is and what the plan is."
+          "text": "The first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Ed. He tests your balance in the ways falls actually happen: standing with eyes closed, turning, reaching, stepping over something, getting up from a chair without hands, walking while talking. He checks leg strength, ankle and hip mobility, the inner ear and the nervous system, and asks about your home, your footwear, your medications and the falls you have had. Then he tells you plainly where the risk is and what the plan is."
         },
         {
           "type": "p",
-          "text": "Every visit after that is 60 minutes with Dr. Ed, nobody else, and usually mixes:"
+          "text": "Every visit after that is about 60 minutes with Dr. Ed, nobody else, and usually mixes:"
         },
         {
           "type": "ul",
@@ -128,11 +128,11 @@ const page: PageContent = {
       "blocks": [
         {
           "type": "p",
-          "text": "Medicare is accepted. Medicare patients need a referral from their doctor, which most primary care physicians will write for fall risk or dizziness on request. Direct-pay patients do not need a referral. Details and what to bring are on the [insurance and cost](/insurance-and-cost/) page."
+          "text": "Medicare is accepted. Medicare patients need a referral from their doctor, which most primary care physicians will write for fall risk or dizziness on request."
         }
       ],
-      "siteLines": false,
-      "more": false
+      "siteLines": true,
+      "more": true
     },
     {
       "kind": "faq",

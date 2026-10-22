@@ -44,11 +44,11 @@ const page: PageContent = {
       "blocks": [
         {
           "type": "p",
-          "text": "Your first visit is a 60-minute evaluation, one-on-one with Dr. Ed. He watches how you stand, walk, turn, sit down and get up, and how you use your arm and hand. He measures strength, range of motion and balance, asks what you could do before and what you need to do now, and explains in plain terms where the problem is and what can change."
+          "text": "Your first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Ed. He watches how you stand, walk, turn, sit down and get up, and how you use your arm and hand. He measures strength, range of motion and balance, asks what you could do before and what you need to do now, and explains in plain terms where the problem is and what can change."
         },
         {
           "type": "p",
-          "text": "From there, every visit is 60 minutes with Dr. Ed, never handed off. Treatment is built from what the evaluation found and usually mixes:"
+          "text": "From there, every visit is about 60 minutes with Dr. Ed, never handed off. Treatment is built from what the evaluation found and usually mixes:"
         },
         {
           "type": "ul",
@@ -138,11 +138,11 @@ const page: PageContent = {
       "blocks": [
         {
           "type": "p",
-          "text": "Medicare is accepted; Medicare patients need a referral from their doctor, which most stroke patients already have from discharge. Direct-pay patients do not need a referral and can start the same week. Details and what to bring are on the [insurance and cost](/insurance-and-cost/) page."
+          "text": "Medicare is accepted; Medicare patients need a referral from their doctor, which most stroke patients already have from discharge. Other patients can usually start the same week."
         }
       ],
-      "siteLines": false,
-      "more": false
+      "siteLines": true,
+      "more": true
     },
     {
       "kind": "faq",
@@ -154,7 +154,7 @@ const page: PageContent = {
         },
         {
           "q": "Do I need a referral?",
-          "a": "Medicare patients do. Direct-pay patients do not, and can book straight away."
+          "a": "No referral is needed to start. California law lets you see a physical therapist without a referral for up to 12 visits or 45 days, whichever comes first. After that, we need a referral from your doctor to continue. Medicare patients need a referral from the start."
         },
         {
           "q": "Can a family member or caregiver come with me?",
@@ -162,7 +162,7 @@ const page: PageContent = {
         },
         {
           "q": "How long is a visit, and how many will I need?",
-          "a": "Every visit is 60 minutes, one-on-one with Dr. Ed. The number of visits depends on your condition and how you progress, so Dr. Ed sets it after the evaluation rather than guessing up front."
+          "a": "Every visit is about 60 minutes, depending on what you need, one-on-one with Dr. Ed. The number of visits depends on your condition and how you progress, so Dr. Ed sets it after the evaluation rather than guessing up front."
         },
         {
           "q": "Is the clinic wheelchair accessible?",

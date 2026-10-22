@@ -1,6 +1,6 @@
 """Reads page entries from reference/PAGE-BLUEPRINT-chatsworthpt-v1.html (one <h3>P-0xx Name</h3> plus a
 two-column table per page). Shared by the deck converter, the entry splitter and the blueprint cross-check."""
-import html, re
+import html, json, re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -28,6 +28,21 @@ def entry(pid):
     return {'id': pid, 'heading': title, 'fields': fields, 'html': chunk}
 
 
+RULINGS = ROOT / 'reference/SEO-RULINGS.json'
+
+
+def rulings():
+    """Vlad's rulings that change a blueprint SEO field (reference/SEO-RULINGS.json), keyed by page id."""
+    if not RULINGS.exists():
+        return {}
+    return {k: v for k, v in json.loads(RULINGS.read_text(encoding='utf-8')).items() if k.startswith('P-')}
+
+
 def seo(pid):
     f = entry(pid)['fields']
-    return {'h1': f.get('H1 (exact)'), 'title': f.get('Meta title'), 'description': f.get('Meta description')}
+    out = {'h1': f.get('H1 (exact)'), 'title': f.get('Meta title'), 'description': f.get('Meta description')}
+    for k in ('h1', 'title', 'description'):
+        v = rulings().get(pid, {}).get(k)
+        if v:
+            out[k] = v
+    return out
