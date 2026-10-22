@@ -1,0 +1,10 @@
+# Keep the Cloudflare Pages addresses (*.pages.dev) out of search results, so only chatsworthpt.com
+# is ever indexed: the preview now, and the duplicate pages.dev copy after launch. Recipe from the
+# Cloudflare Pages headers docs (developers.cloudflare.com/pages/configuration/headers/, read 21 Oct 2026).
+# Both rules match only *.pages.dev hosts; the real domain is not affected. The 410 function sets its own
+# noindex header, since _headers does not apply to Pages Functions responses.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex
