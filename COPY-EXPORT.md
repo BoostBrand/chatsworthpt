@@ -1,6 +1,6 @@
 # Chatsworth PT site: copy export
 
-Generated from the content files in the repo by scripts/copy-export.mjs on 2026-10-21. One section per page, in the
+Generated from the content files in the repo by scripts/copy-export.mjs on 2026-10-22. One section per page, in the
 blueprint order. Highlighted markers ([CONFIRM ...], [verify: ...], [SOURCE NEEDED: ...]) are waiting on an answer. The booking
 band on every page also prints: "Prefer to talk? Call (818) 749-3205. Dr. Ed answers his own phone.", the address and hours,
 and "No payment is required to book."
@@ -67,6 +67,8 @@ Dr. Ed treats patients across these services. Each one has its own page.
 ### Care in English or Russian
 
 Dr. Ed is a Russian-speaking physical therapist in Chatsworth. He treats patients in English or Russian, so use whichever language is easier for you.
+
+Доктор Эд говорит по-русски. Вы можете пройти приём и лечение на русском языке.
 
 ### Review
 
@@ -159,7 +161,7 @@ Meta description: Back pain therapy in Chatsworth, one-on-one with Dr. Ed Shut, 
 
 # Back pain therapy in Chatsworth that finds the cause, not just the sore spot
 
-Sixty minutes, one-on-one with Dr. Ed, every visit, and a home plan that keeps the relief going between sessions.
+About 60 minutes, one-on-one with Dr. Ed, every visit, and a home plan that keeps the relief going between sessions.
 
 ### Who back pain therapy is for
 
@@ -173,9 +175,9 @@ Back pain brings more people to Chatsworth Physical Therapy than anything else. 
 
 ### What treatment looks like with Dr. Ed
 
-The first visit is a 60-minute evaluation, one-on-one with Dr. Ed. He does not start with the sore spot. He watches how you stand, bend, twist, sit and walk, tests the hips, the mid-back and the muscles that are supposed to be holding the spine steady, and checks whether a nerve is involved. Back pain usually has a cause somewhere other than where it hurts, and the evaluation is where he finds it. Then he explains it in plain terms and tells you what the plan is.
+The first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Ed. He does not start with the sore spot. He watches how you stand, bend, twist, sit and walk, tests the hips, the mid-back and the muscles that are supposed to be holding the spine steady, and checks whether a nerve is involved. Back pain usually has a cause somewhere other than where it hurts, and the evaluation is where he finds it. Then he explains it in plain terms and tells you what the plan is.
 
-Every visit after that is 60 minutes with Dr. Ed, nobody else, and usually mixes:
+Every visit after that is about 60 minutes with Dr. Ed, nobody else, and usually mixes:
 
 - Hands-on manual therapy: joint mobilization and soft-tissue work to loosen what is stiff and calm what is irritated. Patients describe it as limited but very effective.
 - Targeted strengthening for the deep core, the hips and the glutes, so the spine stops doing all the work.
@@ -203,7 +205,13 @@ Dr. Ed does not just treat symptoms; the aim is to solve the underlying issue ca
 
 ### Insurance and referrals
 
-Medicare is accepted with a referral from your doctor. Direct-pay patients do not need a referral and can usually be seen within days, which matters when your back has locked up. Details and what to bring are on the [insurance and cost](/insurance-and-cost/) page.
+You can usually be seen within days, which matters when your back has locked up.
+
+- No referral needed to start: California law lets you see a physical therapist without a referral for up to 12 visits or 45 days, whichever comes first. After that, we need a referral from your doctor to continue. Medicare patients need a referral from the start.
+- Insurance: We accept Medicare and personal injury liens. If you have PPO insurance, we provide a superbill, an itemized receipt you send to your insurer for reimbursement. Direct-pay patients are welcome.
+- Visits: Visits run about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Ed.
+
+Details and what to bring are on the [insurance and cost](/insurance-and-cost/) page.
 
 ### Common questions about back pain therapy
 
@@ -223,7 +231,7 @@ Some hands-on work is uncomfortable for a moment, and you will be told before it
 In most cases, yes. Treatment aims at what is irritating the nerve, usually a disc or a tight muscle in the hip, and at the movements that keep irritating it.
 
 **Do I need a referral?**
-Only for Medicare. Direct-pay patients can book straight away.
+No referral is needed to start. California law lets you see a physical therapist without a referral for up to 12 visits or 45 days, whichever comes first. After that, we need a referral from your doctor to continue. Medicare patients need a referral from the start.
 
 ### Book your back pain evaluation
 
@@ -252,9 +260,9 @@ Athletes of every level come to Dr. Ed, from a 10-year-old gymnast to a weekend 
 
 ### What treatment looks like with Dr. Ed
 
-The first visit is a 60-minute evaluation, one-on-one with Dr. Ed. He looks at the injured area and at everything above and below it: how you land, cut, squat, throw or reach, where the strength is missing and which movement keeps reloading the injury. He explains what he found and what the plan is, including a realistic line on when you can train and when you can compete.
+The first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Ed. He looks at the injured area and at everything above and below it: how you land, cut, squat, throw or reach, where the strength is missing and which movement keeps reloading the injury. He explains what he found and what the plan is, including a realistic line on when you can train and when you can compete.
 
-Every visit after that is 60 minutes with Dr. Ed, nobody else, and usually mixes:
+Every visit after that is about 60 minutes with Dr. Ed, nobody else, and usually mixes:
 
 - Hands-on manual therapy for the injured tissue and the joints around it.
 - Strength and control work for the muscles that should have protected it, built up week by week.
@@ -289,7 +297,13 @@ For athletes who have had an ACL injury or repeated ankle sprains, the same test
 
 ### Insurance and referrals
 
-Direct-pay athletes do not need a referral and can usually start within days of the injury. Medicare is accepted with a referral. Details are on the [insurance and cost](/insurance-and-cost/) page.
+You can usually start within days of the injury.
+
+- No referral needed to start: California law lets you see a physical therapist without a referral for up to 12 visits or 45 days, whichever comes first. After that, we need a referral from your doctor to continue. Medicare patients need a referral from the start.
+- Insurance: We accept Medicare and personal injury liens. If you have PPO insurance, we provide a superbill, an itemized receipt you send to your insurer for reimbursement. Direct-pay patients are welcome.
+- Visits: Visits run about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Ed.
+
+Details and what to bring are on the [insurance and cost](/insurance-and-cost/) page.
 
 ### Common questions from athletes
 
@@ -309,7 +323,7 @@ Yes, including young gymnasts and dancers; see the [pediatric physical therapy](
 You are tested against what the sport demands, not just asked whether it hurts. Dr. Ed will tell you plainly when you pass and what is still missing.
 
 **Do I need a referral?**
-Only for Medicare. Direct-pay patients can book straight away.
+No referral is needed to start. California law lets you see a physical therapist without a referral for up to 12 visits or 45 days, whichever comes first. After that, we need a referral from your doctor to continue. Medicare patients need a referral from the start.
 
 ### Book your sports injury evaluation
 
@@ -324,7 +338,7 @@ Meta description: Post-op physical therapy in Chatsworth after knee or hip repla
 
 # Post-op physical therapy in Chatsworth, one-on-one with Dr. Ed
 
-Your surgeon's protocol, followed one-on-one for 60 minutes a visit, with a home program that keeps the recovery moving between sessions.
+Your surgeon's protocol, followed one-on-one for about 60 minutes a visit, with a home program that keeps the recovery moving between sessions.
 
 ### Who post-op physical therapy is for
 
@@ -335,9 +349,9 @@ Your surgeon's protocol, followed one-on-one for 60 minutes a visit, with a home
 
 ### What treatment looks like with Dr. Ed
 
-Bring your surgeon's post-op protocol and your discharge paperwork to the first visit. Dr. Ed works from your surgeon's instructions, not a generic plan, and the 60-minute evaluation sets your starting point: swelling, range of motion, strength, how you walk or reach, and what you need to do again at home and at work.
+Bring your surgeon's post-op protocol and your discharge paperwork to the first visit. Dr. Ed works from your surgeon's instructions, not a generic plan, and the evaluation, about 60 minutes depending on what you need, sets your starting point: swelling, range of motion, strength, how you walk or reach, and what you need to do again at home and at work.
 
-Every visit after that is 60 minutes with Dr. Ed, nobody else, in the stages your surgery needs:
+Every visit after that is about 60 minutes with Dr. Ed, nobody else, in the stages your surgery needs:
 
 - Early: controlling swelling and pain, protecting the repair, gentle range of motion, and getting you safe on stairs and in the car. Therapeutic ultrasound, electrical stimulation and red light therapy are used here where they help, and patients say they made a real difference to recovery after ACL and shoulder surgery.
 - Middle: restoring full range of motion with hands-on work, waking the muscles back up, rebuilding walking or reaching so it looks normal again.
@@ -370,7 +384,13 @@ You leave every visit with a written home program, adjusted as the repair heals.
 
 ### Insurance and referrals
 
-Medicare is accepted; your surgeon's post-op prescription is the referral. Direct-pay patients can start as soon as the surgeon clears outpatient therapy. Details and what to bring are on the [insurance and cost](/insurance-and-cost/) page.
+Medicare is accepted; your surgeon's post-op prescription is the referral. You can start as soon as your surgeon clears outpatient therapy.
+
+- No referral needed to start: California law lets you see a physical therapist without a referral for up to 12 visits or 45 days, whichever comes first. After that, we need a referral from your doctor to continue. Medicare patients need a referral from the start.
+- Insurance: We accept Medicare and personal injury liens. If you have PPO insurance, we provide a superbill, an itemized receipt you send to your insurer for reimbursement. Direct-pay patients are welcome.
+- Visits: Visits run about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Ed.
+
+Details and what to bring are on the [insurance and cost](/insurance-and-cost/) page.
 
 ### Common questions after surgery
 
@@ -575,7 +595,7 @@ Meta description: Fall prevention physical therapy in Chatsworth for seniors, ba
 
 # Fall prevention physical therapy in Chatsworth, one-on-one with Dr. Ed
 
-A plan for steadier walking and fewer falls, built in 60-minute visits with a Doctor of Physical Therapy, and vertigo treated in the same room.
+A plan for steadier walking and fewer falls, built in visits of about 60 minutes with a Doctor of Physical Therapy, and vertigo treated in the same room.
 
 [PHOTO: Dr. Ed spotting an older patient in a standing balance exercise, to be shot]
 
@@ -589,9 +609,9 @@ A plan for steadier walking and fewer falls, built in 60-minute visits with a Do
 
 ### What treatment looks like with Dr. Ed
 
-The first visit is a 60-minute evaluation, one-on-one with Dr. Ed. He tests your balance in the ways falls actually happen: standing with eyes closed, turning, reaching, stepping over something, getting up from a chair without hands, walking while talking. He checks leg strength, ankle and hip mobility, the inner ear and the nervous system, and asks about your home, your footwear, your medications and the falls you have had. Then he tells you plainly where the risk is and what the plan is.
+The first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Ed. He tests your balance in the ways falls actually happen: standing with eyes closed, turning, reaching, stepping over something, getting up from a chair without hands, walking while talking. He checks leg strength, ankle and hip mobility, the inner ear and the nervous system, and asks about your home, your footwear, your medications and the falls you have had. Then he tells you plainly where the risk is and what the plan is.
 
-Every visit after that is 60 minutes with Dr. Ed, nobody else, and usually mixes:
+Every visit after that is about 60 minutes with Dr. Ed, nobody else, and usually mixes:
 
 - Balance retraining, starting from where you are safe and made harder each week.
 - Strength work for the legs and hips, the muscles that catch you.
@@ -625,7 +645,13 @@ Other dizziness, after an inner ear infection, a concussion or simply with age, 
 
 ### Medicare and referrals
 
-Medicare is accepted. Medicare patients need a referral from their doctor, which most primary care physicians will write for fall risk or dizziness on request. Direct-pay patients do not need a referral. Details and what to bring are on the [insurance and cost](/insurance-and-cost/) page.
+Medicare is accepted. Medicare patients need a referral from their doctor, which most primary care physicians will write for fall risk or dizziness on request.
+
+- No referral needed to start: California law lets you see a physical therapist without a referral for up to 12 visits or 45 days, whichever comes first. After that, we need a referral from your doctor to continue. Medicare patients need a referral from the start.
+- Insurance: We accept Medicare and personal injury liens. If you have PPO insurance, we provide a superbill, an itemized receipt you send to your insurer for reimbursement. Direct-pay patients are welcome.
+- Visits: Visits run about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Ed.
+
+Details and what to bring are on the [insurance and cost](/insurance-and-cost/) page.
 
 ### Common questions about balance and falls
 
@@ -656,11 +682,11 @@ Related pages: [All services](/our-services/) | [Neurological rehabilitation](/n
 ## P-010 Pediatric physical therapy (/pediatric-physical-therapy/)
 
 Meta title: Pediatric Physical Therapy in Chatsworth | Dr. Ed Shut, DPT
-Meta description: Your child gets Dr. Ed's full attention for a 60-minute visit, with you in the room. Gymnasts, dancers and growing kids in Chatsworth. Call (818) 749-3205.
+Meta description: Your child gets Dr. Ed's full attention for about 60 minutes, with you in the room. Gymnasts, dancers and growing kids in Chatsworth. Call (818) 749-3205.
 
 # Pediatric physical therapy in Chatsworth that gets your child back to play
 
-Sixty minutes with a Doctor of Physical Therapy, your child's own plan, and you in the room for every visit.
+About 60 minutes with a Doctor of Physical Therapy, your child's own plan, and you in the room for every visit.
 
 [PHOTO: Dr. Ed working with a child or teen athlete, parent in frame, to be shot]
 
@@ -674,9 +700,9 @@ School-age children and teenagers come to Dr. Ed for a few common reasons. (Dr. 
 
 ### What treatment looks like with Dr. Ed
 
-The first visit is a 60-minute evaluation, one-on-one with Dr. Ed, with a parent or guardian in the room the whole time; minors are never treated alone. He watches how your child moves, jumps, lands, balances and does the thing that hurts, checks strength, flexibility and alignment, and asks about the sport, the schedule and how the pain started. Then he explains what he found in words a kid can follow, because a child who understands the plan does the exercises.
+The first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Ed, with a parent or guardian in the room the whole time; minors are never treated alone. He watches how your child moves, jumps, lands, balances and does the thing that hurts, checks strength, flexibility and alignment, and asks about the sport, the schedule and how the pain started. Then he explains what he found in words a kid can follow, because a child who understands the plan does the exercises.
 
-Every visit after that is 60 minutes with Dr. Ed, nobody else. Treatment depends on the age and the problem:
+Every visit after that is about 60 minutes with Dr. Ed, nobody else. Treatment depends on the age and the problem:
 
 - For young athletes: hands-on treatment for the sore area, strength and control work for the muscles that should be protecting it, and a step-by-step return to practice rather than a blanket "rest". Dr. Ed is happy to write a note for the coach about what is and is not allowed this week.
 - For younger school-age kids: shorter blocks of work, balance and coordination games, and a home routine you can run in ten minutes after homework.
@@ -708,7 +734,13 @@ From the blog: [When a young gymnast's back pain is not just a growing pain](/bl
 
 ### Insurance and referrals
 
-Visits for children and teens are direct pay, and no referral is needed to start. If your pediatrician or orthopedist has already sent you, bring the paperwork and any imaging; it saves time at the first visit. Details are on the [insurance and cost](/insurance-and-cost/) page.
+No referral is needed to start. If your pediatrician or orthopedist has already sent you, bring the paperwork and any imaging; it saves time at the first visit.
+
+- No referral needed to start: California law lets you see a physical therapist without a referral for up to 12 visits or 45 days, whichever comes first. After that, we need a referral from your doctor to continue. Medicare patients need a referral from the start.
+- Insurance: We accept Medicare and personal injury liens. If you have PPO insurance, we provide a superbill, an itemized receipt you send to your insurer for reimbursement. Direct-pay patients are welcome.
+- Visits: Visits run about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Ed.
+
+Details and what to bring are on the [insurance and cost](/insurance-and-cost/) page.
 
 ### Common questions from parents
 
@@ -722,7 +754,7 @@ Yes, and a parent or guardian stays for the whole visit; Dr. Ed does not treat m
 Pain that lasts more than two weeks, a limp, swelling, pain that wakes your child at night, or pain that shows up every time at the same point in practice is worth an evaluation. Dr. Ed will tell you straight if it is nothing to worry about.
 
 **Do we need a referral?**
-No. Direct-pay patients, including children, can book straight away. If you have one from your pediatrician, bring it.
+No referral is needed to start. California law lets you see a physical therapist without a referral for up to 12 visits or 45 days, whichever comes first; after that, we need a referral from your doctor to continue. If you have one from your pediatrician, bring it.
 
 **Will my child have to stop their sport?**
 Usually not completely. Dr. Ed works out what is safe this week and what to hold back on, and adjusts it as your child improves, so they keep training as much as the injury allows.
@@ -758,9 +790,9 @@ Most people who come to Dr. Ed for neurological rehabilitation are in one of the
 
 ### What treatment looks like with Dr. Ed
 
-Your first visit is a 60-minute evaluation, one-on-one with Dr. Ed. He watches how you stand, walk, turn, sit down and get up, and how you use your arm and hand. He measures strength, range of motion and balance, asks what you could do before and what you need to do now, and explains in plain terms where the problem is and what can change.
+Your first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Ed. He watches how you stand, walk, turn, sit down and get up, and how you use your arm and hand. He measures strength, range of motion and balance, asks what you could do before and what you need to do now, and explains in plain terms where the problem is and what can change.
 
-From there, every visit is 60 minutes with Dr. Ed, never handed off. Treatment is built from what the evaluation found and usually mixes:
+From there, every visit is about 60 minutes with Dr. Ed, never handed off. Treatment is built from what the evaluation found and usually mixes:
 
 - Balance and coordination training, starting from where you are safe and moving the goal each week.
 - Gait retraining: the mechanics of walking, turning, stairs, curbs and uneven ground, with or without a walker or cane.
@@ -798,7 +830,13 @@ From the blog: [What stroke recovery looks like at an outpatient clinic](/blog/s
 
 ### Insurance and referrals
 
-Medicare is accepted; Medicare patients need a referral from their doctor, which most stroke patients already have from discharge. Direct-pay patients do not need a referral and can start the same week. Details and what to bring are on the [insurance and cost](/insurance-and-cost/) page.
+Medicare is accepted; Medicare patients need a referral from their doctor, which most stroke patients already have from discharge. Other patients can usually start the same week.
+
+- No referral needed to start: California law lets you see a physical therapist without a referral for up to 12 visits or 45 days, whichever comes first. After that, we need a referral from your doctor to continue. Medicare patients need a referral from the start.
+- Insurance: We accept Medicare and personal injury liens. If you have PPO insurance, we provide a superbill, an itemized receipt you send to your insurer for reimbursement. Direct-pay patients are welcome.
+- Visits: Visits run about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Ed.
+
+Details and what to bring are on the [insurance and cost](/insurance-and-cost/) page.
 
 ### Common questions about neurological rehabilitation
 
@@ -806,13 +844,13 @@ Medicare is accepted; Medicare patients need a referral from their doctor, which
 As soon as your doctor clears you for outpatient care. Earlier is better. Bring your discharge summary and any exercises from the hospital or rehab facility to your first visit.
 
 **Do I need a referral?**
-Medicare patients do. Direct-pay patients do not, and can book straight away.
+No referral is needed to start. California law lets you see a physical therapist without a referral for up to 12 visits or 45 days, whichever comes first. After that, we need a referral from your doctor to continue. Medicare patients need a referral from the start.
 
 **Can a family member or caregiver come with me?**
 Yes. They are welcome in every session, and Dr. Ed will show them the home exercises so they can help between visits.
 
 **How long is a visit, and how many will I need?**
-Every visit is 60 minutes, one-on-one with Dr. Ed. The number of visits depends on your condition and how you progress, so Dr. Ed sets it after the evaluation rather than guessing up front.
+Every visit is about 60 minutes, depending on what you need, one-on-one with Dr. Ed. The number of visits depends on your condition and how you progress, so Dr. Ed sets it after the evaluation rather than guessing up front.
 
 **Is the clinic wheelchair accessible?**
 Yes. The entrance and the parking are wheelchair accessible, the free lot is right in front of the building, there is no gate code, and street parking is also available.
@@ -829,7 +867,7 @@ Related pages: [All services](/our-services/) | [Balance and fall prevention](/b
 ## P-012 Red light therapy (/red-light-therapy/)
 
 Meta title: Red Light Therapy in Chatsworth | Dr. Ed Shut, DPT
-Meta description: Red light therapy in Chatsworth, used by Dr. Ed Shut, DPT to speed tissue recovery inside one-on-one physical therapy for pain and injuries. Ask about it.
+Meta description: Red light therapy in Chatsworth, used by Dr. Ed Shut, DPT as one part of one-on-one physical therapy for pain and injuries. See what the research shows.
 
 # Red light therapy in Chatsworth, as part of your physical therapy plan
 
@@ -847,7 +885,7 @@ Here, red light is added to hands-on treatment and exercise, not used in place o
 
 ### How Dr. Ed uses it
 
-Dr. Ed applies red light to the treated area, usually after manual therapy, as part of the visit. [CONFIRM minutes per application and whether it is ever sold stand-alone]
+Dr. Ed applies red light to the treated area, usually after manual therapy, for about 10 minutes as part of the visit. It is not a separate treatment and is not sold on its own. It is best avoided on skin with eczema or an infection. His device is a KOZE LED unit (KOZE lists 660 and 850 nanometers, red and near-infrared, for its panels), not a laser, so read the studies above as a guide to the field rather than a promise about this device.
 
 ### Where red light fits in a plan
 
@@ -864,7 +902,7 @@ Dr. Ed adds red light to the plan for these problems. The linked pages explain t
 
 ### Insurance and referrals
 
-Red light is part of a physical therapy visit. Stand-alone pricing: [CONFIRM whether offered and at what price]
+Red light is part of a physical therapy visit and included in its price. It is not offered on its own.
 
 - No referral needed to start: California law lets you see a physical therapist without a referral for up to 12 visits or 45 days, whichever comes first. After that, we need a referral from your doctor to continue. Medicare patients need a referral from the start.
 - Insurance: We accept Medicare and personal injury liens. If you have PPO insurance, we provide a superbill, an itemized receipt you send to your insurer for reimbursement. Direct-pay patients are welcome.
@@ -881,10 +919,10 @@ No. Red light therapy is low-level light on the treated area, with no UV. Dr. Ed
 No. Most people feel mild warmth. Tell Dr. Ed if anything feels uncomfortable.
 
 **How many sessions?**
-Red light rides along with your visits. Dr. Ed sets the plan after your evaluation. He does not quote a number of visits up front.
+Red light rides along with your visits, though not every visit: Dr. Ed decides from your results, your medical history and your condition. He does not quote a number of visits up front.
 
 **Can I come just for red light?**
-Ask Dr. Ed when you call (818) 749-3205. [CONFIRM]
+No. Red light is only offered as part of a physical therapy visit.
 
 ### Book your evaluation
 
@@ -895,7 +933,7 @@ Related pages: [Pain management](/pain-management/) | [Pre and post-op physical 
 ## P-013 Therapeutic ultrasound (/therapeutic-ultrasound/)
 
 Meta title: Therapeutic Ultrasound in Chatsworth | Dr. Ed Shut, DPT
-Meta description: Learn how therapeutic ultrasound eases pain and speeds healing inside physical therapy sessions with Dr. Ed Shut, DPT in Chatsworth. Book an evaluation.
+Meta description: Learn how Dr. Ed Shut, DPT uses therapeutic ultrasound in Chatsworth to warm and loosen tissue before hands-on physical therapy. Book an evaluation.
 
 # Therapeutic ultrasound in Chatsworth: how Dr. Ed uses it in treatment
 
@@ -917,11 +955,11 @@ Diagnostic ultrasound takes pictures. This kind treats.
 
 Ultrasound takes a few minutes on the treated area. Manual therapy and exercise follow.
 
-Ultrasound is part of treatment for tendinitis, muscle strains, post-op stiffness and [plantar fasciitis](/conditions/plantar-fasciitis/). Dr. Ed decides at your evaluation whether you need it.
+Ultrasound is part of treatment for tendinitis, muscle strains, post-op stiffness and [plantar fasciitis](/conditions/plantar-fasciitis/). Dr. Ed decides at your evaluation whether you need it, and not every tool is used at every visit: he goes by your results, your medical history and your condition.
 
 ### What it is not for
 
-Dr. Ed does not use it over a fracture, a numb area, or the abdomen during pregnancy. [CONFIRM contraindication wording with Dr. Ed]
+Dr. Ed does not use ultrasound if you have a history of cancer or if you are pregnant. Tell him about either before your first visit.
 
 ### What a patient says
 
@@ -944,7 +982,7 @@ No. This one treats by warming tissue, and it does not take pictures.
 No. You feel gentle warmth or nothing at all.
 
 **Is it covered?**
-It is part of a physical therapy visit, not billed separately [CONFIRM]. See the insurance notes above for how the visit is paid for.
+It is part of a physical therapy visit and included in its price, not billed separately. See the insurance notes above for how the visit is paid for.
 
 ### Book your evaluation
 
@@ -981,7 +1019,7 @@ Electrical stimulation in physical therapy is one part of your plan, not all of 
 
 Tell Dr. Ed about any implanted device, such as a pacemaker, before your first visit.
 
-A TENS unit for use at home is a separate question. Ask Dr. Ed at your evaluation whether he sets patients up with one, and how. [CONFIRM]
+Dr. Ed uses stimulation here at the clinic. He does not set patients up with a TENS unit for home use, though he can give you some basic guidance if you already use one.
 
 ### A patient's review
 
@@ -1004,7 +1042,7 @@ You feel a tingling or a gentle muscle pull. Dr. Ed sets the intensity to what y
 No, it is not safe with a pacemaker. Tell Dr. Ed about a pacemaker or any other implanted device before your first visit.
 
 **Can I use a TENS unit at home?**
-Ask Dr. Ed at your evaluation. [CONFIRM]
+Dr. Ed does not set up home TENS units. He uses stimulation at the clinic and can give you some basic guidance if you already use a unit at home.
 
 ### Book your evaluation
 
@@ -1027,7 +1065,7 @@ Most people who train here start after rehab. Some come to Dr. Ed for the first 
 
 - **You finished physical therapy and want to keep going.** Stay with the doctor who treated you. He knows what was hurt and how you move, so you do not start over with a new trainer.
 - **You hurt, and a regular gym worries you.** Dr. Ed starts with how you move and what hurts, then builds your sessions around it.
-- **You want to lose weight, and a joint makes it harder.** A doctor who treats joint injuries builds your program around the one that was hurt. Weight loss coaching is part of the work.
+- **You want to lose weight, and a joint makes it harder.** A doctor who treats joint injuries builds your program around the one that was hurt. If weight loss is one of your goals, your training is built around it.
 - **You want to get back to fitness after an injury.** Dr. Ed finds out where you stand today and builds your return from there.
 
 ### What training looks like with Dr. Ed
@@ -1036,11 +1074,11 @@ You train one-on-one with Dr. Ed, in English or Russian. He holds a Doctor of Ph
 
 - **Evaluation first.** Training starts with an evaluation, the same approach Dr. Ed uses in physical therapy. He examines how you move, goes through your injury history and explains what he finds in plain terms. Your program starts from what he finds.
 - **Built around the joint that was hurt.** If your knee was the problem, your program is built around your knee, not around a standard routine.
-- **Nutrition guidance.** [CONFIRM what nutrition guidance Dr. Ed gives, if any]
+- **No diet plans.** Dr. Ed is not a nutritionist and does not give nutrition advice. Your sessions are about exercise.
 
 ### Pricing, insurance and referrals
 
-Personal training is direct pay only. You can book a package or pay per session. Prices are given by phone: call (818) 749-3205 for the current rate. [CONFIRM prices or that prices are given by phone]
+Personal training is direct pay only, at the same prices as physical therapy visits: $175 for the first evaluation and $125 for each session after that. You can book a package or pay per session.
 
 If you start with physical therapy first, these apply to those visits:
 
@@ -1066,7 +1104,7 @@ No. Most people start after rehab, but you do not need to have been a physical t
 Dr. Ed is a Doctor of Physical Therapy. He evaluates how you move before you train, and he knows your injury history from your rehab or learns it at your first evaluation. Your sessions are built from that.
 
 **Do you give diet plans?**
-That is a question for Dr. Ed, so ask him when you book. [CONFIRM]
+No. Dr. Ed is not a nutritionist and does not give nutrition advice or diet plans.
 
 ### Book your first training session
 
@@ -1093,7 +1131,7 @@ If your doctor has already given you a referral, bring it to your first visit. F
 
 ### Medicare
 
-**We accept Medicare, with a referral from your doctor.** The referral is needed from the start.
+**We accept original Medicare, with a referral from your doctor.** The referral is needed from the start. Medicare Advantage plans are not accepted at this time.
 
 Bring these to your first visit:
 
@@ -1107,13 +1145,13 @@ To read more, see [Does Medicare cover physical therapy?](/blog/does-medicare-co
 
 **If you have PPO insurance, we give you a superbill.** A superbill is an itemized receipt you send to your insurer for reimbursement.
 
-We do not bill PPO plans directly. [CONFIRM that no plan is billed directly]
+We do not bill PPO or other private insurance plans directly.
 
 ### Direct pay
 
 **Direct-pay patients are welcome.** Direct pay, also called cash pay or private pay, means you pay for your visit yourself.
 
-Call (818) 749-3205 for the current rate. [CONFIRM: publish prices or not; Performance MFR publishes a price and converts well, plan v3 s12]
+**Your first evaluation is $175. Each follow-up visit is $125.** The evaluation is a full first visit: Dr. Ed checks how you walk and move, tests your mobility, finds the pain points and confirms your pain is mechanical, the kind physical therapy treats. If it is not, he tells you and refers you to the right doctor. CSUN students and faculty can ask about a discount when they book.
 
 Visits run about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Ed.
 
@@ -1123,15 +1161,15 @@ More on cash-pay visits is in [Cash-pay physical therapy: what a visit costs](/b
 
 ### Personal injury
 
-**We accept personal injury cases on a lien.** [CONFIRM the one-line process]
+**We accept personal injury cases on a lien.** To start, your attorney emails Dr. Ed your details, such as your name, address and date of birth.
 
 ### Kids and teens
 
-**Visits for kids and teens are direct pay, and no referral is needed to start.** Dr. Ed treats school-age children and teenagers, gymnasts and dancers included. A parent stays in the room for every visit.
+**No referral is needed to start.** Dr. Ed treats school-age children and teenagers, gymnasts and dancers included. A parent stays in the room for every visit.
 
 ### Payment methods
 
-**We accept credit and debit cards.** [CONFIRM: HSA and FSA cards, checks, Zelle]
+**We accept credit and debit cards, HSA and FSA cards, checks, Zelle and Venmo.**
 
 ### Review
 
@@ -1143,13 +1181,13 @@ More on cash-pay visits is in [Cash-pay physical therapy: what a visit costs](/b
 No. You can start without one, and you can keep going for up to 12 visits or 45 days, whichever comes first. After that, we need a referral from your doctor to continue. Medicare patients need a referral from the start.
 
 **Do you take Medicare?**
-Yes, with a referral from your doctor. Medicare patients need one from the start. Bring the referral, your Medicare card and any imaging reports to your first visit.
+Yes, original Medicare, with a referral from your doctor. Medicare patients need one from the start. Medicare Advantage plans are not accepted at this time. Bring the referral, your Medicare card and any imaging reports to your first visit.
 
 **Do you take my PPO?**
-We give you a superbill, an itemized receipt you send to your insurer for reimbursement. We do not bill the plan directly. [CONFIRM]
+We give you a superbill, an itemized receipt you send to your insurer for reimbursement. We do not bill the plan directly.
 
 **How much does a visit cost without insurance?**
-Call (818) 749-3205 for the current rate. [CONFIRM: price or call line] The total depends on how many visits you need, and Dr. Ed does not quote that number before your first evaluation.
+The first evaluation is $175, and each follow-up visit is $125. The total depends on how many visits you need, and Dr. Ed does not quote that number before your first evaluation.
 
 **Do you take personal injury cases?**
 Yes. We accept personal injury cases on a lien. Call (818) 749-3205 with questions about your case.
@@ -1198,7 +1236,7 @@ Your first physical therapy appointment is an evaluation with Dr. Ed Shut, DPT. 
 1. **History** You tell Dr. Ed what hurts, how it started and what you want to get back to.
 2. **Watching you move** He watches how you move, so he sees the problem for himself.
 3. **Strength and range of motion** He measures your strength and how far each joint moves.
-4. **Finding the cause** He puts it together and finds what is actually causing your pain.
+4. **Finding the cause** He puts it together, finds what is actually causing your pain and confirms it is mechanical, the kind of pain physical therapy treats. If it is not, he tells you and refers you to the right doctor.
 5. **A plain explanation** He explains what he found in plain terms, before treatment starts.
 6. **First treatment** Treatment starts at this visit, not the next one. Depending on what he found, it may include manual therapy, corrective exercise, therapeutic ultrasound, red light therapy, cryo massage or electrical stimulation.
 7. **Home program** You leave with a short home program to follow between visits.
@@ -1231,6 +1269,9 @@ The entrance and the parking are wheelchair accessible, and there is a restroom.
 
 **How long is the first visit?**
 The first visit runs about 60 minutes, depending on what you need, and it is one-on-one with Dr. Ed. That time covers your evaluation, your first treatment and your home program.
+
+**How much does the first visit cost?**
+If you pay directly, the first evaluation is $175 and each follow-up visit is $125. Medicare, PPO superbills and personal injury liens are explained on [Insurance and cost](/insurance-and-cost/).
 
 **What should I wear?**
 Comfortable clothes you can move in. Shorts work for a knee, hip or ankle problem. For a shoulder, neck or back problem, wear a tank top or a loose shirt.
@@ -1341,13 +1382,13 @@ Plain answers to what patients ask before they book. If yours is not here, call 
 No, you can start without one. California law lets you see a physical therapist for up to 12 visits or 45 days, whichever comes first, and after that we need a referral from your doctor to continue. Medicare patients need a referral from the start, and [Insurance and cost](/insurance-and-cost/) has the full rules.
 
 **Do you accept Medicare?**
-Yes, we accept Medicare. Medicare patients need a referral from the start. The full picture is on [Insurance and cost](/insurance-and-cost/).
+Yes, we accept original Medicare; Medicare Advantage plans are not accepted at this time. Medicare patients need a referral from the start. The full picture is on [Insurance and cost](/insurance-and-cost/).
 
 **What if I have PPO insurance?**
 With a PPO plan, we give you a superbill, an itemized receipt that you send to your insurer for reimbursement. Call (818) 749-3205 before your first visit and we will walk you through the cost. [Insurance and cost](/insurance-and-cost/) has more.
 
 **Can I pay for visits myself, without insurance?**
-Yes, direct-pay patients are welcome, and we take credit and debit cards. Call (818) 749-3205 for the current rate. [CONFIRM: price or call line] Read [Insurance and cost](/insurance-and-cost/) for the rest.
+Yes, direct-pay patients are welcome. The first evaluation is $175 and each follow-up visit is $125. We take credit and debit cards, HSA and FSA cards, checks, Zelle and Venmo. Read [Insurance and cost](/insurance-and-cost/) for the rest.
 
 **Do you treat kids and teenagers?**
 Yes. Dr. Ed sees school-age children and teenagers, and that includes gymnasts and dancers. A parent stays in the room for every visit, and the details on cost and coverage are on [Insurance and cost](/insurance-and-cost/).
@@ -1390,7 +1431,7 @@ Yes to both. Dr. Ed treats [vertigo and BPPV](/conditions/vertigo-bppv/), includ
 Dry needling is not offered at Chatsworth Physical Therapy.
 
 **Do you offer shockwave therapy, pelvic floor therapy or hand therapy?**
-Call (818) 749-3205 and ask Dr. Ed. [CONFIRM whether shockwave, pelvic floor and hand therapy are offered]
+Dr. Ed offers hand therapy. Shockwave therapy and pelvic floor therapy are not offered at this time.
 
 ### The clinic
 
@@ -1448,13 +1489,11 @@ Dr. Ed speaks English and Russian, so you can be treated in either.
 
 For turn-by-turn directions from your own address, use the Get directions button on the map. From outside Chatsworth, these are the main roads in from each city we serve.
 
-- From [Porter Ranch](/physical-therapy-porter-ranch/), take Rinaldi and Winnetka.
-- From [Northridge](/physical-therapy-northridge/), take Nordhoff.
-- From West Hills or Canoga Park, take Topanga Canyon or De Soto.
-- From Granada Hills, take the 118 to Winnetka.
-- From Simi Valley, take the 118 to Topanga Canyon.
-
-[CONFIRM or verify each: Porter Ranch via Rinaldi and Winnetka; Northridge via Nordhoff; West Hills and Canoga Park via Topanga Canyon or De Soto; Granada Hills via the 118 to Winnetka; Simi Valley via the 118 to Topanga Canyon]
+- From [Porter Ranch](/physical-therapy-porter-ranch/), take Corbin Avenue south and turn right onto Nordhoff Place.
+- From [Northridge](/physical-therapy-northridge/), take Nordhoff Street west, keep right where Nordhoff Way splits off, and continue across Corbin Avenue onto Nordhoff Place.
+- From West Hills or Canoga Park, take Topanga Canyon Boulevard to Parthenia Street, head east to Corbin Avenue, turn left, then turn left again onto Nordhoff Place.
+- From Granada Hills, take Devonshire Street west to Corbin Avenue, turn left, then turn right onto Nordhoff Place.
+- From Simi Valley, take the 118 east to the De Soto Avenue exit, head south on De Soto, turn left on Plummer Street, then right on Oakdale Avenue to the clinic.
 
 ### What happens after you book
 
@@ -2039,7 +2078,7 @@ Related pages: [Sports injury recovery](/sports-injury-recovery/) | [All conditi
 ## P-029 Knee replacement recovery (/conditions/knee-replacement-recovery/)
 
 Meta title: Knee Replacement Physical Therapy Chatsworth | Dr. Ed, DPT
-Meta description: After a knee replacement, the first six weeks decide your range of motion for years. See how Dr. Ed gets the knee bending and walking normally. Book now.
+Meta description: After a knee replacement, see how Dr. Ed Shut, DPT works on bending, straightening and walking, one-on-one in Chatsworth. Book an evaluation.
 
 # Knee replacement recovery: physical therapy in Chatsworth
 
@@ -2055,7 +2094,7 @@ I had my knee replaced. Now I want to walk, take stairs and get in the car witho
 ### What Dr. Ed does about it
 
 - **Range of motion and swelling, early.** Getting the knee moving and the swelling down comes first, inside what your surgeon allows.
-- **Bend and straighten.** Bending and straightening each have milestones, and Dr. Ed works toward them with you. [CONFIRM the degree targets Dr. Ed uses, if he states any]
+- **Bend and straighten.** For everyday function, Dr. Ed works toward about 110 degrees of bend and a knee that straightens fully, to 0 degrees or as close to it as possible.
 - **Gait retraining.** He watches you walk, finds where the pattern is off and retrains it.
 - **Quad strength.** Dr. Ed builds it with exercise, and with electrical stimulation (NMES) where it helps.
 - **Stairs and the car.** You practice what the knee has to do every day: stairs, and getting in and out of the car.
@@ -2123,7 +2162,7 @@ You have a new hip. Now you want to walk without a limp and trust it.
 
 Hip replacement recovery is part of [Pre and post-op physical therapy](/pre-post-surgical-rehabilitation/). Dr. Ed works on these with you:
 
-- **Precaution review.** He goes over the precautions for your surgical approach with you. [CONFIRM: Dr. Ed's wording on anterior versus posterior precautions]
+- **Precaution review.** Precautions after hip replacement have eased as surgery has improved. Follow what your surgeon tells you; Dr. Ed goes over your surgeon's instructions with you and works within them.
 - **Gait retraining.** He watches how you walk, finds where the pattern is off and retrains it. The aim is a walk without a limp.
 - **Hip abductor strength.** The [hip abductors](https://my.clevelandclinic.org/health/body/hip-abductors) are muscles near your hip that help you walk and keep your balance. He builds this strength with exercises he adjusts as you progress.
 - **Balance work.** He tests your balance and trains it. The [Balance and fall prevention](/balance-and-fall-prevention/) page explains his approach.
@@ -2173,7 +2212,7 @@ Related pages: [Pre and post-op physical therapy](/pre-post-surgical-rehabilitat
 ## P-031 Ankle sprain (/conditions/ankle-sprain/)
 
 Meta title: Ankle Sprain Rehab in Chatsworth | Dr. Ed Shut, DPT
-Meta description: An ankle sprained twice will sprain again unless balance and strength come back. See how Dr. Ed rehabs ankles one-on-one in Chatsworth. Book now.
+Meta description: Keep rolling the same ankle? See how Dr. Ed Shut, DPT rebuilds balance and strength one-on-one in Chatsworth before you go back. Book now.
 
 # Ankle sprain rehab in Chatsworth: stop the sprain that keeps coming back
 
@@ -2300,7 +2339,7 @@ Details and what to bring are on the [insurance and cost](/insurance-and-cost/) 
 Weeks to months. The morning pain usually eases first. How fast it moves depends on what the evaluation finds and how your body responds.
 
 **Do I need orthotics?**
-Sometimes. The evaluation decides it, not a rule of thumb. Dr. Ed looks at your foot, your calf and how you walk, then tells you plainly whether orthotics belong in your plan.
+Sometimes. The evaluation decides it, not a rule of thumb. Dr. Ed looks at your foot, your calf and how you walk, then tells you plainly whether orthotics belong in your plan. He does not supply or fit orthotics himself; if you need them, he refers you to a podiatrist he trusts.
 
 **Should I stop walking?**
 No. You change how and how much you walk, and the plan spells out both. Dr. Ed builds that plan from your evaluation, with footwear and standing habits included.
@@ -2335,7 +2374,7 @@ Dr. Ed starts by finding out what is behind the dizziness, because the cause dec
 
 #### The positional test
 
-In its [patient guide to BPPV](https://www.choosept.com/guide/physical-therapy-guide-benign-paroxysmal-positional-vertigo-bppv), the American Physical Therapy Association (APTA) says: "Physical therapists use positional tests to recreate BPPV symptoms." Dr. Ed does this test in the clinic, and it usually answers whether you have BPPV in one visit.
+In its [patient guide to BPPV](https://www.choosept.com/guide/physical-therapy-guide-benign-paroxysmal-positional-vertigo-bppv), the American Physical Therapy Association (APTA) says: "Physical therapists use positional tests to recreate BPPV symptoms." Dr. Ed does this test in the clinic, and it usually answers whether you have BPPV in one visit. He is trained in the Dix-Hallpike test and the Epley maneuver, and he screens you first to make sure they are right for you.
 
 #### Repositioning maneuvers
 
@@ -2389,7 +2428,7 @@ Meta description: Northridge patients drive a few minutes west on Nordhoff to se
 
 # Physical therapy for Northridge patients, ten minutes away in Chatsworth
 
-The clinic is at 19851 Nordhoff Place in Chatsworth. [verify: distance and drive time from Nordhoff and Reseda to 19851 Nordhoff Place; the 'ten minutes' in the H1 and description is unverified until then]
+The clinic is at 19851 Nordhoff Place in Chatsworth, about 2 miles west of Nordhoff Street and Reseda Boulevard.
 
 [PHOTO: the front of the building from Nordhoff Place with the street sign, to be shot]
 
@@ -2401,21 +2440,21 @@ The clinic is at 19851 Nordhoff Place in Chatsworth. [verify: distance and drive
 - **Evenings and Saturdays.** Book after work or on a Saturday, whichever fits your week.
 - **Medicare accepted.** Medicare patients need a referral from their doctor from the start. Everyone else can begin without one.
 
-[CONFIRM]
+It is rare for a physical therapy clinic to have a licensed physical therapist work with you for the entire visit. Here, Dr. Ed does, every visit.
 
 ### Northridge patients
 
 - [CONFIRM which of the 28 reviewers live in Northridge; if none, this section is cut and the page fails the test]
-- CSUN students and athletes treated [CONFIRM]
-- Patients discharged from Northridge Hospital after joint replacement [CONFIRM any]
+- Dr. Ed treats CSUN students and athletes, and CSUN students and faculty can ask about a discount when they book.
+- Many of his joint replacement patients come to him after discharge from Northridge Hospital.
 
 ### Getting here from Northridge
 
-Take Nordhoff Street west to Corbin, then turn left on Nordhoff Place. [verify]
+Take Nordhoff Street west. Keep right where Nordhoff Way splits off, cross Corbin Avenue, and you are on Nordhoff Place, with the clinic just ahead.
 
 Park in the free lot in front of the building. There is no gate code.
 
-From CSUN and from Northridge Fashion Center [verify both routes]
+From CSUN, it is under 3 miles west along Nordhoff Street. From Northridge Fashion Center, take Shirley Avenue south to Nordhoff Street, turn right, and continue across Corbin Avenue onto Nordhoff Place, just under a mile.
 
 [PHOTO: the map image with Northridge labelled, to be shot]
 
@@ -2439,7 +2478,7 @@ Details and what to bring are on the [insurance and cost](/insurance-and-cost/) 
 ### Questions about coming from Northridge
 
 **How far is the clinic from Northridge?**
-The clinic is at 19851 Nordhoff Place in Chatsworth, west of Northridge. [verify] The route is laid out above.
+The clinic is at 19851 Nordhoff Place in Chatsworth, about 2 miles west of Nordhoff Street and Reseda Boulevard and under 3 miles from CSUN. The route is laid out above.
 
 **Is there parking?**
 Yes. The lot in front of the building is free, and there is no gate code. Street parking is also available. The entrance and the parking are wheelchair accessible.
@@ -2459,17 +2498,15 @@ Related pages: [All services](/our-services/) | [Insurance and cost](/insurance-
 ## P-036 Physical therapy for Porter Ranch (/physical-therapy-porter-ranch/)
 
 Meta title: Physical Therapy Near Porter Ranch | Dr. Ed Shut, DPT
-Meta description: Porter Ranch has no physical therapy clinic of its own. Dr. Ed Shut, DPT treats Porter Ranch patients one-on-one a short drive away in Chatsworth. Book.
+Meta description: Physical therapy for Porter Ranch families, one-on-one with Dr. Ed Shut, DPT in nearby Chatsworth. Book an evaluation.
 
 # Physical therapy for Porter Ranch families, one-on-one in nearby Chatsworth
 
-Dr. Ed sees patients at 19851 Nordhoff Place, Unit 105, in Chatsworth. [verify distance and time via Rinaldi and Winnetka or the 118]
+Dr. Ed sees patients at 19851 Nordhoff Place, Unit 105, in Chatsworth, under 4 miles from Porter Ranch Town Center straight down Corbin Avenue.
 
 [PHOTO: the building front, to be shot]
 
 ### Why Porter Ranch patients come here
-
-We could not find a physical therapy clinic with a Porter Ranch address; the closest ones list Northridge addresses. [verify before launch]
 
 Porter Ranch is part of the area this clinic serves. Four things to know before you book.
 
@@ -2481,11 +2518,10 @@ Porter Ranch is part of the area this clinic serves. Four things to know before 
 ### Porter Ranch patients
 
 - Reviews from Porter Ranch residents [CONFIRM]
-- Families from the Porter Ranch schools or clubs treated [CONFIRM]
 
 ### Getting here from Porter Ranch
 
-[verify]
+Take Corbin Avenue south from Porter Ranch and turn right onto Nordhoff Place.
 
 Park free in the lot in front of the building. There is no gate code, and street parking is also available. The contact page has a map and [directions](/contact/).
 
@@ -2508,7 +2544,7 @@ Details and what to bring are on the [insurance and cost](/insurance-and-cost/) 
 ### Common questions
 
 **How far is Chatsworth from Porter Ranch?**
-The clinic is at 19851 Nordhoff Place, Unit 105, in Chatsworth. The distance and drive time from Porter Ranch are [verify].
+The clinic is at 19851 Nordhoff Place, Unit 105, in Chatsworth, under 4 miles from Porter Ranch Town Center, straight down Corbin Avenue.
 
 **Do you treat kids?**
 Yes. Dr. Ed treats school-age children and teenagers only, and a parent stays in the room for every visit. That includes gymnasts, dancers and other young athletes.
@@ -2562,6 +2598,8 @@ Starting physical therapy without a referral from your doctor is called direct a
 - **Limit one: 45 calendar days.** Every day on the calendar counts, weekends included.
 - **Limit two: 12 visits.** This one counts appointments, not days.
 - **Whichever comes first.** Come often and you reach 12 visits before day 45. Come less often and day 45 arrives before your twelfth visit. The earlier one is your limit.
+
+The count does not reset on its own. After 12 visits you need a referral to keep going, and if a new problem starts after you finish, you need a referral to be seen through insurance, especially with Medicare.
 
 Until you reach that limit, you can book and start treatment without a referral. You do not have to see your doctor first.
 
@@ -2619,7 +2657,7 @@ Meta description: Medicare Part B covers medically necessary physical therapy wi
 
 By Dr. Edward Shut, DPT. 2026-10-21. Filed under [Insurance and cost](/insurance-and-cost/).
 
-Yes, Medicare Part B helps pay for medically necessary outpatient physical therapy if you are eligible, and your doctor or other health care provider must certify that you need it ([Medicare.gov](https://www.medicare.gov/coverage/physical-therapy-services)). Dr. Ed accepts Medicare at Chatsworth Physical Therapy, and Medicare patients need a referral from the start.
+Yes, Medicare Part B helps pay for medically necessary outpatient physical therapy if you are eligible, and your doctor or other health care provider must certify that you need it ([Medicare.gov](https://www.medicare.gov/coverage/physical-therapy-services)). Dr. Ed accepts original Medicare at Chatsworth Physical Therapy, though not Medicare Advantage plans at this time, and Medicare patients need a referral from the start.
 
 ### What Medicare Part B covers
 
@@ -2682,7 +2720,7 @@ Related pages: [All posts](/blog/) | [Insurance and cost](/insurance-and-cost/) 
 ## P-040 Your first physical therapy visit (/blog/what-to-expect-first-physical-therapy-visit/)
 
 Meta title: First Physical Therapy Visit: What to Expect | Dr. Ed, DPT
-Meta description: Your first physical therapy visit, minute by minute: the questions, the tests, the first treatment and what to wear. Dr. Ed Shut, DPT explains.
+Meta description: Your first physical therapy visit, step by step: the questions, the tests, the first treatment and what to wear. Dr. Ed Shut, DPT explains.
 
 # What to expect at your first physical therapy visit, and what to wear
 
@@ -2797,8 +2835,6 @@ Treatment is built from what the evaluation found, and a session usually mixes i
 - Functional training on the moves that matter: standing from a chair, getting in and out of a car, reaching into a cupboard, carrying a cup.
 - Hands-on manual therapy to loosen stiff joints and tight muscles, including neuro-developmental treatment (NDT) and proprioceptive neuromuscular facilitation (PNF).
 - Electrical stimulation, therapeutic ultrasound and red light therapy where they help a muscle fire or a tissue recover.
-
-[CONFIRM] a stroke patient's story when one exists
 
 ### What to do next
 
@@ -2946,7 +2982,7 @@ That kind of stress fracture is called spondylolysis. The American Academy of Or
 
 OrthoInfo says the most common symptom is lower back pain, which may feel similar to a muscle strain and may get worse with activity and better with rest ([OrthoInfo](https://www.orthoinfo.org/en/diseases--conditions/spondylolysis-and-spondylolisthesis)). Rady Children's Health describes the main symptom as pain in the lower back, especially when bending backward ([Rady Children's Health](https://www.rchsd.org/health-safety/growing-up-columns/linemen-gymnasts-at-highest-risk-of-spondylolysis/)).
 
-A blog post cannot tell you whether your child has it. OrthoInfo says your child's doctor examines the back and spine, and that imaging tests help confirm the diagnosis ([OrthoInfo](https://www.orthoinfo.org/en/diseases--conditions/spondylolysis-and-spondylolisthesis)).
+A blog post cannot tell you whether your child has it. OrthoInfo says your child's doctor examines the back and spine, and that imaging tests help confirm the diagnosis ([OrthoInfo](https://www.orthoinfo.org/en/diseases--conditions/spondylolysis-and-spondylolisthesis)). If the pain started after a serious injury, such as a hard fall, Dr. Ed's advice is to see a doctor first.
 
 ### What Dr. Ed does at the first visit
 
@@ -2986,7 +3022,7 @@ Related pages: [All posts](/blog/) | [Pediatric physical therapy](/pediatric-phy
 ## P-044 Knee replacement: the first six weeks (/blog/knee-replacement-recovery-first-six-weeks/)
 
 Meta title: Knee Replacement Recovery: The First Six Weeks | Dr. Ed, DPT
-Meta description: The first six weeks after a knee replacement decide your range of motion for years. Dr. Ed Shut, DPT in Chatsworth lays out the goals and the home work.
+Meta description: What the first six weeks after a knee replacement involve, from your surgeon's rules to the home work. Dr. Ed Shut, DPT in Chatsworth explains.
 
 # Knee replacement recovery: what the first six weeks should look like
 
@@ -3030,9 +3066,9 @@ Dr. Ed treats you himself, one-on-one, in the stages your surgery needs.
 
 [PHOTO: Dr. Ed working on knee bend with a knee replacement patient, to be shot]
 
-Dr. Ed's milestones for each stage: [CONFIRM the targets he states]
+Dr. Ed's targets, not tied to a week: about 110 degrees of bend for everyday function, and a knee that straightens to 0 degrees, or as close as possible.
 
-You leave every visit with a written home program, adjusted as the repair heals. A family member is welcome at every session and can learn the home exercises so they can help. What patients say about their own recoveries is on the [Reviews page](/reviews/).
+You leave every visit with a written home program, adjusted as the repair heals. A family member is welcome at every session and can learn the home exercises to help. What patients say about their own recoveries is on the [Reviews page](/reviews/).
 
 ### What to do next
 
@@ -3098,7 +3134,7 @@ BPPV can come back. APTA says there are no known ways to prevent it, and that wi
 
 ### What Dr. Ed does about it
 
-Dr. Ed Shut, DPT, does the positional test and the repositioning maneuvers for BPPV at Chatsworth Physical Therapy. For the most common kind of vertigo, BPPV, repositioning maneuvers done in the clinic often settle it within a few visits. Other dizziness improves with a graded exercise program.
+Dr. Ed Shut, DPT, does the positional test and the repositioning maneuvers for BPPV at Chatsworth Physical Therapy. He is trained in the Dix-Hallpike test and the Epley maneuver, and he screens you first to make sure they are right for you. For the most common kind of vertigo, BPPV, repositioning maneuvers done in the clinic often settle it within a few visits. Other dizziness improves with a graded exercise program.
 
 [PHOTO: Dr. Ed doing a repositioning maneuver with a patient, to be shot]
 
@@ -3239,7 +3275,7 @@ Dr. Ed starts by examining how you move and working out what is causing the pain
 
 [PHOTO: red light on a patient's knee at the clinic, to be shot]
 
-Dr. Ed's red light protocol: [CONFIRM minutes per application and frequency]. At any clinic, ask what the light is meant to do, how many minutes and how often, and how you will tell whether it is helping.
+Dr. Ed's red light protocol: about 10 minutes on the treated area, inside a visit, never on its own and not at every visit. His device is a KOZE LED unit (KOZE lists 660 and 850 nanometers, red and near-infrared, for its panels), not a laser. At any clinic, ask what the light is meant to do, how many minutes and how often, and how you will tell whether it is helping.
 
 ### What to do next
 
@@ -3281,7 +3317,7 @@ Dr. Ed's treatment aims at what is irritating the nerve, usually a disc or a tig
 
 On the disc side, the AAOS says sciatic pain occurs "when the nerve root in the lumbar spine is compressed (squeezed)," and names a herniated disc as one cause of that compression. [StatPearls](https://www.ncbi.nlm.nih.gov/books/NBK507908/), a medical reference on the National Library of Medicine Bookshelf, calls a herniated or bulging lumbar disc the most common cause of sciatica.
 
-On the hip side, [the National Institute of Neurological Disorders and Stroke](https://www.ninds.nih.gov/health-information/disorders/piriformis-syndrome) describes piriformis syndrome, which it calls a rare disorder. It happens when the piriformis, a thin muscle in the buttocks that allows the hip to rotate, presses against the sciatic nerve. StatPearls says that, because the sciatic nerve is so close, any injury or inflammation of that muscle can cause sciatica symptoms.
+On the hip side, [the National Institute of Neurological Disorders and Stroke](https://www.ninds.nih.gov/health-information/disorders/piriformis-syndrome) describes piriformis syndrome. It happens when the piriformis, a thin muscle in the buttocks that allows the hip to rotate, presses against the sciatic nerve. StatPearls says that, because the sciatic nerve is so close, any injury or inflammation of that muscle can cause sciatica symptoms. Sciatica that starts at a tight hip muscle is a specialty of Dr. Ed, and he sees it often.
 
 These are not the only causes. MedlinePlus also lists spinal stenosis and pelvic injury or fracture among the common ones. So the word sciatica does not tell you which cause is behind it.
 
@@ -3332,29 +3368,31 @@ Related pages: [All posts](/blog/) | [Sciatica](/conditions/sciatica/) | [About 
 ## P-049 Cash-pay physical therapy cost (/blog/cash-pay-physical-therapy-chatsworth-cost/)
 
 Meta title: Cash-Pay Physical Therapy Cost in Chatsworth | Dr. Ed, DPT
-Meta description: See what a cash-pay physical therapy visit costs in Chatsworth, how a PPO superbill gets you reimbursed, and when paying direct is simpler. By Dr. Ed.
+Meta description: What a cash-pay physical therapy visit costs in Chatsworth, how a PPO superbill works, and what to ask your insurer. By Dr. Ed Shut, DPT.
 
 # Cash-pay physical therapy in Chatsworth: what a visit costs and how a superbill works
 
 By Dr. Edward Shut, DPT. 2026-10-21. Filed under [Insurance and cost](/insurance-and-cost/).
 
-Cash-pay means you pay for the visit yourself, and if you have a PPO plan the clinic gives you a superbill, an itemized receipt you send to your insurer for reimbursement. Call (818) 749-3205 for the current rate. [CONFIRM publishing it]
+Cash-pay means you pay for the visit yourself, and if you have a PPO plan the clinic gives you a superbill, an itemized receipt you send to your insurer for reimbursement. Direct-pay visits are $175 for the first evaluation and $125 for each follow-up visit.
 
 ### What cash-pay physical therapy means
 
 Cash-pay, also called direct pay, means you pay for your own visits. Direct-pay patients are welcome at Chatsworth Physical Therapy. How it works depends on your situation.
 
-- **No insurance.** Physical therapy without insurance means you pay the clinic's current rate for each visit.
+- **No insurance.** Physical therapy without insurance means you pay for each visit yourself: $175 for the first evaluation, then $125 a visit.
 - **A PPO plan.** You pay at the visit, then send your insurer a superbill and ask for reimbursement.
 - **Medicare or a personal injury case.** These work differently from cash-pay. The last section says where to start.
 
 ### What a visit costs
 
-Call (818) 749-3205 for the current rate. [CONFIRM publishing it]
+The first evaluation is $175. Each follow-up visit is $125.
+
+The evaluation is a full first visit: Dr. Ed checks how you walk and move, tests your mobility, finds the pain points and confirms your pain is mechanical, the kind physical therapy treats. If it is not, he tells you and refers you to the right doctor.
 
 A visit runs about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Ed, from your first evaluation through discharge.
 
-How many visits you need depends on your condition and how your body responds. Dr. Ed sets the plan after your first evaluation rather than guessing up front, so he does not quote a number of visits before he has seen you. Ask for the rate first, then let the evaluation set the plan.
+How many visits you need depends on your condition and how your body responds. Dr. Ed sets the plan after your first evaluation rather than guessing up front, so he does not quote a number of visits before he has seen you.
 
 ### How a superbill works
 
@@ -3392,7 +3430,7 @@ These are general definitions. They do not tell you what your plan will pay back
 
 ### What to do next
 
-Call for the current rate, then put the questions above to your insurer. For Medicare, a personal injury case or any other way to pay, start with [insurance and cost](/insurance-and-cost/). When you are ready, book below.
+With the rates on this page in hand, put the questions above to your insurer. For Medicare, a personal injury case or any other way to pay, start with [insurance and cost](/insurance-and-cost/). When you are ready, book below.
 
 ### Sources
 

@@ -400,3 +400,76 @@ Before launch (not this session): Web3Forms key, GA4 measurement ID and Clarity 
 form and tracking on by themselves); the live privacy and terms text, then LEGAL_TEXT_READY true; Dr. Ed's answers for
 the 42 markers, then PREVIEW false (the ship gate needs 0 markers); the photo shoot for the 26 placeholders; Vlad's
 rulings on the open questions; CITY_PAGES_LIVE only if the Northridge and Porter Ranch proof exists.
+
+## Session 2 (21 Oct 2026, evening): on GitHub, the rulings and Dr. Ed's answers
+
+GitHub and the build
+- Vlad created BoostBrand/chatsworthpt (public, his choice; GitHub labels BoostBrand a personal account, so the
+  Claude app's repo list is under Settings, Applications, Installed GitHub Apps) and gave the Claude app access.
+- The repo came back from chatsworthpt-repo-2026-10-21.bundle (verified, complete history, 13 commits, main at
+  fba9d3b), pushed; GitHub's commit list matched local exactly. The build session's 14th commit (the handoff count
+  fix, made after the bundle was sent) was redone. A scan before the push found no secrets (keys are placeholders;
+  the only email is the clinic's).
+- Clean clone: npm ci, npm run build (51 pages), npm run gates (0 failing), as the build session reported.
+- .node-version 22 is now 22.16.0: Cloudflare's build image docs only show full versions, and 22.16.0 is the
+  image default. public/_headers adds X-Robots-Tag: noindex for *.pages.dev only (Cloudflare Pages headers docs
+  recipe), so the preview and, after launch, the pages.dev copy stay out of search; chatsworthpt.com is unaffected.
+
+Preview (waiting)
+- GPT's paste-ready directions went to Vlad: a new Cloudflare Pages project (not a Worker), production branch main,
+  Astro preset, npm run build, output dist, no custom domain, no DNS. Sources: Cloudflare Pages Git integration,
+  Astro guide, GitHub integration, build configuration, build image docs (read 21 Oct 2026).
+- This sandbox cannot reach *.pages.dev (proxy 403). GPT saves the live checks on Vlad's PC in
+  Projects\Chatsworth PT\preview-check\: results.tsv (status, Location, X-Robots-Tag for the 70 paths in urls.txt:
+  5 pages, the 31 files they load, 34 redirect, 410, 404 and sitemap checks), the five pages' HTML, the build log.
+  Claude compares them with dist through the device bridge. urls.txt still matches the build at 60b02f7.
+
+Vlad's rulings (his "go ahead and continue", 21 Oct 9:11pm, read as yes to Claude's picks)
+- (a) yes, commit f8e6a76: the 18 flat 60 minute lines on the six approved pages now say about 60 minutes; their
+  insurance sections show the site-wide lines and the referral FAQs give the 12 visits or 45 days rule; children's
+  visits are no longer called direct pay; homepage trust row: Most patients need no referral to start.
+- (b) yes, commit 4d56fc9: eight softer descriptions. reference/SEO-RULINGS.json records every ruling that changes
+  a blueprint SEO field; scripts/lib/blueprint.py (gates) and scripts/check-content.mjs apply it on top of the
+  blueprint, so the cross-check gate stays meaningful. P-049's description was updated again once the rates were
+  published.
+- (c) keep Matt's video on the Reviews page: no change.
+
+Dr. Ed's answers (questions in claude/DR-ED-QUESTIONS-chatsworthpt.md, sent 21 Oct 8:27pm; Vlad relayed the
+answers at 9:11pm). Applied in commits 109a1e7, 750ece0, de2c468 and 60b02f7:
+- Rates published (Vlad: whatever you think is best): $175 first evaluation, $125 each follow-up; personal
+  training at the same prices. The price checks allow only $175 and $125. The evaluation checks walking, movement,
+  mobility and pain points and confirms the pain is mechanical; if not, Dr. Ed refers out. CSUN students and
+  faculty can ask about a discount (no amount, by his wish).
+- Original Medicare only, no Medicare Advantage. No PPO or other private plan billed directly. Personal injury:
+  the attorney emails Dr. Ed the patient's details. Payment: cards, HSA and FSA cards (read from his yes to the
+  question), checks, Zelle, Venmo.
+- Red light: about 10 minutes inside the visit, included in the price, never sold alone, best avoided on skin with
+  eczema or an infection; device KOZE (LED; KOZE lists 660 and 850 nm for its panels, kozehealth.com, read 21 Oct
+  2026), so the pages say it is not a laser. Ultrasound: not used with a history of cancer or in pregnancy (the
+  unconfirmed fracture and numb-area wording is gone); included in the price. Not every tool at every visit.
+  E-stim: no home TENS setup, basic guidance only.
+- Knee replacement: about 110 degrees of bend and 0 degrees extension, no weekly milestones. Hip: precautions have
+  eased; follow the surgeon. Stroke story line removed. Vertigo: trained in Dix-Hallpike and Epley, screens first.
+  Young gymnast: after a serious injury, see a doctor first. Sciatica: hip-side sciatica is his specialty; the
+  NINDS "rare" wording is gone. Plantar fasciitis: no orthotics, referral to a trusted podiatrist. Referral post:
+  the count does not reset. Hand therapy offered; shockwave and pelvic floor not. No nutrition advice.
+- Routes (Vlad: figure it out from a map): OSRM demo router on OpenStreetMap data, 21 Oct 2026, one sample origin
+  per area (Porter Ranch Town Center, CSUN, Northridge Fashion Center, Granada Hills Charter, Simi Valley Town
+  Center, UCLA West Valley Medical Center, Canoga Park High School, Nordhoff and Reseda). Nordhoff Street becomes
+  Nordhoff Place at Corbin Avenue; the 118 has no Winnetka exit, so the old Granada Hills and Simi lines were wrong.
+- City pages: the full-visit line (general, not Northridge-only, as Dr. Ed asked), CSUN students treated, many
+  Northridge Hospital joint replacement patients; Porter Ranch's no-clinic claim and schools item removed.
+- About: Russian sentence written by Claude (Vlad: whatever you think is best), marked lang ru.
+- First visit post: Vlad did not follow question 35; both explaining clauses kept (one explains the clothing advice,
+  the other echoes the About mission line).
+
+Counts at 60b02f7: 51 pages; gates 0 failing; JSON-LD 50 of 50 parse; renders 102 of 102 clean; accessibility 0
+failures; markers 4 (Northridge reviewers, Porter Ranch reviewers, privacy text, terms text); confirmed rate
+mentions 22; PHOTO placeholders 26; all posts under 1,000 words on the checker's count (knee post 999).
+
+Still open
+- Dr. Ed: which Google reviewers live in Northridge and in Porter Ranch; his read of the About paragraph. The city
+  pages stay hidden (CITY_PAGES_LIVE false) until that proof exists.
+- Vlad or GPT: the live privacy and terms text (Dr. Ed: carry them over as they are), the Web3Forms key, the GA4
+  measurement ID, the Clarity ID, the preview and its check files, one look at section 2620.1 on leginfo, Gabby's
+  shoot for the 26 photo placeholders.
