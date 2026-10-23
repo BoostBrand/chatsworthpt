@@ -1426,7 +1426,7 @@ Dr. Ed offers hand therapy. Shockwave therapy and pelvic floor therapy are not o
 ### The clinic
 
 **Where is the clinic?**
-We are at 19851 Nordhoff Place, Unit 105 (Suite C), Chatsworth, CA 91311. You will find us between Winnetka and Corbin, just north of Nordhoff St. The [Contact](/contact/) page has the map and directions.
+We are at 19851 Nordhoff Place, Unit 105 (Suite C), Chatsworth, CA, 91311. You will find us between Winnetka and Corbin, just north of Nordhoff St. The [Contact](/contact/) page has the map and directions.
 
 **Where do I park?**
 There is a free lot in front of the clinic, and it has no gate code. Street parking is also available.
@@ -1461,7 +1461,7 @@ Related pages: [Your first visit](/first-visit/) | [Insurance and cost](/insuran
 ## P-020 Contact and booking (/contact/)
 
 Meta title: Contact and Directions | Chatsworth Physical Therapy
-Meta description: Book an evaluation or call (818) 749-3205. 19851 Nordhoff Place, Unit 105 (Suite C), Chatsworth, CA 91311. Mon to Sat 10am to 8pm. Park free in front.
+Meta description: Book an evaluation or call (818) 749-3205. 19851 Nordhoff Place, Unit 105 (Suite C), Chatsworth, CA, 91311. Mon to Sat 10am to 8pm. Park free in front.
 
 # Contact Chatsworth Physical Therapy: book, call or visit
 

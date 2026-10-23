@@ -619,3 +619,22 @@ Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating b
 - Counts at e4a8178: 53 pages; gates 0 failing; noindex 1 (the 404); sitemap 52; markers 0; PHOTO placeholders 0;
   renders 106 clean apart from outside scripts; accessibility 0 failures.
 - Open with Vlad: the launch go (PREVIEW false, custom domain, DNS, Search Console).
+
+## 23 Oct 2026, evening: comma after CA, Home in the menu, favicon, the Russian page question again
+
+- Address (commit 69794c4; Vlad: a comma after CA everywhere): "Chatsworth, CA, 91311" in the shared address line
+  in site.ts (footer, booking bands, contact hero), the visit table and map tag (homepage and the visit block), the
+  contact page description (SEO-RULINGS.json, P-020) and the FAQ answer. The schema keeps state and ZIP in separate
+  fields, unchanged. Most US addresses are written without that comma; it has no effect on Google.
+- Menu (commit 7615e23; Vlad: add a Home button): Home is the first menu item on every page and in the phone menu.
+  One row from 1180px up (checked at 1180, 1280, 1440 and 1920); the gate expects 34 menu pages.
+- Favicon (commit 99f6d2c; Vlad: don't forget the favicon). The site had one (the blue figure from the logo), but its
+  SVG was not square and the .ico held one size. Now favicon.svg has a square view, favicon.ico holds 16, 32 and 48
+  pixels, and apple-touch-icon.png (180) leaves room around the figure. The old three files are in
+  _holding/favicon-before-square-23oct/.
+- Service area pages: confirmed for Vlad; both city pages are live on the preview and linked.
+- Russian page (Vlad asked again): none exists. Answer given: not worth building for Google (Semrush, checked 23 Oct:
+  about 140 US searches a month for "физиотерапевт", no measurable Los Angeles searches; GA4: about 0.7% of visits
+  use a Russian-language browser). Its use would be a page Dr. Ed can text to Russian-speaking patients; it needs his
+  proofreading and double upkeep of prices and hours. Recommendation: skip for launch; build on Vlad's word, with Dr.
+  Ed proofreading the Russian.
