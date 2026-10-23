@@ -64,12 +64,14 @@ export const AREA_SERVED = [
 ] as const;
 
 // ---------------------------------------------------------------------------------------------
-// Protected values. Never invented, never edited by batch work. Placeholders until Vlad supplies them.
+// Protected values. Never invented, never edited by batch work. Supplied by Vlad on 23 Oct 2026, read by GPT
+// from GA4 (property 469861709, stream 10036050468), Clarity (project Chatsworth Physical Therapy) and
+// Web3Forms (form Chatsworth Physical Therapy Booking Requests, sole recipient chatsworthpt@gmail.com).
 // ---------------------------------------------------------------------------------------------
 export const GA4_PROPERTY_ID = '469861709';
-export const GA4_MEASUREMENT_ID = 'TODO_GA4_MEASUREMENT_ID';
-export const CLARITY_ID = 'TODO_CLARITY_ID';
-export const WEB3FORMS_KEY = 'TODO_WEB3FORMS_KEY';
+export const GA4_MEASUREMENT_ID = 'G-ZQ3F4WQ8GN';
+export const CLARITY_ID = 'z1ujczxp26';
+export const WEB3FORMS_KEY = '91b415f9-dc08-4aa1-a4d3-f9bafdc31d33';
 
 const isSet = (v: string) => Boolean(v) && !v.startsWith('TODO');
 
@@ -82,6 +84,10 @@ export const FORMS_ENABLED = isSet(WEB3FORMS_KEY);
 
 // No tracking tag renders while either ID is a placeholder.
 export const TRACKING_ENABLED = isSet(GA4_MEASUREMENT_ID) && isSet(CLARITY_ID);
+
+// Tracking loads only on these hosts, so visits to the pages.dev preview and local builds never reach the
+// clinic's Analytics or Clarity.
+export const TRACKING_HOSTS = ['chatsworthpt.com', 'www.chatsworthpt.com'];
 
 // Northridge and Porter Ranch pages build with noindex, stay out of the sitemap and are linked from
 // nowhere until Dr. Ed's local proof arrives. Flipping this adds the service-area links on the
