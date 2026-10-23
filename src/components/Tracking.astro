@@ -1,26 +1,86 @@
 ---
-// GA4 and Microsoft Clarity, only when both IDs in site.ts are real (TRACKING_ENABLED), and only on the real
-// domain (TRACKING_HOSTS): the pages.dev preview and local builds load nothing, so test visits never reach the
-// clinic's Analytics or Clarity. The IDs are protected values: they live only in site.ts.
-import { TRACKING_ENABLED, TRACKING_HOSTS, GA4_MEASUREMENT_ID, CLARITY_ID } from '../data/site';
+// GA4 and Microsoft Clarity. Three locks, and all three must open before either script loads:
+// 1. Both IDs in site.ts are real (TRACKING_ENABLED). The IDs are protected values: they live only in site.ts.
+// 2. The page is on the real domain (TRACKING_HOSTS). The pages.dev preview and local builds load nothing,
+//    so test visits never reach the clinic's Analytics or Clarity.
+// 3. The visitor said yes in the cookie banner. GA4 waits for the banner's "Google Analytics" service and
+//    Clarity for its "Microsoft Clarity" service (names as the Termageddon/Usercentrics banner showed them on
+//    the preview, 23 Oct 2026; both start switched off until the visitor accepts). If the banner script is
+//    blocked or a service name changes, nothing loads. If a visitor later switches a service off, the page
+//    reloads so the script is gone. With the banner switched off in site.ts this third lock is skipped.
+// The banner's own script blocker (uc-block) stays in the head as a second guard.
+import { TRACKING_ENABLED, TRACKING_HOSTS, GA4_MEASUREMENT_ID, CLARITY_ID, COOKIE_BANNER_ENABLED } from '../data/site';
 const ga = GA4_MEASUREMENT_ID;
 const cl = CLARITY_ID;
 const hosts = TRACKING_HOSTS;
+const askFirst = COOKIE_BANNER_ENABLED;
+const names = { ga: 'Google Analytics', cl: 'Microsoft Clarity' };
 ---
 {TRACKING_ENABLED && (
-  <script is:inline define:vars={{ ga, cl, hosts }}>
-    if (hosts.indexOf(location.hostname) !== -1) {
-      var tag = document.createElement('script');
-      tag.async = true;
-      tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + ga;
-      document.head.appendChild(tag);
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = function () { window.dataLayer.push(arguments); };
-      window.gtag('js', new Date());
-      window.gtag('config', ga);
-      window.addEventListener('load', function () {
-        (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", cl);
-      });
-    }
+  <script is:inline define:vars={{ ga, cl, hosts, askFirst, names }}>
+    (function () {
+      if (hosts.indexOf(location.hostname) === -1) return;
+      var loaded = { ga: false, cl: false };
+      function loadGa() {
+        if (loaded.ga) return;
+        loaded.ga = true;
+        var tag = document.createElement('script');
+        tag.async = true;
+        tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + ga;
+        document.head.appendChild(tag);
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { window.dataLayer.push(arguments); };
+        window.gtag('js', new Date());
+        window.gtag('config', ga);
+      }
+      function loadCl() {
+        if (loaded.cl) return;
+        loaded.cl = true;
+        function go() {
+          (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", cl);
+        }
+        if (document.readyState === 'complete') go();
+        else window.addEventListener('load', go);
+      }
+      if (!askFirst) {
+        loadGa();
+        loadCl();
+        return;
+      }
+      // The visitor's current choice for each service: true, false, or null while the banner is not ready.
+      function choices() {
+        var out = { ga: null, cl: null };
+        try {
+          var ui = window.UC_UI;
+          if (!ui || !ui.isInitialized || !ui.isInitialized()) return out;
+          var list = ui.getServicesBaseInfo() || [];
+          for (var i = 0; i < list.length; i++) {
+            var on = !!(list[i].consent && list[i].consent.status === true);
+            if (list[i].name === names.ga) out.ga = on;
+            if (list[i].name === names.cl) out.cl = on;
+          }
+        } catch (e) {}
+        return out;
+      }
+      function check() {
+        var c = choices();
+        if ((loaded.ga && c.ga === false) || (loaded.cl && c.cl === false)) {
+          location.reload();
+          return;
+        }
+        if (c.ga === true) loadGa();
+        if (c.cl === true) loadCl();
+      }
+      function recheck() {
+        check();
+        setTimeout(check, 0);
+        setTimeout(check, 600);
+      }
+      // Banner events, as seen on the preview: UC_UI_CMP_EVENT (ACCEPT_ALL, DENY_ALL, SAVE), then UC_UI_VIEW_CHANGED.
+      window.addEventListener('UC_UI_INITIALIZED', recheck);
+      window.addEventListener('UC_UI_CMP_EVENT', recheck);
+      window.addEventListener('UC_UI_VIEW_CHANGED', recheck);
+      check();
+    })();
   </script>
 )}
