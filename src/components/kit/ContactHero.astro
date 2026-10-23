@@ -23,6 +23,7 @@ const { hero, crumbs, pageName, service = 'Not sure yet' } = Astro.props;
       <div class="page-hero-copy">
         <h1 id="h1">{hero.h1}</h1>
         <p class="contact-phone"><a href={BUSINESS.phoneHref} data-call-placement="contact_hero">{BUSINESS.phone}</a><span>Dr. Ed answers his own phone.</span></p>
+        <p class="ru-line" lang="ru">Говорим по-русски</p>
         <Inline as="p" class="page-hero-lede" text={hero.lede} />
         <p class="contact-meta">{BUSINESS.addressLine}<br />{BUSINESS.hoursLine}</p>
         {hero.stars !== false && <div class="hero-proof"><span class="stars" aria-hidden="true">★★★★★</span><span>{RATING.line}</span></div>}

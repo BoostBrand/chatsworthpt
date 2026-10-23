@@ -17,6 +17,7 @@ const { booking, pageName } = Astro.props;
       <Inline as="h2" id="h-book" text={booking.h2} />
       <Inline as="p" class="lede" text={booking.lead} />
       <p class="call-line">Prefer to talk? Call <a href={BUSINESS.phoneHref}>{BUSINESS.phone}</a><small>Dr. Ed answers his own phone.</small></p>
+      <p class="ru-line" lang="ru">Говорим по-русски</p>
       <p class="book-address"><strong>{BUSINESS.addressLine}</strong><br>{BUSINESS.hoursLine}. Free parking in the lot in front, no gate code, street parking available.</p>
     </div>
     <BookingForm service={booking.service} messagePrompt={booking.messagePrompt} button={booking.button} pageName={pageName} />

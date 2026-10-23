@@ -332,3 +332,9 @@
 .sec .steps .step{align-content:start}
 .review-more-line{display:inline-block;margin-top:.35rem}
 .review-more-line .review-link{margin-top:0}
+
+/* "Говорим по-русски" (Vlad, 23 Oct 2026): under the phone line in every booking band and the contact hero, and in
+   the footer. A pill on navy, like the rating pill in the hero. */
+.ru-line{display:inline-flex;align-items:center;width:fit-content;font-size:.98rem;font-weight:600;line-height:1.3;color:#fff;background:rgba(0,22,32,.28);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:.4rem .95rem}
+.contact-hero .ru-line{margin:.1rem 0 .2rem}
+.footer-ru{color:var(--muted);font-weight:500}
