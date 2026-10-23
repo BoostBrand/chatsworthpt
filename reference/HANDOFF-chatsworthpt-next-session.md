@@ -1,6 +1,13 @@
-# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 23 Oct 2026, 11:15am)
+# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 23 Oct 2026, 11:45am)
 
 Read this first, then `claude/DESIGN-RULINGS-chatsworthpt.md` (every design decision Vlad and Dr. Ed made on 20 Oct; the build and every redesign pass read it), then `claude/SEO-PLAN-chatsworthpt-2026-10-20.html` only if the job touches SEO or the inner pages. For the inner pages, the conditions layer, the city pages and the blog, the page-by-page spec is now `claude/PAGE-BLUEPRINT-chatsworthpt-v1.html` (blueprint v1, 21 Oct); it does not rewrite plan v3, it adds the page entries and lists the decisions it changes.
+
+## Status as of 23 Oct 2026, 11:45am: one menu on every page, cookie banner live, first test booking sent
+- Preview https://chatsworthpt.pages.dev/ runs f4ae41f: one menu on every page (Services, Conditions, Dr. Ed, Reviews, New patients, Contact; tap-open menu below 1180px), the Usercentrics cookie banner as on the live site, the live booking form, Termageddon policies on four legal pages. Gates 0 failing at 53 pages.
+- Test booking sent 23 Oct about 11:07am (Web3Forms success). Arrival in chatsworthpt@gmail.com still to be confirmed by Dr. Ed or the Web3Forms dashboard.
+- Next GPT job (block given to Vlad 23 Oct): Termageddon privacy policy to name Microsoft Clarity and Web3Forms; Microsoft Clarity added to the Usercentrics service list (it lists Google Analytics, Tag Manager, Fonts, Maps, Cloudflare, the CMP); confirm the test booking in the Web3Forms dashboard; record results in launch-inputs.txt.
+- Russian page: Vlad asked; research found no measurable search demand (build log, 23 Oct late morning). Recommended cheap visibility moves instead; nothing built.
+- Still waiting on Dr. Ed: Northridge and Porter Ranch reviewers; his read of the About paragraph. Before launch: leginfo check, Gabby's photos, PREVIEW false, cutover.
 
 ## Status as of 23 Oct 2026, 11:15am: preview live at chatsworthpt.pages.dev; keys and legal pages in
 - Preview: https://chatsworthpt.pages.dev/ (Cloudflare Pages project chatsworthpt in Boost's Cloudflare account sales@boostbrandmarketing.com, Git-connected to BoostBrand/chatsworthpt main; every push to main redeploys). GPT's checks matched 70 of 70 and the HTML was byte-identical to the local build. Claude can read the preview through Chrome with a few JavaScript checks (no screenshots); the sandbox and the desktop VM cannot reach pages.dev.

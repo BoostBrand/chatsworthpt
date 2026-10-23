@@ -524,3 +524,33 @@ privacy policy loads from Termageddon (13,019 characters, "Last updated: Aug 22,
 301s to /contact/ and /wp-login.php returns 410; noindex on every response; /contact/ carries the live booking form;
 no GA4 or Clarity script loads on pages.dev. The Termageddon privacy policy names Google Analytics but not
 Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating before launch (Termageddon account).
+
+## 23 Oct 2026, late morning: one menu everywhere, cookie banner, first test booking, Russian page question
+
+- Test booking (Vlad's yes): sent from https://chatsworthpt.pages.dev/contact/ at about 11:07am through the live
+  form, marked "TEST from Boost Brand Marketing (please ignore)", no call needed. Web3Forms answered 200 with
+  success and the thank-you state showed. Arrival in chatsworthpt@gmail.com is for Dr. Ed or the Web3Forms dashboard
+  to confirm (Boost cannot open that inbox).
+- Menu (Vlad: the homepage menu stayed on the homepage; Contact must be in the menu), commit d78e567: one menu on
+  every page, the homepage included: Services (8 physical therapy pages, then red light, ultrasound, e-stim,
+  personal training, then All services), Conditions (12, then All conditions), Dr. Ed, Reviews, New patients (first
+  visit, insurance and cost, questions, blog) and Contact. The tap-open menu shows below 1180px on every page, groups
+  open one at a time. Fit checked at 390 to 1920; dropdowns inside the window with nothing clipped from 1180 up;
+  keyboard focus opens a dropdown; Escape closes the phone menu. NAV_PATHS in gates.py lists the 33 menu pages
+  (aria-current 33 of 33). The homepage's scroll-spy anchors are gone; the scroll-spy code stays dormant in
+  src/scripts/site.ts (it only runs when every menu link is an in-page anchor).
+- Cookie banner (Vlad's yes), commit f4ae41f: src/components/ConsentBanner.astro at the top of the head, the live
+  site's complete Usercentrics set once (blocker, loader with settings ID qH0BCcOkhR_sVA, Termageddon translations);
+  COOKIE_BANNER_SETTINGS_ID in site.ts. Live on the preview: blocker and banner load, UC_UI initializes, the banner
+  shows. Its service list (UC_UI.getServicesBaseInfo, 23 Oct 2026): Usercentrics CMP, Google Fonts, Google Tag
+  Manager, Cloudflare, Google Maps, Google Analytics. Microsoft Clarity is missing: to add in the Usercentrics
+  settings with the Termageddon policy update. Google Fonts and Google Maps are the live WordPress site's; leave them
+  until cutover. The blocker is render-blocking by design; cached reload on the preview: first paint 324 ms.
+- Clarity masking: default Balanced masks numbers and email addresses; input boxes and dropdowns are masked in every
+  mode (Microsoft docs, read 23 Oct 2026). No change needed for the booking form.
+- Russian page question (research by a subagent, 23 Oct 2026): Semrush US shows no measurable volume for "russian
+  speaking physical therapist" (and the near me and Los Angeles forms) or for the Russian LA terms; the only Russian
+  term with volume is the national "физиотерапевт" (140 a month). Search Console, 16 months: no query with "russia"
+  or Cyrillic. GA4: Russian browser language 13 of 1,851 sessions (0.7%). Verdict given to Vlad: not worth a page as
+  an SEO play; cheaper visibility moves instead.
+- Counts at f4ae41f: 53 pages; gates 0 failing; renders 106 clean (outside scripts aside); accessibility 0 failures.
