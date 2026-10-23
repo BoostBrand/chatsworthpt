@@ -124,6 +124,7 @@ export interface PageContent {
   related?: { text: string; href: string }[];
   schema?: SchemaHints;
   notes?: string[]; // build notes for the report: open questions, gaps, rulings applied (never rendered)
+  termageddon?: 'privacy' | 'cookies' | 'terms' | 'disclaimer'; // legal pages: the policy embedded
 }
 
 export interface PostContent extends Omit<PageContent, 'hero' | 'sections'> {

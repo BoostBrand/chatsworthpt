@@ -1,5 +1,6 @@
 ---
-// LegalPage: plain header, the policy text, links to the other legal page and Contact. While the live text
+// LegalPage: plain header, the clinic's Termageddon policy (one embed per page), links to the related legal
+// pages and Contact. While the live text
 // is missing (LEGAL_TEXT_READY false) it shows the highlighted placeholder and carries noindex.
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../Breadcrumbs.astro';
@@ -8,7 +9,7 @@ import RelatedLinks from '../kit/RelatedLinks.astro';
 import type { PageContent } from '../../lib/types';
 import { pageById, crumbsFor, isNoindex } from '../../lib/pages';
 import { breadcrumbNode, graph } from '../../lib/schema';
-import { LEGAL_TEXT_READY, BUSINESS } from '../../data/site';
+import { LEGAL_TEXT_READY, BUSINESS, TERMAGEDDON } from '../../data/site';
 import { renderInline } from '../../lib/inline';
 interface Props {
   content: PageContent;
@@ -17,6 +18,7 @@ const { content } = Astro.props;
 const meta = pageById(content.id);
 const crumbs = crumbsFor(meta);
 const schema = graph([breadcrumbNode(crumbs)]);
+const policy = content.termageddon ? TERMAGEDDON[content.termageddon] : null;
 const blocks = content.sections.flatMap((s) => (s.kind === 'prose' ? [{ type: 'h2', text: s.h2 } as const, ...s.blocks] : []));
 ---
 <BaseLayout pageId={meta.id} path={meta.path} title={content.title} description={content.description} noindex={isNoindex(meta)} schema={schema} bookHref="/contact/#book">
@@ -30,7 +32,13 @@ const blocks = content.sections.flatMap((s) => (s.kind === 'prose' ? [{ type: 'h
   <section class="sec tone-white">
     <div class="wrap">
       <div class="legal-body">
-        {LEGAL_TEXT_READY ? (
+        {LEGAL_TEXT_READY && policy ? (
+          <Fragment>
+            <div id="policy" data-policy-key={policy.key} data-extra={policy.extra}><p>Loading the policy.</p></div>
+            <noscript><p>This policy needs JavaScript to show. Call <a href={BUSINESS.phoneHref}>{BUSINESS.phone}</a> and we will send you a copy.</p></noscript>
+            <script is:inline src="https://app.termageddon.com/js/termageddon.js"></script>
+          </Fragment>
+        ) : LEGAL_TEXT_READY ? (
           blocks.map((b) => (b.type === 'h2' ? <h2 set:html={b.text} /> : <Blocks blocks={[b]} />))
         ) : (
           <p class="legal-placeholder" data-placeholder set:html={renderInline('[CONFIRM: live policy text to be pasted]')} />

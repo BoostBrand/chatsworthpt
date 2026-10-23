@@ -35,5 +35,17 @@
   "P-049": {
     "description": "What a cash-pay physical therapy visit costs in Chatsworth, how a PPO superbill works, and what to ask your insurer. By Dr. Ed Shut, DPT.",
     "ruling": "Vlad, 21 Oct 2026, ruling (b), updated the same evening once Dr. Ed's direct-pay rates were published: the post now does say what a visit costs"
+  },
+  "P-053": {
+    "h1": "Cookie policy",
+    "title": "Cookie Policy | Chatsworth Physical Therapy",
+    "description": "Read how the Chatsworth Physical Therapy website uses cookies and similar tools, and how to manage your choices.",
+    "ruling": "Added after the blueprint, 23 Oct 2026: Termageddon embeds one policy per page, so the cookie policy keeps its own page, as on the live site"
+  },
+  "P-054": {
+    "h1": "Disclaimer",
+    "title": "Disclaimer | Chatsworth Physical Therapy",
+    "description": "Read the disclaimer that applies to the information on the Chatsworth Physical Therapy website.",
+    "ruling": "Added after the blueprint, 23 Oct 2026: Termageddon embeds one policy per page, so the disclaimer keeps its own page, as on the live site"
   }
 }

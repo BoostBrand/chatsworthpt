@@ -84,7 +84,14 @@ for (const row of arch) {
     priority: row.Priority,
   });
 }
-if (pages.length !== 51) throw new Error('Expected 51 pages, got ' + pages.length);
+// Added after the blueprint (23 Oct 2026): termageddon.js fills the one element with id "policy" on a page, so
+// the cookie policy and the disclaimer keep their own pages, as on the live site, instead of the blueprint's
+// 301s into the privacy and terms pages.
+pages.push(
+  { id: 'P-053', path: '/cookie-policy/', name: 'Cookie policy', full: 'Cookie policy', type: 'legal', file: 'cookie-policy', parent: 'P-001', primaryKeyword: '(none; not a target)', linksFrom: ['P-050'], priority: 'Low' },
+  { id: 'P-054', path: '/disclaimer/', name: 'Disclaimer', full: 'Disclaimer', type: 'legal', file: 'disclaimer', parent: 'P-001', primaryKeyword: '(none; not a target)', linksFrom: ['P-051'], priority: 'Low' },
+);
+if (pages.length !== 53) throw new Error('Expected 53 pages, got ' + pages.length);
 writeFileSync(new URL('pages.json', OUT), JSON.stringify(pages, null, 2) + '\n');
 
 // ---------------------------------------------------------------- reviews

@@ -94,9 +94,18 @@ export const TRACKING_HOSTS = ['chatsworthpt.com', 'www.chatsworthpt.com'];
 // homepage and the contact page, drops the noindex and adds both pages to the sitemap.
 export const CITY_PAGES_LIVE = false;
 
-// The live privacy, cookie, terms and disclaimer text is not in the Project yet. While false the two
-// legal pages show a highlighted placeholder and carry noindex (and stay out of the sitemap).
-export const LEGAL_TEXT_READY = false;
+// The four legal pages show the clinic's Termageddon policies (Vlad, 21 Oct 2026: use Termageddon as on the
+// live site). While false they show a highlighted placeholder and carry noindex (and stay out of the sitemap).
+export const LEGAL_TEXT_READY = true;
+
+// Termageddon policy embeds, as on the live site (keys read from its four policy pages on 22 Oct 2026).
+// termageddon.js fills the one element with id "policy" on a page, so each policy has its own page.
+export const TERMAGEDDON = {
+  privacy: { key: 'U2xwVWRFcE9hMHRWTkd0T1lVRTlQUT09', extra: 'h-align=left&table-style=accordion' },
+  cookies: { key: 'VFhselNtTkphbHB4ZDI5S1FtYzlQUT09', extra: 'h-align=left&table-style=accordion' },
+  terms: { key: 'VTA4eWJXVXZPR3QzTWpkSmVWRTlQUT09', extra: 'h-align=left&table-style=accordion' },
+  disclaimer: { key: 'VFVNNGIxWmlPWE5RZFhGd05YYzlQUT09', extra: 'h-align=left&table-style=accordion' },
+} as const;
 
 // Review build: [CONFIRM], [verify] and [SOURCE NEEDED] markers render highlighted and a slim note
 // says the page is a preview. The ship gate requires zero markers with PREVIEW false.

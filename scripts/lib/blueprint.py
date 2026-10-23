@@ -39,8 +39,11 @@ def rulings():
 
 
 def seo(pid):
-    f = entry(pid)['fields']
-    out = {'h1': f.get('H1 (exact)'), 'title': f.get('Meta title'), 'description': f.get('Meta description')}
+    try:
+        f = entry(pid)['fields']
+        out = {'h1': f.get('H1 (exact)'), 'title': f.get('Meta title'), 'description': f.get('Meta description')}
+    except ValueError:  # a page added after the blueprint: its fields come from SEO-RULINGS.json only
+        out = {'h1': None, 'title': None, 'description': None}
     for k in ('h1', 'title', 'description'):
         v = rulings().get(pid, {}).get(k)
         if v:

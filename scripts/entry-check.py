@@ -94,6 +94,9 @@ def main():
         if html is None:
             out.append(f'{pid} not built')
             continue
+        if not (ENTRIES / f'{pid}.md').exists():
+            out.append(f'{pid} {meta["path"]}: added after the blueprint, no entry to check')
+            continue
         entry = (ENTRIES / f'{pid}.md').read_text()
         p = Main(); p.feed(html)
         # Links out may sit in the header or the footer (the entry marks those), so the whole page counts.

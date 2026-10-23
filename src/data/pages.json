@@ -837,5 +837,33 @@
     "primaryKeyword": "(none; noindex)",
     "linksFrom": [],
     "priority": "Low"
+  },
+  {
+    "id": "P-053",
+    "path": "/cookie-policy/",
+    "name": "Cookie policy",
+    "full": "Cookie policy",
+    "type": "legal",
+    "file": "cookie-policy",
+    "parent": "P-001",
+    "primaryKeyword": "(none; not a target)",
+    "linksFrom": [
+      "P-050"
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "P-054",
+    "path": "/disclaimer/",
+    "name": "Disclaimer",
+    "full": "Disclaimer",
+    "type": "legal",
+    "file": "disclaimer",
+    "parent": "P-001",
+    "primaryKeyword": "(none; not a target)",
+    "linksFrom": [
+      "P-051"
+    ],
+    "priority": "Low"
   }
 ]

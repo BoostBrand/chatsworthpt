@@ -161,9 +161,9 @@ def main():
         if hard and not ok:
             hard_fail.append(name)
 
-    gate('HTML pages in dist', len(html_files), n, '51 (50 index.html plus 404.html)', detail=[str(f.relative_to(DIST)) for f in html_files if f.relative_to(DIST).as_posix() not in {('404.html' if is404(p) else p.lstrip('/') + 'index.html') for p in built}])
+    gate('HTML pages in dist', len(html_files), n, '53 (52 index.html plus 404.html)', detail=[str(f.relative_to(DIST)) for f in html_files if f.relative_to(DIST).as_posix() not in {('404.html' if is404(p) else p.lstrip('/') + 'index.html') for p in built}])
     one_h1 = [p for p, g in parsed.items() if g.h1 == 1]
-    gate('Pages with exactly one h1', len(one_h1), n, 51, detail=[p for p in parsed if p not in one_h1])
+    gate('Pages with exactly one h1', len(one_h1), n, 53, detail=[p for p in parsed if p not in one_h1])
     canon = [p for p, g in parsed.items() if g.canonical == SITE + (p if p != '/' else '/')]
     gate('Pages with a canonical on https://chatsworthpt.com (own URL)', len(canon), n - (1 if '/404' in built else 0), '50 (the 404 has none)', detail=[p for p in parsed if p not in canon and not is404(p)])
     ld_total, ld_bad, ld_multi = 0, [], []
@@ -177,17 +177,17 @@ def main():
                 assert '@graph' in d
             except Exception as e:  # noqa: BLE001
                 ld_bad.append((p, str(e)[:80]))
-    gate('JSON-LD scripts (one per page, none on the 404)', ld_total, n - (1 if '/404' in built else 0), 50, detail=ld_multi)
+    gate('JSON-LD scripts (one per page, none on the 404)', ld_total, n - (1 if '/404' in built else 0), 52, detail=ld_multi)
     gate('JSON-LD scripts that fail to parse', len(ld_bad), 0, 0, detail=ld_bad)
     noidx = {p for p, g in parsed.items() if 'noindex' in g.meta.get('robots', '')}
-    gate('Pages with noindex', len(noidx), len(noindex_expected), '3 (two city pages and the 404), plus the two legal pages until their text lands', detail=sorted(noidx ^ noindex_expected))
+    gate('Pages with noindex', len(noidx), len(noindex_expected), '3 (two city pages and the 404), plus the four legal pages until their text lands', detail=sorted(noidx ^ noindex_expected))
     sm_urls = []
     for f in DIST.glob('sitemap-*.xml'):
         if f.name == 'sitemap-index.xml':
             continue
         sm_urls += re.findall(r'<loc>(.*?)</loc>', f.read_text())
     expect_sm = sorted(SITE + p for p in built if p not in noindex_expected)
-    gate('URLs in the sitemap', len(sm_urls), len(expect_sm), '48, or 46 while the legal pages are noindex', detail=sorted(set(sm_urls) ^ set(expect_sm)))
+    gate('URLs in the sitemap', len(sm_urls), len(expect_sm), '50, or 46 while the four legal pages are noindex', detail=sorted(set(sm_urls) ^ set(expect_sm)))
     # Text gates across every served text file.
     text_files = [f for f in DIST.rglob('*') if f.is_file() and f.suffix in ('.html', '.xml', '.txt', '.js', '.css', '.json', '') and f.name not in ('.DS_Store',)]
     dash_hits = []
@@ -250,8 +250,8 @@ def main():
     descs = {p: g.meta.get('description', '') for p, g in parsed.items()}
     t_ok = [p for p, t in titles.items() if len(t) <= 60 and list(titles.values()).count(t) == 1]
     d_ok = [p for p, d in descs.items() if 0 < len(d) <= 155 and list(descs.values()).count(d) == 1]
-    gate('Meta titles 60 or fewer and unique', len(t_ok), n, 51, detail=[(p, len(titles[p])) for p in titles if p not in t_ok])
-    gate('Meta descriptions 155 or fewer and unique', len(d_ok), n, 51, detail=[(p, len(descs[p])) for p in descs if p not in d_ok])
+    gate('Meta titles 60 or fewer and unique', len(t_ok), n, 53, detail=[(p, len(titles[p])) for p in titles if p not in t_ok])
+    gate('Meta descriptions 155 or fewer and unique', len(d_ok), n, 53, detail=[(p, len(descs[p])) for p in descs if p not in d_ok])
     # Links
     broken, pending, inbound = [], [], defaultdict(set)
     paths = set(built)
@@ -291,7 +291,7 @@ def main():
     nav_ok = [p for p in nav_pages if p in parsed[p].nav_current]
     gate('aria-current="page" on the matching nav item', len(nav_ok), len(nav_pages), 'every page with a nav match (18)', detail=[p for p in nav_pages if p not in nav_ok])
     sticky_ok = [p for p, g in parsed.items() if g.sticky and g.sticky[0] == built[p]['id'] and g.sticky[1]]
-    gate('Sticky bar present with the per-page label', len(sticky_ok), n, 51, detail=[p for p in parsed if p not in sticky_ok])
+    gate('Sticky bar present with the per-page label', len(sticky_ok), n, 53, detail=[p for p in parsed if p not in sticky_ok])
     bare = []
     for p, t in raw_html.items():
         body = t[t.find('<body'):]
@@ -302,7 +302,7 @@ def main():
                 bare.append(p)
     gate('Bare phone numbers (not inside a tel: link)', len(bare), 0, 0, detail=sorted(set(bare)))
     addr_ok = [p for p, g in parsed.items() if ''.join(g.footer_address).strip() == ADDRESS]
-    gate('Address string identical in every footer', len(addr_ok), n, 51, detail=[p for p in parsed if p not in addr_ok])
+    gate('Address string identical in every footer', len(addr_ok), n, 53, detail=[p for p in parsed if p not in addr_ok])
     # Reviews: one per service or conditions page, never shared between them.
     rev_pages = {p: g.review_keys for p, g in parsed.items() if built[p]['type'] in ('service', 'condition')}
     multi = [(p, k) for p, k in rev_pages.items() if len(k) > 1]
@@ -341,7 +341,7 @@ def main():
         except Exception:  # noqa: BLE001
             pass
     httpd.shutdown()
-    gate('Built URLs that return 200 from a local server over dist', len(ok200), n, 51, detail=[p for p in built if p not in ok200])
+    gate('Built URLs that return 200 from a local server over dist', len(ok200), n, 53, detail=[p for p in built if p not in ok200])
 
     width = max(len(r['gate']) for r in rows)
     print(f"{'Gate'.ljust(width)}  Count  Now   End")
@@ -350,7 +350,7 @@ def main():
         print(f"{r['gate'].ljust(width)}  {str(r['count']).rjust(5)}  {str(r['expected_now']).rjust(4)}  {r['expected_end']}  {mark}")
         if r['detail'] and (not r['ok'] or r['expected_now'] is None):
             print('    ', json.dumps(r['detail'])[:600])
-    print(f'\nPages built: {n} of 51. Hard gates failing: {len(hard_fail)}' + (f' ({", ".join(hard_fail)})' if hard_fail else ''))
+    print(f'\nPages built: {n} of 53. Hard gates failing: {len(hard_fail)}' + (f' ({", ".join(hard_fail)})' if hard_fail else ''))
     if '--json' in sys.argv:
         Path(sys.argv[sys.argv.index('--json') + 1]).write_text(json.dumps(rows, indent=1))
     sys.exit(1 if hard_fail else 0)

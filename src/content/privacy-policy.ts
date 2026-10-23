@@ -1,9 +1,7 @@
 import type { PageContent } from '../lib/types';
 
-// P-050. The live policy text is not in the Project yet (the live site cannot be fetched from the build
-// sandbox). While LEGAL_TEXT_READY is false the template shows the highlighted placeholder and the page is
-// noindex. When the text lands: paste it as prose sections below (the cookie policy as one section), update
-// the entity name and the GA4 and Clarity disclosure, then set LEGAL_TEXT_READY to true in src/data/site.ts.
+// P-050. Shows the clinic's Termageddon privacy policy (the embed key lives in site.ts). The cookie policy
+// has its own page (P-053): termageddon.js fills one embed per page.
 const page: PageContent = {
   id: 'P-050',
   path: '/privacy-policy/',
@@ -12,10 +10,12 @@ const page: PageContent = {
   hero: { h1: 'Privacy policy', lede: '' },
   sections: [],
   booking: false,
+  termageddon: 'privacy',
   related: [
-    { text: 'Contact', href: '/contact/' },
+    { text: 'Cookie policy', href: '/cookie-policy/' },
     { text: 'Terms of service', href: '/terms-of-service/' },
+    { text: 'Contact', href: '/contact/' },
   ],
-  notes: ['Waiting on the live text of /privacy-policy/ and /cookie-policy/ (Vlad asked GPT to read them into the Project).'],
+  notes: ['The Termageddon privacy policy, as on the live site (key in site.ts).'],
 };
 export default page;

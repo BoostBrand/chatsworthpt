@@ -113,7 +113,9 @@ export const FOOTER_COLUMNS: { title: string; links: { text: string; href: strin
       { text: 'Blog', href: '/blog/' },
       { text: 'Book an evaluation', href: '/contact/#book' },
       { text: 'Privacy policy', href: '/privacy-policy/' },
+      { text: 'Cookie policy', href: '/cookie-policy/' },
       { text: 'Terms of service', href: '/terms-of-service/' },
+      { text: 'Disclaimer', href: '/disclaimer/' },
     ],
   },
 ];

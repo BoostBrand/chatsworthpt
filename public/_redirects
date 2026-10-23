@@ -1,5 +1,6 @@
 # chatsworthpt.com redirects (Cloudflare Pages format: source destination code).
-# From reference/Chatsworth_Physical_Therapy_301_Map.csv, the 15 rows marked 301. Static rules first,
+# From reference/Chatsworth_Physical_Therapy_301_Map.csv, the 15 rows marked 301, less /cookie-policy/ and
+# /disclaimer/, which stay pages (23 Oct 2026: Termageddon embeds one policy per page, as on the live site). Static rules first,
 # then the splat rules. Each old page URL is listed with and without its trailing slash. Every rule here
 # was tested with Wrangler 4.151.3 (pages dev) on 21 Oct 2026, together with the 410 function.
 #
@@ -12,10 +13,6 @@
 # Old pages
 /book-appointment/ /contact/ 301
 /book-appointment /contact/ 301
-/cookie-policy/ /privacy-policy/ 301
-/cookie-policy /privacy-policy/ 301
-/disclaimer/ /terms-of-service/ 301
-/disclaimer /terms-of-service/ 301
 /get-a-quote/ /contact/ 301
 /get-a-quote /contact/ 301
 /blog-post-title-2/ /blog/ 301
