@@ -66,6 +66,7 @@ export interface NavItem {
   all?: { text: string; href: string };
 }
 export const NAV: NavItem[] = [
+  { label: 'Home', href: '/' }, // Vlad, 23 Oct 2026: a Home item in the menu, next to the logo link
   {
     label: 'Services', href: '/our-services/', section: 'services',
     groups: [
