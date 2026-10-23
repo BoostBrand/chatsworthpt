@@ -1,19 +1,19 @@
-# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 23 Oct 2026, 4:00pm)
+# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 23 Oct 2026, 4:20pm)
 
 Read this first, then `claude/DESIGN-RULINGS-chatsworthpt.md` (every design decision Vlad and Dr. Ed made on 20 Oct; the build and every redesign pass read it), then `claude/SEO-PLAN-chatsworthpt-2026-10-20.html` only if the job touches SEO or the inner pages. For the inner pages, the conditions layer, the city pages and the blog, the page-by-page spec is now `claude/PAGE-BLUEPRINT-chatsworthpt-v1.html` (blueprint v1, 21 Oct); it does not rewrite plan v3, it adds the page entries and lists the decisions it changes.
 
-## Status as of 23 Oct 2026, 4:00pm: photos done, Termageddon settled, tracking waits for the banner's yes
-- Preview https://chatsworthpt.pages.dev/ runs fe42d0d. 53 pages; gates 0 failing; markers 0; PHOTO placeholders 0; renders 106 clean apart from outside scripts; accessibility 0 failures.
-- Photos (Vlad's option 2): real clinic photos where they fit, text-only heroes elsewhere; on the services hub the three cards without a photo (balance, pediatric, neuro) sit together in the last row. A later shoot could fill those heroes; nothing is booked. Vlad does not know a "Gabby": older notes about "Gabby's shoot" just mean a possible future photo shoot.
-- Termageddon: Microsoft Clarity is now in the banner's service list, the cookie policy and the privacy policy (checked 23 Oct). Nothing more to change there; GPT was told to stop. The banner is opt-in: every service starts off.
+## Status as of 23 Oct 2026, 4:20pm: photos done, Termageddon done, city pages and the Russian line in
+- Preview https://chatsworthpt.pages.dev/ runs e4a8178. 53 pages; gates 0 failing; noindex 1 (the 404; the preview host adds noindex to every response); sitemap 52; markers 0; PHOTO placeholders 0; renders 106 clean apart from outside scripts; accessibility 0 failures.
+- Photos (Vlad's option 2): real clinic photos where they fit, text-only heroes elsewhere; on the services hub the three cards without a photo (balance, pediatric, neuro) sit together in the last row. A later shoot could fill those heroes; nothing is booked. Vlad did not recognize the name Gabby on 23 Oct; older notes about "Gabby's shoot" just mean a possible future photo shoot.
+- Termageddon: finished. With Vlad's yes, GPT added Microsoft Clarity to the banner (Marketing) and published two privacy policy sections, "Booking requests and Web3Forms" and "Microsoft Clarity" (with the Microsoft privacy statement link). Read on the preview 23 Oct: accurate. The banner is opt-in: every service starts off.
 - Tracking: GA4 waits for the banner's "Google Analytics" yes and Clarity for "Microsoft Clarity"; only on chatsworthpt.com and www. Tested 15 of 15 with a stand-in banner. After launch, check once on the real domain that both load after Accept All and neither after Deny.
-- Test booking reached chatsworthpt@gmail.com (11:06:49am, 23 Oct).
-- Section 2620.1: checked through Justia (2025 code, last amended 2022) and AB 2497 (would have changed direct access; failed 28 May 2026). leginfo itself blocks automated reads; the item is closed unless Vlad wants the official page looked at.
-- City pages: reviewer lines out; both hidden. Asked Vlad: Northridge live at launch while Porter Ranch stays hidden?
-- Asked Vlad: the "Говорим по-русски" line (footer and booking section).
+- Test booking reached chatsworthpt@gmail.com (11:06:49am, 23 Oct). GPT keeps its notes in C:/Users/Vlad/Documents/Codex/2026-10-22/files-pasted-by-the-user-you/outputs/launch-inputs.txt, which is not the copy in Vlad's Projects\Chatsworth PT folder.
+- Section 2620.1: checked through Justia (2025 code, last amended 2022) and AB 2497 (would have changed direct access; refused passage 28 May 2026). leginfo blocks automated reads; closed unless Vlad wants the official page looked at.
+- City pages: both live at launch (Vlad, 23 Oct; Claude had recommended Northridge only, since Porter Ranch has less local proof). One switch in site.ts (CITY_PAGES_LIVE) hides both again.
+- Russian line: "Говорим по-русски" by every booking form and in the footer (Vlad's yes, 23 Oct).
 - Waiting on Dr. Ed: his read of the About paragraph.
 - Launch, only on Vlad's yes: PREVIEW false; custom domain and DNS; the 301 map and 410s go live with the cutover; Search Console. After cutover, a Termageddon rescan can drop Google Fonts and Google Maps from the banner list (the old site's).
-- Browsers: the built-in browser (Vlad's preferred) reads the preview with JavaScript checks; Chrome works too. The sandbox and the desktop VM cannot reach pages.dev.
+- Browsers: Vlad's team uses Chrome (the extension). On 23 Oct two Chrome browsers were connected, so a Chrome check first needs Vlad to pick one; the built-in browser read the preview without asking. The sandbox and the desktop VM cannot reach pages.dev.
 
 ## Status as of 23 Oct 2026, 11:45am: one menu on every page, cookie banner live, first test booking sent
 - Preview https://chatsworthpt.pages.dev/ runs f4ae41f: one menu on every page (Services, Conditions, Dr. Ed, Reviews, New patients, Contact; tap-open menu below 1180px), the Usercentrics cookie banner as on the live site, the live booking form, Termageddon policies on four legal pages. Gates 0 failing at 53 pages.

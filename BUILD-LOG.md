@@ -579,14 +579,16 @@ Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating b
   - Checked: renders 106 with 0 real problems (the only errors are the outside banner and policy scripts, which this
     sandbox cannot reach); accessibility 0 failures; gates 0 failing; content check clean. Screens looked at: the
     balance hero (390, 1440), the Northridge and e-stim heroes, the gymnast post and the services hub (768, 1440).
-- Termageddon and the banner (built-in browser on the preview, 23 Oct 2026, about 3:30pm). GPT reported at about
-  11am that Clarity could not be added. By mid-afternoon it was in all three places: the banner's service list has
-  Microsoft Clarity (Marketing; processor Microsoft Ireland Operations Limited; "website usage statistics, session
-  recording, and heatmaps"); the cookie policy lists it under Marketing cookies ("Last updated: Oct 23, 2026 5:31
-  PM"); the privacy policy's Analytics programs section names it (its date still reads Aug 22, 2025). How it arrived
-  is not known (GPT's work or Termageddon's own scan). Web3Forms is not named; the privacy policy says it collects
-  "any and all information that you enter on this Website" and lists the categories it shares. Nothing more to change
-  in Termageddon; GPT told to stop.
+- Termageddon and the banner. GPT reported at about 11am that Clarity could not be added; with Vlad's yes it then
+  added Microsoft Clarity to the banner (Marketing, with Usercentrics' Clarity consent setting on) and published two
+  privacy policy sections Vlad approved: "Booking requests and Web3Forms" ("We use Web3Forms to deliver information
+  submitted through our booking-request form to the clinic's email inbox, so we can review and respond to
+  appointment inquiries.") and "Microsoft Clarity" (behavioral analytics, heatmaps and session replay, with a link to
+  https://www.microsoft.com/privacy/privacystatement). Read on the preview in the built-in browser at about 3:30pm
+  and again at about 4:05pm: the banner lists Microsoft Clarity (Marketing; processor Microsoft Ireland Operations
+  Limited); the cookie policy lists it under Marketing cookies ("Last updated: Oct 23, 2026 5:31 PM"); the privacy
+  policy names Clarity in Analytics programs and in its own section, names Web3Forms, and reads "Last updated: Oct
+  23, 2026 5:54 PM". Both new sections match what the site does. Termageddon work is finished.
   - Banner settings (UC_UI.getSettingsCore): opt-in everywhere (acceptAllImplicitlyOutsideEU false; CCPA, TCF and
     Google Consent Mode off). Every service but the CMP starts switched off; the banner shows on a first visit
     (Accept All, Deny, More Information).
@@ -607,5 +609,13 @@ Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating b
   was refused passage on 28 May 2026 (CalMatters Digital Democracy). The post's wording stands.
 - Counts at fe42d0d: 53 pages; gates 0 failing; markers 0; PHOTO placeholders 0; renders 106 clean apart from outside
   scripts; accessibility 0 failures. Copy export regenerated.
-- Open with Vlad: Northridge live at launch while Porter Ranch stays hidden; the "Говорим по-русски" line; the launch
-  go (PREVIEW false, custom domain, DNS, Search Console).
+- City pages live (commit d94ab60; Vlad: "make both of them go live"; the recommendation had been Northridge only,
+  since Porter Ranch names no local patients, schools or hospital). CITY_PAGES_LIVE true: no noindex, both in the
+  sitemap, linked from the homepage service-area line and the contact page directions, and each page's related links
+  name the other (the architecture CSV wants that link both ways; the gate caught it). Gate labels updated.
+- Russian line (commit e4a8178; Vlad's yes): "Говорим по-русски" as a pill under the phone line in every booking band
+  (the homepage's included) and in the contact hero, and as a plain line under the email in the footer, each with
+  lang="ru". Screens checked at 390 and 1440.
+- Counts at e4a8178: 53 pages; gates 0 failing; noindex 1 (the 404); sitemap 52; markers 0; PHOTO placeholders 0;
+  renders 106 clean apart from outside scripts; accessibility 0 failures.
+- Open with Vlad: the launch go (PREVIEW false, custom domain, DNS, Search Console).

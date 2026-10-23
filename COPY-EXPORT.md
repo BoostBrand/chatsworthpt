@@ -2478,7 +2478,7 @@ Yes. Dr. Ed accepts Medicare. Medicare patients need a referral from their docto
 
 Tell Dr. Ed what is going on and pick a time that fits, evenings and Saturdays included. He will confirm your time by phone or email, usually the same day.
 
-Related pages: [All services](/our-services/) | [Insurance and cost](/insurance-and-cost/)
+Related pages: [All services](/our-services/) | [Insurance and cost](/insurance-and-cost/) | [Physical therapy for Porter Ranch](/physical-therapy-porter-ranch/)
 
 ## P-036 Physical therapy for Porter Ranch (/physical-therapy-porter-ranch/)
 
@@ -2538,7 +2538,7 @@ Yes. The lot in front of the building is free and has no gate code, and street p
 
 Tell Dr. Ed what hurts and which days work for you. He will confirm your time by phone or email, usually the same day.
 
-Related pages: [All services](/our-services/) | [Insurance and cost](/insurance-and-cost/)
+Related pages: [All services](/our-services/) | [Insurance and cost](/insurance-and-cost/) | [Physical therapy for Northridge](/physical-therapy-northridge/)
 
 ## P-037 Blog (/blog/)
 
