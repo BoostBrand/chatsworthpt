@@ -53,7 +53,6 @@ const page: PageContent = {
         {
           type: 'ul',
           items: [
-            '[CONFIRM which of the 28 reviewers live in Northridge; if none, this section is cut and the page fails the test]',
             'Dr. Ed treats CSUN students and athletes, and CSUN students and faculty can ask about a discount when they book.',
             'Many of his joint replacement patients come to him after discharge from Northridge Hospital.',
           ],

@@ -46,18 +46,6 @@ const page: PageContent = {
     },
     {
       kind: 'prose',
-      h2: 'Porter Ranch patients',
-      blocks: [
-        {
-          type: 'ul',
-          items: [
-            'Reviews from Porter Ranch residents [CONFIRM]',
-          ],
-        },
-      ],
-    },
-    {
-      kind: 'prose',
       h2: 'Getting here from Porter Ranch',
       blocks: [
         { type: 'p', text: 'Take Corbin Avenue south from Porter Ranch and turn right onto Nordhoff Place.' },
