@@ -25,7 +25,7 @@ const hid = 'h-' + (id ?? slugify(h2));
     <div>
       <SectionHead h2={h2} id={hid} intro={intro} />
       <table class="facts"><tbody>
-        <tr><th>Address</th><td>{BUSINESS.street}<br />Chatsworth, CA 91311</td></tr>
+        <tr><th>Address</th><td>{BUSINESS.street}<br />Chatsworth, CA, 91311</td></tr>
         <tr><th>Hours</th><td>Monday to Saturday, 10am to 8pm<br />Sunday closed</td></tr>
         <tr><th>Phone</th><td set:html={phoneCell} /></tr>
         <tr><th>Email</th><td set:html={mailCell} /></tr>
@@ -42,7 +42,7 @@ const hid = 'h-' + (id ?? slugify(h2));
           </picture>
           <span class="map-ping" aria-hidden="true"></span><span class="map-ping" aria-hidden="true"></span>
         </span>
-        <span class="map-tag">19851 Nordhoff Pl, Unit 105 (Suite C), Chatsworth, CA 91311<small>Between Winnetka and Corbin, just north of Nordhoff St. Free parking in the lot in front, no gate code.</small></span>
+        <span class="map-tag">19851 Nordhoff Pl, Unit 105 (Suite C), Chatsworth, CA, 91311<small>Between Winnetka and Corbin, just north of Nordhoff St. Free parking in the lot in front, no gate code.</small></span>
       </a>
       <div class="visit-actions">
         <a class="btn btn-primary" href={BUSINESS.mapsUrl} target="_blank" rel="noopener">Get directions</a>

@@ -5,7 +5,7 @@ const page: PageContent = {
   path: '/contact/',
   title: 'Contact and Directions | Chatsworth Physical Therapy',
   description:
-    'Book an evaluation or call (818) 749-3205. 19851 Nordhoff Place, Unit 105 (Suite C), Chatsworth, CA 91311. Mon to Sat 10am to 8pm. Park free in front.',
+    'Book an evaluation or call (818) 749-3205. 19851 Nordhoff Place, Unit 105 (Suite C), Chatsworth, CA, 91311. Mon to Sat 10am to 8pm. Park free in front.',
   hero: {
     h1: 'Contact Chatsworth Physical Therapy: book, call or visit',
     lede: 'Book online or call. Dr. Ed confirms your time, usually the same day.',

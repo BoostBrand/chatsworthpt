@@ -47,5 +47,9 @@
     "title": "Disclaimer | Chatsworth Physical Therapy",
     "description": "Read the disclaimer that applies to the information on the Chatsworth Physical Therapy website.",
     "ruling": "Added after the blueprint, 23 Oct 2026: Termageddon embeds one policy per page, so the disclaimer keeps its own page, as on the live site"
+  },
+  "P-020": {
+    "description": "Book an evaluation or call (818) 749-3205. 19851 Nordhoff Place, Unit 105 (Suite C), Chatsworth, CA, 91311. Mon to Sat 10am to 8pm. Park free in front.",
+    "ruling": "Vlad, 23 Oct 2026: a comma after CA in every address (Chatsworth, CA, 91311)"
   }
 }

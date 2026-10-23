@@ -105,7 +105,7 @@ const page: PageContent = {
       items: [
         {
           q: 'Where is the clinic?',
-          a: 'We are at 19851 Nordhoff Place, Unit 105 (Suite C), Chatsworth, CA 91311. You will find us between Winnetka and Corbin, just north of Nordhoff St. The [Contact](/contact/) page has the map and directions.',
+          a: 'We are at 19851 Nordhoff Place, Unit 105 (Suite C), Chatsworth, CA, 91311. You will find us between Winnetka and Corbin, just north of Nordhoff St. The [Contact](/contact/) page has the map and directions.',
         },
         {
           q: 'Where do I park?',

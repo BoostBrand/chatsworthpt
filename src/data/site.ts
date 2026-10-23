@@ -18,7 +18,7 @@ export const BUSINESS = {
   postalCode: '91311',
   country: 'US',
   // The one address string every footer prints, identical on every page (QA gate).
-  addressLine: '19851 Nordhoff Place, Unit 105 (Suite C), Chatsworth, CA 91311',
+  addressLine: '19851 Nordhoff Place, Unit 105 (Suite C), Chatsworth, CA, 91311',
   geo: { latitude: 34.2363732, longitude: -118.5663664 },
   placeId: 'ChIJjzo2DhibwoAR1KeHYSgrQkE',
   mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Chatsworth+Physical+Therapy&query_place_id=ChIJjzo2DhibwoAR1KeHYSgrQkE',
