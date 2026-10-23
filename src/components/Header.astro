@@ -1,91 +1,83 @@
 ---
-// Sticky header (approved in draft 9). Homepage: the five in-page anchors with the sliding underline.
-// Inner pages: Services with its dropdown, Dr. Ed, Reviews, Visit, Questions; aria-current="page" on the
-// item that matches the path; a phone menu below 960px. Book goes to #book on the homepage and to
-// /contact/#book on inner pages (blueprint section 3).
+// Sticky header (approved in draft 9). One menu on every page, the homepage included: Services, Conditions,
+// Dr. Ed, Reviews, New patients and Contact, with dropdowns for the three groups; aria-current="page" on the
+// link that matches the path; the underline rests on the item for the current part of the site. Below
+// 1180px the menu folds into the tap-open phone menu, whose groups open one at a time. Book goes to #book on
+// the homepage and to /contact/#book on inner pages (blueprint section 3).
 import { BUSINESS } from '../data/site';
-import { NAV_HOME, NAV_INNER, SERVICES_MENU, SERVICES_MORE, MENU_LABEL, pageById } from '../lib/pages';
+import { NAV, MENU_LABEL, pageById, pageByPath, navSectionFor } from '../lib/pages';
 
 interface Props {
   home?: boolean;
   current: string; // the page path, e.g. '/back-pain-therapy/'
-  section?: 'services' | null; // service, conditions and hub pages rest the underline on Services
+  section?: string | null; // kept for callers; the menu works out the section from the page itself
 }
-const { home = false, current, section = null } = Astro.props;
-const menuMain = SERVICES_MENU.map(pageById);
-const menuMore = SERVICES_MORE.map(pageById);
+const { home = false, current } = Astro.props;
+const section = navSectionFor(pageByPath(current));
+const items = NAV.map((n) => ({
+  ...n,
+  groups: (n.groups ?? []).map((g) => ({ title: g.title, pages: g.ids.map(pageById) })),
+}));
 const label = (p: { id: string; name: string }) => MENU_LABEL[p.id] ?? p.name;
 const cur = (href: string) => (href === current ? { 'aria-current': 'page' } : {});
 const bookHref = home ? '#book' : '/contact/#book';
-const clinicLinks = [
-  { text: 'About Dr. Ed', href: '/about-us/' },
-  { text: 'Reviews', href: '/reviews/' },
-  { text: 'Contact', href: '/contact/' },
-  { text: 'Questions', href: '/faqs/' },
-  { text: 'Your first visit', href: '/first-visit/' },
-  { text: 'Insurance and cost', href: '/insurance-and-cost/' },
-  { text: 'Blog', href: '/blog/' },
-];
 const chevron = '<svg viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 ---
-<header class:list={['topbar', { 'has-mnav': !home }]}>
+<header class="topbar has-mnav">
   <div class="wrap">
     <a class="brand" href="/" aria-label="Chatsworth Physical Therapy home"><img src="/img/logo.svg" alt="Chatsworth Physical Therapy" width="788" height="367"></a>
-    {home ? (
-      <nav class="nav" aria-label="Main">
-        {NAV_HOME.map((n) => <a href={n.href}>{n.label}</a>)}
-        <span class="nav-ink" aria-hidden="true"></span>
-      </nav>
-    ) : (
-      <nav class="nav" aria-label="Main" data-inner>
-        <div class="nav-item">
-          <a href="/our-services/" class:list={[{ 'is-section': section === 'services' && current !== '/our-services/' }]} {...cur('/our-services/')}>Services<Fragment set:html={chevron} /></a>
-          <div class="menu-panel">
-            <ul>
-              {menuMain.map((p) => <li><a href={p.path} {...cur(p.path)}>{label(p)}</a></li>)}
-            </ul>
-            <ul>
-              <li><p class="menu-label">More</p></li>
-              {menuMore.map((p) => <li><a href={p.path} {...cur(p.path)}>{label(p)}</a></li>)}
-            </ul>
-            <div class="menu-all"><a href="/our-services/">All services</a></div>
+    <nav class="nav" aria-label="Main">
+      {items.map((n) =>
+        n.groups.length ? (
+          <div class="nav-item">
+            <a href={n.href} class:list={[{ 'is-section': section === n.section && current !== n.href }]} {...cur(n.href)}>{n.label}<Fragment set:html={chevron} /></a>
+            <div class:list={['menu-panel', `menu-${n.section}`]}>
+              {n.groups.map((g) => (
+                <ul>
+                  {g.title && <li><p class="menu-label">{g.title}</p></li>}
+                  {g.pages.map((p) => <li><a href={p.path} {...cur(p.path)}>{label(p)}</a></li>)}
+                </ul>
+              ))}
+              {n.all && <div class="menu-all"><a href={n.all.href}>{n.all.text}</a></div>}
+            </div>
           </div>
-        </div>
-        {NAV_INNER.slice(1).map((n) => <a href={n.href} {...cur(n.href)}>{n.label}</a>)}
-        <span class="nav-ink" aria-hidden="true"></span>
-      </nav>
-    )}
+        ) : (
+          <a href={n.href} {...cur(n.href)}>{n.label}</a>
+        )
+      )}
+      <span class="nav-ink" aria-hidden="true"></span>
+    </nav>
     <div class="top-actions">
       <a class="top-phone" href={BUSINESS.phoneHref}>{BUSINESS.phone}<small id="open-line">Mon to Sat, 10am to 8pm</small></a>
       <a class="btn btn-primary" href={bookHref}>Book an evaluation</a>
-      {!home && (
-        <details class="mnav">
-          <summary aria-label="Menu">
-            <svg class="i-open" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            <svg class="i-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </summary>
-          <div class="mnav-panel">
-            <div class="wrap">
-              <div class="mnav-cols">
-                <div>
-                  <p class="mnav-group">Services</p>
-                  <ul>
-                    {[...menuMain, ...menuMore].map((p) => <li><a href={p.path} {...cur(p.path)}>{label(p)}</a></li>)}
-                    <li><a href="/our-services/" {...cur('/our-services/')}>All services</a></li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="mnav-group">Clinic</p>
-                  <ul>
-                    {clinicLinks.map((l) => <li><a href={l.href} {...cur(l.href)}>{l.text}</a></li>)}
-                  </ul>
-                </div>
-              </div>
-              <a class="btn btn-outline" href={BUSINESS.phoneHref}>Call {BUSINESS.phone}</a>
-            </div>
+      <details class="mnav">
+        <summary aria-label="Menu">
+          <svg class="i-open" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg class="i-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </summary>
+        <div class="mnav-panel">
+          <div class="wrap">
+            <ul class="mnav-list">
+              {items.map((n) =>
+                n.groups.length ? (
+                  <li>
+                    <details class="mnav-sub" open={section === n.section}>
+                      <summary>{n.label}<Fragment set:html={chevron} /></summary>
+                      <ul>
+                        {n.groups.flatMap((g) => g.pages).map((p) => <li><a href={p.path} {...cur(p.path)}>{label(p)}</a></li>)}
+                        {n.all && <li><a href={n.all.href} class="mnav-all" {...cur(n.all.href)}>{n.all.text}</a></li>}
+                      </ul>
+                    </details>
+                  </li>
+                ) : (
+                  <li><a href={n.href} class="mnav-top" {...cur(n.href)}>{n.href === '/about-us/' ? 'About Dr. Ed' : n.label}</a></li>
+                )
+              )}
+            </ul>
+            <a class="btn btn-outline" href={BUSINESS.phoneHref}>Call {BUSINESS.phone}</a>
           </div>
-        </details>
-      )}
+        </div>
+      </details>
     </div>
   </div>
 </header>

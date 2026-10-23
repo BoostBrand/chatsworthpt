@@ -99,13 +99,16 @@ const track = (name: string, params: Record<string, unknown> = {}) => {
   pick();
 })();
 
-// Phone menu (inner pages): closes on Escape, on a tap outside, and after a link is chosen.
+// Phone menu (every page, below 1180px): closes on Escape, on a tap outside, and after a link is chosen;
+// its groups open one at a time.
 (function () {
   const m = document.querySelector('details.mnav') as HTMLDetailsElement | null;
   if (!m) return;
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && m.open) { m.open = false; (m.querySelector('summary') as HTMLElement).focus(); } });
   document.addEventListener('click', (e) => { if (m.open && !m.contains(e.target as Node)) m.open = false; });
   m.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => { m.open = false; }));
+  const subs = Array.from(m.querySelectorAll<HTMLDetailsElement>('details.mnav-sub'));
+  subs.forEach((d) => d.addEventListener('toggle', () => { if (d.open) subs.forEach((o) => { if (o !== d) o.open = false; }); }));
 })();
 
 // Services (homepage): hovering or focusing a row cross-fades the lead photo to that service's photo.

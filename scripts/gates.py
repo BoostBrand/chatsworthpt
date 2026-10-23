@@ -25,7 +25,7 @@ PREVIEW = 'PREVIEW = true' in site_ts
 ADDRESS = re.search(r"addressLine: '([^']+)'", site_ts).group(1)
 BANNED = ['whether you want', "in today's digital landscape", 'look no further', 'unlock', 'elevate', 'game-changer', 'seamless', "we've got you covered", 'we have got you covered']
 OTHER_CLIENTS = ['Fred Astaire', 'Solana Beach', 'Alhambra', 'San Jose', 'Valley Fair', 'JenErg', 'Jenerg', 'Northridge Photo Studio', 'NPStudio', 'Ballroom Pages', 'ballroompages', 'All Year Heating', "Tony's Pool", 'sfvpoolcare', 'Lomas Santa Fe', '2121 Orange', 'Suite I,', 'Suite I ', 'z-ratings']
-NAV_PATHS = {'/our-services/', '/about-us/', '/reviews/', '/contact/', '/faqs/', '/back-pain-therapy/', '/sports-injury-recovery/', '/pre-post-surgical-rehabilitation/', '/orthopedic-rehabilitation/', '/balance-and-fall-prevention/', '/pain-management/', '/pediatric-physical-therapy/', '/neurological-rehabilitation/', '/conditions/', '/red-light-therapy/', '/therapeutic-ultrasound/', '/electrical-stimulation-tens-nmes/', '/personal-training-weight-loss/'}
+NAV_PATHS = {'/our-services/', '/back-pain-therapy/', '/sports-injury-recovery/', '/pre-post-surgical-rehabilitation/', '/orthopedic-rehabilitation/', '/balance-and-fall-prevention/', '/pain-management/', '/pediatric-physical-therapy/', '/neurological-rehabilitation/', '/red-light-therapy/', '/therapeutic-ultrasound/', '/electrical-stimulation-tens-nmes/', '/personal-training-weight-loss/', '/conditions/', '/conditions/sciatica/', '/conditions/herniated-disc/', '/conditions/neck-pain/', '/conditions/shoulder-pain-rotator-cuff/', '/conditions/frozen-shoulder/', '/conditions/knee-pain/', '/conditions/acl-recovery/', '/conditions/knee-replacement-recovery/', '/conditions/hip-replacement-recovery/', '/conditions/ankle-sprain/', '/conditions/plantar-fasciitis/', '/conditions/vertigo-bppv/', '/about-us/', '/reviews/', '/first-visit/', '/insurance-and-cost/', '/faqs/', '/blog/', '/contact/'}
 
 
 class Page(HTMLParser):
@@ -289,7 +289,7 @@ def main():
         gate('Links to the city pages while CITY_PAGES_LIVE is false', len(city_links), 0, 0, detail=city_links)
     nav_pages = [p for p in built if p in NAV_PATHS]
     nav_ok = [p for p in nav_pages if p in parsed[p].nav_current]
-    gate('aria-current="page" on the matching nav item', len(nav_ok), len(nav_pages), 'every page with a nav match (18)', detail=[p for p in nav_pages if p not in nav_ok])
+    gate('aria-current="page" on the matching nav item', len(nav_ok), len(nav_pages), 'every page with a nav match (33)', detail=[p for p in nav_pages if p not in nav_ok])
     sticky_ok = [p for p, g in parsed.items() if g.sticky and g.sticky[0] == built[p]['id'] and g.sticky[1]]
     gate('Sticky bar present with the per-page label', len(sticky_ok), n, 53, detail=[p for p in parsed if p not in sticky_ok])
     bare = []

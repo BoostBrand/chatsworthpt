@@ -55,26 +55,52 @@ export function crumbsFor(p: PageMeta): Crumb[] {
 }
 
 // ---------------------------------------------------------------- header
-// Services dropdown: the eight clinical services in homepage order, then a "More" group.
-export const SERVICES_MENU = ['P-004', 'P-005', 'P-006', 'P-007', 'P-009', 'P-008', 'P-010', 'P-011'];
-export const SERVICES_MORE = ['P-021', 'P-012', 'P-013', 'P-014', 'P-015'];
-export const MENU_LABEL: Record<string, string> = { 'P-021': 'Conditions we treat' };
+// One menu on every page, the homepage included (Vlad, 23 Oct 2026: the homepage's in-page anchors kept
+// visitors on the homepage, and Contact belongs in the menu). Dropdown items use the exact page names.
+export interface NavGroup { title?: string; ids: string[] }
+export interface NavItem {
+  label: string;
+  href: string;
+  section?: 'services' | 'conditions' | 'patients'; // the menu item the underline rests on for that part of the site
+  groups?: NavGroup[];
+  all?: { text: string; href: string };
+}
+export const NAV: NavItem[] = [
+  {
+    label: 'Services', href: '/our-services/', section: 'services',
+    groups: [
+      { title: 'Physical therapy', ids: ['P-004', 'P-005', 'P-006', 'P-007', 'P-009', 'P-008', 'P-010', 'P-011'] },
+      { title: 'Treatments and training', ids: ['P-012', 'P-013', 'P-014', 'P-015'] },
+    ],
+    all: { text: 'All services', href: '/our-services/' },
+  },
+  {
+    label: 'Conditions', href: '/conditions/', section: 'conditions',
+    groups: [
+      { ids: ['P-022', 'P-023', 'P-024', 'P-025', 'P-026', 'P-027'] },
+      { ids: ['P-028', 'P-029', 'P-030', 'P-031', 'P-032', 'P-033'] },
+    ],
+    all: { text: 'All conditions', href: '/conditions/' },
+  },
+  { label: 'Dr. Ed', href: '/about-us/' },
+  { label: 'Reviews', href: '/reviews/' },
+  {
+    label: 'New patients', href: '/first-visit/', section: 'patients',
+    groups: [{ ids: ['P-017', 'P-016', 'P-019', 'P-037'] }],
+  },
+  { label: 'Contact', href: '/contact/' },
+];
+// Short labels where the page name would crowd the menu.
+export const MENU_LABEL: Record<string, string> = { 'P-019': 'Questions' };
 
-// Top-level items on inner pages. The homepage keeps its approved in-page anchors.
-export const NAV_INNER = [
-  { label: 'Services', href: '/our-services/', id: 'P-003' },
-  { label: 'Dr. Ed', href: '/about-us/', id: 'P-002' },
-  { label: 'Reviews', href: '/reviews/', id: 'P-018' },
-  { label: 'Visit', href: '/contact/', id: 'P-020' },
-  { label: 'Questions', href: '/faqs/', id: 'P-019' },
-];
-export const NAV_HOME = [
-  { label: 'Services', href: '#services' },
-  { label: 'Dr. Ed', href: '#about' },
-  { label: 'Reviews', href: '#reviews' },
-  { label: 'Visit', href: '#visit' },
-  { label: 'Questions', href: '#faq' },
-];
+// Which menu item a page belongs to, so the underline rests on it.
+export function navSectionFor(p: PageMeta | undefined): NavItem['section'] | null {
+  if (!p) return null;
+  if (p.type === 'service' || p.type === 'services-hub') return 'services';
+  if (p.type === 'condition' || p.type === 'conditions-hub') return 'conditions';
+  if (['P-016', 'P-017', 'P-019', 'P-037'].includes(p.id) || p.type === 'post') return 'patients';
+  return null;
+}
 
 // ---------------------------------------------------------------- footer (blueprint section 3)
 export const FOOTER_COLUMNS: { title: string; links: { text: string; href: string }[] }[] = [

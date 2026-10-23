@@ -1,5 +1,5 @@
-/* Inner pages, header menu and the shared kit. Same tokens, type, buttons and motion curves as the approved
-   homepage (home-draft9.css); nothing here changes a homepage rule. Light theme only. */
+/* Inner pages, the header menu (every page, since 23 Oct 2026) and the shared kit. Same tokens, type, buttons
+   and motion curves as the approved homepage (home-draft9.css). Light theme only. */
 
 /* Preview note: shows only while PREVIEW is true in site.ts */
 .draft-note a{color:inherit;font-weight:600}
@@ -8,7 +8,12 @@
 .confirm{background:#FFF1B8;color:#4A3400;border-radius:4px;padding:.05em .3em;font-style:normal;font-weight:500;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .confirm.plain{background:none;color:inherit;padding:0;font-weight:inherit}
 
-/* ---------- Header: services menu (desktop) ---------- */
+/* ---------- Header: the menu (desktop, 1180px and up) ---------- */
+@media (min-width:960px) and (max-width:1179px){.nav{display:none}.top-actions{margin-left:auto}}
+@media (min-width:1180px){.nav{gap:1.35rem}}
+.menu-panel.menu-patients{grid-template-columns:auto;min-width:230px}
+.menu-panel.menu-conditions{min-width:420px}
+.menu-panel.menu-services,.menu-panel.menu-conditions{max-width:none}
 .nav-item{position:relative;display:flex;align-items:center}
 .nav-item > a{display:inline-flex;align-items:center;gap:.35rem}
 .nav-item > a svg{width:10px;height:10px;transition:transform .2s var(--ease)}
@@ -25,7 +30,7 @@
 .menu-panel .menu-all{grid-column:1/-1;border-top:1px solid var(--line);margin-top:.4rem;padding-top:.5rem}
 .menu-panel .menu-all a{font-weight:600;color:var(--navy)}
 
-/* ---------- Header: phone menu (inner pages only) ---------- */
+/* ---------- Header: phone and tablet menu (below 1180px, every page) ---------- */
 .mnav{display:block}
 .mnav > summary{list-style:none;display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:999px;border:1.5px solid var(--line);color:var(--navy);cursor:pointer;transition:background .15s ease,border-color .15s ease}
 .mnav > summary::-webkit-details-marker{display:none}
@@ -42,9 +47,19 @@
 .mnav-panel .mnav-group{font-family:var(--font-display);font-weight:700;color:var(--navy);font-size:1.1rem;margin:0}
 .mnav-panel .mnav-cols{display:grid;gap:1.1rem}
 .mnav-panel .btn{width:100%}
-@media (min-width:600px){.mnav-panel .mnav-cols{grid-template-columns:1fr 1fr;gap:0 2rem}}
-@media (min-width:960px){.mnav{display:none}}
-@media (max-width:959px){.topbar.has-mnav .wrap{gap:1rem}.topbar.has-mnav .top-actions{gap:.5rem}}
+.mnav-list{list-style:none;margin:0;padding:0;display:grid}
+.mnav-list > li{border-bottom:1px solid var(--line)}
+.mnav-list .mnav-top{display:block;padding:.8rem 0;border:0;font-weight:600;font-size:1.05rem;color:var(--text);text-decoration:none}
+.mnav-list .mnav-top[aria-current="page"]{color:var(--navy)}
+.mnav-sub > summary{list-style:none;display:flex;align-items:center;justify-content:space-between;padding:.8rem 0;font-weight:600;font-size:1.05rem;color:var(--text);cursor:pointer}
+.mnav-sub > summary::-webkit-details-marker{display:none}
+.mnav-sub > summary svg{width:12px;height:12px;color:var(--navy);transition:transform .2s var(--ease)}
+.mnav-sub[open] > summary svg{transform:rotate(180deg)}
+.mnav-sub ul{padding:0 0 .6rem .9rem}
+.mnav-sub li a{padding:.5rem 0;border-bottom:0;font-size:1rem}
+.mnav-sub .mnav-all{font-weight:600;color:var(--navy)}
+@media (min-width:1180px){.mnav{display:none}}
+@media (max-width:1179px){.topbar.has-mnav .wrap{gap:1rem}.topbar.has-mnav .top-actions{gap:.5rem}}
 @media (max-width:379px){.topbar .btn{padding:.45rem .85rem;font-size:.9rem}.topbar.has-mnav .brand img{height:40px}}
 
 /* ---------- Breadcrumbs ---------- */
