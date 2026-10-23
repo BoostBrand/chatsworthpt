@@ -199,7 +199,9 @@ document.querySelectorAll<HTMLFormElement>('form.form[data-web3forms]').forEach(
       });
       const json = await res.json().catch(() => ({}));
       if (res.status !== 200 || !json.success) throw new Error(json.message || 'Request failed');
-      track('form_submit', { service: data.service });
+      // generate_lead is Google's recommended name for a sent request; GA4's own form_submit (enhanced measurement)
+      // fires on every submit click, so a custom form_submit would mix with it.
+      track('generate_lead', { service: data.service });
       const safe = name.value.replace(/[<>&]/g, '');
       form.innerHTML = '<div class="thanks" role="status"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle pathLength="1" cx="12" cy="12" r="10"/><path pathLength="1" d="m8 12.5 2.5 2.5L16 9.5"/></svg><h3>Request sent</h3><p>Thanks, ' + safe + '. We will call or email to confirm a time.</p></div>';
     } catch (e) {
@@ -211,7 +213,8 @@ document.querySelectorAll<HTMLFormElement>('form.form[data-web3forms]').forEach(
   });
 });
 
-// Tracking events (sent only when the GA4 tag is present): call clicks and Book clicks, by page.
+// Tracking events (sent only when the GA4 tag is present, so only after the visitor's yes in the cookie banner):
+// generate_lead when a booking request is sent (above), call_click and book_click here, each with the page path.
 document.addEventListener('click', (e) => {
   const a = (e.target as HTMLElement).closest('a');
   if (!a) return;
