@@ -9,7 +9,6 @@ const page: PageContent = {
   hero: {
     h1: 'Vertigo and BPPV treatment with physical therapy in Chatsworth',
     lede: 'The room spins when you roll over or look up. Dr. Ed tests for BPPV and treats it in the clinic.',
-    placeholder: 'PHOTO: a vertigo repositioning frame, to be shot',
     book: 'Book my evaluation',
     stars: true,
   },

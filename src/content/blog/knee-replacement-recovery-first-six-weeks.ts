@@ -88,10 +88,7 @@ const post: PostContent = {
         },
       ],
     },
-    {
-      type: 'placeholder',
-      label: 'PHOTO: Dr. Ed working on knee bend with a knee replacement patient, to be shot',
-    },
+    { type: 'image', image: { src: '/img/post-op-physical-therapy-chatsworth.webp', width: 900, height: 900, alt: 'Knee taping during post-op physical therapy in Chatsworth' } },
     { type: 'callout', text: "Dr. Ed's targets, not tied to a week: about 110 degrees of bend for everyday function, and a knee that straightens to 0 degrees, or as close as possible." },
     {
       type: 'p',

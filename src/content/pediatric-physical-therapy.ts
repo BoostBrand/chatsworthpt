@@ -12,7 +12,6 @@ const page: PageContent = {
     "h1": "Pediatric physical therapy in Chatsworth that gets your child back to play",
     "lede": "About 60 minutes with a Doctor of Physical Therapy, your child's own plan, and you in the room for every visit.",
     "book": "Book my child's evaluation",
-    "placeholder": "PHOTO: Dr. Ed working with a child or teen athlete, parent in frame, to be shot"
   },
   "sections": [
     {

@@ -38,7 +38,6 @@ const post: PostContent = {
 
     { type: 'h2', text: 'What Dr. Ed does about it' },
     { type: 'p', text: 'Dr. Ed Shut, DPT, does the positional test and the repositioning maneuvers for BPPV at Chatsworth Physical Therapy. He is trained in the Dix-Hallpike test and the Epley maneuver, and he screens you first to make sure they are right for you. For the most common kind of vertigo, BPPV, repositioning maneuvers done in the clinic often settle it within a few visits. Other dizziness improves with a graded exercise program.' },
-    { type: 'placeholder', label: 'PHOTO: Dr. Ed doing a repositioning maneuver with a patient, to be shot' },
     { type: 'p', text: 'He sets the plan after your first evaluation rather than guessing up front. How many visits you need depends on your condition and how your body responds. Every visit is one-on-one with Dr. Ed.' },
     { type: 'p', text: "If you have notes from an ear, nose and throat (ENT) or neurology visit, bring them. If Dr. Ed thinks your dizziness needs a doctor's look first, he will say so." },
 

@@ -51,7 +51,7 @@ const post: PostContent = {
       type: 'p',
       text: 'A superbill is an itemized receipt you send to your insurer for reimbursement. Itemized means it lists each service you paid for. The clinic provides the superbill, you send it, and your plan decides what it pays back.',
     },
-    { type: 'placeholder', label: 'PHOTO: the front desk at the clinic, to be shot' },
+    { type: 'image', image: { src: '/img/dr-ed-shut-in-clinic-chatsworth.webp', width: 1000, height: 1000, alt: 'Dr. Edward Shut, DPT, at his desk in the Chatsworth Physical Therapy clinic' } },
     { type: 'h3', text: 'A worked example' },
     {
       type: 'p',

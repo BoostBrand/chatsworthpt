@@ -20,7 +20,6 @@ const post: PostContent = {
       type: 'p',
       text: "Medicare adds a condition that matters in practice. Your doctor or other health care provider must certify that you need the therapy ([Medicare.gov](https://www.medicare.gov/coverage/physical-therapy-services)). Put simply, a provider on your care team has to say, formally, that you need physical therapy. So the first step is a call to your own doctor's office.",
     },
-    { type: 'placeholder', label: 'PHOTO: Dr. Ed with an older patient at the clinic, to be shot' },
     { type: 'h2', text: 'What you pay' },
     {
       type: 'p',

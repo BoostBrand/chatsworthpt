@@ -33,7 +33,6 @@ const post: PostContent = {
 
     { type: 'h2', text: 'What Dr. Ed does at the first visit' },
     { type: 'p', text: 'Dr. Ed has treated rhythmic gymnasts, dancers and team-sport kids from the local clubs. At the first visit he checks how your child moves, works out what is behind the pain, and explains it in plain terms.' },
-    { type: 'placeholder', label: 'PHOTO: Dr. Ed working with a young gymnast, parent in frame, to be shot' },
     { type: 'p', text: 'A parent or guardian stays for the whole visit, because Dr. Ed does not treat minors without one present. You see what he does and learn the home exercises, so you can run them between visits.' },
     { type: 'p', text: 'The aim is never just pain relief. It is getting back to the sport and doing it well: the cause fixed, the weak link strengthened, and a clear line on when it is safe to go full speed again.' },
     { type: 'p', text: 'For spondylolysis, the American Academy of Orthopaedic Surgeons ([OrthoInfo](https://www.orthoinfo.org/en/diseases--conditions/spondylolysis-and-spondylolisthesis)) lists these among the nonsurgical treatments:' },

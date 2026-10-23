@@ -69,10 +69,7 @@ const post: PostContent = {
         '**You go home with a program.** It is short, and you follow it between visits.',
       ],
     },
-    {
-      type: 'placeholder',
-      label: 'PHOTO: Dr. Ed watching a patient move during an evaluation, to be shot',
-    },
+    { type: 'image', image: { src: '/img/dr-ed-explaining-anatomy-chatsworth.webp', width: 1200, height: 960, alt: 'Dr. Ed explaining an anatomy chart to a patient' } },
 
     { type: 'h2', text: 'After the first visit' },
     {

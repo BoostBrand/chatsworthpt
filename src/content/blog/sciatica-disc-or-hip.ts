@@ -53,7 +53,7 @@ const post: PostContent = {
         'He explains what he found in plain terms and tells you what the plan is.',
       ],
     },
-    { type: 'placeholder', label: "PHOTO: Dr. Ed testing a patient's hip on the treatment table, to be shot" },
+    { type: 'image', image: { src: '/img/back-pain-therapy-chatsworth.webp', width: 900, height: 900, alt: 'Dr. Ed guiding a patient through a core stability exercise for back pain at Chatsworth Physical Therapy' } },
     {
       type: 'p',
       text: 'Two steps speak to the question in the title: he tests the hips, and he checks whether a nerve is involved. The cause is often somewhere other than where it hurts. The evaluation is where he finds it, at a disc, in a tight hip muscle or somewhere else.',

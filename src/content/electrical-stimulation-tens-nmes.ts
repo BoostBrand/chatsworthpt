@@ -9,7 +9,6 @@ const page: PageContent = {
   hero: {
     h1: 'Electrical stimulation (TENS and NMES) in Chatsworth physical therapy',
     lede: 'Two kinds of electrical stimulation: TENS for pain, NMES to make a weak muscle fire.',
-    placeholder: 'PHOTO: electrodes on a knee or shoulder with Dr. Ed adjusting the unit, to be shot',
     book: 'Book my evaluation',
   },
   sections: [

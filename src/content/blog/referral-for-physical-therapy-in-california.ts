@@ -58,10 +58,7 @@ const post: PostContent = {
       type: 'p',
       text: 'Dr. Ed does not guess at the number of visits up front. It depends on your condition and how your body responds, so he sets the plan after your first evaluation. Since treatment cannot continue past the limit without the approval, it helps to see your doctor before you reach it.',
     },
-    {
-      type: 'placeholder',
-      label: "PHOTO: Dr. Ed going over a patient's paperwork at the clinic, to be shot",
-    },
+    { type: 'image', image: { src: '/img/dr-ed-explaining-anatomy-chatsworth.webp', width: 1200, height: 960, alt: 'Dr. Ed explaining an anatomy chart to a patient' } },
 
     { type: 'h2', text: 'Medicare is the exception' },
     {

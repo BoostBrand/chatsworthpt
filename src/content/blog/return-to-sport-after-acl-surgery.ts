@@ -58,10 +58,7 @@ const post: PostContent = {
       type: 'p',
       text: 'A second study followed 158 male professional athletes after ACL reconstruction. Before going back, they took a battery of strength, running and hop tests. Those who returned to team training without meeting all six discharge criteria had about four times the risk of tearing the graft ([Kyritsis and colleagues, British Journal of Sports Medicine](https://bjsm.bmj.com/content/50/15/946)). All were professional men, so read it as a direction, not a forecast.',
     },
-    {
-      type: 'placeholder',
-      label: 'PHOTO: an athlete doing a single-leg hop test with Dr. Ed watching, to be shot',
-    },
+    { type: 'image', image: { src: '/img/sports-injury-rehab-chatsworth.webp', width: 900, height: 900, alt: 'Ankle treatment during a sports injury rehab session in Chatsworth' } },
 
     { type: 'h2', text: 'How Dr. Ed stages it' },
     {
@@ -142,7 +139,7 @@ const post: PostContent = {
   notes: [
     'The nine-to-twelve-month wording is the approved ACL line from the decision sheet. The Grindem finding about nine months is a separate research statement and is cited as such.',
     'Journal names were confirmed from the publisher pages; see the report for the supporting sentences.',
-    'The photo is a placeholder: PHOTO: an athlete doing a single-leg hop test with Dr. Ed watching, to be shot.',
+    'Photo: the sports injury rehab photo from the clinic (23 Oct 2026, Vlad chose real photos where they fit); a hop-test photo can replace it.',
     'The ACL patient story is a link to Reviews only. No review text is quoted, paraphrased or described.',
   ],
 };

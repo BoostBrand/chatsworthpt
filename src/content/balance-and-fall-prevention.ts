@@ -12,7 +12,6 @@ const page: PageContent = {
     "h1": "Fall prevention physical therapy in Chatsworth, one-on-one with Dr. Ed",
     "lede": "A plan for steadier walking and fewer falls, built in visits of about 60 minutes with a Doctor of Physical Therapy, and vertigo treated in the same room.",
     "book": "Book my evaluation",
-    "placeholder": "PHOTO: Dr. Ed spotting an older patient in a standing balance exercise, to be shot"
   },
   "sections": [
     {

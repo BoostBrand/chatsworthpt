@@ -63,10 +63,6 @@ const post: PostContent = {
       type: 'p',
       text: 'Balance and coordination training starts from where you are safe, and the goal moves each week. Walking work covers the mechanics of walking and turning, then stairs, curbs and uneven ground, with or without a walker or cane. Each step is practiced in the clinic and then handed to you and your family to repeat at home.',
     },
-    {
-      type: 'placeholder',
-      label: 'PHOTO: Dr. Ed guiding a patient through standing balance work, to be shot',
-    },
     { type: 'p', text: 'Treatment is built from what the evaluation found, and a session usually mixes in:' },
     {
       type: 'ul',

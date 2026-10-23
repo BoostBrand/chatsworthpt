@@ -10,7 +10,6 @@ const page: PageContent = {
     h1: 'Physical therapy for Northridge patients, ten minutes away in Chatsworth',
     lede:
       'The clinic is at 19851 Nordhoff Place in Chatsworth, about 2 miles west of Nordhoff Street and Reseda Boulevard.',
-    placeholder: 'PHOTO: the front of the building from Nordhoff Place with the street sign, to be shot',
     book: 'Book my evaluation',
   },
   sections: [
@@ -66,7 +65,7 @@ const page: PageContent = {
         { type: 'p', text: 'Take Nordhoff Street west. Keep right where Nordhoff Way splits off, cross Corbin Avenue, and you are on Nordhoff Place, with the clinic just ahead.' },
         { type: 'p', text: 'Park in the free lot in front of the building. There is no gate code.' },
         { type: 'p', text: 'From CSUN, it is under 3 miles west along Nordhoff Street. From Northridge Fashion Center, take Shirley Avenue south to Nordhoff Street, turn right, and continue across Corbin Avenue onto Nordhoff Place, just under a mile.' },
-        { type: 'placeholder', label: 'PHOTO: the map image with Northridge labelled, to be shot' },
+    { type: 'image', image: { src: '/img/map-chatsworth-physical-therapy-19851-nordhoff.webp', width: 1200, height: 750, alt: 'Map showing Chatsworth Physical Therapy at 19851 Nordhoff Place, between Winnetka Avenue and Corbin Avenue, north of Nordhoff Street' } },
         { type: 'p', text: 'A map and the [directions](/contact/) are on the contact page.' },
       ],
     },

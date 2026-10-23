@@ -48,7 +48,6 @@ const post: PostContent = {
 
     { type: 'h2', text: 'Three balance tests Dr. Ed runs in the clinic' },
     { type: 'p', text: "Dr. Ed tests balance in the ways falls actually happen. Here are three of those tests." },
-    { type: 'placeholder', label: 'PHOTO: Dr. Ed spotting an older patient on a step, to be shot' },
     { type: 'leads', items: [
       { lead: "Standing with eyes closed.", text: "Your parent stands with their eyes closed, and Dr. Ed watches how steady they stay." },
       { lead: "Turning.", text: "Your parent turns, and Dr. Ed watches how steady they stay through the turn." },

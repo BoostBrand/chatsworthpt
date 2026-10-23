@@ -9,7 +9,6 @@ const page: PageContent = {
   hero: {
     h1: 'Therapeutic ultrasound in Chatsworth: how Dr. Ed uses it in treatment',
     lede: 'Sound waves warm and loosen tissue before hands-on work. This is treatment ultrasound, not the imaging kind.',
-    placeholder: 'PHOTO: Dr. Ed applying the ultrasound head on a shoulder or ankle, to be shot',
     book: 'Book my evaluation',
   },
   sections: [

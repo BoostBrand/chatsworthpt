@@ -74,7 +74,7 @@ const post: PostContent = {
       type: 'p',
       text: `Dr. Ed starts by examining how you move and working out what is causing the pain. If red light fits, he adds it where he judges it may help a tissue recover or settle a muscle spasm, alongside hands-on treatment, strengthening and a home program.`,
     },
-    { type: 'placeholder', label: `PHOTO: red light on a patient's knee at the clinic, to be shot` },
+    { type: 'image', image: { src: '/img/red-light-therapy-chatsworth.webp', width: 900, height: 900, alt: 'Red light therapy session at Chatsworth Physical Therapy' } },
     {
       type: 'p',
       text: `Dr. Ed's red light protocol: about 10 minutes on the treated area, inside a visit, never on its own and not at every visit. His device is a KOZE LED unit (KOZE lists 660 and 850 nanometers, red and near-infrared, for its panels), not a laser. At any clinic, ask what the light is meant to do, how many minutes and how often, and how you will tell whether it is helping.`,

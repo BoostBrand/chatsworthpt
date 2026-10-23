@@ -9,7 +9,6 @@ const page: PageContent = {
   hero: {
     h1: 'Physical therapy for Porter Ranch families, one-on-one in nearby Chatsworth',
     lede: 'Dr. Ed sees patients at 19851 Nordhoff Place, Unit 105, in Chatsworth, under 4 miles from Porter Ranch Town Center straight down Corbin Avenue.',
-    placeholder: 'PHOTO: the building front, to be shot',
     book: 'Book my evaluation',
   },
   sections: [

@@ -12,7 +12,6 @@ const page: PageContent = {
     "h1": "Neurological rehabilitation in Chatsworth, one-on-one with Dr. Ed",
     "lede": "After a stroke or with a neurological condition, you get a clear plan, hands-on treatment and a home program that fits your life.",
     "book": "Book my evaluation",
-    "placeholder": "PHOTO: balance or gait session with a patient, to be shot"
   },
   "sections": [
     {
