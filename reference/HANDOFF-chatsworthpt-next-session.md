@@ -1,6 +1,15 @@
-# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 21 Oct 2026, 9:40pm)
+# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 23 Oct 2026, 11:15am)
 
 Read this first, then `claude/DESIGN-RULINGS-chatsworthpt.md` (every design decision Vlad and Dr. Ed made on 20 Oct; the build and every redesign pass read it), then `claude/SEO-PLAN-chatsworthpt-2026-10-20.html` only if the job touches SEO or the inner pages. For the inner pages, the conditions layer, the city pages and the blog, the page-by-page spec is now `claude/PAGE-BLUEPRINT-chatsworthpt-v1.html` (blueprint v1, 21 Oct); it does not rewrite plan v3, it adds the page entries and lists the decisions it changes.
+
+## Status as of 23 Oct 2026, 11:15am: preview live at chatsworthpt.pages.dev; keys and legal pages in
+- Preview: https://chatsworthpt.pages.dev/ (Cloudflare Pages project chatsworthpt in Boost's Cloudflare account sales@boostbrandmarketing.com, Git-connected to BoostBrand/chatsworthpt main; every push to main redeploys). GPT's checks matched 70 of 70 and the HTML was byte-identical to the local build. Claude can read the preview through Chrome with a few JavaScript checks (no screenshots); the sandbox and the desktop VM cannot reach pages.dev.
+- Repo at ee10223 (26 commits): 53 pages (the cookie policy P-053 and the disclaimer P-054 keep their own pages because termageddon.js fills one embed per page); gates 0 failing; sitemap 50; noindex 3; markers 2 (the hidden city pages); accessibility 0 failures.
+- Keys in site.ts: GA4 G-ZQ3F4WQ8GN (same as the live site), the Clarity project ID (new project under sales@boostbrandmarketing.com), the Web3Forms key (free plan under sales@boostbrandmarketing.com; sole verified recipient chatsworthpt@gmail.com). Tracking loads only on chatsworthpt.com and www (TRACKING_HOSTS). The booking form on the preview is live and sends to Dr. Ed's inbox.
+- Inputs file from GPT: Vlad's Projects\Chatsworth PT\launch-inputs.txt (Termageddon keys, Usercentrics settings ID qH0BCcOkhR_sVA, GA4, Clarity, Web3Forms).
+- Waiting on Vlad: yes to one test booking from the preview (lands in chatsworthpt@gmail.com); yes or no to the Usercentrics cookie banner. Then a GPT job: update the Termageddon questionnaire so the privacy policy names Microsoft Clarity and the form service (it names Google Analytics only), plus the banner's service list if the banner goes in.
+- Waiting on Dr. Ed: Northridge and Porter Ranch reviewers; his read of the About paragraph.
+- Before launch: section 2620.1 on leginfo; Gabby's shoot (26 placeholders); PREVIEW false; the cutover list (custom domain, DNS, 301 map, Search Console).
 
 ## Status as of 21 Oct 2026, 9:40pm: on GitHub; Vlad's rulings and Dr. Ed's answers applied; the preview waits on GPT
 - Repo: github.com/BoostBrand/chatsworthpt, public by Vlad's choice. GitHub labels BoostBrand a personal account, so the Claude app's repo list lives under Settings, Applications, Installed GitHub Apps (not organization settings). 22 commits on main at 60b02f7, pushed, remote matches. Clone from GitHub; the bundle in the build chat is history now.

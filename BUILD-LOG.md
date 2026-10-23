@@ -473,3 +473,54 @@ Still open
 - Vlad or GPT: the live privacy and terms text (Dr. Ed: carry them over as they are), the Web3Forms key, the GA4
   measurement ID, the Clarity ID, the preview and its check files, one look at section 2620.1 on leginfo, Gabby's
   shoot for the 26 photo placeholders.
+
+## Session 2, continued (23 Oct 2026): preview checked, keys in, legal pages live on the preview
+
+Preview (GPT, 22 Oct 2026, Boost's Cloudflare account sales@boostbrandmarketing.com)
+- Cloudflare Pages project chatsworthpt, Git-connected to BoostBrand/chatsworthpt, production branch main, Astro
+  preset, npm run build, dist, no custom domain, no DNS. Address: https://chatsworthpt.pages.dev/. The Cloudflare
+  GitHub app was given chatsworthpt only (Only select repositories kept).
+- GPT's checks (in Vlad's Projects\Chatsworth PT\preview-check\): 70 of 70 paths returned exactly the expected
+  status and Location (every 301, 410 and the 404); X-Robots-Tag noindex on every response; the five pages' HTML
+  byte-identical to the local build of 1619f90, so the local renders stand for the preview at 390 and 1440.
+- Cloudflare's build log: Node 22.16.0, 51 pages, Functions compiled, _routes.json uploaded, deployed. One warning
+  mattered: undici 8.12.3 (astro > unifont > undici) wants Node 22.19.0 or newer. .node-version is now 22.22.0
+  (commit 44f9e62), the version every local build and check ran on. The Astro content-collection warnings about
+  the empty blog and conditions folders are cosmetic (noted in Batch B).
+
+Launch inputs (GPT, launch-inputs.txt in Vlad's Chatsworth PT folder)
+- GA4: property 469861709, stream 10036050468, measurement ID G-ZQ3F4WQ8GN, the same ID the live site uses.
+- Clarity: new project "Chatsworth Physical Therapy" under sales@boostbrandmarketing.com, Health & Wellness (Vlad
+  approved its terms), project ID in site.ts.
+- Web3Forms (free plan, account sales@boostbrandmarketing.com): form "Chatsworth Physical Therapy Booking
+  Requests", sole verified recipient chatsworthpt@gmail.com; access key in site.ts. No test submission yet.
+- Termageddon: the four policy embed keys from the live pages. Usercentrics cookie banner settings ID
+  qH0BCcOkhR_sVA (the live pages load the banner scripts twice). The banner is not on the new site: waiting on
+  Vlad's yes.
+
+Changes (commits f8a1793, 44f9e62, ee10223, pushed)
+- Keys in site.ts only. Round trip at 51 pages: 48 booking forms with the honeypot, 0 call panels, GA4 and
+  Clarity on 51 of 51. Tracking now loads only on chatsworthpt.com and www.chatsworthpt.com (TRACKING_HOSTS),
+  tested in headless Chromium on all four hosts, so preview visits never reach the clinic's data.
+- Legal pages: Termageddon embeds as on the live site; LEGAL_TEXT_READY true. termageddon.js fills the one element
+  with id "policy" on a page (its source: a single getElementById, no loop), so /cookie-policy/ (P-053) and
+  /disclaimer/ (P-054) stay pages instead of the blueprint's 301s; the four 301 lines left _redirects; the footer
+  lists all four; build-data.mjs appends the two pages; SEO-RULINGS.json gives their SEO fields; entry-check skips
+  pages without a blueprint entry; gate labels read 53.
+- Counts at ee10223: 53 pages; gates 0 failing; noindex 3; sitemap 50; markers 2 (the two hidden city pages);
+  accessibility 0 failures; renders 106, all clean except that this sandbox cannot download termageddon.js on the
+  four legal pages (checked on the preview instead). urls.txt now expects 200 for /cookie-policy/ and /disclaimer/.
+
+Waiting
+- Vlad: yes to one test booking from the preview (it lands in Dr. Ed's inbox, chatsworthpt@gmail.com); yes or no
+  to the cookie banner.
+- Dr. Ed: Northridge and Porter Ranch reviewers (the last two markers; the city pages stay hidden until then), and
+  his read of the About paragraph.
+- Before launch: section 2620.1 on leginfo; Gabby's shoot (26 photo placeholders); PREVIEW false; the cutover list.
+
+Live check of ee10223 on https://chatsworthpt.pages.dev/ (23 Oct 2026, Chrome, no screenshots): /cookie-policy/,
+/disclaimer/, /terms-of-service/ and /privacy-policy/ return 200 with the embed and all four footer links; the
+privacy policy loads from Termageddon (13,019 characters, "Last updated: Aug 22, 2025"); /book-appointment/ still
+301s to /contact/ and /wp-login.php returns 410; noindex on every response; /contact/ carries the live booking form;
+no GA4 or Clarity script loads on pages.dev. The Termageddon privacy policy names Google Analytics but not
+Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating before launch (Termageddon account).
