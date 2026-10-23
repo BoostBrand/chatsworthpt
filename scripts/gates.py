@@ -180,14 +180,14 @@ def main():
     gate('JSON-LD scripts (one per page, none on the 404)', ld_total, n - (1 if '/404' in built else 0), 52, detail=ld_multi)
     gate('JSON-LD scripts that fail to parse', len(ld_bad), 0, 0, detail=ld_bad)
     noidx = {p for p, g in parsed.items() if 'noindex' in g.meta.get('robots', '')}
-    gate('Pages with noindex', len(noidx), len(noindex_expected), '3 (two city pages and the 404), plus the four legal pages until their text lands', detail=sorted(noidx ^ noindex_expected))
+    gate('Pages with noindex', len(noidx), len(noindex_expected), '1 (the 404), plus the two city pages while CITY_PAGES_LIVE is false and the four legal pages until their text lands', detail=sorted(noidx ^ noindex_expected))
     sm_urls = []
     for f in DIST.glob('sitemap-*.xml'):
         if f.name == 'sitemap-index.xml':
             continue
         sm_urls += re.findall(r'<loc>(.*?)</loc>', f.read_text())
     expect_sm = sorted(SITE + p for p in built if p not in noindex_expected)
-    gate('URLs in the sitemap', len(sm_urls), len(expect_sm), '50, or 46 while the four legal pages are noindex', detail=sorted(set(sm_urls) ^ set(expect_sm)))
+    gate('URLs in the sitemap', len(sm_urls), len(expect_sm), '52 (every page but the 404), less the two city pages while hidden and the four legal pages while noindex', detail=sorted(set(sm_urls) ^ set(expect_sm)))
     # Text gates across every served text file.
     text_files = [f for f in DIST.rglob('*') if f.is_file() and f.suffix in ('.html', '.xml', '.txt', '.js', '.css', '.json', '') and f.name not in ('.DS_Store',)]
     dash_hits = []

@@ -123,9 +123,11 @@ const page: PageContent = {
   related: [
     { text: 'All services', href: '/our-services/' },
     { text: 'Insurance and cost', href: '/insurance-and-cost/' },
+    { text: 'Physical therapy for Porter Ranch', href: '/physical-therapy-porter-ranch/' },
   ],
   schema: { areaServed: ['Northridge'] },
   notes: [
+    'Live (Vlad, 23 Oct 2026: both city pages go live at launch, CITY_PAGES_LIVE true). Linked from the homepage service-area line and the contact page directions. The reviewer line is out (nobody knows which reviewers live here); the CSUN, Northridge Hospital and route proof stays.',
     'The H1 and the meta description carry "ten minutes" and "a few minutes west on Nordhoff" exactly as the entry words them. Both are unverified until the drive is checked by map. The hero line holds the entry marker for it.',
     'Section 2 leaves the comparison with group and network clinics unwritten. The bare marker stands where it would go. It needs Dr. Ed to confirm the comparison as his own experience.',
     'Section 3 holds the entry three proof markers. If no reviewer lives in Northridge, the section is cut and the page does not go live.',
@@ -133,7 +135,7 @@ const page: PageContent = {
     'No review section. The Northridge review in the entry depends on the reviewer check in section 3.',
     'Section 5 heading says can come in for, not most often come in for: nobody has confirmed what Northridge patients most often come in for. No mention of Northridge Hospital, CSUN, the high schools or the retirement communities until confirmed.',
     'Section 2 and the insurance block both state the referral, Medicare and visit length facts because the decisions file lists them for section 2.',
-    'The page list shows P-035 among the pages that link to P-036, but the entry has no link to Porter Ranch, so none was added.',
+    'Related links include Porter Ranch (the architecture CSV has each city page linking to the other; added when both went live, 23 Oct 2026).',
   ],
 };
 

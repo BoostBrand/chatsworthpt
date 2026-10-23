@@ -95,10 +95,10 @@ export const TRACKING_HOSTS = ['chatsworthpt.com', 'www.chatsworthpt.com'];
 export const COOKIE_BANNER_SETTINGS_ID = 'qH0BCcOkhR_sVA';
 export const COOKIE_BANNER_ENABLED = isSet(COOKIE_BANNER_SETTINGS_ID);
 
-// Northridge and Porter Ranch pages build with noindex, stay out of the sitemap and are linked from
-// nowhere until Dr. Ed's local proof arrives. Flipping this adds the service-area links on the
-// homepage and the contact page, drops the noindex and adds both pages to the sitemap.
-export const CITY_PAGES_LIVE = false;
+// Northridge and Porter Ranch pages. True (Vlad, 23 Oct 2026: both go live at launch): the service-area links on
+// the homepage and the contact page, no noindex, both pages in the sitemap. False hides both again: noindex, out of
+// the sitemap and linked from nowhere.
+export const CITY_PAGES_LIVE = true;
 
 // The four legal pages show the clinic's Termageddon policies (Vlad, 21 Oct 2026: use Termageddon as on the
 // live site). While false they show a highlighted placeholder and carry noindex (and stay out of the sitemap).

@@ -117,11 +117,12 @@ const page: PageContent = {
   related: [
     { text: 'All services', href: '/our-services/' },
     { text: 'Insurance and cost', href: '/insurance-and-cost/' },
+    { text: 'Physical therapy for Northridge', href: '/physical-therapy-northridge/' },
   ],
   schema: { areaServed: ['Porter Ranch'] },
   notes: [
-    'Builds with noindex while CITY_PAGES_LIVE is false. Nothing links to this page yet.',
-    'Entry rule: if Dr. Ed confirms no Porter Ranch reviews and no school or club families, section 3 is cut and the page is not built.',
+    'Live (Vlad, 23 Oct 2026: both city pages go live at launch, CITY_PAGES_LIVE true). Linked from the homepage service-area line and the contact page directions.',
+    'Entry rule: if Dr. Ed confirms no Porter Ranch reviews and no school or club families, section 3 is cut and the page is not built. Nobody knows which reviewers live here (Vlad, 23 Oct 2026), so the reviewer section is cut; Vlad chose to publish the page anyway.',
     'Section 2 uses the build lead places-search wording of 21 Oct 2026, with the marker [verify before launch]. It does not name another clinic.',
     'The meta description is the entry text and says Porter Ranch has no physical therapy clinic of its own. The places result supports only that no clinic was found with a Porter Ranch address. Decide whether to soften the meta line before launch.',
     'The H1 and meta description say nearby and a short drive away. Both depend on the route and drive time check in the hero lede, the Getting here section and the first FAQ.',
