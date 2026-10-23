@@ -1,0 +1,15 @@
+---
+// Termageddon + Usercentrics cookie banner, the same set the live site loads (its second, complete set:
+// the script blocker, the banner loader with the settings ID, then Termageddon's translations). It sits
+// at the top of the head so the blocker runs before Analytics and Clarity. Off while the ID is unset.
+import { COOKIE_BANNER_ENABLED, COOKIE_BANNER_SETTINGS_ID } from '../data/site';
+---
+{COOKIE_BANNER_ENABLED && (
+  <Fragment>
+    <link rel="preconnect" href="https://privacy-proxy.usercentrics.eu">
+    <link rel="preconnect" href="https://app.usercentrics.eu">
+    <script is:inline type="application/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"></script>
+    <script is:inline id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id={COOKIE_BANNER_SETTINGS_ID} async></script>
+    <script is:inline>if (window.uc && uc.setCustomTranslations) uc.setCustomTranslations('https://termageddon.ams3.cdn.digitaloceanspaces.com/translations/');</script>
+  </Fragment>
+)}

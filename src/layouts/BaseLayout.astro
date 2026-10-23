@@ -13,6 +13,7 @@ import StickyBar from '../components/StickyBar.astro';
 import Schema from '../components/Schema.astro';
 import PreviewNote from '../components/PreviewNote.astro';
 import Tracking from '../components/Tracking.astro';
+import ConsentBanner from '../components/ConsentBanner.astro';
 
 interface Props {
   pageId: string;
@@ -58,6 +59,7 @@ const robots = noindex ? 'noindex, follow' : 'index, follow, max-image-preview:l
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<ConsentBanner />
 <title>{title}</title>
 <meta name="description" content={description}>
 {canonical && <link rel="canonical" href={url}>}

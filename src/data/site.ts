@@ -89,6 +89,12 @@ export const TRACKING_ENABLED = isSet(GA4_MEASUREMENT_ID) && isSet(CLARITY_ID);
 // clinic's Analytics or Clarity.
 export const TRACKING_HOSTS = ['chatsworthpt.com', 'www.chatsworthpt.com'];
 
+// Cookie consent banner, as on the live site: Termageddon's Usercentrics banner (Vlad's yes, 23 Oct 2026).
+// The settings ID was read by GPT from the live pages on 22 Oct 2026. The banner and its script blocker
+// load first in the head, so they can hold back Analytics and Clarity until the visitor chooses.
+export const COOKIE_BANNER_SETTINGS_ID = 'qH0BCcOkhR_sVA';
+export const COOKIE_BANNER_ENABLED = isSet(COOKIE_BANNER_SETTINGS_ID);
+
 // Northridge and Porter Ranch pages build with noindex, stay out of the sitemap and are linked from
 // nowhere until Dr. Ed's local proof arrives. Flipping this adds the service-area links on the
 // homepage and the contact page, drops the noindex and adds both pages to the sitemap.
