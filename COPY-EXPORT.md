@@ -1,6 +1,6 @@
 # Chatsworth PT site: copy export
 
-Generated from the content files in the repo by scripts/copy-export.mjs on 2026-10-22. One section per page, in the
+Generated from the content files in the repo by scripts/copy-export.mjs on 2026-10-23. One section per page, in the
 blueprint order. Highlighted markers ([CONFIRM ...], [verify: ...], [SOURCE NEEDED: ...]) are waiting on an answer. The booking
 band on every page also prints: "Prefer to talk? Call (818) 749-3205. Dr. Ed answers his own phone.", the address and hours,
 and "No payment is required to book."
@@ -101,11 +101,11 @@ Not sure which one you need? Call (818) 749-3205 and Dr. Ed will tell you in two
 - [Sports injury recovery](/sports-injury-recovery/): For sprains, strains and getting back to your sport. ([Ankle sprain](/conditions/ankle-sprain/), [ACL recovery](/conditions/acl-recovery/), [rotator cuff](/conditions/shoulder-pain-rotator-cuff/))
 - [Pre and post-op physical therapy](/pre-post-surgical-rehabilitation/): For getting ready for surgery and for recovery after it. ([Knee replacement recovery](/conditions/knee-replacement-recovery/), [hip replacement recovery](/conditions/hip-replacement-recovery/), shoulder surgery)
 - [Orthopedic rehabilitation](/orthopedic-rehabilitation/): For shoulder, elbow, hip, knee and ankle injuries. ([Shoulder pain and rotator cuff](/conditions/shoulder-pain-rotator-cuff/), [frozen shoulder](/conditions/frozen-shoulder/), [knee pain](/conditions/knee-pain/))
-- [Balance and fall prevention](/balance-and-fall-prevention/): For unsteady balance and the risk of falls. ([Vertigo and BPPV](/conditions/vertigo-bppv/), dizziness)
 - [Pain management](/pain-management/): For pain treated with manual therapy, red light, ultrasound and electrical stimulation. ([Sciatica](/conditions/sciatica/), [neck pain and pinched nerve](/conditions/neck-pain/))
+- [Personal training and weight loss](/personal-training-weight-loss/): The step after rehab, with the same doctor.
+- [Balance and fall prevention](/balance-and-fall-prevention/): For unsteady balance and the risk of falls. ([Vertigo and BPPV](/conditions/vertigo-bppv/), dizziness)
 - [Pediatric physical therapy](/pediatric-physical-therapy/): For school-age kids and teens, including gymnasts, dancers and athletes, with a parent in the room. ([Ankle sprain](/conditions/ankle-sprain/), [knee pain](/conditions/knee-pain/))
 - [Neurological rehabilitation](/neurological-rehabilitation/): For stroke recovery and other neurological conditions, working on strength, walking and everyday movement. (Parkinson's, MS, spinal cord injury)
-- [Personal training and weight loss](/personal-training-weight-loss/): The step after rehab, with the same doctor.
 
 Every physical therapy plan is hands-on treatment in the clinic plus a short home program, adjusted each visit as you progress.
 
@@ -597,8 +597,6 @@ Meta description: Fall prevention physical therapy in Chatsworth for seniors, ba
 
 A plan for steadier walking and fewer falls, built in visits of about 60 minutes with a Doctor of Physical Therapy, and vertigo treated in the same room.
 
-[PHOTO: Dr. Ed spotting an older patient in a standing balance exercise, to be shot]
-
 ### Who balance and fall prevention is for
 
 - **You have fallen, or nearly fallen.** Once is enough. A fall after 65 is the most common reason people lose their independence, and the next one is more likely than the first unless something changes.
@@ -688,8 +686,6 @@ Meta description: Your child gets Dr. Ed's full attention for about 60 minutes, 
 
 About 60 minutes with a Doctor of Physical Therapy, your child's own plan, and you in the room for every visit.
 
-[PHOTO: Dr. Ed working with a child or teen athlete, parent in frame, to be shot]
-
 ### Who pediatric physical therapy is for
 
 School-age children and teenagers come to Dr. Ed for a few common reasons. (Dr. Ed does not treat infants or toddlers.)
@@ -776,8 +772,6 @@ Meta description: Neurological rehabilitation in Chatsworth with Dr. Ed Shut, DP
 # Neurological rehabilitation in Chatsworth, one-on-one with Dr. Ed
 
 After a stroke or with a neurological condition, you get a clear plan, hands-on treatment and a home program that fits your life.
-
-[PHOTO: balance or gait session with a patient, to be shot]
 
 ### Who neurological rehabilitation is for
 
@@ -939,8 +933,6 @@ Meta description: Learn how Dr. Ed Shut, DPT uses therapeutic ultrasound in Chat
 
 Sound waves warm and loosen tissue before hands-on work. This is treatment ultrasound, not the imaging kind.
 
-[PHOTO: Dr. Ed applying the ultrasound head on a shoulder or ankle, to be shot]
-
 ### What therapeutic ultrasound does
 
 At his Chatsworth clinic, Dr. Ed applies ultrasound to the area he is treating. He uses it for:
@@ -998,8 +990,6 @@ Meta description: Find out how TENS and NMES electrical stimulation calm pain an
 # Electrical stimulation (TENS and NMES) in Chatsworth physical therapy
 
 Two kinds of electrical stimulation: TENS for pain, NMES to make a weak muscle fire.
-
-[PHOTO: electrodes on a knee or shoulder with Dr. Ed adjusting the unit, to be shot]
 
 ### TENS: for pain
 
@@ -2359,8 +2349,6 @@ Meta description: The room spins when you roll over or look up: that is usually 
 
 The room spins when you roll over or look up. Dr. Ed tests for BPPV and treats it in the clinic.
 
-[PHOTO: a vertigo repositioning frame, to be shot]
-
 ### Is this you?
 
 - **The room spins when you roll over in bed or look up.** That is usually BPPV, and Dr. Ed tests for it.
@@ -2430,8 +2418,6 @@ Meta description: Northridge patients drive a few minutes west on Nordhoff to se
 
 The clinic is at 19851 Nordhoff Place in Chatsworth, about 2 miles west of Nordhoff Street and Reseda Boulevard.
 
-[PHOTO: the front of the building from Nordhoff Place with the street sign, to be shot]
-
 ### Why Northridge patients come here
 
 - **A Doctor of Physical Therapy.** Dr. Ed treats you himself, one-on-one, at every visit.
@@ -2444,7 +2430,6 @@ It is rare for a physical therapy clinic to have a licensed physical therapist w
 
 ### Northridge patients
 
-- [CONFIRM which of the 28 reviewers live in Northridge; if none, this section is cut and the page fails the test]
 - Dr. Ed treats CSUN students and athletes, and CSUN students and faculty can ask about a discount when they book.
 - Many of his joint replacement patients come to him after discharge from Northridge Hospital.
 
@@ -2456,7 +2441,7 @@ Park in the free lot in front of the building. There is no gate code.
 
 From CSUN, it is under 3 miles west along Nordhoff Street. From Northridge Fashion Center, take Shirley Avenue south to Nordhoff Street, turn right, and continue across Corbin Avenue onto Nordhoff Place, just under a mile.
 
-[PHOTO: the map image with Northridge labelled, to be shot]
+[Image: Map showing Chatsworth Physical Therapy at 19851 Nordhoff Place, between Winnetka Avenue and Corbin Avenue, north of Nordhoff Street]
 
 A map and the [directions](/contact/) are on the contact page.
 
@@ -2504,8 +2489,6 @@ Meta description: Physical therapy for Porter Ranch families, one-on-one with Dr
 
 Dr. Ed sees patients at 19851 Nordhoff Place, Unit 105, in Chatsworth, under 4 miles from Porter Ranch Town Center straight down Corbin Avenue.
 
-[PHOTO: the building front, to be shot]
-
 ### Why Porter Ranch patients come here
 
 Porter Ranch is part of the area this clinic serves. Four things to know before you book.
@@ -2514,10 +2497,6 @@ Porter Ranch is part of the area this clinic serves. Four things to know before 
 - **Evenings and Saturdays.** You can book a time after work or on a Saturday, so treatment does not have to cut into your workday.
 - **Kids and teens welcome.** A parent stays in the room for every visit with a school-age child or a teenager.
 - **Medicare accepted.** The rules on referrals, and how other insurance works, are further down this page.
-
-### Porter Ranch patients
-
-- Reviews from Porter Ranch residents [CONFIRM]
 
 ### Getting here from Porter Ranch
 
@@ -2611,7 +2590,7 @@ At the limit, treatment can go on only with your doctor's approval of the physic
 
 Dr. Ed does not guess at the number of visits up front. It depends on your condition and how your body responds, so he sets the plan after your first evaluation. Since treatment cannot continue past the limit without the approval, it helps to see your doctor before you reach it.
 
-[PHOTO: Dr. Ed going over a patient's paperwork at the clinic, to be shot]
+[Image: Dr. Ed explaining an anatomy chart to a patient]
 
 ### Medicare is the exception
 
@@ -2664,8 +2643,6 @@ Yes, Medicare Part B helps pay for medically necessary outpatient physical thera
 Part B is the medical insurance part of Medicare. According to [Medicare.gov](https://www.medicare.gov/coverage/physical-therapy-services), it helps pay for outpatient physical therapy that is medically necessary. Outpatient means you come in for a visit and go home afterward. Medically necessary means you need the therapy for your condition.
 
 Medicare adds a condition that matters in practice. Your doctor or other health care provider must certify that you need the therapy ([Medicare.gov](https://www.medicare.gov/coverage/physical-therapy-services)). Put simply, a provider on your care team has to say, formally, that you need physical therapy. So the first step is a call to your own doctor's office.
-
-[PHOTO: Dr. Ed with an older patient at the clinic, to be shot]
 
 ### What you pay
 
@@ -2763,7 +2740,7 @@ The first visit is an examination and a first treatment, not only a conversation
 6. **Treatment starts.** You are treated at this visit, not the next. What you get depends on what he found, and it may include manual therapy, corrective exercise, therapeutic ultrasound, red light therapy, cryo massage or electrical stimulation.
 7. **You go home with a program.** It is short, and you follow it between visits.
 
-[PHOTO: Dr. Ed watching a patient move during an evaluation, to be shot]
+[Image: Dr. Ed explaining an anatomy chart to a patient]
 
 ### After the first visit
 
@@ -2826,8 +2803,6 @@ Sessions follow the order your body needs:
 4. Then the arm and hand.
 
 Balance and coordination training starts from where you are safe, and the goal moves each week. Walking work covers the mechanics of walking and turning, then stairs, curbs and uneven ground, with or without a walker or cane. Each step is practiced in the clinic and then handed to you and your family to repeat at home.
-
-[PHOTO: Dr. Ed guiding a patient through standing balance work, to be shot]
 
 Treatment is built from what the evaluation found, and a session usually mixes in:
 
@@ -2906,8 +2881,6 @@ The checklist covers the house. It cannot show you how steady your parent is on 
 ### Three balance tests Dr. Ed runs in the clinic
 
 Dr. Ed tests balance in the ways falls actually happen. Here are three of those tests.
-
-[PHOTO: Dr. Ed spotting an older patient on a step, to be shot]
 
 - **Standing with eyes closed.** Your parent stands with their eyes closed, and Dr. Ed watches how steady they stay.
 - **Turning.** Your parent turns, and Dr. Ed watches how steady they stay through the turn.
@@ -2988,8 +2961,6 @@ A blog post cannot tell you whether your child has it. OrthoInfo says your child
 
 Dr. Ed has treated rhythmic gymnasts, dancers and team-sport kids from the local clubs. At the first visit he checks how your child moves, works out what is behind the pain, and explains it in plain terms.
 
-[PHOTO: Dr. Ed working with a young gymnast, parent in frame, to be shot]
-
 A parent or guardian stays for the whole visit, because Dr. Ed does not treat minors without one present. You see what he does and learn the home exercises, so you can run them between visits.
 
 The aim is never just pain relief. It is getting back to the sport and doing it well: the cause fixed, the weak link strengthened, and a clear line on when it is safe to go full speed again.
@@ -3064,7 +3035,7 @@ Dr. Ed treats you himself, one-on-one, in the stages your surgery needs.
 - **Middle.** Restoring full range of motion with hands-on work, waking the muscles back up, and rebuilding walking so it looks normal again.
 - **Late.** Strength, balance and the specific things you want back, such as gardening, hiking or lifting a grandchild.
 
-[PHOTO: Dr. Ed working on knee bend with a knee replacement patient, to be shot]
+[Image: Knee taping during post-op physical therapy in Chatsworth]
 
 Dr. Ed's targets, not tied to a week: about 110 degrees of bend for everyday function, and a knee that straightens to 0 degrees, or as close as possible.
 
@@ -3136,8 +3107,6 @@ BPPV can come back. APTA says there are no known ways to prevent it, and that wi
 
 Dr. Ed Shut, DPT, does the positional test and the repositioning maneuvers for BPPV at Chatsworth Physical Therapy. He is trained in the Dix-Hallpike test and the Epley maneuver, and he screens you first to make sure they are right for you. For the most common kind of vertigo, BPPV, repositioning maneuvers done in the clinic often settle it within a few visits. Other dizziness improves with a graded exercise program.
 
-[PHOTO: Dr. Ed doing a repositioning maneuver with a patient, to be shot]
-
 He sets the plan after your first evaluation rather than guessing up front. How many visits you need depends on your condition and how your body responds. Every visit is one-on-one with Dr. Ed.
 
 If you have notes from an ear, nose and throat (ENT) or neurology visit, bring them. If Dr. Ed thinks your dizziness needs a doctor's look first, he will say so.
@@ -3188,7 +3157,7 @@ Each test needs a pass mark. The Delaware-Oslo study used four single-leg hops: 
 
 A second study followed 158 male professional athletes after ACL reconstruction. Before going back, they took a battery of strength, running and hop tests. Those who returned to team training without meeting all six discharge criteria had about four times the risk of tearing the graft ([Kyritsis and colleagues, British Journal of Sports Medicine](https://bjsm.bmj.com/content/50/15/946)). All were professional men, so read it as a direction, not a forecast.
 
-[PHOTO: an athlete doing a single-leg hop test with Dr. Ed watching, to be shot]
+[Image: Ankle treatment during a sports injury rehab session in Chatsworth]
 
 ### How Dr. Ed stages it
 
@@ -3273,7 +3242,7 @@ The drop was larger, 18.71 mm, at the doses the authors classed as recommended. 
 
 Dr. Ed starts by examining how you move and working out what is causing the pain. If red light fits, he adds it where he judges it may help a tissue recover or settle a muscle spasm, alongside hands-on treatment, strengthening and a home program.
 
-[PHOTO: red light on a patient's knee at the clinic, to be shot]
+[Image: Red light therapy session at Chatsworth Physical Therapy]
 
 Dr. Ed's red light protocol: about 10 minutes on the treated area, inside a visit, never on its own and not at every visit. His device is a KOZE LED unit (KOZE lists 660 and 850 nanometers, red and near-infrared, for its panels), not a laser. At any clinic, ask what the light is meant to do, how many minutes and how often, and how you will tell whether it is helping.
 
@@ -3330,7 +3299,7 @@ Dr. Ed does not start with the sore spot. This is the sequence, in order:
 3. He checks whether a nerve is involved.
 4. He explains what he found in plain terms and tells you what the plan is.
 
-[PHOTO: Dr. Ed testing a patient's hip on the treatment table, to be shot]
+[Image: Dr. Ed guiding a patient through a core stability exercise for back pain at Chatsworth Physical Therapy]
 
 Two steps speak to the question in the title: he tests the hips, and he checks whether a nerve is involved. The cause is often somewhere other than where it hurts. The evaluation is where he finds it, at a disc, in a tight hip muscle or somewhere else.
 
@@ -3398,7 +3367,7 @@ How many visits you need depends on your condition and how your body responds. D
 
 A superbill is an itemized receipt you send to your insurer for reimbursement. Itemized means it lists each service you paid for. The clinic provides the superbill, you send it, and your plan decides what it pays back.
 
-[PHOTO: the front desk at the clinic, to be shot]
+[Image: Dr. Edward Shut, DPT, at his desk in the Chatsworth Physical Therapy clinic]
 
 #### A worked example
 
@@ -3454,7 +3423,7 @@ Meta description: Read how Chatsworth Physical Therapy handles the information y
 
 [CONFIRM: live policy text to be pasted]
 
-Related pages: [Contact](/contact/) | [Terms of service](/terms-of-service/)
+Related pages: [Cookie policy](/cookie-policy/) | [Terms of service](/terms-of-service/) | [Contact](/contact/)
 
 ## P-051 Terms of service (/terms-of-service/)
 
@@ -3465,7 +3434,7 @@ Meta description: Read the terms that apply to using the Chatsworth Physical The
 
 [CONFIRM: live policy text to be pasted]
 
-Related pages: [Contact](/contact/) | [Privacy policy](/privacy-policy/)
+Related pages: [Disclaimer](/disclaimer/) | [Privacy policy](/privacy-policy/) | [Contact](/contact/)
 
 ## P-052 Page not found (/404, served for any missing URL)
 
@@ -3476,4 +3445,26 @@ Meta title: Page Not Found | Chatsworth Physical Therapy
 The page you asked for is not on this site. It may have moved when the site was rebuilt.
 
 Buttons: Call (818) 749-3205 | All services | Conditions | Contact
+
+## P-053 Cookie policy (/cookie-policy/)
+
+Meta title: Cookie Policy | Chatsworth Physical Therapy
+Meta description: Read how the Chatsworth Physical Therapy website uses cookies and similar tools, and how to manage your choices.
+
+# Cookie policy
+
+[CONFIRM: live policy text to be pasted]
+
+Related pages: [Privacy policy](/privacy-policy/) | [Contact](/contact/)
+
+## P-054 Disclaimer (/disclaimer/)
+
+Meta title: Disclaimer | Chatsworth Physical Therapy
+Meta description: Read the disclaimer that applies to the information on the Chatsworth Physical Therapy website.
+
+# Disclaimer
+
+[CONFIRM: live policy text to be pasted]
+
+Related pages: [Terms of service](/terms-of-service/) | [Contact](/contact/)
 

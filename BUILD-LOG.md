@@ -554,3 +554,58 @@ Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating b
   or Cyrillic. GA4: Russian browser language 13 of 1,851 sessions (0.7%). Verdict given to Vlad: not worth a page as
   an SEO play; cheaper visibility moves instead.
 - Counts at f4ae41f: 53 pages; gates 0 failing; renders 106 clean (outside scripts aside); accessibility 0 failures.
+
+## 23 Oct 2026, afternoon: city pages, photos, Termageddon settled, tracking waits for the banner's yes
+
+- City pages (commit 5b58ce3; Vlad: nobody knows which reviewers live in Northridge or Porter Ranch): the reviewer
+  lines are out. Northridge keeps its other local proof (CSUN students and athletes, the CSUN discount, Northridge
+  Hospital joint replacement patients, the routes); Porter Ranch loses its Porter Ranch patients section, which held
+  only the reviewer line. Both stay hidden (CITY_PAGES_LIVE false). The site renders 0 markers, so PREVIEW can go
+  false at launch.
+- Test booking: GPT confirmed it reached chatsworthpt@gmail.com on 23 Oct 2026 at 11:06:49am Pacific. GPT saved its
+  notes to C:/Users/Vlad/Documents/Codex/2026-10-22/files-pasted-by-the-user-you/outputs/launch-inputs.txt, not to
+  the launch-inputs.txt in Vlad's Projects\Chatsworth PT folder.
+- Photos (commit ec3f7ed; Vlad's option 2: real clinic photos where they fit, the rest out). All 26 grey PHOTO
+  placeholders are gone.
+  - Heroes with no fitting photo show text only: balance, pediatric, neurological, ultrasound, electrical
+    stimulation, vertigo, Northridge, Porter Ranch.
+  - Body photos: Northridge, the map image; cash-pay post, the desk photo; referral and first visit posts, the
+    anatomy chart photo; sciatica post, the back exercise photo; knee replacement post, the post-op photo; red light
+    post, the red light photo; ACL post, the sports rehab photo. Five posts lose the spot (young gymnast, vertigo,
+    fall checklist, stroke, Medicare).
+  - Services hub: orthopedic gets the anatomy chart photo, pain management the hero photo, personal training the
+    desk photo (it had the anatomy photo). Balance, pediatric and neurological have no fitting photo, so they are
+    text only and moved to the last row, which keeps every row even at 3 and at 2 columns.
+  - Checked: renders 106 with 0 real problems (the only errors are the outside banner and policy scripts, which this
+    sandbox cannot reach); accessibility 0 failures; gates 0 failing; content check clean. Screens looked at: the
+    balance hero (390, 1440), the Northridge and e-stim heroes, the gymnast post and the services hub (768, 1440).
+- Termageddon and the banner (built-in browser on the preview, 23 Oct 2026, about 3:30pm). GPT reported at about
+  11am that Clarity could not be added. By mid-afternoon it was in all three places: the banner's service list has
+  Microsoft Clarity (Marketing; processor Microsoft Ireland Operations Limited; "website usage statistics, session
+  recording, and heatmaps"); the cookie policy lists it under Marketing cookies ("Last updated: Oct 23, 2026 5:31
+  PM"); the privacy policy's Analytics programs section names it (its date still reads Aug 22, 2025). How it arrived
+  is not known (GPT's work or Termageddon's own scan). Web3Forms is not named; the privacy policy says it collects
+  "any and all information that you enter on this Website" and lists the categories it shares. Nothing more to change
+  in Termageddon; GPT told to stop.
+  - Banner settings (UC_UI.getSettingsCore): opt-in everywhere (acceptAllImplicitlyOutsideEU false; CCPA, TCF and
+    Google Consent Mode off). Every service but the CMP starts switched off; the banner shows on a first visit
+    (Accept All, Deny, More Information).
+  - Events seen on Deny: UC_UI_CMP_EVENT {source FIRST_LAYER, type DENY_ALL}, then UC_UI_VIEW_CHANGED {FIRST_LAYER to
+    PRIVACY_BUTTON}; no custom window event is configured. The test choice was cleared afterwards
+    (UC_UI.clearStorage), so that browser is back to a first visit. Accept was not clicked.
+  - Still in the banner list from the old site: Google Fonts and Google Maps (the new site self-hosts its fonts and
+    shows the map as an image). A Termageddon rescan after cutover can drop them. Not urgent.
+- Tracking (commit fe42d0d): GA4 loads only when the banner's "Google Analytics" is on, and Clarity only when
+  "Microsoft Clarity" is on; still only on chatsworthpt.com and www. Switching a service off later reloads the page;
+  a blocked banner means nothing loads. Tested with a stand-in banner in headless Chromium (consent_test.mjs, session
+  scratchpad): 15 of 15 (blocked banner, first visit, Accept All, Deny, Clarity switched off later, returning visitor
+  with GA only, slow banner, preview and local hosts). On the preview: the new code is in the HTML and no GA4 or
+  Clarity script loads.
+- Section 2620.1 (the referral post's source): leginfo refuses automated reads from here. Justia's 2025 California
+  Code shows the section last amended by Stats. 2022, Ch. 509 (SB 1438), effective 1 Jan 2023, with the 45 calendar
+  days or 12 visits limit in (a)(4). The one 2025 to 2026 bill found that would have changed direct access, AB 2497,
+  was refused passage on 28 May 2026 (CalMatters Digital Democracy). The post's wording stands.
+- Counts at fe42d0d: 53 pages; gates 0 failing; markers 0; PHOTO placeholders 0; renders 106 clean apart from outside
+  scripts; accessibility 0 failures. Copy export regenerated.
+- Open with Vlad: Northridge live at launch while Porter Ranch stays hidden; the "Говорим по-русски" line; the launch
+  go (PREVIEW false, custom domain, DNS, Search Console).
