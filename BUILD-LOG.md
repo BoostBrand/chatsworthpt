@@ -638,3 +638,17 @@ Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating b
   use a Russian-language browser). Its use would be a page Dr. Ed can text to Russian-speaking patients; it needs his
   proofreading and double upkeep of prices and hours. Recommendation: skip for launch; build on Vlad's word, with Dr.
   Ed proofreading the Russian.
+- Analytics event (commit a526374): a sent booking request now fires generate_lead (Google's
+  recommended event, "submits a form or a request for information") instead of form_submit, which GA4's enhanced
+  measurement sends by itself on every submit click. Tested with a stubbed Web3Forms success after consent:
+  generate_lead with the service and page path lands in the dataLayer. call_click and book_click unchanged.
+- Tracking setup brief for GPT (Vlad asked, 23 Oct evening; his yes to three extras: key events, 14 months of data,
+  Search Console linked to GA4). GPT reads codes and changes only the approved settings; Claude adds every code to
+  the site (site.ts only). Asked of GPT: GA4 (reuse property 469861709, stream and enhanced measurement report, data
+  retention 14 months, generate_lead and call_click as key events, list the old key events); Search Console (list
+  the chatsworthpt.com properties and how each is verified, copy an HTML tag without clicking Verify, note any HTML
+  file, link to GA4); Bing (report if already there, else import from Search Console, which verifies by itself
+  (Bing blog, Sept 2019), else copy the meta tag); GTM (report any existing container and its tags, else create
+  account "Chatsworth Physical Therapy" with Web container "chatsworthpt.com", no tags); Clarity (confirm project
+  z1ujczxp26, URL, masking). Sitemaps are submitted after launch, not now. Plan for GTM: load it with the same
+  banner lock ("Google Tag Manager" service) and keep GA4 direct, so nothing counts twice.
