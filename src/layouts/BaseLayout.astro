@@ -6,7 +6,7 @@ import '@fontsource-variable/inter/index.css';
 import '../styles/global.css';
 import displayFont from '@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-opsz-normal.woff2?url';
 import bodyFont from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
-import { SITE_URL, BUSINESS } from '../data/site';
+import { SITE_URL, BUSINESS, BING_SITE_VERIFICATION } from '../data/site';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import StickyBar from '../components/StickyBar.astro';
@@ -66,6 +66,7 @@ const robots = noindex ? 'noindex, follow' : 'index, follow, max-image-preview:l
 <meta name="robots" content={robots}>
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#FFFFFF">
+{BING_SITE_VERIFICATION && <meta name="msvalidate.01" content={BING_SITE_VERIFICATION}>}
 <meta property="og:type" content={ogType}>
 <meta property="og:site_name" content={BUSINESS.name}>
 <meta property="og:title" content={ogTitle}>

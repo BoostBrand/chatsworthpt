@@ -8,8 +8,12 @@ import { WEB3FORMS_KEY, FORMS_ENABLED } from '../data/site';
 const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 type G = (...args: unknown[]) => void;
 const track = (name: string, params: Record<string, unknown> = {}) => {
-  const g = (window as unknown as { gtag?: G }).gtag;
-  if (typeof g === 'function') g('event', name, { page_path: location.pathname, ...params });
+  const w = window as unknown as { gtag?: G; dataLayer?: unknown[]; cptGtm?: boolean };
+  // GA4 directly (only after the visitor's yes to Google Analytics)
+  if (typeof w.gtag === 'function') w.gtag('event', name, { page_path: location.pathname, ...params });
+  // Tag Manager's data layer too, once Tag Manager is loaded (only after the visitor's yes to it), so a future
+  // tag there (an ads conversion, say) can fire on the same events
+  if (w.cptGtm && Array.isArray(w.dataLayer)) w.dataLayer.push({ event: name, page_path: location.pathname, ...params });
 };
 
 // Sticky Call and Book bar: shows once the hero buttons are gone, hides over the footer.

@@ -72,6 +72,15 @@ export const GA4_PROPERTY_ID = '469861709';
 export const GA4_MEASUREMENT_ID = 'G-ZQ3F4WQ8GN';
 export const CLARITY_ID = 'z1ujczxp26';
 export const WEB3FORMS_KEY = '91b415f9-dc08-4aa1-a4d3-f9bafdc31d33';
+// Google Tag Manager container (Vlad, 23 Oct 2026: set it up in case it is needed later), created by GPT under
+// sales@boostbrandmarketing.com. Paste the ID (GTM-...) here; empty loads nothing. It loads only after the visitor
+// allows "Google Tag Manager" in the cookie banner. GA4 is sent directly (Tracking.astro), so never add a GA4 tag
+// in GTM unless the direct tag comes out first, or every visit counts twice.
+export const GTM_ID = '';
+// Bing Webmaster Tools verification: the content of Bing's msvalidate.01 meta tag (site added by hand under
+// sales@boostbrandmarketing.com; no Search Console import). Empty: no tag. Bing's Verify works once the new site
+// is live on chatsworthpt.com.
+export const BING_SITE_VERIFICATION = '';
 
 const isSet = (v: string) => Boolean(v) && !v.startsWith('TODO');
 
@@ -84,6 +93,7 @@ export const FORMS_ENABLED = isSet(WEB3FORMS_KEY);
 
 // No tracking tag renders while either ID is a placeholder.
 export const TRACKING_ENABLED = isSet(GA4_MEASUREMENT_ID) && isSet(CLARITY_ID);
+export const GTM_ENABLED = isSet(GTM_ID);
 
 // Tracking loads only on these hosts, so visits to the pages.dev preview and local builds never reach the
 // clinic's Analytics or Clarity.

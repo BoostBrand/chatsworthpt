@@ -1,28 +1,31 @@
 ---
-// GA4 and Microsoft Clarity. Three locks, and all three must open before either script loads:
-// 1. Both IDs in site.ts are real (TRACKING_ENABLED). The IDs are protected values: they live only in site.ts.
+// GA4, Microsoft Clarity and Google Tag Manager. Three locks, and all three must open before a script loads:
+// 1. Its ID in site.ts is real (GA4 and Clarity together: TRACKING_ENABLED; Tag Manager: GTM_ENABLED). The IDs are
+//    protected values: they live only in site.ts.
 // 2. The page is on the real domain (TRACKING_HOSTS). The pages.dev preview and local builds load nothing,
-//    so test visits never reach the clinic's Analytics or Clarity.
-// 3. The visitor said yes in the cookie banner. GA4 waits for the banner's "Google Analytics" service and
-//    Clarity for its "Microsoft Clarity" service (names as the Termageddon/Usercentrics banner showed them on
-//    the preview, 23 Oct 2026; both start switched off until the visitor accepts). If the banner script is
-//    blocked or a service name changes, nothing loads. If a visitor later switches a service off, the page
-//    reloads so the script is gone. With the banner switched off in site.ts this third lock is skipped.
+//    so test visits never reach the clinic's Analytics, Clarity or Tag Manager.
+// 3. The visitor said yes in the cookie banner. GA4 waits for the banner's "Google Analytics" service, Clarity for
+//    "Microsoft Clarity" and Tag Manager for "Google Tag Manager" (names as the Termageddon/Usercentrics banner
+//    showed them on the preview, 23 Oct 2026; all start switched off until the visitor accepts). If the banner
+//    script is blocked or a service name changes, nothing loads. If a visitor later switches a service off, the
+//    page reloads so the script is gone. With the banner switched off in site.ts this third lock is skipped.
+// GA4 is sent directly here, never through Tag Manager, so nothing counts twice.
 // The banner's own script blocker (uc-block) stays in the head as a second guard.
-import { TRACKING_ENABLED, TRACKING_HOSTS, GA4_MEASUREMENT_ID, CLARITY_ID, COOKIE_BANNER_ENABLED } from '../data/site';
-const ga = GA4_MEASUREMENT_ID;
-const cl = CLARITY_ID;
+import { TRACKING_ENABLED, GTM_ENABLED, TRACKING_HOSTS, GA4_MEASUREMENT_ID, CLARITY_ID, GTM_ID, COOKIE_BANNER_ENABLED } from '../data/site';
+const ga = TRACKING_ENABLED ? GA4_MEASUREMENT_ID : '';
+const cl = TRACKING_ENABLED ? CLARITY_ID : '';
+const gtm = GTM_ENABLED ? GTM_ID : '';
 const hosts = TRACKING_HOSTS;
 const askFirst = COOKIE_BANNER_ENABLED;
-const names = { ga: 'Google Analytics', cl: 'Microsoft Clarity' };
+const names = { ga: 'Google Analytics', cl: 'Microsoft Clarity', gtm: 'Google Tag Manager' };
 ---
-{TRACKING_ENABLED && (
-  <script is:inline define:vars={{ ga, cl, hosts, askFirst, names }}>
+{(TRACKING_ENABLED || GTM_ENABLED) && (
+  <script is:inline define:vars={{ ga, cl, gtm, hosts, askFirst, names }}>
     (function () {
       if (hosts.indexOf(location.hostname) === -1) return;
-      var loaded = { ga: false, cl: false };
+      var loaded = { ga: false, cl: false, gtm: false };
       function loadGa() {
-        if (loaded.ga) return;
+        if (loaded.ga || !ga) return;
         loaded.ga = true;
         var tag = document.createElement('script');
         tag.async = true;
@@ -34,7 +37,7 @@ const names = { ga: 'Google Analytics', cl: 'Microsoft Clarity' };
         window.gtag('config', ga);
       }
       function loadCl() {
-        if (loaded.cl) return;
+        if (loaded.cl || !cl) return;
         loaded.cl = true;
         function go() {
           (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", cl);
@@ -42,14 +45,26 @@ const names = { ga: 'Google Analytics', cl: 'Microsoft Clarity' };
         if (document.readyState === 'complete') go();
         else window.addEventListener('load', go);
       }
+      function loadGtm() {
+        if (loaded.gtm || !gtm) return;
+        loaded.gtm = true;
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var tag = document.createElement('script');
+        tag.async = true;
+        tag.src = 'https://www.googletagmanager.com/gtm.js?id=' + gtm;
+        document.head.appendChild(tag);
+        window.cptGtm = true; // site events (generate_lead, call_click, book_click) also go to Tag Manager's data layer
+      }
       if (!askFirst) {
         loadGa();
         loadCl();
+        loadGtm();
         return;
       }
       // The visitor's current choice for each service: true, false, or null while the banner is not ready.
       function choices() {
-        var out = { ga: null, cl: null };
+        var out = { ga: null, cl: null, gtm: null };
         try {
           var ui = window.UC_UI;
           if (!ui || !ui.isInitialized || !ui.isInitialized()) return out;
@@ -58,18 +73,20 @@ const names = { ga: 'Google Analytics', cl: 'Microsoft Clarity' };
             var on = !!(list[i].consent && list[i].consent.status === true);
             if (list[i].name === names.ga) out.ga = on;
             if (list[i].name === names.cl) out.cl = on;
+            if (list[i].name === names.gtm) out.gtm = on;
           }
         } catch (e) {}
         return out;
       }
       function check() {
         var c = choices();
-        if ((loaded.ga && c.ga === false) || (loaded.cl && c.cl === false)) {
+        if ((loaded.ga && c.ga === false) || (loaded.cl && c.cl === false) || (loaded.gtm && c.gtm === false)) {
           location.reload();
           return;
         }
         if (c.ga === true) loadGa();
         if (c.cl === true) loadCl();
+        if (c.gtm === true) loadGtm();
       }
       function recheck() {
         check();
