@@ -125,4 +125,4 @@ export const TERMAGEDDON = {
 
 // Review build: [CONFIRM], [verify] and [SOURCE NEEDED] markers render highlighted and a slim note
 // says the page is a preview. The ship gate requires zero markers with PREVIEW false.
-export const PREVIEW = true;
+export const PREVIEW = false;
