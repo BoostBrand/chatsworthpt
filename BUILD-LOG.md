@@ -652,3 +652,24 @@ Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating b
   account "Chatsworth Physical Therapy" with Web container "chatsworthpt.com", no tags); Clarity (confirm project
   z1ujczxp26, URL, masking). Sitemaps are submitted after launch, not now. Plan for GTM: load it with the same
   banner lock ("Google Tag Manager" service) and keep GA4 direct, so nothing counts twice.
+- GPT's tracking report (23 Oct, about 5:25pm; also in Vlad's Projects\Chatsworth PT\launch-inputs.txt):
+  - GA4: account 338496227, property 469861709, stream 10036050468 (https://chatsworthpt.com), G-ZQ3F4WQ8GN.
+    Enhanced measurement off (left off: the tag's config sends the page view on load by default, Google's "Measure
+    pageviews" page, and the site sends its own lead and call events). Retention already 14 months. generate_lead
+    and call_click added as key events; the old purchase key event left alone.
+  - Search Console: one Domain property, sc-domain:chatsworthpt.com; sales@ has Full access, the verified owner is
+    vladislavtk@gmail.com. A Domain property verifies only through DNS (Google, "Verify your site ownership"), so
+    there is no HTML tag to carry over; the TXT record must stay in the domain's DNS at launch. The verification
+    screen pre-selected Cloudflare as the domain's DNS provider. The GA4 link needs a verified owner of the Search
+    Console property and Editor on GA4 (Google, "Connect Search Console to Google Analytics").
+  - Bing: nothing under sales@. The Search Console import asks Google for read access to every verified site of the
+    signing account; GPT's approval check stopped it. Manual meta tag instead.
+  - Tag Manager: no container under sales@; account "Chatsworth Physical Therapy" and Web container "chatsworthpt.com"
+    prepared, waiting on Vlad's yes to Google's terms.
+  - Clarity: z1ujczxp26, https://chatsworthpt.com, Balanced masking.
+- Tag Manager and Bing slots (commit 23b6841): GTM_ID and BING_SITE_VERIFICATION in site.ts, empty until GPT sends
+  them. Tag Manager loads only on the real domain and only after the visitor allows "Google Tag Manager" in the banner;
+  GA4 stays direct; the site's events also feed Tag Manager's data layer once it is loaded. The msvalidate.01 tag
+  renders when the Bing value is set. Tested with throwaway test IDs: 16 of 16; GA4 and Clarity checks 15 of 15 with
+  the IDs empty. Reply to GPT given to Vlad: link Search Console through the owner login (vladislavtk@gmail.com, given
+  Editor on the GA4 property if missing), Bing by meta tag, accept the Tag Manager terms for this one account.
