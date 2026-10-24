@@ -148,7 +148,9 @@ p{margin:0}
 .unsure a{font-weight:600;text-decoration:none;border-bottom:2px solid var(--blue);color:var(--navy)}
 .conditions{margin-top:2rem;color:var(--muted);font-size:.98rem;line-height:1.5;max-width:90ch}
 .conditions strong{color:var(--text);font-weight:600}
-@media (min-width:900px){.services{grid-template-columns:5fr 6fr;gap:4rem}.mosaic{position:sticky;top:96px}}
+/* The "Not sure" line sits under the list (column 2). In column 1 it fell under the sticky mosaic, which slid over it
+   and covered the phone link (found 23 Oct 2026 by a tap test at 1024 to 1920). */
+@media (min-width:900px){.services{grid-template-columns:5fr 6fr;gap:1.1rem 4rem}.mosaic{position:sticky;top:96px}.unsure{grid-column:2;margin-top:0}}
 
 /* About Dr. Ed, navy band */
 .about{background:var(--navy);color:#fff}

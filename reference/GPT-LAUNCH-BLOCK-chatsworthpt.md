@@ -64,11 +64,9 @@ Rules
 5. Search Console, property sc-domain:chatsworthpt.com: Sitemaps, submit https://chatsworthpt.com/sitemap-index.xml.
 6. Bing Webmaster Tools (sales@boostbrandmarketing.com): open the chatsworthpt.com site, click Verify (the meta tag is
    now live on the home page), then submit https://chatsworthpt.com/sitemap-index.xml.
-7. Termageddon (Vlad's yes comes with his go): the Terms of Service still gives the old address "19860 Nordhoff Place,
-   Unit 201". In the Termageddon account, change the business address to 19851 Nordhoff Place, Unit 105 (Suite C),
-   Chatsworth, CA, 91311 and republish. Then, if Termageddon offers a cookie rescan (unverified), rescan
-   https://chatsworthpt.com so Google Fonts and Google Maps drop off the cookie banner list; the new site uses neither.
-   Change nothing else in the policies.
+7. Termageddon: if Termageddon offers a cookie rescan (unverified), rescan https://chatsworthpt.com so Google Fonts and
+   Google Maps drop off the cookie banner list; the new site uses neither. Change nothing else in the policies. (The
+   Terms of Service address fix went to GPT on 23 Oct with Vlad's yes; check it was done.)
 
 Report back: each step's result, every record you replaced with its old value, the custom domain status, and
 anything you could not do. Undo, if Vlad asks: remove chatsworthpt.com from the Pages project's Custom domains, put
@@ -96,7 +94,7 @@ touched, so it answers again as soon as its records are back.
   the 404 page; noindex on every preview response; no GA4, Clarity or Tag Manager request on the preview.
 - Contact: one booking form with the honeypot, phone link tel:+18187493205, cookie banner shows.
 - Policies load from Termageddon on all four pages (they need up to 10 seconds). Only the Terms of Service has the old
-  address (step 7).
+  address (sent to GPT on 23 Oct, 10:45pm, with Vlad's yes).
 
 ## Decided in prep (23 Oct, Claude)
 - The 301 map's query-string row (/?s=, /?p=N, /?page_id=N, /?attachment_id=N to /): no redirect rule at launch. On

@@ -773,3 +773,23 @@ Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating b
   loaded by the site after consent with an empty container, GA4 is sent directly, so nothing counts twice; booking
   and call events get a real check on the live domain after launch. A WordPress backup is not needed for launch
   because nothing on SiteGround changes; take one before SiteGround is ever cancelled.
+
+## 23 Oct 2026, 10:45pm: link check after Dr. Ed said some links did not work
+
+- Vlad: Dr. Ed, checking the preview, said some links looked broken; Vlad gave his yes to send GPT the Terms of
+  Service address fix.
+- Internal links in the build: 0 broken, 0 broken in-page anchors, no absolute links to chatsworthpt.com (they would
+  have reached the old WordPress site from the preview). 312 phone links and 55 email links.
+- Tap test (Playwright on dist, session scratchpad linktest/hit.mjs): every visible link on all 53 pages at 390 and
+  1440, scrolled into view and hit-tested on each line of the link (5,670 links), plus the phone menu and the desktop
+  dropdowns. One real fault: on the homepage at 1024 to 1920 the line "Not sure which one you need? Call (818)
+  749-3205 ..." sat in the left column under the sticky photo mosaic, which slid over it, so the phone link could not
+  be clicked and its text printed over the photo caption. Fix (layout only, no copy): the line moves under the
+  services list in the right column from 900px up (src/styles/home-draft9.css). Re-tested at 1024, 1180, 1280, 1440
+  and 1920: clickable, no overlap. Phone layout unchanged.
+- Not faults: the phone sticky Call and Book bar is hidden at the top of a page and near the booking band by design
+  (tappable whenever shown, checked at 15 to 70 percent of the page); the phone link inside the homepage insurance
+  question works once the question is opened; on a first visit the cookie notice covers the lower half of a phone
+  screen until Accept or Deny, as on the old site.
+- Outside links (35: social profiles, Google review and map links, the cited sources): the built-in browser check
+  stopped when Vlad's computer disconnected. Sent to GPT with the Termageddon fix.
