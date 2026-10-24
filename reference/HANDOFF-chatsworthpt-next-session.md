@@ -5,7 +5,8 @@ Read this first, then `claude/DESIGN-RULINGS-chatsworthpt.md` (every design deci
 ## Status as of 23 Oct 2026, 8:10pm: launch session; the domain moves to the Boost Cloudflare account first
 - Clean clone at 4eb46da matches: 53 pages, gates 0 failing, sitemap 52, noindex 1, markers 0, PHOTO 0.
 - The chatsworthpt.com zone is in Vlad's personal Cloudflare account (Vlad, 23 Oct). His ruling: it moves to sales@boostbrandmarketing.com, where the Pages project is. A GPT block for the move went to Vlad (build log, 23 Oct 8pm, with the Cloudflare sources); GPT saves its files in Vlad's Projects\Chatsworth PT\cloudflare-move\ (old-zone-settings.txt, old-zone-records.txt, new-zone-records.txt, report.txt). Next session: read those through the device bridge, compare the two exports, then the launch plan.
-- Dr. Ed: no reply in the JenErg mailbox; the About paragraph (question 36) is still open. Preview links for him went to Vlad. Asked Vlad whether to launch before that answer (recommended yes; it is one edit after launch).
+- Dr. Ed: no reply in the JenErg mailbox; the About paragraph (question 36) is still open. Preview links for him went to Vlad. Vlad, 8:11pm: launch without waiting; change it after if Dr. Ed asks.
+- Launch-day GPT block and Claude's check list are ready: reference/GPT-LAUNCH-BLOCK-chatsworthpt.md (Project claude/GPT-LAUNCH-BLOCK-chatsworthpt.md). Before launch: read the old sitemap for T-009 once the move is done.
 - Tracking is complete on the site side; launch-day jobs only (Bing Verify, sitemaps, Accept and Deny check, GA4 Realtime).
 
 ## Status as of 23 Oct 2026, 4:55pm: photos done, Termageddon done, city pages and the Russian line in

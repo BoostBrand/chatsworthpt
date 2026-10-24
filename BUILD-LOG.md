@@ -722,3 +722,17 @@ Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating b
   WordPress site and the Search Console TXT record. Files go to Vlad's Projects\Chatsworth PT\cloudflare-move\.
   Nothing deleted, no Pages custom domain, no launch.
 - Waiting: GPT's move report; Vlad's answer on launching before Dr. Ed reads the About paragraph; Vlad's "go".
+
+## 23 Oct 2026, 8:15pm: launch before Dr. Ed's About answer; launch block ready
+
+- Vlad (8:11pm): launch before Dr. Ed reads the About paragraph ("we can always change what he asks for"). He sent
+  the zone-move block to GPT.
+- Prep while GPT works: reference/GPT-LAUNCH-BLOCK-chatsworthpt.md (Project copy claude/GPT-LAUNCH-BLOCK-chatsworthpt.md)
+  holds the launch-day GPT block (Pages custom domain, www Bulk Redirect with the A record to 192.0.2.1, Always Use
+  HTTPS, sitemaps to Search Console and Bing, Bing Verify), Claude's check list, and two prep decisions: no
+  query-string redirect rule at launch (the homepage canonical covers /?p=N and the others; none is in the Search
+  Console URL list), and T-009 retried after the move (the live sitemap sits behind the personal zone's security
+  check; the built-in browser did not pass it and it was left alone). Always Use HTTPS read 23 Oct 2026 at
+  developers.cloudflare.com/ssl/edge-certificates/additional-options/always-use-https/; the www guide at
+  developers.cloudflare.com/pages/how-to/www-redirect.
+- Waiting: GPT's move report in Vlad's Projects\Chatsworth PT\cloudflare-move\; then Vlad's "go".
