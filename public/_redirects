@@ -28,13 +28,16 @@
 /post-sitemap.xml /sitemap-index.xml 301
 /page-sitemap.xml /sitemap-index.xml 301
 
-# The three 2020 fitness-trainer posts: slugs confirmed from the sitemap export at cutover (roadmap T-009).
-# /[slug-of-2020-fitness-trainer-post-1]/ /blog/ 301
-# /[slug-of-2020-fitness-trainer-post-2]/ /blog/ 301
-# /[slug-of-2020-fitness-trainer-post-3]/ /blog/ 301
-# The February 2026 'Windows 10 activator' spam post is a 410 row: its slug joins the GONE list in
-# functions/[[path]].js and the include list in public/_routes.json at cutover.
-# /[slug-of-the-windows-10-activator-post]/  (410, see above)
+# The three 2020 fitness-trainer posts (roadmap T-009). Addresses read from the WordPress admin by GPT on
+# 24 Oct 2026 (cloudflare-move\old-wordpress-posts.txt in Vlad's Chatsworth PT folder).
+/how-much-training-is-too-much/ /blog/ 301
+/how-much-training-is-too-much /blog/ 301
+/tips-for-fitness-based-nutrition/ /blog/ 301
+/tips-for-fitness-based-nutrition /blog/ 301
+/5-reasons-why-you-should-not-over-train/ /blog/ 301
+/5-reasons-why-you-should-not-over-train /blog/ 301
+# The 'Windows 10 activator' spam post (/windows-10-activator-software/, dated 23 Jan 2024 in WordPress) is a 410:
+# it is in the GONE list in functions/[[path]].js and the include list in public/_routes.json.
 
 # WordPress archives and pagination (splat rules)
 /category/* /blog/ 301

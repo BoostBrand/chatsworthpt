@@ -14,7 +14,7 @@ const GONE = [
   /^\/xmlrpc\.php$/,
   /^\/wp-login\.php$/,
   /^\/wp-admin(?:\/|$)/,
-  // At cutover (roadmap T-009): the February 2026 'Windows 10 activator' spam post slug goes here and in _routes.json.
+  /^\/windows-10-activator-software\/?$/, // spam post, address read from the WordPress admin 24 Oct 2026 (T-009)
 ];
 // The one old upload URL with Search Console impressions keeps its 301 (also excluded in _routes.json).
 const MOVED = { '/wp-content/uploads/2025/03/neurological-rehabilitation-chatsworth-physical-therapy.png': '/neurological-rehabilitation/' };
