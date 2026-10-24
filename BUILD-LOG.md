@@ -840,3 +840,16 @@ Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating b
 - Left for Vlad: tell Dr. Ed it is live; SiteGround can be cancelled when he decides (backup taken 23 Oct, no
   @chatsworthpt.com mailboxes; WordPress is no longer reachable on the domain); optional Termageddon tidy-up of the
   Google Fonts and Google Maps entries; optional test booking on the live domain (sends to Dr. Ed's inbox).
+
+## 24 Oct 2026, 11:15am: GPT's follow-ups after launch
+
+- GA4 Realtime (about 10:58am): 1 active user in the last 30 minutes and one new-site page view (consistent with
+  Claude's Accept test; GPT cannot tell whose visit it was).
+- Search Console: Request Indexing accepted for /, /our-services/, /back-pain-therapy/, /sports-injury-recovery/,
+  /pre-post-surgical-rehabilitation/, /about-us/, /contact/ and /physical-therapy-northridge/ (Northridge was not yet
+  indexed; now queued). No quota block.
+- Termageddon (Vlad's yes): Google Fonts and Google Maps removed from the banner's service list, published; the
+  live cookie policy no longer lists them. The other five services unchanged.
+- Next, Vlad's call: cancel SiteGround in a week or two; at that point tidy the DNS records that point to it (the
+  five host A records at 35.215.84.147, the DKIM CNAME, MX and SPF), since nothing uses its mail. Check Search
+  Console indexing after a week.
