@@ -64,6 +64,11 @@ Rules
 5. Search Console, property sc-domain:chatsworthpt.com: Sitemaps, submit https://chatsworthpt.com/sitemap-index.xml.
 6. Bing Webmaster Tools (sales@boostbrandmarketing.com): open the chatsworthpt.com site, click Verify (the meta tag is
    now live on the home page), then submit https://chatsworthpt.com/sitemap-index.xml.
+7. Termageddon (Vlad's yes comes with his go): the Terms of Service still gives the old address "19860 Nordhoff Place,
+   Unit 201". In the Termageddon account, change the business address to 19851 Nordhoff Place, Unit 105 (Suite C),
+   Chatsworth, CA, 91311 and republish. Then, if Termageddon offers a cookie rescan (unverified), rescan
+   https://chatsworthpt.com so Google Fonts and Google Maps drop off the cookie banner list; the new site uses neither.
+   Change nothing else in the policies.
 
 Report back: each step's result, every record you replaced with its old value, the custom domain status, and
 anything you could not do. Undo, if Vlad asks: remove chatsworthpt.com from the Pages project's Custom domains, put
@@ -82,6 +87,16 @@ touched, so it answers again as soon as its records are back.
   is gone; the Bing msvalidate.01 tag is on the home page.
 - Tracking: first visit shows the banner and no GA4, Clarity or Tag Manager request before a choice. With Vlad's yes:
   Accept All, all three load; fresh visit, Deny, none load. GPT or Windsor then confirms the visit in GA4.
+
+## Preview check, 23 Oct 2026, 10:20pm (Claude, built-in browser, script reads)
+- All 52 pages, robots.txt and both sitemaps on https://chatsworthpt.pages.dev/ are byte-identical to the build of
+  main (35f8030; the last site change is 8a414a9), so the local renders and checks stand for the preview: 106 renders
+  with 0 overflow, 0 broken images, one h1 each (only outside scripts fail in the sandbox); accessibility 0 failures.
+- 14 old addresses land on the right page; 13 WordPress, theme and spam addresses answer 410; an unknown address gives
+  the 404 page; noindex on every preview response; no GA4, Clarity or Tag Manager request on the preview.
+- Contact: one booking form with the honeypot, phone link tel:+18187493205, cookie banner shows.
+- Policies load from Termageddon on all four pages (they need up to 10 seconds). Only the Terms of Service has the old
+  address (step 7).
 
 ## Decided in prep (23 Oct, Claude)
 - The 301 map's query-string row (/?s=, /?p=N, /?page_id=N, /?attachment_id=N to /): no redirect rule at launch. On

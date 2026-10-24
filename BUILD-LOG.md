@@ -757,3 +757,19 @@ Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating b
   block now. Launch block also gained: read the WordPress post list for T-009 (step 0b), Under Attack Mode off at
   launch (step 0c, Vlad's yes with his go), the current www record. Old zone in the personal account: kept; its
   status after the move was not rechecked.
+
+## 23 Oct 2026, 10:20pm: fresh check of the deployed preview (GPT's handoff asked for one)
+
+- GPT's handoff (Vlad pasted it, 10:08pm) recommended fresh QA of the deployed build before launch. Done by script in
+  the built-in browser: every page, robots.txt and both sitemaps on chatsworthpt.pages.dev are byte-identical to the
+  build of main; redirects (14 tried), 410s (13 tried) and the 404 behave as built; noindex on every preview response;
+  no tracking request on the preview; the contact form, honeypot and phone link are there; the banner shows.
+- Local re-runs on main: renders 106 with 0 overflow, 0 broken images, one h1 (outside scripts unreachable in the
+  sandbox); accessibility 53 pages at 2 widths, 0 failures; gates 0 failing.
+- Found: the Termageddon Terms of Service names the old address, 19860 Nordhoff Place, Unit 201 (the privacy policy,
+  cookie policy and disclaimer do not). It is Termageddon's text, not the repo's. Added as step 7 of the launch block
+  with the cookie rescan; needs Vlad's yes.
+- GPT's other points are covered: the October 22 preview-check files are history (this check replaces them); GTM is
+  loaded by the site after consent with an empty container, GA4 is sent directly, so nothing counts twice; booking
+  and call events get a real check on the live domain after launch. A WordPress backup is not needed for launch
+  because nothing on SiteGround changes; take one before SiteGround is ever cancelled.
