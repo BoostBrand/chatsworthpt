@@ -682,3 +682,43 @@ Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating b
   claude/BRIEF-chatsworthpt-launch.md). Cloudflare facts in it checked 23 Oct against Cloudflare's Pages docs (apex
   custom domain must be a zone on the Pages project's account; adding the CNAME by hand first gives a 522; CAA records
   can block the certificate; www to apex by Bulk Redirect plus a proxied A record to 192.0.2.1).
+
+## 23 Oct 2026, 8pm: launch session started; the domain is in Vlad's personal Cloudflare account
+
+- Clean clone at 4eb46da: npm ci, npm run build, npm run gates. 53 pages, 0 hard gates failing, sitemap 52, noindex 1
+  (the 404), markers 0, PHOTO placeholders 0, as expected.
+- Dr. Ed: no reply in the JenErg mailbox to the 21 Oct question email (sent from jenny@jenerg.com to
+  chatsworthpt@gmail.com); his other answers came through Vlad on 21 Oct. Question 36 (the About paragraph) is still
+  open. Vlad asked for the link to send him: https://chatsworthpt.pages.dev/ and /about-us/ (sent to Vlad with a
+  ready text).
+- Tracking confirmed in site.ts for Vlad: GA4 G-ZQ3F4WQ8GN, Clarity z1ujczxp26, GTM-MTLHQPDR (no tags), the Bing tag,
+  the Usercentrics banner; TRACKING_HOSTS limits all of it to chatsworthpt.com and www. Launch-day jobs left: Bing
+  Verify, sitemaps to Search Console and Bing, one Accept and one Deny check, GA4 Realtime.
+- Cloudflare (Vlad, 23 Oct 7:42pm): the chatsworthpt.com zone is in his personal Cloudflare account and must move to
+  the Boost account sales@boostbrandmarketing.com, where the Pages project is ("for anything we do"). Cloudflare's
+  Pages docs require an apex custom domain to be a zone on the Pages project's account, so the move comes before
+  launch, as its own change, with the WordPress site kept running.
+- How Cloudflare moves a zone between accounts (read 23 Oct 2026):
+  - Move a domain between Cloudflare accounts (developers.cloudflare.com/fundamentals/manage-domains/move-domain/):
+    remove DNSSEC and add-ons or subscriptions first; export the records and import them in the new account (or the
+    scan picks up proxied records and the site can show a 1000 error); add the domain to the new account; change the
+    nameservers at the registrar; Overview, Re-check now. A Cloudflare Registrar domain needs the inter-account
+    transfer request instead (developers.cloudflare.com/registrar/account-options/inter-account-transfer/).
+  - Domain statuses (developers.cloudflare.com/dns/zone-setups/reference/domain-status/): a Pending zone answers DNS
+    on its assigned nameservers but does not proxy; a free zone in Moved is deleted 7 days later; Deleted zones still
+    answer and can be re-added, purged after 7 more days.
+  - Import and export (developers.cloudflare.com/dns/manage-dns-records/how-to/import-and-export/): the export marks
+    proxied records cf-proxied:true, and on import that tag wins over the Proxy imported DNS records checkbox.
+  - Universal SSL (developers.cloudflare.com/ssl/edge-certificates/universal-ssl/enable-universal-ssl/): issued 15
+    minutes to 24 hours after activation; to avoid downtime, keep records unproxied until the certificate is active.
+  - DNSSEC (developers.cloudflare.com/dns/dnssec/): remove the DS record at the registrar and wait for its TTL,
+    commonly 24 to 48 hours, before changing nameservers, or validating resolvers return SERVFAIL.
+  - Nameservers (developers.cloudflare.com/dns/nameservers/nameserver-options/): a zone added in a second account is
+    more likely to get different nameserver names.
+- GPT block given to Vlad: write down the old zone (settings, export, registrar, WordPress host, undo nameservers),
+  stop on Cloudflare Registrar, DNSSEC, a paid plan, no registrar login or an existing Boost zone; otherwise onboard
+  on the Free plan in the Boost account, import the export, compare the two exports, copy the SSL/TLS mode, Always
+  Use HTTPS and redirect rules, change the nameservers, Re-check now, wait for Active and the certificate, check the
+  WordPress site and the Search Console TXT record. Files go to Vlad's Projects\Chatsworth PT\cloudflare-move\.
+  Nothing deleted, no Pages custom domain, no launch.
+- Waiting: GPT's move report; Vlad's answer on launching before Dr. Ed reads the About paragraph; Vlad's "go".
