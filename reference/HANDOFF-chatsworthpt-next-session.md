@@ -1,6 +1,11 @@
-# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 23 Oct 2026, 8:10pm)
+# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 23 Oct 2026, 10:05pm)
 
 Read this first, then `claude/DESIGN-RULINGS-chatsworthpt.md` (every design decision Vlad and Dr. Ed made on 20 Oct; the build and every redesign pass read it), then `claude/SEO-PLAN-chatsworthpt-2026-10-20.html` only if the job touches SEO or the inner pages. For the inner pages, the conditions layer, the city pages and the blog, the page-by-page spec is now `claude/PAGE-BLUEPRINT-chatsworthpt-v1.html` (blueprint v1, 21 Oct); it does not rewrite plan v3, it adds the page entries and lists the decisions it changes.
+
+## Status as of 23 Oct 2026, 10:05pm: the domain is in the Boost Cloudflare account; launch waits on DNS and Vlad's go
+- Zone move done (build log, 9:49pm entry): Active in account cfe2da24c9f3664bf54475f308ad2e7e, nameservers clara and earl, 14 records identical, SSL Full, Under Attack Mode on (Vlad kept it). GPT's files: Vlad's Projects\Chatsworth PT\cloudflare-move\.
+- Before launch: both public resolvers return clara and earl (cloudflare-dns.com still had ben and liv at 05:01 UTC 24 Oct); Vlad's go plus his yes to Under Attack Mode off and to one Accept click on the banner. Then PREVIEW false, build, gates, push, and the block in reference/GPT-LAUNCH-BLOCK-chatsworthpt.md (step 0 confirms the Pages project is in that same account).
+- SiteGround carries the domain's email (MX); not to be cancelled after launch until mailbox use is checked.
 
 ## Status as of 23 Oct 2026, 8:10pm: launch session; the domain moves to the Boost Cloudflare account first
 - Clean clone at 4eb46da matches: 53 pages, gates 0 failing, sitemap 52, noindex 1, markers 0, PHOTO 0.

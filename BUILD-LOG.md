@@ -736,3 +736,24 @@ Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating b
   developers.cloudflare.com/ssl/edge-certificates/additional-options/always-use-https/; the www guide at
   developers.cloudflare.com/pages/how-to/www-redirect.
 - Waiting: GPT's move report in Vlad's Projects\Chatsworth PT\cloudflare-move\; then Vlad's "go".
+
+## 23 Oct 2026, 9:49pm Pacific: the zone is in the Boost Cloudflare account
+
+- GPT's move (files in Vlad's Projects\Chatsworth PT\cloudflare-move\, report.txt 9:54pm): personal zone Free, SSL
+  Full, Always Use HTTPS off, DNSSEC off (no DS at GoDaddy), no page or redirect rules, Under Attack Mode on,
+  registrar GoDaddy. New zone in account cfe2da24c9f3664bf54475f308ad2e7e (Sales@boostbrandmarketing.com's
+  Account), Free, records by file import (no scan), SSL Full set by hand, Always Use HTTPS off. Nameservers at
+  GoDaddy: clara and earl (were ben and liv). Zone Active about 04:49 UTC 24 Oct; Universal certificate active.
+- With Vlad's approvals during the run: SiteGround had no valid certificate for the domain, so GPT installed a free
+  Let's Encrypt certificate there (after a temporary rule in the old zone let the validation through; that rule is
+  now disabled, not deleted); apex and www went DNS only for the switch, then back to proxied; Under Attack Mode kept
+  ON in the new zone.
+- Records: 14 (7 A at 35.215.84.147, all proxied: apex, www, autoconfig, autodiscover, ftp, mail, ssh; a proxied
+  DKIM CNAME; 3 MX to mailspamprotection.com, SiteGround's mail filter; TXT for Google verification, SPF, DMARC). No
+  CAA. Claude's own diff of old-zone-records.txt and new-zone-records.txt (SOA and NS left out): identical.
+- Public DNS at 05:01 UTC (built-in browser): dns.google gives clara and earl; cloudflare-dns.com still gives ben and
+  liv (TTL 86400). Launch waits until both agree.
+- Not in GPT's report: a check that the Pages project chatsworthpt is in account cfe2da24. It is step 0 of the launch
+  block now. Launch block also gained: read the WordPress post list for T-009 (step 0b), Under Attack Mode off at
+  launch (step 0c, Vlad's yes with his go), the current www record. Old zone in the personal account: kept; its
+  status after the move was not rechecked.
