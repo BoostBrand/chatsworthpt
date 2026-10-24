@@ -8,6 +8,7 @@ Read this first, then `claude/DESIGN-RULINGS-chatsworthpt.md` (every design deci
 - SiteGround carries the domain's email (MX); not to be cancelled after launch until mailbox use is checked.
 - Preview re-checked 23 Oct 10:20pm: byte-identical to main, redirects, 410s, 404, noindex, policies all fine. The Termageddon Terms of Service shows the old 19860 Nordhoff Unit 201 address; GPT has the fix (Vlad's yes, 23 Oct).
 - Link check (Dr. Ed said some links looked broken): one real fault fixed, the homepage desktop "Not sure" phone line hidden under the photo mosaic. GPT also checks the 35 outside links and SiteGround's mailboxes, and takes a free backup if the plan includes one; its notes go to Vlad's Projects\Chatsworth PT\launch-prep-report.txt.
+- Done 11:40pm (GPT): Termageddon address fixed; 34 of 35 outside links fine (the NINDS PDF blocked GPT but loads for Claude); no @chatsworthpt.com mailboxes at SiteGround; free backup "Chatsworth pre-launch 2026-10-23" made.
 
 ## Status as of 23 Oct 2026, 8:10pm: launch session; the domain moves to the Boost Cloudflare account first
 - Clean clone at 4eb46da matches: 53 pages, gates 0 failing, sitemap 52, noindex 1, markers 0, PHOTO 0.

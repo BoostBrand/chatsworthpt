@@ -793,3 +793,15 @@ Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating b
   screen until Accept or Deny, as on the old site.
 - Outside links (35: social profiles, Google review and map links, the cited sources): the built-in browser check
   stopped when Vlad's computer disconnected. Sent to GPT with the Termageddon fix.
+
+## 23 Oct 2026, 11:40pm: GPT's four prep jobs done
+
+- Termageddon: business address now 19851 Nordhoff Place, Unit 105 (Suite C), Chatsworth, CA, 91311; GPT saw it in
+  the Terms of Service loaded on the preview. Nothing else changed.
+- Outside links: 34 of 35 opened the right page (all four social profiles, the Google Maps listing and the review
+  form among them). The NINDS post-stroke rehabilitation PDF gave GPT a 403; Claude's fetch of the same URL on 23 Oct
+  returned the fact sheet ("Post-Stroke Rehabilitation", NIH Publication No. 20-NS-4846), so the link stays.
+- SiteGround email: no @chatsworthpt.com mailboxes or forwarders; only the default catch-all that refuses mail. So
+  nothing depends on SiteGround's mail; SiteGround can be cancelled after launch once Vlad decides.
+- SiteGround backup: one free manual backup, "Chatsworth pre-launch 2026-10-23", 23 Oct 10:44pm.
+- GPT's notes: Vlad's Projects\Chatsworth PT\launch-prep-report.txt. Next: DNS settles, then Vlad's go.
