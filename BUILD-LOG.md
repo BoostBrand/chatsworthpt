@@ -673,3 +673,12 @@ Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating b
   renders when the Bing value is set. Tested with throwaway test IDs: 16 of 16; GA4 and Clarity checks 15 of 15 with
   the IDs empty. Reply to GPT given to Vlad: link Search Console through the owner login (vladislavtk@gmail.com, given
   Editor on the GA4 property if missing), Bing by meta tag, accept the Tag Manager terms for this one account.
+- GPT's last report (23 Oct, about 6:40pm): Search Console linked in GA4 (no permission changes needed); Bing site
+  added by hand under sales@, not yet verified; Tag Manager container GTM-MTLHQPDR created with no tags (Google made
+  an initial empty version; nothing published). Clarity: sales@ is the sole admin.
+- Codes in (commit 8a414a9): GTM_ID GTM-MTLHQPDR and BING_SITE_VERIFICATION in site.ts. Tested with the real IDs:
+  16 of 16. On the preview: the Bing tag is in every page and nothing loads on pages.dev.
+- Launch brief for a new session: reference/BRIEF-chatsworthpt-launch.md (Project copy
+  claude/BRIEF-chatsworthpt-launch.md). Cloudflare facts in it checked 23 Oct against Cloudflare's Pages docs (apex
+  custom domain must be a zone on the Pages project's account; adding the CNAME by hand first gives a 522; CAA records
+  can block the certificate; www to apex by Bulk Redirect plus a proxied A record to 192.0.2.1).
