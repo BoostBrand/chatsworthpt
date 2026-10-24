@@ -805,3 +805,38 @@ Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating b
   nothing depends on SiteGround's mail; SiteGround can be cancelled after launch once Vlad decides.
 - SiteGround backup: one free manual backup, "Chatsworth pre-launch 2026-10-23", 23 Oct 10:44pm.
 - GPT's notes: Vlad's Projects\Chatsworth PT\launch-prep-report.txt. Next: DNS settles, then Vlad's go.
+
+## 24 Oct 2026: LAUNCHED. chatsworthpt.com serves the new site
+
+- DNS settled (9:10am, built-in browser): dns.google and cloudflare-dns.com both return clara and earl; apex and www
+  on the new zone; Google verification TXT and MX present.
+- Vlad, 9:19am: "yes go ahead" to "go, yes, yes" (launch; Under Attack Mode off; one Accept click on the banner).
+- Commit 65c837d: PREVIEW false. Gates 0 failing, markers 0, noindex 1 (the 404), sitemap 52, preview note on 0
+  pages. Deployed to the Pages project in 31 seconds (GPT read the deployment: success, 9:20am).
+- T-009 (commit 50202c9): GPT read the WordPress admin (old-wordpress-posts.txt: 5 posts, 32 pages). The three 2020
+  posts (/how-much-training-is-too-much/, /tips-for-fitness-based-nutrition/, /5-reasons-why-you-should-not-over-train/)
+  301 to /blog/; /windows-10-activator-software/ (dated 23 Jan 2024 in WordPress, not February 2026 as the notes had
+  it) joins the 410 list; the Vavada post was already 410. Every one of the 32 WordPress pages has a page or a rule on
+  the new site. GPT held the launch on the date difference; Vlad said proceed.
+- GPT's launch (cloudflare-move\launch-report.txt, final status 10:31am): Pages project confirmed in account
+  cfe2da24c9f3664bf54475f308ad2e7e; Under Attack Mode off; custom domain chatsworthpt.com Active (apex now CNAME to
+  chatsworthpt.pages.dev, proxied; was A 35.215.84.147); www now A 192.0.2.1 proxied (was A 35.215.84.147) with a
+  Bulk Redirect 301 to https://chatsworthpt.com keeping path and query; Always Use HTTPS on; SSL mode Full; the other
+  12 records unchanged (final-dns-records.txt). Search Console: sitemap-index.xml submitted, status Success. Bing:
+  verified by the meta tag, sitemap submitted (Processing). Termageddon: rescan run on the live sitemap; Google Fonts
+  and Google Maps are still in the banner's service list (the scan did not remove them; nothing removed by hand).
+- Claude's live checks (built-in browser, 24 Oct about 10:40am):
+  - 52 pages 200, canonical on their own https://chatsworthpt.com URL, no noindex meta and no X-Robots-Tag; robots.txt
+    and both sitemaps byte-identical to the build. The HTML differs from the build only by Cloudflare's Email Address
+    Obfuscation (on in this zone, as in the old one): the email becomes a /cdn-cgi/l/email-protection link plus
+    Cloudflare's email-decode script, which turns it back into mailto:chatsworthpt@gmail.com in the browser (checked;
+    JSON-LD untouched). Confirmed on five pages by masking the email on both sides: otherwise identical.
+  - 10 old addresses 301 to the right page (the three 2020 posts among them); 9 WordPress, theme and spam addresses
+    410 (the activator and Vavada posts among them); an unknown address 404; http://www.chatsworthpt.com/about-us/?check=1
+    lands on https://chatsworthpt.com/about-us/?check=1; Bing tag present; no preview note.
+  - Consent: first visit shows the banner and loads no GA4, Clarity or Tag Manager. Accept All (Vlad's yes): GA4
+    G-ZQ3F4WQ8GN loads and sends page_view, Clarity z1ujczxp26 loads and collects, GTM-MTLHQPDR loads. Fresh visit
+    (storage cleared), Deny: none load.
+- Left for Vlad: tell Dr. Ed it is live; SiteGround can be cancelled when he decides (backup taken 23 Oct, no
+  @chatsworthpt.com mailboxes; WordPress is no longer reachable on the domain); optional Termageddon tidy-up of the
+  Google Fonts and Google Maps entries; optional test booking on the live domain (sends to Dr. Ed's inbox).

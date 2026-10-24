@@ -1,6 +1,11 @@
-# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 23 Oct 2026, 10:05pm)
+# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 24 Oct 2026, 10:45am)
 
 Read this first, then `claude/DESIGN-RULINGS-chatsworthpt.md` (every design decision Vlad and Dr. Ed made on 20 Oct; the build and every redesign pass read it), then `claude/SEO-PLAN-chatsworthpt-2026-10-20.html` only if the job touches SEO or the inner pages. For the inner pages, the conditions layer, the city pages and the blog, the page-by-page spec is now `claude/PAGE-BLUEPRINT-chatsworthpt-v1.html` (blueprint v1, 21 Oct); it does not rewrite plan v3, it adds the page entries and lists the decisions it changes.
+
+## Status as of 24 Oct 2026, 10:45am: LIVE. chatsworthpt.com serves the new site
+- Launched 24 Oct about 10:30am (build log, 24 Oct entry). Main at 50202c9 (PREVIEW false since 65c837d). Every live check passed: pages, canonicals, no noindex, old-address 301s and 410s, 404, www and http to https apex, Bing tag, consent (nothing before a choice; Accept loads GA4, Clarity and Tag Manager; Deny loads none). Search Console and Bing have the sitemap.
+- Cloudflare: zone in Boost's account; apex CNAME to chatsworthpt.pages.dev; www A 192.0.2.1 with a Bulk Redirect; Under Attack Mode off; Always Use HTTPS on; Email Address Obfuscation on (works; the only HTML difference from the build). Undo values in Vlad's Projects\Chatsworth PT\cloudflare-move\launch-report.txt.
+- Open, Vlad's call: tell Dr. Ed; cancel SiteGround when ready (backup 23 Oct; no mailboxes); Termageddon still lists Google Fonts and Google Maps; a live test booking only with his yes. Dr. Ed's About paragraph read still pending (edit after launch if he asks).
 
 ## Status as of 23 Oct 2026, 10:05pm: the domain is in the Boost Cloudflare account; launch waits on DNS and Vlad's go
 - Zone move done (build log, 9:49pm entry): Active in account cfe2da24c9f3664bf54475f308ad2e7e, nameservers clara and earl, 14 records identical, SSL Full, Under Attack Mode on (Vlad kept it). GPT's files: Vlad's Projects\Chatsworth PT\cloudflare-move\.
