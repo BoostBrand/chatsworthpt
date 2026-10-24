@@ -76,11 +76,11 @@ export const WEB3FORMS_KEY = '91b415f9-dc08-4aa1-a4d3-f9bafdc31d33';
 // sales@boostbrandmarketing.com. Paste the ID (GTM-...) here; empty loads nothing. It loads only after the visitor
 // allows "Google Tag Manager" in the cookie banner. GA4 is sent directly (Tracking.astro), so never add a GA4 tag
 // in GTM unless the direct tag comes out first, or every visit counts twice.
-export const GTM_ID = '';
+export const GTM_ID = 'GTM-MTLHQPDR';
 // Bing Webmaster Tools verification: the content of Bing's msvalidate.01 meta tag (site added by hand under
 // sales@boostbrandmarketing.com; no Search Console import). Empty: no tag. Bing's Verify works once the new site
 // is live on chatsworthpt.com.
-export const BING_SITE_VERIFICATION = '';
+export const BING_SITE_VERIFICATION = '854018C13E47A8134B68B1EB7F13A7DC';
 
 const isSet = (v: string) => Boolean(v) && !v.startsWith('TODO');
 
