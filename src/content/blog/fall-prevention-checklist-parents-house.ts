@@ -3,13 +3,13 @@ import type { PostContent } from '../../lib/types';
 const post: PostContent = {
   id: 'P-042',
   path: '/blog/fall-prevention-checklist-parents-house/',
-  title: "Fall-Prevention Checklist for Your Parent's House | Dr. Ed",
-  description: "Rugs, lighting, shoes, grab bars and the three balance tests Dr. Ed Shut, DPT uses in the clinic: run this fall-prevention checklist at home.",
+  title: "Fall-Prevention Checklist for a Parent's House | Dr. Edward",
+  description: "Rugs, lighting, shoes, grab bars and the three balance tests Dr. Edward Shut, DPT uses in the clinic: run this fall-prevention checklist at home.",
   h1: "A fall-prevention checklist for your parent's house",
   datePublished: '2026-10-21',
   parent: { text: 'Balance and fall prevention', href: '/balance-and-fall-prevention/' },
-  summary: "Go through your parent's house with the CDC's home fall checklist, then see the balance tests Dr. Ed runs in the clinic.",
-  answer: "Go through your parent's house with the CDC's home fall checklist: keep objects off the stairs and floors, stop rugs from slipping, light the stairs, put a lamp by the bed, and add a non-slip mat and grab bars in the bathroom. Then book a balance evaluation with Dr. Ed Shut, DPT, in Chatsworth, because the checklist fixes the house and his clinic tests show how your parent stands, turns and gets up from a chair.",
+  summary: "Go through your parent's house with the CDC's home fall checklist, then see the balance tests Dr. Edward runs in the clinic.",
+  answer: "Go through your parent's house with the CDC's home fall checklist: keep objects off the stairs and floors, stop rugs from slipping, light the stairs, put a lamp by the bed, and add a non-slip mat and grab bars in the bathroom. Then book a balance evaluation with Dr. Edward Shut, DPT, in Chatsworth, because the checklist fixes the house and his clinic tests show how your parent stands, turns and gets up from a chair.",
   body: [
     { type: 'h2', text: 'Walk the house with the CDC checklist' },
     { type: 'p', text: "The Centers for Disease Control and Prevention (CDC) publishes a home fall checklist for older adults, [Check for Safety: A Home Fall Prevention Checklist for Older Adults](https://stacks.cdc.gov/view/cdc/59197/cdc_59197_DS1.pdf). It is part of the CDC's STEADI materials, and its stated purpose is to help you find and fix hazards in the home." },
@@ -46,17 +46,17 @@ const post: PostContent = {
     { type: 'p', text: "Three fixes need another person: an electrician for the stair lights, someone to move the furniture, and someone to put in the grab bars." },
     { type: 'callout', text: "The checklist covers the house. It cannot show you how steady your parent is on their feet." },
 
-    { type: 'h2', text: 'Three balance tests Dr. Ed runs in the clinic' },
-    { type: 'p', text: "Dr. Ed tests balance in the ways falls actually happen. Here are three of those tests." },
+    { type: 'h2', text: 'Three balance tests Dr. Edward runs in the clinic' },
+    { type: 'p', text: "Dr. Edward tests balance in the ways falls actually happen. Here are three of those tests." },
     { type: 'leads', items: [
-      { lead: "Standing with eyes closed.", text: "Your parent stands with their eyes closed, and Dr. Ed watches how steady they stay." },
-      { lead: "Turning.", text: "Your parent turns, and Dr. Ed watches how steady they stay through the turn." },
-      { lead: "Getting up from a chair without hands.", text: "Your parent stands up from a chair without using their hands, and Dr. Ed watches how they get up." },
+      { lead: "Standing with eyes closed.", text: "Your parent stands with their eyes closed, and Dr. Edward watches how steady they stay." },
+      { lead: "Turning.", text: "Your parent turns, and Dr. Edward watches how steady they stay through the turn." },
+      { lead: "Getting up from a chair without hands.", text: "Your parent stands up from a chair without using their hands, and Dr. Edward watches how they get up." },
     ] },
     { type: 'p', text: "The same evaluation also tests reaching, stepping over something and walking while talking." },
 
-    { type: 'h2', text: 'What else Dr. Ed checks and asks' },
-    { type: 'p', text: "Balance is one part of the evaluation. Dr. Ed also checks leg strength, ankle and hip mobility, the inner ear and the nervous system." },
+    { type: 'h2', text: 'What else Dr. Edward checks and asks' },
+    { type: 'p', text: "Balance is one part of the evaluation. Dr. Edward also checks leg strength, ankle and hip mobility, the inner ear and the nervous system." },
     { type: 'p', text: "He asks about the home, your parent's footwear, their medications and the falls they have had. Your walk-through helps here, so tell him what you found in the house. Then he tells you plainly where the risk is and what the plan is." },
 
     { type: 'h2', text: 'What the plan looks like' },
@@ -71,7 +71,7 @@ const post: PostContent = {
     { type: 'p', text: "Family members are welcome at every session. The number of visits depends on what the evaluation finds and is set after it, never quoted up front." },
 
     { type: 'h2', text: 'What to do next' },
-    { type: 'p', text: "Finish the walk-through, then book a balance evaluation for your parent. The page on [balance and fall prevention](/balance-and-fall-prevention/) shows what treatment looks like with Dr. Ed. Evening and Saturday appointments mean an adult child who works can bring a parent in. Patients write about their own visits on the [Reviews page](/reviews/)." },
+    { type: 'p', text: "Finish the walk-through, then book a balance evaluation for your parent. The page on [balance and fall prevention](/balance-and-fall-prevention/) shows what treatment looks like with Dr. Edward. Evening and Saturday appointments mean an adult child who works can bring a parent in. Patients write about their own visits on the [Reviews page](/reviews/)." },
   ],
   sources: [
     {
@@ -83,14 +83,14 @@ const post: PostContent = {
     },
   ],
   booking: {
-    h2: 'Book a balance evaluation with Dr. Ed',
+    h2: 'Book a balance evaluation with Dr. Edward',
     lead: "Bring your parent in for a balance evaluation, and come along if you can. He will confirm your time by phone or email, usually the same day.",
     service: 'Balance or fall prevention',
   },
   related: [
     { text: 'All posts', href: '/blog/' },
     { text: 'Balance and fall prevention', href: '/balance-and-fall-prevention/' },
-    { text: 'About Dr. Ed', href: '/about-us/' },
+    { text: 'About Dr. Edward', href: '/about-us/' },
   ],
   notes: [
     "Checklist items are the fourteen fix sentences on the decision sheet. Only the pronoun changed in five of them (you became your parent). Nothing was added.",

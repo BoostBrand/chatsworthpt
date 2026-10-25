@@ -115,22 +115,6 @@ const track = (name: string, params: Record<string, unknown> = {}) => {
   subs.forEach((d) => d.addEventListener('toggle', () => { if (d.open) subs.forEach((o) => { if (o !== d) o.open = false; }); }));
 })();
 
-// Services (homepage): hovering or focusing a row cross-fades the lead photo to that service's photo.
-(function () {
-  const lead = document.getElementById('mosaic-lead');
-  const swap = document.getElementById('mosaic-swap');
-  const hoverable = window.matchMedia && window.matchMedia('(hover: hover)').matches;
-  if (!lead || !swap || !hoverable) return;
-  const leadSrc = (lead.querySelector('img') as HTMLImageElement).getAttribute('src');
-  document.querySelectorAll<HTMLAnchorElement>('.service-list a[data-photo]').forEach((row) => {
-    const photo = row.getAttribute('data-photo');
-    const tile = document.querySelector('.mosaic a[href="' + row.getAttribute('href') + '"]');
-    const on = () => { if (photo !== leadSrc) { if (swap.getAttribute('src') !== photo) swap.setAttribute('src', photo as string); swap.classList.add('on'); } if (tile) tile.classList.add('hint'); };
-    const off = () => { swap.classList.remove('on'); if (tile) tile.classList.remove('hint'); };
-    row.addEventListener('mouseenter', on); row.addEventListener('mouseleave', off); row.addEventListener('focus', on); row.addEventListener('blur', off);
-  });
-})();
-
 // One-off reveals when a band comes into view: trust strokes, steps connector, play button breath, map rings.
 (function () {
   const reveals: [string, string][] = [['.trust', 'seen'], ['.steps', 'drawn'], ['.phone', 'seen'], ['.map', 'seen']];

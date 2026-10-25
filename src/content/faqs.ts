@@ -3,12 +3,12 @@ import type { PageContent } from '../lib/types';
 const page: PageContent = {
   id: 'P-019',
   path: '/faqs/',
-  title: 'FAQs | Chatsworth Physical Therapy, Dr. Ed Shut, DPT',
+  title: 'FAQs | Chatsworth Physical Therapy, Dr. Edward Shut, DPT',
   description:
-    'Get plain answers on referrals, Medicare, cost, how long visits run, what to wear, Russian spoken and what Dr. Ed does not treat. Ask us anything.',
+    'Get plain answers on referrals, Medicare, cost, how long visits run, what to wear, Russian spoken and what Dr. Edward does not treat. Ask us anything.',
   hero: {
     h1: 'Questions patients ask Chatsworth Physical Therapy',
-    lede: 'Plain answers to what patients ask before they book. If yours is not here, call and ask Dr. Ed.',
+    lede: 'Plain answers to what patients ask before they book. If yours is not here, call and ask Dr. Edward.',
     book: 'Book my evaluation',
     callFirst: true,
   },
@@ -35,7 +35,7 @@ const page: PageContent = {
         },
         {
           q: 'Do you treat kids and teenagers?',
-          a: 'Yes. Dr. Ed sees school-age children and teenagers, and that includes gymnasts and dancers. A parent stays in the room for every visit, and the details on cost and coverage are on [Insurance and cost](/insurance-and-cost/).',
+          a: 'Yes. Dr. Edward sees school-age children and teenagers, and that includes gymnasts and dancers. A parent stays in the room for every visit, and the details on cost and coverage are on [Insurance and cost](/insurance-and-cost/).',
         },
         {
           q: 'Do you take personal injury cases?',
@@ -49,15 +49,15 @@ const page: PageContent = {
       items: [
         {
           q: 'How long is a visit?',
-          a: 'A visit runs about 60 minutes, depending on what you need. The first one is an evaluation: Dr. Ed examines how you move, finds what is causing the pain and explains it in plain terms. See [Your first visit](/first-visit/) for how it goes.',
+          a: 'A visit runs about 60 minutes, depending on what you need. The first one is an evaluation: Dr. Edward examines how you move, finds what is causing the pain and explains it in plain terms. See [Your first visit](/first-visit/) for how it goes.',
         },
         {
           q: 'How many visits will I need?',
-          a: 'The number depends on your condition and how you respond, so Dr. Ed does not quote one up front. He builds the plan after your first evaluation, then adjusts it at each visit as you progress.',
+          a: 'The number depends on your condition and how you respond, so Dr. Edward does not quote one up front. He builds the plan after your first evaluation, then adjusts it at each visit as you progress.',
         },
         {
-          q: 'Will I see Dr. Ed at every visit?',
-          a: 'Yes. You work with Dr. Ed himself at every visit, from your first evaluation until you are discharged. It is one-on-one the whole way, and you are never handed off.',
+          q: 'Will I see Dr. Edward at every visit?',
+          a: 'Yes. You work with Dr. Edward himself at every visit, from your first evaluation until you are discharged. It is one-on-one the whole way, and you are never handed off.',
         },
         {
           q: 'Are you open on weekends, and what time do you close?',
@@ -83,11 +83,11 @@ const page: PageContent = {
       items: [
         {
           q: 'What can you help me with?',
-          a: "Dr. Ed's nine services are back pain therapy, sports injury recovery, pre and post-op physical therapy, orthopedic rehabilitation, balance and fall prevention, pain management, pediatric physical therapy, neurological rehabilitation, and personal training and weight loss. Each has its own page under [All services](/our-services/).",
+          a: "Dr. Edward's nine services are back pain therapy, sports injury recovery, pre and post-op physical therapy, orthopedic rehabilitation, balance and fall prevention, pain management, pediatric physical therapy, neurological rehabilitation, and personal training and weight loss. Each has its own page under [All services](/our-services/).",
         },
         {
           q: 'Do you treat vertigo or help with stroke recovery?',
-          a: "Yes to both. Dr. Ed treats [vertigo and BPPV](/conditions/vertigo-bppv/), including BPPV maneuvers, and works with patients on [stroke recovery](/neurological-rehabilitation/): strength, walking and everyday movement. He also works with patients who have Parkinson's, MS, or a spinal cord or brain injury.",
+          a: "Yes to both. Dr. Edward treats [vertigo and BPPV](/conditions/vertigo-bppv/), including BPPV maneuvers, and works with patients on [stroke recovery](/neurological-rehabilitation/): strength, walking and everyday movement. He also works with patients who have Parkinson's, MS, or a spinal cord or brain injury.",
         },
         {
           q: 'Do you offer dry needling?',
@@ -95,7 +95,7 @@ const page: PageContent = {
         },
         {
           q: 'Do you offer shockwave therapy, pelvic floor therapy or hand therapy?',
-          a: 'Dr. Ed offers hand therapy. Shockwave therapy and pelvic floor therapy are not offered at this time.',
+          a: 'Dr. Edward offers hand therapy. Shockwave therapy and pelvic floor therapy are not offered at this time.',
         },
       ],
     },
@@ -117,25 +117,25 @@ const page: PageContent = {
         },
         {
           q: 'Do you have a Russian-speaking physical therapist?',
-          a: 'Yes. Dr. Ed speaks English and Russian, and he treats patients in either language.',
+          a: 'Yes. Dr. Edward speaks English and Russian, and he treats patients in either language.',
         },
       ],
     },
     {
       kind: 'faq',
-      h2: 'About Dr. Ed',
+      h2: 'About Dr. Edward',
       items: [
         {
           q: 'Is a physical therapist a doctor?',
-          a: 'Dr. Ed has a Doctor of Physical Therapy degree, which is why patients call him Dr. Ed. He is a physical therapist, not a physician.',
+          a: 'Dr. Edward has a Doctor of Physical Therapy degree, which is why patients call him Dr. Edward. He is a physical therapist, not a physician.',
         },
         {
           q: 'What does DPT mean?',
-          a: "DPT stands for Doctor of Physical Therapy. A DPT is a physical therapist who holds that degree. Dr. Ed earned his at Mount Saint Mary's, and he also has a BS in Exercise Science from CSUN.",
+          a: "DPT stands for Doctor of Physical Therapy. A DPT is a physical therapist who holds that degree. Dr. Edward earned his at Mount Saint Mary's, and he also has a BS in Exercise Science from CSUN.",
         },
         {
-          q: 'Is Dr. Ed licensed?',
-          a: 'Yes. Dr. Ed is a licensed physical therapist in California, license number 301809, with 15+ years of experience. Read more on [About Dr. Ed](/about-us/).',
+          q: 'Is Dr. Edward licensed?',
+          a: 'Yes. Dr. Edward is a licensed physical therapist in California, license number 301809, with 15+ years of experience. Read more on [About Dr. Edward](/about-us/).',
         },
       ],
     },
@@ -143,7 +143,7 @@ const page: PageContent = {
   ],
   booking: {
     h2: 'Book your evaluation',
-    lead: 'Tell Dr. Ed what hurts and ask for an evening or Saturday time if that fits. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward what hurts and ask for an evening or Saturday time if that fits. He will confirm your time by phone or email, usually the same day.',
     service: 'Not sure yet',
   },
   related: [

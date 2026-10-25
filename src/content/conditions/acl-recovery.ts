@@ -3,9 +3,9 @@ import type { PageContent } from '../../lib/types';
 const page: PageContent = {
   id: 'P-028',
   path: '/conditions/acl-recovery/',
-  title: 'ACL Recovery Physical Therapy in Chatsworth | Dr. Ed, DPT',
+  title: 'ACL Recovery Physical Therapy in Chatsworth | Dr. Edward',
   description:
-    'ACL rehab in Chatsworth with Dr. Ed Shut, DPT: prehab, the stages after reconstruction and the tests you pass before you play again. Book your evaluation.',
+    'ACL rehab in Chatsworth with Dr. Edward Shut, DPT: prehab, the stages after reconstruction and the tests you pass before you play again. Book now.',
   hero: {
     h1: 'ACL recovery physical therapy in Chatsworth, before and after surgery',
     lede: 'Rehab in stages, and the tests you pass before you play again.',
@@ -25,7 +25,7 @@ const page: PageContent = {
       items: [
         {
           lead: 'Your ACL is torn and surgery is coming.',
-          text: 'You can start with Dr. Ed before the operation.',
+          text: 'You can start with Dr. Edward before the operation.',
         },
         {
           lead: 'You are in the weeks after reconstruction.',
@@ -33,7 +33,7 @@ const page: PageContent = {
         },
         {
           lead: 'You are about nine months out and not sure you are ready.',
-          text: 'Dr. Ed tests the knee against your sport, not just whether it hurts.',
+          text: 'Dr. Edward tests the knee against your sport, not just whether it hurts.',
         },
         {
           lead: 'You are the parent of a teen athlete.',
@@ -41,17 +41,17 @@ const page: PageContent = {
         },
         {
           lead: 'You have a history of ACL injury and want the other knee protected.',
-          text: 'Dr. Ed builds a prevention program for the other side.',
+          text: 'Dr. Edward builds a prevention program for the other side.',
         },
       ],
     },
     {
       kind: 'prose',
-      h2: 'What Dr. Ed does about it',
+      h2: 'What Dr. Edward does about it',
       blocks: [
         {
           type: 'p',
-          text: "Dr. Ed works from your surgeon's protocol, not a generic plan. The rehab runs in stages, and you are tested before each one.",
+          text: "Dr. Edward works from your surgeon's protocol, not a generic plan. The rehab runs in stages, and you are tested before each one.",
         },
         {
           type: 'leads',
@@ -84,15 +84,15 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: 'The first visit is an evaluation. Dr. Ed looks at the knee and at everything above and below it, including how you land, cut and squat. He explains what he found and what the plan is, with a realistic line on when you can train and when you can play.',
+          text: 'The first visit is an evaluation. Dr. Edward looks at the knee and at everything above and below it, including how you land, cut and squat. He explains what he found and what the plan is, with a realistic line on when you can train and when you can play.',
         },
         {
           type: 'p',
-          text: 'You work one-on-one with Dr. Ed, start to finish. Treatment is hands-on, plus a short home program that changes as you progress. Evening and Saturday appointments are available.',
+          text: 'You work one-on-one with Dr. Edward, start to finish. Treatment is hands-on, plus a short home program that changes as you progress. Evening and Saturday appointments are available.',
         },
         {
           type: 'p',
-          text: 'ACL recovery takes months. How many visits you need depends on how your knee responds, so Dr. Ed sets the plan after the evaluation rather than guessing up front.',
+          text: 'ACL recovery takes months. How many visits you need depends on how your knee responds, so Dr. Edward sets the plan after the evaluation rather than guessing up front.',
         },
         {
           type: 'p',
@@ -134,18 +134,18 @@ const page: PageContent = {
         },
         {
           q: 'How long until I play?',
-          a: 'It is a nine-to-twelve-month road for an athlete, done in stages and tested before each one. Dr. Ed tells you plainly when you pass and what is still missing.',
+          a: 'It is a nine-to-twelve-month road for an athlete, done in stages and tested before each one. Dr. Edward tells you plainly when you pass and what is still missing.',
         },
         {
           q: 'Do you do prehab?',
-          a: 'Yes. Dr. Ed does prehab for people waiting on ACL surgery. Book before your surgery date if you can, so there is no gap afterward.',
+          a: 'Yes. Dr. Edward does prehab for people waiting on ACL surgery. Book before your surgery date if you can, so there is no gap afterward.',
         },
       ],
     },
   ],
   booking: {
     h2: 'Book your ACL evaluation',
-    lead: 'Tell Dr. Ed where you are in the process. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward where you are in the process. He will confirm your time by phone or email, usually the same day.',
     service: 'Sports injury',
   },
   related: [

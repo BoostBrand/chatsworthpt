@@ -3,9 +3,9 @@ import type { PostContent } from '../../lib/types';
 const post: PostContent = {
   id: 'P-044',
   path: '/blog/knee-replacement-recovery-first-six-weeks/',
-  title: 'Knee Replacement Recovery: The First Six Weeks | Dr. Ed, DPT',
+  title: 'Knee Replacement Recovery: The First Six Weeks | Dr. Edward',
   description:
-    "What the first six weeks after a knee replacement involve, from your surgeon's rules to the home work. Dr. Ed Shut, DPT in Chatsworth explains.",
+    "What the first six weeks after a knee replacement involve, from your surgeon's rules to the home work. Dr. Edward Shut, DPT in Chatsworth explains.",
   h1: 'Knee replacement recovery: what the first six weeks should look like',
   datePublished: '2026-10-21',
   parent: { text: 'Knee replacement recovery', href: '/conditions/knee-replacement-recovery/' },
@@ -17,11 +17,11 @@ const post: PostContent = {
     { type: 'h2', text: "Your surgeon sets the rules" },
     {
       type: 'p',
-      text: "Bring your surgeon's post-op protocol and your discharge paperwork to the first visit. Dr. Ed works from your protocol, not from a generic plan.",
+      text: "Bring your surgeon's post-op protocol and your discharge paperwork to the first visit. Dr. Edward works from your protocol, not from a generic plan.",
     },
     {
       type: 'p',
-      text: "Physical therapy starts when your surgeon says so. On Dr. Ed's [pre and post-op physical therapy page](/pre-post-surgical-rehabilitation/), that is within the first one to two weeks for most joint replacements. The timing points below come from the American Academy of Orthopaedic Surgeons (AAOS). They are general ranges, and where your surgeon says something different, your surgeon wins.",
+      text: "Physical therapy starts when your surgeon says so. On Dr. Edward's [pre and post-op physical therapy page](/pre-post-surgical-rehabilitation/), that is within the first one to two weeks for most joint replacements. The timing points below come from the American Academy of Orthopaedic Surgeons (AAOS). They are general ranges, and where your surgeon says something different, your surgeon wins.",
     },
 
     { type: 'h2', text: "The first days at home" },
@@ -66,10 +66,10 @@ const post: PostContent = {
       text: "The exercises also outlast the six weeks: AAOS says to keep doing the ones your physical therapist prescribes for at least 2 months after surgery ([Activities After Knee Replacement, AAOS](https://www.orthoinfo.org/recovery/activities-after-knee-replacement/)). It says walking is not a substitute for them, and the exercise guide adds that a full recovery will take several months.",
     },
 
-    { type: 'h2', text: "How Dr. Ed works through the stages" },
+    { type: 'h2', text: "How Dr. Edward works through the stages" },
     {
       type: 'p',
-      text: "Dr. Ed treats you himself, one-on-one, in the stages your surgery needs.",
+      text: "Dr. Edward treats you himself, one-on-one, in the stages your surgery needs.",
     },
     {
       type: 'leads',
@@ -89,7 +89,7 @@ const post: PostContent = {
       ],
     },
     { type: 'image', image: { src: '/img/post-op-physical-therapy-chatsworth.webp', width: 900, height: 900, alt: 'Knee taping during post-op physical therapy in Chatsworth' } },
-    { type: 'callout', text: "Dr. Ed's targets, not tied to a week: about 110 degrees of bend for everyday function, and a knee that straightens to 0 degrees, or as close as possible." },
+    { type: 'callout', text: "Dr. Edward's targets, not tied to a week: about 110 degrees of bend for everyday function, and a knee that straightens to 0 degrees, or as close as possible." },
     {
       type: 'p',
       text: "You leave every visit with a written home program, adjusted as the repair heals. A family member is welcome at every session and can learn the home exercises to help. What patients say about their own recoveries is on the [Reviews page](/reviews/).",
@@ -98,7 +98,7 @@ const post: PostContent = {
     { type: 'h2', text: "What to do next" },
     {
       type: 'p',
-      text: "If your surgery date is set, book the evaluation before it if you can, so there is no gap. If you are already home, book once your surgeon says physical therapy can start. Evening and Saturday appointments mean a working family member can drive you. The [knee replacement recovery page](/conditions/knee-replacement-recovery/) covers how Dr. Ed treats it.",
+      text: "If your surgery date is set, book the evaluation before it if you can, so there is no gap. If you are already home, book once your surgeon says physical therapy can start. Evening and Saturday appointments mean a working family member can drive you. The [knee replacement recovery page](/conditions/knee-replacement-recovery/) covers how Dr. Edward treats it.",
     },
   ],
   sources: [
@@ -126,16 +126,16 @@ const post: PostContent = {
   ],
   booking: {
     h2: 'Book your knee replacement evaluation',
-    lead: "Bring your surgeon's protocol and discharge paperwork to your first visit with Dr. Ed. He will confirm your time by phone or email, usually the same day.",
+    lead: "Bring your surgeon's protocol and discharge paperwork to your first visit with Dr. Edward. He will confirm your time by phone or email, usually the same day.",
     service: 'Before or after surgery',
   },
   related: [
     { text: 'All posts', href: '/blog/' },
     { text: 'Knee replacement recovery', href: '/conditions/knee-replacement-recovery/' },
-    { text: 'About Dr. Ed', href: '/about-us/' },
+    { text: 'About Dr. Edward', href: '/about-us/' },
   ],
   notes: [
-    'Dr. Ed has not yet stated his milestones for the early, middle and late stages. The marker [CONFIRM the targets he states] sits in the callout under the photo placeholder.',
+    'Dr. Edward has not yet stated his milestones for the early, middle and late stages. The marker [CONFIRM the targets he states] sits in the callout under the photo placeholder.',
     'The meta description is copied exactly from the entry. It says the first six weeks "decide your range of motion for years". No source fetched for this post says that, and the body does not repeat it. Suggest rewording before launch.',
     'No real patient outcome exists yet for this post. It points to the Reviews page and quotes no review.',
     'The week figures come from the AAOS Total Knee Replacement Exercise Guide (about 2 to 3 weeks for a single crutch or cane, 4 to 6 weeks for light ankle weights). The AAOS Activities After Knee Replacement page gives no week for the cane.',

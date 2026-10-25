@@ -3,9 +3,9 @@ import type { PageContent } from '../../lib/types';
 const page: PageContent = {
   id: 'P-031',
   path: '/conditions/ankle-sprain/',
-  title: 'Ankle Sprain Rehab in Chatsworth | Dr. Ed Shut, DPT',
+  title: 'Ankle Sprain Rehab in Chatsworth | Dr. Edward Shut, DPT',
   description:
-    "Keep rolling the same ankle? See how Dr. Ed Shut, DPT rebuilds balance and strength one-on-one in Chatsworth before you go back. Book now.",
+    "Keep rolling the same ankle? See how Dr. Edward Shut, DPT rebuilds balance and strength one-on-one in Chatsworth before you go back. Book now.",
   hero: {
     h1: 'Ankle sprain rehab in Chatsworth: stop the sprain that keeps coming back',
     lede: 'I keep rolling my ankle, and I do not trust it.',
@@ -43,11 +43,11 @@ const page: PageContent = {
     },
     {
       kind: 'prose',
-      h2: 'What Dr. Ed does about it',
+      h2: 'What Dr. Edward does about it',
       blocks: [
         {
           type: 'p',
-          text: 'The sprain that comes back is usually the one that was rested, felt fine and was never retested. Ankle sprain physical therapy with Dr. Ed rebuilds balance and strength and tests the ankle before you go back.',
+          text: 'The sprain that comes back is usually the one that was rested, felt fine and was never retested. Ankle sprain physical therapy with Dr. Edward rebuilds balance and strength and tests the ankle before you go back.',
         },
         {
           type: 'ul',
@@ -68,7 +68,7 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: '**Evaluation first.** Your first visit is an evaluation, one-on-one with Dr. Ed. He examines how you move, finds what is actually causing the pain, and explains it in plain terms.',
+          text: '**Evaluation first.** Your first visit is an evaluation, one-on-one with Dr. Edward. He examines how you move, finds what is actually causing the pain, and explains it in plain terms.',
         },
         {
           type: 'p',
@@ -76,7 +76,7 @@ const page: PageContent = {
         },
         {
           type: 'p',
-          text: '**How long it takes.** It depends on the ankle. A mild sprain is a matter of weeks. A chronically unstable ankle, also called chronic ankle instability, needs a strength program. Dr. Ed does not quote a number of visits up front. He sets the plan after your evaluation.',
+          text: '**How long it takes.** It depends on the ankle. A mild sprain is a matter of weeks. A chronically unstable ankle, also called chronic ankle instability, needs a strength program. Dr. Edward does not quote a number of visits up front. He sets the plan after your evaluation.',
         },
         {
           type: 'p',
@@ -84,7 +84,7 @@ const page: PageContent = {
         },
         {
           type: 'p',
-          text: "For a patient's view of ankle rehab with Dr. Ed, read [Maggie's review on the sports injury page](/sports-injury-recovery/).",
+          text: "For a patient's view of ankle rehab with Dr. Edward, read [Maggie's review on the sports injury page](/sports-injury-recovery/).",
         },
       ],
     },
@@ -118,18 +118,18 @@ const page: PageContent = {
         },
         {
           q: 'How long does a sprain take?',
-          a: 'A mild sprain takes weeks. A chronically unstable ankle, one that keeps giving way, takes a strength program. After your evaluation, Dr. Ed tells you what to expect for your ankle.',
+          a: 'A mild sprain takes weeks. A chronically unstable ankle, one that keeps giving way, takes a strength program. After your evaluation, Dr. Edward tells you what to expect for your ankle.',
         },
         {
           q: "Can you treat kids' ankles?",
-          a: 'Yes. Dr. Ed sees school-age children and teenagers, with a parent in the room for every visit. [Pediatric physical therapy](/pediatric-physical-therapy/) has more.',
+          a: 'Yes. Dr. Edward sees school-age children and teenagers, with a parent in the room for every visit. [Pediatric physical therapy](/pediatric-physical-therapy/) has more.',
         },
       ],
     },
   ],
   booking: {
     h2: 'Book your ankle evaluation',
-    lead: 'Tell Dr. Ed what happened to your ankle and when. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward what happened to your ankle and when. He will confirm your time by phone or email, usually the same day.',
     service: 'Sports injury',
   },
   related: [
@@ -150,7 +150,7 @@ const page: PageContent = {
     'No review section, per the build lead decision. The Maggie sentence in What to expect links to her review on the sports injury page and never quotes it.',
     'Entry asks for two sibling conditions and one blog post where it exists. It names only Plantar fasciitis and no ankle post exists in pages.json, so Related pages lists the parent service and Plantar fasciitis, as the decision file says.',
     'FAQ on the X-ray gives only the entry yes case, plus a line to bring the report (reworded from the approved back pain imaging answer). No otherwise sentence was added.',
-    'Short plain definitions of grading, proprioception and cutting are the only additions beyond the entry wording. Cut them if Dr. Ed prefers.',
+    'Short plain definitions of grading, proprioception and cutting are the only additions beyond the entry wording. Cut them if Dr. Edward prefers.',
   ],
 };
 

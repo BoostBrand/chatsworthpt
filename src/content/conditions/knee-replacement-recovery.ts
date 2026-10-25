@@ -3,9 +3,9 @@ import type { PageContent } from '../../lib/types';
 const page: PageContent = {
   id: 'P-029',
   path: '/conditions/knee-replacement-recovery/',
-  title: 'Knee Replacement Physical Therapy Chatsworth | Dr. Ed, DPT',
+  title: 'Knee Replacement Physical Therapy Chatsworth | Dr. Edward',
   description:
-    "After a knee replacement, see how Dr. Ed Shut, DPT works on bending, straightening and walking, one-on-one in Chatsworth. Book an evaluation.",
+    "After a knee replacement, see how Dr. Edward Shut, DPT works on bending, straightening and walking, one-on-one in Chatsworth. Book an evaluation.",
   hero: {
     h1: 'Knee replacement recovery: physical therapy in Chatsworth',
     lede: 'I had my knee replaced. Now I want to walk, take stairs and get in the car without thinking about it.',
@@ -37,13 +37,13 @@ const page: PageContent = {
         },
         {
           lead: 'The second knee is coming up.',
-          text: 'You want it to go better this time. Dr. Ed also sees patients before surgery.',
+          text: 'You want it to go better this time. Dr. Edward also sees patients before surgery.',
         },
       ],
     },
     {
       kind: 'prose',
-      h2: 'What Dr. Ed does about it',
+      h2: 'What Dr. Edward does about it',
       blocks: [
         {
           type: 'leads',
@@ -54,7 +54,7 @@ const page: PageContent = {
             },
             {
               lead: 'Bend and straighten.',
-              text: 'For everyday function, Dr. Ed works toward about 110 degrees of bend and a knee that straightens fully, to 0 degrees or as close to it as possible.',
+              text: 'For everyday function, Dr. Edward works toward about 110 degrees of bend and a knee that straightens fully, to 0 degrees or as close to it as possible.',
             },
             {
               lead: 'Gait retraining.',
@@ -62,7 +62,7 @@ const page: PageContent = {
             },
             {
               lead: 'Quad strength.',
-              text: 'Dr. Ed builds it with exercise, and with electrical stimulation (NMES) where it helps.',
+              text: 'Dr. Edward builds it with exercise, and with electrical stimulation (NMES) where it helps.',
             },
             {
               lead: 'Stairs and the car.',
@@ -70,7 +70,7 @@ const page: PageContent = {
             },
             {
               lead: 'Walking, gardening, golf.',
-              text: 'These are what the work builds toward. Tell Dr. Ed what you want the knee back for.',
+              text: 'These are what the work builds toward. Tell Dr. Edward what you want the knee back for.',
             },
           ],
         },
@@ -82,7 +82,7 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: "Bring your surgeon's post-op protocol and your discharge paperwork to the first visit. Dr. Ed works from your surgeon's instructions, not a generic plan. That visit is an evaluation: he examines how the knee moves and how you walk, then explains what he found in plain terms.",
+          text: "Bring your surgeon's post-op protocol and your discharge paperwork to the first visit. Dr. Edward works from your surgeon's instructions, not a generic plan. That visit is an evaluation: he examines how the knee moves and how you walk, then explains what he found in plain terms.",
         },
         {
           type: 'p',
@@ -90,7 +90,7 @@ const page: PageContent = {
         },
         {
           type: 'p',
-          text: 'How long recovery takes depends on your knee and how your body responds. Dr. Ed does not quote a number of visits up front. He sets the plan after the evaluation and tells you plainly what to expect.',
+          text: 'How long recovery takes depends on your knee and how your body responds. Dr. Edward does not quote a number of visits up front. He sets the plan after the evaluation and tells you plainly what to expect.',
         },
         {
           type: 'p',
@@ -136,14 +136,14 @@ const page: PageContent = {
         },
         {
           q: 'How long until I walk without a limp?',
-          a: 'It depends on your knee and how your body responds, so Dr. Ed will not guess before he has seen you. At the evaluation he gives you a realistic answer. Gait retraining is part of the plan from there.',
+          a: 'It depends on your knee and how your body responds, so Dr. Edward will not guess before he has seen you. At the evaluation he gives you a realistic answer. Gait retraining is part of the plan from there.',
         },
       ],
     },
   ],
   booking: {
     h2: 'Book your knee replacement evaluation',
-    lead: 'Tell Dr. Ed when you had surgery, or when it is booked. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward when you had surgery, or when it is booked. He will confirm your time by phone or email, usually the same day.',
     service: 'Before or after surgery',
   },
   related: [
@@ -160,11 +160,11 @@ const page: PageContent = {
   },
   notes: [
     'No review section: the entry assigns none (Susan is committed to the balance page).',
-    'The degree targets marker sits in the Bend and straighten item of What Dr. Ed does about it. No degree numbers anywhere on the page.',
+    'The degree targets marker sits in the Bend and straighten item of What Dr. Edward does about it. No degree numbers anywhere on the page.',
     'Related lists one sibling condition, Hip replacement recovery, as the decisions file says. The entry text says two siblings but names only one.',
     'The Medicare FAQ uses the site-wide word referral where the entry says prescription.',
     "Build lead: the body line 'The first six weeks decide your range of motion for years' was taken out (a medical claim no source on hand backs); the blueprint meta description still says it, flagged for Vlad.",
-    "Neither FACTS nor the entry gives a usual recovery time, so What to expect says it varies and is set after the evaluation. Add Dr. Ed's own plain words if he gives a usual range.",
+    "Neither FACTS nor the entry gives a usual recovery time, so What to expect says it varies and is set after the evaluation. Add Dr. Edward's own plain words if he gives a usual range.",
   ],
 };
 

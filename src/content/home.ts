@@ -11,11 +11,11 @@
 export default {
   id: 'P-001',
   path: '/',
-  title: 'Physical Therapy in Chatsworth, CA | Dr. Ed Shut, DPT',
-  description: 'Physical therapy in Chatsworth, CA with Dr. Ed Shut, DPT. One-on-one visits for back pain, sports injuries, post-op rehab, balance and vertigo. Book today.',
-  ogTitle: 'Physical Therapy in Chatsworth, CA | Dr. Ed Shut, DPT',
+  title: 'Physical Therapy in Chatsworth, CA | Dr. Edward Shut, DPT',
+  description: 'Physical therapy in Chatsworth with Dr. Edward Shut, DPT. One-on-one visits for back pain, sports injuries, post-op rehab, balance and vertigo. Book today.',
+  ogTitle: 'Physical Therapy in Chatsworth, CA | Dr. Edward Shut, DPT',
   ogDescription: 'One-on-one physical therapy with a Doctor of Physical Therapy. Back pain, sports injuries, pre and post-op rehab, balance and vertigo. Evening and Saturday hours.',
-  h1: 'Physical therapy in Chatsworth, one-on-one with Dr. Ed',
+  h1: 'Physical therapy in Chatsworth, one-on-one with Dr. Edward',
   // The four reviews the approved homepage shows, as the approved graph marks them up.
   reviews: [
   {
@@ -46,11 +46,11 @@ export default {
   },
   {
     "q": "How long is each visit, and how many will I need?",
-    "a": "Visits run about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Ed. How many you need depends on your condition and how your body responds, so Dr. Ed sets the plan after your first evaluation rather than guessing up front."
+    "a": "Visits run about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Edward. How many you need depends on your condition and how your body responds, so Dr. Edward sets the plan after your first evaluation rather than guessing up front."
   },
   {
-    "q": "Will I see Dr. Ed every time?",
-    "a": "Yes. Every visit is one-on-one with Dr. Ed, from the first evaluation through discharge."
+    "q": "Will I see Dr. Edward every time?",
+    "a": "Yes. Every visit is one-on-one with Dr. Edward, from the first evaluation through discharge."
   },
   {
     "q": "What should I wear?",
@@ -62,16 +62,16 @@ export default {
   },
   {
     "q": "Do you treat vertigo, dizziness or stroke recovery?",
-    "a": "Yes. Dr. Ed treats vertigo and balance problems, and works with patients recovering from a stroke on strength, walking and everyday movement."
+    "a": "Yes. Dr. Edward treats vertigo and balance problems, and works with patients recovering from a stroke on strength, walking and everyday movement."
   },
   {
     "q": "Do you speak Russian?",
-    "a": "Yes. Dr. Ed speaks English and Russian, so you can be treated in either."
+    "a": "Yes. Dr. Edward speaks English and Russian, so you can be treated in either."
   }
 ],
   video: {
   "name": "Matt's frozen shoulder story at Chatsworth Physical Therapy",
-  "description": "A patient describes recovering from a frozen shoulder with Dr. Ed Shut at Chatsworth Physical Therapy.",
+  "description": "A patient describes recovering from a frozen shoulder with Dr. Edward Shut at Chatsworth Physical Therapy.",
   "uploadDate": "2026-04-12",
   "duration": "PT43S"
 },

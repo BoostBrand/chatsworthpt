@@ -6,15 +6,15 @@ const page: PageContent = {
   "id": "P-004",
   "path": "/back-pain-therapy/",
   "approved": true,
-  "title": "Back Pain Therapy in Chatsworth | Dr. Ed Shut, DPT",
-  "description": "Back pain therapy in Chatsworth, one-on-one with Dr. Ed Shut, DPT. Hands-on treatment and a home plan, evenings and Saturdays. Book your evaluation.",
+  "title": "Back Pain Therapy in Chatsworth | Dr. Edward Shut, DPT",
+  "description": "Back pain therapy in Chatsworth, one-on-one with Dr. Edward Shut, DPT. Hands-on treatment and a home plan, evenings and Saturdays. Book your evaluation.",
   "hero": {
     "h1": "Back pain therapy in Chatsworth that finds the cause, not just the sore spot",
-    "lede": "About 60 minutes, one-on-one with Dr. Ed, every visit, and a home plan that keeps the relief going between sessions.",
+    "lede": "About 60 minutes, one-on-one with Dr. Edward, every visit, and a home plan that keeps the relief going between sessions.",
     "book": "Book my evaluation",
     "image": {
       "src": "/img/back-pain-therapy-chatsworth.webp",
-      "alt": "Dr. Ed guiding a patient through a core stability exercise for back pain at Chatsworth Physical Therapy",
+      "alt": "Dr. Edward guiding a patient through a core stability exercise for back pain at Chatsworth Physical Therapy",
       "width": 900,
       "height": 900
     }
@@ -49,15 +49,15 @@ const page: PageContent = {
     },
     {
       "kind": "prose",
-      "h2": "What treatment looks like with Dr. Ed",
+      "h2": "What treatment looks like with Dr. Edward",
       "blocks": [
         {
           "type": "p",
-          "text": "The first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Ed. He does not start with the sore spot. He watches how you stand, bend, twist, sit and walk, tests the hips, the mid-back and the muscles that are supposed to be holding the spine steady, and checks whether a nerve is involved. Back pain usually has a cause somewhere other than where it hurts, and the evaluation is where he finds it. Then he explains it in plain terms and tells you what the plan is."
+          "text": "The first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Edward. He does not start with the sore spot. He watches how you stand, bend, twist, sit and walk, tests the hips, the mid-back and the muscles that are supposed to be holding the spine steady, and checks whether a nerve is involved. Back pain usually has a cause somewhere other than where it hurts, and the evaluation is where he finds it. Then he explains it in plain terms and tells you what the plan is."
         },
         {
           "type": "p",
-          "text": "Every visit after that is about 60 minutes with Dr. Ed, nobody else, and usually mixes:"
+          "text": "Every visit after that is about 60 minutes with Dr. Edward, nobody else, and usually mixes:"
         },
         {
           "type": "ul",
@@ -71,7 +71,7 @@ const page: PageContent = {
         },
         {
           "type": "p",
-          "text": "Dr. Ed does not just treat symptoms; the aim is to solve the underlying issue causing your back pain so it stops coming back. How many visits that takes depends on what the evaluation finds, so it is set after the first visit, not quoted up front. Evening and Saturday appointments are open until 8pm."
+          "text": "Dr. Edward does not just treat symptoms; the aim is to solve the underlying issue causing your back pain so it stops coming back. How many visits that takes depends on what the evaluation finds, so it is set after the first visit, not quoted up front. Evening and Saturday appointments are open until 8pm."
         }
       ]
     },
@@ -136,15 +136,15 @@ const page: PageContent = {
       "items": [
         {
           "q": "Can I come in while my back is still in spasm?",
-          "a": "Yes, and it is a good time to come. Dr. Ed adjusts the first visit to what you can tolerate, and the goal of that visit is to get you moving more comfortably, not to put you through a workout."
+          "a": "Yes, and it is a good time to come. Dr. Edward adjusts the first visit to what you can tolerate, and the goal of that visit is to get you moving more comfortably, not to put you through a workout."
         },
         {
           "q": "Do I need an MRI or X-ray first?",
-          "a": "No. Most back pain is diagnosed by how you move and what reproduces the pain, which is what the evaluation does. If imaging is needed, Dr. Ed will say so. If you already have it, bring the report."
+          "a": "No. Most back pain is diagnosed by how you move and what reproduces the pain, which is what the evaluation does. If imaging is needed, Dr. Edward will say so. If you already have it, bring the report."
         },
         {
           "q": "How many visits will it take?",
-          "a": "It depends on what is causing the pain and how long it has been there. Some patients feel a clear difference after the first visit; longer-standing problems take longer. Dr. Ed sets the plan after the evaluation and tells you if he thinks it will be short."
+          "a": "It depends on what is causing the pain and how long it has been there. Some patients feel a clear difference after the first visit; longer-standing problems take longer. Dr. Edward sets the plan after the evaluation and tells you if he thinks it will be short."
         },
         {
           "q": "Will the treatment hurt?",
@@ -163,7 +163,7 @@ const page: PageContent = {
   ],
   "booking": {
     "h2": "Book your back pain evaluation",
-    "lead": "Tell Dr. Ed where it hurts, how long it has been going on and what you have already tried. He will confirm your time by phone or email, usually the same day.",
+    "lead": "Tell Dr. Edward where it hurts, how long it has been going on and what you have already tried. He will confirm your time by phone or email, usually the same day.",
     "service": "Back pain",
     "button": "Request my appointment"
   },

@@ -3,12 +3,12 @@ import type { PageContent } from '../lib/types';
 const page: PageContent = {
   id: 'P-007',
   path: '/orthopedic-rehabilitation/',
-  title: 'Orthopedic Rehabilitation in Chatsworth | Dr. Ed Shut, DPT',
+  title: 'Orthopedic Rehabilitation in Chatsworth | Dr. Edward, DPT',
   description:
-    'Orthopedic rehabilitation in Chatsworth for shoulder, knee, hip, elbow and ankle injuries, one-on-one with Dr. Ed Shut, DPT. Evenings and Saturdays. Book.',
+    'Orthopedic rehabilitation in Chatsworth for shoulder, knee, hip, elbow and ankle, one-on-one with Dr. Edward Shut, DPT. Evenings and Saturdays. Book.',
   hero: {
-    h1: 'Orthopedic rehabilitation in Chatsworth, one-on-one with Dr. Ed',
-    lede: 'Joint and muscle injuries treated by Dr. Ed himself. About an hour a visit, plus a home program to follow between appointments.',
+    h1: 'Orthopedic rehabilitation in Chatsworth, one-on-one with Dr. Edward',
+    lede: 'Joint and muscle injuries treated by Dr. Edward himself. About an hour a visit, plus a home program to follow between appointments.',
     image: {
       src: '/img/post-op-physical-therapy-chatsworth.webp',
       width: 900,
@@ -21,7 +21,7 @@ const page: PageContent = {
     {
       kind: 'who',
       h2: 'Who this is for',
-      intro: 'These are the situations that bring people to Dr. Ed for orthopedic physical therapy.',
+      intro: 'These are the situations that bring people to Dr. Edward for orthopedic physical therapy.',
       items: [
         {
           lead: 'A shoulder that will not lift.',
@@ -48,11 +48,11 @@ const page: PageContent = {
     },
     {
       kind: 'prose',
-      h2: 'What treatment looks like with Dr. Ed',
+      h2: 'What treatment looks like with Dr. Edward',
       blocks: [
         {
           type: 'p',
-          text: 'Every plan starts with an evaluation. Dr. Ed examines the sore joint and everything above and below it, checks how you move and works out what is actually causing the pain. He explains it in plain terms.',
+          text: 'Every plan starts with an evaluation. Dr. Edward examines the sore joint and everything above and below it, checks how you move and works out what is actually causing the pain. He explains it in plain terms.',
         },
         { type: 'p', text: 'Treatment is then hands-on and active:' },
         {
@@ -65,14 +65,14 @@ const page: PageContent = {
         },
         {
           type: 'p',
-          text: 'Dr. Ed sets how many visits you need after the evaluation, once he knows what he is treating. Evening and Saturday appointments are available, so you can come in after work.',
+          text: 'Dr. Edward sets how many visits you need after the evaluation, once he knows what he is treating. Evening and Saturday appointments are available, so you can come in after work.',
         },
       ],
     },
     {
       kind: 'conditions',
       h2: 'Joints and injuries treated',
-      intro: 'Orthopedic rehabilitation with Dr. Ed covers these joints and the injuries listed under each. Conditions with their own page are linked, so you can read more about each one.',
+      intro: 'Orthopedic rehabilitation with Dr. Edward covers these joints and the injuries listed under each. Conditions with their own page are linked, so you can read more about each one.',
       items: [
         {
           text: '**Shoulder:** [shoulder pain and rotator cuff](/conditions/shoulder-pain-rotator-cuff/) problems, impingement and [frozen shoulder](/conditions/frozen-shoulder/).',
@@ -96,11 +96,11 @@ const page: PageContent = {
       items: [
         {
           q: 'Do I need an X-ray or MRI before physical therapy?',
-          a: 'Usually not. The evaluation tells Dr. Ed what is going on in the joint, and he explains it in plain terms. If imaging is needed, he says so.',
+          a: 'Usually not. The evaluation tells Dr. Edward what is going on in the joint, and he explains it in plain terms. If imaging is needed, he says so.',
         },
         {
           q: 'Can physical therapy help arthritis?',
-          a: 'Yes. Strength, mobility and load management reduce pain and keep the joint moving. Load management means adjusting how much you ask of the joint, and when. Dr. Ed puts all three into your plan and your home program.',
+          a: 'Yes. Strength, mobility and load management reduce pain and keep the joint moving. Load management means adjusting how much you ask of the joint, and when. Dr. Edward puts all three into your plan and your home program.',
         },
         {
           q: 'How soon after an injury should I come in?',
@@ -111,15 +111,15 @@ const page: PageContent = {
           a: 'No referral is needed to start. California law lets you see a physical therapist without a referral for up to 12 visits or 45 days, whichever comes first. After that, we need a referral from your doctor to continue. Medicare patients need a referral from the start.',
         },
         {
-          q: 'Will I see Dr. Ed every time?',
-          a: 'Yes. Every visit is one-on-one with Dr. Ed himself, from your evaluation to your last session. He is the one who examines you, treats you and adjusts your home program.',
+          q: 'Will I see Dr. Edward every time?',
+          a: 'Yes. Every visit is one-on-one with Dr. Edward himself, from your evaluation to your last session. He is the one who examines you, treats you and adjusts your home program.',
         },
       ],
     },
   ],
   booking: {
     h2: 'Book your orthopedic evaluation',
-    lead: 'Tell Dr. Ed which joint is giving you trouble, what happened and when you can come in. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward which joint is giving you trouble, what happened and when you can come in. He will confirm your time by phone or email, usually the same day.',
     service: 'Orthopedic injury',
   },
   related: [

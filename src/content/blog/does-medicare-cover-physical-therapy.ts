@@ -3,13 +3,13 @@ import type { PostContent } from '../../lib/types';
 const post: PostContent = {
   id: 'P-039',
   path: '/blog/does-medicare-cover-physical-therapy/',
-  title: 'Does Medicare Cover Physical Therapy? | Dr. Ed Shut, DPT',
-  description: 'Medicare Part B covers medically necessary physical therapy with a referral. Dr. Ed Shut, DPT in Chatsworth explains what is covered and what to bring.',
+  title: 'Does Medicare Cover Physical Therapy? | Dr. Edward Shut, DPT',
+  description: 'Medicare Part B covers medically necessary physical therapy with a referral. Dr. Edward Shut, DPT in Chatsworth explains what is covered and what to bring.',
   h1: 'Does Medicare cover physical therapy? Yes, and here is what to bring',
   datePublished: '2026-10-21',
   parent: { text: 'Insurance and cost', href: '/insurance-and-cost/' },
-  summary: 'What Part B covers, what you pay, and the three things to bring to your first visit with Dr. Ed.',
-  answer: 'Yes, Medicare Part B helps pay for medically necessary outpatient physical therapy if you are eligible, and your doctor or other health care provider must certify that you need it ([Medicare.gov](https://www.medicare.gov/coverage/physical-therapy-services)). Dr. Ed accepts original Medicare at Chatsworth Physical Therapy, though not Medicare Advantage plans at this time, and Medicare patients need a referral from the start.',
+  summary: 'What Part B covers, what you pay, and the three things to bring to your first visit with Dr. Edward.',
+  answer: 'Yes, Medicare Part B helps pay for medically necessary outpatient physical therapy if you are eligible, and your doctor or other health care provider must certify that you need it ([Medicare.gov](https://www.medicare.gov/coverage/physical-therapy-services)). Dr. Edward accepts original Medicare at Chatsworth Physical Therapy, though not Medicare Advantage plans at this time, and Medicare patients need a referral from the start.',
   body: [
     { type: 'h2', text: 'What Medicare Part B covers' },
     {
@@ -27,12 +27,12 @@ const post: PostContent = {
     },
     {
       type: 'p',
-      text: 'Medicare.gov also says there is no yearly limit on how much Medicare pays for medically necessary outpatient therapy ([Medicare.gov](https://www.medicare.gov/coverage/physical-therapy-services)). So Medicare does not stop paying at a set yearly amount, as long as the therapy stays medically necessary. The number of visits is a separate matter. Dr. Ed settles it after he has examined you, based on your condition and how your body responds, and he never quotes a number up front.',
+      text: 'Medicare.gov also says there is no yearly limit on how much Medicare pays for medically necessary outpatient therapy ([Medicare.gov](https://www.medicare.gov/coverage/physical-therapy-services)). So Medicare does not stop paying at a set yearly amount, as long as the therapy stays medically necessary. The number of visits is a separate matter. Dr. Edward settles it after he has examined you, based on your condition and how your body responds, and he never quotes a number up front.',
     },
     { type: 'h2', text: 'Your referral and what to bring' },
     {
       type: 'p',
-      text: "Dr. Ed's rule for Medicare patients is a referral from the start. Ask your own doctor for one, and bring these three things to your first visit:",
+      text: "Dr. Edward's rule for Medicare patients is a referral from the start. Ask your own doctor for one, and bring these three things to your first visit:",
     },
     {
       type: 'leads',
@@ -68,16 +68,16 @@ const post: PostContent = {
         'Ask your own doctor for a referral for physical therapy.',
         'Book your first visit below and tell us what hurts.',
         'Bring the referral, your Medicare card and any imaging reports.',
-        'Meet Dr. Ed for an evaluation of about 60 minutes, depending on what you need. It is one-on-one.',
+        'Meet Dr. Edward for an evaluation of about 60 minutes, depending on what you need. It is one-on-one.',
       ],
     },
     {
       type: 'p',
-      text: 'At the evaluation, Dr. Ed watches how you move, looks for the source of the problem and tells you what he finds in plain terms. Treatment is hands-on, in the clinic, with a short home program that he adjusts at each visit as you progress.',
+      text: 'At the evaluation, Dr. Edward watches how you move, looks for the source of the problem and tells you what he finds in plain terms. Treatment is hands-on, in the clinic, with a short home program that he adjusts at each visit as you progress.',
     },
     {
       type: 'p',
-      text: 'If you are looking for physical therapy that accepts Medicare near you, Dr. Ed serves Chatsworth, Porter Ranch, Northridge, West Hills, Canoga Park, Granada Hills and Simi Valley. He treats patients in English and Russian. Parking is free in the lot in front, there is no gate code, and the entrance is wheelchair accessible.',
+      text: 'If you are looking for physical therapy that accepts Medicare near you, Dr. Edward serves Chatsworth, Porter Ranch, Northridge, West Hills, Canoga Park, Granada Hills and Simi Valley. He treats patients in English and Russian. Parking is free in the lot in front, there is no gate code, and the entrance is wheelchair accessible.',
     },
     {
       type: 'p',
@@ -95,16 +95,16 @@ const post: PostContent = {
   ],
   booking: {
     h2: 'Book your first visit',
-    lead: 'Tell Dr. Ed what is bothering you and which days work. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward what is bothering you and which days work. He will confirm your time by phone or email, usually the same day.',
     service: 'Not sure yet',
   },
   related: [
     { text: 'All posts', href: '/blog/' },
     { text: 'Insurance and cost', href: '/insurance-and-cost/' },
-    { text: 'About Dr. Ed', href: '/about-us/' },
+    { text: 'About Dr. Edward', href: '/about-us/' },
   ],
   notes: [
-    'Medicare Advantage: FACTS.md says only "Medicare", so the post does not say whether Medicare Advantage plans are accepted. Dr. Ed to confirm if a line is wanted.',
+    'Medicare Advantage: FACTS.md says only "Medicare", so the post does not say whether Medicare Advantage plans are accepted. Dr. Edward to confirm if a line is wanted.',
     'The entry asks the writer to check "the yearly threshold" on the live Medicare.gov page. The page says there is no yearly limit and shows no threshold figure, so none is stated.',
     'The parent link is anchored "insurance and cost page" in the copy and "Insurance and cost" in related. The reviews link in the last paragraph can be removed if the plan keeps posts to the three links out in the entry.',
   ],

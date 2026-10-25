@@ -6,10 +6,10 @@ const page: PageContent = {
   "id": "P-006",
   "path": "/pre-post-surgical-rehabilitation/",
   "approved": true,
-  "title": "Post-Op Physical Therapy in Chatsworth | Dr. Ed Shut, DPT",
-  "description": "Post-op physical therapy in Chatsworth after knee or hip replacement, ACL or rotator cuff surgery. One-on-one with Dr. Ed Shut, DPT. Book now.",
+  "title": "Post-Op Physical Therapy in Chatsworth | Dr. Edward, DPT",
+  "description": "Post-op physical therapy in Chatsworth after knee or hip replacement, ACL or rotator cuff surgery. One-on-one with Dr. Edward Shut, DPT. Book now.",
   "hero": {
-    "h1": "Post-op physical therapy in Chatsworth, one-on-one with Dr. Ed",
+    "h1": "Post-op physical therapy in Chatsworth, one-on-one with Dr. Edward",
     "lede": "Your surgeon's protocol, followed one-on-one for about 60 minutes a visit, with a home program that keeps the recovery moving between sessions.",
     "book": "Book my evaluation",
     "image": {
@@ -38,21 +38,21 @@ const page: PageContent = {
         },
         {
           "lead": "Before surgery.",
-          "text": "Prehab: getting the joint as strong and mobile as possible before the operation, which makes the recovery after it faster. Some patients find that a few weeks of therapy before surgery changes whether they need it at all; that is a conversation between you and your surgeon, and Dr. Ed will give you an honest read."
+          "text": "Prehab: getting the joint as strong and mobile as possible before the operation, which makes the recovery after it faster. Some patients find that a few weeks of therapy before surgery changes whether they need it at all; that is a conversation between you and your surgeon, and Dr. Edward will give you an honest read."
         }
       ]
     },
     {
       "kind": "prose",
-      "h2": "What treatment looks like with Dr. Ed",
+      "h2": "What treatment looks like with Dr. Edward",
       "blocks": [
         {
           "type": "p",
-          "text": "Bring your surgeon's post-op protocol and your discharge paperwork to the first visit. Dr. Ed works from your surgeon's instructions, not a generic plan, and the evaluation, about 60 minutes depending on what you need, sets your starting point: swelling, range of motion, strength, how you walk or reach, and what you need to do again at home and at work."
+          "text": "Bring your surgeon's post-op protocol and your discharge paperwork to the first visit. Dr. Edward works from your surgeon's instructions, not a generic plan, and the evaluation, about 60 minutes depending on what you need, sets your starting point: swelling, range of motion, strength, how you walk or reach, and what you need to do again at home and at work."
         },
         {
           "type": "p",
-          "text": "Every visit after that is about 60 minutes with Dr. Ed, nobody else, in the stages your surgery needs:"
+          "text": "Every visit after that is about 60 minutes with Dr. Edward, nobody else, in the stages your surgery needs:"
         },
         {
           "type": "ul",
@@ -64,7 +64,7 @@ const page: PageContent = {
         },
         {
           "type": "p",
-          "text": "You leave every visit with a written home program, adjusted as the repair heals. A family member is welcome to sit in. The number of visits depends on the surgery and your surgeon's timeline; Dr. Ed sets it after the evaluation. Evening and Saturday appointments mean a working family member can drive you."
+          "text": "You leave every visit with a written home program, adjusted as the repair heals. A family member is welcome to sit in. The number of visits depends on the surgery and your surgeon's timeline; Dr. Edward sets it after the evaluation. Evening and Saturday appointments mean a working family member can drive you."
         }
       ]
     },
@@ -78,7 +78,7 @@ const page: PageContent = {
         },
         {
           "type": "p",
-          "text": "**Hip replacement.** Walking without a limp, restoring hip strength and rebuilding balance so you trust the new joint. One patient after hip replacement wrote that Dr. Ed was intuitive about finding ways to fix her balance and strength; her full review is on the [reviews page](/reviews/)."
+          "text": "**Hip replacement.** Walking without a limp, restoring hip strength and rebuilding balance so you trust the new joint. One patient after hip replacement wrote that Dr. Edward was intuitive about finding ways to fix her balance and strength; her full review is on the [reviews page](/reviews/)."
         },
         {
           "type": "p",
@@ -148,7 +148,7 @@ const page: PageContent = {
         },
         {
           "q": "Will you follow my surgeon's protocol?",
-          "a": "Yes. Bring it to the first visit. Dr. Ed works from it, not from a generic plan."
+          "a": "Yes. Bring it to the first visit. Dr. Edward works from it, not from a generic plan."
         },
         {
           "q": "Can someone come with me?",
@@ -160,7 +160,7 @@ const page: PageContent = {
         },
         {
           "q": "How long until I can drive, work or play again?",
-          "a": "It depends on the surgery and your surgeon's timeline. Dr. Ed will give you a realistic answer at the evaluation and update it as you progress."
+          "a": "It depends on the surgery and your surgeon's timeline. Dr. Edward will give you a realistic answer at the evaluation and update it as you progress."
         },
         {
           "q": "Does physical therapy before surgery help?",
@@ -171,7 +171,7 @@ const page: PageContent = {
   ],
   "booking": {
     "h2": "Book your post-op evaluation",
-    "lead": "Tell Dr. Ed which surgery, when it was (or will be) and who your surgeon is. He will confirm your time by phone or email, usually the same day.",
+    "lead": "Tell Dr. Edward which surgery, when it was (or will be) and who your surgeon is. He will confirm your time by phone or email, usually the same day.",
     "service": "Before or after surgery",
     "messagePrompt": "Surgery and date",
     "button": "Request my appointment"

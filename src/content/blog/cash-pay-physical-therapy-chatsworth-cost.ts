@@ -3,9 +3,9 @@ import type { PostContent } from '../../lib/types';
 const post: PostContent = {
   id: 'P-049',
   path: '/blog/cash-pay-physical-therapy-chatsworth-cost/',
-  title: 'Cash-Pay Physical Therapy Cost in Chatsworth | Dr. Ed, DPT',
+  title: 'Cash-Pay Physical Therapy Cost in Chatsworth | Dr. Edward',
   description:
-    "What a cash-pay physical therapy visit costs in Chatsworth, how a PPO superbill works, and what to ask your insurer. By Dr. Ed Shut, DPT.",
+    "What a cash-pay physical therapy visit costs in Chatsworth, how a PPO superbill works, and what to ask your insurer. By Dr. Edward Shut, DPT.",
   h1: 'Cash-pay physical therapy in Chatsworth: what a visit costs and how a superbill works',
   datePublished: '2026-10-21',
   parent: { text: 'Insurance and cost', href: '/insurance-and-cost/' },
@@ -36,14 +36,14 @@ const post: PostContent = {
 
     { type: 'h2', text: 'What a visit costs' },
     { type: 'callout', text: 'The first evaluation is $175. Each follow-up visit is $125.' },
-    { type: 'p', text: 'The evaluation is a full first visit: Dr. Ed checks how you walk and move, tests your mobility, finds the pain points and confirms your pain is mechanical, the kind physical therapy treats. If it is not, he tells you and refers you to the right doctor.' },
+    { type: 'p', text: 'The evaluation is a full first visit: Dr. Edward checks how you walk and move, tests your mobility, finds the pain points and confirms your pain is mechanical, the kind physical therapy treats. If it is not, he tells you and refers you to the right doctor.' },
     {
       type: 'p',
-      text: 'A visit runs about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Ed, from your first evaluation through discharge.',
+      text: 'A visit runs about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Edward, from your first evaluation through discharge.',
     },
     {
       type: 'p',
-      text: 'How many visits you need depends on your condition and how your body responds. Dr. Ed sets the plan after your first evaluation rather than guessing up front, so he does not quote a number of visits before he has seen you.',
+      text: 'How many visits you need depends on your condition and how your body responds. Dr. Edward sets the plan after your first evaluation rather than guessing up front, so he does not quote a number of visits before he has seen you.',
     },
 
     { type: 'h2', text: 'How a superbill works' },
@@ -61,7 +61,7 @@ const post: PostContent = {
       type: 'ol',
       items: [
         '**Ask your insurer first.** Find out whether your plan reimburses physical therapy that you pay for yourself, and how it wants a superbill sent.',
-        '**Come in for the visit.** The first one is an evaluation with Dr. Ed.',
+        '**Come in for the visit.** The first one is an evaluation with Dr. Edward.',
         '**Pay at the visit.** You pay the clinic yourself.',
         '**Get your superbill.** This is the itemized receipt you will send in.',
         '**Send it to your insurer.** Use the method your insurer gave you in the first step.',
@@ -145,17 +145,17 @@ const post: PostContent = {
   ],
   booking: {
     h2: 'Book your first visit',
-    lead: 'Tell Dr. Ed what hurts and pick the time that fits. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward what hurts and pick the time that fits. He will confirm your time by phone or email, usually the same day.',
     service: 'Not sure yet',
   },
   related: [
     { text: 'All posts', href: '/blog/' },
     { text: 'Insurance and cost', href: '/insurance-and-cost/' },
-    { text: 'About Dr. Ed', href: '/about-us/' },
+    { text: 'About Dr. Edward', href: '/about-us/' },
   ],
   notes: [
-    'The clinic rate is not published. The sentence "Call (818) 749-3205 for the current rate." with the publishing marker sits in the answer and in the cost section. If Dr. Ed agrees to state the rate, change both.',
-    'Whether the clinic is in or out of any insurance network is not stated anywhere on this page. It is a CONFIRM item for Dr. Ed.',
+    'The clinic rate is not published. The sentence "Call (818) 749-3205 for the current rate." with the publishing marker sits in the answer and in the cost section. If Dr. Edward agrees to state the rate, change both.',
+    'Whether the clinic is in or out of any insurance network is not stated anywhere on this page. It is a CONFIRM item for Dr. Edward.',
     "The honest comparison with insurance copays is left out: it needs the clinic's own numbers, which do not exist yet.",
     'The meta description is copied exactly from the entry. It promises "when paying direct is simpler" and "gets you reimbursed". The post makes neither promise. The build lead may want to reword the entry.',
     'The HealthCare.gov pages use curly apostrophes. The quotes here use straight ones, with the same words.',

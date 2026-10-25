@@ -8,12 +8,12 @@ const page: PageContent = {
     'Medicare accepted, direct pay welcome, PPO superbills and personal injury liens. See what a visit costs and when California needs a referral. Call today.',
   hero: {
     h1: 'Insurance, cost and referrals at Chatsworth Physical Therapy',
-    lede: 'Plain answers on referrals, insurance and payment before your first visit. Call and Dr. Ed will walk you through the cost.',
+    lede: 'Plain answers on referrals, insurance and payment before your first visit. Call and Dr. Edward will walk you through the cost.',
     image: {
       src: '/img/dr-ed-explaining-anatomy-chatsworth.webp',
       width: 1200,
       height: 960,
-      alt: 'Dr. Ed explaining an anatomy chart to a patient',
+      alt: 'Dr. Edward explaining an anatomy chart to a patient',
     },
     book: 'Book my evaluation',
     callFirst: true,
@@ -84,15 +84,15 @@ const page: PageContent = {
         },
         {
           type: 'p',
-          text: '**Your first evaluation is $175. Each follow-up visit is $125.** The evaluation is a full first visit: Dr. Ed checks how you walk and move, tests your mobility, finds the pain points and confirms your pain is mechanical, the kind physical therapy treats. If it is not, he tells you and refers you to the right doctor. CSUN students and faculty can ask about a discount when they book.',
+          text: '**Your first evaluation is $175. Each follow-up visit is $125.** The evaluation is a full first visit: Dr. Edward checks how you walk and move, tests your mobility, finds the pain points and confirms your pain is mechanical, the kind physical therapy treats. If it is not, he tells you and refers you to the right doctor. CSUN students and faculty can ask about a discount when they book.',
         },
         {
           type: 'p',
-          text: 'Visits run about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Ed.',
+          text: 'Visits run about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Edward.',
         },
         {
           type: 'p',
-          text: 'Dr. Ed does not quote a number of visits up front. After your first evaluation, he sets a plan based on your condition and how your body responds.',
+          text: 'Dr. Edward does not quote a number of visits up front. After your first evaluation, he sets a plan based on your condition and how your body responds.',
         },
         {
           type: 'p',
@@ -106,7 +106,7 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: '**We accept personal injury cases on a lien.** To start, your attorney emails Dr. Ed your details, such as your name, address and date of birth.',
+          text: '**We accept personal injury cases on a lien.** To start, your attorney emails Dr. Edward your details, such as your name, address and date of birth.',
         },
       ],
     },
@@ -116,7 +116,7 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: '**No referral is needed to start.** Dr. Ed treats school-age children and teenagers, gymnasts and dancers included. A parent stays in the room for every visit.',
+          text: '**No referral is needed to start.** Dr. Edward treats school-age children and teenagers, gymnasts and dancers included. A parent stays in the room for every visit.',
         },
       ],
     },
@@ -149,7 +149,7 @@ const page: PageContent = {
         },
         {
           q: 'How much does a visit cost without insurance?',
-          a: 'The first evaluation is $175, and each follow-up visit is $125. The total depends on how many visits you need, and Dr. Ed does not quote that number before your first evaluation.',
+          a: 'The first evaluation is $175, and each follow-up visit is $125. The total depends on how many visits you need, and Dr. Edward does not quote that number before your first evaluation.',
         },
         {
           q: 'Do you take personal injury cases?',
@@ -164,7 +164,7 @@ const page: PageContent = {
   ],
   booking: {
     h2: 'Book your evaluation',
-    lead: 'Tell Dr. Ed what is going on and when you can come in. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward what is going on and when you can come in. He will confirm your time by phone or email, usually the same day.',
     service: 'Not sure yet',
   },
   related: [
@@ -174,10 +174,10 @@ const page: PageContent = {
     { text: 'Book an evaluation', href: '/contact/' },
   ],
   notes: [
-    'Open for Dr. Ed: whether any insurance plan is billed directly. The PPO section and the PPO FAQ carry the marker.',
-    'Open for Vlad and Dr. Ed: publish the direct-pay prices or keep the call-for-the-rate line. The Direct pay section and the cost FAQ carry the markers.',
-    'Open for Dr. Ed: the one-line lien process. The Personal injury section carries the marker; no process sentence is written until it is confirmed.',
-    'Open for Dr. Ed: payment methods beyond cards (HSA and FSA cards, checks, Zelle). The Payment methods section carries the marker.',
+    'Open for Dr. Edward: whether any insurance plan is billed directly. The PPO section and the PPO FAQ carry the marker.',
+    'Open for Vlad and Dr. Edward: publish the direct-pay prices or keep the call-for-the-rate line. The Direct pay section and the cost FAQ carry the markers.',
+    'Open for Dr. Edward: the one-line lien process. The Personal injury section carries the marker; no process sentence is written until it is confirmed.',
+    'Open for Dr. Edward: payment methods beyond cards (HSA and FSA cards, checks, Zelle). The Payment methods section carries the marker.',
     'Ruling applied: no insurance section on this page. The referral, insurance and visit-length facts are written as the sections of this page, in the site-wide wording.',
     'The referral FAQ uses the site-wide facts, which are longer than the short answer in the entry.',
     'The paymentAccepted and priceRange values in the Physiotherapy block on the home and contact pages must match this page once the markers are answered.',

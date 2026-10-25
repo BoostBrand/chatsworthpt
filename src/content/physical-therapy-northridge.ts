@@ -3,9 +3,9 @@ import type { PageContent } from '../lib/types';
 const page: PageContent = {
   id: 'P-035',
   path: '/physical-therapy-northridge/',
-  title: 'Physical Therapy Near Northridge, CA | Dr. Ed Shut, DPT',
+  title: 'Physical Therapy Near Northridge, CA | Dr. Edward Shut, DPT',
   description:
-    'Northridge patients drive a few minutes west on Nordhoff to see Dr. Ed Shut, DPT one-on-one. Evenings, Saturdays, Medicare, free parking. Book now.',
+    'Northridge patients drive a few minutes west on Nordhoff to see Dr. Edward Shut, DPT one-on-one. Evenings, Saturdays, Medicare, free parking. Book now.',
   hero: {
     h1: 'Physical therapy for Northridge patients, ten minutes away in Chatsworth',
     lede:
@@ -22,7 +22,7 @@ const page: PageContent = {
           items: [
             {
               lead: 'A Doctor of Physical Therapy.',
-              text: 'Dr. Ed treats you himself, one-on-one, at every visit.',
+              text: 'Dr. Edward treats you himself, one-on-one, at every visit.',
             },
             {
               lead: 'A CSUN graduate.',
@@ -42,7 +42,7 @@ const page: PageContent = {
             },
           ],
         },
-        { type: 'p', text: 'It is rare for a physical therapy clinic to have a licensed physical therapist work with you for the entire visit. Here, Dr. Ed does, every visit.' },
+        { type: 'p', text: 'It is rare for a physical therapy clinic to have a licensed physical therapist work with you for the entire visit. Here, Dr. Edward does, every visit.' },
       ],
     },
     {
@@ -52,7 +52,7 @@ const page: PageContent = {
         {
           type: 'ul',
           items: [
-            'Dr. Ed treats CSUN students and athletes, and CSUN students and faculty can ask about a discount when they book.',
+            'Dr. Edward treats CSUN students and athletes, and CSUN students and faculty can ask about a discount when they book.',
             'Many of his joint replacement patients come to him after discharge from Northridge Hospital.',
           ],
         },
@@ -110,14 +110,14 @@ const page: PageContent = {
         },
         {
           q: 'Do you take Medicare?',
-          a: 'Yes. Dr. Ed accepts Medicare. Medicare patients need a referral from their doctor from the start.',
+          a: 'Yes. Dr. Edward accepts Medicare. Medicare patients need a referral from their doctor from the start.',
         },
       ],
     },
   ],
   booking: {
     h2: 'Book your evaluation',
-    lead: 'Tell Dr. Ed what is going on and pick a time that fits, evenings and Saturdays included. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward what is going on and pick a time that fits, evenings and Saturdays included. He will confirm your time by phone or email, usually the same day.',
     service: 'Not sure yet',
   },
   related: [
@@ -129,7 +129,7 @@ const page: PageContent = {
   notes: [
     'Live (Vlad, 23 Oct 2026: both city pages go live at launch, CITY_PAGES_LIVE true). Linked from the homepage service-area line and the contact page directions. The reviewer line is out (nobody knows which reviewers live here); the CSUN, Northridge Hospital and route proof stays.',
     'The H1 and the meta description carry "ten minutes" and "a few minutes west on Nordhoff" exactly as the entry words them. Both are unverified until the drive is checked by map. The hero line holds the entry marker for it.',
-    'Section 2 leaves the comparison with group and network clinics unwritten. The bare marker stands where it would go. It needs Dr. Ed to confirm the comparison as his own experience.',
+    'Section 2 leaves the comparison with group and network clinics unwritten. The bare marker stands where it would go. It needs Dr. Edward to confirm the comparison as his own experience.',
     'Section 3 holds the entry three proof markers. If no reviewer lives in Northridge, the section is cut and the page does not go live.',
     'Section 4: the entry route says left on Nordhoff Place, while the approved homepage visit line puts the clinic just north of Nordhoff St. Heading west, a left turn goes south. Check the turn by map before the marker comes off.',
     'No review section. The Northridge review in the entry depends on the reviewer check in section 3.',

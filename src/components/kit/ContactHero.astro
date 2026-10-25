@@ -1,5 +1,5 @@
 ---
-// ContactHero (Contact): the H1, then the phone number as the first thing on the page with "Dr. Ed answers
+// ContactHero (Contact): the H1, then the phone number as the first thing on the page with "Dr. Edward answers
 // his own phone.", and the booking form beside it (the call panel while FORMS_ENABLED is false). Carries
 // the page's #book anchor, so the header and sticky Book buttons land here.
 import type { Hero } from '../../lib/types';
@@ -22,7 +22,7 @@ const { hero, crumbs, pageName, service = 'Not sure yet' } = Astro.props;
     <div class="page-hero-grid">
       <div class="page-hero-copy">
         <h1 id="h1">{hero.h1}</h1>
-        <p class="contact-phone"><a href={BUSINESS.phoneHref} data-call-placement="contact_hero">{BUSINESS.phone}</a><span>Dr. Ed answers his own phone.</span></p>
+        <p class="contact-phone"><a href={BUSINESS.phoneHref} data-call-placement="contact_hero">{BUSINESS.phone}</a><span>Dr. Edward answers his own phone.</span></p>
         <p class="ru-line" lang="ru">Говорим по-русски</p>
         <Inline as="p" class="page-hero-lede" text={hero.lede} />
         <p class="contact-meta">{BUSINESS.addressLine}<br />{BUSINESS.hoursLine}</p>

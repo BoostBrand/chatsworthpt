@@ -4,7 +4,7 @@
 // Inline text (type Inline) is a plain string with four marks, nothing else:
 //   **bold**                      bold text
 //   [anchor text](/path/)         a link; internal paths end with a slash, anchors may add #id
-//   [CONFIRM ...]                 a fact waiting on Dr. Ed or Vlad, kept exactly as the blueprint words it
+//   [CONFIRM ...]                 a fact waiting on Dr. Edward or Vlad, kept exactly as the blueprint words it
 //   [verify: ...] / [SOURCE NEEDED: ...]  likewise; all three render highlighted while PREVIEW is true
 // Never use an em dash or an en dash. Straight quotes only.
 

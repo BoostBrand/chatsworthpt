@@ -6,10 +6,10 @@ const page: PageContent = {
   "id": "P-005",
   "path": "/sports-injury-recovery/",
   "approved": true,
-  "title": "Sports Physical Therapy in Chatsworth | Dr. Ed Shut, DPT",
-  "description": "Sports physical therapy in Chatsworth with Dr. Ed Shut, DPT. One-on-one rehab for sprains, tears and overuse, plus a return-to-play plan. Book now.",
+  "title": "Sports Physical Therapy in Chatsworth | Dr. Edward Shut, DPT",
+  "description": "Sports physical therapy in Chatsworth with Dr. Edward Shut, DPT. One-on-one rehab for sprains, tears and overuse, plus a return-to-play plan. Book now.",
   "hero": {
-    "h1": "Sports physical therapy in Chatsworth, one-on-one with Dr. Ed",
+    "h1": "Sports physical therapy in Chatsworth, one-on-one with Dr. Edward",
     "lede": "Rehab for the injury, strength for the weak link, and a step-by-step return to your sport instead of a blanket \"rest\".",
     "book": "Book my evaluation",
     "image": {
@@ -23,7 +23,7 @@ const page: PageContent = {
     {
       "kind": "who",
       "h2": "Who sports physical therapy is for",
-      "intro": "Athletes of every level come to Dr. Ed, from a 10-year-old gymnast to a weekend runner. The situations are usually these.",
+      "intro": "Athletes of every level come to Dr. Edward, from a 10-year-old gymnast to a weekend runner. The situations are usually these.",
       "items": [
         {
           "lead": "A fresh injury.",
@@ -49,15 +49,15 @@ const page: PageContent = {
     },
     {
       "kind": "prose",
-      "h2": "What treatment looks like with Dr. Ed",
+      "h2": "What treatment looks like with Dr. Edward",
       "blocks": [
         {
           "type": "p",
-          "text": "The first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Ed. He looks at the injured area and at everything above and below it: how you land, cut, squat, throw or reach, where the strength is missing and which movement keeps reloading the injury. He explains what he found and what the plan is, including a realistic line on when you can train and when you can compete."
+          "text": "The first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Edward. He looks at the injured area and at everything above and below it: how you land, cut, squat, throw or reach, where the strength is missing and which movement keeps reloading the injury. He explains what he found and what the plan is, including a realistic line on when you can train and when you can compete."
         },
         {
           "type": "p",
-          "text": "Every visit after that is about 60 minutes with Dr. Ed, nobody else, and usually mixes:"
+          "text": "Every visit after that is about 60 minutes with Dr. Edward, nobody else, and usually mixes:"
         },
         {
           "type": "ul",
@@ -72,7 +72,7 @@ const page: PageContent = {
         },
         {
           "type": "p",
-          "text": "Dr. Ed schedules around training. Appointments run until 8pm Monday to Friday and on Saturdays, and patients say he fits sessions around busy schedules, late at night or during the day. How many visits you need depends on the injury; he sets it after the evaluation."
+          "text": "Dr. Edward schedules around training. Appointments run until 8pm Monday to Friday and on Saturdays, and patients say he fits sessions around busy schedules, late at night or during the day. How many visits you need depends on the injury; he sets it after the evaluation."
         }
       ]
     },
@@ -82,7 +82,7 @@ const page: PageContent = {
       "blocks": [
         {
           "type": "p",
-          "text": "Pain going away is not the same as being ready to play. The injury that comes back is usually the one that was rested, felt fine and was never retested. Dr. Ed runs rehab in stages: calm the injury, restore range, rebuild strength, then retest you against what the sport demands (single-leg hop, cutting, overhead load, backbends) before you go full speed. You know where you are at every visit and what the next gate is."
+          "text": "Pain going away is not the same as being ready to play. The injury that comes back is usually the one that was rested, felt fine and was never retested. Dr. Edward runs rehab in stages: calm the injury, restore range, rebuild strength, then retest you against what the sport demands (single-leg hop, cutting, overhead load, backbends) before you go full speed. You know where you are at every visit and what the next gate is."
         },
         {
           "type": "p",
@@ -157,11 +157,11 @@ const page: PageContent = {
         },
         {
           "q": "Will I have to stop training completely?",
-          "a": "Usually not. Dr. Ed works out what you can safely keep doing this week and what to hold back on, and adjusts it as you improve."
+          "a": "Usually not. Dr. Edward works out what you can safely keep doing this week and what to hold back on, and adjusts it as you improve."
         },
         {
           "q": "Do you work with my coach or trainer?",
-          "a": "Yes. Dr. Ed will write down what is and is not allowed, and is happy to talk to a coach or trainer directly."
+          "a": "Yes. Dr. Edward will write down what is and is not allowed, and is happy to talk to a coach or trainer directly."
         },
         {
           "q": "Do you treat kids and teens?",
@@ -169,7 +169,7 @@ const page: PageContent = {
         },
         {
           "q": "How do I know I am ready to play again?",
-          "a": "You are tested against what the sport demands, not just asked whether it hurts. Dr. Ed will tell you plainly when you pass and what is still missing."
+          "a": "You are tested against what the sport demands, not just asked whether it hurts. Dr. Edward will tell you plainly when you pass and what is still missing."
         },
         {
           "q": "Do I need a referral?",
@@ -180,7 +180,7 @@ const page: PageContent = {
   ],
   "booking": {
     "h2": "Book your sports injury evaluation",
-    "lead": "Tell Dr. Ed what happened, which sport and when you need to be back. He will confirm your time by phone or email, usually the same day.",
+    "lead": "Tell Dr. Edward what happened, which sport and when you need to be back. He will confirm your time by phone or email, usually the same day.",
     "service": "Sports injury",
     "messagePrompt": "Sport and when it happened",
     "button": "Request my appointment"

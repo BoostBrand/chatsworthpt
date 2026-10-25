@@ -5,10 +5,10 @@ const page: PageContent = {
   path: '/about-us/',
   title: 'Dr. Edward Shut, DPT | Physical Therapist in Chatsworth, CA',
   description:
-    'Meet Dr. Ed Shut, Doctor of Physical Therapy in Chatsworth, CA. License 301809, 15+ years, one-on-one care in English and Russian. Book your evaluation.',
+    'Meet Dr. Edward Shut, Doctor of Physical Therapy in Chatsworth, CA. License 301809, 15+ years, one-on-one care in English and Russian. Book now.',
   hero: {
     h1: 'Meet Dr. Edward Shut, DPT, your physical therapist in Chatsworth',
-    lede: 'Every visit is one-on-one with Dr. Ed, about an hour, with evening and Saturday appointments.',
+    lede: 'Every visit is one-on-one with Dr. Edward, about an hour, with evening and Saturday appointments.',
     image: {
       src: '/img/dr-ed-shut-in-clinic-chatsworth.webp',
       width: 1000,
@@ -20,11 +20,11 @@ const page: PageContent = {
   sections: [
     {
       kind: 'prose',
-      h2: "In Dr. Ed's words",
+      h2: "In Dr. Edward's words",
       blocks: [
         {
           type: 'p',
-          text: "I'm Dr. Ed, a licensed physical therapist proudly serving patients in Chatsworth, CA and the surrounding area. My mission is to help people recover from injury, reduce pain, restore movement, and return to the activities that matter most to them.",
+          text: "I'm Dr. Edward, a licensed physical therapist proudly serving patients in Chatsworth, CA and the surrounding area. My mission is to help people recover from injury, reduce pain, restore movement, and return to the activities that matter most to them.",
         },
         {
           type: 'p',
@@ -42,20 +42,20 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: 'Dr. Ed holds a Doctor of Physical Therapy degree and a California physical therapist license. He is a physical therapist, not a physician.',
+          text: 'Dr. Edward holds a Doctor of Physical Therapy degree and a California physical therapist license. He is a physical therapist, not a physician.',
         },
       ],
     },
     {
       kind: 'prose',
-      h2: 'How Dr. Ed works',
+      h2: 'How Dr. Edward works',
       blocks: [
         {
           type: 'leads',
           items: [
             {
               lead: 'Evaluation first.',
-              text: 'Your first visit is an evaluation with Dr. Ed. He examines how you move.',
+              text: 'Your first visit is an evaluation with Dr. Edward. He examines how you move.',
             },
             {
               lead: 'The cause, not the symptom.',
@@ -63,7 +63,7 @@ const page: PageContent = {
             },
             {
               lead: 'Hands-on treatment.',
-              text: 'Treatment in the clinic is hands-on and comes from Dr. Ed himself.',
+              text: 'Treatment in the clinic is hands-on and comes from Dr. Edward himself.',
             },
             {
               lead: 'A home program you will actually do.',
@@ -71,20 +71,20 @@ const page: PageContent = {
             },
             {
               lead: 'No hand-offs.',
-              text: 'You work with Dr. Ed himself at every visit.',
+              text: 'You work with Dr. Edward himself at every visit.',
             },
           ],
         },
         {
           type: 'p',
-          text: 'For neurological patients, including stroke recovery, Dr. Ed uses NDT and PNF.',
+          text: 'For neurological patients, including stroke recovery, Dr. Edward uses NDT and PNF.',
         },
       ],
     },
     {
       kind: 'conditions',
-      h2: 'Who Dr. Ed treats',
-      intro: 'Dr. Ed treats patients across these services. Each one has its own page.',
+      h2: 'Who Dr. Edward treats',
+      intro: 'Dr. Edward treats patients across these services. Each one has its own page.',
       items: [
         {
           text: 'Back pain therapy',
@@ -139,12 +139,12 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: 'Dr. Ed is a Russian-speaking physical therapist in Chatsworth. He treats patients in English or Russian, so use whichever language is easier for you.',
+          text: 'Dr. Edward is a Russian-speaking physical therapist in Chatsworth. He treats patients in English or Russian, so use whichever language is easier for you.',
         },
         {
           type: 'p',
           lang: 'ru',
-          text: 'Доктор Эд говорит по-русски. Вы можете пройти приём и лечение на русском языке.',
+          text: 'Доктор Эдвард говорит по-русски. Вы можете пройти приём и лечение на русском языке.',
         },
       ],
     },
@@ -154,13 +154,13 @@ const page: PageContent = {
     },
     {
       kind: 'social',
-      h2: 'Follow Dr. Ed',
+      h2: 'Follow Dr. Edward',
       label: 'Follow',
     },
   ],
   booking: {
-    h2: 'Book your evaluation with Dr. Ed',
-    lead: 'Tell Dr. Ed what hurts and when you can come in. He will confirm your time by phone or email, usually the same day.',
+    h2: 'Book your evaluation with Dr. Edward',
+    lead: 'Tell Dr. Edward what hurts and when you can come in. He will confirm your time by phone or email, usually the same day.',
     service: 'Not sure yet',
   },
   related: [
@@ -170,11 +170,11 @@ const page: PageContent = {
     { text: 'Book an evaluation', href: '/contact/' },
   ],
   notes: [
-    "The third paragraph of the In Dr. Ed's words section is new first-person copy, built only from the confirmed facts: every visit himself, never handed off, about 60 minutes depending on what you need, 15+ years. Dr. Ed should read it before launch.",
+    "The third paragraph of the In Dr. Edward's words section is new first-person copy, built only from the confirmed facts: every visit himself, never handed off, about 60 minutes depending on what you need, 15+ years. Dr. Edward should read it before launch.",
     'The Russian sentence was written by Claude on Vlad\'s go (21 Oct 2026, answer 27: whatever you think is best) and is marked lang ru.',
     'The review is cut to its first three sentences so the page never uses the bare profession word; the fourth sentence of the review does. Remove the sentences field to show the full review.',
-    'NDT and PNF are named once, in How Dr. Ed works, and are not spelled out because the facts list does not spell them out.',
-    'The pediatric and neurological links sit in the Who Dr. Ed treats list, so they are not linked a second time in the copy.',
+    'NDT and PNF are named once, in How Dr. Edward works, and are not spelled out because the facts list does not spell them out.',
+    'The pediatric and neurological links sit in the Who Dr. Edward treats list, so they are not linked a second time in the copy.',
   ],
 };
 

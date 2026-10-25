@@ -48,4 +48,13 @@ def seo(pid):
         v = rulings().get(pid, {}).get(k)
         if v:
             out[k] = v
-    return out
+    return {k: edward(v) for k, v in out.items()}
+
+
+# Vlad, 24 Oct 2026: the site says "Dr. Edward", never "Dr. Ed". The blueprint and the older rulings keep their
+# original wording as records; the expected SEO fields read them through this one rename.
+_ED = re.compile(r"\b(?:Dr\.?|Doctor) Ed\b(?!ward)")
+
+
+def edward(v):
+    return _ED.sub('Dr. Edward', v) if isinstance(v, str) else v

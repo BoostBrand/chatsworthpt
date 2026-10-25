@@ -3,12 +3,12 @@ import type { PageContent } from '../lib/types';
 const page: PageContent = {
   id: 'P-037',
   path: '/blog/',
-  title: 'Blog | Chatsworth Physical Therapy, Dr. Ed Shut, DPT',
+  title: 'Blog | Chatsworth Physical Therapy, Dr. Edward Shut, DPT',
   description:
-    'Read plain answers from Dr. Ed Shut, DPT on recovery, referrals, Medicare, vertigo, ACL rehab and what to expect at physical therapy in Chatsworth.',
+    'Read plain answers from Dr. Edward Shut, DPT on recovery, referrals, Medicare, vertigo, ACL rehab and what to expect at physical therapy in Chatsworth.',
   hero: {
-    h1: 'Plain answers from Dr. Ed',
-    lede: 'Short answers to the questions patients ask Dr. Ed, from referrals and Medicare to what happens at your first visit.',
+    h1: 'Plain answers from Dr. Edward',
+    lede: 'Short answers to the questions patients ask Dr. Edward, from referrals and Medicare to what happens at your first visit.',
     book: 'Book my evaluation',
     stars: false,
   },
@@ -21,12 +21,12 @@ const page: PageContent = {
   ],
   booking: {
     h2: 'Book your evaluation',
-    lead: 'If a post does not answer your question, tell Dr. Ed what is going on and he will answer it at your evaluation. He will confirm your time by phone or email, usually the same day.',
+    lead: 'If a post does not answer your question, tell Dr. Edward what is going on and he will answer it at your evaluation. He will confirm your time by phone or email, usually the same day.',
     service: 'Not sure yet',
   },
   related: [
     { text: 'All services', href: '/our-services/' },
-    { text: 'About Dr. Ed', href: '/about-us/' },
+    { text: 'About Dr. Edward', href: '/about-us/' },
   ],
   notes: [
     'Built by the build lead. The post list is generated from src/content/blog/, newest first, so a new post needs no change here.',

@@ -1,5 +1,5 @@
 // Chatsworth Physical Therapy: every business fact, URL, tracking ID and build switch lives here once.
-// Pages, the footer and the JSON-LD read from this file. Facts confirmed by Vlad and Dr. Ed on 20 Oct 2026
+// Pages, the footer and the JSON-LD read from this file. Facts confirmed by Vlad and Dr. Edward on 20 Oct 2026
 // (claude/HANDOFF-chatsworthpt-next-session.md, "Facts confirmed"). Never paste these values into a page.
 
 export const SITE_URL = 'https://chatsworthpt.com';
@@ -30,13 +30,13 @@ export const BUSINESS = {
   opens: '10:00',
   closes: '20:00',
   openDays: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-  // The two ways a visitor pays that are confirmed (Dr. Ed's rulings and the listing's attributes).
+  // The two ways a visitor pays that are confirmed (Dr. Edward's rulings and the listing's attributes).
   paymentAccepted: 'Medicare, personal injury liens, credit and debit cards, HSA and FSA cards, checks, Zelle, Venmo',
   languages: ['en', 'ru'],
   doctor: {
     name: 'Edward Shut',
     display: 'Dr. Edward Shut, DPT',
-    short: 'Dr. Ed',
+    short: 'Dr. Edward',
     license: 'PT 301809',
     licenseNumber: '301809',
   },

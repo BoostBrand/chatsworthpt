@@ -3,13 +3,13 @@ import type { PostContent } from '../../lib/types';
 const post: PostContent = {
   id: 'P-048',
   path: '/blog/sciatica-disc-or-hip/',
-  title: 'Sciatica: Disc or Hip? How the Evaluation Tells | Dr. Ed',
-  description: 'Leg pain called sciatica can start at the disc or at a tight hip muscle, and the treatment differs. Dr. Ed Shut, DPT explains how the evaluation tells.',
+  title: 'Sciatica: Disc or Hip? How the Evaluation Tells | Dr. Edward',
+  description: 'Leg pain called sciatica can start at the disc or at a tight hip muscle, and the treatment differs. Dr. Edward Shut, DPT explains how the evaluation tells.',
   h1: 'Sciatica: is it the disc or the hip? How a physical therapy evaluation tells',
   datePublished: '2026-10-21',
   parent: { text: 'Sciatica', href: '/conditions/sciatica/' },
-  summary: 'How Dr. Ed tells a disc problem from a tight hip muscle when leg pain is called sciatica.',
-  answer: 'Sciatica is leg pain from an irritated nerve, and the irritation usually comes from a disc or from a tight muscle in the hip. A physical therapy evaluation tells which: Dr. Ed watches how you stand, bend, twist, sit and walk, tests the hips and checks whether a nerve is involved, because the cause is often somewhere other than where it hurts.',
+  summary: 'How Dr. Edward tells a disc problem from a tight hip muscle when leg pain is called sciatica.',
+  answer: 'Sciatica is leg pain from an irritated nerve, and the irritation usually comes from a disc or from a tight muscle in the hip. A physical therapy evaluation tells which: Dr. Edward watches how you stand, bend, twist, sit and walk, tests the hips and checks whether a nerve is involved, because the cause is often somewhere other than where it hurts.',
   body: [
     { type: 'h2', text: 'What the word sciatica means' },
     {
@@ -24,7 +24,7 @@ const post: PostContent = {
     { type: 'h2', text: 'Two places the nerve can be irritated' },
     {
       type: 'p',
-      text: 'Dr. Ed\'s treatment aims at what is irritating the nerve, usually a disc or a tight muscle in the hip, and at the movements that keep irritating it. Which one it is shapes the plan.',
+      text: 'Dr. Edward\'s treatment aims at what is irritating the nerve, usually a disc or a tight muscle in the hip, and at the movements that keep irritating it. Which one it is shapes the plan.',
     },
     {
       type: 'p',
@@ -32,7 +32,7 @@ const post: PostContent = {
     },
     {
       type: 'p',
-      text: 'On the hip side, [the National Institute of Neurological Disorders and Stroke](https://www.ninds.nih.gov/health-information/disorders/piriformis-syndrome) describes piriformis syndrome. It happens when the piriformis, a thin muscle in the buttocks that allows the hip to rotate, presses against the sciatic nerve. StatPearls says that, because the sciatic nerve is so close, any injury or inflammation of that muscle can cause sciatica symptoms. Sciatica that starts at a tight hip muscle is a specialty of Dr. Ed, and he sees it often.',
+      text: 'On the hip side, [the National Institute of Neurological Disorders and Stroke](https://www.ninds.nih.gov/health-information/disorders/piriformis-syndrome) describes piriformis syndrome. It happens when the piriformis, a thin muscle in the buttocks that allows the hip to rotate, presses against the sciatic nerve. StatPearls says that, because the sciatic nerve is so close, any injury or inflammation of that muscle can cause sciatica symptoms. Sciatica that starts at a tight hip muscle is a specialty of Dr. Edward, and he sees it often.',
     },
     {
       type: 'p',
@@ -42,7 +42,7 @@ const post: PostContent = {
     { type: 'h2', text: 'How the evaluation tells them apart' },
     {
       type: 'p',
-      text: 'Dr. Ed does not start with the sore spot. This is the sequence, in order:',
+      text: 'Dr. Edward does not start with the sore spot. This is the sequence, in order:',
     },
     {
       type: 'ol',
@@ -53,7 +53,7 @@ const post: PostContent = {
         'He explains what he found in plain terms and tells you what the plan is.',
       ],
     },
-    { type: 'image', image: { src: '/img/back-pain-therapy-chatsworth.webp', width: 900, height: 900, alt: 'Dr. Ed guiding a patient through a core stability exercise for back pain at Chatsworth Physical Therapy' } },
+    { type: 'image', image: { src: '/img/back-pain-therapy-chatsworth.webp', width: 900, height: 900, alt: 'Dr. Edward guiding a patient through a core stability exercise for back pain at Chatsworth Physical Therapy' } },
     {
       type: 'p',
       text: 'Two steps speak to the question in the title: he tests the hips, and he checks whether a nerve is involved. The cause is often somewhere other than where it hurts. The evaluation is where he finds it, at a disc, in a tight hip muscle or somewhere else.',
@@ -121,19 +121,19 @@ const post: PostContent = {
   ],
   booking: {
     h2: 'Book your sciatica evaluation',
-    lead: 'Dr. Ed examines how you move, looks for what is causing the pain and explains it in plain terms. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Dr. Edward examines how you move, looks for what is causing the pain and explains it in plain terms. He will confirm your time by phone or email, usually the same day.',
     service: 'Back pain',
   },
   related: [
     { text: 'All posts', href: '/blog/' },
     { text: 'Sciatica', href: '/conditions/sciatica/' },
-    { text: 'About Dr. Ed', href: '/about-us/' },
+    { text: 'About Dr. Edward', href: '/about-us/' },
   ],
   notes: [
-    'Hip side: the post sets the NINDS piriformis syndrome page beside the approved line "a tight muscle in the hip" as the medical reference for the hip cause. It does not say the two are the same thing. Dr. Ed to confirm he is happy with that placement.',
+    'Hip side: the post sets the NINDS piriformis syndrome page beside the approved line "a tight muscle in the hip" as the medical reference for the hip cause. It does not say the two are the same thing. Dr. Edward to confirm he is happy with that placement.',
     'NINDS calls piriformis syndrome a rare disorder. The post makes no claim about how common the hip cause is, so the word is not printed. Decide whether to add it.',
     'The warning-signs list prints five of the nine MedlinePlus signs under "They include" and points to the full list on the source.',
-    'The AAOS exam sentence (squat and rise, heel and toe walking, straight-leg raising) describes what a doctor may do in general, not Dr. Ed\'s own tests. Cut it if it blurs the proof element.',
+    'The AAOS exam sentence (squat and rise, heel and toe walking, straight-leg raising) describes what a doctor may do in general, not Dr. Edward\'s own tests. Cut it if it blurs the proof element.',
     'The line "The clinic\'s approach comes down to one line" follows the approved sciatica FAQ answer. It names no page, because the sciatica page was not read for this build.',
     'Photo: no real frame exists yet, so the body holds the placeholder block from the decision sheet.',
   ],

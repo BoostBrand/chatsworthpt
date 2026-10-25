@@ -11,7 +11,7 @@ const OUT = new URL('../src/data/', import.meta.url);
 // Names come from the site tree in blueprint section 3. `crumb` is the visible breadcrumb label.
 const META = {
   'P-001': { name: 'Home', type: 'home', file: 'home' },
-  'P-002': { name: 'About Dr. Ed', type: 'about', file: 'about-us' },
+  'P-002': { name: 'About Dr. Edward', type: 'about', file: 'about-us' },
   'P-003': { name: 'Services', full: 'Services hub', type: 'services-hub', file: 'our-services' },
   'P-004': { name: 'Back pain therapy', type: 'service', file: 'back-pain-therapy' },
   'P-005': { name: 'Sports injury recovery', type: 'service', file: 'sports-injury-recovery' },

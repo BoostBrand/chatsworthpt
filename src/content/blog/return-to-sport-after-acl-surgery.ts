@@ -3,21 +3,21 @@ import type { PostContent } from '../../lib/types';
 const post: PostContent = {
   id: 'P-046',
   path: '/blog/return-to-sport-after-acl-surgery/',
-  title: 'Return to Sport After ACL Surgery: The Tests | Dr. Ed, DPT',
+  title: 'Return to Sport After ACL Surgery: The Tests | Dr. Edward',
   description:
-    'Pain gone is not the same as ready to play. Dr. Ed Shut, DPT explains the hop, cutting and strength tests an athlete passes before returning after ACL.',
+    'Pain gone is not the same as ready to play. Dr. Edward Shut, DPT explains the hop, cutting and strength tests an athlete passes before returning after ACL.',
   h1: 'Return to sport after ACL surgery: the tests you pass before you play',
   datePublished: '2026-10-21',
   parent: { text: 'ACL recovery', href: '/conditions/acl-recovery/' },
   summary:
     'Why a pain-free knee is not yet a ready knee, and the strength, hop and cutting tests to pass before you play again.',
   answer:
-    'Before you play again after ACL surgery, pass strength, single-leg hop and cutting tests; the pain stopping or the months going by is not enough on its own. Dr. Ed runs the rehab in stages and retests you against what your sport demands before you go full speed.',
+    'Before you play again after ACL surgery, pass strength, single-leg hop and cutting tests; the pain stopping or the months going by is not enough on its own. Dr. Edward runs the rehab in stages and retests you against what your sport demands before you go full speed.',
   body: [
     { type: 'h2', text: 'Why a pain-free knee is not a ready knee' },
     {
       type: 'p',
-      text: 'Pain going away is not the same as being ready to play. The injury that comes back is usually the one that was rested, felt fine and was never retested. So Dr. Ed does not go by how the knee feels, or by the calendar alone. He retests you.',
+      text: 'Pain going away is not the same as being ready to play. The injury that comes back is usually the one that was rested, felt fine and was never retested. So Dr. Edward does not go by how the knee feels, or by the calendar alone. He retests you.',
     },
     {
       type: 'p',
@@ -25,7 +25,7 @@ const post: PostContent = {
     },
     {
       type: 'p',
-      text: 'That was one study of one group, so it is not a forecast for you. It does show that both time and thigh strength count. Dr. Ed tests each stage before the next one starts.',
+      text: 'That was one study of one group, so it is not a forecast for you. It does show that both time and thigh strength count. Dr. Edward tests each stage before the next one starts.',
     },
 
     { type: 'h2', text: 'The tests, in plain terms' },
@@ -46,7 +46,7 @@ const post: PostContent = {
         },
         {
           lead: 'Cutting.',
-          text: 'Planting your foot and changing direction at speed. Dr. Ed tests it if your sport calls for it.',
+          text: 'Planting your foot and changing direction at speed. Dr. Edward tests it if your sport calls for it.',
         },
       ],
     },
@@ -60,10 +60,10 @@ const post: PostContent = {
     },
     { type: 'image', image: { src: '/img/sports-injury-rehab-chatsworth.webp', width: 900, height: 900, alt: 'Ankle treatment during a sports injury rehab session in Chatsworth' } },
 
-    { type: 'h2', text: 'How Dr. Ed stages it' },
+    { type: 'h2', text: 'How Dr. Edward stages it' },
     {
       type: 'p',
-      text: "Dr. Ed works from your surgeon's protocol, not from a generic plan, and runs rehab in stages:",
+      text: "Dr. Edward works from your surgeon's protocol, not from a generic plan, and runs rehab in stages:",
     },
     {
       type: 'ol',
@@ -76,7 +76,7 @@ const post: PostContent = {
     },
     {
       type: 'p',
-      text: "You know where you are at every visit and what the next gate is, the test you pass to move on. ACL recovery is a nine-to-twelve-month road for an athlete, done in stages and tested before each one. How long yours takes depends on the surgery and your surgeon's timeline, and Dr. Ed gives you a realistic answer at the evaluation and updates it as you progress.",
+      text: "You know where you are at every visit and what the next gate is, the test you pass to move on. ACL recovery is a nine-to-twelve-month road for an athlete, done in stages and tested before each one. How long yours takes depends on the surgery and your surgeon's timeline, and Dr. Edward gives you a realistic answer at the evaluation and updates it as you progress.",
     },
     {
       type: 'p',
@@ -134,7 +134,7 @@ const post: PostContent = {
   related: [
     { text: 'All posts', href: '/blog/' },
     { text: 'ACL recovery', href: '/conditions/acl-recovery/' },
-    { text: 'About Dr. Ed', href: '/about-us/' },
+    { text: 'About Dr. Edward', href: '/about-us/' },
   ],
   notes: [
     'The nine-to-twelve-month wording is the approved ACL line from the decision sheet. The Grindem finding about nine months is a separate research statement and is cited as such.',

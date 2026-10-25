@@ -8,7 +8,7 @@ const page: PageContent = {
     'Book an evaluation or call (818) 749-3205. 19851 Nordhoff Place, Unit 105 (Suite C), Chatsworth, CA, 91311. Mon to Sat 10am to 8pm. Park free in front.',
   hero: {
     h1: 'Contact Chatsworth Physical Therapy: book, call or visit',
-    lede: 'Book online or call. Dr. Ed confirms your time, usually the same day.',
+    lede: 'Book online or call. Dr. Edward confirms your time, usually the same day.',
   },
   sections: [
     {
@@ -21,7 +21,7 @@ const page: PageContent = {
         },
         {
           type: 'p',
-          text: 'Dr. Ed speaks English and Russian, so you can be treated in either.',
+          text: 'Dr. Edward speaks English and Russian, so you can be treated in either.',
         },
       ],
     },
@@ -49,10 +49,10 @@ const page: PageContent = {
         {
           type: 'ol',
           items: [
-            'Dr. Ed confirms your time by phone or email, usually the same day. If an evening or Saturday time suits you better, say so when you book.',
+            'Dr. Edward confirms your time by phone or email, usually the same day. If an evening or Saturday time suits you better, say so when you book.',
             'Wear clothes you can move in. Shorts work for a knee, hip or ankle problem. A tank top or loose shirt works for the shoulder, neck or back.',
-            'At your first visit, Dr. Ed examines how you move, finds what is causing the pain and explains it in plain terms.',
-            'After that, Dr. Ed sets your plan instead of guessing how many visits you will need. It combines hands-on treatment in the clinic with a short home program, adjusted each visit as you progress.',
+            'At your first visit, Dr. Edward examines how you move, finds what is causing the pain and explains it in plain terms.',
+            'After that, Dr. Edward sets your plan instead of guessing how many visits you will need. It combines hands-on treatment in the clinic with a short home program, adjusted each visit as you progress.',
           ],
         },
         {
@@ -82,7 +82,7 @@ const page: PageContent = {
   notes: [
     'Drive times are left out on purpose (build lead ruling). The marker in the Getting here section covers the routes only.',
     'Wheelchair access: this page relies on the facts table access row to print the approved line. If the table does not print it, add the approved line to the parking paragraph.',
-    'What to bring: only the approved what-to-wear facts are used. A document list (photo ID, insurance card, referral, imaging) needs an answer from Dr. Ed before it goes on the page.',
+    'What to bring: only the approved what-to-wear facts are used. A document list (photo ID, insurance card, referral, imaging) needs an answer from Dr. Edward before it goes on the page.',
     'No front door or parking lot photo placeholder added: the entry gives a shoot list line, not a photo description.',
     'This page has no insurance section, so the three site-wide lines do not print here. The page points to Insurance and cost instead.',
   ],

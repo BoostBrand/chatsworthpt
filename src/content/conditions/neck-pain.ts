@@ -4,13 +4,13 @@ const page: PageContent = {
   id: 'P-024',
   path: '/conditions/neck-pain/',
   title: 'Neck Pain and Pinched Nerve Physical Therapy | Chatsworth',
-  description: 'Neck pain or a pinched nerve that massage and adjustments never fixed for long: Dr. Ed finds the cause and treats it one-on-one in Chatsworth. Book now.',
+  description: 'Neck pain or a pinched nerve that massage and adjustments never fixed for long: Dr. Edward finds the cause and treats it one-on-one in Chatsworth. Book.',
   hero: {
     h1: 'Neck pain and pinched nerve physical therapy in Chatsworth',
-    lede: 'Massage and adjustments never fixed it for long. Dr. Ed finds the cause and treats it himself, one-on-one.',
+    lede: 'Massage and adjustments never fixed it for long. Dr. Edward finds the cause and treats it himself, one-on-one.',
     image: {
       src: '/img/hero-dr-ed-treating-patient-chatsworth.webp',
-      alt: 'Dr. Ed Shut guiding a patient through a back exercise on the treatment table at Chatsworth Physical Therapy',
+      alt: 'Dr. Edward Shut guiding a patient through a back exercise on the treatment table at Chatsworth Physical Therapy',
       width: 1800,
       height: 1125,
       srcMobile: '/img/hero-dr-ed-treating-patient-chatsworth-mobile.webp',
@@ -29,11 +29,11 @@ const page: PageContent = {
         },
         {
           lead: 'Pain, tingling or weakness runs into your arm.',
-          text: 'It may be a pinched nerve, and it may not. Dr. Ed tests the nerve so you know which.',
+          text: 'It may be a pinched nerve, and it may not. Dr. Edward tests the nerve so you know which.',
         },
         {
           lead: 'Headaches seem to start in your neck.',
-          text: 'Dr. Ed checks if your neck is behind them.',
+          text: 'Dr. Edward checks if your neck is behind them.',
         },
         {
           lead: 'Desk work and phone time make it worse.',
@@ -41,14 +41,14 @@ const page: PageContent = {
         },
         {
           lead: 'Massage and adjustments only help for a short while.',
-          text: 'The relief fades and the pain returns, sometimes for years. Dr. Ed looks for the cause behind it.',
+          text: 'The relief fades and the pain returns, sometimes for years. Dr. Edward looks for the cause behind it.',
         },
       ],
     },
     {
       kind: 'prose',
-      h2: 'What Dr. Ed does about it',
-      intro: 'Dr. Ed builds your physical therapy plan around what the evaluation finds. The work can include:',
+      h2: 'What Dr. Edward does about it',
+      intro: 'Dr. Edward builds your physical therapy plan around what the evaluation finds. The work can include:',
       blocks: [
         {
           type: 'leads',
@@ -83,11 +83,11 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: 'Your first visit is an evaluation, one-on-one with Dr. Ed. He checks how your neck moves, tests the nerve and explains what he found in plain terms.',
+          text: 'Your first visit is an evaluation, one-on-one with Dr. Edward. He checks how your neck moves, tests the nerve and explains what he found in plain terms.',
         },
         {
           type: 'p',
-          text: 'Then comes a plan: hands-on treatment in the clinic and a short home program that Dr. Ed adjusts as you improve.',
+          text: 'Then comes a plan: hands-on treatment in the clinic and a short home program that Dr. Edward adjusts as you improve.',
         },
         {
           type: 'p',
@@ -135,22 +135,22 @@ const page: PageContent = {
       items: [
         {
           q: 'Is it a pinched nerve?',
-          a: 'Dr. Ed tests the nerve as part of your evaluation, so you find out instead of guessing. If it is a pinched nerve, treatment aims at what is pressing on it.',
+          a: 'Dr. Edward tests the nerve as part of your evaluation, so you find out instead of guessing. If it is a pinched nerve, treatment aims at what is pressing on it.',
         },
         {
           q: 'Do I need an MRI?',
-          a: 'Not usually. Dr. Ed examines you first. If your signs call for an MRI, he will say so.',
+          a: 'Not usually. Dr. Edward examines you first. If your signs call for an MRI, he will say so.',
         },
         {
           q: 'Can you help after neck surgery?',
-          a: 'Yes. Dr. Ed works with people who have [nerve weakness after surgery](/neurological-rehabilitation/), and a patient tells his own story on that page.',
+          a: 'Yes. Dr. Edward works with people who have [nerve weakness after surgery](/neurological-rehabilitation/), and a patient tells his own story on that page.',
         },
       ],
     },
   ],
   booking: {
     h2: 'Book your neck pain evaluation',
-    lead: 'Tell Dr. Ed where it hurts and what you have already tried. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward where it hurts and what you have already tried. He will confirm your time by phone or email, usually the same day.',
     service: 'Back pain',
   },
   related: [
@@ -169,8 +169,8 @@ const page: PageContent = {
   notes: [
     'Photo: the entry asks for a cervical hands-on frame (Gabby). Until it is shot, the page uses the homepage hero frame, as the build lead decided.',
     'No blog post is named in the entry links out and none about neck pain exists in pages.json, so Related pages lists the parent service and the two sibling conditions only.',
-    'What to expect: the entry asks for how long it usually takes, said plainly with no fixed numbers. No duration is in the facts, so the page says it depends on the neck and how the body responds, and that Dr. Ed says what to expect after the evaluation. Dr. Ed can add a plain range in words if he wants one.',
-    'The hero lede is new wording built from the entry meta description. Vlad or Dr. Ed to approve.',
+    'What to expect: the entry asks for how long it usually takes, said plainly with no fixed numbers. No duration is in the facts, so the page says it depends on the neck and how the body responds, and that Dr. Edward says what to expect after the evaluation. Dr. Edward can add a plain range in words if he wants one.',
+    'The hero lede is new wording built from the entry meta description. Vlad or Dr. Edward to approve.',
   ],
 };
 

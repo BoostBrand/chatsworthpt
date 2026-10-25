@@ -3,12 +3,12 @@ import type { PageContent } from '../lib/types';
 const page: PageContent = {
   id: 'P-036',
   path: '/physical-therapy-porter-ranch/',
-  title: 'Physical Therapy Near Porter Ranch | Dr. Ed Shut, DPT',
+  title: 'Physical Therapy Near Porter Ranch | Dr. Edward Shut, DPT',
   description:
-    "Physical therapy for Porter Ranch families, one-on-one with Dr. Ed Shut, DPT in nearby Chatsworth. Book an evaluation.",
+    "Physical therapy for Porter Ranch families, one-on-one with Dr. Edward Shut, DPT in nearby Chatsworth. Book an evaluation.",
   hero: {
     h1: 'Physical therapy for Porter Ranch families, one-on-one in nearby Chatsworth',
-    lede: 'Dr. Ed sees patients at 19851 Nordhoff Place, Unit 105, in Chatsworth, under 4 miles from Porter Ranch Town Center straight down Corbin Avenue.',
+    lede: 'Dr. Edward sees patients at 19851 Nordhoff Place, Unit 105, in Chatsworth, under 4 miles from Porter Ranch Town Center straight down Corbin Avenue.',
     book: 'Book my evaluation',
   },
   sections: [
@@ -25,7 +25,7 @@ const page: PageContent = {
           items: [
             {
               lead: 'One doctor, every visit.',
-              text: 'Dr. Ed is a Doctor of Physical Therapy. He evaluates you on day one and treats you himself, one-on-one, at every visit after that.',
+              text: 'Dr. Edward is a Doctor of Physical Therapy. He evaluates you on day one and treats you himself, one-on-one, at every visit after that.',
             },
             {
               lead: 'Evenings and Saturdays.',
@@ -63,11 +63,11 @@ const page: PageContent = {
           items: [
             {
               lead: 'Kids and teens.',
-              text: 'Dr. Ed provides [pediatric physical therapy](/pediatric-physical-therapy/) for school-age children and teenagers, gymnasts and dancers included.',
+              text: 'Dr. Edward provides [pediatric physical therapy](/pediatric-physical-therapy/) for school-age children and teenagers, gymnasts and dancers included.',
             },
             {
               lead: 'Sports injuries.',
-              text: 'Dr. Ed treats sprains, strains, ACL and rotator cuff injuries under [sports injury recovery](/sports-injury-recovery/), through to the return to sport.',
+              text: 'Dr. Edward treats sprains, strains, ACL and rotator cuff injuries under [sports injury recovery](/sports-injury-recovery/), through to the return to sport.',
             },
             {
               lead: 'Balance and dizziness.',
@@ -75,7 +75,7 @@ const page: PageContent = {
             },
             {
               lead: 'Before and after surgery.',
-              text: 'Dr. Ed offers [pre and post-op physical therapy](/pre-post-surgical-rehabilitation/), from prehab before the operation to recovery after knee, hip and shoulder surgery.',
+              text: 'Dr. Edward offers [pre and post-op physical therapy](/pre-post-surgical-rehabilitation/), from prehab before the operation to recovery after knee, hip and shoulder surgery.',
             },
             {
               lead: 'Back pain.',
@@ -96,11 +96,11 @@ const page: PageContent = {
         },
         {
           q: 'Do you treat kids?',
-          a: 'Yes. Dr. Ed treats school-age children and teenagers only, and a parent stays in the room for every visit. That includes gymnasts, dancers and other young athletes.',
+          a: 'Yes. Dr. Edward treats school-age children and teenagers only, and a parent stays in the room for every visit. That includes gymnasts, dancers and other young athletes.',
         },
         {
           q: 'Do you take Medicare?',
-          a: 'Yes. Dr. Ed accepts Medicare. Medicare patients need a referral from the start, so ask your doctor for one before you begin.',
+          a: 'Yes. Dr. Edward accepts Medicare. Medicare patients need a referral from the start, so ask your doctor for one before you begin.',
         },
         {
           q: 'Is parking easy?',
@@ -111,7 +111,7 @@ const page: PageContent = {
   ],
   booking: {
     h2: 'Book your evaluation',
-    lead: 'Tell Dr. Ed what hurts and which days work for you. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward what hurts and which days work for you. He will confirm your time by phone or email, usually the same day.',
     service: 'Not sure yet',
   },
   related: [
@@ -122,7 +122,7 @@ const page: PageContent = {
   schema: { areaServed: ['Porter Ranch'] },
   notes: [
     'Live (Vlad, 23 Oct 2026: both city pages go live at launch, CITY_PAGES_LIVE true). Linked from the homepage service-area line and the contact page directions.',
-    'Entry rule: if Dr. Ed confirms no Porter Ranch reviews and no school or club families, section 3 is cut and the page is not built. Nobody knows which reviewers live here (Vlad, 23 Oct 2026), so the reviewer section is cut; Vlad chose to publish the page anyway.',
+    'Entry rule: if Dr. Edward confirms no Porter Ranch reviews and no school or club families, section 3 is cut and the page is not built. Nobody knows which reviewers live here (Vlad, 23 Oct 2026), so the reviewer section is cut; Vlad chose to publish the page anyway.',
     'Section 2 uses the build lead places-search wording of 21 Oct 2026, with the marker [verify before launch]. It does not name another clinic.',
     'The meta description is the entry text and says Porter Ranch has no physical therapy clinic of its own. The places result supports only that no clinic was found with a Porter Ranch address. Decide whether to soften the meta line before launch.',
     'The H1 and meta description say nearby and a short drive away. Both depend on the route and drive time check in the hero lede, the Getting here section and the first FAQ.',

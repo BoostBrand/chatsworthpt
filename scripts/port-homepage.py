@@ -14,6 +14,18 @@ src = (ROOT / 'reference/HOMEPAGE-DRAFT4-chatsworthpt.html').read_text(encoding=
 main = src[src.index('<main id="top">') + len('<main id="top">'):src.index('</main>')]
 ld = json.loads(src[src.index('<script type="application/ld+json">') + len('<script type="application/ld+json">'):src.index('</script>', src.index('<script type="application/ld+json">'))])
 
+# Vlad, 24 Oct 2026: the site says "Dr. Edward", never "Dr. Ed". Patients' review words are quoted as written,
+# so review bodies are never renamed; every authored line is (markup below, FAQ and video data here).
+ED = re.compile(r"\b(?:Dr\.?|Doctor) Ed\b(?!ward)")
+for node in ld['@graph']:
+    if node['@type'] == 'FAQPage':
+        for m in node['mainEntity']:
+            m['name'] = ED.sub('Dr. Edward', m['name'])
+            m['acceptedAnswer']['text'] = ED.sub('Dr. Edward', m['acceptedAnswer']['text'])
+    if node['@type'] == 'VideoObject':
+        for k in ('name', 'description'):
+            node[k] = ED.sub('Dr. Edward', node[k])
+
 def sub(old, new, count=1):
     global main
     n = main.count(old)
@@ -62,7 +74,7 @@ sub(cond_old, cond_new)
 social_old = re.search(r'<div class="social" aria-label="Chatsworth Physical Therapy on social media"><span>Follow Dr\. Ed</span>.*?</div>', main, re.S)
 if not social_old:
     sys.exit('About-band social row not found')
-main = main.replace(social_old.group(0), '<SocialIcons label="Follow Dr. Ed" />')
+main = main.replace(social_old.group(0), '<SocialIcons label="Follow Dr. Edward" />')
 
 # How your first visit works links to /first-visit/ (same heading text).
 sub('<h2 id="h-steps">How your first visit works</h2>', '<h2 id="h-steps"><a class="h-link" href="/first-visit/">How your first visit works</a></h2>')
@@ -80,6 +92,62 @@ sub('<p class="service-area">Patients come from Chatsworth, Porter Ranch, Northr
 # The one bare phone number in the approved copy (the insurance FAQ) becomes a tap-to-call link; words unchanged.
 sub('Direct-pay patients are welcome. Call (818) 749-3205 and we will walk you through the cost before your first visit.</p>',
     'Direct-pay patients are welcome. Call <a href="tel:+18187493205">(818) 749-3205</a> and we will walk you through the cost before your first visit.</p>')
+
+# Edits made in the build after the port, now carried here so a rerun keeps them:
+# Vlad's ruling (a), 21 Oct: the trust row; Vlad, 23 Oct: a comma after CA; Vlad, 23 Oct: the Russian line in the booking band.
+sub('<strong>Medicare accepted</strong>No referral needed to start. Call and begin this week.',
+    '<strong>Medicare accepted</strong>Most patients need no referral to start. Call and begin this week.')
+sub('Chatsworth, CA 91311<small>Between Winnetka', 'Chatsworth, CA, 91311<small>Between Winnetka')
+sub('<small>Dr. Ed answers his own phone.</small></p>\n',
+    '<small>Dr. Ed answers his own phone.</small></p>\n      <p class="ru-line" lang="ru">Говорим по-русски</p>\n')
+
+# Dr. Edward's homepage feedback, email of 24 Oct 2026 (brief: Vlad's CLAUDE-BRIEF-Ed-homepage-feedback-2026-10-24.md).
+# Item 4: the mosaic caption goes; the group gets a neutral label.
+sub('\n        <p class="mosaic-caption">Real sessions at the clinic. Every one of them is Dr. Ed.</p>', '')
+sub('<div class="mosaic" aria-label="Real sessions at the clinic">', '<div class="mosaic" aria-label="Physical therapy treatments">')
+# Item 3: the mosaic is static (no hover or focus photo swap), and the knee ultrasound tile becomes a hands-on
+# leg mobility photo (Drive: rehab-therapy-manual-therapy-knee-exercise-chatsworth-pt.jpg, 16CCdLRlqOluKGWM77sXA0_m6ASuUr2T_).
+swap = re.search(r'<img class="mosaic-swap" id="mosaic-swap" [^>]*>', main)
+if not swap:
+    sys.exit('Mosaic swap image not found')
+main = main.replace(swap.group(0), '')
+sub('<a href="/back-pain-therapy/" id="mosaic-lead">', '<a href="/back-pain-therapy/">')
+n = len(re.findall(r' data-photo="/img/[^"]+"', main))
+if n != 4:
+    sys.exit(f'Expected 4 data-photo attributes, found {n}')
+main = re.sub(r' data-photo="/img/[^"]+"', '', main)
+sub('<img src="/img/post-op-physical-therapy-chatsworth.webp" width="900" height="900" alt="Knee taping during post-op physical therapy in Chatsworth"',
+    '<img src="/img/dr-edward-hands-on-leg-mobility-chatsworth.webp" width="900" height="900" alt="Dr. Edward guiding a patient\'s bent leg through a hands-on mobility exercise"')
+# Item 2: the homepage no longer repeats the About page; a short section on how the plan is built takes its place.
+about = re.search(r'<section class="about band" id="about" aria-labelledby="h-about">.*?</section>', main, re.S)
+if not about:
+    sys.exit('About band not found')
+main = main.replace(about.group(0), """<section class="about approach band" id="approach" aria-labelledby="h-approach">
+  <div class="wrap">
+    <figure class="portrait"><img src="/img/dr-ed-shut-in-clinic-chatsworth.webp" width="1000" height="1000" alt="Dr. Edward Shut, DPT, at his desk in the Chatsworth Physical Therapy clinic" loading="lazy" decoding="async"></figure>
+    <div class="about-copy">
+      <h2 id="h-approach">A plan built around your movement</h2>
+      <p>Back pain, a sports injury and recovery after surgery call for different treatment plans. Dr. Edward starts with an evaluation of how you move and what you need to get back to. Treatment may include hands-on techniques, guided exercise and a short home program. Your plan is adjusted as you progress.</p>
+      <p class="approach-links"><a class="btn btn-light" href="/our-services/">Explore our treatments</a><a class="approach-about" href="/about-us/">Meet Dr. Edward</a></p>
+    </div>
+  </div>
+</section>""")
+# Item 6: the service-area sentence is plain text; the two area pages get their own labelled line.
+sub('<p class="service-area">Patients come from Chatsworth, {CITY_PAGES_LIVE ? <a href="/physical-therapy-porter-ranch/">Porter Ranch</a> : \'Porter Ranch\'}, '
+    '{CITY_PAGES_LIVE ? <a href="/physical-therapy-northridge/">Northridge</a> : \'Northridge\'}, West Hills, Canoga Park, Granada Hills and Simi Valley.</p>',
+    '<p class="service-area">Patients come from Chatsworth, Porter Ranch, Northridge, West Hills, Canoga Park, Granada Hills and Simi Valley.</p>\n'
+    '      {CITY_PAGES_LIVE && <p class="area-links">Explore nearby areas: <a href="/physical-therapy-porter-ranch/">Porter Ranch</a><span aria-hidden="true">|</span><a href="/physical-therapy-northridge/">Northridge</a></p>}')
+# Item 5: booking band photo, the frame two shots earlier in which Dr. Edward is not laughing (Drive "With Meta Data On It",
+# 31-REL08860.jpg, 10lNyODk8SHNKMbAlbFMH7rMQj7_SQ-mm; same crop as the old file, which came from 32-REL08862.jpg).
+# Only the homepage changes: the old file stays for the pages that use it. Alt made neutral (the seated man is Vlad, not a patient).
+sub('<img src="/img/dr-ed-explaining-anatomy-chatsworth.webp" width="1200" height="960" alt="Dr. Ed explaining an anatomy chart to a patient"',
+    '<img src="/img/dr-edward-anatomy-chart-chatsworth.webp" width="1200" height="960" alt="Dr. Edward explaining an anatomy chart in the Chatsworth clinic"')
+# Item 1: every authored "Dr. Ed" in the markup becomes "Dr. Edward". The homepage review cards hold no
+# instance (checked here), so no patient's words change.
+reviews_band = re.search(r'<section class="reviews band".*?</section>', main, re.S)
+if reviews_band and ED.search(reviews_band.group(0)):
+    sys.exit('A review card on the homepage names Dr. Ed: decide how to quote it before renaming')
+main = ED.sub('Dr. Edward', main)
 
 # Booking form: the shared component renders the approved form, or the call panel while the key is a placeholder.
 form = re.search(r'<form class="form" id="book-form" novalidate>.*?</form>', main, re.S)
@@ -111,11 +179,11 @@ home_ts = f"""// Homepage (P-001). The approved draft 9 copy is ported unchanged
 export default {{
   id: 'P-001',
   path: '/',
-  title: 'Physical Therapy in Chatsworth, CA | Dr. Ed Shut, DPT',
-  description: 'Physical therapy in Chatsworth, CA with Dr. Ed Shut, DPT. One-on-one visits for back pain, sports injuries, post-op rehab, balance and vertigo. Book today.',
-  ogTitle: 'Physical Therapy in Chatsworth, CA | Dr. Ed Shut, DPT',
+  title: 'Physical Therapy in Chatsworth, CA | Dr. Edward Shut, DPT',
+  description: 'Physical therapy in Chatsworth with Dr. Edward Shut, DPT. One-on-one visits for back pain, sports injuries, post-op rehab, balance and vertigo. Book today.',
+  ogTitle: 'Physical Therapy in Chatsworth, CA | Dr. Edward Shut, DPT',
   ogDescription: 'One-on-one physical therapy with a Doctor of Physical Therapy. Back pain, sports injuries, pre and post-op rehab, balance and vertigo. Evening and Saturday hours.',
-  h1: 'Physical therapy in Chatsworth, one-on-one with Dr. Ed',
+  h1: 'Physical therapy in Chatsworth, one-on-one with Dr. Edward',
   // The four reviews the approved homepage shows, as the approved graph marks them up.
   reviews: {json.dumps(reviews, ensure_ascii=False, indent=2)},
   faqs: {json.dumps([{'q': m['name'], 'a': m['acceptedAnswer']['text']} for m in faq_ld], ensure_ascii=False, indent=2)},
@@ -129,7 +197,6 @@ index = """---
 // the markup, edit the port script and run it again). Copy, structure and motion are unchanged; links to
 // inner pages, root-relative asset paths, inline social icons and the booking switch are the only edits.
 import BaseLayout from '../layouts/BaseLayout.astro';
-import SocialIcons from '../components/SocialIcons.astro';
 import BookingForm from '../components/kit/BookingForm.astro';
 import home from '../content/home';
 import { CITY_PAGES_LIVE } from '../data/site';
@@ -156,7 +223,7 @@ const schema = graph([
     url: abs('/img/hero-dr-ed-treating-patient-chatsworth.webp'),
     width: 1800,
     height: 1125,
-    caption: 'Dr. Ed Shut guiding a patient through a back exercise on the treatment table at Chatsworth Physical Therapy',
+    caption: 'Dr. Edward Shut guiding a patient through a back exercise on the treatment table at Chatsworth Physical Therapy',
     creditText: 'Chatsworth Physical Therapy',
     copyrightNotice: 'Chatsworth Physical Therapy',
     creator: { '@id': CLINIC_ID },

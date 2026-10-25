@@ -1,12 +1,15 @@
 {
   "_about": "Vlad's rulings that change a blueprint SEO field. scripts/lib/blueprint.py (gates) and scripts/check-content.mjs apply these on top of the blueprint entry, so the cross-check stays meaningful.",
   "P-010": {
-    "description": "Your child gets Dr. Ed's full attention for about 60 minutes, with you in the room. Gymnasts, dancers and growing kids in Chatsworth. Call (818) 749-3205.",
-    "ruling": "Vlad, 21 Oct 2026, ruling (a): about 60 minutes, not a flat 60"
+    "description": "Your child gets Dr. Edward's full attention for about 60 minutes, with you in the room. Gymnasts, dancers and kids in Chatsworth. Call (818) 749-3205.",
+    "ruling": "Vlad, 21 Oct 2026, ruling (a): about 60 minutes, not a flat 60",
+    "title": "Pediatric Physical Therapy in Chatsworth | Dr. Edward, DPT",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
   },
   "P-012": {
-    "description": "Red light therapy in Chatsworth, used by Dr. Ed Shut, DPT as one part of one-on-one physical therapy for pain and injuries. See what the research shows.",
-    "ruling": "Vlad, 21 Oct 2026, ruling (b): softer description, drops a claim the page cannot back up"
+    "description": "Red light therapy in Chatsworth, used by Dr. Edward Shut, DPT as part of one-on-one physical therapy for pain and injuries. See what the research shows.",
+    "ruling": "Vlad, 21 Oct 2026, ruling (b): softer description, drops a claim the page cannot back up",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
   },
   "P-013": {
     "description": "Learn how Dr. Ed Shut, DPT uses therapeutic ultrasound in Chatsworth to warm and loosen tissue before hands-on physical therapy. Book an evaluation.",
@@ -14,7 +17,9 @@
   },
   "P-029": {
     "description": "After a knee replacement, see how Dr. Ed Shut, DPT works on bending, straightening and walking, one-on-one in Chatsworth. Book an evaluation.",
-    "ruling": "Vlad, 21 Oct 2026, ruling (b): softer description, drops a claim the page cannot back up"
+    "ruling": "Vlad, 21 Oct 2026, ruling (b): softer description, drops a claim the page cannot back up",
+    "title": "Knee Replacement Physical Therapy Chatsworth | Dr. Edward",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
   },
   "P-031": {
     "description": "Keep rolling the same ankle? See how Dr. Ed Shut, DPT rebuilds balance and strength one-on-one in Chatsworth before you go back. Book now.",
@@ -26,15 +31,21 @@
   },
   "P-040": {
     "description": "Your first physical therapy visit, step by step: the questions, the tests, the first treatment and what to wear. Dr. Ed Shut, DPT explains.",
-    "ruling": "Vlad, 21 Oct 2026, ruling (b): softer description, drops a claim the page cannot back up"
+    "ruling": "Vlad, 21 Oct 2026, ruling (b): softer description, drops a claim the page cannot back up",
+    "title": "First Physical Therapy Visit: What to Expect | Dr. Edward",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
   },
   "P-044": {
     "description": "What the first six weeks after a knee replacement involve, from your surgeon's rules to the home work. Dr. Ed Shut, DPT in Chatsworth explains.",
-    "ruling": "Vlad, 21 Oct 2026, ruling (b): softer description, drops a claim the page cannot back up"
+    "ruling": "Vlad, 21 Oct 2026, ruling (b): softer description, drops a claim the page cannot back up",
+    "title": "Knee Replacement Recovery: The First Six Weeks | Dr. Edward",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
   },
   "P-049": {
     "description": "What a cash-pay physical therapy visit costs in Chatsworth, how a PPO superbill works, and what to ask your insurer. By Dr. Ed Shut, DPT.",
-    "ruling": "Vlad, 21 Oct 2026, ruling (b), updated the same evening once Dr. Ed's direct-pay rates were published: the post now does say what a visit costs"
+    "ruling": "Vlad, 21 Oct 2026, ruling (b), updated the same evening once Dr. Ed's direct-pay rates were published: the post now does say what a visit costs",
+    "title": "Cash-Pay Physical Therapy Cost in Chatsworth | Dr. Edward",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
   },
   "P-053": {
     "h1": "Cookie policy",
@@ -51,5 +62,122 @@
   "P-020": {
     "description": "Book an evaluation or call (818) 749-3205. 19851 Nordhoff Place, Unit 105 (Suite C), Chatsworth, CA, 91311. Mon to Sat 10am to 8pm. Park free in front.",
     "ruling": "Vlad, 23 Oct 2026: a comma after CA in every address (Chatsworth, CA, 91311)"
+  },
+  "P-001": {
+    "description": "Physical therapy in Chatsworth with Dr. Edward Shut, DPT. One-on-one visits for back pain, sports injuries, post-op rehab, balance and vertigo. Book today.",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
+  },
+  "P-028": {
+    "title": "ACL Recovery Physical Therapy in Chatsworth | Dr. Edward",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters",
+    "description": "ACL rehab in Chatsworth with Dr. Edward Shut, DPT: prehab, the stages after reconstruction and the tests you pass before you play again. Book now."
+  },
+  "P-026": {
+    "title": "Frozen Shoulder Physical Therapy in Chatsworth | Dr. Edward",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
+  },
+  "P-022": {
+    "title": "Sciatica Physical Therapy in Chatsworth | Dr. Edward, DPT",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters",
+    "description": "Sciatica down your leg starts at the disc or the hip. Dr. Edward finds which, treats it one-on-one in Chatsworth and gives you a home plan. Book now."
+  },
+  "P-027": {
+    "title": "Knee Pain Physical Therapy in Chatsworth | Dr. Edward, DPT",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
+  },
+  "P-030": {
+    "title": "Hip Replacement Physical Therapy in Chatsworth | Dr. Edward",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
+  },
+  "P-033": {
+    "title": "Vertigo and BPPV Physical Therapy Chatsworth | Dr. Edward",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
+  },
+  "P-024": {
+    "description": "Neck pain or a pinched nerve that massage and adjustments never fixed for long: Dr. Edward finds the cause and treats it one-on-one in Chatsworth. Book.",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
+  },
+  "P-032": {
+    "title": "Plantar Fasciitis Physical Therapy Chatsworth | Dr. Edward",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters",
+    "description": "Heel pain with the first steps of the morning: Dr. Edward treats plantar fasciitis in Chatsworth and the calf, foot and gait issues feeding it. Book now."
+  },
+  "P-025": {
+    "description": "Shoulder pain, a rotator cuff strain or tear, impingement: see how Dr. Edward treats shoulders one-on-one in Chatsworth, before and after surgery. Book.",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
+  },
+  "P-003": {
+    "title": "Physical Therapy Services in Chatsworth | Dr. Edward, DPT",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
+  },
+  "P-006": {
+    "title": "Post-Op Physical Therapy in Chatsworth | Dr. Edward, DPT",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
+  },
+  "P-045": {
+    "title": "Vertigo and BPPV, Explained by a Physical Therapist",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
+  },
+  "P-042": {
+    "title": "Fall-Prevention Checklist for a Parent's House | Dr. Edward",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
+  },
+  "P-041": {
+    "title": "Stroke Recovery at an Outpatient Clinic | Dr. Edward, DPT",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
+  },
+  "P-043": {
+    "title": "Young Gymnast Back Pain: Growing Pain or Injury?",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
+  },
+  "P-046": {
+    "title": "Return to Sport After ACL Surgery: The Tests | Dr. Edward",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
+  },
+  "P-047": {
+    "title": "Red Light Therapy for Back and Knee Pain | Dr. Edward, DPT",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
+  },
+  "P-038": {
+    "title": "Referral for Physical Therapy in California? | Dr. Edward",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters",
+    "description": "You can start physical therapy in California without a referral for 45 days or 12 visits. Dr. Edward explains the two rules and the Medicare rule."
+  },
+  "P-009": {
+    "title": "Fall Prevention Physical Therapy in Chatsworth | Dr. Edward",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters",
+    "description": "Fall prevention physical therapy in Chatsworth for seniors, balance and vertigo. One-on-one with Dr. Edward Shut, DPT. Medicare accepted. Book now."
+  },
+  "P-018": {
+    "description": "Read real Google reviews of Chatsworth Physical Therapy and Dr. Edward: back pain, shoulders, post-op rehab, kids and seniors. Leave your own review.",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
+  },
+  "P-011": {
+    "title": "Neurological Rehabilitation in Chatsworth | Dr. Edward, DPT",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters",
+    "description": "Neurological rehabilitation in Chatsworth with Dr. Edward Shut, DPT. One-on-one visits for stroke recovery, balance and nerve weakness. Book now."
+  },
+  "P-007": {
+    "title": "Orthopedic Rehabilitation in Chatsworth | Dr. Edward, DPT",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters",
+    "description": "Orthopedic rehabilitation in Chatsworth for shoulder, knee, hip, elbow and ankle, one-on-one with Dr. Edward Shut, DPT. Evenings and Saturdays. Book."
+  },
+  "P-015": {
+    "title": "Personal Training and Weight Loss Chatsworth | Dr. Edward",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters",
+    "description": "After rehab: personal training and weight loss coaching in Chatsworth with Dr. Edward Shut, DPT, the doctor who treated you. Call (818) 749-3205."
+  },
+  "P-002": {
+    "description": "Meet Dr. Edward Shut, Doctor of Physical Therapy in Chatsworth, CA. License 301809, 15+ years, one-on-one care in English and Russian. Book now.",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
+  },
+  "P-008": {
+    "title": "Pain Management Physical Therapy Chatsworth | Dr. Edward",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters"
+  },
+  "P-014": {
+    "title": "Electrical Stimulation, TENS, NMES | Chatsworth, Dr. Edward",
+    "naming": "Vlad, 24 Oct 2026: \"Dr. Edward\", never \"Dr. Ed\"; shortened to stay within 60 (title) or 155 (description) characters",
+    "description": "Find out how TENS and NMES electrical stimulation calm pain and wake up weak muscles in physical therapy with Dr. Edward Shut, DPT in Chatsworth. Book now."
   }
 }

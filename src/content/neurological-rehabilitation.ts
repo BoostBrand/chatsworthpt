@@ -6,10 +6,10 @@ const page: PageContent = {
   "id": "P-011",
   "path": "/neurological-rehabilitation/",
   "approved": true,
-  "title": "Neurological Rehabilitation in Chatsworth | Dr. Ed Shut, DPT",
-  "description": "Neurological rehabilitation in Chatsworth with Dr. Ed Shut, DPT. One-on-one visits for stroke recovery, balance and nerve weakness. Book your evaluation.",
+  "title": "Neurological Rehabilitation in Chatsworth | Dr. Edward, DPT",
+  "description": "Neurological rehabilitation in Chatsworth with Dr. Edward Shut, DPT. One-on-one visits for stroke recovery, balance and nerve weakness. Book now.",
   "hero": {
-    "h1": "Neurological rehabilitation in Chatsworth, one-on-one with Dr. Ed",
+    "h1": "Neurological rehabilitation in Chatsworth, one-on-one with Dr. Edward",
     "lede": "After a stroke or with a neurological condition, you get a clear plan, hands-on treatment and a home program that fits your life.",
     "book": "Book my evaluation",
   },
@@ -17,7 +17,7 @@ const page: PageContent = {
     {
       "kind": "who",
       "h2": "Who neurological rehabilitation is for",
-      "intro": "Most people who come to Dr. Ed for neurological rehabilitation are in one of these situations.",
+      "intro": "Most people who come to Dr. Edward for neurological rehabilitation are in one of these situations.",
       "items": [
         {
           "lead": "After a stroke.",
@@ -39,15 +39,15 @@ const page: PageContent = {
     },
     {
       "kind": "prose",
-      "h2": "What treatment looks like with Dr. Ed",
+      "h2": "What treatment looks like with Dr. Edward",
       "blocks": [
         {
           "type": "p",
-          "text": "Your first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Ed. He watches how you stand, walk, turn, sit down and get up, and how you use your arm and hand. He measures strength, range of motion and balance, asks what you could do before and what you need to do now, and explains in plain terms where the problem is and what can change."
+          "text": "Your first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Edward. He watches how you stand, walk, turn, sit down and get up, and how you use your arm and hand. He measures strength, range of motion and balance, asks what you could do before and what you need to do now, and explains in plain terms where the problem is and what can change."
         },
         {
           "type": "p",
-          "text": "From there, every visit is about 60 minutes with Dr. Ed, never handed off. Treatment is built from what the evaluation found and usually mixes:"
+          "text": "From there, every visit is about 60 minutes with Dr. Edward, never handed off. Treatment is built from what the evaluation found and usually mixes:"
         },
         {
           "type": "ul",
@@ -62,7 +62,7 @@ const page: PageContent = {
         },
         {
           "type": "p",
-          "text": "You leave each visit with a short written home program, three or four things you can actually do, which Dr. Ed adjusts as you improve. A family member or caregiver is welcome to sit in and learn the exercises with you. How many visits you will need depends on your condition and how you respond, so it is set after the evaluation, not quoted up front. Visits run until 8pm on weekdays and on Saturdays, so a working family member can bring you."
+          "text": "You leave each visit with a short written home program, three or four things you can actually do, which Dr. Edward adjusts as you improve. A family member or caregiver is welcome to sit in and learn the exercises with you. How many visits you will need depends on your condition and how you respond, so it is set after the evaluation, not quoted up front. Visits run until 8pm on weekdays and on Saturdays, so a working family member can bring you."
         }
       ]
     },
@@ -72,7 +72,7 @@ const page: PageContent = {
       "blocks": [
         {
           "type": "p",
-          "text": "Stroke recovery is a separate service line at Chatsworth Physical Therapy, and the one Dr. Ed most wants people to know about. Once your doctor clears you for outpatient physical therapy, start. The weeks and months after a stroke are when the nervous system is most ready to relearn, and the sooner the work begins, the more of it sticks. Bring your discharge paperwork and any exercises you were given, and Dr. Ed builds on them rather than starting over."
+          "text": "Stroke recovery is a separate service line at Chatsworth Physical Therapy, and the one Dr. Edward most wants people to know about. Once your doctor clears you for outpatient physical therapy, start. The weeks and months after a stroke are when the nervous system is most ready to relearn, and the sooner the work begins, the more of it sticks. Bring your discharge paperwork and any exercises you were given, and Dr. Edward builds on them rather than starting over."
         },
         {
           "type": "p",
@@ -157,11 +157,11 @@ const page: PageContent = {
         },
         {
           "q": "Can a family member or caregiver come with me?",
-          "a": "Yes. They are welcome in every session, and Dr. Ed will show them the home exercises so they can help between visits."
+          "a": "Yes. They are welcome in every session, and Dr. Edward will show them the home exercises so they can help between visits."
         },
         {
           "q": "How long is a visit, and how many will I need?",
-          "a": "Every visit is about 60 minutes, depending on what you need, one-on-one with Dr. Ed. The number of visits depends on your condition and how you progress, so Dr. Ed sets it after the evaluation rather than guessing up front."
+          "a": "Every visit is about 60 minutes, depending on what you need, one-on-one with Dr. Edward. The number of visits depends on your condition and how you progress, so Dr. Edward sets it after the evaluation rather than guessing up front."
         },
         {
           "q": "Is the clinic wheelchair accessible?",
@@ -176,7 +176,7 @@ const page: PageContent = {
   ],
   "booking": {
     "h2": "Book your neurological rehabilitation evaluation",
-    "lead": "Tell Dr. Ed what happened and what you want to get back to. He will confirm your time by phone or email, usually the same day.",
+    "lead": "Tell Dr. Edward what happened and what you want to get back to. He will confirm your time by phone or email, usually the same day.",
     "service": "Neurological rehabilitation",
     "button": "Request my appointment"
   },

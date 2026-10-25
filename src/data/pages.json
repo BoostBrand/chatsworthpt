@@ -14,8 +14,8 @@
   {
     "id": "P-002",
     "path": "/about-us/",
-    "name": "About Dr. Ed",
-    "full": "About Dr. Ed",
+    "name": "About Dr. Edward",
+    "full": "About Dr. Edward",
     "type": "about",
     "file": "about-us",
     "parent": "P-001",

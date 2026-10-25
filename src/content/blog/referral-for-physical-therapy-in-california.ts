@@ -3,9 +3,9 @@ import type { PostContent } from '../../lib/types';
 const post: PostContent = {
   id: 'P-038',
   path: '/blog/referral-for-physical-therapy-in-california/',
-  title: 'Referral for Physical Therapy in California? | Dr. Ed, DPT',
+  title: 'Referral for Physical Therapy in California? | Dr. Edward',
   description:
-    'You can start physical therapy in California without a referral for 45 days or 12 visits. Dr. Ed Shut, DPT explains the two rules and the Medicare rule.',
+    'You can start physical therapy in California without a referral for 45 days or 12 visits. Dr. Edward explains the two rules and the Medicare rule.',
   h1: 'Do you need a referral for physical therapy in California? No, with two rules',
   datePublished: '2026-10-21',
   parent: { text: 'Insurance and cost', href: '/insurance-and-cost/' },
@@ -56,9 +56,9 @@ const post: PostContent = {
     },
     {
       type: 'p',
-      text: 'Dr. Ed does not guess at the number of visits up front. It depends on your condition and how your body responds, so he sets the plan after your first evaluation. Since treatment cannot continue past the limit without the approval, it helps to see your doctor before you reach it.',
+      text: 'Dr. Edward does not guess at the number of visits up front. It depends on your condition and how your body responds, so he sets the plan after your first evaluation. Since treatment cannot continue past the limit without the approval, it helps to see your doctor before you reach it.',
     },
-    { type: 'image', image: { src: '/img/dr-ed-explaining-anatomy-chatsworth.webp', width: 1200, height: 960, alt: 'Dr. Ed explaining an anatomy chart to a patient' } },
+    { type: 'image', image: { src: '/img/dr-ed-explaining-anatomy-chatsworth.webp', width: 1200, height: 960, alt: 'Dr. Edward explaining an anatomy chart to a patient' } },
 
     { type: 'h2', text: 'Medicare is the exception' },
     {
@@ -70,7 +70,7 @@ const post: PostContent = {
       text: 'If you have Medicare, ask your doctor for the referral and bring it to your first visit.',
     },
 
-    { type: 'h2', text: 'What the law says, and how Dr. Ed puts it' },
+    { type: 'h2', text: 'What the law says, and how Dr. Edward puts it' },
     {
       type: 'p',
       text: 'The limits come from California Business and Professions Code section 2620.1 ([read it on Justia](https://law.justia.com/codes/california/code-bpc/division-2/chapter-5-7/article-2/section-2620-1/)). The key passage says the physical therapist "shall not continue treating the patient beyond 45 calendar days or 12 visits, whichever occurs first" without receiving "a dated signature on the physical therapist\'s plan of care indicating approval of the physical therapist\'s plan of care."',
@@ -87,7 +87,7 @@ const post: PostContent = {
       type: 'p',
       text: 'Nor does the section require your health plan to cover direct access. Subdivision (d) says nothing in the section "shall be construed to require a health care service plan, insurer, workers\' compensation insurance plan, employer, or state program to provide coverage for direct access to treatment by a physical therapist." Whether your plan pays without a referral is a question for the plan.',
     },
-    { type: 'p', text: 'Here is how Dr. Ed states the rule at the clinic:' },
+    { type: 'p', text: 'Here is how Dr. Edward states the rule at the clinic:' },
     {
       type: 'callout',
       text: '"California law lets you see a physical therapist without a referral for up to 12 visits or 45 days, whichever comes first. After that, we need a referral from your doctor to continue. Medicare patients need a referral from the start."',
@@ -116,20 +116,20 @@ const post: PostContent = {
     },
   ],
   booking: {
-    h2: 'Book your first visit with Dr. Ed',
+    h2: 'Book your first visit with Dr. Edward',
     lead: 'Tell us what hurts and whether you have Medicare or a referral already. He will confirm your time by phone or email, usually the same day.',
     service: 'Not sure yet',
   },
   related: [
     { text: 'All posts', href: '/blog/' },
     { text: 'Insurance and cost', href: '/insurance-and-cost/' },
-    { text: 'About Dr. Ed', href: '/about-us/' },
+    { text: 'About Dr. Edward', href: '/about-us/' },
   ],
   notes: [
     'Statute text is cited from Justia because leginfo.legislature.ca.gov would not load here. Justia says the code may not be the latest version, so confirm on leginfo before launch.',
-    'Open question for Dr. Ed: whether the 45 day and 12 visit count starts again for a new injury or after a break in care. The statute text does not say, so the post does not say.',
+    'Open question for Dr. Edward: whether the 45 day and 12 visit count starts again for a new injury or after a break in care. The statute text does not say, so the post does not say.',
     'The byline (name, license number, link to About) is printed by the BlogPostPage template; the post body does not repeat it.',
-    'Build lead review, 21 Oct 2026: the paragraph quoting subsection (a)(3) (notice to your doctor, with your written authorization) was taken out to keep the post to the decision sheet scope; it describes an intake step Dr. Ed has not confirmed. The (a)(1), (a)(4) and (d) quotes were re-checked on Justia the same day.',
+    'Build lead review, 21 Oct 2026: the paragraph quoting subsection (a)(3) (notice to your doctor, with your written authorization) was taken out to keep the post to the decision sheet scope; it describes an intake step Dr. Edward has not confirmed. The (a)(1), (a)(4) and (d) quotes were re-checked on Justia the same day.',
   ],
 };
 

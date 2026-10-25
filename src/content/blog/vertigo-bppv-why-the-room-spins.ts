@@ -3,7 +3,7 @@ import type { PostContent } from '../../lib/types';
 const post: PostContent = {
   id: 'P-045',
   path: '/blog/vertigo-bppv-why-the-room-spins/',
-  title: 'Vertigo and BPPV, Explained by a Physical Therapist | Dr. Ed',
+  title: 'Vertigo and BPPV, Explained by a Physical Therapist',
   description: 'Learn why the room spins when you roll over, how a physical therapist tests for BPPV and why the repositioning maneuver often works in a few visits.',
   h1: 'Vertigo and BPPV: why the room spins when you roll over, and what a physical therapist does about it',
   datePublished: '2026-10-21',
@@ -36,13 +36,13 @@ const post: PostContent = {
     { type: 'p', text: '[MedlinePlus](https://medlineplus.gov/ency/article/001420.htm) names the Epley maneuver and describes it as a series of head movements to reposition the canaliths, the small pieces of calcium, in your inner ear. It also says BPPV is uncomfortable but can usually be treated with that maneuver.' },
     { type: 'p', text: 'BPPV can come back. APTA says there are no known ways to prevent it, and that within three years of a bout, symptoms return for about half of people. MedlinePlus says the procedure may need to be repeated if symptoms come back.' },
 
-    { type: 'h2', text: 'What Dr. Ed does about it' },
-    { type: 'p', text: 'Dr. Ed Shut, DPT, does the positional test and the repositioning maneuvers for BPPV at Chatsworth Physical Therapy. He is trained in the Dix-Hallpike test and the Epley maneuver, and he screens you first to make sure they are right for you. For the most common kind of vertigo, BPPV, repositioning maneuvers done in the clinic often settle it within a few visits. Other dizziness improves with a graded exercise program.' },
-    { type: 'p', text: 'He sets the plan after your first evaluation rather than guessing up front. How many visits you need depends on your condition and how your body responds. Every visit is one-on-one with Dr. Ed.' },
-    { type: 'p', text: "If you have notes from an ear, nose and throat (ENT) or neurology visit, bring them. If Dr. Ed thinks your dizziness needs a doctor's look first, he will say so." },
+    { type: 'h2', text: 'What Dr. Edward does about it' },
+    { type: 'p', text: 'Dr. Edward Shut, DPT, does the positional test and the repositioning maneuvers for BPPV at Chatsworth Physical Therapy. He is trained in the Dix-Hallpike test and the Epley maneuver, and he screens you first to make sure they are right for you. For the most common kind of vertigo, BPPV, repositioning maneuvers done in the clinic often settle it within a few visits. Other dizziness improves with a graded exercise program.' },
+    { type: 'p', text: 'He sets the plan after your first evaluation rather than guessing up front. How many visits you need depends on your condition and how your body responds. Every visit is one-on-one with Dr. Edward.' },
+    { type: 'p', text: "If you have notes from an ear, nose and throat (ENT) or neurology visit, bring them. If Dr. Edward thinks your dizziness needs a doctor's look first, he will say so." },
 
     { type: 'h2', text: 'What to do next' },
-    { type: 'p', text: 'If the room spins when you roll over, book an evaluation with Dr. Ed. The [Vertigo and BPPV page](/conditions/vertigo-bppv/) covers how he treats dizziness and what to expect, and the [Reviews page](/reviews/) shows what patients say.' },
+    { type: 'p', text: 'If the room spins when you roll over, book an evaluation with Dr. Edward. The [Vertigo and BPPV page](/conditions/vertigo-bppv/) covers how he treats dizziness and what to expect, and the [Reviews page](/reviews/) shows what patients say.' },
   ],
   sources: [
     {
@@ -60,16 +60,16 @@ const post: PostContent = {
   ],
   booking: {
     h2: 'Book your dizziness evaluation',
-    lead: 'Book an evaluation with Dr. Ed for spinning, dizziness or balance problems. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Book an evaluation with Dr. Edward for spinning, dizziness or balance problems. He will confirm your time by phone or email, usually the same day.',
     service: 'Balance or fall prevention',
   },
   related: [
     { text: 'All posts', href: '/blog/' },
     { text: 'Vertigo and BPPV', href: '/conditions/vertigo-bppv/' },
-    { text: 'About Dr. Ed', href: '/about-us/' },
+    { text: 'About Dr. Edward', href: '/about-us/' },
   ],
   notes: [
-    'Dr. Ed confirmed that he does the positional test and the repositioning maneuvers for BPPV. He has not given the names of the test or the maneuver he uses, so the post names the Dix-Hallpike maneuver and the Epley maneuver only as MedlinePlus names them and does not say he uses them. If he confirms, one line can say so.',
+    'Dr. Edward confirmed that he does the positional test and the repositioning maneuvers for BPPV. He has not given the names of the test or the maneuver he uses, so the post names the Dix-Hallpike maneuver and the Epley maneuver only as MedlinePlus names them and does not say he uses them. If he confirms, one line can say so.',
     'Approved wording reused: the vertigo FAQ answer (often settle it within a few visits; other dizziness improves with a graded exercise program), the plan-after-the-first-evaluation line from the approved visits FAQ, and the ENT or neurology notes and doctor-first lines from the approved balance page text.',
     'The 15 to 45 seconds and the about half within three years figures are APTA ChoosePT statements, named beside the claim. The warning signs in the callout are MedlinePlus, named beside the claim.',
     'datePublished is the build date; Vlad sets the real date at launch.',

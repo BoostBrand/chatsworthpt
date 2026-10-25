@@ -3,12 +3,12 @@ import type { PageContent } from '../lib/types';
 const page: PageContent = {
   id: 'P-003',
   path: '/our-services/',
-  title: 'Physical Therapy Services in Chatsworth | Dr. Ed Shut, DPT',
+  title: 'Physical Therapy Services in Chatsworth | Dr. Edward, DPT',
   description:
     'See every physical therapy service at Chatsworth Physical Therapy: back pain, sports injuries, post-op, balance, kids and neuro. Book an evaluation.',
   hero: {
-    h1: 'Physical therapy services in Chatsworth, every visit with Dr. Ed',
-    lede: 'Every visit is one-on-one with [Dr. Ed](/about-us/) and lasts about an hour. Medicare accepted. Evening and Saturday appointments.',
+    h1: 'Physical therapy services in Chatsworth, every visit with Dr. Edward',
+    lede: 'Every visit is one-on-one with [Dr. Edward](/about-us/) and lasts about an hour. Medicare accepted. Evening and Saturday appointments.',
     book: 'Book my evaluation',
     stars: true,
   },
@@ -16,7 +16,7 @@ const page: PageContent = {
     {
       kind: 'cards',
       h2: 'Our services',
-      intro: 'Not sure which one you need? Call (818) 749-3205 and Dr. Ed will tell you in two minutes.',
+      intro: 'Not sure which one you need? Call (818) 749-3205 and Dr. Edward will tell you in two minutes.',
       columns: 3,
       cards: [
         {
@@ -28,7 +28,7 @@ const page: PageContent = {
             src: '/img/back-pain-therapy-chatsworth.webp',
             width: 900,
             height: 900,
-            alt: 'Dr. Ed guiding a patient through a core stability exercise for back pain at Chatsworth Physical Therapy',
+            alt: 'Dr. Edward guiding a patient through a core stability exercise for back pain at Chatsworth Physical Therapy',
           },
         },
         {
@@ -64,7 +64,7 @@ const page: PageContent = {
             src: '/img/dr-ed-explaining-anatomy-chatsworth.webp',
             width: 1200,
             height: 960,
-            alt: 'Dr. Ed explaining an anatomy chart to a patient',
+            alt: 'Dr. Edward explaining an anatomy chart to a patient',
           },
         },
         {
@@ -76,7 +76,7 @@ const page: PageContent = {
             src: '/img/hero-dr-ed-treating-patient-chatsworth.webp',
             width: 1800,
             height: 1125,
-            alt: 'Dr. Ed Shut guiding a patient through a back exercise on the treatment table at Chatsworth Physical Therapy',
+            alt: 'Dr. Edward Shut guiding a patient through a back exercise on the treatment table at Chatsworth Physical Therapy',
           },
         },
         {
@@ -114,13 +114,13 @@ const page: PageContent = {
     {
       kind: 'cards',
       h2: 'Treatments used inside your plan',
-      intro: 'Dr. Ed may add these to your plan, next to hands-on treatment and exercise.',
+      intro: 'Dr. Edward may add these to your plan, next to hands-on treatment and exercise.',
       columns: 3,
       cards: [
         {
           title: 'Red light therapy',
           href: '/red-light-therapy/',
-          text: 'Low-level red light on the treated area, no UV, applied by Dr. Ed as part of your visit.',
+          text: 'Low-level red light on the treated area, no UV, applied by Dr. Edward as part of your visit.',
         },
         {
           title: 'Therapeutic ultrasound',
@@ -160,7 +160,7 @@ const page: PageContent = {
   ],
   booking: {
     h2: 'Book your evaluation',
-    lead: 'Tell Dr. Ed what hurts and when you can come in. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward what hurts and when you can come in. He will confirm your time by phone or email, usually the same day.',
     service: 'Not sure yet',
   },
   related: [
@@ -168,8 +168,8 @@ const page: PageContent = {
     { text: 'Reviews', href: '/reviews/' },
   ],
   notes: [
-    'The About link (anchor Dr. Ed) sits in the hero lede. The entry lists no link to About, but pages.json gives P-002 linksFrom P-001 and P-003, so it is added. Remove it if the build lead disagrees.',
-    'Card meta conditions: Pain management (sciatica, neck pain) and Pediatric physical therapy (ankle sprain, knee pain) come from pages.json linksFrom, because the homepage lines name no condition for them. Neurological rehabilitation comes from FACTS.md. Balance uses vertigo (FACTS.md) and dizziness (the homepage card name). Dr. Ed should confirm the Pain management and Pediatric pairs.',
+    'The About link (anchor Dr. Edward) sits in the hero lede. The entry lists no link to About, but pages.json gives P-002 linksFrom P-001 and P-003, so it is added. Remove it if the build lead disagrees.',
+    'Card meta conditions: Pain management (sciatica, neck pain) and Pediatric physical therapy (ankle sprain, knee pain) come from pages.json linksFrom, because the homepage lines name no condition for them. Neurological rehabilitation comes from FACTS.md. Balance uses vertigo (FACTS.md) and dizziness (the homepage card name). Dr. Edward should confirm the Pain management and Pediatric pairs.',
     'The sentence under the nine cards (every physical therapy plan is hands-on treatment plus a short home program, adjusted each visit) restates the approved first visit step and is not in the entry. It is optional; delete the outro line if the build lead does not want it.',
     'Personal training and weight loss has no meta line (no condition).',
     'Photos (23 Oct 2026, Vlad chose real clinic photos where they fit, the rest out): six cards carry clinic photos (Orthopedic uses the anatomy chart photo, Pain management the hero photo, Personal training the desk photo). Balance, Pediatric and Neurological have no photo that fits, so they are text only and sit together in the last row, which keeps each row even. Put them back in their old places if a shoot adds photos.',

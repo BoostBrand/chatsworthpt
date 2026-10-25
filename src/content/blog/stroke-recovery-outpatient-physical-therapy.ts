@@ -3,15 +3,15 @@ import type { PostContent } from '../../lib/types';
 const post: PostContent = {
   id: 'P-041',
   path: '/blog/stroke-recovery-outpatient-physical-therapy/',
-  title: 'Stroke Recovery at an Outpatient Clinic | Dr. Ed Shut, DPT',
+  title: 'Stroke Recovery at an Outpatient Clinic | Dr. Edward, DPT',
   description:
-    'After the hospital, what does stroke recovery look like in outpatient physical therapy? Dr. Ed Shut, DPT in Chatsworth walks through the stages.',
+    'After the hospital, what does stroke recovery look like in outpatient physical therapy? Dr. Edward Shut, DPT in Chatsworth walks through the stages.',
   h1: 'What stroke recovery looks like at an outpatient physical therapy clinic',
   datePublished: '2026-10-21',
   parent: { text: 'Neurological rehabilitation', href: '/neurological-rehabilitation/' },
-  summary: 'How outpatient physical therapy picks up after the hospital, and the order Dr. Ed works in.',
+  summary: 'How outpatient physical therapy picks up after the hospital, and the order Dr. Edward works in.',
   answer:
-    'Outpatient stroke recovery is physical therapy you start at a clinic once your doctor clears you for it, with practice at home between visits. At Chatsworth Physical Therapy, Dr. Ed takes it in order: sitting and standing balance first, then walking, then stairs and outdoor surfaces, then the arm and hand.',
+    'Outpatient stroke recovery is physical therapy you start at a clinic once your doctor clears you for it, with practice at home between visits. At Chatsworth Physical Therapy, Dr. Edward takes it in order: sitting and standing balance first, then walking, then stairs and outdoor surfaces, then the arm and hand.',
   body: [
     { type: 'h2', text: 'Where outpatient therapy fits after a stroke' },
     {
@@ -20,12 +20,12 @@ const post: PostContent = {
     },
     {
       type: 'p',
-      text: "Stroke recovery is its own service line at Chatsworth Physical Therapy. Dr. Ed's advice is simple: once your doctor clears you for outpatient physical therapy, start. The National Institute of Neurological Disorders and Stroke (NINDS) lists timing as one factor in how rehabilitation turns out. Generally, the sooner it begins, the greater the chances of regaining lost skills and function ([read it on the NINDS site](https://www.ninds.nih.gov/sites/default/files/2025-05/post-stroke-rehabilitation.pdf)).",
+      text: "Stroke recovery is its own service line at Chatsworth Physical Therapy. Dr. Edward's advice is simple: once your doctor clears you for outpatient physical therapy, start. The National Institute of Neurological Disorders and Stroke (NINDS) lists timing as one factor in how rehabilitation turns out. Generally, the sooner it begins, the greater the chances of regaining lost skills and function ([read it on the NINDS site](https://www.ninds.nih.gov/sites/default/files/2025-05/post-stroke-rehabilitation.pdf)).",
     },
     { type: 'h2', text: 'Why practice between visits matters' },
     {
       type: 'p',
-      text: 'NINDS says research shows the most important element in any neurorehabilitation program is carefully directed, well-focused, repetitive practice. It is the same kind of practice people use to learn a new skill, such as playing the piano or pitching a baseball ([NINDS, Post-Stroke Rehabilitation](https://www.ninds.nih.gov/sites/default/files/2025-05/post-stroke-rehabilitation.pdf)). Dr. Ed puts it in plain terms: the repetitions between visits are where most of the recovery happens.',
+      text: 'NINDS says research shows the most important element in any neurorehabilitation program is carefully directed, well-focused, repetitive practice. It is the same kind of practice people use to learn a new skill, such as playing the piano or pitching a baseball ([NINDS, Post-Stroke Rehabilitation](https://www.ninds.nih.gov/sites/default/files/2025-05/post-stroke-rehabilitation.pdf)). Dr. Edward puts it in plain terms: the repetitions between visits are where most of the recovery happens.',
     },
     {
       type: 'p',
@@ -33,7 +33,7 @@ const post: PostContent = {
     },
     {
       type: 'p',
-      text: 'That is why you leave each visit with a short written home program, three or four things you can actually do, and why Dr. Ed adjusts it as you improve. A family member or caregiver is welcome to sit in and learn the exercises with you.',
+      text: 'That is why you leave each visit with a short written home program, three or four things you can actually do, and why Dr. Edward adjusts it as you improve. A family member or caregiver is welcome to sit in and learn the exercises with you.',
     },
     {
       type: 'p',
@@ -42,13 +42,13 @@ const post: PostContent = {
     { type: 'h2', text: 'What the first visit looks like' },
     {
       type: 'p',
-      text: 'Bring your discharge paperwork and any exercises you were given. Dr. Ed builds on them rather than starting over.',
+      text: 'Bring your discharge paperwork and any exercises you were given. Dr. Edward builds on them rather than starting over.',
     },
     {
       type: 'p',
-      text: 'The first visit is an evaluation. Visits run about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Ed. He watches how you stand, walk, turn, sit down and get up, and how you use your arm and hand. He measures strength, range of motion and balance. He asks what you could do before and what you need to do now, then explains in plain terms where the problem is and what can change. He sets the number of visits after that evaluation, not up front.',
+      text: 'The first visit is an evaluation. Visits run about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Edward. He watches how you stand, walk, turn, sit down and get up, and how you use your arm and hand. He measures strength, range of motion and balance. He asks what you could do before and what you need to do now, then explains in plain terms where the problem is and what can change. He sets the number of visits after that evaluation, not up front.',
     },
-    { type: 'h2', text: 'The order Dr. Ed works in after a stroke' },
+    { type: 'h2', text: 'The order Dr. Edward works in after a stroke' },
     { type: 'p', text: 'Sessions follow the order your body needs:' },
     {
       type: 'ol',
@@ -76,11 +76,11 @@ const post: PostContent = {
     { type: 'h2', text: 'What to do next' },
     {
       type: 'p',
-      text: 'For the full picture, read the [neurological rehabilitation](/neurological-rehabilitation/) page. Other patients describe working with Dr. Ed on the [Reviews page](/reviews/), and [About Dr. Ed](/about-us/) has his training and credentials.',
+      text: 'For the full picture, read the [neurological rehabilitation](/neurological-rehabilitation/) page. Other patients describe working with Dr. Edward on the [Reviews page](/reviews/), and [About Dr. Edward](/about-us/) has his training and credentials.',
     },
     {
       type: 'p',
-      text: 'Dr. Ed accepts Medicare. Medicare patients need a referral from the start, so ask your doctor for one and bring it to the first visit. Evening and Saturday appointments mean a working family member can bring you. The entrance and parking are wheelchair accessible, and the lot in front is free with no gate code.',
+      text: 'Dr. Edward accepts Medicare. Medicare patients need a referral from the start, so ask your doctor for one and bring it to the first visit. Evening and Saturday appointments mean a working family member can bring you. The entrance and parking are wheelchair accessible, and the lot in front is free with no gate code.',
     },
   ],
   sources: [
@@ -99,13 +99,13 @@ const post: PostContent = {
   ],
   booking: {
     h2: 'Book a stroke recovery evaluation',
-    lead: 'Bring your discharge paperwork and any exercises you were given, and Dr. Ed will build on them. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Bring your discharge paperwork and any exercises you were given, and Dr. Edward will build on them. He will confirm your time by phone or email, usually the same day.',
     service: 'Neurological rehabilitation',
   },
   related: [
     { text: 'All posts', href: '/blog/' },
     { text: 'Neurological rehabilitation', href: '/neurological-rehabilitation/' },
-    { text: 'About Dr. Ed', href: '/about-us/' },
+    { text: 'About Dr. Edward', href: '/about-us/' },
   ],
   notes: [
     "The patient story marker sits at the end of the proof section. Replace it with a real stroke patient's story, with the patient's consent, or delete it. No stroke review exists in the review file, so the post links the Reviews page instead.",

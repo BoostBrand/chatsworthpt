@@ -3,12 +3,12 @@ import type { PageContent } from '../lib/types';
 const page: PageContent = {
   id: 'P-012',
   path: '/red-light-therapy/',
-  title: 'Red Light Therapy in Chatsworth | Dr. Ed Shut, DPT',
+  title: 'Red Light Therapy in Chatsworth | Dr. Edward Shut, DPT',
   description:
-    "Red light therapy in Chatsworth, used by Dr. Ed Shut, DPT as one part of one-on-one physical therapy for pain and injuries. See what the research shows.",
+    "Red light therapy in Chatsworth, used by Dr. Edward Shut, DPT as part of one-on-one physical therapy for pain and injuries. See what the research shows.",
   hero: {
     h1: 'Red light therapy in Chatsworth, as part of your physical therapy plan',
-    lede: 'Red light is one tool inside your physical therapy plan, applied by Dr. Ed himself. It is not a wellness lounge session.',
+    lede: 'Red light is one tool inside your physical therapy plan, applied by Dr. Edward himself. It is not a wellness lounge session.',
     image: {
       src: '/img/red-light-therapy-chatsworth.webp',
       width: 900,
@@ -42,18 +42,18 @@ const page: PageContent = {
     },
     {
       kind: 'prose',
-      h2: 'How Dr. Ed uses it',
+      h2: 'How Dr. Edward uses it',
       blocks: [
         {
           type: 'p',
-          text: 'Dr. Ed applies red light to the treated area, usually after manual therapy, for about 10 minutes as part of the visit. It is not a separate treatment and is not sold on its own. It is best avoided on skin with eczema or an infection. His device is a KOZE LED unit (KOZE lists 660 and 850 nanometers, red and near-infrared, for its panels), not a laser, so read the studies above as a guide to the field rather than a promise about this device.',
+          text: 'Dr. Edward applies red light to the treated area, usually after manual therapy, for about 10 minutes as part of the visit. It is not a separate treatment and is not sold on its own. It is best avoided on skin with eczema or an infection. His device is a KOZE LED unit (KOZE lists 660 and 850 nanometers, red and near-infrared, for its panels), not a laser, so read the studies above as a guide to the field rather than a promise about this device.',
         },
       ],
     },
     {
       kind: 'conditions',
       h2: 'Where red light fits in a plan',
-      intro: 'Dr. Ed adds red light to the plan for these problems. The linked pages explain the rest of the treatment.',
+      intro: 'Dr. Edward adds red light to the plan for these problems. The linked pages explain the rest of the treatment.',
       items: [
         {
           text: 'Recovery after ACL and shoulder repairs: more on [Pre and post-op physical therapy](/pre-post-surgical-rehabilitation/)',
@@ -79,15 +79,15 @@ const page: PageContent = {
       items: [
         {
           q: 'Is red light therapy the same as a tanning bed or a spa session?',
-          a: 'No. Red light therapy is low-level light on the treated area, with no UV. Dr. Ed applies it as part of treatment.',
+          a: 'No. Red light therapy is low-level light on the treated area, with no UV. Dr. Edward applies it as part of treatment.',
         },
         {
           q: 'Does it hurt?',
-          a: 'No. Most people feel mild warmth. Tell Dr. Ed if anything feels uncomfortable.',
+          a: 'No. Most people feel mild warmth. Tell Dr. Edward if anything feels uncomfortable.',
         },
         {
           q: 'How many sessions?',
-          a: 'Red light rides along with your visits, though not every visit: Dr. Ed decides from your results, your medical history and your condition. He does not quote a number of visits up front.',
+          a: 'Red light rides along with your visits, though not every visit: Dr. Edward decides from your results, your medical history and your condition. He does not quote a number of visits up front.',
         },
         {
           q: 'Can I come just for red light?',
@@ -98,7 +98,7 @@ const page: PageContent = {
   ],
   booking: {
     h2: 'Book your evaluation',
-    lead: 'Tell Dr. Ed what hurts and when you are free. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward what hurts and when you are free. He will confirm your time by phone or email, usually the same day.',
     service: 'Pain management',
   },
   related: [
@@ -111,9 +111,9 @@ const page: PageContent = {
   notes: [
     'Section 2 sources were fetched on 2026-10-21: PubMed 28145397 (2017 meta-analysis of low-level laser therapy for musculoskeletal pain) and the Washington State Department of Labor and Industries technology assessment update dated 2018-01-18. Re-fetch both before accepting.',
     'The coverage decision that went with the 2018 assessment was superseded by a new L&I payment policy effective 2023-11-01. The assessment is still listed by L&I as a reference. Build lead to decide whether the 2018 source is current enough.',
-    'Ask Dr. Ed which device he uses (laser or LED, and the wavelength). Both cited sources are about low-level laser therapy.',
+    'Ask Dr. Edward which device he uses (laser or LED, and the wavelength). Both cited sources are about low-level laser therapy.',
     'The meta description says "speed tissue recovery". Neither cited source shows that red light speeds recovery, so the body copy does not repeat it.',
-    'Open markers for Dr. Ed: minutes per application and stand-alone sale (section 3), stand-alone pricing (insurance block), and whether anyone can come just for red light (FAQ 4).',
+    'Open markers for Dr. Edward: minutes per application and stand-alone sale (section 3), stand-alone pricing (insurance block), and whether anyone can come just for red light (FAQ 4).',
   ],
 };
 

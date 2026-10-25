@@ -3,12 +3,12 @@ import type { PageContent } from '../../lib/types';
 const page: PageContent = {
   id: 'P-027',
   path: '/conditions/knee-pain/',
-  title: 'Knee Pain Physical Therapy in Chatsworth | Dr. Ed Shut, DPT',
+  title: 'Knee Pain Physical Therapy in Chatsworth | Dr. Edward, DPT',
   description:
-    'Knee pain on stairs, running or after a twist: Dr. Ed finds whether it is the kneecap, the meniscus or the hip and treats it one-on-one in Chatsworth.',
+    'Knee pain on stairs, running or after a twist: Dr. Edward finds whether it is the kneecap, the meniscus or the hip and treats it one-on-one in Chatsworth.',
   hero: {
     h1: 'Knee pain physical therapy in Chatsworth',
-    lede: 'Your knee hurts on the stairs, when you run or after a twist. Dr. Ed finds out why.',
+    lede: 'Your knee hurts on the stairs, when you run or after a twist. Dr. Edward finds out why.',
     image: {
       src: '/img/post-op-physical-therapy-chatsworth.webp',
       alt: 'Knee taping during a physical therapy session in Chatsworth',
@@ -25,33 +25,33 @@ const page: PageContent = {
       items: [
         {
           lead: 'It hurts going down stairs or when you squat.',
-          text: 'Dr. Ed tests the kneecap, and the hip and ankle too.',
+          text: 'Dr. Edward tests the kneecap, and the hip and ankle too.',
         },
         {
           lead: 'Your knee swells after activity.',
-          text: 'Tell Dr. Ed when it swells and what you were doing. He tests the knee and the joints above and below it.',
+          text: 'Tell Dr. Edward when it swells and what you were doing. He tests the knee and the joints above and below it.',
         },
         {
           lead: 'Your imaging shows a meniscus tear.',
-          text: 'Dr. Ed tests the meniscus himself and tells you what he finds. If surgery is a question, your surgeon is part of that decision.',
+          text: 'Dr. Edward tests the meniscus himself and tells you what he finds. If surgery is a question, your surgeon is part of that decision.',
         },
         {
           lead: "You have runner's knee or IT band pain.",
-          text: 'Dr. Ed looks at how you land and how you run.',
+          text: 'Dr. Edward looks at how you land and how you run.',
         },
         {
           lead: 'You were told to live with arthritis.',
-          text: 'Dr. Ed tests how the knee moves and how strong your quads and hips are, then builds your plan from that.',
+          text: 'Dr. Edward tests how the knee moves and how strong your quads and hips are, then builds your plan from that.',
         },
       ],
     },
     {
       kind: 'prose',
-      h2: 'What Dr. Ed does about it',
+      h2: 'What Dr. Edward does about it',
       blocks: [
         {
           type: 'p',
-          text: 'Dr. Ed tests before he treats. He checks the kneecap and the meniscus. He checks the hip and ankle too, because they load the knee.',
+          text: 'Dr. Edward tests before he treats. He checks the kneecap and the meniscus. He checks the hip and ankle too, because they load the knee.',
         },
         {
           type: 'p',
@@ -75,7 +75,7 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: 'The first visit is an evaluation, one-on-one with Dr. Ed. He examines how you move, works out what is causing the pain and explains it in plain terms.',
+          text: 'The first visit is an evaluation, one-on-one with Dr. Edward. He examines how you move, works out what is causing the pain and explains it in plain terms.',
         },
         {
           type: 'p',
@@ -125,22 +125,22 @@ const page: PageContent = {
       items: [
         {
           q: 'Can a meniscus tear heal without surgery?',
-          a: 'Many do with therapy. Whether yours can is a decision for the evaluation and your surgeon. Dr. Ed tests the meniscus himself and tells you what he finds.',
+          a: 'Many do with therapy. Whether yours can is a decision for the evaluation and your surgeon. Dr. Edward tests the meniscus himself and tells you what he finds.',
         },
         {
           q: 'Should I stop running?',
-          a: 'Usually not completely. The plan sets what is safe this week and is adjusted each visit as you progress. Dr. Ed also looks at how you land and how you run.',
+          a: 'Usually not completely. The plan sets what is safe this week and is adjusted each visit as you progress. Dr. Edward also looks at how you land and how you run.',
         },
         {
           q: 'Is it my hip, not my knee?',
-          a: 'Often partly. The hip and the ankle both load the knee, so the evaluation checks them along with the kneecap and the meniscus. Dr. Ed explains what he finds in plain terms.',
+          a: 'Often partly. The hip and the ankle both load the knee, so the evaluation checks them along with the kneecap and the meniscus. Dr. Edward explains what he finds in plain terms.',
         },
       ],
     },
   ],
   booking: {
     h2: 'Book your knee evaluation',
-    lead: 'Tell Dr. Ed where the knee hurts and what sets it off. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward where the knee hurts and what sets it off. He will confirm your time by phone or email, usually the same day.',
     service: 'Orthopedic injury',
   },
   related: [
@@ -158,7 +158,7 @@ const page: PageContent = {
   },
   notes: [
     "No Google review assigned: none yet. Kate's knee line belongs to the personal training page. Ask the next knee patient.",
-    'How long it usually takes: no source gives a usual length of care, so the page says it depends and that Dr. Ed sets the plan after the evaluation. A plain usual range would need Dr. Ed.',
+    'How long it usually takes: no source gives a usual length of care, so the page says it depends and that Dr. Edward sets the plan after the evaluation. A plain usual range would need Dr. Edward.',
     'The blog post Red light therapy for back and knee pain (P-047) and the two sibling condition pages are planned pages; the links work once they are built.',
   ],
 };

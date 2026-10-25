@@ -3,11 +3,11 @@ import type { PageContent } from '../lib/types';
 const page: PageContent = {
   id: 'P-008',
   path: '/pain-management/',
-  title: 'Pain Management Physical Therapy Chatsworth | Dr. Ed, DPT',
+  title: 'Pain Management Physical Therapy Chatsworth | Dr. Edward',
   description:
-    'Chronic pain treated without a one-size-fits-all plan: manual therapy, red light, ultrasound and e-stim with Dr. Ed Shut, DPT in Chatsworth. Book now.',
+    'Chronic pain treated without a one-size-fits-all plan: manual therapy, red light, ultrasound and e-stim with Dr. Edward Shut, DPT in Chatsworth. Book now.',
   hero: {
-    h1: 'Pain management physical therapy in Chatsworth, hands-on with Dr. Ed',
+    h1: 'Pain management physical therapy in Chatsworth, hands-on with Dr. Edward',
     lede: 'Pain that has lasted months gets a cause, a hands-on plan and tools that calm it between visits.',
     image: {
       src: '/img/red-light-therapy-chatsworth.webp',
@@ -25,7 +25,7 @@ const page: PageContent = {
       items: [
         {
           lead: 'The pain has outlasted the injury.',
-          text: 'Whatever started it is long over, yet it still hurts. Dr. Ed looks for what is keeping it going.',
+          text: 'Whatever started it is long over, yet it still hurts. Dr. Edward looks for what is keeping it going.',
         },
         {
           lead: 'Arthritis pain limits your day.',
@@ -33,7 +33,7 @@ const page: PageContent = {
         },
         {
           lead: 'Widespread pain, like fibromyalgia.',
-          text: 'The ache is in many places, not one spot. Dr. Ed treats fibromyalgia-type pain.',
+          text: 'The ache is in many places, not one spot. Dr. Edward treats fibromyalgia-type pain.',
         },
         {
           lead: 'Pain after surgery that never settled.',
@@ -41,17 +41,17 @@ const page: PageContent = {
         },
         {
           lead: 'A flare-up you want handled without stronger medication.',
-          text: 'You want hands-on help and a plan. Dr. Ed keeps your physician in the loop.',
+          text: 'You want hands-on help and a plan. Dr. Edward keeps your physician in the loop.',
         },
       ],
     },
     {
       kind: 'prose',
-      h2: 'What treatment looks like with Dr. Ed',
+      h2: 'What treatment looks like with Dr. Edward',
       blocks: [
         {
           type: 'p',
-          text: 'It starts with an evaluation of what keeps your pain going. Dr. Ed examines how you move, explains what he finds in plain terms, and sets your plan from there.',
+          text: 'It starts with an evaluation of what keeps your pain going. Dr. Edward examines how you move, explains what he finds in plain terms, and sets your plan from there.',
         },
         {
           type: 'p',
@@ -60,7 +60,7 @@ const page: PageContent = {
         {
           type: 'ul',
           items: [
-            '**Manual therapy.** Dr. Ed treats the sore area with his hands.',
+            '**Manual therapy.** Dr. Edward treats the sore area with his hands.',
             '**Graded exercise.** Movement that builds up step by step.',
             '**Posture and movement.** Work on how you sit, stand and move through the day.',
             '**The tools.** Red light therapy, therapeutic ultrasound and electrical stimulation. More on each below.',
@@ -76,14 +76,14 @@ const page: PageContent = {
     {
       kind: 'prose',
       h2: 'The tools: red light, ultrasound and electrical stimulation',
-      intro: 'Dr. Ed adds these to your plan when the evaluation says they fit. They sit beside the hands-on work, not in place of it.',
+      intro: 'Dr. Edward adds these to your plan when the evaluation says they fit. They sit beside the hands-on work, not in place of it.',
       blocks: [
         {
           type: 'leads',
           items: [
             {
               lead: '[Red light therapy](/red-light-therapy/).',
-              text: 'Low-level red light on the treated area, with no UV. Dr. Ed applies it during your visit, next to the hands-on work.',
+              text: 'Low-level red light on the treated area, with no UV. Dr. Edward applies it during your visit, next to the hands-on work.',
             },
             {
               lead: '[Therapeutic ultrasound](/therapeutic-ultrasound/).',
@@ -100,7 +100,7 @@ const page: PageContent = {
     {
       kind: 'conditions',
       h2: 'Conditions treated',
-      intro: 'These are the kinds of long-lasting pain Dr. Ed treats.',
+      intro: 'These are the kinds of long-lasting pain Dr. Edward treats.',
       columns: 2,
       items: [
         { text: 'Low back pain', href: '/back-pain-therapy/' },
@@ -111,7 +111,7 @@ const page: PageContent = {
         { text: 'Nerve pain, including sciatica down the leg', href: '/conditions/sciatica/' },
         { text: 'Post-surgical pain', href: '/pre-post-surgical-rehabilitation/' },
       ],
-      outro: 'Shoulder, elbow, hip, knee and ankle injuries are covered on the [Orthopedic rehabilitation](/orthopedic-rehabilitation/) page. If your pain is not named here, book an evaluation and Dr. Ed will tell you what he finds in plain terms.',
+      outro: 'Shoulder, elbow, hip, knee and ankle injuries are covered on the [Orthopedic rehabilitation](/orthopedic-rehabilitation/) page. If your pain is not named here, book an evaluation and Dr. Edward will tell you what he finds in plain terms.',
     },
     { kind: 'review', review: { key: 'nadezhda', context: 'back pain' } },
     {
@@ -130,7 +130,7 @@ const page: PageContent = {
       items: [
         {
           q: 'Is this the same as a pain management doctor?',
-          a: 'No. Dr. Ed is a Doctor of Physical Therapy and does not give injections or write prescriptions. He treats pain with movement, hands-on treatment and tools such as red light, ultrasound and electrical stimulation. He keeps your physician in the loop.',
+          a: 'No. Dr. Edward is a Doctor of Physical Therapy and does not give injections or write prescriptions. He treats pain with movement, hands-on treatment and tools such as red light, ultrasound and electrical stimulation. He keeps your physician in the loop.',
         },
         {
           q: 'Does Medicare cover this?',
@@ -138,22 +138,22 @@ const page: PageContent = {
         },
         {
           q: 'Will it hurt?',
-          a: 'Some hands-on work is uncomfortable for a moment. Dr. Ed tells you before he does it, and nothing is forced. If something is too much, tell him.',
+          a: 'Some hands-on work is uncomfortable for a moment. Dr. Edward tells you before he does it, and nothing is forced. If something is too much, tell him.',
         },
         {
           q: 'How many visits will I need?',
-          a: 'Dr. Ed does not quote a number up front. Your visits are set after the evaluation, once he knows what he is treating. Chronic pain usually takes longer than a fresh injury, and he says so plainly.',
+          a: 'Dr. Edward does not quote a number up front. Your visits are set after the evaluation, once he knows what he is treating. Chronic pain usually takes longer than a fresh injury, and he says so plainly.',
         },
         {
           q: 'Do you treat personal injury cases?',
-          a: 'Yes. Dr. Ed treats personal injury cases on a lien.',
+          a: 'Yes. Dr. Edward treats personal injury cases on a lien.',
         },
       ],
     },
   ],
   booking: {
     h2: 'Book your pain management evaluation',
-    lead: 'Tell Dr. Ed what hurts and how long it has lasted. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward what hurts and how long it has lasted. He will confirm your time by phone or email, usually the same day.',
     service: 'Pain management',
   },
   related: [

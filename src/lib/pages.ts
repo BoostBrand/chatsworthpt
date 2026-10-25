@@ -83,7 +83,7 @@ export const NAV: NavItem[] = [
     ],
     all: { text: 'All conditions', href: '/conditions/' },
   },
-  { label: 'Dr. Ed', href: '/about-us/' },
+  { label: 'Dr. Edward', href: '/about-us/' },
   { label: 'Reviews', href: '/reviews/' },
   {
     label: 'New patients', href: '/first-visit/', section: 'patients',
@@ -131,7 +131,7 @@ export const FOOTER_COLUMNS: { title: string; links: { text: string; href: strin
   {
     title: 'Clinic',
     links: [
-      { text: 'About Dr. Ed', href: '/about-us/' },
+      { text: 'About Dr. Edward', href: '/about-us/' },
       { text: 'Reviews', href: '/reviews/' },
       { text: 'Your first visit', href: '/first-visit/' },
       { text: 'Insurance and cost', href: '/insurance-and-cost/' },

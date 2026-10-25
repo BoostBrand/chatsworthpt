@@ -5,13 +5,13 @@ const page: PageContent = {
   path: '/conditions/shoulder-pain-rotator-cuff/',
   title: 'Shoulder Pain and Rotator Cuff Physical Therapy | Chatsworth',
   description:
-    'Shoulder pain, a rotator cuff strain or tear, impingement: see how Dr. Ed treats shoulders one-on-one in Chatsworth, before and after surgery. Book now.',
+    'Shoulder pain, a rotator cuff strain or tear, impingement: see how Dr. Edward treats shoulders one-on-one in Chatsworth, before and after surgery. Book.',
   hero: {
     h1: 'Shoulder pain and rotator cuff physical therapy in Chatsworth',
-    lede: 'When reaching overhead hurts or the shoulder wakes you at night, Dr. Ed finds out why and treats it himself.',
+    lede: 'When reaching overhead hurts or the shoulder wakes you at night, Dr. Edward finds out why and treats it himself.',
     image: {
       src: '/img/hero-dr-ed-treating-patient-chatsworth.webp',
-      alt: 'Dr. Ed Shut guiding a patient through a back exercise on the treatment table at Chatsworth Physical Therapy',
+      alt: 'Dr. Edward Shut guiding a patient through a back exercise on the treatment table at Chatsworth Physical Therapy',
       width: 1800,
       height: 1125,
       srcMobile: '/img/hero-dr-ed-treating-patient-chatsworth-mobile.webp',
@@ -34,28 +34,28 @@ const page: PageContent = {
         },
         {
           lead: 'Imaging shows a rotator cuff tear, and a surgeon said to try therapy first.',
-          text: 'Dr. Ed tests the shoulder and gives you an honest read on what therapy can do.',
+          text: 'Dr. Edward tests the shoulder and gives you an honest read on what therapy can do.',
         },
         {
           lead: 'You are recovering from a rotator cuff repair.',
-          text: 'Your surgeon wrote the protocol. Dr. Ed works from it.',
+          text: 'Your surgeon wrote the protocol. Dr. Edward works from it.',
         },
       ],
     },
     {
       kind: 'prose',
-      h2: 'What Dr. Ed does about it',
+      h2: 'What Dr. Edward does about it',
       blocks: [
         {
           type: 'p',
-          text: 'Dr. Ed treats shoulder pain, rotator cuff strains and tears, and impingement, before and after surgery.',
+          text: 'Dr. Edward treats shoulder pain, rotator cuff strains and tears, and impingement, before and after surgery.',
         },
         {
           type: 'leads',
           items: [
             {
               lead: 'Testing the rotator cuff and the shoulder blade.',
-              text: 'Dr. Ed explains what he found in plain terms.',
+              text: 'Dr. Edward explains what he found in plain terms.',
             },
             {
               lead: 'Hands-on work.',
@@ -63,7 +63,7 @@ const page: PageContent = {
             },
             {
               lead: 'Strengthening, in the right order.',
-              text: 'He builds up the rotator cuff and the muscles that move the shoulder blade. Dr. Ed sets the order for your shoulder.',
+              text: 'He builds up the rotator cuff and the muscles that move the shoulder blade. Dr. Edward sets the order for your shoulder.',
             },
             {
               lead: 'Overhead work for throwers and swimmers.',
@@ -71,7 +71,7 @@ const page: PageContent = {
             },
             {
               lead: 'After surgery.',
-              text: "Bring your surgeon's post-op protocol and your discharge paperwork to the first visit. Dr. Ed works from your surgeon's instructions, not a generic plan. More on [rotator cuff repair rehab](/pre-post-surgical-rehabilitation/).",
+              text: "Bring your surgeon's post-op protocol and your discharge paperwork to the first visit. Dr. Edward works from your surgeon's instructions, not a generic plan. More on [rotator cuff repair rehab](/pre-post-surgical-rehabilitation/).",
             },
           ],
         },
@@ -83,15 +83,15 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: '**Evaluation first.** Dr. Ed tests the shoulder, tells you what he found and sets the plan with you.',
+          text: '**Evaluation first.** Dr. Edward tests the shoulder, tells you what he found and sets the plan with you.',
         },
         {
           type: 'p',
-          text: '**One-on-one.** You work with Dr. Ed himself: hands-on treatment in the clinic, and a home program for between visits. He adjusts the program as the shoulder improves.',
+          text: '**One-on-one.** You work with Dr. Edward himself: hands-on treatment in the clinic, and a home program for between visits. He adjusts the program as the shoulder improves.',
         },
         {
           type: 'p',
-          text: '**How long it takes.** It depends on what is injured. A strain usually takes weeks. A repair usually takes months. Dr. Ed will not quote a number of visits before he has examined you.',
+          text: '**How long it takes.** It depends on what is injured. A strain usually takes weeks. A repair usually takes months. Dr. Edward will not quote a number of visits before he has examined you.',
         },
         {
           type: 'p',
@@ -133,22 +133,22 @@ const page: PageContent = {
       items: [
         {
           q: 'Do all rotator cuff tears need surgery?',
-          a: 'No. Many partial tears do well with therapy. After testing your shoulder, Dr. Ed gives you an honest read on yours.',
+          a: 'No. Many partial tears do well with therapy. After testing your shoulder, Dr. Edward gives you an honest read on yours.',
         },
         {
           q: 'How long does shoulder rehab take?',
-          a: 'It depends on the tissue that is injured. Rehab for a strain usually takes weeks, and after a repair it usually takes months. Dr. Ed gives you a plan after your evaluation, not a guess up front.',
+          a: 'It depends on the tissue that is injured. Rehab for a strain usually takes weeks, and after a repair it usually takes months. Dr. Edward gives you a plan after your evaluation, not a guess up front.',
         },
         {
           q: 'Is this frozen shoulder?',
-          a: '[Frozen shoulder](/conditions/frozen-shoulder/) is a different problem from a rotator cuff injury and has its own page. If you are not sure which one you have, Dr. Ed tests the shoulder and tells you what he finds.',
+          a: '[Frozen shoulder](/conditions/frozen-shoulder/) is a different problem from a rotator cuff injury and has its own page. If you are not sure which one you have, Dr. Edward tests the shoulder and tells you what he finds.',
         },
       ],
     },
   ],
   booking: {
     h2: 'Book your shoulder evaluation',
-    lead: 'Tell Dr. Ed where your shoulder hurts and what it will not do. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward where your shoulder hurts and what it will not do. He will confirm your time by phone or email, usually the same day.',
     service: 'Orthopedic injury',
   },
   related: [

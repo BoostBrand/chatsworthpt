@@ -15,7 +15,7 @@ const files = walk(join(ROOT, 'src/content')).filter((f) => f.endsWith('.ts'));
 const SITE_LINES = [
   'No referral needed to start: California law lets you see a physical therapist without a referral for up to 12 visits or 45 days, whichever comes first. After that, we need a referral from your doctor to continue. Medicare patients need a referral from the start.',
   'Insurance: We accept Medicare and personal injury liens. If you have PPO insurance, we provide a superbill, an itemized receipt you send to your insurer for reimbursement. Direct-pay patients are welcome.',
-  'Visits: Visits run about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Ed.',
+  'Visits: Visits run about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Edward.',
 ];
 
 // Same sentence splitter as src/lib/reviews.ts, so a cut review exports exactly as it renders.
@@ -110,7 +110,7 @@ out('# Chatsworth PT site: copy export');
 out();
 out(`Generated from the content files in the repo by scripts/copy-export.mjs on ${new Date().toISOString().slice(0, 10)}. One section per page, in the`);
 out('blueprint order. Highlighted markers ([CONFIRM ...], [verify: ...], [SOURCE NEEDED: ...]) are waiting on an answer. The booking');
-out('band on every page also prints: "Prefer to talk? Call (818) 749-3205. Dr. Ed answers his own phone.", the address and hours,');
+out('band on every page also prints: "Prefer to talk? Call (818) 749-3205. Dr. Edward answers his own phone.", the address and hours,');
 out('and "No payment is required to book."');
 out();
 for (const p of pages) {

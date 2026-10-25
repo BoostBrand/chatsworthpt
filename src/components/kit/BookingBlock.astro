@@ -1,6 +1,6 @@
 ---
 // Booking band (navy) for inner pages: heading and lead line, the call line beside the form
-// ("Dr. Ed answers his own phone."), the address once, then the form or the call panel.
+// ("Dr. Edward answers his own phone."), the address once, then the form or the call panel.
 import { BUSINESS } from '../../data/site';
 import type { Booking } from '../../lib/types';
 import Inline from '../Inline.astro';
@@ -16,7 +16,7 @@ const { booking, pageName } = Astro.props;
     <div class="book-side">
       <Inline as="h2" id="h-book" text={booking.h2} />
       <Inline as="p" class="lede" text={booking.lead} />
-      <p class="call-line">Prefer to talk? Call <a href={BUSINESS.phoneHref}>{BUSINESS.phone}</a><small>Dr. Ed answers his own phone.</small></p>
+      <p class="call-line">Prefer to talk? Call <a href={BUSINESS.phoneHref}>{BUSINESS.phone}</a><small>Dr. Edward answers his own phone.</small></p>
       <p class="ru-line" lang="ru">Говорим по-русски</p>
       <p class="book-address"><strong>{BUSINESS.addressLine}</strong><br>{BUSINESS.hoursLine}. Free parking in the lot in front, no gate code, street parking available.</p>
     </div>

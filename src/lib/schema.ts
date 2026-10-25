@@ -31,7 +31,7 @@ export function physiotherapyNode(reviews: Node[] = []): Node {
     telephone: BUSINESS.phoneSchema,
     email: BUSINESS.email,
     description:
-      'One-on-one physical therapy in Chatsworth, CA with Dr. Ed Shut, DPT: back pain, sports injuries, pre and post-op rehab, orthopedic rehabilitation, balance and vertigo, pediatric and neurological rehab. Evening and Saturday hours, Medicare accepted.',
+      'One-on-one physical therapy in Chatsworth, CA with Dr. Edward Shut, DPT: back pain, sports injuries, pre and post-op rehab, orthopedic rehabilitation, balance and vertigo, pediatric and neurological rehab. Evening and Saturday hours, Medicare accepted.',
     image: [abs('/img/hero-dr-ed-treating-patient-chatsworth.webp'), abs('/img/dr-ed-shut-in-clinic-chatsworth.webp')],
     logo: abs('/img/logo.svg'),
     address: {
@@ -64,7 +64,7 @@ export function personNode(withSameAs = false): Node {
     '@type': 'Person',
     '@id': PERSON_ID,
     name: BUSINESS.doctor.name,
-    alternateName: 'Dr. Ed',
+    alternateName: 'Dr. Edward',
     honorificPrefix: 'Dr.',
     honorificSuffix: 'DPT',
     jobTitle: 'Physical Therapist',

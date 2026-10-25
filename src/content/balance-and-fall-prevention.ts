@@ -6,10 +6,10 @@ const page: PageContent = {
   "id": "P-009",
   "path": "/balance-and-fall-prevention/",
   "approved": true,
-  "title": "Fall Prevention Physical Therapy in Chatsworth | Dr. Ed, DPT",
-  "description": "Fall prevention physical therapy in Chatsworth for seniors, balance and vertigo. One-on-one with Dr. Ed Shut, DPT. Medicare accepted. Book an evaluation.",
+  "title": "Fall Prevention Physical Therapy in Chatsworth | Dr. Edward",
+  "description": "Fall prevention physical therapy in Chatsworth for seniors, balance and vertigo. One-on-one with Dr. Edward Shut, DPT. Medicare accepted. Book now.",
   "hero": {
-    "h1": "Fall prevention physical therapy in Chatsworth, one-on-one with Dr. Ed",
+    "h1": "Fall prevention physical therapy in Chatsworth, one-on-one with Dr. Edward",
     "lede": "A plan for steadier walking and fewer falls, built in visits of about 60 minutes with a Doctor of Physical Therapy, and vertigo treated in the same room.",
     "book": "Book my evaluation",
   },
@@ -42,15 +42,15 @@ const page: PageContent = {
     },
     {
       "kind": "prose",
-      "h2": "What treatment looks like with Dr. Ed",
+      "h2": "What treatment looks like with Dr. Edward",
       "blocks": [
         {
           "type": "p",
-          "text": "The first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Ed. He tests your balance in the ways falls actually happen: standing with eyes closed, turning, reaching, stepping over something, getting up from a chair without hands, walking while talking. He checks leg strength, ankle and hip mobility, the inner ear and the nervous system, and asks about your home, your footwear, your medications and the falls you have had. Then he tells you plainly where the risk is and what the plan is."
+          "text": "The first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Edward. He tests your balance in the ways falls actually happen: standing with eyes closed, turning, reaching, stepping over something, getting up from a chair without hands, walking while talking. He checks leg strength, ankle and hip mobility, the inner ear and the nervous system, and asks about your home, your footwear, your medications and the falls you have had. Then he tells you plainly where the risk is and what the plan is."
         },
         {
           "type": "p",
-          "text": "Every visit after that is about 60 minutes with Dr. Ed, nobody else, and usually mixes:"
+          "text": "Every visit after that is about 60 minutes with Dr. Edward, nobody else, and usually mixes:"
         },
         {
           "type": "ul",
@@ -75,11 +75,11 @@ const page: PageContent = {
       "blocks": [
         {
           "type": "p",
-          "text": "Dizziness is one of the most common causes of falls, and the most treatable. Dr. Ed treats vertigo and dizziness with vestibular rehabilitation: exercises and positioning techniques that retrain the inner ear and the brain to work together again. The most common form, BPPV, where loose crystals in the inner ear set off spinning when you roll over or look up, often improves within a few visits with repositioning maneuvers done in the clinic."
+          "text": "Dizziness is one of the most common causes of falls, and the most treatable. Dr. Edward treats vertigo and dizziness with vestibular rehabilitation: exercises and positioning techniques that retrain the inner ear and the brain to work together again. The most common form, BPPV, where loose crystals in the inner ear set off spinning when you roll over or look up, often improves within a few visits with repositioning maneuvers done in the clinic."
         },
         {
           "type": "p",
-          "text": "Other dizziness, after an inner ear infection, a concussion or simply with age, responds to a graded program of head and eye movements and balance work. Bring any ENT or neurology notes you have; if Dr. Ed thinks the dizziness needs a doctor's look first, he will say so."
+          "text": "Other dizziness, after an inner ear infection, a concussion or simply with age, responds to a graded program of head and eye movements and balance work. Bring any ENT or neurology notes you have; if Dr. Edward thinks the dizziness needs a doctor's look first, he will say so."
         }
       ]
     },
@@ -139,11 +139,11 @@ const page: PageContent = {
       "items": [
         {
           "q": "Does Medicare cover balance and fall prevention physical therapy?",
-          "a": "Medicare covers medically necessary physical therapy with a referral from your doctor, and fall risk and dizziness are common reasons for one. Dr. Ed accepts Medicare; ask your doctor for the referral and bring it to the first visit."
+          "a": "Medicare covers medically necessary physical therapy with a referral from your doctor, and fall risk and dizziness are common reasons for one. Dr. Edward accepts Medicare; ask your doctor for the referral and bring it to the first visit."
         },
         {
           "q": "I am afraid I will fall during the exercises.",
-          "a": "You will not be left to wobble. Every exercise is done with Dr. Ed right there, at a level you can manage, and made harder only when you are ready."
+          "a": "You will not be left to wobble. Every exercise is done with Dr. Edward right there, at a level you can manage, and made harder only when you are ready."
         },
         {
           "q": "Can physical therapy really help vertigo?",
@@ -159,14 +159,14 @@ const page: PageContent = {
         },
         {
           "q": "Do I need a cane or a walker?",
-          "a": "Maybe, maybe not. Dr. Ed assesses that honestly at the evaluation, fits it correctly if you do, and works toward needing it less if that is realistic."
+          "a": "Maybe, maybe not. Dr. Edward assesses that honestly at the evaluation, fits it correctly if you do, and works toward needing it less if that is realistic."
         }
       ]
     }
   ],
   "booking": {
     "h2": "Book your balance evaluation",
-    "lead": "Tell Dr. Ed what has been happening, whether there have been falls or dizziness, and who will be coming with you. He will confirm your time by phone or email, usually the same day.",
+    "lead": "Tell Dr. Edward what has been happening, whether there have been falls or dizziness, and who will be coming with you. He will confirm your time by phone or email, usually the same day.",
     "service": "Balance or fall prevention",
     "messagePrompt": "For yourself or a family member?",
     "button": "Request my appointment"

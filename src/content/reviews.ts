@@ -5,7 +5,7 @@ const page: PageContent = {
   path: '/reviews/',
   title: 'Chatsworth Physical Therapy Reviews | 5.0 on Google',
   description:
-    'Read real Google reviews of Chatsworth Physical Therapy and Dr. Ed Shut, DPT: back pain, shoulders, post-op rehab, kids and seniors. Leave your own review.',
+    'Read real Google reviews of Chatsworth Physical Therapy and Dr. Edward: back pain, shoulders, post-op rehab, kids and seniors. Leave your own review.',
   hero: {
     h1: "Chatsworth Physical Therapy reviews, in patients' own words",
     lede: 'Real Google reviews, shown as patients wrote them, with first names and dates.',
@@ -113,17 +113,17 @@ const page: PageContent = {
   ],
   booking: {
     h2: 'Book your evaluation',
-    lead: 'Tell Dr. Ed what hurts. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward what hurts. He will confirm your time by phone or email, usually the same day.',
     service: 'Not sure yet',
   },
   related: [
     { text: 'All services', href: '/our-services/' },
-    { text: 'About Dr. Ed', href: '/about-us/' },
+    { text: 'About Dr. Edward', href: '/about-us/' },
   ],
   notes: [
     'This page prints 25 of the 28 Google reviews: 24 in the groups plus Matthew S beside the video. Left off by the build lead: Vlada, Keith, Jonathan. The badge says 28 because Google does.',
     'The review file column is quote as shown on Google, trimmed. Matthew S has theme words (near workplace, flexible scheduling) that his quote does not contain, so some quotes may be shorter than the full Google review. The collection paragraph therefore says shown as written on Google, never in full.',
-    'The collection paragraph (asked after discharge, never paid for) is from the blueprint entry. Dr. Ed should confirm both statements are true before launch.',
+    'The collection paragraph (asked after discharge, never paid for) is from the blueprint entry. Dr. Edward should confirm both statements are true before launch.',
     'The six General reviews carry no context label because none of them states a situation.',
   ],
 };

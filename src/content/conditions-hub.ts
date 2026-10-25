@@ -5,10 +5,10 @@ const page: PageContent = {
   path: '/conditions/',
   title: 'Conditions We Treat | Chatsworth Physical Therapy',
   description:
-    'Find your condition, from sciatica and frozen shoulder to vertigo and knee replacement recovery, and see how Dr. Ed treats it in Chatsworth. Book now.',
+    'Find your condition, from sciatica and frozen shoulder to vertigo and knee replacement recovery, and see how Dr. Edward treats it in Chatsworth. Book now.',
   hero: {
     h1: 'Conditions we treat at Chatsworth Physical Therapy',
-    lede: 'Find your condition, read how Dr. Ed treats it, then book.',
+    lede: 'Find your condition, read how Dr. Edward treats it, then book.',
     book: 'Book my evaluation',
   },
   sections: [
@@ -121,7 +121,7 @@ const page: PageContent = {
       kind: 'conditions',
       h2: 'Treated inside a service page',
       intro:
-        'These sit inside a service page instead of having a page of their own. Follow a link to read how Dr. Ed treats them.',
+        'These sit inside a service page instead of having a page of their own. Follow a link to read how Dr. Edward treats them.',
       items: [
         {
           text: "Parkinson's, MS and stroke",
@@ -150,14 +150,14 @@ const page: PageContent = {
       blocks: [
         {
           type: 'callout',
-          text: 'Not sure which one you need? Call (818) 749-3205 and Dr. Ed will tell you in two minutes.',
+          text: 'Not sure which one you need? Call (818) 749-3205 and Dr. Edward will tell you in two minutes.',
         },
       ],
     },
   ],
   booking: {
     h2: 'Book your evaluation',
-    lead: 'Tell Dr. Ed the name of your condition, or just where it hurts, and what it keeps you from doing. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward the name of your condition, or just where it hurts, and what it keeps you from doing. He will confirm your time by phone or email, usually the same day.',
     service: 'Not sure yet',
   },
   related: [
@@ -168,7 +168,7 @@ const page: PageContent = {
     'Entry item 3 says each item links to its section on the service page. The build lead gave page-level paths, so each item links to the service page. Anchors can be added once those pages have section ids.',
     'The cards section uses groups only and leaves cards empty, because the types file requires the cards field.',
     'No image or placeholder in the hero, as the build lead decided. The default stars line and call button are kept.',
-    'The twelve card lines are plain descriptions of each situation written from the page names. Dr. Ed or the build lead should glance over them.',
+    'The twelve card lines are plain descriptions of each situation written from the page names. Dr. Edward or the build lead should glance over them.',
   ],
 };
 

@@ -16,6 +16,8 @@ if (existsSync(rulingsPath)) {
     seo[id] = { ...(seo[id] ?? {}), ...Object.fromEntries(['h1', 'title', 'description'].filter((k) => r[k]).map((k) => [k, r[k]])) };
   }
 }
+// Vlad, 24 Oct 2026: "Dr. Edward", never "Dr. Ed". The blueprint keeps its wording as a record; expected fields are renamed.
+for (const f of Object.values(seo)) for (const k of ['h1', 'title', 'description']) if (typeof f[k] === 'string') f[k] = f[k].replace(/\b(?:Dr\.?|Doctor) Ed\b(?!ward)/g, 'Dr. Edward');
 const byPath = new Map(pages.map((p) => [p.path, p]));
 const byId = new Map(pages.map((p) => [p.id, p]));
 const BANNED = ['whether you want', "in today's digital landscape", 'look no further', 'unlock', 'elevate', 'game-changer', 'seamless', "we've got you covered", 'we have got you covered'];
@@ -82,7 +84,7 @@ async function check(file, use) {
     if (['title', 'description', 'path', 'id'].includes(where) || /\.(src|href|key|alt|service)$/.test(where) || where.startsWith('schema')) continue;
     if (/[\u2014\u2013]/.test(s)) errors.push(`em or en dash in ${where}`);
     for (const b of BANNED) if (s.toLowerCase().includes(b)) errors.push(`banned phrase "${b}" in ${where}`);
-    // Dr. Ed's direct-pay rates, relayed by Vlad on 21 Oct 2026, are the only dollar figures allowed.
+    // Dr. Edward's direct-pay rates, relayed by Vlad on 21 Oct 2026, are the only dollar figures allowed.
     for (const m of s.matchAll(/\$\d[\d,.]*/g)) if (!['$175', '$125'].includes(m[0].replace(/[.,]+$/, ''))) errors.push(`dollar figure in ${where}: ${m[0]}`);
     if (/dry needling/i.test(s) && c.id !== 'P-019') errors.push(`"dry needling" in ${where} (allowed on /faqs/ only)`);
     if (/19860|Suite 201/i.test(s)) errors.push(`old address in ${where}`);

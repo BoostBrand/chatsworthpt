@@ -6,8 +6,8 @@ const page: PageContent = {
   "id": "P-010",
   "path": "/pediatric-physical-therapy/",
   "approved": true,
-  "title": "Pediatric Physical Therapy in Chatsworth | Dr. Ed Shut, DPT",
-  "description": "Your child gets Dr. Ed's full attention for about 60 minutes, with you in the room. Gymnasts, dancers and growing kids in Chatsworth. Call (818) 749-3205.",
+  "title": "Pediatric Physical Therapy in Chatsworth | Dr. Edward, DPT",
+  "description": "Your child gets Dr. Edward's full attention for about 60 minutes, with you in the room. Gymnasts, dancers and kids in Chatsworth. Call (818) 749-3205.",
   "hero": {
     "h1": "Pediatric physical therapy in Chatsworth that gets your child back to play",
     "lede": "About 60 minutes with a Doctor of Physical Therapy, your child's own plan, and you in the room for every visit.",
@@ -17,7 +17,7 @@ const page: PageContent = {
     {
       "kind": "who",
       "h2": "Who pediatric physical therapy is for",
-      "intro": "School-age children and teenagers come to Dr. Ed for a few common reasons. (Dr. Ed does not treat infants or toddlers.)",
+      "intro": "School-age children and teenagers come to Dr. Edward for a few common reasons. (Dr. Edward does not treat infants or toddlers.)",
       "items": [
         {
           "lead": "A young athlete with an injury or a pain that keeps coming back.",
@@ -35,27 +35,27 @@ const page: PageContent = {
     },
     {
       "kind": "prose",
-      "h2": "What treatment looks like with Dr. Ed",
+      "h2": "What treatment looks like with Dr. Edward",
       "blocks": [
         {
           "type": "p",
-          "text": "The first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Ed, with a parent or guardian in the room the whole time; minors are never treated alone. He watches how your child moves, jumps, lands, balances and does the thing that hurts, checks strength, flexibility and alignment, and asks about the sport, the schedule and how the pain started. Then he explains what he found in words a kid can follow, because a child who understands the plan does the exercises."
+          "text": "The first visit is an evaluation of about 60 minutes, depending on what you need, one-on-one with Dr. Edward, with a parent or guardian in the room the whole time; minors are never treated alone. He watches how your child moves, jumps, lands, balances and does the thing that hurts, checks strength, flexibility and alignment, and asks about the sport, the schedule and how the pain started. Then he explains what he found in words a kid can follow, because a child who understands the plan does the exercises."
         },
         {
           "type": "p",
-          "text": "Every visit after that is about 60 minutes with Dr. Ed, nobody else. Treatment depends on the age and the problem:"
+          "text": "Every visit after that is about 60 minutes with Dr. Edward, nobody else. Treatment depends on the age and the problem:"
         },
         {
           "type": "ul",
           "items": [
-            "For young athletes: hands-on treatment for the sore area, strength and control work for the muscles that should be protecting it, and a step-by-step return to practice rather than a blanket \"rest\". Dr. Ed is happy to write a note for the coach about what is and is not allowed this week.",
+            "For young athletes: hands-on treatment for the sore area, strength and control work for the muscles that should be protecting it, and a step-by-step return to practice rather than a blanket \"rest\". Dr. Edward is happy to write a note for the coach about what is and is not allowed this week.",
             "For younger school-age kids: shorter blocks of work, balance and coordination games, and a home routine you can run in ten minutes after homework.",
             "For every child: a short written home program for you, the parent, with two or three things to do and how often, updated each visit."
           ]
         },
         {
           "type": "p",
-          "text": "Appointments run until 8pm Monday to Friday and on Saturdays, so most families can come after school or practice without missing either. How many visits a child needs depends on the problem; Dr. Ed sets it after the evaluation and tells you straight if he thinks it will be quick."
+          "text": "Appointments run until 8pm Monday to Friday and on Saturdays, so most families can come after school or practice without missing either. How many visits a child needs depends on the problem; Dr. Edward sets it after the evaluation and tells you straight if he thinks it will be quick."
         }
       ]
     },
@@ -65,7 +65,7 @@ const page: PageContent = {
       "blocks": [
         {
           "type": "p",
-          "text": "Growing bodies get hurt differently. Growth plates are softer than the tendons that pull on them, so a teenager's heel, knee or lower back can hurt in ways an adult's would not, and a flexible young gymnast or dancer can be strong in one direction and unprotected in another. Dr. Ed has treated rhythmic gymnasts, dancers and team-sport kids from the local clubs, and parents say the same thing in their reviews: he is patient, he explains everything, and the results show early."
+          "text": "Growing bodies get hurt differently. Growth plates are softer than the tendons that pull on them, so a teenager's heel, knee or lower back can hurt in ways an adult's would not, and a flexible young gymnast or dancer can be strong in one direction and unprotected in another. Dr. Edward has treated rhythmic gymnasts, dancers and team-sport kids from the local clubs, and parents say the same thing in their reviews: he is patient, he explains everything, and the results show early."
         },
         {
           "type": "p",
@@ -137,15 +137,15 @@ const page: PageContent = {
       "items": [
         {
           "q": "What ages do you treat?",
-          "a": "School-age children and teenagers, roughly elementary age through high school. Dr. Ed does not treat infants or toddlers. Most of his young patients are athletes and dancers."
+          "a": "School-age children and teenagers, roughly elementary age through high school. Dr. Edward does not treat infants or toddlers. Most of his young patients are athletes and dancers."
         },
         {
           "q": "Can I stay with my child during the visit?",
-          "a": "Yes, and a parent or guardian stays for the whole visit; Dr. Ed does not treat minors without one present. You will see what he does and learn the home exercises so you can run them between visits."
+          "a": "Yes, and a parent or guardian stays for the whole visit; Dr. Edward does not treat minors without one present. You will see what he does and learn the home exercises so you can run them between visits."
         },
         {
           "q": "How do I know if it is a growing pain or an injury?",
-          "a": "Pain that lasts more than two weeks, a limp, swelling, pain that wakes your child at night, or pain that shows up every time at the same point in practice is worth an evaluation. Dr. Ed will tell you straight if it is nothing to worry about."
+          "a": "Pain that lasts more than two weeks, a limp, swelling, pain that wakes your child at night, or pain that shows up every time at the same point in practice is worth an evaluation. Dr. Edward will tell you straight if it is nothing to worry about."
         },
         {
           "q": "Do we need a referral?",
@@ -153,7 +153,7 @@ const page: PageContent = {
         },
         {
           "q": "Will my child have to stop their sport?",
-          "a": "Usually not completely. Dr. Ed works out what is safe this week and what to hold back on, and adjusts it as your child improves, so they keep training as much as the injury allows."
+          "a": "Usually not completely. Dr. Edward works out what is safe this week and what to hold back on, and adjusts it as your child improves, so they keep training as much as the injury allows."
         },
         {
           "q": "Do you have after-school appointments?",
@@ -164,7 +164,7 @@ const page: PageContent = {
   ],
   "booking": {
     "h2": "Book your child's evaluation",
-    "lead": "Tell Dr. Ed what is going on and which sport or activity your child wants to get back to. He will confirm your time by phone or email, usually the same day.",
+    "lead": "Tell Dr. Edward what is going on and which sport or activity your child wants to get back to. He will confirm your time by phone or email, usually the same day.",
     "service": "Pediatric physical therapy",
     "messagePrompt": "Child's age and sport, if any",
     "button": "Request my child's appointment"

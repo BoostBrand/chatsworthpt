@@ -5,16 +5,16 @@ const page: PageContent = {
   path: '/first-visit/',
   title: 'Your First Visit, Step by Step | Chatsworth Physical Therapy',
   description:
-    'See what happens at your first physical therapy visit with Dr. Ed Shut, DPT: the evaluation, how long it takes, what to wear and bring. Book today.',
+    'See what happens at your first physical therapy visit with Dr. Edward Shut, DPT: the evaluation, how long it takes, what to wear and bring. Book today.',
   hero: {
     h1: 'Your first visit at Chatsworth Physical Therapy: what to expect',
-    lede: 'About an hour, one-on-one with Dr. Ed. You leave with a plan you can follow at home.',
+    lede: 'About an hour, one-on-one with Dr. Edward. You leave with a plan you can follow at home.',
     image: {
       src: '/img/hero-dr-ed-treating-patient-chatsworth.webp',
       srcMobile: '/img/hero-dr-ed-treating-patient-chatsworth-mobile.webp',
       width: 1800,
       height: 1125,
-      alt: 'Dr. Ed Shut guiding a patient through a back exercise on the treatment table at Chatsworth Physical Therapy',
+      alt: 'Dr. Edward Shut guiding a patient through a back exercise on the treatment table at Chatsworth Physical Therapy',
     },
     book: 'Book my evaluation',
   },
@@ -53,11 +53,11 @@ const page: PageContent = {
       kind: 'steps',
       h2: 'The evaluation, step by step',
       intro:
-        'Your first physical therapy appointment is an evaluation with Dr. Ed Shut, DPT. It takes about 60 minutes, depending on what you need, and it is one-on-one from start to finish.',
+        'Your first physical therapy appointment is an evaluation with Dr. Edward Shut, DPT. It takes about 60 minutes, depending on what you need, and it is one-on-one from start to finish.',
       steps: [
         {
           title: 'History',
-          text: 'You tell Dr. Ed what hurts, how it started and what you want to get back to.',
+          text: 'You tell Dr. Edward what hurts, how it started and what you want to get back to.',
         },
         {
           title: 'Watching you move',
@@ -93,11 +93,11 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: 'Every follow-up is one-on-one with Dr. Ed himself, never handed off. Each visit is hands-on treatment in the clinic plus your home program, adjusted as you progress.',
+          text: 'Every follow-up is one-on-one with Dr. Edward himself, never handed off. Each visit is hands-on treatment in the clinic plus your home program, adjusted as you progress.',
         },
         {
           type: 'p',
-          text: 'How many physical therapy sessions you need depends on your condition and how your body responds. Dr. Ed sets the plan after your evaluation. He never quotes a number of visits up front.',
+          text: 'How many physical therapy sessions you need depends on your condition and how your body responds. Dr. Edward sets the plan after your evaluation. He never quotes a number of visits up front.',
         },
         {
           type: 'p',
@@ -121,7 +121,7 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: 'The entrance and the parking are wheelchair accessible, and there is a restroom. Dr. Ed speaks English and Russian, so you can be treated in either.',
+          text: 'The entrance and the parking are wheelchair accessible, and there is a restroom. Dr. Edward speaks English and Russian, so you can be treated in either.',
         },
         {
           type: 'image',
@@ -129,7 +129,7 @@ const page: PageContent = {
             src: '/img/dr-ed-explaining-anatomy-chatsworth.webp',
             width: 1200,
             height: 960,
-            alt: 'Dr. Ed explaining an anatomy chart to a patient',
+            alt: 'Dr. Edward explaining an anatomy chart to a patient',
           },
         },
       ],
@@ -141,7 +141,7 @@ const page: PageContent = {
       items: [
         {
           q: 'How long is the first visit?',
-          a: 'The first visit runs about 60 minutes, depending on what you need, and it is one-on-one with Dr. Ed. That time covers your evaluation, your first treatment and your home program.',
+          a: 'The first visit runs about 60 minutes, depending on what you need, and it is one-on-one with Dr. Edward. That time covers your evaluation, your first treatment and your home program.',
         },
         {
           q: 'How much does the first visit cost?',
@@ -168,17 +168,17 @@ const page: PageContent = {
   ],
   booking: {
     h2: 'Book your first visit',
-    lead: 'Tell Dr. Ed what hurts and when you would like to come. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward what hurts and when you would like to come. He will confirm your time by phone or email, usually the same day.',
     service: 'Not sure yet',
   },
   related: [
     { text: 'Insurance and cost', href: '/insurance-and-cost/' },
     { text: 'FAQs', href: '/faqs/' },
-    { text: 'About Dr. Ed', href: '/about-us/' },
+    { text: 'About Dr. Edward', href: '/about-us/' },
   ],
   notes: [
     'The treatments named in the First treatment step come from the approved About paragraph on the homepage facts list, with the words may include. Remove that sentence if the page should hold only what the blueprint entry lists.',
-    'The restroom line in the clinic section comes from the blueprint entry; it is not on the confirmed facts list. Dr. Ed to confirm.',
+    'The restroom line in the clinic section comes from the blueprint entry; it is not on the confirmed facts list. Dr. Edward to confirm.',
     'The clinic section uses the anatomy chart photo until the shoot list (front door, parking lot, reception, treatment room) is done.',
     'The first FAQ answer uses the site-wide visit length wording, which is longer than the entry answer.',
   ],

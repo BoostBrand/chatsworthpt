@@ -3,17 +3,17 @@ import type { PageContent } from '../../lib/types';
 const page: PageContent = {
   id: 'P-026',
   path: '/conditions/frozen-shoulder/',
-  title: 'Frozen Shoulder Physical Therapy in Chatsworth | Dr. Ed, DPT',
+  title: 'Frozen Shoulder Physical Therapy in Chatsworth | Dr. Edward',
   description:
-    "Frozen shoulder is slow, but it moves faster with the right hands-on work. Watch Matt's recovery and see how Dr. Ed treats it in Chatsworth. Book now.",
+    "Frozen shoulder is slow, but it moves faster with the right hands-on work. Watch Matt's recovery and see how Dr. Edward treats it in Chatsworth. Book now.",
   hero: {
     h1: 'Frozen shoulder physical therapy in Chatsworth',
-    lede: 'When your shoulder will not lift and will not reach behind your back, Dr. Ed treats it with hands-on work.',
+    lede: 'When your shoulder will not lift and will not reach behind your back, Dr. Edward treats it with hands-on work.',
     image: {
       src: '/img/matt-and-dr-ed-chatsworth-pt.webp',
       width: 720,
       height: 1280,
-      alt: 'Dr. Ed shaking hands with Matt, a frozen shoulder patient, at Chatsworth Physical Therapy',
+      alt: 'Dr. Edward shaking hands with Matt, a frozen shoulder patient, at Chatsworth Physical Therapy',
     },
     book: 'Book my evaluation',
     stars: true,
@@ -43,11 +43,11 @@ const page: PageContent = {
     },
     {
       kind: 'prose',
-      h2: 'What Dr. Ed does about it',
+      h2: 'What Dr. Edward does about it',
       blocks: [
         {
           type: 'p',
-          text: 'Frozen shoulder, also called adhesive capsulitis, moves through three stages ([AAOS OrthoInfo](https://www.orthoinfo.org/diseases--conditions/frozen-shoulder) describes them this way). Dr. Ed shows you which one you are in.',
+          text: 'Frozen shoulder, also called adhesive capsulitis, moves through three stages ([AAOS OrthoInfo](https://www.orthoinfo.org/diseases--conditions/frozen-shoulder) describes them this way). Dr. Edward shows you which one you are in.',
         },
         {
           type: 'leads',
@@ -59,13 +59,13 @@ const page: PageContent = {
         },
         {
           type: 'p',
-          text: 'Frozen shoulder treatment with Dr. Ed is hands-on, and the aim is to get the shoulder moving. The work includes:',
+          text: 'Frozen shoulder treatment with Dr. Edward is hands-on, and the aim is to get the shoulder moving. The work includes:',
         },
         {
           type: 'ul',
           items: [
             '**End-range mobility work** at the point where the shoulder stops, to win back a little more movement.',
-            "**Joint mobilization**, where Dr. Ed's hands move the joint through small, controlled motions.",
+            "**Joint mobilization**, where Dr. Edward's hands move the joint through small, controlled motions.",
             '**External rotation** work, turning the arm outward a little further as the shoulder allows.',
             '**Cuff and scapular strengthening** for the rotator cuff and the muscles that move the shoulder blade.',
             '**A home program** to keep the work going between visits.',
@@ -73,7 +73,7 @@ const page: PageContent = {
         },
         {
           type: 'p',
-          text: 'Frozen shoulder is slow, and Dr. Ed says so plainly. Therapy shortens the stiff and thawing stages.',
+          text: 'Frozen shoulder is slow, and Dr. Edward says so plainly. Therapy shortens the stiff and thawing stages.',
         },
       ],
     },
@@ -83,15 +83,15 @@ const page: PageContent = {
       blocks: [
         {
           type: 'p',
-          text: 'You start with an evaluation. Dr. Ed examines how your shoulder moves, finds what is limiting it and explains it in plain terms. You work with him one-on-one.',
+          text: 'You start with an evaluation. Dr. Edward examines how your shoulder moves, finds what is limiting it and explains it in plain terms. You work with him one-on-one.',
         },
         {
           type: 'p',
-          text: 'After that you get a plan you can follow at home, a short program that Dr. Ed adjusts at each visit as you progress.',
+          text: 'After that you get a plan you can follow at home, a short program that Dr. Edward adjusts at each visit as you progress.',
         },
         {
           type: 'p',
-          text: 'This is not a one-visit fix. The pace depends on the stage your shoulder is in and how it responds, so Dr. Ed does not quote a number of visits up front.',
+          text: 'This is not a one-visit fix. The pace depends on the stage your shoulder is in and how it responds, so Dr. Edward does not quote a number of visits up front.',
         },
         {
           type: 'p',
@@ -117,7 +117,7 @@ const page: PageContent = {
             },
             {
               lead: '[Shoulder pain and rotator cuff](/conditions/shoulder-pain-rotator-cuff/)',
-              text: 'Shoulder pain and rotator cuff problems, and how Dr. Ed treats them.',
+              text: 'Shoulder pain and rotator cuff problems, and how Dr. Edward treats them.',
             },
             {
               lead: '[Pre and post-op physical therapy](/pre-post-surgical-rehabilitation/)',
@@ -138,7 +138,7 @@ const page: PageContent = {
         },
         {
           q: 'Will the treatment hurt?',
-          a: 'End-range work is uncomfortable for a moment, because it takes the shoulder to the edge of its movement. Nothing is forced. If it is too much, tell Dr. Ed and he stops.',
+          a: 'End-range work is uncomfortable for a moment, because it takes the shoulder to the edge of its movement. Nothing is forced. If it is too much, tell Dr. Edward and he stops.',
         },
         {
           q: 'Do I need a cortisone shot first?',
@@ -149,7 +149,7 @@ const page: PageContent = {
   ],
   booking: {
     h2: 'Book your frozen shoulder evaluation',
-    lead: 'Tell Dr. Ed what your shoulder will not do. He will confirm your time by phone or email, usually the same day.',
+    lead: 'Tell Dr. Edward what your shoulder will not do. He will confirm your time by phone or email, usually the same day.',
     service: 'Orthopedic injury',
   },
   related: [
@@ -170,9 +170,9 @@ const page: PageContent = {
   notes: [
     'Build lead: the three stages are cited to AAOS OrthoInfo (https://www.orthoinfo.org/diseases--conditions/frozen-shoulder), re-fetched 21 Oct 2026; the stage sentences match its wording. No durations used.',
     "Matt's clip: the build default applies. The quote is on this page and the video stays on the homepage only, with one link to it in the review block. The entry's open question about the clip is carried in the build log, not on the page.",
-    'The entry asks for the three stages explained but names only the stiff and thawing stages. The page uses freezing, frozen and thawing in plain words with no durations. Dr. Ed to confirm the wording.',
+    'The entry asks for the three stages explained but names only the stiff and thawing stages. The page uses freezing, frozen and thawing in plain words with no durations. Dr. Edward to confirm the wording.',
     'No frozen shoulder blog post exists in pages.json, so the Related section has no blog link.',
-    'The shoot list item, a shoulder session, has no PHOTO line in the entry, so no placeholder is placed. The hero uses the Matt and Dr. Ed photo as the decisions file says.',
+    'The shoot list item, a shoulder session, has no PHOTO line in the entry, so no placeholder is placed. The hero uses the Matt and Dr. Edward photo as the decisions file says.',
     'Diabetes is named once, as the entry names it. Adhesive capsulitis appears once in the copy and as the schema alternate name, because the entry lists it as a supporting keyword.',
   ],
 };

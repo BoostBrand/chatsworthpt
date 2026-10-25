@@ -208,7 +208,7 @@ def main():
     body_text = {p: ' '.join(g.text) for p, g in parsed.items()}
     raw_html = {p: page_file(p).read_text(encoding='utf-8') for p in parsed}
     dollar = [(p, m) for p, t in raw_html.items() for m in re.findall(r'\$\d[\d,.]*', t)]
-    # Dr. Ed's direct-pay rates, relayed by Vlad on 21 Oct 2026, are the only dollar figures allowed.
+    # Dr. Edward's direct-pay rates, relayed by Vlad on 21 Oct 2026, are the only dollar figures allowed.
     confirmed = {'$175', '$125'}
     stray = [(p, m) for p, m in dollar if m.rstrip('.,') not in confirmed]
     gate('$ followed by a digit, other than the confirmed rates $175 and $125', len(stray), 0, 0, detail=stray)

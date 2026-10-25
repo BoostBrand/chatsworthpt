@@ -1,5 +1,5 @@
 // The site-wide lines every new service and conditions page carries (brief section 4), in the approved
-// homepage wording of Dr. Ed's rulings (design rulings doc, 20 Oct 2026). Not rewritten per page.
+// homepage wording of Dr. Edward's rulings (design rulings doc, 20 Oct 2026). Not rewritten per page.
 export const SITE_LINES = [
   {
     label: 'No referral needed to start',
@@ -11,6 +11,6 @@ export const SITE_LINES = [
   },
   {
     label: 'Visits',
-    text: 'Visits run about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Ed.',
+    text: 'Visits run about 60 minutes, depending on what you need, and every one is one-on-one with Dr. Edward.',
   },
 ] as const;
