@@ -1,6 +1,13 @@
-# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 25 Oct 2026, 4:20pm)
+# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 25 Oct 2026, 4:30pm)
 
 Read this first, then `claude/DESIGN-RULINGS-chatsworthpt.md` (every design decision Vlad and Dr. Ed made on 20 Oct; the build and every redesign pass read it), then `claude/SEO-PLAN-chatsworthpt-2026-10-20.html` only if the job touches SEO or the inner pages. For the inner pages, the conditions layer, the city pages and the blog, the page-by-page spec is now `claude/PAGE-BLUEPRINT-chatsworthpt-v1.html` (blueprint v1, 21 Oct); it does not rewrite plan v3, it adds the page entries and lists the decisions it changes.
+
+## Status as of 25 Oct 2026, 4:30pm: both changes PUBLISHED; start here
+- Live: chatsworthpt.com runs main 8736c75 (published 25 Oct about 4:23pm on Vlad's "yes"): the review markup fix (0 Review nodes site-wide) and Dr. Edward's 12 condition-page illustrations (whole, uncropped heroes with srcset, alt text, share tags and a JSON-LD ImageObject each). Live check passed (build log, 25 Oct 4:25pm).
+- Optional: rerun Google's Rich Results Test on the homepage to confirm no review items are flagged.
+- Open questions for Vlad: switch the six inner pages that still use the laughing anatomy photo (dr-ed-explaining-anatomy-chatsworth.webp; services hub, first visit, insurance and cost, personal training and two posts) to the non-laughing one (dr-edward-anatomy-chart-chatsworth.webp)? Dr. Edward said more feedback on the other tabs would follow; his "website" email came to Vlad's personal Gmail, not the JenErg mailbox.
+- Later, Vlad's call: cancel SiteGround (backup 23 Oct, no mailboxes) and then tidy the DNS records that point to it; check Search Console indexing about a week after launch.
+- Branches review-markup-off and edward-stock-images are merged into main and kept (not deleted).
 
 ## Status as of 25 Oct 2026, 4:20pm: two changes waiting on Vlad's yes; start here
 - Live unchanged: chatsworthpt.com runs main (ffd94fb).

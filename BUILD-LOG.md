@@ -978,3 +978,21 @@ The originals, license records and processing tools stay in that folder; only th
   Not published: main is unchanged until Vlad's yes. Publishing: rebase on main (if review-markup-off went first,
   BUILD-LOG.md and the handoff need a keep-both merge), build, the five checks, push main, then check live: the 12
   pages 200, hero currentSrc a new file, og:image and twitter:image the 1600 file, JSON-LD parses with one ImageObject.
+
+## 25 Oct 2026, 4:25pm: PUBLISHED, the review markup fix and Dr. Edward's condition illustrations (main 8736c75)
+
+- Vlad's "yes" (4:17pm) to both items waiting on him: the pictures and the review markup fix.
+- edward-stock-images rebased onto review-markup-off (the cherry-picked handoff commit dropped as already there; the
+  BUILD-LOG.md merge kept both entries); main fast-forwarded ffd94fb to 8736c75 (0eb489a review fix, 27153cd handoff,
+  046a63e pictures, 8736c75 notes) and pushed.
+- Checks before the push: build 53 pages; gates 0 failing; content check 0 failing; accessibility 0 failures (53
+  pages, 2 widths); render 106 with 0 overflow, 0 broken images, one h1 each (outside scripts unreachable in the
+  sandbox, as before); homepage generator rerun byte-identical; JSON-LD 52 of 52 parse, 0 Review nodes, 14
+  ImageObjects (the 12 new and the homepage's two). Protected copy on the 12 pages identical to main; their JSON-LD
+  equals main apart from the Review nodes removed (neck, shoulder, frozen shoulder, plantar fasciitis) and the image.
+- Live check on chatsworthpt.com (built-in browser, short script reads, 4:24pm; the new build was live about 1 minute
+  after the push): all 52 sitemap pages 200, no noindex meta or X-Robots-Tag, JSON-LD parses everywhere, 0 Review
+  nodes, 14 ImageObjects; the 12 condition heroes are the new 1600 files (each 200), og:image and twitter:image alt
+  match, srcset of 3 on each, View larger links on frozen shoulder, knee replacement and hip replacement;
+  /book-appointment/ still redirects; /wp-login.php still 410.
+- Optional, not done: Google's Rich Results Test on the homepage (expected now: no review items to flag).
