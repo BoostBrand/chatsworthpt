@@ -901,3 +901,65 @@ screenshots sent to Vlad. Not published: main is unchanged until Vlad's yes.
   non-laughing booking photo, caption gone, "Nearby areas" line, About title "Dr. Edward Shut, DPT | ...", menu label
   "Dr. Edward", index meta and no X-Robots-Tag, /book-appointment/ still 301 to /contact/, /wp-login.php still 410.
   Inner pages keep the old anatomy-chart photo (Vlad did not answer that question; unchanged).
+
+## 25 Oct 2026, 4:20pm: Dr. Edward's condition-page illustrations (branch edward-stock-images, not published)
+
+Source: Vlad's brief CLAUDE-BRIEF-Edward-stock-images-2026-10-25.md and its package
+assets\adobe-stock\2026-10-25-edward-selections\ (his Chatsworth PT folder), from Dr. Edward's "website" email of
+24 Oct 8:36pm. Twelve Adobe Stock pictures, Standard licenses on Vlad's Adobe account (91 credits before, 79 after).
+The originals, license records and processing tools stay in that folder; only the prepared WebPs are in the repo.
+
+- Files: 36 WebPs in public/img (12 pictures at 640, 960 and 1600 px wide, uncropped, 13 to 107 KB), copied
+  byte-for-byte: SHA-256, byte size and pixel size of every file match web-output-manifest.json; page, Adobe ID,
+  file name and alt text match metadata-input.json, and every ID appears once in Dr. Edward's email.
+- Pages (hero = the 1600 file, alt text verbatim from metadata-input.json):
+  sciatica 2166068872 sciatica-nerve-pain-illustration; herniated-disc 2034326479 lumbar-herniated-disc-illustration;
+  neck-pain 2008747282 cervical-spine-pinched-nerve-illustration; shoulder-pain-rotator-cuff 2088849649
+  shoulder-pain-anatomy-illustration; frozen-shoulder 2168514790 frozen-shoulder-joint-comparison; knee-pain 2091117325
+  knee-pain-anatomy-illustration; acl-recovery 2150105535 acl-knee-injury-football-illustration;
+  knee-replacement-recovery 2019918203 knee-replacement-joint-comparison; hip-replacement-recovery 2108558830
+  hip-replacement-joint-comparison; ankle-sprain 2068150277 basketball-ankle-sprain-illustration; plantar-fasciitis
+  2206020644 plantar-fasciitis-heel-pain-illustration; vertigo-bppv 1039734724 vertigo-bppv-dizziness-illustration.
+- Model (src/lib/types.ts): ImageRef gains optional srcSet, sizes, whole, enlarge and stock (StockCredit: title,
+  description, creditText, creator only when the file names one, acquireLicensePage, license, aiLabel). Images
+  without them render exactly as before.
+- Hero (PageHero.astro, site.css): srcset of the three widths; sizes default "(min-width: 1180px) 455px,
+  (min-width: 960px) calc((100vw - 88px) * 5 / 12), calc(100vw - 32px)" (the hero column: wrap 1180 with 16 px
+  gutters, 7fr 5fr with a 3.5rem gap; stacked below 960). Class .whole: the rounded frame and shadow move to the
+  picture, the image keeps its own shape (inline aspect-ratio from its width and height, so the space is reserved
+  before it loads), never the photo crop (1:1 desktop, 4:3 below 960). Photos keep the crop.
+- srcMobile removed on neck pain, shoulder pain and hip replacement (it would have kept the old phone photo).
+- BPPV had a text-only hero; it now has its picture (a dizziness illustration, not anatomy or treatment).
+- "View larger illustration" under frozen shoulder, knee replacement and hip replacement opens the 1600 file (labels
+  are small on a phone). Screen readers hear "View larger illustration for frozen shoulder" and so on. 44 px tall.
+- Share tags, these 12 pages only: og:image is the 1600 file (as before, from the hero), plus og:image:type
+  image/webp, og:image:width, og:image:height, og:image:alt, twitter:image and twitter:image:alt (BaseLayout's new
+  optional ogImageMeta; StandardPage passes it only for a stock hero). Other pages print the same tags as before.
+- JSON-LD, these 12 pages only (page-schema.ts): MedicalCondition image -> ImageObject #hero-image with contentUrl,
+  name, description, width and height in pixels, encodingFormat, creditText as embedded in the file (for example
+  "Shah - stock.adobe.com"), acquireLicensePage (the Adobe asset page), license https://www.adobe.com/go/stockterms,
+  about the condition. creator only on BPPV ("kanjodnok", the file's embedded creator; its credit is "jureephorn -
+  stock.adobe.com"). No copyrightNotice anywhere (no source has one). The clinic and Dr. Edward schema images in
+  schema.ts are unchanged.
+- AI label: Adobe's asset pages label 11 of the 12 "Generated with AI"; the frozen shoulder page showed no label
+  (not verified either way). Kept as stock.aiLabel in each content file, never rendered; alt text says illustration
+  or diagram, never photo.
+- Matt and Dr. Edward photo (matt-and-dr-ed-chatsworth-pt.webp): no longer the frozen shoulder hero; it stays the
+  poster of Matt's video on the homepage and the Reviews page. The old stand-in photos stay in use on other pages.
+- Notes in the 12 content files now describe the new hero (the old stand-in notes replaced).
+- Checkers: gates.py counts a link to a file that exists under dist/img as resolved (the View larger links);
+  check-content.mjs leaves the stock license record out of the copy checks (the Adobe URLs tripped the number
+  warning) and still fails any srcSet file missing from public/img (tested).
+- Checks on the branch: build 53 pages; gates 0 failing; content check 0 failing, output identical to main;
+  accessibility 0 failures (53 pages, 2 widths); render 106 with 0 overflow, 0 broken images, one h1 each (exits 1 on
+  the outside scripts the sandbox cannot reach, same as main); entry check ok; copy export unchanged. Only the 12
+  pages' HTML changed (the other 41 identical to main apart from the CSS file name); sitemap identical.
+  Protected copy on the 12: titles, H1s, meta descriptions, canonicals, body text, links and other images identical
+  to main; JSON-LD identical apart from the added image. Layout at 390, 768, 800, 959 and 1280 (plus 3x phone and
+  2x desktop), 84 measurements: no overflow, image shape equals the file's, nothing clipped, no old photo, layout
+  shift 0; chosen file 640 on a 1x phone or desktop, 960 on tablet and 2x desktop, 1600 on a 3x phone. Phone load
+  (slow 4G): page weight and LCP within about 50 KB and 0.3 s of main; CLS 0.
+- Preview: https://edward-stock-images.chatsworthpt.pages.dev/ (noindex). Before and after screenshots sent to Vlad.
+  Not published: main is unchanged until Vlad's yes. Publishing: rebase on main (if review-markup-off went first,
+  BUILD-LOG.md and the handoff need a keep-both merge), build, the five checks, push main, then check live: the 12
+  pages 200, hero currentSrc a new file, og:image and twitter:image the 1600 file, JSON-LD parses with one ImageObject.

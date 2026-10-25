@@ -1,6 +1,12 @@
-# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 25 Oct 2026, 3:45pm)
+# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 25 Oct 2026, 4:20pm)
 
 Read this first, then `claude/DESIGN-RULINGS-chatsworthpt.md` (every design decision Vlad and Dr. Ed made on 20 Oct; the build and every redesign pass read it), then `claude/SEO-PLAN-chatsworthpt-2026-10-20.html` only if the job touches SEO or the inner pages. For the inner pages, the conditions layer, the city pages and the blog, the page-by-page spec is now `claude/PAGE-BLUEPRINT-chatsworthpt-v1.html` (blueprint v1, 21 Oct); it does not rewrite plan v3, it adds the page entries and lists the decisions it changes.
+
+## Status as of 25 Oct 2026, 4:20pm: two changes waiting on Vlad's yes; start here
+- Live unchanged: chatsworthpt.com runs main (ffd94fb).
+- New, waiting on Vlad's yes: branch edward-stock-images puts the 12 Adobe Stock pictures Dr. Edward chose (website email, 24 Oct 8:36pm) on their condition pages as whole, uncropped heroes with srcset, the package's alt text, share tags and a JSON-LD ImageObject with the stock credit and Adobe license (build log, 25 Oct 4:20pm). Preview https://edward-stock-images.chatsworthpt.pages.dev/. All checks pass; protected copy unchanged. Publishing = rebase on main, build, five checks, push main, live check (in the build log entry).
+- Still waiting on Vlad's yes: review-markup-off (below). The two branches are independent; whichever goes second needs a keep-both merge of BUILD-LOG.md and this file only.
+- Item B (laughing anatomy photo on six inner pages) is not touched by the image branch: those six pages are services, info and blog pages, not conditions.
 
 ## Status as of 25 Oct 2026, 3:45pm: live; one fix waiting on Vlad's yes; start here
 - Live: chatsworthpt.com runs main (4de8ec5 site, ffd94fb notes). Dr. Edward's six homepage fixes and the site-wide "Dr. Edward" rename are live (24 Oct, 5:50pm).
