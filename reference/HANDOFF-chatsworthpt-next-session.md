@@ -1,6 +1,13 @@
-# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 24 Oct 2026, 10:45am)
+# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 25 Oct 2026, 3:45pm)
 
 Read this first, then `claude/DESIGN-RULINGS-chatsworthpt.md` (every design decision Vlad and Dr. Ed made on 20 Oct; the build and every redesign pass read it), then `claude/SEO-PLAN-chatsworthpt-2026-10-20.html` only if the job touches SEO or the inner pages. For the inner pages, the conditions layer, the city pages and the blog, the page-by-page spec is now `claude/PAGE-BLUEPRINT-chatsworthpt-v1.html` (blueprint v1, 21 Oct); it does not rewrite plan v3, it adds the page entries and lists the decisions it changes.
+
+## Status as of 25 Oct 2026, 3:45pm: live; one fix waiting on Vlad's yes; start here
+- Live: chatsworthpt.com runs main (4de8ec5 site, ffd94fb notes). Dr. Edward's six homepage fixes and the site-wide "Dr. Edward" rename are live (24 Oct, 5:50pm).
+- Waiting on Vlad's yes: branch review-markup-off (one commit) drops all Review structured data. Google's Rich Results Test flagged the four homepage reviews "Multiple reviews without aggregateRating object" and Google's rules make a business's own reviews ineligible for stars (build log, 24 Oct 6:30pm). Publishing = fast-forward main to the branch, gates, push, then check live: 0 Review nodes, JSON-LD parses.
+- Search Console (GPT, 24 Oct 5:50pm): Home and About re-tested live with "Dr. Edward" and indexing requested.
+- Open questions for Vlad: switch the six inner pages that still use the laughing anatomy photo (dr-ed-explaining-anatomy-chatsworth.webp) to the non-laughing one (dr-edward-anatomy-chart-chatsworth.webp)? Dr. Edward said more feedback on the other tabs would follow; his "website" email came to Vlad's personal Gmail, not the JenErg mailbox.
+- Later, Vlad's call: cancel SiteGround (backup 23 Oct, no mailboxes) and then tidy the DNS records that point to it; check Search Console indexing about a week after launch.
 
 ## Status as of 24 Oct 2026, 5:50pm: Dr. Edward's feedback PUBLISHED (main 4de8ec5)
 - Branch ed-feedback-2026-10-24 (build log, 24 Oct evening entry): "Dr. Edward" site-wide, homepage approach band, hands-on leg photo, static mosaic, caption removed, non-laughing booking photo, plain city line with an area-pages line. All checks pass. Merged into main and live since about 5:50pm, 24 Oct; checked on chatsworthpt.com.
