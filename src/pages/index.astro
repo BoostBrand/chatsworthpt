@@ -7,11 +7,11 @@ import BookingForm from '../components/kit/BookingForm.astro';
 import home from '../content/home';
 import { CITY_PAGES_LIVE } from '../data/site';
 import { SITE_URL } from '../data/site';
-import { physiotherapyNode, personNode, reviewNode, faqNode, graph, abs, CLINIC_ID } from '../lib/schema';
+import { physiotherapyNode, personNode, faqNode, graph, abs, CLINIC_ID } from '../lib/schema';
 const SITE_URL_SLASH = `${SITE_URL}/`;
 
 const schema = graph([
-  physiotherapyNode(home.reviews.map((r) => reviewNode(r.name, r.body))),
+  physiotherapyNode(), // no Review markup (24 Oct 2026; see src/lib/page-schema.ts)
   personNode(),
   {
     '@type': 'VideoObject',

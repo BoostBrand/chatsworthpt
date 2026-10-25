@@ -26,7 +26,11 @@ const CLINIC_REF = { '@id': CLINIC_ID, name: BUSINESS.name };
 export function graphFor(page: PageContent, meta: PageMeta, extra: Node[] = []): Node[] {
   const nodes: Node[] = [];
   const faqs = faqsOf(page.sections);
-  const reviews = reviewsOf(page.sections);
+  // 24 Oct 2026: no Review markup. Google's review-snippet rules make a business's reviews on its own site ineligible
+  // for review stars (LocalBusiness, self-serving), and its test flagged the marked-up reviews as invalid ("Multiple
+  // reviews without aggregateRating object"). An aggregate copied from Google would break the rule against aggregating
+  // ratings from other websites. The reviews stay visible on the pages; reviewsOf() is kept for reference.
+  const reviews: Node[] = [];
   const crumbs = crumbsFor(meta);
   switch (meta.type) {
     case 'service':

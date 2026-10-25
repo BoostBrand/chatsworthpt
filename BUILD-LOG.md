@@ -901,3 +901,18 @@ screenshots sent to Vlad. Not published: main is unchanged until Vlad's yes.
   non-laughing booking photo, caption gone, "Nearby areas" line, About title "Dr. Edward Shut, DPT | ...", menu label
   "Dr. Edward", index meta and no X-Robots-Tag, /book-appointment/ still 301 to /contact/, /wp-login.php still 410.
   Inner pages keep the old anatomy-chart photo (Vlad did not answer that question; unchanged).
+
+## 24 Oct 2026, 6:30pm: Google flags the review markup; fix staged on branch review-markup-off (not published)
+
+- GPT (Search Console live tests after the Dr. Edward update): Home and About can be indexed and show "Dr. Edward";
+  indexing requested for both. Both flagged Review snippets as invalid (Home 4, About 1); image metadata, local
+  business and video show non-critical notes only.
+- Rich Results Test on https://chatsworthpt.com/ (built-in browser, 24 Oct 6:16pm): the four Review items fail with
+  "Multiple reviews without aggregateRating object".
+- Google's review snippet documentation (read 24 Oct 2026): when the entity being reviewed controls the reviews
+  about itself, pages using LocalBusiness or other Organization markup are ineligible for review stars (its example
+  names embedded Google Business reviews); and "Don't aggregate reviews or ratings from other websites." So the
+  clinic's Google reviews can never earn stars here, and an aggregate copied from Google would break the rules.
+- Fix (branch review-markup-off): no Review nodes anywhere (src/lib/page-schema.ts; the homepage generator calls
+  physiotherapyNode() without reviews). The reviews stay visible on every page. 22 pages carried 49 Review nodes;
+  now 0. Gates 0 failing, JSON-LD 52 of 52 parse, content check 0 failing. Waiting on Vlad's yes to publish.
