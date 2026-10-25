@@ -10,10 +10,25 @@ const page: PageContent = {
     h1: 'Knee replacement recovery: physical therapy in Chatsworth',
     lede: 'I had my knee replaced. Now I want to walk, take stairs and get in the car without thinking about it.',
     image: {
-      src: '/img/post-op-physical-therapy-chatsworth.webp',
-      alt: 'Knee taping during a physical therapy session in Chatsworth',
-      width: 900,
-      height: 900,
+      src: '/img/knee-replacement-joint-comparison-1600.webp',
+      alt: 'Side-by-side illustration of a damaged knee joint and a knee-replacement implant.',
+      width: 1600,
+      height: 1067,
+      srcSet: [
+        { src: '/img/knee-replacement-joint-comparison-640.webp', width: 640 },
+        { src: '/img/knee-replacement-joint-comparison-960.webp', width: 960 },
+        { src: '/img/knee-replacement-joint-comparison-1600.webp', width: 1600 },
+      ],
+      whole: true,
+      enlarge: 'knee replacement',
+      stock: {
+        title: 'Damaged knee and replacement joint comparison',
+        description: 'Side-by-side illustration of a damaged knee joint and a knee-replacement implant.',
+        creditText: 'Naveed - stock.adobe.com',
+        acquireLicensePage: 'https://stock.adobe.com/images/damaged-knee-joint-and-total-knee-replacement-implant-comparison-with-detailed-orthopedic-surgery-anatomy-illustration-isolated-on-white-background/2019918203',
+        license: 'https://www.adobe.com/go/stockterms',
+        aiLabel: true,
+      },
     },
     book: 'Book my evaluation',
     stars: true,
@@ -165,6 +180,7 @@ const page: PageContent = {
     'The Medicare FAQ uses the site-wide word referral where the entry says prescription.',
     "Build lead: the body line 'The first six weeks decide your range of motion for years' was taken out (a medical claim no source on hand backs); the blueprint meta description still says it, flagged for Vlad.",
     "Neither FACTS nor the entry gives a usual recovery time, so What to expect says it varies and is set after the evaluation. Add Dr. Edward's own plain words if he gives a usual range.",
+    'Hero (25 Oct 2026): Adobe Stock 2019918203, the picture Dr. Edward chose for this page in his website email of 24 Oct 2026, 8:36pm. Shown whole, never cropped, at 640, 960 and 1600 px. Standard license on Vlad\'s Adobe Stock account; credit Naveed - stock.adobe.com; the Adobe page labels it Generated with AI. A stock illustration, not Dr. Edward or a patient. A View larger illustration link under it opens the 1600 px file, because the labels are small on a phone.',
   ],
 };
 

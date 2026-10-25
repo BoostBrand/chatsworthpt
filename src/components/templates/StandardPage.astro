@@ -28,8 +28,12 @@ const booking = content.booking || null;
 const isContact = meta.type === 'contact';
 const section = ['service', 'services-hub', 'conditions-hub', 'condition'].includes(meta.type) ? 'services' : null;
 const ogImage = content.ogImage ?? content.hero.image?.src;
+// Licensed stock heroes (the condition illustrations, 25 Oct 2026) also describe the share image: alt text, size and
+// type, for Open Graph and X. Other pages print the same tags as before.
+const heroImage = content.hero.image;
+const ogImageMeta = !content.ogImage && heroImage?.stock ? { alt: heroImage.alt, width: heroImage.width, height: heroImage.height } : undefined;
 ---
-<BaseLayout pageId={meta.id} path={meta.path} title={content.title} description={content.description} noindex={isNoindex(meta)} ogImage={ogImage} section={section} schema={schema} geo={meta.type === 'contact'} bookHref={booking || isContact ? '#book' : '/contact/#book'}>
+<BaseLayout pageId={meta.id} path={meta.path} title={content.title} description={content.description} noindex={isNoindex(meta)} ogImage={ogImage} ogImageMeta={ogImageMeta} section={section} schema={schema} geo={meta.type === 'contact'} bookHref={booking || isContact ? '#book' : '/contact/#book'}>
   {heroHtml ? <Fragment set:html={heroHtml} /> : isContact ? <ContactHero hero={content.hero} crumbs={crumbs} pageName={meta.name} /> : <PageHero hero={content.hero} crumbs={crumbs} hasBooking={Boolean(booking)} />}
   <Sections sections={content.sections} custom={custom} />
   {booking && <BookingBlock booking={booking} pageName={meta.name} />}

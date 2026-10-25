@@ -81,7 +81,7 @@ async function check(file, use) {
   const all = strings(c);
   let words = 0;
   for (const [where, s] of all) {
-    if (['title', 'description', 'path', 'id'].includes(where) || /\.(src|href|key|alt|service)$/.test(where) || where.startsWith('schema')) continue;
+    if (['title', 'description', 'path', 'id'].includes(where) || /\.(src|href|key|alt|service)$/.test(where) || where.startsWith('schema') || where.startsWith('hero.image.stock')) continue; // stock: the image's license record, not copy
     if (/[\u2014\u2013]/.test(s)) errors.push(`em or en dash in ${where}`);
     for (const b of BANNED) if (s.toLowerCase().includes(b)) errors.push(`banned phrase "${b}" in ${where}`);
     // Dr. Edward's direct-pay rates, relayed by Vlad on 21 Oct 2026, are the only dollar figures allowed.

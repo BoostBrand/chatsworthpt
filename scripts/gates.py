@@ -264,6 +264,10 @@ def main():
             if target == '':
                 target = p
             if target not in paths:
+                # A direct link to a published image counts when the file is in dist (25 Oct 2026: the hero
+                # "View larger illustration" links on the condition pages).
+                if target.startswith('/img/') and (DIST / target.lstrip('/')).is_file():
+                    continue
                 (pending if target in planned else broken).append((p, href))
                 continue
             if frag and frag not in parsed[target].ids:

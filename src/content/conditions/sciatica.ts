@@ -9,10 +9,24 @@ const page: PageContent = {
     h1: 'Sciatica treatment with physical therapy in Chatsworth',
     lede: 'Pain that runs down your leg and gets worse when you sit or drive. Dr. Edward finds what is irritating the nerve.',
     image: {
-      src: '/img/back-pain-therapy-chatsworth.webp',
-      alt: 'Dr. Edward guiding a patient through a core stability exercise for back pain at Chatsworth Physical Therapy',
-      width: 900,
-      height: 900,
+      src: '/img/sciatica-nerve-pain-illustration-1600.webp',
+      alt: 'Illustration of a seated man holding his lower back, with a highlighted nerve path extending into his leg.',
+      width: 1600,
+      height: 893,
+      srcSet: [
+        { src: '/img/sciatica-nerve-pain-illustration-640.webp', width: 640 },
+        { src: '/img/sciatica-nerve-pain-illustration-960.webp', width: 960 },
+        { src: '/img/sciatica-nerve-pain-illustration-1600.webp', width: 1600 },
+      ],
+      whole: true,
+      stock: {
+        title: 'Sciatica nerve-pain illustration',
+        description: 'Illustration of a seated man holding his lower back, with a highlighted nerve path extending into his leg.',
+        creditText: 'Shah - stock.adobe.com',
+        acquireLicensePage: 'https://stock.adobe.com/images/man-suffering-from-severe-sciatic-nerve-pain-and-lower-back-discomfort-in-medical-office/2166068872',
+        license: 'https://www.adobe.com/go/stockterms',
+        aiLabel: true,
+      },
     },
     book: 'Book my evaluation',
     stars: true,
@@ -147,7 +161,7 @@ const page: PageContent = {
     'FAQ 1 is the approved answer word for word. The evaluation paragraph under What Dr. Edward does about it reuses the approved back pain evaluation language word for word, as the decision file allows.',
     'FAQ 3 follows the entry: nerve pain often eases within the first few visits, the cause takes longer, no visit count is quoted.',
     'The entry words the parent service anchor as parent service. The page shows the page name Back pain therapy as the visible anchor.',
-    'Hero photo is back-pain-therapy-chatsworth.webp until a dedicated sciatica frame exists.',
+    'Hero (25 Oct 2026): Adobe Stock 2166068872, the picture Dr. Edward chose for this page in his website email of 24 Oct 2026, 8:36pm. Shown whole, never cropped, at 640, 960 and 1600 px. Standard license on Vlad\'s Adobe Stock account; credit Shah - stock.adobe.com; the Adobe page labels it Generated with AI. A stock illustration, not Dr. Edward or a patient.',
   ],
 };
 

@@ -25,6 +25,7 @@ interface Props {
   ogTitle?: string;
   ogDescription?: string;
   ogImage?: string; // '/img/...'
+  ogImageMeta?: { alt: string; width: number; height: number }; // optional: the share image's alt text and size (adds the og:image and twitter:image detail tags)
   ogType?: 'website' | 'article';
   geo?: boolean; // home and contact
   home?: boolean;
@@ -43,6 +44,7 @@ const {
   ogTitle = title,
   ogDescription = description,
   ogImage = '/img/hero-dr-ed-treating-patient-chatsworth.webp',
+  ogImageMeta,
   ogType = 'website',
   geo = false,
   home = false,
@@ -52,6 +54,8 @@ const {
   bookLabel = 'Book',
 } = Astro.props;
 const url = `${SITE_URL}${path}`;
+const ogImageUrl = `${SITE_URL}${ogImage}`;
+const ogImageType = ({ webp: 'image/webp', jpg: 'image/jpeg', jpeg: 'image/jpeg', png: 'image/png' } as Record<string, string>)[ogImage.split('.').pop()?.toLowerCase() ?? ''];
 const robots = noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large';
 ---
 <!doctype html>
@@ -72,9 +76,23 @@ const robots = noindex ? 'noindex, follow' : 'index, follow, max-image-preview:l
 <meta property="og:title" content={ogTitle}>
 <meta property="og:description" content={ogDescription}>
 {canonical && <meta property="og:url" content={url}>}
-<meta property="og:image" content={`${SITE_URL}${ogImage}`}>
+<meta property="og:image" content={ogImageUrl}>
+{ogImageMeta && (
+  <Fragment>
+    {ogImageType && <meta property="og:image:type" content={ogImageType}>}
+    <meta property="og:image:width" content={String(ogImageMeta.width)}>
+    <meta property="og:image:height" content={String(ogImageMeta.height)}>
+    <meta property="og:image:alt" content={ogImageMeta.alt}>
+  </Fragment>
+)}
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
+{ogImageMeta && (
+  <Fragment>
+    <meta name="twitter:image" content={ogImageUrl}>
+    <meta name="twitter:image:alt" content={ogImageMeta.alt}>
+  </Fragment>
+)}
 {geo && (
   <Fragment>
     <meta name="geo.region" content="US-CA">

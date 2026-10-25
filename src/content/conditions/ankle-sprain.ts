@@ -10,10 +10,24 @@ const page: PageContent = {
     h1: 'Ankle sprain rehab in Chatsworth: stop the sprain that keeps coming back',
     lede: 'I keep rolling my ankle, and I do not trust it.',
     image: {
-      src: '/img/sports-injury-rehab-chatsworth.webp',
-      alt: 'Ankle treatment during a sports injury rehab session in Chatsworth',
-      width: 900,
+      src: '/img/basketball-ankle-sprain-illustration-1600.webp',
+      alt: 'Illustration of a basketball player seated on a court holding an ankle, with the painful area highlighted.',
+      width: 1600,
       height: 900,
+      srcSet: [
+        { src: '/img/basketball-ankle-sprain-illustration-640.webp', width: 640 },
+        { src: '/img/basketball-ankle-sprain-illustration-960.webp', width: 960 },
+        { src: '/img/basketball-ankle-sprain-illustration-1600.webp', width: 1600 },
+      ],
+      whole: true,
+      stock: {
+        title: 'Basketball ankle-injury illustration',
+        description: 'Illustration of a basketball player seated on a court holding an ankle, with the painful area highlighted.',
+        creditText: 'Andefastudio - stock.adobe.com',
+        acquireLicensePage: 'https://stock.adobe.com/images/basketball-player-clutching-injured-ankle-on-court/2068150277',
+        license: 'https://www.adobe.com/go/stockterms',
+        aiLabel: true,
+      },
     },
     book: 'Book my evaluation',
     stars: true,
@@ -151,6 +165,7 @@ const page: PageContent = {
     'Entry asks for two sibling conditions and one blog post where it exists. It names only Plantar fasciitis and no ankle post exists in pages.json, so Related pages lists the parent service and Plantar fasciitis, as the decision file says.',
     'FAQ on the X-ray gives only the entry yes case, plus a line to bring the report (reworded from the approved back pain imaging answer). No otherwise sentence was added.',
     'Short plain definitions of grading, proprioception and cutting are the only additions beyond the entry wording. Cut them if Dr. Edward prefers.',
+    'Hero (25 Oct 2026): Adobe Stock 2068150277, the picture Dr. Edward chose for this page in his website email of 24 Oct 2026, 8:36pm. Shown whole, never cropped, at 640, 960 and 1600 px. Standard license on Vlad\'s Adobe Stock account; credit Andefastudio - stock.adobe.com; the Adobe page labels it Generated with AI. A stock illustration, not Dr. Edward or a patient.',
   ],
 };
 
