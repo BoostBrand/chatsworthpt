@@ -10,10 +10,24 @@ const page: PageContent = {
     h1: 'Herniated disc physical therapy in Chatsworth',
     lede: 'Your MRI shows a disc problem and someone has mentioned surgery. Dr. Edward tests how you move, treats you hands-on and gives you a home program.',
     image: {
-      src: '/img/back-pain-therapy-chatsworth.webp',
-      alt: 'Dr. Edward guiding a patient through a core stability exercise for back pain at Chatsworth Physical Therapy',
-      width: 900,
-      height: 900,
+      src: '/img/lumbar-herniated-disc-illustration-1600.webp',
+      alt: 'Lumbar spine illustration with a protruding disc and nearby nerve highlighted.',
+      width: 1600,
+      height: 893,
+      srcSet: [
+        { src: '/img/lumbar-herniated-disc-illustration-640.webp', width: 640 },
+        { src: '/img/lumbar-herniated-disc-illustration-960.webp', width: 960 },
+        { src: '/img/lumbar-herniated-disc-illustration-1600.webp', width: 1600 },
+      ],
+      whole: true,
+      stock: {
+        title: 'Lumbar herniated-disc illustration',
+        description: 'Lumbar spine illustration with a protruding disc and nearby nerve highlighted.',
+        creditText: 'Billah - stock.adobe.com',
+        acquireLicensePage: 'https://stock.adobe.com/images/lumbar-spine-herniation-a-detailed-3d-medical-illustration-depicting-a-lumbar-spine-segment-with-a-painful-herniated-disc-causing-nerve-compression/2034326479',
+        license: 'https://www.adobe.com/go/stockterms',
+        aiLabel: true,
+      },
     },
     book: 'Book my evaluation',
     stars: true,
@@ -159,6 +173,7 @@ const page: PageContent = {
     'The plain-words gloss of directional movement testing (which movements ease the pain and which bring it on) is the page writer\'s; Dr. Edward to confirm it describes what he does.',
     'No emergency-symptoms line was written because the entry gives none. Dr. Edward to decide whether he wants one on a disc page.',
     'The parent service link sits in related as "Back pain therapy" (the page name), not as the entry\'s "parent service" text.',
+    'Hero (25 Oct 2026): Adobe Stock 2034326479, the picture Dr. Edward chose for this page in his website email of 24 Oct 2026, 8:36pm. Shown whole, never cropped, at 640, 960 and 1600 px. Standard license on Vlad\'s Adobe Stock account; credit Billah - stock.adobe.com; the Adobe page labels it Generated with AI. A stock illustration, not Dr. Edward or a patient.',
   ],
 };
 

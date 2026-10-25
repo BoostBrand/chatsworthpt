@@ -18,6 +18,15 @@ const bookHref = hasBooking ? '#book' : '/contact/#book';
 const call = hero.call !== false;
 const stars = hero.stars !== false;
 const media = Boolean(hero.image || hero.placeholder);
+// Optional width candidates (25 Oct 2026). The default sizes follow the hero column in site.css: the wrap is at most
+// 1180px with 16px gutters, so the image is 455px wide from 1180px, five twelfths of the row less the 3.5rem gap
+// from 960px, and the full row (100vw less the gutters) when the hero stacks below 960px.
+const HERO_SIZES = '(min-width: 1180px) 455px, (min-width: 960px) calc((100vw - 88px) * 5 / 12), calc(100vw - 32px)';
+const img = hero.image;
+const srcset = img?.srcSet?.length ? img.srcSet.map((s) => `${s.src} ${s.width}w`).join(', ') : undefined;
+const sizes = srcset ? img?.sizes ?? HERO_SIZES : undefined;
+// Whole pictures keep their own shape: the inline ratio reserves the space before the file arrives.
+const wholeStyle = img?.whole ? `aspect-ratio:${img.width} / ${img.height}` : undefined;
 ---
 <section class:list={['page-hero', { 'no-media': !media }]} aria-labelledby="h1">
   <div class="wrap">
@@ -51,15 +60,15 @@ const media = Boolean(hero.image || hero.placeholder);
         {stars && <div class="hero-proof"><span class="stars" aria-hidden="true">★★★★★</span><span>{RATING.line}</span></div>}
       </div>
       {media && (
-        <figure class="page-hero-media">
-          {hero.image ? (
+        <figure class:list={['page-hero-media', { whole: img?.whole }]}>
+          {img ? (
             <picture>
-              {hero.image.srcMobile && <source media="(max-width: 700px)" srcset={hero.image.srcMobile} />}
-              <img src={hero.image.src} alt={hero.image.alt} width={hero.image.width} height={hero.image.height} fetchpriority="high" decoding="async" />
+              {img.srcMobile && <source media="(max-width: 700px)" srcset={img.srcMobile} />}
+              <img src={img.src} srcset={srcset} sizes={sizes} alt={img.alt} width={img.width} height={img.height} style={wholeStyle} fetchpriority="high" decoding="async" />
             </picture>
           ) : (
             <PhotoPlaceholder label={hero.placeholder as string} />
-          )}
+          )}{img?.enlarge && <figcaption><a class="hero-enlarge" href={img.src}>View larger illustration<span class="vh"> for {img.enlarge}</span></a></figcaption>}
         </figure>
       )}
     </div>

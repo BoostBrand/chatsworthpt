@@ -10,10 +10,24 @@ const page: PageContent = {
     h1: 'Knee pain physical therapy in Chatsworth',
     lede: 'Your knee hurts on the stairs, when you run or after a twist. Dr. Edward finds out why.',
     image: {
-      src: '/img/post-op-physical-therapy-chatsworth.webp',
-      alt: 'Knee taping during a physical therapy session in Chatsworth',
-      width: 900,
-      height: 900,
+      src: '/img/knee-pain-anatomy-illustration-1600.webp',
+      alt: 'Illustration of a standing person holding one knee, with a highlighted knee-joint anatomy overlay.',
+      width: 1600,
+      height: 893,
+      srcSet: [
+        { src: '/img/knee-pain-anatomy-illustration-640.webp', width: 640 },
+        { src: '/img/knee-pain-anatomy-illustration-960.webp', width: 960 },
+        { src: '/img/knee-pain-anatomy-illustration-1600.webp', width: 1600 },
+      ],
+      whole: true,
+      stock: {
+        title: 'Knee pain and anatomy illustration',
+        description: 'Illustration of a standing person holding one knee, with a highlighted knee-joint anatomy overlay.',
+        creditText: 'startang141 - stock.adobe.com',
+        acquireLicensePage: 'https://stock.adobe.com/images/a-person-experiencing-knee-pain-with-a-glowing-joint-overlay-in-a-medical-setting-highlighting-anatomical-discomfort/2091117325',
+        license: 'https://www.adobe.com/go/stockterms',
+        aiLabel: true,
+      },
     },
     book: 'Book my evaluation',
     stars: true,
@@ -160,6 +174,7 @@ const page: PageContent = {
     "No Google review assigned: none yet. Kate's knee line belongs to the personal training page. Ask the next knee patient.",
     'How long it usually takes: no source gives a usual length of care, so the page says it depends and that Dr. Edward sets the plan after the evaluation. A plain usual range would need Dr. Edward.',
     'The blog post Red light therapy for back and knee pain (P-047) and the two sibling condition pages are planned pages; the links work once they are built.',
+    'Hero (25 Oct 2026): Adobe Stock 2091117325, the picture Dr. Edward chose for this page in his website email of 24 Oct 2026, 8:36pm. Shown whole, never cropped, at 640, 960 and 1600 px. Standard license on Vlad\'s Adobe Stock account; credit startang141 - stock.adobe.com; the Adobe page labels it Generated with AI. A stock illustration, not Dr. Edward or a patient.',
   ],
 };
 

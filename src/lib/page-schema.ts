@@ -1,5 +1,5 @@
 // Builds the one JSON-LD @graph for an inner page from its content file and its registry entry.
-import type { PageContent, Section, FaqItem } from './types';
+import type { PageContent, Section, FaqItem, ImageRef } from './types';
 import type { PageMeta } from './pages';
 import { crumbsFor } from './pages';
 import { getReview, quoteFor } from './reviews';
@@ -23,6 +23,31 @@ export function reviewsOf(sections: Section[]): Node[] {
 
 const CLINIC_REF = { '@id': CLINIC_ID, name: BUSINESS.name };
 
+// A licensed stock picture as an ImageObject (25 Oct 2026: the condition illustrations Dr. Edward chose). Credit, license
+// page and terms come from the content file, exactly as the Adobe Stock asset and the file's own metadata give them;
+// creator only when the file names one. Never Chatsworth PT or Boost as author or copyright holder.
+function stockImageNode(img: ImageRef, id: string, aboutId: string): Node {
+  const s = img.stock!;
+  const px = (value: number) => ({ '@type': 'QuantitativeValue', value, unitCode: 'E37' });
+  const type = ({ webp: 'image/webp', jpg: 'image/jpeg', jpeg: 'image/jpeg', png: 'image/png' } as Record<string, string>)[img.src.split('.').pop() ?? ''];
+  return {
+    '@type': 'ImageObject',
+    '@id': id,
+    contentUrl: abs(img.src),
+    url: abs(img.src),
+    name: s.title,
+    description: s.description,
+    width: px(img.width),
+    height: px(img.height),
+    ...(type ? { encodingFormat: type } : {}),
+    creditText: s.creditText,
+    ...(s.creator ? { creator: { '@type': 'Person', name: s.creator } } : {}),
+    acquireLicensePage: s.acquireLicensePage,
+    license: s.license,
+    about: { '@id': aboutId },
+  };
+}
+
 export function graphFor(page: PageContent, meta: PageMeta, extra: Node[] = []): Node[] {
   const nodes: Node[] = [];
   const faqs = faqsOf(page.sections);
@@ -37,9 +62,12 @@ export function graphFor(page: PageContent, meta: PageMeta, extra: Node[] = []):
       break;
     case 'condition': {
       const c = page.schema?.condition;
+      const conditionId = `${abs(meta.path)}#condition`;
+      const hero = page.hero.image;
+      const heroImage = hero?.stock ? stockImageNode(hero, `${abs(meta.path)}#hero-image`, conditionId) : null;
       nodes.push({
         '@type': 'MedicalCondition',
-        '@id': `${abs(meta.path)}#condition`,
+        '@id': conditionId,
         name: c?.name ?? meta.name,
         url: abs(meta.path),
         ...(c?.alternateName?.length ? { alternateName: c.alternateName } : {}),
@@ -49,7 +77,9 @@ export function graphFor(page: PageContent, meta: PageMeta, extra: Node[] = []):
           name: c?.possibleTreatment ?? 'Physical therapy',
           ...(c?.parentServicePath ? { url: abs(c.parentServicePath) } : {}),
         },
+        ...(heroImage ? { image: { '@id': heroImage['@id'] } } : {}),
       });
+      if (heroImage) nodes.push(heroImage);
       reviews.forEach((r) => nodes.push({ ...r, itemReviewed: CLINIC_REF }));
       break;
     }

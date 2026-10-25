@@ -9,6 +9,27 @@ const page: PageContent = {
   hero: {
     h1: 'Vertigo and BPPV treatment with physical therapy in Chatsworth',
     lede: 'The room spins when you roll over or look up. Dr. Edward tests for BPPV and treats it in the clinic.',
+    image: {
+      src: '/img/vertigo-bppv-dizziness-illustration-1600.webp',
+      alt: 'Illustration of a woman holding her temples, with circular light trails suggesting dizziness.',
+      width: 1600,
+      height: 897,
+      srcSet: [
+        { src: '/img/vertigo-bppv-dizziness-illustration-640.webp', width: 640 },
+        { src: '/img/vertigo-bppv-dizziness-illustration-960.webp', width: 960 },
+        { src: '/img/vertigo-bppv-dizziness-illustration-1600.webp', width: 1600 },
+      ],
+      whole: true,
+      stock: {
+        title: 'Vertigo and dizziness illustration',
+        description: 'Illustration of a woman holding her temples, with circular light trails suggesting dizziness.',
+        creditText: 'jureephorn - stock.adobe.com',
+        creator: 'kanjodnok',
+        acquireLicensePage: 'https://stock.adobe.com/images/bppv-symptoms-with-dizziness-and-brain-pain-a-person-looking-disoriented-struggling-to-stand-straight-due-to-vertigo/1039734724',
+        license: 'https://www.adobe.com/go/stockterms',
+        aiLabel: true,
+      },
+    },
     book: 'Book my evaluation',
     stars: true,
   },
@@ -136,7 +157,7 @@ const page: PageContent = {
   },
   notes: [
     'No vertigo review exists yet, so the page has no review section. Ask the next vertigo patient.',
-    'The hero is a placeholder until a vertigo repositioning frame is shot.',
+    'Hero (25 Oct 2026): Adobe Stock 1039734724, the picture Dr. Edward chose for this page in his website email of 24 Oct 2026, 8:36pm. Shown whole, never cropped, at 640, 960 and 1600 px. Standard license on Vlad\'s Adobe Stock account; credit jureephorn - stock.adobe.com; the Adobe page labels it Generated with AI. A stock illustration, not Dr. Edward or a patient. It pictures dizziness, not the inner ear and not the treatment; the alt text describes only what is shown.',
     'The positional test and repositioning maneuvers are confirmed by Dr. Edward (20 Oct 2026).',
     'The lines on what BPPV is, the positional test and the maneuvers come from the APTA ChoosePT guide to BPPV (expert review 15 Mar 2020, fetched 21 Oct 2026). The page says nothing beyond that guide. It names no specific test or maneuver, so the page names none.',
     'The entry asks for two sibling conditions but names none in its links out. Related pages follow the build lead decision: Balance and fall prevention, Neurological rehabilitation and the blog post.',

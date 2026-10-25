@@ -16,6 +16,24 @@ export interface ImageRef {
   width: number;
   height: number;
   srcMobile?: string; // optional phone crop for heroes
+  // Optional, added 25 Oct 2026 for Dr. Edward's condition illustrations. Images without them render as before.
+  srcSet?: { src: string; width: number }[]; // the same picture at several widths (each must exist in public/img)
+  sizes?: string; // rendered width for srcSet; the hero supplies its own column widths when left out
+  whole?: boolean; // hero: show the whole picture at its own shape (diagrams, labelled illustrations), never cropped
+  enlarge?: string; // hero: adds a "View larger illustration" link to src; the text names the picture for screen readers
+  stock?: StockCredit; // licensed stock: the page's share tags and JSON-LD ImageObject carry these details
+}
+
+// A licensed stock image, recorded exactly as the Adobe Stock asset page and the file's own metadata give it.
+// Never Chatsworth PT or Boost authorship.
+export interface StockCredit {
+  title: string; // plain name of the picture
+  description: string;
+  creditText: string; // e.g. 'Shah - stock.adobe.com', as embedded in the file
+  creator?: string; // only when the source file names a creator
+  acquireLicensePage: string; // the Adobe Stock asset page
+  license: string; // the Adobe Stock terms
+  aiLabel: boolean; // the Adobe asset page shows "Generated with AI" (record only, never rendered)
 }
 
 export type Block =
