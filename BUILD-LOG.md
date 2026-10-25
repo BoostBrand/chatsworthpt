@@ -896,3 +896,8 @@ byte-identical. Checks on the branch: gates 0 failing (53 pages), content check 
 (53 pages, 2 widths), renders 106 with 0 overflow, 0 broken images, one h1; tap test 5,664 links, only the phone
 sticky bar's by-design hiding; header one row at 1180 to 1920 with the logo at full width. Before and after
 screenshots sent to Vlad. Not published: main is unchanged until Vlad's yes.
+- Published 24 Oct about 5:50pm on Vlad's "publish": ed-feedback-2026-10-24 fast-forwarded into main (4de8ec5), gates
+  0 failing, pushed. Live check on chatsworthpt.com: new H1 "one-on-one with Dr. Edward", approach band, leg photo,
+  non-laughing booking photo, caption gone, "Nearby areas" line, About title "Dr. Edward Shut, DPT | ...", menu label
+  "Dr. Edward", index meta and no X-Robots-Tag, /book-appointment/ still 301 to /contact/, /wp-login.php still 410.
+  Inner pages keep the old anatomy-chart photo (Vlad did not answer that question; unchanged).

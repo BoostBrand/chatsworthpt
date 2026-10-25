@@ -2,8 +2,8 @@
 
 Read this first, then `claude/DESIGN-RULINGS-chatsworthpt.md` (every design decision Vlad and Dr. Ed made on 20 Oct; the build and every redesign pass read it), then `claude/SEO-PLAN-chatsworthpt-2026-10-20.html` only if the job touches SEO or the inner pages. For the inner pages, the conditions layer, the city pages and the blog, the page-by-page spec is now `claude/PAGE-BLUEPRINT-chatsworthpt-v1.html` (blueprint v1, 21 Oct); it does not rewrite plan v3, it adds the page entries and lists the decisions it changes.
 
-## Status as of 24 Oct 2026, evening: Dr. Edward's feedback built on a branch, waiting on Vlad's yes to publish
-- Branch ed-feedback-2026-10-24 (build log, 24 Oct evening entry): "Dr. Edward" site-wide, homepage approach band, hands-on leg photo, static mosaic, caption removed, non-laughing booking photo, plain city line with an area-pages line. All checks pass. Publishing = merge the branch into main (Cloudflare deploys main to chatsworthpt.com).
+## Status as of 24 Oct 2026, 5:50pm: Dr. Edward's feedback PUBLISHED (main 4de8ec5)
+- Branch ed-feedback-2026-10-24 (build log, 24 Oct evening entry): "Dr. Edward" site-wide, homepage approach band, hands-on leg photo, static mosaic, caption removed, non-laughing booking photo, plain city line with an area-pages line. All checks pass. Merged into main and live since about 5:50pm, 24 Oct; checked on chatsworthpt.com.
 - Open: reviews quoting "Dr. Ed" stay verbatim; six inner pages still use the laughing anatomy photo (offer to swap); the brief's 17.6 MB leg photo was not the file used (series 76 to 79 from the originals instead).
 
 ## Status as of 24 Oct 2026, 10:45am: LIVE. chatsworthpt.com serves the new site
