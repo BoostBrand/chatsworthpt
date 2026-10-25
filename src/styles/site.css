@@ -10,7 +10,11 @@
 
 /* ---------- Header: the menu (desktop, 1180px and up) ---------- */
 @media (min-width:960px) and (max-width:1179px){.nav{display:none}.top-actions{margin-left:auto}}
-@media (min-width:1180px){.nav{gap:1.35rem}}
+/* 24 Oct 2026: "Dr. Edward" is four letters longer than "Dr. Ed"; labels stay on one line and the gap tightens so the
+   logo keeps its full width (it shrank when the labels wrapped). */
+.brand{flex:none}
+.nav a{white-space:nowrap}
+@media (min-width:1180px){.nav{gap:.95rem}}
 .menu-panel.menu-patients{grid-template-columns:auto;min-width:230px}
 .menu-panel.menu-conditions{min-width:420px}
 .menu-panel.menu-services,.menu-panel.menu-conditions{max-width:none}

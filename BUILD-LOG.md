@@ -853,3 +853,46 @@ Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating b
 - Next, Vlad's call: cancel SiteGround in a week or two; at that point tidy the DNS records that point to it (the
   five host A records at 35.215.84.147, the DKIM CNAME, MX and SPF), since nothing uses its mail. Check Search
   Console indexing after a week.
+
+## 24 Oct 2026, evening: Dr. Edward's homepage feedback (branch ed-feedback-2026-10-24, not published)
+
+Source: Vlad's brief CLAUDE-BRIEF-Ed-homepage-feedback-2026-10-24.md (his Chatsworth PT folder), from Dr. Edward's
+email of 24 Oct 3:16pm and Vlad's ruling that the site says "Dr. Edward", never "Dr. Ed".
+
+1. Naming, site-wide: 658 authored "Dr. Ed" / "Dr Ed" / "Doctor Ed" became "Dr. Edward" in src and scripts (menus,
+   headings, body copy, buttons, booking lines, FAQs, alt text, captions, schema, blog bylines, the review context
+   label on personal training, the Russian About line "Доктор Эдвард"). The homepage generator renames its own output
+   (markup, FAQ and video data), so a rerun keeps it. Patients' reviews are quoted as written: 7 pages show reviews
+   that say "Dr. Ed" or "Dr Ed" (reviews.json, kept verbatim; the homepage review cards have none). Person schema:
+   name "Edward Shut", alternateName "Dr. Edward" (was "Dr. Ed"); @id unchanged. Image file names unchanged. The
+   blueprint and older rulings keep their wording as records; scripts/lib/blueprint.py and check-content.mjs read the
+   expected SEO fields through the same rename. 43 titles and descriptions went over 60 or 155 characters with the
+   longer name; each got the smallest fix (mostly "| Dr. Edward, DPT" or "| Dr. Edward" as the title tail, or a two to
+   ten character trim) and is recorded in reference/SEO-RULINGS.json under "naming". Header: labels kept on one line
+   (white-space nowrap), menu gap 0.95rem from 1180px, logo set not to shrink; same menu width as before (640 px).
+2. Homepage biography replaced by "A plan built around your movement" (Vlad's brief copy, unchanged), portrait kept,
+   links "Explore our treatments" (/our-services/) and "Meet Dr. Edward" (/about-us/). Credentials, diploma and
+   license frames, the Susan quote and the social row are gone from the homepage; all remain on About and the footer.
+3. Service photos: the knee ultrasound tile is now a hands-on leg mobility photo, public/img/dr-edward-hands-on-leg-
+   mobility-chatsworth.webp (900 px, 29 KB) from Drive "With Meta Data On It" 78-REL08989.jpg
+   (1SihkGtdBseWTnUlGJIXp1BFUztzyk_2T): Dr. Edward holds a patient's bent leg at the ankle, other hand on her hip.
+   The brief's suggested file (rehab-therapy-manual-therapy-knee-exercise-chatsworth-pt.jpg, 17.6 MB) could not be
+   downloaded (connector limit 10 MB); a subagent found the hands-on series 76 to 79 in the shoot originals and could
+   not confirm which frame the SEO copy was exported from. The mosaic is static: hover and focus photo swapping
+   removed (site.ts block, the overlay image, data-photo attributes, the .mosaic-swap styles). The old post-op image
+   file stays (other pages may use it).
+4. Caption "Real sessions at the clinic. Every one of them is Dr. Ed." removed; mosaic label "Physical therapy treatments".
+5. Booking photo: public/img/dr-edward-anatomy-chart-chatsworth.webp (1200 x 960) from 31-REL08860.jpg
+   (10lNyODk8SHNKMbAlbFMH7rMQj7_SQ-mm), two frames before the laughing one (32-REL08862.jpg, the old file's source,
+   matched by pixels), same camera, same people and chart, Dr. Edward's mouth closed; same crop as the old file. Alt
+   "Dr. Edward explaining an anatomy chart in the Chatsworth clinic". Homepage only: six inner pages still use the old
+   (laughing) file.
+6. City line plain text; "Nearby areas: Porter Ranch | Northridge" below it (links only while CITY_PAGES_LIVE).
+   One line from 360 px; wraps at 320.
+
+Generator: scripts/port-homepage.py now also carries the three edits made in the build after the port (trust row
+"Most patients need no referral", the comma after CA, the Russian booking line); a second regeneration is
+byte-identical. Checks on the branch: gates 0 failing (53 pages), content check 0 failing, accessibility 0 failures
+(53 pages, 2 widths), renders 106 with 0 overflow, 0 broken images, one h1; tap test 5,664 links, only the phone
+sticky bar's by-design hiding; header one row at 1180 to 1920 with the logo at full width. Before and after
+screenshots sent to Vlad. Not published: main is unchanged until Vlad's yes.

@@ -106,7 +106,8 @@ sub('<small>Dr. Ed answers his own phone.</small></p>\n',
 sub('\n        <p class="mosaic-caption">Real sessions at the clinic. Every one of them is Dr. Ed.</p>', '')
 sub('<div class="mosaic" aria-label="Real sessions at the clinic">', '<div class="mosaic" aria-label="Physical therapy treatments">')
 # Item 3: the mosaic is static (no hover or focus photo swap), and the knee ultrasound tile becomes a hands-on
-# leg mobility photo (Drive: rehab-therapy-manual-therapy-knee-exercise-chatsworth-pt.jpg, 16CCdLRlqOluKGWM77sXA0_m6ASuUr2T_).
+# leg mobility photo (Drive "With Meta Data On It", 78-REL08989.jpg, 1SihkGtdBseWTnUlGJIXp1BFUztzyk_2T: Dr. Edward holds a
+# patient's bent leg at the ankle with his other hand on her hip; square crop 1000,80 to 3900,2980, 900 px).
 swap = re.search(r'<img class="mosaic-swap" id="mosaic-swap" [^>]*>', main)
 if not swap:
     sys.exit('Mosaic swap image not found')
@@ -136,7 +137,7 @@ main = main.replace(about.group(0), """<section class="about approach band" id="
 sub('<p class="service-area">Patients come from Chatsworth, {CITY_PAGES_LIVE ? <a href="/physical-therapy-porter-ranch/">Porter Ranch</a> : \'Porter Ranch\'}, '
     '{CITY_PAGES_LIVE ? <a href="/physical-therapy-northridge/">Northridge</a> : \'Northridge\'}, West Hills, Canoga Park, Granada Hills and Simi Valley.</p>',
     '<p class="service-area">Patients come from Chatsworth, Porter Ranch, Northridge, West Hills, Canoga Park, Granada Hills and Simi Valley.</p>\n'
-    '      {CITY_PAGES_LIVE && <p class="area-links">Explore nearby areas: <a href="/physical-therapy-porter-ranch/">Porter Ranch</a><span aria-hidden="true">|</span><a href="/physical-therapy-northridge/">Northridge</a></p>}')
+    '      {CITY_PAGES_LIVE && <p class="area-links">Nearby areas: <a href="/physical-therapy-porter-ranch/">Porter Ranch</a><span aria-hidden="true">|</span><a href="/physical-therapy-northridge/">Northridge</a></p>}')
 # Item 5: booking band photo, the frame two shots earlier in which Dr. Edward is not laughing (Drive "With Meta Data On It",
 # 31-REL08860.jpg, 10lNyODk8SHNKMbAlbFMH7rMQj7_SQ-mm; same crop as the old file, which came from 32-REL08862.jpg).
 # Only the homepage changes: the old file stays for the pages that use it. Alt made neutral (the seated man is Vlad, not a patient).
