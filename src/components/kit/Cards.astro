@@ -19,6 +19,11 @@ interface Props {
 const { h2, intro, cards = [], groups = [], outro, columns = 3, tone = 'white', id } = Astro.props;
 const hid = 'h-' + (id ?? slugify(h2));
 const sets = groups.length ? groups : [{ title: '', cards }];
+// Same grid as site.css: 16px page gutters, 20px gaps, and a 1px border on each card.
+// Explicit image sizes can override these defaults without changing existing cards.
+const imageSizes = columns === 2
+  ? '(min-width: 1180px) 562px, (min-width: 640px) calc((100vw - 52px) / 2 - 2px), calc(100vw - 34px)'
+  : '(min-width: 1180px) 368px, (min-width: 1000px) calc((100vw - 72px) / 3 - 2px), (min-width: 640px) calc((100vw - 52px) / 2 - 2px), calc(100vw - 34px)';
 ---
 <section class:list={['sec', `tone-${tone}`]} id={id} aria-labelledby={hid}>
   <div class="wrap">
@@ -30,8 +35,8 @@ const sets = groups.length ? groups : [{ title: '', cards }];
           {g.cards.map((c) => (
             <li class="card">
               {(c.image || c.placeholder) && (
-                <div class="card-media">
-                  {c.image ? <img src={c.image.src} alt={c.image.alt} width={c.image.width} height={c.image.height} loading="lazy" decoding="async" /> : <PhotoPlaceholder label={c.placeholder as string} />}
+                <div class:list={['card-media', { whole: c.image?.whole }]}>
+                  {c.image ? <img src={c.image.src} srcset={c.image.srcSet?.map((s) => `${s.src} ${s.width}w`).join(', ')} sizes={c.image.srcSet?.length ? c.image.sizes ?? imageSizes : undefined} alt={c.image.alt} width={c.image.width} height={c.image.height} loading="lazy" decoding="async" /> : <PhotoPlaceholder label={c.placeholder as string} />}
                 </div>
               )}
               <div class="card-body">
@@ -47,3 +52,8 @@ const sets = groups.length ? groups : [{ title: '', cards }];
     {outro && <Inline as="p" class="cond-note" text={outro} />}
   </div>
 </section>
+
+<style>
+  /* Keep the existing aligned card frames while showing every edge of opted-in photos and diagrams. */
+  .card-media.whole img { object-fit: contain; }
+</style>

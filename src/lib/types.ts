@@ -11,6 +11,7 @@
 export type Inline = string;
 
 export interface ImageRef {
+  caption?: Inline; // optional visible source/credit/license information
   src: string; // '/img/<file>.webp', must exist in public/img
   alt: string;
   width: number;
@@ -49,6 +50,7 @@ export type Block =
   | { type: 'callout'; text: Inline } // a highlighted one-liner, e.g. the "Not sure which one you need?" phone line
   | { type: 'leads'; items: { lead: Inline; text: Inline }[] } // bold lead plus a sentence, shown as quiet cards
   | { type: 'image'; image: ImageRef; caption?: Inline }
+  | { type: 'image-pair'; images: [ImageRef, ImageRef] }
   | { type: 'placeholder'; label: string; ratio?: string } // label starts with "PHOTO:" exactly as the blueprint words it
   | { type: 'links'; label?: string; items: { text: string; href: string }[] };
 

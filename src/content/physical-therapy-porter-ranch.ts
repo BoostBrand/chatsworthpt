@@ -6,10 +6,33 @@ const page: PageContent = {
   title: 'Physical Therapy Near Porter Ranch | Dr. Edward Shut, DPT',
   description:
     "Physical therapy for Porter Ranch families, one-on-one with Dr. Edward Shut, DPT in nearby Chatsworth. Book an evaluation.",
+  ogImage: '/img/porter-ranch-holleigh-bernson-park-share.jpg',
+  ogImageMeta: {
+    alt: 'Basketball court and hills at Holleigh Bernson Memorial Park in Porter Ranch.',
+    width: 1200,
+    height: 900,
+  },
   hero: {
     h1: 'Physical therapy for Porter Ranch families, one-on-one in nearby Chatsworth',
     lede: 'Dr. Edward sees patients at 19851 Nordhoff Place, Unit 105, in Chatsworth, under 4 miles from Porter Ranch Town Center straight down Corbin Avenue.',
     book: 'Book my evaluation',
+    image: {
+      src: '/img/porter-ranch-holleigh-bernson-park-1200.webp',
+      alt: 'Basketball court and hills at Holleigh Bernson Memorial Park in Porter Ranch.',
+      width: 1200,
+      height: 900,
+      whole: true,
+      maxWidth: 1600,
+      title: 'Holleigh Bernson Memorial Park in Porter Ranch',
+      description: 'A basketball court, benches and surrounding hills at Holleigh Bernson Memorial Park in Porter Ranch.',
+      caption: 'Holleigh Bernson Memorial Park. [Basketball court, Holleigh Berson Memorial Park.jpg](https://commons.wikimedia.org/wiki/File:Basketball_court,_Holleigh_Berson_Memorial_Park.jpg) by [FoxLad](https://commons.wikimedia.org/wiki/User:FoxLad), via Wikimedia Commons, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/). Resized and converted for the web; no cropping.',
+      srcSet: [
+        { src: '/img/porter-ranch-holleigh-bernson-park-480.webp', width: 480 },
+        { src: '/img/porter-ranch-holleigh-bernson-park-768.webp', width: 768 },
+        { src: '/img/porter-ranch-holleigh-bernson-park-1200.webp', width: 1200 },
+        { src: '/img/porter-ranch-holleigh-bernson-park-1600.webp', width: 1600 },
+      ],
+    },
   },
   sections: [
     {

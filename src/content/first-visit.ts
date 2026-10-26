@@ -6,16 +6,43 @@ const page: PageContent = {
   title: 'Your First Visit, Step by Step | Chatsworth Physical Therapy',
   description:
     'See what happens at your first physical therapy visit with Dr. Edward Shut, DPT: the evaluation, how long it takes, what to wear and bring. Book today.',
+  ogImage: "/img/first-visit-dr-edward-welcoming-patient-share-1200.jpg",
+  ogImageMeta: {
+  "width": 1200,
+  "height": 1200,
+  "alt": "Dr. Edward Shut shaking hands with a man at the Chatsworth Physical Therapy entrance."
+},
   hero: {
     h1: 'Your first visit at Chatsworth Physical Therapy: what to expect',
     lede: 'About an hour, one-on-one with Dr. Edward. You leave with a plan you can follow at home.',
     image: {
-      src: '/img/hero-dr-ed-treating-patient-chatsworth.webp',
-      srcMobile: '/img/hero-dr-ed-treating-patient-chatsworth-mobile.webp',
-      width: 1800,
-      height: 1125,
-      alt: 'Dr. Edward Shut guiding a patient through a back exercise on the treatment table at Chatsworth Physical Therapy',
+  "src": "/img/first-visit-dr-edward-welcoming-patient-1200.webp",
+  "alt": "Dr. Edward Shut shaking hands with a man at the Chatsworth Physical Therapy entrance.",
+  "width": 1200,
+  "height": 1200,
+  "srcSet": [
+    {
+      "src": "/img/first-visit-dr-edward-welcoming-patient-480.webp",
+      "width": 480
     },
+    {
+      "src": "/img/first-visit-dr-edward-welcoming-patient-768.webp",
+      "width": 768
+    },
+    {
+      "src": "/img/first-visit-dr-edward-welcoming-patient-1200.webp",
+      "width": 1200
+    },
+    {
+      "src": "/img/first-visit-dr-edward-welcoming-patient-1600.webp",
+      "width": 1600
+    }
+  ],
+  "whole": true,
+  "title": "Dr. Edward Shut shaking hands with a man at the Chatsworth Physical Therapy entrance",
+  "description": "Dr. Edward Shut shaking hands with a man at the Chatsworth Physical Therapy entrance."
+},
+
     book: 'Book my evaluation',
   },
   sections: [
@@ -123,15 +150,67 @@ const page: PageContent = {
           type: 'p',
           text: 'The entrance and the parking are wheelchair accessible, and there is a restroom. Dr. Edward speaks English and Russian, so you can be treated in either.',
         },
+{
+  "type": "image-pair",
+  "images": [
+    {
+      "src": "/img/first-visit-chatsworth-treatment-room-768.webp",
+      "alt": "Treatment tables and equipment inside Chatsworth Physical Therapy.",
+      "width": 768,
+      "height": 768,
+      "srcSet": [
         {
-          type: 'image',
-          image: {
-            src: '/img/dr-ed-explaining-anatomy-chatsworth.webp',
-            width: 1200,
-            height: 960,
-            alt: 'Dr. Edward explaining an anatomy chart to a patient',
-          },
+          "src": "/img/first-visit-chatsworth-treatment-room-480.webp",
+          "width": 480
         },
+        {
+          "src": "/img/first-visit-chatsworth-treatment-room-768.webp",
+          "width": 768
+        },
+        {
+          "src": "/img/first-visit-chatsworth-treatment-room-1200.webp",
+          "width": 1200
+        },
+        {
+          "src": "/img/first-visit-chatsworth-treatment-room-1600.webp",
+          "width": 1600
+        }
+      ],
+      "whole": true,
+      "title": "Treatment tables and equipment inside Chatsworth Physical Therapy",
+      "description": "Treatment tables and equipment inside Chatsworth Physical Therapy.",
+      "sizes": "(min-width: 600px) 360px, calc(100vw - 32px)"
+    },
+    {
+      "src": "/img/first-visit-chatsworth-clinic-doorway-768.webp",
+      "alt": "Open doorway into Chatsworth Physical Therapy beside a clinic services banner.",
+      "width": 768,
+      "height": 768,
+      "srcSet": [
+        {
+          "src": "/img/first-visit-chatsworth-clinic-doorway-480.webp",
+          "width": 480
+        },
+        {
+          "src": "/img/first-visit-chatsworth-clinic-doorway-768.webp",
+          "width": 768
+        },
+        {
+          "src": "/img/first-visit-chatsworth-clinic-doorway-1200.webp",
+          "width": 1200
+        },
+        {
+          "src": "/img/first-visit-chatsworth-clinic-doorway-1600.webp",
+          "width": 1600
+        }
+      ],
+      "whole": true,
+      "title": "Open doorway into Chatsworth Physical Therapy beside a clinic services banner",
+      "description": "Open doorway into Chatsworth Physical Therapy beside a clinic services banner.",
+      "sizes": "(min-width: 600px) 360px, calc(100vw - 32px)"
+    }
+  ]
+},
       ],
     },
     { kind: 'review', review: { key: 'chris', context: 'back pain' } },
@@ -179,7 +258,6 @@ const page: PageContent = {
   notes: [
     'The treatments named in the First treatment step come from the approved About paragraph on the homepage facts list, with the words may include. Remove that sentence if the page should hold only what the blueprint entry lists.',
     'The restroom line in the clinic section comes from the blueprint entry; it is not on the confirmed facts list. Dr. Edward to confirm.',
-    'The clinic section uses the anatomy chart photo until the shoot list (front door, parking lot, reception, treatment room) is done.',
     'The first FAQ answer uses the site-wide visit length wording, which is longer than the entry answer.',
   ],
 };

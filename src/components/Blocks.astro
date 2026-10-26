@@ -30,6 +30,12 @@ const r = renderInline;
           {b.caption && <figcaption set:html={r(b.caption)} />}
         </figure>
       );
+    case 'image-pair':
+      return (
+        <div class="photo-pair">
+          {b.images.map((image) => <figure class="post-figure"><img src={image.src} srcset={image.srcSet?.map((s) => `${s.src} ${s.width}w`).join(', ')} sizes={image.sizes} alt={image.alt} width={image.width} height={image.height} loading="lazy" decoding="async" /></figure>)}
+        </div>
+      );
     case 'placeholder':
       return <PhotoPlaceholder label={b.label} ratio={b.ratio ?? '16/10'} />;
     case 'links':
@@ -40,3 +46,9 @@ const r = renderInline;
       return null;
   }
 })}
+<style>
+  .photo-pair{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem;width:100%;}
+  .photo-pair .post-figure{margin:0;min-width:0;}
+  .photo-pair img{display:block;width:100%;height:auto;}
+  @media(min-width:600px){.photo-pair{grid-template-columns:repeat(2,minmax(0,1fr));}}
+</style>

@@ -6,11 +6,34 @@ const page: PageContent = {
   title: 'Physical Therapy Near Northridge, CA | Dr. Edward Shut, DPT',
   description:
     'Northridge patients drive a few minutes west on Nordhoff to see Dr. Edward Shut, DPT one-on-one. Evenings, Saturdays, Medicare, free parking. Book now.',
+  ogImage: '/img/northridge-csun-university-library-share.jpg',
+  ogImageMeta: {
+    alt: 'Front steps and facade of the CSUN University Library in Northridge.',
+    width: 1200,
+    height: 715,
+  },
   hero: {
     h1: 'Physical therapy for Northridge patients, ten minutes away in Chatsworth',
     lede:
       'The clinic is at 19851 Nordhoff Place in Chatsworth, about 2 miles west of Nordhoff Street and Reseda Boulevard.',
     book: 'Book my evaluation',
+    image: {
+      src: '/img/northridge-csun-university-library-1200.webp',
+      alt: 'Front steps and facade of the CSUN University Library in Northridge.',
+      width: 1200,
+      height: 715,
+      whole: true,
+      maxWidth: 1600,
+      title: 'CSUN University Library in Northridge',
+      description: 'The front facade, steps and lawn of the CSUN University Library in Northridge, photographed in 2008.',
+      caption: 'CSUN University Library. [CSUN Central Campus.JPG](https://commons.wikimedia.org/wiki/File:CSUN_Central_Campus.JPG) by [Cbl62](https://en.wikipedia.org/wiki/User:Cbl62), with prior edits by [Pd THOR](https://en.wikipedia.org/wiki/User:Pd_THOR), via Wikimedia Commons, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Resized and converted for the web; no additional cropping.',
+      srcSet: [
+        { src: '/img/northridge-csun-university-library-480.webp', width: 480 },
+        { src: '/img/northridge-csun-university-library-768.webp', width: 768 },
+        { src: '/img/northridge-csun-university-library-1200.webp', width: 1200 },
+        { src: '/img/northridge-csun-university-library-1600.webp', width: 1600 },
+      ],
+    },
   },
   sections: [
     {

@@ -128,7 +128,7 @@ if not about:
     sys.exit('About band not found')
 main = main.replace(about.group(0), """<section class="about approach band" id="approach" aria-labelledby="h-approach">
   <div class="wrap">
-    <figure class="portrait"><img src="/img/dr-edward-shut-chatsworth-clinic-entrance-768.webp" srcset="/img/dr-edward-shut-chatsworth-clinic-entrance-480.webp 480w, /img/dr-edward-shut-chatsworth-clinic-entrance-768.webp 768w, /img/dr-edward-shut-chatsworth-clinic-entrance-1200.webp 1200w, /img/dr-edward-shut-chatsworth-clinic-entrance-1600.webp 1600w" sizes="(min-width: 960px) 340px, min(300px, calc(100vw - 32px))" width="768" height="768" alt="Dr. Edward Shut standing outside Chatsworth Physical Therapy beside the clinic entrance at 19851 Nordhoff Place." loading="lazy" decoding="async"></figure>
+    <figure class="portrait"><img src={newestImages.approach.src} srcset={newestImages.approach.srcSet.map((s) => `${s.src} ${s.width}w`).join(', ')} sizes={newestImages.approach.sizes} width={newestImages.approach.width} height={newestImages.approach.height} alt={newestImages.approach.alt} loading="lazy" decoding="async"></figure>
     <div class="about-copy">
       <h2 id="h-approach">A plan built around your movement</h2>
       <p>Back pain, a sports injury and recovery after surgery call for different treatment plans. Dr. Edward starts with an evaluation of how you move and what you need to get back to. Treatment may include hands-on techniques, guided exercise and a short home program. Your plan is adjusted as you progress.</p>
@@ -152,6 +152,16 @@ reviews_band = re.search(r'<section class="reviews band".*?</section>', main, re
 if reviews_band and ED.search(reviews_band.group(0)):
     sys.exit('A review card on the homepage names Dr. Ed: decide how to quote it before renaming')
 main = ED.sub('Dr. Edward', main)
+
+# Edward's 25 Oct 2026 19:43 email moves the suit/window portrait into the first picture.
+# A split hero keeps the complete square composition and the clinic lettering visible.
+sub('<section class="hero" aria-labelledby="h1">', '<section class="hero portrait-hero" aria-labelledby="h1">')
+hero_picture = re.search(r'(<section class="hero portrait-hero"[^>]*>\s*)<picture>.*?</picture>', main, re.S)
+if not hero_picture:
+    sys.exit('Expected the homepage hero picture')
+main = main[:hero_picture.start()] + hero_picture.group(1) + """<picture>
+    <img src={newestImages.hero.src} srcset={newestImages.hero.srcSet.map((s) => `${s.src} ${s.width}w`).join(', ')} sizes={newestImages.hero.sizes} width={newestImages.hero.width} height={newestImages.hero.height} alt={newestImages.hero.alt} fetchpriority="high" decoding="async">
+  </picture>""" + main[hero_picture.end():]
 
 # Booking form: the shared component renders the approved form, or the call panel while the key is a placeholder.
 form = re.search(r'<form class="form" id="book-form" novalidate>.*?</form>', main, re.S)
@@ -207,6 +217,7 @@ index = """---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BookingForm from '../components/kit/BookingForm.astro';
 import home from '../content/home';
+import newestImages from '../data/newest-home-images';
 import { CITY_PAGES_LIVE } from '../data/site';
 import { SITE_URL } from '../data/site';
 import { physiotherapyNode, personNode, faqNode, webPageNode, graph, abs, CLINIC_ID, PERSON_ID, PORTRAIT } from '../lib/schema';
@@ -215,6 +226,7 @@ const SITE_URL_SLASH = `${SITE_URL}/`;
 const schema = graph([
   physiotherapyNode(), // no Review markup (24 Oct 2026; see src/lib/page-schema.ts)
   personNode(),
+  { '@type': 'ImageObject', '@id': `${SITE_URL_SLASH}#approach-image`, contentUrl: abs(newestImages.approach.src), width: newestImages.approach.width, height: newestImages.approach.height, encodingFormat: 'image/webp', name: newestImages.approach.title, caption: newestImages.approach.alt, description: newestImages.approach.description },
   {
     '@type': 'VideoObject',
     ...home.video,
@@ -224,7 +236,7 @@ const schema = graph([
   },
   faqNode(home.faqs),
   { '@type': 'WebSite', '@id': `${SITE_URL_SLASH}#website`, url: SITE_URL_SLASH, name: 'Chatsworth Physical Therapy', inLanguage: 'en-US', publisher: { '@id': CLINIC_ID } },
-  // 25 Oct 2026: the homepage itself, about the clinic, with the treatment photo as its lead image.
+  // 25 Oct 2026: the homepage itself, about the clinic, with the suit/window portrait as its lead image.
   webPageNode('/', home.title, 'WebPage', {
     description: home.description,
     about: { '@id': CLINIC_ID },
@@ -233,15 +245,14 @@ const schema = graph([
   {
     '@type': 'ImageObject',
     '@id': `${SITE_URL_SLASH}#hero-image`,
-    contentUrl: abs('/img/hero-dr-ed-treating-patient-chatsworth.webp'),
-    url: abs('/img/hero-dr-ed-treating-patient-chatsworth.webp'),
-    width: 1800,
-    height: 1125,
-    caption: 'Dr. Edward Shut guiding a patient through a back exercise on the treatment table at Chatsworth Physical Therapy',
-    creditText: 'Chatsworth Physical Therapy',
-    copyrightNotice: 'Chatsworth Physical Therapy',
-    // 25 Oct 2026: a typed reference (Google's test called the bare @id an "invalid object type" for creator).
-    creator: { '@type': 'Organization', '@id': CLINIC_ID, name: 'Chatsworth Physical Therapy', url: SITE_URL_SLASH },
+    contentUrl: abs(newestImages.hero.src),
+    url: abs(newestImages.hero.src),
+    width: newestImages.hero.width,
+    height: newestImages.hero.height,
+    encodingFormat: 'image/webp',
+    name: newestImages.hero.title,
+    caption: newestImages.hero.alt,
+    description: newestImages.hero.description,
   },
   {
     // 25 Oct 2026: the clinic-entrance portrait. Credit as embedded in the source file; the source names no
@@ -261,7 +272,7 @@ const schema = graph([
   },
 ]);
 ---
-<BaseLayout pageId="P-001" path="/" title={home.title} description={home.description} ogTitle={home.ogTitle} ogDescription={home.ogDescription} geo home schema={schema}>
+<BaseLayout pageId="P-001" path="/" title={home.title} description={home.description} ogTitle={home.ogTitle} ogDescription={home.ogDescription} ogImage={newestImages.social.src} ogImageMeta={newestImages.social} geo home schema={schema}>
 """ + main.strip('\n') + """
 <script is:inline>
 (function(){

@@ -346,3 +346,11 @@ p{margin:0}
   .thanks h3,.thanks p{opacity:1;transform:none}
   .cred-frame:hover,.review:hover,.phone:hover,.map:hover .map-tag{transform:none}
 }
+
+/* Edward's square entrance portrait is shown in full beside the unchanged hero copy. */
+.hero.portrait-hero{min-height:0;display:grid;grid-template-columns:minmax(0,1fr);gap:2rem;padding:36px max(16px,calc((100vw - 1180px)/2)) 48px;align-items:center;}
+.hero.portrait-hero::after{display:none;}
+.hero.portrait-hero .wrap{order:1;padding:0;min-width:0;}
+.hero.portrait-hero picture{order:2;position:static;inset:auto;z-index:auto;width:100%;height:auto;max-width:480px;justify-self:center;}
+.hero.portrait-hero img{position:static;inset:auto;z-index:auto;display:block;width:100%;height:auto;object-fit:contain;animation:none;transform:none;border-radius:var(--radius);}
+@media(min-width:960px){.hero.portrait-hero{grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:3rem;padding-block:56px;}.hero.portrait-hero h1{font-size:clamp(2.5rem,4.6vw,3.6rem);}}

@@ -73,8 +73,13 @@ const pictureStyle = cap ? `max-width:${cap}px` : undefined;
           ) : (
             <PhotoPlaceholder label={hero.placeholder as string} />
           )}{img?.enlarge && <figcaption><a class="hero-enlarge" href={img.src}>View larger illustration<span class="vh"> for {img.enlarge}</span></a></figcaption>}
+          {img?.caption && <figcaption class="image-credit"><Inline text={img.caption} /></figcaption>}
         </figure>
       )}
     </div>
   </div>
 </section>
+<style>
+  .image-credit{font-size:.8rem;line-height:1.5;color:rgba(255,255,255,.85);}
+  .image-credit :global(a){color:inherit;text-decoration:underline;text-underline-offset:2px;}
+</style>
