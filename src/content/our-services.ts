@@ -52,7 +52,7 @@ const page: PageContent = {
             src: '/img/post-op-physical-therapy-chatsworth.webp',
             width: 900,
             height: 900,
-            alt: 'Knee taping during post-op physical therapy in Chatsworth',
+            alt: "Clinician holding a handheld treatment head on a patient's knee during physical therapy in Chatsworth",
           },
         },
         {
