@@ -140,8 +140,8 @@ export interface PageContent {
   approved?: boolean; // true for the six deck pages: copy is never rewritten
   title: string; // meta title, exactly as the blueprint entry, 60 or fewer characters
   description: string; // meta description, exactly as the entry, 155 or fewer
-  ogImage?: string; // '/img/<file>.webp' or '/img/<file>.jpg'
-  ogImageMeta?: { width: number; height: number; alt?: string }; // the share file's own size (alt defaults to the hero's)
+  ogImage?: string; // '/img/<file>.webp'
+  ogImageMeta?: { alt: string; width: number; height: number }; // the ogImage's alt text and size (share tags)
   hero: Hero;
   sections: Section[];
   booking?: Booking | false;

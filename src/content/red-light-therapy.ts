@@ -7,7 +7,7 @@ const page: PageContent = {
   description:
     "Red light therapy in Chatsworth, used by Dr. Edward Shut, DPT as part of one-on-one physical therapy for pain and injuries. See what the research shows.",
   ogImage: '/img/red-light-therapy-clinic-treatment-share-1200.jpg',
-  ogImageMeta: { width: 1200, height: 800 },
+  ogImageMeta: { alt: 'Person lying beneath red light equipment at Chatsworth Physical Therapy.', width: 1200, height: 800 },
   hero: {
     h1: 'Red light therapy in Chatsworth, as part of your physical therapy plan',
     lede: 'Red light is one tool inside your physical therapy plan, applied by Dr. Edward himself. It is not a wellness lounge session.',

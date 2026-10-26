@@ -297,7 +297,7 @@ for name, cfg in CONFIG.items():
         'approved': True,
         'title': e['title'],
         'description': e['description'],
-        **({'ogImage': cfg['share']['src'], 'ogImageMeta': {'width': cfg['share']['width'], 'height': cfg['share']['height']}} if 'share' in cfg else {}),
+        **({'ogImage': cfg['share']['src'], 'ogImageMeta': {'alt': cfg['image']['alt'], 'width': cfg['share']['width'], 'height': cfg['share']['height']}} if 'share' in cfg else {}),
         'hero': hero,
         'sections': sections,
         'booking': {'h2': bk['h2'], 'lead': bk['lead'], 'service': FORM_OPTION[bk['pre']], **({'messagePrompt': bk['prompt']} if bk['prompt'] else {}), 'button': bk['button']},

@@ -7,7 +7,7 @@ const page: PageContent = {
   description:
     'Orthopedic rehabilitation in Chatsworth for shoulder, knee, hip, elbow and ankle, one-on-one with Dr. Edward Shut, DPT. Evenings and Saturdays. Book.',
   ogImage: '/img/orthopedic-rehabilitation-leg-cast-crutches-share-1200.jpg',
-  ogImageMeta: { width: 1200, height: 684 },
+  ogImageMeta: { alt: 'Person with a blue lower-leg support standing beside crutches.', width: 1200, height: 684 },
   hero: {
     h1: 'Orthopedic rehabilitation in Chatsworth, one-on-one with Dr. Edward',
     lede: 'Joint and muscle injuries treated by Dr. Edward himself. About an hour a visit, plus a home program to follow between appointments.',

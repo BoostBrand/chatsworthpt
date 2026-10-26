@@ -7,7 +7,7 @@ const page: PageContent = {
   description:
     'After rehab: personal training and weight loss coaching in Chatsworth with Dr. Edward Shut, DPT, the doctor who treated you. Call (818) 749-3205.',
   ogImage: '/img/personal-training-supervised-balance-exercise-share-1200.jpg',
-  ogImageMeta: { width: 1200, height: 1140 },
+  ogImageMeta: { alt: 'Dr. Edward supervising an exercise on a balance platform at Chatsworth Physical Therapy.', width: 1200, height: 1140 },
   hero: {
     h1: 'Personal training and weight loss in Chatsworth, the step after physical therapy',
     lede: 'Train with the doctor who knows your injury history.',

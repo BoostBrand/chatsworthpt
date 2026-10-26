@@ -9,7 +9,7 @@ const page: PageContent = {
   "title": "Sports Physical Therapy in Chatsworth | Dr. Edward Shut, DPT",
   "description": "Sports physical therapy in Chatsworth with Dr. Edward Shut, DPT. One-on-one rehab for sprains, tears and overuse, plus a return-to-play plan. Book now.",
   "ogImage": "/img/sports-injury-recovery-runner-share-1200.jpg",
-  "ogImageMeta": { "width": 1200, "height": 673 },
+  "ogImageMeta": { "alt": "Runner on an outdoor path in warm sunlight.", "width": 1200, "height": 673 },
   "hero": {
     "h1": "Sports physical therapy in Chatsworth, one-on-one with Dr. Edward",
     "lede": "Rehab for the injury, strength for the weak link, and a step-by-step return to your sport instead of a blanket \"rest\".",

@@ -9,7 +9,7 @@ const page: PageContent = {
   "title": "Post-Op Physical Therapy in Chatsworth | Dr. Edward, DPT",
   "description": "Post-op physical therapy in Chatsworth after knee or hip replacement, ACL or rotator cuff surgery. One-on-one with Dr. Edward Shut, DPT. Book now.",
   "ogImage": "/img/surgical-rehabilitation-hospital-room-share-1200.jpg",
-  "ogImageMeta": { "width": 1200, "height": 673 },
+  "ogImageMeta": { "alt": "Hospital bed and monitoring equipment.", "width": 1200, "height": 673 },
   "hero": {
     "h1": "Post-op physical therapy in Chatsworth, one-on-one with Dr. Edward",
     "lede": "Your surgeon's protocol, followed one-on-one for about 60 minutes a visit, with a home program that keeps the recovery moving between sessions.",

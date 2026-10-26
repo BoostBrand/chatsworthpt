@@ -7,7 +7,7 @@ const page: PageContent = {
   description:
     "Learn how Dr. Edward Shut, DPT uses therapeutic ultrasound in Chatsworth to warm and loosen tissue before hands-on physical therapy. Book an evaluation.",
   ogImage: '/img/therapeutic-ultrasound-probe-face-share-1200.jpg',
-  ogImageMeta: { width: 1200, height: 655 },
+  ogImageMeta: { alt: "Clinician positioning a handheld treatment probe beside a patient's face.", width: 1200, height: 655 },
   hero: {
     h1: 'Therapeutic ultrasound in Chatsworth: how Dr. Edward uses it in treatment',
     lede: 'Sound waves warm and loosen tissue before hands-on work. This is treatment ultrasound, not the imaging kind.',

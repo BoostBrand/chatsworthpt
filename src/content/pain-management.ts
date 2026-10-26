@@ -7,7 +7,7 @@ const page: PageContent = {
   description:
     'Chronic pain treated without a one-size-fits-all plan: manual therapy, red light, ultrasound and e-stim with Dr. Edward Shut, DPT in Chatsworth. Book now.',
   ogImage: '/img/pain-management-tablets-bottle-share-800.jpg',
-  ogImageMeta: { width: 800, height: 533 },
+  ogImageMeta: { alt: 'Tablets beside an open amber medicine bottle.', width: 800, height: 533 },
   hero: {
     h1: 'Pain management physical therapy in Chatsworth, hands-on with Dr. Edward',
     lede: 'Pain that has lasted months gets a cause, a hands-on plan and tools that calm it between visits.',

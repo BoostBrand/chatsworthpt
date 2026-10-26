@@ -9,7 +9,7 @@ const page: PageContent = {
   "title": "Back Pain Therapy in Chatsworth | Dr. Edward Shut, DPT",
   "description": "Back pain therapy in Chatsworth, one-on-one with Dr. Edward Shut, DPT. Hands-on treatment and a home plan, evenings and Saturdays. Book your evaluation.",
   "ogImage": "/img/back-pain-therapy-upper-back-massage-share-1200.jpg",
-  "ogImageMeta": { "width": 1200, "height": 686 },
+  "ogImageMeta": { "alt": "Hands massaging a person's upper back and shoulder.", "width": 1200, "height": 686 },
   "hero": {
     "h1": "Back pain therapy in Chatsworth that finds the cause, not just the sore spot",
     "lede": "About 60 minutes, one-on-one with Dr. Edward, every visit, and a home plan that keeps the relief going between sessions.",

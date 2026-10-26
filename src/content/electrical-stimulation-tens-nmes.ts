@@ -7,7 +7,7 @@ const page: PageContent = {
   description:
     'Find out how TENS and NMES electrical stimulation calm pain and wake up weak muscles in physical therapy with Dr. Edward Shut, DPT in Chatsworth. Book now.',
   ogImage: '/img/electrical-stimulation-upper-back-electrodes-share-1200.jpg',
-  ogImageMeta: { width: 1200, height: 857 },
+  ogImageMeta: { alt: "Electrode pads attached to a person's upper back and shoulder.", width: 1200, height: 857 },
   hero: {
     h1: 'Electrical stimulation (TENS and NMES) in Chatsworth physical therapy',
     lede: 'Two kinds of electrical stimulation: TENS for pain, NMES to make a weak muscle fire.',
