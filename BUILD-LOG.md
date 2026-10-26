@@ -1057,3 +1057,58 @@ Audit document: Docs "Chatsworth PT portrait and SEO audit, 25 Oct 2026" (page-b
 issues). Remaining, not changed: Rich Results Test; six pages with the laughing anatomy photo; "Dr. Ed" in six older
 photo files' hidden titles; clinic coordinates inside ten older photo files (public address); no twitter:title or
 description (X falls back to Open Graph, unverified); post dates; no sitemap lastmod. Rollback: main 41e4512.
+
+## 25 Oct 2026, 8:15pm: the old site's service-page pictures restored, plus the Rich Results fixes the facts support (branch service-photos-restore, not published)
+
+Source: Vlad's brief CLAUDE-BRIEF-Restore-original-service-photos-2026-10-25.md and GPT's package
+assets\legacy-service-images\2026-10-25\ (his Chatsworth PT folder; ZIP SHA-256 2f55567d...f7f7 matches its QA record).
+web-output-manifest.json is the source for files, sizes, hashes, alt text, title and description. This supersedes the
+earlier alternative-photo picks for these twelve pages only. Branch made from edward-portrait-seo (3c171f6), so it
+carries the suit portrait and the 25 Oct SEO work; main still 41e4512.
+
+- Twelve service heroes, each the old WordPress page's own picture: back pain (upper-back massage, Adobe 1315320434),
+  sports (runner), pre and post-op (hospital room), orthopedic (lower-leg support and crutches), pain management
+  (tablets and an amber bottle), balance (assisted walking), pediatric (smiling child), neurological (brain scans),
+  red light (the clinic's red light table), ultrasound (probe beside a face, a stock scene), e-stim (pads on the upper
+  back), personal training (Dr. Edward at a balance platform). Seven replaced a picture, five were text-only.
+  Alt text exactly as the manifest; no picture is described as the clinic, Dr. Edward or a patient unless it is one.
+- Files: 47 WebPs and 12 share JPEGs copied as is (all 59 match the manifest's SHA-256), new names only, nothing
+  overwritten. Heroes are whole (uncropped), srcset 480/768/1200/1600, eager with fetchpriority high, no phone
+  override. Pain management's original is 800x533: candidates 480/768/800 only, never enlarged, and held to 455 CSS px
+  (the desktop hero column) when the hero stacks, so a 2x tablet gets about 1.8 pixels per point. Upright pictures stay
+  at most 520px wide when the hero stacks (the rule from portrait-about-contact, byte for byte): only Personal Training,
+  whose sizes says so (tablets fetch the 1200 file).
+- Share tags: each page's uncropped JPEG with its own size, image/jpeg and the hero's alt text (PageContent.ogImageMeta,
+  same shape and StandardPage line as portrait-about-contact). JSON-LD: a hero with a recorded title gets an
+  ImageObject #hero-image (name, caption, description, width, height, image/webp), referenced as primaryImageOfPage;
+  no creator, credit, copyright or license (the package records none as verified). One Service node per page as before.
+- deck-to-content.py: the six deck pages map to the same pictures and share files. It no longer runs on the current
+  copy (it stops at the "Dr. Ed" H1 check), so it was not rerun; a test run with the check off produced the same
+  picture and share values. Four build notes that still promised a photo shoot now name the restored picture.
+- Knee photo alt (GPT's flag): post-op-physical-therapy-chatsworth.webp shows a clinician holding a handheld treatment
+  head on a patient's knee, with the unit on the cart behind; there is no tape. The two service heroes no longer use
+  it; on the services hub card and the knee replacement post the alt now reads "Clinician holding a handheld
+  treatment head on a patient's knee during physical therapy in Chatsworth". The homepage no longer shows it.
+- Rich Results (GPT's test of the edward-portrait-seo preview, 6:53 to 6:59pm: 14 valid items, 0 critical, 21 optional
+  warnings). Fixed with sourced facts: homepage treatment photo creator is a typed Organization reference to the clinic
+  (was a bare @id); Matt's video uploadDate 2026-04-12T23:31:51Z, the creation_time inside MATT REDO ADD.mp4, the file
+  the recorded date came from (ffprobe on Vlad's copy; MP4 stores UTC); post publisher a plain Organization reference
+  to the clinic with name and url. Left as they are: post dates (build date 21 Oct, no sourced time; Vlad's call),
+  priceRange (Vlad's yes), license, acquireLicensePage, creator and copyrightNotice on clinic photos (not verified).
+  Expected after a retest (not yet run): homepage 10 to 7, contact 1, frozen shoulder 2, sciatica post 8 to 4.
+- Unchanged and checked: the 13 condition pages (identical apart from the stylesheet's file name), the homepage hero,
+  the approach portrait section (identical markup; files match the portrait manifest), the booking photo, the
+  services hub and homepage card photos, the five other laughing-photo pages, redirects, forms, tracking and consent.
+  Titles, descriptions, H1s, canonicals, robots, og titles and descriptions and all body text: identical to the live
+  build on 53 of 53 pages.
+- Checks: build 53; gates 0 failing; content check output identical to before; accessibility 0 failures; render 106
+  with 0 overflow, 0 broken images, one h1 (outside scripts unreachable, as before); static check of the 12 pages
+  (files, hashes, sizes, srcset widths, alt, share tags against the real JPEG sizes, ImageObjects, no rights fields,
+  no doubled origin, 0 Review nodes, clinic @id): 0 failures; 48 hero measurements (390 at 3x, 768, 959, 1280 at 2x):
+  whole picture, right shape, inside the screen, no sideways scroll, a real candidate chosen. Schema check against the
+  schema.org 29.3 vocabulary: 52 pages, 1,154 nodes, 0 problems. validator.schema.org showed Google's robot check
+  ("unusual traffic") in the built-in browser and was not used. Test merge with portrait-about-contact: no conflicts
+  in the site code.
+- Commits: 6a701ed pictures, 3b2a252 schema, 9c885e8 knee alt, 24ecd93 upright cap, d9b1963 share-tag alignment,
+  then the Personal Training sizes and these notes.
+  Rollback: main 41e4512, or drop the branch.

@@ -1,6 +1,14 @@
-# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 25 Oct 2026, 6:10pm)
+# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 25 Oct 2026, 8:15pm)
 
 Read this first, then `claude/DESIGN-RULINGS-chatsworthpt.md` (every design decision Vlad and Dr. Ed made on 20 Oct; the build and every redesign pass read it), then `claude/SEO-PLAN-chatsworthpt-2026-10-20.html` only if the job touches SEO or the inner pages. For the inner pages, the conditions layer, the city pages and the blog, the page-by-page spec is now `claude/PAGE-BLUEPRINT-chatsworthpt-v1.html` (blueprint v1, 21 Oct); it does not rewrite plan v3, it adds the page entries and lists the decisions it changes.
+
+## Status as of 25 Oct 2026, 8:15pm: old service-page pictures restored on a new branch; start here
+- Live unchanged: main 41e4512.
+- New branch service-photos-restore (made from edward-portrait-seo, so it includes the suit portrait and the 25 Oct SEO work): the 12 service pages show the old WordPress site's own pictures (GPT's legacy service-image package; Vlad's brief CLAUDE-BRIEF-Restore-original-service-photos-2026-10-25.md), whole and responsive, with their share JPEGs and an ImageObject each; Rich Results fixes the facts support (homepage photo creator typed, video uploadDate with the file's own time, post publisher a plain Organization); the knee photo's alt text corrected (no taping in it). Build log 25 Oct 8:15pm. All checks pass; titles, descriptions, H1s, canonicals and copy identical to live.
+- Preview: https://service-photos-restore.chatsworthpt.pages.dev/ once the branch is pushed. On 25 Oct the session's filter blocked attaching the repo with push access; Vlad was asked to say yes in chat. Check the build log's last lines for whether it went up.
+- Waiting on Vlad: (A) yes to publish edward-portrait-seo, or this branch (which contains it); (B) About and Contact placements and the Contact caption (portrait-about-contact merges into this branch with no code conflicts; BUILD-LOG.md and this file need a keep-both merge); (C) the five other laughing-photo pages stay; (D) priceRange $125 to $175; (E) post dates: keep 21 Oct (written) or 24 Oct (went public), with a time from our records.
+- Open: Google Rich Results retest of the new preview (GPT, signed-in browser); validator.schema.org showed Google's robot check in the built-in browser on 25 Oct (the local schema.org 29.3 check passed instead).
+- Later: cancel SiteGround, then a GPT job for its DNS records; Search Console indexing check around 31 Oct.
 
 ## Status as of 25 Oct 2026, 6:10pm: portrait and SEO audit on previews, waiting on Vlad's yes; start here
 - Live unchanged: main 41e4512 (the 12 condition illustrations and the review fix, published 4:23pm).
