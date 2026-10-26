@@ -52,7 +52,7 @@ for (const s of sections) {
     case 'video':
       return <VideoStory h2={s.h2} intro={s.intro} review={s.review} note={s.note} id={s.id} />;
     case 'visit':
-      return <Visit h2={s.h2} intro={s.intro} blocks={s.blocks} id={s.id} />;
+      return <Visit h2={s.h2} intro={s.intro} blocks={s.blocks} id={s.id} photo={s.photo} photoCaption={s.photoCaption} />;
     case 'posts':
       return <PostList h2={s.h2} intro={s.intro} id={s.id} />;
     case 'custom':

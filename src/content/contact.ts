@@ -14,6 +14,20 @@ const page: PageContent = {
     {
       kind: 'visit',
       h2: 'Address, hours and parking',
+      // 25 Oct 2026 preview (Vlad's call): the entrance photo shows the street number, unit and Suite C lettering.
+      photo: {
+        src: '/img/dr-edward-shut-chatsworth-clinic-entrance-480.webp',
+        width: 480,
+        height: 480,
+        alt: 'Dr. Edward Shut standing outside Chatsworth Physical Therapy beside the clinic entrance at 19851 Nordhoff Place.',
+        srcSet: [
+          { src: '/img/dr-edward-shut-chatsworth-clinic-entrance-480.webp', width: 480 },
+          { src: '/img/dr-edward-shut-chatsworth-clinic-entrance-768.webp', width: 768 },
+          { src: '/img/dr-edward-shut-chatsworth-clinic-entrance-1200.webp', width: 1200 },
+          { src: '/img/dr-edward-shut-chatsworth-clinic-entrance-1600.webp', width: 1600 },
+        ],
+      },
+      photoCaption: 'Look for 19851 #105 over the door and Chatsworth Physical Therapy on the window.',
       blocks: [
         {
           type: 'p',

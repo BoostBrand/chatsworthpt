@@ -6,14 +6,25 @@ const page: PageContent = {
   title: 'Dr. Edward Shut, DPT | Physical Therapist in Chatsworth, CA',
   description:
     'Meet Dr. Edward Shut, Doctor of Physical Therapy in Chatsworth, CA. License 301809, 15+ years, one-on-one care in English and Russian. Book now.',
+  // 25 Oct 2026 preview (Vlad's call): share image is the square JPEG of the entrance portrait.
+  ogImage: '/img/dr-edward-shut-chatsworth-clinic-entrance-share-1200.jpg',
+  ogImageMeta: { alt: 'Dr. Edward Shut standing outside Chatsworth Physical Therapy beside the clinic entrance at 19851 Nordhoff Place.', width: 1200, height: 1200 },
   hero: {
     h1: 'Meet Dr. Edward Shut, DPT, your physical therapist in Chatsworth',
     lede: 'Every visit is one-on-one with Dr. Edward, about an hour, with evening and Saturday appointments.',
+    // 25 Oct 2026 preview: the entrance portrait (suit, clinic lettering, 19851 #105), whole and square at every width.
     image: {
-      src: '/img/dr-ed-shut-in-clinic-chatsworth.webp',
-      width: 1000,
-      height: 1000,
-      alt: 'Dr. Edward Shut, DPT, at his desk in the Chatsworth Physical Therapy clinic',
+      src: '/img/dr-edward-shut-chatsworth-clinic-entrance-1200.webp',
+      width: 1200,
+      height: 1200,
+      alt: 'Dr. Edward Shut standing outside Chatsworth Physical Therapy beside the clinic entrance at 19851 Nordhoff Place.',
+      srcSet: [
+        { src: '/img/dr-edward-shut-chatsworth-clinic-entrance-480.webp', width: 480 },
+        { src: '/img/dr-edward-shut-chatsworth-clinic-entrance-768.webp', width: 768 },
+        { src: '/img/dr-edward-shut-chatsworth-clinic-entrance-1200.webp', width: 1200 },
+        { src: '/img/dr-edward-shut-chatsworth-clinic-entrance-1600.webp', width: 1600 },
+      ],
+      whole: true,
     },
     book: 'Book my evaluation',
   },

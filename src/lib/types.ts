@@ -92,7 +92,7 @@ export type Section =
   | { kind: 'social'; id?: string; h2: Inline; text?: Inline; label?: string } // About: the four social profiles
   | { kind: 'reviews'; id?: string; h2: Inline; intro?: Inline; groups: ReviewGroup[] } // Reviews page: every review, grouped
   | { kind: 'video'; id?: string; h2: Inline; intro?: Inline; review: ReviewRef; note?: Inline } // Reviews page: Matt's clip with his review
-  | { kind: 'visit'; id?: string; h2: Inline; intro?: Inline; blocks?: Block[] } // Contact: facts table, page lines, the map
+  | { kind: 'visit'; id?: string; h2: Inline; intro?: Inline; blocks?: Block[]; photo?: ImageRef; photoCaption?: Inline } // Contact: facts table, page lines (beside the optional entrance photo), the map
   | { kind: 'posts'; id?: string; h2: Inline; intro?: Inline } // Blog hub: every post, newest first, from src/content/blog
   | { kind: 'custom'; id: string; h2?: Inline }; // rendered by the page file itself
 
@@ -136,6 +136,7 @@ export interface PageContent {
   title: string; // meta title, exactly as the blueprint entry, 60 or fewer characters
   description: string; // meta description, exactly as the entry, 155 or fewer
   ogImage?: string; // '/img/<file>.webp'
+  ogImageMeta?: { alt: string; width: number; height: number }; // the ogImage's alt text and size (share tags)
   hero: Hero;
   sections: Section[];
   booking?: Booking | false;

@@ -2,18 +2,24 @@
 // Visit (Contact): the approved facts table (address, hours, phone, email, access), page lines such as the
 // parking and language lines, and the approved static map (OpenStreetMap credit on the image) linking to
 // the Google listing, with Get directions and Call.
-import type { Block } from '../../lib/types';
+import type { Block, ImageRef, Inline as InlineText } from '../../lib/types';
 import { BUSINESS } from '../../data/site';
 import { slugify } from '../../lib/inline';
 import Blocks from '../Blocks.astro';
 import SectionHead from './SectionHead.astro';
+import Inline from '../Inline.astro';
 interface Props {
   h2: string;
   intro?: string;
   blocks?: Block[];
   id?: string;
+  photo?: ImageRef; // optional entrance photo beside the arrival lines (25 Oct 2026 preview)
+  photoCaption?: InlineText;
 }
-const { h2, intro, blocks = [], id } = Astro.props;
+const { h2, intro, blocks = [], id, photo, photoCaption } = Astro.props;
+const photoSrcset = photo?.srcSet?.length ? photo.srcSet.map((s) => `${s.src} ${s.width}w`).join(', ') : undefined;
+// The photo column is 220px from 600px wide and up to 260px stacked on a phone.
+const photoSizes = photoSrcset ? photo?.sizes ?? '(min-width: 600px) 220px, min(260px, calc(100vw - 32px))' : undefined;
 // The two links are passed as HTML: Astro's compiler re-opens an <a> written inside a table cell after the
 // table when the cell's attributes are expressions, which wrapped the next block in a stray link.
 const phoneCell = `<a href="${BUSINESS.phoneHref}">${BUSINESS.phone}</a>`;
@@ -31,7 +37,17 @@ const hid = 'h-' + (id ?? slugify(h2));
         <tr><th>Email</th><td set:html={mailCell} /></tr>
         <tr><th>Access</th><td>Wheelchair accessible entrance and parking. Street parking also available.</td></tr>
       </tbody></table>
-      <div class="prose visit-lines"><Blocks blocks={blocks} /></div>
+      {photo ? (
+        <div class="visit-arrive">
+          <figure class="visit-photo">
+            <img src={photo.src} srcset={photoSrcset} sizes={photoSizes} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy" decoding="async" />
+            {photoCaption && <Inline as="figcaption" text={photoCaption} />}
+          </figure>
+          <div class="prose visit-lines"><Blocks blocks={blocks} /></div>
+        </div>
+      ) : (
+        <div class="prose visit-lines"><Blocks blocks={blocks} /></div>
+      )}
     </div>
     <div>
       <a class="map" href={BUSINESS.mapsUrl} target="_blank" rel="noopener" aria-label="Open the clinic location in Google Maps">

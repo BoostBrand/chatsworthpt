@@ -331,6 +331,13 @@
 .visit-grid{display:grid;gap:2.5rem}
 .visit-lines{margin-top:1.4rem}
 @media (min-width:960px){.visit-grid{grid-template-columns:1fr 1fr;gap:4rem;align-items:start}}
+/* 25 Oct 2026 preview: the entrance photo beside the arrival lines on Contact. Square, never cropped. */
+.visit-arrive{display:grid;gap:1.1rem;margin-top:1.4rem}
+.visit-arrive .visit-lines{margin-top:0}
+.visit-photo{margin:0;max-width:260px}
+.visit-photo img{display:block;width:100%;height:auto;aspect-ratio:1/1;border-radius:var(--radius-sm);box-shadow:0 10px 24px rgba(0,22,32,.12)}
+.visit-photo figcaption{margin-top:.5rem;font-size:.9rem;line-height:1.4;color:var(--muted)}
+@media (min-width:600px){.visit-arrive{grid-template-columns:220px 1fr;gap:1.4rem;align-items:start}.visit-photo{max-width:none}}
 
 /* Reviews page: groups of cards */
 .review-group{margin-top:2.2rem}
