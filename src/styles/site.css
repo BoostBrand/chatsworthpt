@@ -212,6 +212,7 @@
 .callpanel .small{color:var(--muted);font-size:.95rem}
 .callpanel .hours{font-weight:600}
 .form .hp{position:absolute;left:-5000px;width:1px;height:1px;overflow:hidden}
+.booking .form .btn{white-space:normal} /* Long appointment labels must fit the phone-width booking grid. */
 .form .form-error{font-size:.92rem;color:#8A1C1C;background:#FDECEC;border-radius:var(--radius-sm);padding:.6rem .8rem}
 
 /* Related pages under the booking band */
