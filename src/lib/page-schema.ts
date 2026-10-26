@@ -3,7 +3,7 @@ import type { PageContent, Section, FaqItem, ImageRef } from './types';
 import type { PageMeta } from './pages';
 import { crumbsFor } from './pages';
 import { getReview, quoteFor } from './reviews';
-import { breadcrumbNode, faqNode, serviceNode, reviewNode, physiotherapyNode, personNode, itemListNode, webPageNode, imageRefNode, abs, CLINIC_ID, CLINIC_REF, PERSON_ID } from './schema';
+import { breadcrumbNode, faqNode, serviceNode, reviewNode, physiotherapyNode, personNode, itemListNode, webPageNode, imageRefNode, describedImageNode, abs, CLINIC_ID, CLINIC_REF, PERSON_ID } from './schema';
 import { BUSINESS } from '../data/site';
 import { POSTS } from './posts';
 
@@ -125,7 +125,11 @@ export function graphFor(page: PageContent, meta: PageMeta, extra: Node[] = []):
     : null;
   const pageType = meta.type === 'about' ? 'AboutPage' : meta.type === 'contact' ? 'ContactPage' : meta.type === 'blog-hub' ? 'CollectionPage' : 'WebPage';
   const hero = page.hero.image;
-  const primaryImage = hero ? (hero.stock ? { '@id': `${abs(meta.path)}#hero-image` } : imageRefNode(hero)) : null;
+  // A hero with a recorded title gets its own ImageObject (25 Oct 2026); other heroes keep the small inline one.
+  const heroId = `${abs(meta.path)}#hero-image`;
+  const described = hero && !hero.stock && hero.title ? describedImageNode(hero, heroId) : null;
+  if (described) nodes.push(described);
+  const primaryImage = hero ? (hero.stock || described ? { '@id': heroId } : imageRefNode(hero)) : null;
   nodes.unshift(
     webPageNode(meta.path, page.title, pageType, {
       description: page.description,

@@ -146,45 +146,67 @@ PAGE_NAME = {
     '/neurological-rehabilitation/': 'Neurological rehabilitation',
 }
 
+# 25 Oct 2026 (Vlad): each page's hero is the old site's picture for that page, from the legacy service-image
+# package (web-output-manifest.json: files, sizes, alt text, title, description). Share tags use the package's
+# uncropped JPEG. The deck copy has moved on since (the Dr. Edward rename), so this script stops at its H1
+# check; the content files are the source now and these mappings only keep a future run from undoing the pictures.
 CONFIG = {
     'back': dict(
         id='P-004', path='/back-pain-therapy/', file='back-pain-therapy', review='george', service_type='Back pain therapy',
-        image=dict(src='/img/back-pain-therapy-chatsworth.webp', alt='Dr. Edward guiding a patient through a core stability exercise for back pain at Chatsworth Physical Therapy', width=900, height=900),
+        image=dict(src='/img/back-pain-therapy-upper-back-massage-1600.webp', alt="Hands massaging a person's upper back and shoulder.", width=1600, height=914,
+                   srcSet=[dict(src='/img/back-pain-therapy-upper-back-massage-480.webp', width=480), dict(src='/img/back-pain-therapy-upper-back-massage-768.webp', width=768), dict(src='/img/back-pain-therapy-upper-back-massage-1200.webp', width=1200), dict(src='/img/back-pain-therapy-upper-back-massage-1600.webp', width=1600)],
+                   whole=True, title='Upper-back massage', description="Hands applying pressure to a person's upper back and shoulder area."),
+        share=dict(src='/img/back-pain-therapy-upper-back-massage-share-1200.jpg', width=1200, height=686),
         order=['Who this is for', 'What treatment looks like with Dr. Edward', 'Conditions treated', 'One real Google review', 'Insurance and referrals', 'FAQs (FAQ schema)'],
         cond_links={'Sciatica and pinched nerves': '/conditions/sciatica/', 'Herniated or bulging discs': '/conditions/herniated-disc/', 'Mid-back and neck pain that travels with the lower back': '/conditions/neck-pain/'},
         word_links={}, blog=None,
     ),
     'sports': dict(
         id='P-005', path='/sports-injury-recovery/', file='sports-injury-recovery', review='maggie-mcc', service_type='Sports injury recovery',
-        image=dict(src='/img/sports-injury-rehab-chatsworth.webp', alt='Ankle treatment during a sports injury rehab session in Chatsworth', width=900, height=900),
+        image=dict(src='/img/sports-injury-recovery-runner-1600.webp', alt='Runner on an outdoor path in warm sunlight.', width=1600, height=897,
+                   srcSet=[dict(src='/img/sports-injury-recovery-runner-480.webp', width=480), dict(src='/img/sports-injury-recovery-runner-768.webp', width=768), dict(src='/img/sports-injury-recovery-runner-1200.webp', width=1200), dict(src='/img/sports-injury-recovery-runner-1600.webp', width=1600)],
+                   whole=True, title='Runner on an outdoor path', description='A runner on an outdoor path in warm sunlight.'),
+        share=dict(src='/img/sports-injury-recovery-runner-share-1200.jpg', width=1200, height=673),
         order=['Who this is for', 'What treatment looks like with Dr. Edward', 'Back to your sport, not just out of pain', 'Conditions treated', 'One real Google review', 'Insurance and referrals', 'FAQs (FAQ schema)'],
         cond_links={'Ankle sprains and chronic ankle instability': '/conditions/ankle-sprain/', 'ACL, MCL and meniscus injuries, before and after surgery': '/conditions/acl-recovery/', "Runner's knee, patellar tendinitis, IT band pain": '/conditions/knee-pain/', 'Rotator cuff strains and tears, shoulder impingement, labral injuries': '/conditions/shoulder-pain-rotator-cuff/', 'Achilles tendinitis and plantar fasciitis': '/conditions/plantar-fasciitis/'},
         word_links={}, blog=None,
     ),
     'postop': dict(
         id='P-006', path='/pre-post-surgical-rehabilitation/', file='pre-post-surgical-rehabilitation', review='maggie-and-mark', service_type='Pre and post-op physical therapy',
-        image=dict(src='/img/post-op-physical-therapy-chatsworth.webp', alt='Knee taping during post-op physical therapy in Chatsworth', width=900, height=900),
+        image=dict(src='/img/surgical-rehabilitation-hospital-room-1600.webp', alt='Hospital bed and monitoring equipment.', width=1600, height=897,
+                   srcSet=[dict(src='/img/surgical-rehabilitation-hospital-room-480.webp', width=480), dict(src='/img/surgical-rehabilitation-hospital-room-768.webp', width=768), dict(src='/img/surgical-rehabilitation-hospital-room-1200.webp', width=1200), dict(src='/img/surgical-rehabilitation-hospital-room-1600.webp', width=1600)],
+                   whole=True, title='Hospital room and monitoring equipment', description='A hospital room with a bed and monitoring equipment.'),
+        share=dict(src='/img/surgical-rehabilitation-hospital-room-share-1200.jpg', width=1200, height=673),
         order=['Who this is for', 'What treatment looks like with Dr. Edward', 'Knee replacement, hip replacement and ACL', 'Surgeries we rehabilitate', 'One real Google review', 'Insurance and referrals', 'FAQs (FAQ schema)'],
         cond_links={'Total and partial knee replacement': '/conditions/knee-replacement-recovery/', 'Total hip replacement': '/conditions/hip-replacement-recovery/', 'ACL reconstruction and meniscus repair': '/conditions/acl-recovery/'},
         word_links={}, blog=None,
     ),
     'balance': dict(
         id='P-009', path='/balance-and-fall-prevention/', file='balance-and-fall-prevention', review='susan', service_type='Balance and fall prevention',
-        placeholder='PHOTO: Dr. Edward spotting an older patient in a standing balance exercise, to be shot',
+        image=dict(src='/img/balance-fall-prevention-assisted-walking-1600.webp', alt='Therapist supporting an older man as he practices walking.', width=1600, height=1067,
+                   srcSet=[dict(src='/img/balance-fall-prevention-assisted-walking-480.webp', width=480), dict(src='/img/balance-fall-prevention-assisted-walking-768.webp', width=768), dict(src='/img/balance-fall-prevention-assisted-walking-1200.webp', width=1200), dict(src='/img/balance-fall-prevention-assisted-walking-1600.webp', width=1600)],
+                   whole=True, title='Assisted walking practice', description='An older man practicing walking with a therapist beside him and a wheelchair behind.'),
+        share=dict(src='/img/balance-fall-prevention-assisted-walking-share-1200.jpg', width=1200, height=800),
         order=['Who this is for', 'What treatment looks like with Dr. Edward', 'Vertigo and dizziness', 'Conditions treated', 'One real Google review', 'Insurance and referrals', 'FAQs (FAQ schema)'],
         cond_links={'Vertigo and BPPV': '/conditions/vertigo-bppv/'},
         word_links={}, blog=('/blog/fall-prevention-checklist-parents-house/', "A fall-prevention checklist for your parent's house", 'related'),
     ),
     'pediatric': dict(
         id='P-010', path='/pediatric-physical-therapy/', file='pediatric-physical-therapy', review='tati', service_type='Pediatric physical therapy',
-        placeholder="PHOTO: Dr. Edward working with a child or teen athlete, parent in frame, to be shot",
+        image=dict(src='/img/pediatric-physical-therapy-child-portrait-1600.webp', alt='Smiling child in a bright indoor setting.', width=1600, height=1067,
+                   srcSet=[dict(src='/img/pediatric-physical-therapy-child-portrait-480.webp', width=480), dict(src='/img/pediatric-physical-therapy-child-portrait-768.webp', width=768), dict(src='/img/pediatric-physical-therapy-child-portrait-1200.webp', width=1200), dict(src='/img/pediatric-physical-therapy-child-portrait-1600.webp', width=1600)],
+                   whole=True, title='Smiling child portrait', description='A smiling child in a bright indoor setting.'),
+        share=dict(src='/img/pediatric-physical-therapy-child-portrait-share-1200.jpg', width=1200, height=800),
         order=['Who this is for', 'What treatment looks like with Dr. Edward', 'Young athletes', 'Conditions treated', 'One real Google review', 'Insurance and referrals', 'FAQs (FAQ schema)'],
         cond_links={'Ankle sprains and recurring ankle instability': '/conditions/ankle-sprain/', "Knee pain in growing athletes (including Osgood-Schlatter) and heel pain (including Sever's disease)": '/conditions/knee-pain/'},
         word_links={}, blog=('/blog/young-gymnast-back-pain/', "When a young gymnast's back pain is not just a growing pain", 'Young athletes'),
     ),
     'neuro': dict(
         id='P-011', path='/neurological-rehabilitation/', file='neurological-rehabilitation', review='anthony', service_type='Neurological rehabilitation',
-        placeholder='PHOTO: balance or gait session with a patient, to be shot',
+        image=dict(src='/img/neurological-rehabilitation-brain-scans-1600.webp', alt='Series of brain scan images.', width=1600, height=1067,
+                   srcSet=[dict(src='/img/neurological-rehabilitation-brain-scans-480.webp', width=480), dict(src='/img/neurological-rehabilitation-brain-scans-768.webp', width=768), dict(src='/img/neurological-rehabilitation-brain-scans-1200.webp', width=1200), dict(src='/img/neurological-rehabilitation-brain-scans-1600.webp', width=1600)],
+                   whole=True, title='Brain scan images', description='A series of brain scan images displayed together.'),
+        share=dict(src='/img/neurological-rehabilitation-brain-scans-share-1200.jpg', width=1200, height=800),
         order=['Who this is for', 'What treatment looks like with Dr. Edward', 'Stroke recovery', 'Conditions treated', 'One real Google review', 'Insurance and referrals', 'FAQs (FAQ schema)'],
         cond_links={},
         word_links={
@@ -275,6 +297,7 @@ for name, cfg in CONFIG.items():
         'approved': True,
         'title': e['title'],
         'description': e['description'],
+        **({'ogImage': cfg['share']['src'], 'ogImageMeta': {'width': cfg['share']['width'], 'height': cfg['share']['height']}} if 'share' in cfg else {}),
         'hero': hero,
         'sections': sections,
         'booking': {'h2': bk['h2'], 'lead': bk['lead'], 'service': FORM_OPTION[bk['pre']], **({'messagePrompt': bk['prompt']} if bk['prompt'] else {}), 'button': bk['button']},

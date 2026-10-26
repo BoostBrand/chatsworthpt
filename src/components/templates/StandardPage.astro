@@ -30,8 +30,13 @@ const section = ['service', 'services-hub', 'conditions-hub', 'condition'].inclu
 const ogImage = content.ogImage ?? content.hero.image?.src;
 // The share image's alt text, size and type for Open Graph and X (25 Oct 2026: every page with a hero image; pages
 // without one get the layout's default image and its details).
+// A page with its own share file (25 Oct 2026: the service pages' uncropped JPEGs) passes that file's real size, so the
+// tags never describe the hero WebP; its alt text is the hero's unless the content file gives another.
 const heroImage = content.hero.image;
-const ogImageMeta = !content.ogImage && heroImage ? { alt: heroImage.alt, width: heroImage.width, height: heroImage.height } : undefined;
+const shareAlt = content.ogImageMeta?.alt ?? heroImage?.alt;
+const ogImageMeta = content.ogImage
+  ? content.ogImageMeta && shareAlt ? { alt: shareAlt, width: content.ogImageMeta.width, height: content.ogImageMeta.height } : undefined
+  : heroImage ? { alt: heroImage.alt, width: heroImage.width, height: heroImage.height } : undefined;
 ---
 <BaseLayout pageId={meta.id} path={meta.path} title={content.title} description={content.description} noindex={isNoindex(meta)} ogImage={ogImage} ogImageMeta={ogImageMeta} section={section} schema={schema} geo={meta.type === 'contact'} bookHref={booking || isContact ? '#book' : '/contact/#book'}>
   {heroHtml ? <Fragment set:html={heroHtml} /> : isContact ? <ContactHero hero={content.hero} crumbs={crumbs} pageName={meta.name} /> : <PageHero hero={content.hero} crumbs={crumbs} hasBooking={Boolean(booking)} />}

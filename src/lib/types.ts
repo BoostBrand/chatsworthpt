@@ -22,6 +22,11 @@ export interface ImageRef {
   whole?: boolean; // hero: show the whole picture at its own shape (diagrams, labelled illustrations), never cropped
   enlarge?: string; // hero: adds a "View larger illustration" link to src; the text names the picture for screen readers
   stock?: StockCredit; // licensed stock: the page's share tags and JSON-LD ImageObject carry these details
+  // Optional, added 25 Oct 2026 for the old site's service-page pictures (Vlad). With a title, the page's JSON-LD gets
+  // a full ImageObject for the hero (name, caption, description, size, format); without one, the small one as before.
+  title?: string; // plain name of the picture, as the image package records it
+  description?: string; // one plain sentence on what the picture shows, as the package records it
+  maxWidth?: number; // whole hero: the most CSS pixels it may take (a small original is never shown larger than this)
 }
 
 // A licensed stock image, recorded exactly as the Adobe Stock asset page and the file's own metadata give it.
@@ -135,7 +140,8 @@ export interface PageContent {
   approved?: boolean; // true for the six deck pages: copy is never rewritten
   title: string; // meta title, exactly as the blueprint entry, 60 or fewer characters
   description: string; // meta description, exactly as the entry, 155 or fewer
-  ogImage?: string; // '/img/<file>.webp'
+  ogImage?: string; // '/img/<file>.webp' or '/img/<file>.jpg'
+  ogImageMeta?: { width: number; height: number; alt?: string }; // the share file's own size (alt defaults to the hero's)
   hero: Hero;
   sections: Section[];
   booking?: Booking | false;

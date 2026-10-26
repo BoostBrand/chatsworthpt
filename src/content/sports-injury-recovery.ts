@@ -8,15 +8,26 @@ const page: PageContent = {
   "approved": true,
   "title": "Sports Physical Therapy in Chatsworth | Dr. Edward Shut, DPT",
   "description": "Sports physical therapy in Chatsworth with Dr. Edward Shut, DPT. One-on-one rehab for sprains, tears and overuse, plus a return-to-play plan. Book now.",
+  "ogImage": "/img/sports-injury-recovery-runner-share-1200.jpg",
+  "ogImageMeta": { "width": 1200, "height": 673 },
   "hero": {
     "h1": "Sports physical therapy in Chatsworth, one-on-one with Dr. Edward",
     "lede": "Rehab for the injury, strength for the weak link, and a step-by-step return to your sport instead of a blanket \"rest\".",
     "book": "Book my evaluation",
     "image": {
-      "src": "/img/sports-injury-rehab-chatsworth.webp",
-      "alt": "Ankle treatment during a sports injury rehab session in Chatsworth",
-      "width": 900,
-      "height": 900
+      "src": "/img/sports-injury-recovery-runner-1600.webp",
+      "alt": "Runner on an outdoor path in warm sunlight.",
+      "width": 1600,
+      "height": 897,
+      "srcSet": [
+        { "src": "/img/sports-injury-recovery-runner-480.webp", "width": 480 },
+        { "src": "/img/sports-injury-recovery-runner-768.webp", "width": 768 },
+        { "src": "/img/sports-injury-recovery-runner-1200.webp", "width": 1200 },
+        { "src": "/img/sports-injury-recovery-runner-1600.webp", "width": 1600 }
+      ],
+      "whole": true,
+      "title": "Runner on an outdoor path",
+      "description": "A runner on an outdoor path in warm sunlight."
     }
   },
   "sections": [

@@ -8,15 +8,26 @@ const page: PageContent = {
   "approved": true,
   "title": "Back Pain Therapy in Chatsworth | Dr. Edward Shut, DPT",
   "description": "Back pain therapy in Chatsworth, one-on-one with Dr. Edward Shut, DPT. Hands-on treatment and a home plan, evenings and Saturdays. Book your evaluation.",
+  "ogImage": "/img/back-pain-therapy-upper-back-massage-share-1200.jpg",
+  "ogImageMeta": { "width": 1200, "height": 686 },
   "hero": {
     "h1": "Back pain therapy in Chatsworth that finds the cause, not just the sore spot",
     "lede": "About 60 minutes, one-on-one with Dr. Edward, every visit, and a home plan that keeps the relief going between sessions.",
     "book": "Book my evaluation",
     "image": {
-      "src": "/img/back-pain-therapy-chatsworth.webp",
-      "alt": "Dr. Edward guiding a patient through a core stability exercise for back pain at Chatsworth Physical Therapy",
-      "width": 900,
-      "height": 900
+      "src": "/img/back-pain-therapy-upper-back-massage-1600.webp",
+      "alt": "Hands massaging a person's upper back and shoulder.",
+      "width": 1600,
+      "height": 914,
+      "srcSet": [
+        { "src": "/img/back-pain-therapy-upper-back-massage-480.webp", "width": 480 },
+        { "src": "/img/back-pain-therapy-upper-back-massage-768.webp", "width": 768 },
+        { "src": "/img/back-pain-therapy-upper-back-massage-1200.webp", "width": 1200 },
+        { "src": "/img/back-pain-therapy-upper-back-massage-1600.webp", "width": 1600 }
+      ],
+      "whole": true,
+      "title": "Upper-back massage",
+      "description": "Hands applying pressure to a person's upper back and shoulder area."
     }
   },
   "sections": [

@@ -8,10 +8,27 @@ const page: PageContent = {
   "approved": true,
   "title": "Neurological Rehabilitation in Chatsworth | Dr. Edward, DPT",
   "description": "Neurological rehabilitation in Chatsworth with Dr. Edward Shut, DPT. One-on-one visits for stroke recovery, balance and nerve weakness. Book now.",
+  "ogImage": "/img/neurological-rehabilitation-brain-scans-share-1200.jpg",
+  "ogImageMeta": { "width": 1200, "height": 800 },
   "hero": {
     "h1": "Neurological rehabilitation in Chatsworth, one-on-one with Dr. Edward",
     "lede": "After a stroke or with a neurological condition, you get a clear plan, hands-on treatment and a home program that fits your life.",
     "book": "Book my evaluation",
+    "image": {
+      "src": "/img/neurological-rehabilitation-brain-scans-1600.webp",
+      "alt": "Series of brain scan images.",
+      "width": 1600,
+      "height": 1067,
+      "srcSet": [
+        { "src": "/img/neurological-rehabilitation-brain-scans-480.webp", "width": 480 },
+        { "src": "/img/neurological-rehabilitation-brain-scans-768.webp", "width": 768 },
+        { "src": "/img/neurological-rehabilitation-brain-scans-1200.webp", "width": 1200 },
+        { "src": "/img/neurological-rehabilitation-brain-scans-1600.webp", "width": 1600 }
+      ],
+      "whole": true,
+      "title": "Brain scan images",
+      "description": "A series of brain scan images displayed together."
+    }
   },
   "sections": [
     {

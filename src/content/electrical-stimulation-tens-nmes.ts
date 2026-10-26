@@ -6,10 +6,27 @@ const page: PageContent = {
   title: 'Electrical Stimulation, TENS, NMES | Chatsworth, Dr. Edward',
   description:
     'Find out how TENS and NMES electrical stimulation calm pain and wake up weak muscles in physical therapy with Dr. Edward Shut, DPT in Chatsworth. Book now.',
+  ogImage: '/img/electrical-stimulation-upper-back-electrodes-share-1200.jpg',
+  ogImageMeta: { width: 1200, height: 857 },
   hero: {
     h1: 'Electrical stimulation (TENS and NMES) in Chatsworth physical therapy',
     lede: 'Two kinds of electrical stimulation: TENS for pain, NMES to make a weak muscle fire.',
     book: 'Book my evaluation',
+    image: {
+      src: '/img/electrical-stimulation-upper-back-electrodes-1600.webp',
+      alt: "Electrode pads attached to a person's upper back and shoulder.",
+      width: 1600,
+      height: 1143,
+      srcSet: [
+        { src: '/img/electrical-stimulation-upper-back-electrodes-480.webp', width: 480 },
+        { src: '/img/electrical-stimulation-upper-back-electrodes-768.webp', width: 768 },
+        { src: '/img/electrical-stimulation-upper-back-electrodes-1200.webp', width: 1200 },
+        { src: '/img/electrical-stimulation-upper-back-electrodes-1600.webp', width: 1600 },
+      ],
+      whole: true,
+      title: 'Electrode pads on the upper back',
+      description: "Electrode pads attached to a person's upper back and shoulder area.",
+    },
   },
   sections: [
     {
@@ -103,7 +120,7 @@ const page: PageContent = {
   notes: [
     'Home TENS unit practice is open for Dr. Edward: whether he sets patients up with a home unit, and how. The marker sits in the visit section and in the third FAQ.',
     'No review is assigned to this page: no unused review names stimulation apart from Jennifer, whose review lives on the red light page. She is pointed to, never quoted or reworded here. Ask the next patient for a review.',
-    'The hero photo is a placeholder until the shoot (electrodes on a knee or shoulder, Dr. Edward adjusting the unit, filename electrical-stimulation-tens-nmes-chatsworth.webp).',
+    'Hero is the old site\'s picture for this page, restored 25 Oct 2026 on Vlad\'s instruction (electrode pads on the upper back, from the legacy service-image package).',
     'The Google Business Profile service is spelled Electrical Stimiluation / TENS / NMES. It should read Electrical Stimulation / TENS / NMES, with its description taken from this page.',
   ],
 };

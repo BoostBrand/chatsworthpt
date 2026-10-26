@@ -8,10 +8,27 @@ const page: PageContent = {
   "approved": true,
   "title": "Fall Prevention Physical Therapy in Chatsworth | Dr. Edward",
   "description": "Fall prevention physical therapy in Chatsworth for seniors, balance and vertigo. One-on-one with Dr. Edward Shut, DPT. Medicare accepted. Book now.",
+  "ogImage": "/img/balance-fall-prevention-assisted-walking-share-1200.jpg",
+  "ogImageMeta": { "width": 1200, "height": 800 },
   "hero": {
     "h1": "Fall prevention physical therapy in Chatsworth, one-on-one with Dr. Edward",
     "lede": "A plan for steadier walking and fewer falls, built in visits of about 60 minutes with a Doctor of Physical Therapy, and vertigo treated in the same room.",
     "book": "Book my evaluation",
+    "image": {
+      "src": "/img/balance-fall-prevention-assisted-walking-1600.webp",
+      "alt": "Therapist supporting an older man as he practices walking.",
+      "width": 1600,
+      "height": 1067,
+      "srcSet": [
+        { "src": "/img/balance-fall-prevention-assisted-walking-480.webp", "width": 480 },
+        { "src": "/img/balance-fall-prevention-assisted-walking-768.webp", "width": 768 },
+        { "src": "/img/balance-fall-prevention-assisted-walking-1200.webp", "width": 1200 },
+        { "src": "/img/balance-fall-prevention-assisted-walking-1600.webp", "width": 1600 }
+      ],
+      "whole": true,
+      "title": "Assisted walking practice",
+      "description": "An older man practicing walking with a therapist beside him and a wheelchair behind."
+    }
   },
   "sections": [
     {

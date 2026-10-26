@@ -6,14 +6,25 @@ const page: PageContent = {
   title: 'Personal Training and Weight Loss Chatsworth | Dr. Edward',
   description:
     'After rehab: personal training and weight loss coaching in Chatsworth with Dr. Edward Shut, DPT, the doctor who treated you. Call (818) 749-3205.',
+  ogImage: '/img/personal-training-supervised-balance-exercise-share-1200.jpg',
+  ogImageMeta: { width: 1200, height: 1140 },
   hero: {
     h1: 'Personal training and weight loss in Chatsworth, the step after physical therapy',
     lede: 'Train with the doctor who knows your injury history.',
     image: {
-      src: '/img/dr-ed-explaining-anatomy-chatsworth.webp',
-      width: 1200,
-      height: 960,
-      alt: 'Dr. Edward explaining an anatomy chart to a patient',
+      src: '/img/personal-training-supervised-balance-exercise-1600.webp',
+      alt: 'Dr. Edward supervising an exercise on a balance platform at Chatsworth Physical Therapy.',
+      width: 1600,
+      height: 1520,
+      srcSet: [
+        { src: '/img/personal-training-supervised-balance-exercise-480.webp', width: 480 },
+        { src: '/img/personal-training-supervised-balance-exercise-768.webp', width: 768 },
+        { src: '/img/personal-training-supervised-balance-exercise-1200.webp', width: 1200 },
+        { src: '/img/personal-training-supervised-balance-exercise-1600.webp', width: 1600 },
+      ],
+      whole: true,
+      title: 'Dr. Edward supervising a balance exercise',
+      description: 'Dr. Edward supervising a woman performing an exercise on a half-ball balance platform at Chatsworth Physical Therapy.',
     },
     book: 'Book my first session',
   },
@@ -126,7 +137,7 @@ const page: PageContent = {
   notes: [
     'Nutrition guidance scope is unconfirmed. The marker sits in the Nutrition guidance lead under "What training looks like" and in the diet plans FAQ. Nothing about diets, calories or weight targets is written.',
     'Prices are unconfirmed. The marker sits in the pricing paragraph. If Dr. Edward gives prices by phone only, the marker can come out and the line stays.',
-    'Hero photo is the stand-in (Dr. Edward with the anatomy chart). Shoot a strength session with a patient and save it as personal-training-chatsworth.webp, then swap the hero image.',
+    'Hero is the old site\'s picture for this page, restored 25 Oct 2026 on Vlad\'s instruction (Dr. Edward supervising a balance-platform exercise); it replaces the laughing anatomy-chart photo here only.',
     'The diet plans FAQ answer is one sentence by the build lead decision for P-015.',
     'The insurance and cost link comes from the insurance section (more: true), not from the copy.',
     'The opening paragraph under "What training looks like" carries two lines from the facts list: English or Russian, and the credentials (Doctor of Physical Therapy, Mount Saint Mary\'s; BS in Exercise Science, CSUN). Remove either if Dr. Edward wants it on About only. Training in English or Russian extends the approved "treated in either" line to training sessions.',

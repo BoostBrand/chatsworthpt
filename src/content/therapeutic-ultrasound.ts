@@ -6,10 +6,27 @@ const page: PageContent = {
   title: 'Therapeutic Ultrasound in Chatsworth | Dr. Edward Shut, DPT',
   description:
     "Learn how Dr. Edward Shut, DPT uses therapeutic ultrasound in Chatsworth to warm and loosen tissue before hands-on physical therapy. Book an evaluation.",
+  ogImage: '/img/therapeutic-ultrasound-probe-face-share-1200.jpg',
+  ogImageMeta: { width: 1200, height: 655 },
   hero: {
     h1: 'Therapeutic ultrasound in Chatsworth: how Dr. Edward uses it in treatment',
     lede: 'Sound waves warm and loosen tissue before hands-on work. This is treatment ultrasound, not the imaging kind.',
     book: 'Book my evaluation',
+    image: {
+      src: '/img/therapeutic-ultrasound-probe-face-1600.webp',
+      alt: "Clinician positioning a handheld treatment probe beside a patient's face.",
+      width: 1600,
+      height: 873,
+      srcSet: [
+        { src: '/img/therapeutic-ultrasound-probe-face-480.webp', width: 480 },
+        { src: '/img/therapeutic-ultrasound-probe-face-768.webp', width: 768 },
+        { src: '/img/therapeutic-ultrasound-probe-face-1200.webp', width: 1200 },
+        { src: '/img/therapeutic-ultrasound-probe-face-1600.webp', width: 1600 },
+      ],
+      whole: true,
+      title: "Treatment probe beside a patient's face",
+      description: "A clinician positioning a handheld treatment probe beside a patient's face.",
+    },
   },
   sections: [
     {
@@ -99,7 +116,7 @@ const page: PageContent = {
     'Two items wait on Dr. Edward: the contraindication wording (marker in the "What it is not for" section) and whether ultrasound is ever billed separately (marker in the "Is it covered?" answer).',
     'The meta description is copied exactly from the blueprint entry and says "speeds healing". The page body makes no healing-speed claim. Decide whether the meta description should change.',
     'No review on this page by design. The patient line points to the post-op page by link and reprints nothing. Ask the next patient who gets ultrasound for a review.',
-    'Photo to shoot: Dr. Edward applying the ultrasound head on a shoulder or ankle (Gabby). Filename therapeutic-ultrasound-chatsworth.webp. The hero shows a labelled placeholder until then.',
+    'Hero is the old site\'s picture for this page, restored 25 Oct 2026 on Vlad\'s instruction (a stock scene, not taken at the clinic; the alt text does not say it was).',
     '"Deep heating" is the blueprint entry\'s own wording. No depth, frequency or study claim was added.',
     'Word count: this page is written to the 400 to 500 target as entry-check.py counts it (visible text in main, which includes the site-wide insurance lines and the booking band). The content checker prints a lower number because it does not see the template text.',
   ],

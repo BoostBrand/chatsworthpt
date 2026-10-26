@@ -8,10 +8,27 @@ const page: PageContent = {
   "approved": true,
   "title": "Pediatric Physical Therapy in Chatsworth | Dr. Edward, DPT",
   "description": "Your child gets Dr. Edward's full attention for about 60 minutes, with you in the room. Gymnasts, dancers and kids in Chatsworth. Call (818) 749-3205.",
+  "ogImage": "/img/pediatric-physical-therapy-child-portrait-share-1200.jpg",
+  "ogImageMeta": { "width": 1200, "height": 800 },
   "hero": {
     "h1": "Pediatric physical therapy in Chatsworth that gets your child back to play",
     "lede": "About 60 minutes with a Doctor of Physical Therapy, your child's own plan, and you in the room for every visit.",
     "book": "Book my child's evaluation",
+    "image": {
+      "src": "/img/pediatric-physical-therapy-child-portrait-1600.webp",
+      "alt": "Smiling child in a bright indoor setting.",
+      "width": 1600,
+      "height": 1067,
+      "srcSet": [
+        { "src": "/img/pediatric-physical-therapy-child-portrait-480.webp", "width": 480 },
+        { "src": "/img/pediatric-physical-therapy-child-portrait-768.webp", "width": 768 },
+        { "src": "/img/pediatric-physical-therapy-child-portrait-1200.webp", "width": 1200 },
+        { "src": "/img/pediatric-physical-therapy-child-portrait-1600.webp", "width": 1600 }
+      ],
+      "whole": true,
+      "title": "Smiling child portrait",
+      "description": "A smiling child in a bright indoor setting."
+    }
   },
   "sections": [
     {

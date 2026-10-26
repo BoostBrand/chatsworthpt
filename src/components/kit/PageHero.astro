@@ -24,9 +24,13 @@ const media = Boolean(hero.image || hero.placeholder);
 const HERO_SIZES = '(min-width: 1180px) 455px, (min-width: 960px) calc((100vw - 88px) * 5 / 12), calc(100vw - 32px)';
 const img = hero.image;
 const srcset = img?.srcSet?.length ? img.srcSet.map((s) => `${s.src} ${s.width}w`).join(', ') : undefined;
+// A whole picture with a maxWidth (a small original, 25 Oct 2026) is never drawn wider than that, also when the hero
+// stacks; its content file gives the matching sizes.
+const cap = img?.whole && img.maxWidth ? img.maxWidth : undefined;
 const sizes = srcset ? img?.sizes ?? HERO_SIZES : undefined;
 // Whole pictures keep their own shape: the inline ratio reserves the space before the file arrives.
 const wholeStyle = img?.whole ? `aspect-ratio:${img.width} / ${img.height}` : undefined;
+const pictureStyle = cap ? `max-width:${cap}px` : undefined;
 ---
 <section class:list={['page-hero', { 'no-media': !media }]} aria-labelledby="h1">
   <div class="wrap">
@@ -62,7 +66,7 @@ const wholeStyle = img?.whole ? `aspect-ratio:${img.width} / ${img.height}` : un
       {media && (
         <figure class:list={['page-hero-media', { whole: img?.whole }]}>
           {img ? (
-            <picture>
+            <picture style={pictureStyle}>
               {img.srcMobile && <source media="(max-width: 700px)" srcset={img.srcMobile} />}
               <img src={img.src} srcset={srcset} sizes={sizes} alt={img.alt} width={img.width} height={img.height} style={wholeStyle} fetchpriority="high" decoding="async" />
             </picture>

@@ -6,14 +6,25 @@ const page: PageContent = {
   title: 'Orthopedic Rehabilitation in Chatsworth | Dr. Edward, DPT',
   description:
     'Orthopedic rehabilitation in Chatsworth for shoulder, knee, hip, elbow and ankle, one-on-one with Dr. Edward Shut, DPT. Evenings and Saturdays. Book.',
+  ogImage: '/img/orthopedic-rehabilitation-leg-cast-crutches-share-1200.jpg',
+  ogImageMeta: { width: 1200, height: 684 },
   hero: {
     h1: 'Orthopedic rehabilitation in Chatsworth, one-on-one with Dr. Edward',
     lede: 'Joint and muscle injuries treated by Dr. Edward himself. About an hour a visit, plus a home program to follow between appointments.',
     image: {
-      src: '/img/post-op-physical-therapy-chatsworth.webp',
-      width: 900,
-      height: 900,
-      alt: 'Knee taping during a physical therapy session in Chatsworth',
+      src: '/img/orthopedic-rehabilitation-leg-cast-crutches-1600.webp',
+      alt: 'Person with a blue lower-leg support standing beside crutches.',
+      width: 1600,
+      height: 912,
+      srcSet: [
+        { src: '/img/orthopedic-rehabilitation-leg-cast-crutches-480.webp', width: 480 },
+        { src: '/img/orthopedic-rehabilitation-leg-cast-crutches-768.webp', width: 768 },
+        { src: '/img/orthopedic-rehabilitation-leg-cast-crutches-1200.webp', width: 1200 },
+        { src: '/img/orthopedic-rehabilitation-leg-cast-crutches-1600.webp', width: 1600 },
+      ],
+      whole: true,
+      title: 'Lower-leg support and crutches',
+      description: "A person's lower leg in a blue cast or support beside a pair of crutches.",
     },
     book: 'Book my evaluation',
   },
@@ -130,7 +141,7 @@ const page: PageContent = {
   ],
   schema: { serviceType: 'Orthopedic rehabilitation' },
   notes: [
-    'Hero uses the post-op knee photo (post-op-physical-therapy-chatsworth.webp) until the shoulder or knee session is shot as orthopedic-rehabilitation-chatsworth.webp (Gabby, rung 3).',
+    'Hero is the old site\'s picture for this page, restored 25 Oct 2026 on Vlad\'s instruction (lower-leg support and crutches, from the legacy service-image package).',
     'The referral FAQ answers with the site-wide referral facts, not the entry line that says only Medicare needs a referral.',
     'The treatment list links ultrasound, e-stim and red light to their planned pages (/therapeutic-ultrasound/, /electrical-stimulation-tens-nmes/, /red-light-therapy/). Remove those links if the pages do not ship.',
   ],

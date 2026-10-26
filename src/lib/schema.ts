@@ -155,6 +155,25 @@ export function imageRefNode(img: { src: string; width: number; height: number; 
   return { '@type': 'ImageObject', contentUrl: abs(img.src), url: abs(img.src), width: img.width, height: img.height, caption: img.alt };
 }
 
+// A page's described hero picture as its own ImageObject (25 Oct 2026: the old site's service-page pictures). Name,
+// caption and description come from the image package; size and format from the file. No creator, credit, copyright
+// or license: the package records none as verified for these files.
+export function describedImageNode(img: { src: string; width: number; height: number; alt: string; title?: string; description?: string }, id: string): Node {
+  const type = ({ webp: 'image/webp', jpg: 'image/jpeg', jpeg: 'image/jpeg', png: 'image/png' } as Record<string, string>)[img.src.split('.').pop()?.toLowerCase() ?? ''];
+  return {
+    '@type': 'ImageObject',
+    '@id': id,
+    contentUrl: abs(img.src),
+    url: abs(img.src),
+    ...(img.title ? { name: img.title } : {}),
+    caption: img.alt,
+    ...(img.description ? { description: img.description } : {}),
+    width: img.width,
+    height: img.height,
+    ...(type ? { encodingFormat: type } : {}),
+  };
+}
+
 export function itemListNode(name: string, items: { name: string; path: string }[], id?: string): Node {
   return {
     '@type': 'ItemList',

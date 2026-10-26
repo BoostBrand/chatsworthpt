@@ -8,15 +8,26 @@ const page: PageContent = {
   "approved": true,
   "title": "Post-Op Physical Therapy in Chatsworth | Dr. Edward, DPT",
   "description": "Post-op physical therapy in Chatsworth after knee or hip replacement, ACL or rotator cuff surgery. One-on-one with Dr. Edward Shut, DPT. Book now.",
+  "ogImage": "/img/surgical-rehabilitation-hospital-room-share-1200.jpg",
+  "ogImageMeta": { "width": 1200, "height": 673 },
   "hero": {
     "h1": "Post-op physical therapy in Chatsworth, one-on-one with Dr. Edward",
     "lede": "Your surgeon's protocol, followed one-on-one for about 60 minutes a visit, with a home program that keeps the recovery moving between sessions.",
     "book": "Book my evaluation",
     "image": {
-      "src": "/img/post-op-physical-therapy-chatsworth.webp",
-      "alt": "Knee taping during post-op physical therapy in Chatsworth",
-      "width": 900,
-      "height": 900
+      "src": "/img/surgical-rehabilitation-hospital-room-1600.webp",
+      "alt": "Hospital bed and monitoring equipment.",
+      "width": 1600,
+      "height": 897,
+      "srcSet": [
+        { "src": "/img/surgical-rehabilitation-hospital-room-480.webp", "width": 480 },
+        { "src": "/img/surgical-rehabilitation-hospital-room-768.webp", "width": 768 },
+        { "src": "/img/surgical-rehabilitation-hospital-room-1200.webp", "width": 1200 },
+        { "src": "/img/surgical-rehabilitation-hospital-room-1600.webp", "width": 1600 }
+      ],
+      "whole": true,
+      "title": "Hospital room and monitoring equipment",
+      "description": "A hospital room with a bed and monitoring equipment."
     }
   },
   "sections": [
