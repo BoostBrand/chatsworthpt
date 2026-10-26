@@ -24,6 +24,8 @@ const page: PageContent = {
         { src: '/img/dr-edward-shut-chatsworth-clinic-entrance-1200.webp', width: 1200 },
         { src: '/img/dr-edward-shut-chatsworth-clinic-entrance-1600.webp', width: 1600 },
       ],
+      // The hero column; at most 520px wide when the hero stacks (site.css .whole.tall).
+      sizes: '(min-width: 1180px) 455px, (min-width: 960px) calc((100vw - 88px) * 5 / 12), min(520px, calc(100vw - 32px))',
       whole: true,
     },
     book: 'Book my evaluation',
