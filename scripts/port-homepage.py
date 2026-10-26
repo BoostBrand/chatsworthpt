@@ -166,6 +166,12 @@ assert [(q, a) for q, a in faq_html] == [(m['name'], m['acceptedAnswer']['text']
 
 clinic = next(n for n in ld['@graph'] if n['@type'] == 'Physiotherapy')
 video = next(n for n in ld['@graph'] if n['@type'] == 'VideoObject')
+# 25 Oct 2026: Google's test wants uploadDate with a time and a timezone. The master records 2026-04-12, the creation
+# date inside the client's file MATT REDO ADD.mp4; the same tag gives the time, creation_time 2026-04-12T23:31:51Z
+# (read with ffprobe on Vlad's copy; the MP4 format stores it in UTC). Nothing else about the video changes.
+if video['uploadDate'] != '2026-04-12':
+    sys.exit(f"Video uploadDate changed in the master: {video['uploadDate']}")
+video = {**video, 'uploadDate': '2026-04-12T23:31:51Z'}
 reviews = [{'name': r['author']['name'], 'body': r['reviewBody']} for r in clinic['review']]
 
 hero_js = src[src.index('  // Hero: measure where the headline naturally breaks'):src.index('  // Header nav: one underline')]
@@ -236,7 +242,8 @@ const schema = graph([
     caption: 'Dr. Edward Shut guiding a patient through a back exercise on the treatment table at Chatsworth Physical Therapy',
     creditText: 'Chatsworth Physical Therapy',
     copyrightNotice: 'Chatsworth Physical Therapy',
-    creator: { '@id': CLINIC_ID },
+    // 25 Oct 2026: a typed reference (Google's test called the bare @id an "invalid object type" for creator).
+    creator: { '@type': 'Organization', '@id': CLINIC_ID, name: 'Chatsworth Physical Therapy', url: SITE_URL_SLASH },
   },
   {
     // 25 Oct 2026: the clinic-entrance portrait. Credit as embedded in the source file; the source names no

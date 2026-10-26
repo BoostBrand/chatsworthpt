@@ -38,7 +38,8 @@ const schema = graph([
     caption: 'Dr. Edward Shut guiding a patient through a back exercise on the treatment table at Chatsworth Physical Therapy',
     creditText: 'Chatsworth Physical Therapy',
     copyrightNotice: 'Chatsworth Physical Therapy',
-    creator: { '@id': CLINIC_ID },
+    // 25 Oct 2026: a typed reference (Google's test called the bare @id an "invalid object type" for creator).
+    creator: { '@type': 'Organization', '@id': CLINIC_ID, name: 'Chatsworth Physical Therapy', url: SITE_URL_SLASH },
   },
   {
     // 25 Oct 2026: the clinic-entrance portrait. Credit as embedded in the source file; the source names no

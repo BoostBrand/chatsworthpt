@@ -72,7 +72,7 @@ export default {
   video: {
   "name": "Matt's frozen shoulder story at Chatsworth Physical Therapy",
   "description": "A patient describes recovering from a frozen shoulder with Dr. Edward Shut at Chatsworth Physical Therapy.",
-  "uploadDate": "2026-04-12",
+  "uploadDate": "2026-04-12T23:31:51Z",
   "duration": "PT43S"
 },
 };
