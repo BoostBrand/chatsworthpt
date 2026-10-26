@@ -295,7 +295,7 @@ lead fetched on 21 Oct 2026 (WebFetch yes or no checks, with planted false phras
   several months). Build lead edit: AAOS tells readers to "tell your doctor right away" about chest pain or shortness
   of breath, so one sentence now adds the CDC's instruction to seek medical help immediately for the signs of a clot
   in the lungs (CDC "About Venous Thromboembolism (Blood Clots)", fetched 21 Oct 2026). The marker "[CONFIRM the
-  targets he states]" stays visible; when Dr. Ed's targets replace it, trim elsewhere to stay under 1,000 words.
+  targets he states]" stays visible; when Dr. Ed's targets replace it, trim elsewhere to stay under 1, 000 words.
 - P-045 vertigo and BPPV (939 words). Sources, re-fetched by the build lead with a control check (planted false
   phrases came back NO): APTA ChoosePT BPPV guide (what BPPV is, the crystals, 15 to 45 seconds, positional tests,
   maneuvers, no known prevention, symptoms return for about half of people within three years) and MedlinePlus
@@ -336,7 +336,7 @@ Counts after Batch F (51 of 51 pages built): every hard gate passes; JSON-LD 50 
 the legal pages are indexable); noindex 5 (404, two legal placeholders, two city pages); links to pages not built 0;
 [CONFIRM and verify markers 42; PHOTO placeholders 26 (one per post). One architecture CSV link was missing (the red
 light page to its post) and is now a related link on that page (Batch B copy, not approved copy). Renders 102 of 102
-clean; accessibility check 0 failures on 51 pages at both widths. Word counts: all twelve posts are 700 to 1,000 words
+clean; accessibility check 0 failures on 51 pages at both widths. Word counts: all twelve posts are 700 to 1, 000 words
 on the checker's count (the words written); the entry check's "main words" reads 900 to 1,100 because it also counts
 the byline, the Sources list, the author box and the booking band the template adds.
 
@@ -392,7 +392,7 @@ For Dr. Ed:
   category and pagination URLs 301 to /blog/; WordPress, theme and spam URLs 410; the one old upload 301 to
   /neurological-rehabilitation/; an unknown URL 404.
 - Copy export: claude/COPY-EXPORT-chatsworthpt-site.md in the Project (all 51 pages, generated from the content files,
-  about 39,000 words).
+  about 39, 000 words).
 - GitHub: every commit is local and ready; the push waits on the empty repo BoostBrand/chatsworthpt (steps sent to
   Vlad). Nothing was deployed, and no DNS, Cloudflare, Google Business Profile or Search Console change was made.
 
@@ -465,7 +465,7 @@ answers at 9:11pm). Applied in commits 109a1e7, 750ece0, de2c468 and 60b02f7:
 
 Counts at 60b02f7: 51 pages; gates 0 failing; JSON-LD 50 of 50 parse; renders 102 of 102 clean; accessibility 0
 failures; markers 4 (Northridge reviewers, Porter Ranch reviewers, privacy text, terms text); confirmed rate
-mentions 22; PHOTO placeholders 26; all posts under 1,000 words on the checker's count (knee post 999).
+mentions 22; PHOTO placeholders 26; all posts under 1, 000 words on the checker's count (knee post 999).
 
 Still open
 - Dr. Ed: which Google reviewers live in Northridge and in Porter Ranch; his read of the About paragraph. The city
@@ -520,7 +520,7 @@ Waiting
 
 Live check of ee10223 on https://chatsworthpt.pages.dev/ (23 Oct 2026, Chrome, no screenshots): /cookie-policy/,
 /disclaimer/, /terms-of-service/ and /privacy-policy/ return 200 with the embed and all four footer links; the
-privacy policy loads from Termageddon (13,019 characters, "Last updated: Aug 22, 2025"); /book-appointment/ still
+privacy policy loads from Termageddon (13, 019 characters, "Last updated: Aug 22, 2025"); /book-appointment/ still
 301s to /contact/ and /wp-login.php returns 410; noindex on every response; /contact/ carries the live booking form;
 no GA4 or Clarity script loads on pages.dev. The Termageddon privacy policy names Google Analytics but not
 Microsoft Clarity, Web3Forms or Usercentrics: its questionnaire needs updating before launch (Termageddon account).
@@ -1089,7 +1089,7 @@ carries the suit portrait and the 25 Oct SEO work; main still 41e4512.
   head on a patient's knee, with the unit on the cart behind; there is no tape. The two service heroes no longer use
   it; on the services hub card and the knee replacement post the alt now reads "Clinician holding a handheld
   treatment head on a patient's knee during physical therapy in Chatsworth". The homepage no longer shows it.
-- Rich Results (GPT's test of the edward-portrait-seo preview, 6:53 to 6:59pm: 14 valid items, 0 critical, 21 optional
+- Rich Results (GPT's test of the edward-portrait-seo preview, 6: 53 to 6:59pm: 14 valid items, 0 critical, 21 optional
   warnings). Fixed with sourced facts: homepage treatment photo creator is a typed Organization reference to the clinic
   (was a bare @id); [WITHDRAWN by GPT in b80edc9: Matt's video uploadDate with the MP4's creation_time. A file's
   creation time does not show when the video was first published online; the date-only 2026-04-12 stays]; post
@@ -1162,3 +1162,10 @@ publishing is a fast-forward. GPT's brief: CLAUDE-BRIEF-Finish-Edward-photo-prev
 - Publishing waits on Vlad's yes. GPT pushes (this session's repo connection is blocked by its safety filter), then
   Claude checks the live site.
 
+
+
+## 25 Oct 2026, 9:11pm Pacific: preserve Claude's notes and continue newest-photo review
+
+Vlad chose Finish newest photos, then review after supplying Claude's completed 0697f3e preview report. Verified bbfd2d9 directly: parent 0697f3e, only BUILD-LOG.md and reference/HANDOFF-chatsworthpt-next-session.md changed. Preserved that exact notes commit as an ancestor via local merge 13c98dd on the separate newest-photo candidate. Website source/assets remain identical to tested 02a141d (53-page build, 0 gate failures,118 responsive views 0 failures). This entry changes no published site.
+
+The old preview and its six Google tests do not describe the new homepage arrangement/overview/First Visit/landmark changes. Three Adobe additions remain pending explicit approval for 3 credits. No push or production action. Protected reviewed checkout and remote heads unchanged when checked. Correct protected directory name includes service-photos-restore; the quoted publish prompt omitted photos. Read the newest status at the top of the handoff before acting.
