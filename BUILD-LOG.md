@@ -1112,3 +1112,9 @@ carries the suit portrait and the 25 Oct SEO work; main still 41e4512.
 - Commits: 6a701ed pictures, 3b2a252 schema, 9c885e8 knee alt, 24ecd93 upright cap, d9b1963 share-tag alignment,
   then the Personal Training sizes and these notes.
   Rollback: main 41e4512, or drop the branch.
+
+## 25 Oct 2026: GPT independent recovery and preview verification
+
+Recovered Claude's saved service-photos-restore bundle at 0e31805 into an isolated local checkout. Independent review verified all 59 image hashes and all 12 page/alt/dimension/share mappings; existing portrait and condition illustrations remain intact. Local Astro build produced 53 pages; ship gates have 0 failures; content checks pass with existing advisory warnings.
+
+Removed the added time from home.video.uploadDate and its generator override: MP4 creation_time does not independently establish first online publication. The original date-only value remains; disclose optional Google date warnings rather than claim an unsupported publication time. Visible blog dates and optional clinic priceRange are unchanged. No production deployment is authorized by this verification step.
