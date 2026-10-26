@@ -127,6 +127,10 @@ export function graphFor(page: PageContent, meta: PageMeta, extra: Node[] = []):
   const hero = page.hero.image;
   // A hero with a recorded title gets its own ImageObject (25 Oct 2026); other heroes keep the small inline one.
   const heroId = `${abs(meta.path)}#hero-image`;
+  // Condition heroes were emitted above; other licensed heroes need a node for the primary-image reference too.
+  if (hero?.stock && meta.type !== 'condition') {
+    nodes.push(stockImageNode(hero, heroId, mainId ?? `${abs(meta.path)}#webpage`));
+  }
   const described = hero && !hero.stock && hero.title ? describedImageNode(hero, heroId) : null;
   if (described) nodes.push(described);
   const primaryImage = hero ? (hero.stock || described ? { '@id': heroId } : imageRefNode(hero)) : null;

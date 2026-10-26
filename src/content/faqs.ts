@@ -6,9 +6,50 @@ const page: PageContent = {
   title: 'FAQs | Chatsworth Physical Therapy, Dr. Edward Shut, DPT',
   description:
     'Get plain answers on referrals, Medicare, cost, how long visits run, what to wear, Russian spoken and what Dr. Edward does not treat. Ask us anything.',
+  ogImage: "/img/medical-questions-and-answers-965087461-share-1200.jpg",
+  ogImageMeta: {
+  "alt": "Woman in a white coat holding her hands beneath large Q and A letters.",
+  "width": 1200,
+  "height": 784
+},
   hero: {
     h1: 'Questions patients ask Chatsworth Physical Therapy',
     lede: 'Plain answers to what patients ask before they book. If yours is not here, call and ask Dr. Edward.',
+    image: {
+  "src": "/img/medical-questions-and-answers-965087461-1200.webp",
+  "alt": "Woman in a white coat holding her hands beneath large Q and A letters.",
+  "width": 1200,
+  "height": 784,
+  "whole": true,
+  "srcSet": [
+    {
+      "src": "/img/medical-questions-and-answers-965087461-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/img/medical-questions-and-answers-965087461-768.webp",
+      "width": 768
+    },
+    {
+      "src": "/img/medical-questions-and-answers-965087461-1200.webp",
+      "width": 1200
+    },
+    {
+      "src": "/img/medical-questions-and-answers-965087461-1600.webp",
+      "width": 1600
+    }
+  ],
+  "title": "女性医師とQ&A",
+  "description": "Woman wearing a white coat and stethoscope, looking toward a blue Q while her hands are held under the Q and a pink A on a pale background.",
+  "stock": {
+    "title": "女性医師とQ&A",
+    "description": "Woman wearing a white coat and stethoscope, looking toward a blue Q while her hands are held under the Q and a pink A on a pale background.",
+    "creditText": "metamorworks - stock.adobe.com",
+    "acquireLicensePage": "https://stock.adobe.com/images/q-a/965087461",
+    "license": "https://stock.adobe.com/license-terms",
+    "aiLabel": false
+  }
+},
     book: 'Book my evaluation',
     callFirst: true,
   },

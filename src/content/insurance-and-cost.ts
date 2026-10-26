@@ -6,15 +6,51 @@ const page: PageContent = {
   title: 'Insurance, Cost and Referrals | Chatsworth Physical Therapy',
   description:
     'Medicare accepted, direct pay welcome, PPO superbills and personal injury liens. See what a visit costs and when California needs a referral. Call today.',
+  ogImage: "/img/medical-billing-document-stethoscope-929987440-share-1200.jpg",
+  ogImageMeta: {
+  "alt": "Medical billing form with dollar banknotes, a calculator, and a stethoscope.",
+  "width": 1200,
+  "height": 798
+},
   hero: {
     h1: 'Insurance, cost and referrals at Chatsworth Physical Therapy',
     lede: 'Plain answers on referrals, insurance and payment before your first visit. Call and Dr. Edward will walk you through the cost.',
     image: {
-      src: '/img/dr-ed-explaining-anatomy-chatsworth.webp',
-      width: 1200,
-      height: 960,
-      alt: 'Dr. Edward explaining an anatomy chart to a patient',
+  "src": "/img/medical-billing-document-stethoscope-929987440-1200.webp",
+  "alt": "Medical billing form with dollar banknotes, a calculator, and a stethoscope.",
+  "width": 1200,
+  "height": 798,
+  "whole": true,
+  "srcSet": [
+    {
+      "src": "/img/medical-billing-document-stethoscope-929987440-480.webp",
+      "width": 480
     },
+    {
+      "src": "/img/medical-billing-document-stethoscope-929987440-768.webp",
+      "width": 768
+    },
+    {
+      "src": "/img/medical-billing-document-stethoscope-929987440-1200.webp",
+      "width": 1200
+    },
+    {
+      "src": "/img/medical-billing-document-stethoscope-929987440-1600.webp",
+      "width": 1600
+    }
+  ],
+  "title": "medical billing document and dollar banknote, calculator, stethoscope. medical treatment expense concept.",
+  "description": "Photograph of a form marked MEDICAL BILLING beneath dollar banknotes and a stethoscope, with part of a calculator visible.",
+  "stock": {
+    "title": "medical billing document and dollar banknote, calculator, stethoscope. medical treatment expense concept.",
+    "description": "Photograph of a form marked MEDICAL BILLING beneath dollar banknotes and a stethoscope, with part of a calculator visible.",
+    "creditText": "utah51 - stock.adobe.com",
+    "acquireLicensePage": "https://stock.adobe.com/images/medical-billing-document-and-dollar-banknote-calculator-stethoscope-medical-treatment-expense-concept/929987440",
+    "license": "https://stock.adobe.com/license-terms",
+    "aiLabel": false
+  }
+},
+
     book: 'Book my evaluation',
     callFirst: true,
   },

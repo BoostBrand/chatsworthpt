@@ -163,6 +163,12 @@ main = main[:hero_picture.start()] + hero_picture.group(1) + """<picture>
     <img src={newestImages.hero.src} srcset={newestImages.hero.srcSet.map((s) => `${s.src} ${s.width}w`).join(', ')} sizes={newestImages.hero.sizes} width={newestImages.hero.width} height={newestImages.hero.height} alt={newestImages.hero.alt} fetchpriority="high" decoding="async">
   </picture>""" + main[hero_picture.end():]
 
+# Edward's 25 Oct 19:43 selection, licensed with Vlad's explicit three-credit approval.
+booking_image = re.search(r'<img src="/img/dr-edward-anatomy-chart-chatsworth.webp"[^>]*>', main)
+if not booking_image:
+    sys.exit('Expected the existing homepage booking image')
+main = main[:booking_image.start()] + """<img class="booking-illustration" src={newestImages.booking.src} srcset={newestImages.booking.srcSet.map((s) => `${s.src} ${s.width}w`).join(', ')} sizes={newestImages.booking.sizes} width={newestImages.booking.width} height={newestImages.booking.height} alt={newestImages.booking.alt} loading="lazy" decoding="async">""" + main[booking_image.end():]
+
 # Booking form: the shared component renders the approved form, or the call panel while the key is a placeholder.
 form = re.search(r'<form class="form" id="book-form" novalidate>.*?</form>', main, re.S)
 if not form:
@@ -226,6 +232,16 @@ const SITE_URL_SLASH = `${SITE_URL}/`;
 const schema = graph([
   physiotherapyNode(), // no Review markup (24 Oct 2026; see src/lib/page-schema.ts)
   personNode(),
+  {
+    '@type': 'ImageObject', '@id': `${SITE_URL_SLASH}#booking-image`,
+    contentUrl: abs(newestImages.booking.src), url: abs(newestImages.booking.src),
+    width: newestImages.booking.width, height: newestImages.booking.height,
+    encodingFormat: 'image/webp', name: newestImages.booking.title,
+    caption: newestImages.booking.alt, description: newestImages.booking.description,
+    creditText: newestImages.booking.stock.creditText,
+    acquireLicensePage: newestImages.booking.stock.acquireLicensePage,
+    license: newestImages.booking.stock.license,
+  },
   { '@type': 'ImageObject', '@id': `${SITE_URL_SLASH}#approach-image`, contentUrl: abs(newestImages.approach.src), width: newestImages.approach.width, height: newestImages.approach.height, encodingFormat: 'image/webp', name: newestImages.approach.title, caption: newestImages.approach.alt, description: newestImages.approach.description },
   {
     '@type': 'VideoObject',
@@ -241,6 +257,7 @@ const schema = graph([
     description: home.description,
     about: { '@id': CLINIC_ID },
     primaryImageOfPage: { '@id': `${SITE_URL_SLASH}#hero-image` },
+    image: [{ '@id': `${SITE_URL_SLASH}#hero-image` }, { '@id': `${SITE_URL_SLASH}#approach-image` }, { '@id': `${SITE_URL_SLASH}#booking-image` }],
   }),
   {
     '@type': 'ImageObject',
