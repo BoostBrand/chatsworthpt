@@ -114,6 +114,11 @@
 .page-hero.no-media .page-hero-grid{grid-template-columns:1fr}
 .page-hero.no-media .page-hero-copy{max-width:780px}
 
+/* 25 Oct 2026 (SEO and mobile audit): on phones the map's address tag drops its absolute position, and as a span it
+   then laid out inline: a patchy white background per line, no side padding, text cut at the right edge (homepage
+   and Contact, 600px and below). As a block it reads as one panel under the map. Layout only. */
+@media (max-width:600px){.map-tag{display:block}}
+
 /* Plain hero for legal pages, the blog and the 404 */
 .plain-hero{background:var(--white);border-bottom:1px solid var(--line)}
 .plain-hero .wrap{padding-block:28px 44px;display:grid;gap:1rem}
