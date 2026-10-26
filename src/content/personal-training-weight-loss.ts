@@ -25,6 +25,7 @@ const page: PageContent = {
       whole: true,
       title: 'Dr. Edward supervising a balance exercise',
       description: 'Dr. Edward supervising a woman performing an exercise on a half-ball balance platform at Chatsworth Physical Therapy.',
+      sizes: '(min-width: 1180px) 455px, (min-width: 960px) calc((100vw - 88px) * 5 / 12), (min-width: 552px) 520px, calc(100vw - 32px)',
     },
     book: 'Book my first session',
   },
