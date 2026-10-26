@@ -1091,11 +1091,13 @@ carries the suit portrait and the 25 Oct SEO work; main still 41e4512.
   treatment head on a patient's knee during physical therapy in Chatsworth". The homepage no longer shows it.
 - Rich Results (GPT's test of the edward-portrait-seo preview, 6:53 to 6:59pm: 14 valid items, 0 critical, 21 optional
   warnings). Fixed with sourced facts: homepage treatment photo creator is a typed Organization reference to the clinic
-  (was a bare @id); Matt's video uploadDate 2026-04-12T23:31:51Z, the creation_time inside MATT REDO ADD.mp4, the file
-  the recorded date came from (ffprobe on Vlad's copy; MP4 stores UTC); post publisher a plain Organization reference
+  (was a bare @id); [WITHDRAWN by GPT in b80edc9: Matt's video uploadDate with the MP4's creation_time. A file's
+  creation time does not show when the video was first published online; the date-only 2026-04-12 stays]; post
+  publisher a plain Organization reference
   to the clinic with name and url. Left as they are: post dates (build date 21 Oct, no sourced time; Vlad's call),
   priceRange (Vlad's yes), license, acquireLicensePage, creator and copyrightNotice on clinic photos (not verified).
   Expected after a retest (not yet run): homepage 10 to 7, contact 1, frozen shoulder 2, sciatica post 8 to 4.
+  [Superseded: Google's actual results are in the 8:55pm entry.]
 - Unchanged and checked: the 13 condition pages (identical apart from the stylesheet's file name), the homepage hero,
   the approach portrait section (identical markup; files match the portrait manifest), the booking photo, the
   services hub and homepage card photos, the five other laughing-photo pages, redirects, forms, tracking and consent.
@@ -1122,3 +1124,41 @@ Removed the added time from home.video.uploadDate and its generator override: MP
 Browser follow-up: all 12 service pages checked at 390, 768 and 1280 pixels. Found a 1px horizontal overflow on Pediatric PT caused by the long booking button's inherited nowrap rule. Scoped the booking-form button to wrap normally; all 36 final views now have zero overflow, loaded images, correct image aspect ratio and one H1. No form action/fields/wording/tracking changed. Homepage suit portrait pairing verified in Chrome. Evidence is in the local cloudflare-move folder.
 
 Online upload was blocked by automatic approval review because the destination repository is public and this specific upload needs explicit user approval. No branch was pushed and no production deployment occurred. Preserve the original recovery bundle. Do not work around the approval block; obtain explicit approval for pushing this reviewed branch to BoostBrand/chatsworthpt, then validate the preview and rerun Google's tests.
+
+## 25 Oct 2026, 8:55pm: combined preview uploaded and verified; ready for Vlad's yes to publish (branch service-photos-restore at 0697f3e)
+
+Supersedes the upload-blocked status above. With Vlad's explicit yes for the preview branch only, GPT pushed the reviewed
+head 0697f3e3f3a313d17b07a02d9d76d536dc556166 (my 0e31805 plus GPT's two corrections) to service-photos-restore.
+Cloudflare deployment ae11ef45-f98f-4a21-adf8-fdce6ad92458 succeeded: https://service-photos-restore.chatsworthpt.pages.dev/
+(fixed copy https://ae11ef45.chatsworthpt.pages.dev/). main is unchanged at 41e4512 and is an ancestor of 0697f3e, so
+publishing is a fast-forward. GPT's brief: CLAUDE-BRIEF-Finish-Edward-photo-preview-2026-10-25.md (Vlad's folder).
+
+- GPT's corrections, kept: b80edc9 removes the video upload time I had taken from the MP4's creation_time (it is when
+  the file was made, not when it went online; Google's video guidance asks for the upload date), so uploadDate is the
+  date-only 2026-04-12 again; 0697f3e lets the booking button label wrap inside the booking form (.booking .form .btn
+  white-space normal), which fixed a 1px sideways scroll on Pediatric PT at phone width. No wording, fields or tracking
+  changed.
+- Claude, on 0697f3e: build 53; gates 0 failing; content check output identical to before; accessibility 0 failures;
+  static check of the 12 pages 0 failures; titles, descriptions, H1s, canonicals, robots and all body text identical to
+  the live build on 53 of 53 pages; schema.org 29.3 vocabulary check 52 pages, 1,154 nodes, 0 problems.
+- The preview is this commit: in the built-in browser, 55 of 55 files (53 pages, sitemap-0.xml, robots.txt) are
+  byte-identical (SHA-256) to the local build of 0697f3e, all 200, all with X-Robots-Tag noindex. Redirects: 19 of 19
+  sampled 301 rules land on their targets; 11 of 11 retired WordPress paths return 410; an unknown path returns 404.
+- GPT's evidence (Vlad's cloudflare-move folder): deployed audit PASS (52 sitemap pages 200, 59 service files, 4
+  portrait files and 36 condition files match their hashes, share tags and ImageObjects match the package); Chrome
+  check of the 12 pages at 390, 768 and 1280 px, 36 views, 0 overflow; portrait beside "A plan built around your
+  movement" confirmed.
+- Google Rich Results Test on this deployment (GPT, 8:35 to 8:43pm; service-restore-rich-results-2026-10-25.md has
+  every warning and result link): 6 pages, 18 valid items, 0 critical errors, 24 optional warnings. Homepage 5 valid /
+  9 optional (photo license and rights fields, priceRange, two video date warnings); Contact 3/1 (priceRange); Frozen
+  Shoulder 2/2 (illustration creator, copyrightNotice); sciatica post 2/4 (date and timezone); Pain Management 3/4 and
+  Back Pain 3/4 (the provider reference to the clinic lacks telephone, address, image, priceRange). The same four pages
+  as the earlier test: 16 optional, was 21. The homepage creator-type warning and the post's incomplete Local business
+  are gone. Every fetch was allowed; Google's "URL is not available" headline is the preview's noindex header.
+- Left unchanged on purpose for this release (Vlad, 25 Oct): About/Contact portrait option, the five other
+  laughing-photo pages, blog dates, priceRange. No image rights or publication times invented.
+- Later, separate cleanup: the service pages' provider reference could carry the clinic's verified telephone,
+  address and image (already on the homepage and Contact node) to clear those optional warnings.
+- Publishing waits on Vlad's yes. GPT pushes (this session's repo connection is blocked by its safety filter), then
+  Claude checks the live site.
+
