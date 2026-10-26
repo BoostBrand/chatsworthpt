@@ -1,6 +1,13 @@
-# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 25 Oct 2026, 4:30pm)
+# Chatsworth PT rebuild: handoff for the next session (written 20 Oct 2026, 7:25pm; status updated 25 Oct 2026, 6:10pm)
 
 Read this first, then `claude/DESIGN-RULINGS-chatsworthpt.md` (every design decision Vlad and Dr. Ed made on 20 Oct; the build and every redesign pass read it), then `claude/SEO-PLAN-chatsworthpt-2026-10-20.html` only if the job touches SEO or the inner pages. For the inner pages, the conditions layer, the city pages and the blog, the page-by-page spec is now `claude/PAGE-BLUEPRINT-chatsworthpt-v1.html` (blueprint v1, 21 Oct); it does not rewrite plan v3, it adds the page entries and lists the decisions it changes.
+
+## Status as of 25 Oct 2026, 6:10pm: portrait and SEO audit on previews, waiting on Vlad's yes; start here
+- Live unchanged: main 41e4512 (the 12 condition illustrations and the review fix, published 4:23pm).
+- Waiting on Vlad's yes: branch edward-portrait-seo (preview https://edward-portrait-seo.chatsworthpt.pages.dev/): the suit portrait at the clinic entrance beside "A plan built around your movement", clinic schema typed MedicalClinic + Physiotherapy with medicalSpecialty https://schema.org/Physiotherapy, WebPage nodes everywhere, Person without the clinic's sameAs, share tags on every page, and the phone map panel fix. Build log 25 Oct 6:10pm.
+- Optional, Vlad's call: branch portrait-about-contact (on top of it) adds the portrait as the About hero and share image, and a small entrance photo with a new caption on Contact. Previews: /about-us/ and /contact/ on https://portrait-about-contact.chatsworthpt.pages.dev.
+- Publishing: fast-forward main to whichever branch he approves (portrait-about-contact contains edward-portrait-seo), build, five checks, push, then live check: homepage portrait 200 and lazy, validator.schema.org 0 on / and /contact/, 0 Review nodes.
+- Open: Google Rich Results Test on the preview (needs a signed-in browser: GPT block given); six pages with the laughing anatomy photo; the Docs audit "Chatsworth PT portrait and SEO audit, 25 Oct 2026".
 
 ## Status as of 25 Oct 2026, 4:30pm: both changes PUBLISHED; start here
 - Live: chatsworthpt.com runs main 8736c75 (published 25 Oct about 4:23pm on Vlad's "yes"): the review markup fix (0 Review nodes site-wide) and Dr. Edward's 12 condition-page illustrations (whole, uncropped heroes with srcset, alt text, share tags and a JSON-LD ImageObject each). Live check passed (build log, 25 Oct 4:25pm).
