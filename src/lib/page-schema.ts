@@ -3,7 +3,7 @@ import type { PageContent, Section, FaqItem, ImageRef } from './types';
 import type { PageMeta } from './pages';
 import { crumbsFor } from './pages';
 import { getReview, quoteFor } from './reviews';
-import { breadcrumbNode, faqNode, serviceNode, reviewNode, physiotherapyNode, personNode, itemListNode, abs, CLINIC_ID, PERSON_ID } from './schema';
+import { breadcrumbNode, faqNode, serviceNode, reviewNode, physiotherapyNode, personNode, itemListNode, webPageNode, imageRefNode, abs, CLINIC_ID, CLINIC_REF, PERSON_ID } from './schema';
 import { BUSINESS } from '../data/site';
 import { POSTS } from './posts';
 
@@ -21,7 +21,6 @@ export function reviewsOf(sections: Section[]): Node[] {
   return refs.map((ref) => reviewNode(getReview(ref.key).displayName, quoteFor(ref)));
 }
 
-const CLINIC_REF = { '@id': CLINIC_ID, name: BUSINESS.name };
 
 // A licensed stock picture as an ImageObject (25 Oct 2026: the condition illustrations Dr. Edward chose). Credit, license
 // page and terms come from the content file, exactly as the Adobe Stock asset and the file's own metadata give them;
@@ -88,7 +87,7 @@ export function graphFor(page: PageContent, meta: PageMeta, extra: Node[] = []):
       break;
     }
     case 'about':
-      nodes.push(personNode(true));
+      nodes.push(personNode());
       reviews.forEach((r) => nodes.push({ ...r, itemReviewed: { '@id': PERSON_ID, name: BUSINESS.doctor.display } }));
       break;
     case 'contact':
@@ -97,19 +96,44 @@ export function graphFor(page: PageContent, meta: PageMeta, extra: Node[] = []):
     default:
       reviews.forEach((r) => nodes.push({ ...r, itemReviewed: CLINIC_REF }));
   }
-  // The blog hub is a CollectionPage whose ItemList is every post, newest first.
-  if (meta.type === 'blog-hub') {
-    nodes.push({ '@type': 'CollectionPage', '@id': `${abs(meta.path)}#page`, name: page.hero.h1, url: abs(meta.path), description: page.description, isPartOf: { '@id': abs('/') + '#website' } });
-    if (POSTS.length) nodes.push(itemListNode('Blog posts', POSTS.map((p) => ({ name: p.h1, path: p.path }))));
+  const listId = `${abs(meta.path)}#list`;
+  let hasList = false;
+  // The blog hub's ItemList is every post, newest first (its page node below is a CollectionPage).
+  if (meta.type === 'blog-hub' && POSTS.length) {
+    nodes.push(itemListNode('Blog posts', POSTS.map((p) => ({ name: p.h1, path: p.path })), listId));
+    hasList = true;
   }
   // Hubs list their children: an ItemList built from the cards on the page, in page order.
   if (meta.type.endsWith('-hub') && meta.type !== 'blog-hub') {
     const cards = page.sections.flatMap((s) => (s.kind === 'cards' ? [...(s.cards ?? []), ...(s.groups ?? []).flatMap((g) => g.cards)] : []));
-    if (cards.length) nodes.push(itemListNode(meta.full, cards.map((c) => ({ name: c.title, path: c.href }))));
+    if (cards.length) {
+      nodes.push(itemListNode(meta.full, cards.map((c) => ({ name: c.title, path: c.href })), listId));
+      hasList = true;
+    }
   }
   if (faqs.length) nodes.push(faqNode(faqs));
   nodes.push(...extra);
-  nodes.push(breadcrumbNode(crumbs));
+  const breadcrumb = breadcrumbNode(crumbs);
+  nodes.push(breadcrumb);
+  // 25 Oct 2026: the page itself, tied to the WebSite, its breadcrumb, its main entity and its lead image.
+  const mainId =
+    meta.type === 'about' ? PERSON_ID
+    : meta.type === 'contact' ? CLINIC_ID
+    : meta.type === 'condition' ? `${abs(meta.path)}#condition`
+    : meta.type === 'service' || meta.type === 'city' ? `${abs(meta.path)}#service`
+    : hasList ? listId
+    : null;
+  const pageType = meta.type === 'about' ? 'AboutPage' : meta.type === 'contact' ? 'ContactPage' : meta.type === 'blog-hub' ? 'CollectionPage' : 'WebPage';
+  const hero = page.hero.image;
+  const primaryImage = hero ? (hero.stock ? { '@id': `${abs(meta.path)}#hero-image` } : imageRefNode(hero)) : null;
+  nodes.unshift(
+    webPageNode(meta.path, page.title, pageType, {
+      description: page.description,
+      breadcrumb: { '@id': breadcrumb['@id'] },
+      ...(mainId ? { mainEntity: { '@id': mainId } } : {}),
+      ...(primaryImage ? { primaryImageOfPage: primaryImage } : {}),
+    }),
+  );
   return nodes;
 }
 

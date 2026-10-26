@@ -28,10 +28,10 @@ const booking = content.booking || null;
 const isContact = meta.type === 'contact';
 const section = ['service', 'services-hub', 'conditions-hub', 'condition'].includes(meta.type) ? 'services' : null;
 const ogImage = content.ogImage ?? content.hero.image?.src;
-// Licensed stock heroes (the condition illustrations, 25 Oct 2026) also describe the share image: alt text, size and
-// type, for Open Graph and X. Other pages print the same tags as before.
+// The share image's alt text, size and type for Open Graph and X (25 Oct 2026: every page with a hero image; pages
+// without one get the layout's default image and its details).
 const heroImage = content.hero.image;
-const ogImageMeta = !content.ogImage && heroImage?.stock ? { alt: heroImage.alt, width: heroImage.width, height: heroImage.height } : undefined;
+const ogImageMeta = !content.ogImage && heroImage ? { alt: heroImage.alt, width: heroImage.width, height: heroImage.height } : undefined;
 ---
 <BaseLayout pageId={meta.id} path={meta.path} title={content.title} description={content.description} noindex={isNoindex(meta)} ogImage={ogImage} ogImageMeta={ogImageMeta} section={section} schema={schema} geo={meta.type === 'contact'} bookHref={booking || isContact ? '#book' : '/contact/#book'}>
   {heroHtml ? <Fragment set:html={heroHtml} /> : isContact ? <ContactHero hero={content.hero} crumbs={crumbs} pageName={meta.name} /> : <PageHero hero={content.hero} crumbs={crumbs} hasBooking={Boolean(booking)} />}

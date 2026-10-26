@@ -8,7 +8,7 @@ import Blocks from '../Blocks.astro';
 import RelatedLinks from '../kit/RelatedLinks.astro';
 import type { PageContent } from '../../lib/types';
 import { pageById, crumbsFor, isNoindex } from '../../lib/pages';
-import { breadcrumbNode, graph } from '../../lib/schema';
+import { breadcrumbNode, webPageNode, graph } from '../../lib/schema';
 import { LEGAL_TEXT_READY, BUSINESS, TERMAGEDDON } from '../../data/site';
 import { renderInline } from '../../lib/inline';
 interface Props {
@@ -17,7 +17,8 @@ interface Props {
 const { content } = Astro.props;
 const meta = pageById(content.id);
 const crumbs = crumbsFor(meta);
-const schema = graph([breadcrumbNode(crumbs)]);
+const breadcrumb = breadcrumbNode(crumbs);
+const schema = graph([webPageNode(meta.path, content.title, 'WebPage', { description: content.description, breadcrumb: { '@id': breadcrumb['@id'] } }), breadcrumb]);
 const policy = content.termageddon ? TERMAGEDDON[content.termageddon] : null;
 const blocks = content.sections.flatMap((s) => (s.kind === 'prose' ? [{ type: 'h2', text: s.h2 } as const, ...s.blocks] : []));
 ---

@@ -120,12 +120,15 @@ main = re.sub(r' data-photo="/img/[^"]+"', '', main)
 sub('<img src="/img/post-op-physical-therapy-chatsworth.webp" width="900" height="900" alt="Knee taping during post-op physical therapy in Chatsworth"',
     '<img src="/img/dr-edward-hands-on-leg-mobility-chatsworth.webp" width="900" height="900" alt="Dr. Edward guiding a patient\'s bent leg through a hands-on mobility exercise"')
 # Item 2: the homepage no longer repeats the About page; a short section on how the plan is built takes its place.
+# 25 Oct 2026 (Vlad): the portrait beside it is Dr. Edward in a suit at the clinic entrance (window lettering
+# "C - Chatsworth Physical Therapy", "19851 #105"), Drive 1srQnp2qK6VWDSdC7rD_74EaeggTWl7Y3, prepared square at 480,
+# 768, 1200 and 1600 px with no crop. The column is 340 px from 960 px and at most 300 px below; lazy (below the fold).
 about = re.search(r'<section class="about band" id="about" aria-labelledby="h-about">.*?</section>', main, re.S)
 if not about:
     sys.exit('About band not found')
 main = main.replace(about.group(0), """<section class="about approach band" id="approach" aria-labelledby="h-approach">
   <div class="wrap">
-    <figure class="portrait"><img src="/img/dr-ed-shut-in-clinic-chatsworth.webp" width="1000" height="1000" alt="Dr. Edward Shut, DPT, at his desk in the Chatsworth Physical Therapy clinic" loading="lazy" decoding="async"></figure>
+    <figure class="portrait"><img src="/img/dr-edward-shut-chatsworth-clinic-entrance-768.webp" srcset="/img/dr-edward-shut-chatsworth-clinic-entrance-480.webp 480w, /img/dr-edward-shut-chatsworth-clinic-entrance-768.webp 768w, /img/dr-edward-shut-chatsworth-clinic-entrance-1200.webp 1200w, /img/dr-edward-shut-chatsworth-clinic-entrance-1600.webp 1600w" sizes="(min-width: 960px) 340px, min(300px, calc(100vw - 32px))" width="768" height="768" alt="Dr. Edward Shut standing outside Chatsworth Physical Therapy beside the clinic entrance at 19851 Nordhoff Place." loading="lazy" decoding="async"></figure>
     <div class="about-copy">
       <h2 id="h-approach">A plan built around your movement</h2>
       <p>Back pain, a sports injury and recovery after surgery call for different treatment plans. Dr. Edward starts with an evaluation of how you move and what you need to get back to. Treatment may include hands-on techniques, guided exercise and a short home program. Your plan is adjusted as you progress.</p>
@@ -202,7 +205,7 @@ import BookingForm from '../components/kit/BookingForm.astro';
 import home from '../content/home';
 import { CITY_PAGES_LIVE } from '../data/site';
 import { SITE_URL } from '../data/site';
-import { physiotherapyNode, personNode, faqNode, graph, abs, CLINIC_ID } from '../lib/schema';
+import { physiotherapyNode, personNode, faqNode, webPageNode, graph, abs, CLINIC_ID, PERSON_ID, PORTRAIT } from '../lib/schema';
 const SITE_URL_SLASH = `${SITE_URL}/`;
 
 const schema = graph([
@@ -216,7 +219,13 @@ const schema = graph([
     publisher: { '@id': CLINIC_ID },
   },
   faqNode(home.faqs),
-  { '@type': 'WebSite', '@id': `${SITE_URL_SLASH}#website`, url: SITE_URL_SLASH, name: 'Chatsworth Physical Therapy', publisher: { '@id': CLINIC_ID } },
+  { '@type': 'WebSite', '@id': `${SITE_URL_SLASH}#website`, url: SITE_URL_SLASH, name: 'Chatsworth Physical Therapy', inLanguage: 'en-US', publisher: { '@id': CLINIC_ID } },
+  // 25 Oct 2026: the homepage itself, about the clinic, with the treatment photo as its lead image.
+  webPageNode('/', home.title, 'WebPage', {
+    description: home.description,
+    about: { '@id': CLINIC_ID },
+    primaryImageOfPage: { '@id': `${SITE_URL_SLASH}#hero-image` },
+  }),
   {
     '@type': 'ImageObject',
     '@id': `${SITE_URL_SLASH}#hero-image`,
@@ -230,16 +239,20 @@ const schema = graph([
     creator: { '@id': CLINIC_ID },
   },
   {
+    // 25 Oct 2026: the clinic-entrance portrait. Credit as embedded in the source file; the source names no
+    // verified creator or copyright holder, so neither is claimed here.
     '@type': 'ImageObject',
     '@id': `${SITE_URL_SLASH}#portrait`,
-    contentUrl: abs('/img/dr-ed-shut-in-clinic-chatsworth.webp'),
-    url: abs('/img/dr-ed-shut-in-clinic-chatsworth.webp'),
-    width: 1000,
-    height: 1000,
-    caption: 'Dr. Edward Shut, DPT, at his desk in the Chatsworth Physical Therapy clinic',
-    creditText: 'Chatsworth Physical Therapy',
-    copyrightNotice: 'Chatsworth Physical Therapy',
-    creator: { '@id': CLINIC_ID },
+    contentUrl: abs(PORTRAIT.src),
+    url: abs(PORTRAIT.src),
+    width: PORTRAIT.width,
+    height: PORTRAIT.height,
+    encodingFormat: 'image/webp',
+    name: PORTRAIT.title,
+    caption: PORTRAIT.alt,
+    description: PORTRAIT.description,
+    creditText: PORTRAIT.creditText,
+    about: { '@id': PERSON_ID },
   },
 ]);
 ---

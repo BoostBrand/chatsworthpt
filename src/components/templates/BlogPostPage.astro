@@ -11,7 +11,7 @@ import RelatedLinks from '../kit/RelatedLinks.astro';
 import FAQ from '../kit/FAQ.astro';
 import type { PostContent, Block } from '../../lib/types';
 import { pageById, crumbsFor } from '../../lib/pages';
-import { breadcrumbNode, faqNode, graph, abs, CLINIC_ID, PERSON_ID } from '../../lib/schema';
+import { breadcrumbNode, faqNode, webPageNode, imageRefNode, graph, abs, CLINIC_REF, PERSON_ID } from '../../lib/schema';
 import { plainInline } from '../../lib/inline';
 interface Props {
   post: PostContent;
@@ -21,7 +21,18 @@ const meta = pageById(post.id);
 if (meta.path !== post.path) throw new Error(`${post.id}: path mismatch`);
 const crumbs = crumbsFor(meta);
 const fmt = (d: string) => new Date(d + 'T12:00:00Z').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+// The post's image, or the desk portrait when it has none (also its share image).
+const shareImage = post.image ?? { src: '/img/dr-ed-shut-in-clinic-chatsworth.webp', width: 1000, height: 1000, alt: 'Dr. Edward Shut, DPT, at his desk in the Chatsworth Physical Therapy clinic' };
+const breadcrumb = breadcrumbNode(crumbs);
 const nodes: Record<string, unknown>[] = [
+  webPageNode(post.path, post.title, 'WebPage', {
+    description: post.description,
+    breadcrumb: { '@id': breadcrumb['@id'] },
+    mainEntity: { '@id': `${abs(post.path)}#post` },
+    primaryImageOfPage: imageRefNode(shareImage),
+    datePublished: post.datePublished,
+    dateModified: post.dateModified ?? post.datePublished,
+  }),
   {
     '@type': 'BlogPosting',
     '@id': `${abs(post.path)}#post`,
@@ -29,20 +40,20 @@ const nodes: Record<string, unknown>[] = [
     description: post.description,
     datePublished: post.datePublished,
     dateModified: post.dateModified ?? post.datePublished,
-    mainEntityOfPage: abs(post.path),
+    mainEntityOfPage: { '@id': `${abs(post.path)}#webpage` },
     url: abs(post.path),
-    image: abs((post.image ?? { src: '/img/dr-ed-shut-in-clinic-chatsworth.webp' }).src),
+    image: abs(shareImage.src),
     author: { '@type': 'Person', '@id': PERSON_ID, name: 'Edward Shut', honorificSuffix: 'DPT', url: abs('/about-us/') },
-    publisher: { '@id': CLINIC_ID, name: 'Chatsworth Physical Therapy' },
-    ...(post.sources?.length ? { citation: post.sources.map((s) => ({ '@type': 'CreativeWork', name: s.title, url: s.url, publisher: s.publisher })) } : {}),
+    publisher: CLINIC_REF,
+    ...(post.sources?.length ? { citation: post.sources.map((s) => ({ '@type': 'CreativeWork', name: s.title, url: s.url, publisher: { '@type': 'Organization', name: s.publisher } })) } : {}),
   },
 ];
 if (post.faqs?.length) nodes.push(faqNode(post.faqs));
-nodes.push(breadcrumbNode(crumbs));
+nodes.push(breadcrumb);
 const schema = graph(nodes);
 const body = post.body;
 ---
-<BaseLayout pageId={meta.id} path={meta.path} title={post.title} description={post.description} ogType="article" ogImage={post.image?.src ?? '/img/dr-ed-shut-in-clinic-chatsworth.webp'} schema={schema} bookHref={post.booking ? '#book' : '/contact/#book'}>
+<BaseLayout pageId={meta.id} path={meta.path} title={post.title} description={post.description} ogType="article" ogImage={shareImage.src} ogImageMeta={{ alt: shareImage.alt, width: shareImage.width, height: shareImage.height }} schema={schema} bookHref={post.booking ? '#book' : '/contact/#book'}>
   <article>
     <header class="plain-hero">
       <div class="wrap">
