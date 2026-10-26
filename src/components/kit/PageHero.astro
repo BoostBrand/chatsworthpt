@@ -64,7 +64,7 @@ const pictureStyle = cap ? `max-width:${cap}px` : undefined;
         {stars && <div class="hero-proof"><span class="stars" aria-hidden="true">★★★★★</span><span>{RATING.line}</span></div>}
       </div>
       {media && (
-        <figure class:list={['page-hero-media', { whole: img?.whole }]}>
+        <figure class:list={['page-hero-media', { whole: img?.whole, tall: img?.whole && img.width / img.height < 1.2 }]}>
           {img ? (
             <picture style={pictureStyle}>
               {img.srcMobile && <source media="(max-width: 700px)" srcset={img.srcMobile} />}
