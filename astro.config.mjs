@@ -1,6 +1,7 @@
-// Astro 5 static build for chatsworthpt.com. Output: dist/ (Cloudflare Pages, build command npm run build).
+// Static build for chatsworthpt.com. Output: dist/ (Cloudflare Pages, build command npm run build).
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
 import sitemap from '@astrojs/sitemap';
 import { SITE_URL, CITY_PAGES_LIVE, LEGAL_TEXT_READY } from './src/data/site.ts';
 
@@ -13,12 +14,22 @@ const NOINDEX = new Set([
 
 export default defineConfig({
   site: SITE_URL,
+  // Preserve the approved inline spacing across the Astro 7 compiler upgrade.
+  compressHTML: true,
   trailingSlash: 'always',
   build: { format: 'directory' },
   integrations: [
-    tailwind({ applyBaseStyles: false }),
     sitemap({
       filter: (page) => !NOINDEX.has(new URL(page).pathname),
     }),
   ],
+  // Keep the existing Tailwind 3 CSS pipeline without the Astro 5-only integration.
+  // global.css already provides the directives; tailwind.config.mjs disables preflight.
+  vite: {
+    // Keep minification from replacing existing media queries with newer range syntax.
+    build: { cssTarget: ['edge88', 'firefox78', 'chrome87', 'safari14'] },
+    css: {
+      postcss: { plugins: [tailwindcss(), autoprefixer()] },
+    },
+  },
 });
