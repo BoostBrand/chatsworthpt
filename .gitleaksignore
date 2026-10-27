@@ -1,0 +1,11 @@
+# Reviewed 2026-10-27. Exact historical findings for public browser identifiers.
+# No complete files, commits, or detection rules are excluded.
+# Web3Forms access keys are intentionally public (form routing, not account access):
+# https://docs.web3forms.com/getting-started/faq
+f8a1793d914c87f908805444b39428e2d970fd5b:src/data/site.ts:generic-api-key:74
+# Termageddon policy identifiers are inserted into public webpage embed markup:
+# https://termageddon.freshdesk.com/support/solutions/articles/66000528892-part-11-sharing-and-embedding-policies
+ee10223518743f6a99e57771cdea3def4a9e7f8a:src/data/site.ts:generic-api-key:104
+ee10223518743f6a99e57771cdea3def4a9e7f8a:src/data/site.ts:generic-api-key:105
+ee10223518743f6a99e57771cdea3def4a9e7f8a:src/data/site.ts:generic-api-key:106
+ee10223518743f6a99e57771cdea3def4a9e7f8a:src/data/site.ts:generic-api-key:107
