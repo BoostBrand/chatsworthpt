@@ -41,6 +41,12 @@ const WHEN = ['Any time', 'Mornings', 'Afternoons', 'Evenings after 5pm', 'Satur
       </select>
     </label>
     <label for="f-msg">Anything else we should know? <small>(optional)</small><textarea id="f-msg" name="message" rows="3" placeholder={messagePrompt}></textarea></label>
+    <div class="booking-security">
+      <div data-booking-captcha tabindex="-1" aria-label="Security check" aria-describedby="booking-security-status"></div>
+      <p id="booking-security-status" class="form-note" data-captcha-status role="status" aria-live="polite" aria-atomic="true">Loading security check…</p>
+      <button class="captcha-retry" type="button" data-captcha-retry hidden>Retry security check</button>
+      <noscript><p class="form-note">Please enable JavaScript to complete the security check, or call <a href={BUSINESS.phoneHref}>{BUSINESS.phone}</a> to book.</p></noscript>
+    </div>
     <button class="btn btn-primary" type="submit">{button}</button>
     <p class="form-note">No payment is required to book.</p>
   </form>
@@ -53,3 +59,9 @@ const WHEN = ['Any time', 'Mornings', 'Afternoons', 'Evenings after 5pm', 'Satur
     <p class="form-note">No payment is required to book.</p>
   </div>
 )}
+
+<style>
+  .booking-security { min-width: 0; }
+  .captcha-retry { padding: 0; border: 0; background: none; color: inherit; font: inherit; text-decoration: underline; cursor: pointer; }
+  .captcha-retry[hidden] { display: none; }
+</style>
