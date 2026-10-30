@@ -9,3 +9,7 @@ ee10223518743f6a99e57771cdea3def4a9e7f8a:src/data/site.ts:generic-api-key:104
 ee10223518743f6a99e57771cdea3def4a9e7f8a:src/data/site.ts:generic-api-key:105
 ee10223518743f6a99e57771cdea3def4a9e7f8a:src/data/site.ts:generic-api-key:106
 ee10223518743f6a99e57771cdea3def4a9e7f8a:src/data/site.ts:generic-api-key:107
+
+# Reviewed 2026-10-29: Web3Forms documents this shared public hCaptcha sitekey for free plans.
+# https://docs.web3forms.com/getting-started/customizations/spam-protection/hcaptcha#manual-setup
+917c4e95a52eff8aca569973383c3bb0f2ba0f8e:src/scripts/booking-form.ts:generic-api-key:13
