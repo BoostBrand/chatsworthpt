@@ -4,6 +4,7 @@
 // Every animation is off under prefers-reduced-motion. The homepage hero line moment is inline in
 // src/pages/index.astro so it runs before first paint, as in the draft.
 import { WEB3FORMS_KEY, FORMS_ENABLED } from '../data/site';
+import { setupBookingForms } from './booking-form';
 
 const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 type G = (...args: unknown[]) => void;
@@ -152,53 +153,11 @@ document.querySelectorAll<HTMLDetailsElement>('.faq details').forEach((d) => {
   });
 });
 
-// Booking form (only rendered when FORMS_ENABLED): name and phone required, then a Web3Forms submit and
-// the thank-you check mark from draft 9.
-document.querySelectorAll<HTMLFormElement>('form.form[data-web3forms]').forEach((form) => {
-  const flag = (input: HTMLInputElement, msg: string) => {
-    const lab = input.closest('label') as HTMLElement;
-    input.setAttribute('aria-invalid', 'true');
-    let err = lab.querySelector('.err') as HTMLElement | null;
-    if (!err) { err = document.createElement('small'); err.className = 'err'; err.setAttribute('role', 'alert'); lab.appendChild(err); }
-    err.textContent = msg;
-    lab.classList.remove('invalid'); void lab.offsetWidth; lab.classList.add('invalid');
-    const clear = () => { lab.classList.remove('invalid'); input.removeAttribute('aria-invalid'); if (err && err.parentNode) err.parentNode.removeChild(err); input.removeEventListener('input', clear); };
-    input.addEventListener('input', clear);
-  };
-  form.addEventListener('submit', async (ev) => {
-    ev.preventDefault();
-    if (!FORMS_ENABLED) return;
-    const name = form.querySelector('input[name="name"]') as HTMLInputElement;
-    const phone = form.querySelector('input[name="phone"]') as HTMLInputElement;
-    const bad: HTMLInputElement[] = [];
-    if (!name.value.trim()) { flag(name, 'Please add your name.'); bad.push(name); }
-    if (!phone.value.trim()) { flag(phone, 'Please add a phone number so we can confirm your time.'); bad.push(phone); }
-    if (bad.length) { bad[0].focus(); return; }
-    const data = Object.fromEntries(new FormData(form).entries());
-    if (data.botcheck) return;
-    data.access_key = WEB3FORMS_KEY;
-    const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
-    btn.disabled = true;
-    try {
-      const res = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(data),
-      });
-      const json = await res.json().catch(() => ({}));
-      if (res.status !== 200 || !json.success) throw new Error(json.message || 'Request failed');
-      // generate_lead is Google's recommended name for a sent request; GA4's own form_submit (enhanced measurement)
-      // fires on every submit click, so a custom form_submit would mix with it.
-      track('generate_lead', { service: data.service });
-      const safe = name.value.replace(/[<>&]/g, '');
-      form.innerHTML = '<div class="thanks" role="status"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle pathLength="1" cx="12" cy="12" r="10"/><path pathLength="1" d="m8 12.5 2.5 2.5L16 9.5"/></svg><h3>Request sent</h3><p>Thanks, ' + safe + '. We will call or email to confirm a time.</p></div>';
-    } catch (e) {
-      btn.disabled = false;
-      let box = form.querySelector('.form-error') as HTMLElement | null;
-      if (!box) { box = document.createElement('p'); box.className = 'form-error'; box.setAttribute('role', 'alert'); btn.insertAdjacentElement('afterend', box); }
-      box.textContent = 'Something went wrong sending your request. Please call (818) 749-3205.';
-    }
-  });
+// Web3Forms requires hCaptcha separately in its dashboard; client checks provide accessible feedback.
+setupBookingForms({
+  enabled: FORMS_ENABLED,
+  accessKey: WEB3FORMS_KEY,
+  onSuccess: (service) => track('generate_lead', { service }),
 });
 
 // Tracking events (sent only when the GA4 tag is present, so only after the visitor's yes in the cookie banner):
